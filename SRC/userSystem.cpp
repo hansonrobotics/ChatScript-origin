@@ -636,11 +636,11 @@ void WriteUserData(time_t curr)
 	if (filesystemOverride == NORMALFILES && (!server || serverRetryOK) && !documentMode && !callback)  
 	{
 		char fname[MAX_WORD_SIZE];
-		sprintf(fname,(char*)"TMP/backup-%s_%s.bin",loginID,computerID);
+		sprintf(fname,(char*)"%s/backup-%s_%s.bin",tmp,loginID,computerID);
 		CopyFile2File(fname, name,false);	// backup for debugging BUT NOT if callback of some kind...
 		if (redo) // multilevel backup enabled
 		{
-			sprintf(fname,(char*)"TMP/backup%d-%s_%s.bin",volleyCount,loginID,computerID);
+			sprintf(fname,(char*)"%s/backup%d-%s_%s.bin",tmp,volleyCount,loginID,computerID);
 			CopyFile2File(fname,userDataBase,false);	// backup for debugging BUT NOT if callback of some kind...
 		}
 	}
@@ -664,11 +664,11 @@ void WriteUserData(time_t curr)
 #ifndef DISCARDTESTING
 		if (filesystemOverride == NORMALFILES &&  (!server || serverRetryOK)  && !documentMode  && !callback)  
 		{
-			sprintf(name,(char*)"TMP/backup-share-%s_%s.bin",loginID,computerID);
+			sprintf(name,(char*)"%s/backup-share-%s_%s.bin",tmp,loginID,computerID);
 			CopyFile2File(name,userDataBase,false);	// backup for debugging
 			if (redo)
 			{
-				sprintf(name,(char*)"TMP/backup%d-share-%s_%s.bin",volleyCount,loginID,computerID);
+				sprintf(name,(char*)"%s/backup%d-share-%s_%s.bin",tmp,volleyCount,loginID,computerID);
 				CopyFile2File(name,userDataBase,false);	// backup for debugging BUT NOT if callback of some kind...
 			}
 		}

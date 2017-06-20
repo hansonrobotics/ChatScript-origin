@@ -43,6 +43,7 @@ bool nosuchbotrestart = false; // restart if no such bot
 char users[100];
 char logs[100];
 char topic[100];
+char tmp[100];
 char buildfiles[100];
 char* derivationSentence[MAX_SENTENCE_LENGTH];
 int derivationLength;
@@ -583,6 +584,7 @@ static void ProcessArgument(char* arg)
 	else if (!strnicmp(arg,(char*)"users=",6 )) strcpy(users,arg+6);
 	else if (!strnicmp(arg,(char*)"logs=",5 )) strcpy(logs,arg+5);
 	else if (!strnicmp(arg,(char*)"topic=",6 )) strcpy(topic,arg+6);
+	else if (!strnicmp(arg,(char*)"tmp=",4 )) strcpy(tmp,arg+4);
     else if (!strnicmp(arg, (char*)"buildfiles=", 11)) strcpy(buildfiles, arg + 11);
     else if (!strnicmp(arg,(char*)"private=",8)) privateParams = arg+8;
 	else if (!stricmp(arg,(char*)"treetagger")) strcpy(treetaggerParams,"1");
@@ -684,7 +686,6 @@ static void ReadConfig()
 unsigned int InitSystem(int argcx, char * argvx[],char* unchangedPath, char* readablePath, char* writeablePath, USERFILESYSTEM* userfiles, DEBUGAPI infn, DEBUGAPI outfn)
 { // this work mostly only happens on first startup, not on a restart
 	strcpy(hostname,(char*)"local");
-	MakeDirectory((char*)"TMP");
 	*sourceInput = 0;
     *buildfiles = 0;
 	*apikey = 0;
@@ -714,6 +715,7 @@ unsigned int InitSystem(int argcx, char * argvx[],char* unchangedPath, char* rea
 	strcpy(users,(char*)"USERS");
 	strcpy(logs,(char*)"LOGS");
 	strcpy(topic,(char*)"TOPIC");
+	strcpy(tmp,(char*)"TMP");
 
 	strcpy(language,(char*)"ENGLISH");
 
@@ -756,6 +758,7 @@ unsigned int InitSystem(int argcx, char * argvx[],char* unchangedPath, char* rea
 
 	ReadConfig();
 	ProcessArguments(argc,argv);
+	MakeDirectory(tmp);
 	if (argumentsSeen) printf("\r\n");
 	argumentsSeen = false;
 

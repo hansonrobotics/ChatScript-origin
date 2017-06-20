@@ -142,6 +142,7 @@ extern bool shortPos;
 extern char users[100];
 extern char logs[100];
 extern char topic[100];
+extern char tmp[100];
 extern char buildfiles[100];
 
 // pending control

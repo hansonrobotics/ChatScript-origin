@@ -1322,7 +1322,9 @@ static void WriteKey(char* word)
 {
 	if (!compiling || spellCheck != NOTE_KEYWORDS || *word == '_' || *word == '\'' || *word == USERVAR_PREFIX || *word == SYSVAR_PREFIX || *word == '@') return;
 	StoreWord(word);
-	FILE* out = FopenUTF8WriteAppend((char*)"TMP/keys.txt");
+    char file[SMALL_WORD_SIZE];
+    sprintf(file,(char*)"%s/keys.txt",tmp);
+	FILE* out = FopenUTF8WriteAppend(file);
 	if (out)
 	{
 		DownHierarchy(MakeMeaning(StoreWord(word)),out,0);
@@ -5028,15 +5030,18 @@ static void WriteDictionaryChange(FILE* dictout, unsigned int build)
 {
 	// Note that topic labels (topic.name) and pattern words  will not get written
 	FILE* in = NULL;
+    char file[SMALL_WORD_SIZE];
 	int layer = 0;
 	if ( build == BUILD0) 
 	{
-		in = FopenReadWritten((char*)"TMP/prebuild0.bin");
+    sprintf(file,(char*)"%s/prebuild0.bin",tmp);
+		in = FopenReadWritten(file);
 		layer = 0;
 	}
 	else if ( build == BUILD1) 
 	{
-		in = FopenReadWritten((char*)"TMP/prebuild1.bin");
+    sprintf(file,(char*)"%s/prebuild1.bin",tmp);
+		in = FopenReadWritten(file);
 		layer = 1;
 	}
 	if (!in)  

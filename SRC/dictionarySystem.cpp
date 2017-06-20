@@ -1109,7 +1109,7 @@ void ShowStats(bool reset)
 void WriteDictDetailsBeforeLayer(int layer)
 {
 	char word[MAX_WORD_SIZE];
-	sprintf(word,(char*)"TMP/prebuild%d.bin",layer);
+	sprintf(word,(char*)"%s/prebuild%d.bin",tmp, layer);
 	FILE* out = FopenBinaryWrite(word); // binary file, no BOM
 	if (out)
 	{
@@ -1137,7 +1137,7 @@ void WriteDictDetailsBeforeLayer(int layer)
 static void ReadDictDetailsBeforeLayer(int layer)
 {
 	char word[MAX_WORD_SIZE];
-	sprintf(word,(char*)"TMP/prebuild%d.bin",layer);
+	sprintf(word,(char*)"%s/prebuild%d.bin",tmp,layer);
 	int oldBOM = BOM;
 	FILE* in = FopenReadWritten(word); // binary file, no BOM
 	if (in)
