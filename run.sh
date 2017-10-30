@@ -7,13 +7,14 @@ BASEDIR=$(dirname $(readlink -f ${BASH_SOURCE[0]}))
 
 show_help() {
 cat << EOF
-Usage: $0 [--local] [--port|-p <Server PORT>] [--users|-u <USERS DIR>] [--logs|-l <LOGS DIR>] [--topic|-t <TOPIC DIR>] [--tmp <TMP DIR>]
+Usage: $0 [--local] [--port|-p <Server PORT>] [--users|-u <USERS DIR>] [--logs|-l <LOGS DIR>] [--topic|-t <TOPIC DIR>] [--tmp <TMP DIR>] [--mongodb <URI>]
   --local       Run in local mode.
   -p, --port    Server port
   -u, --users   Users directory
   -l, --logs    Logs directory
   -t, --topic   Topic directory
   --tmp         TMP directory
+  --mongodb     Mongo DB URI
   -h, --help    Show help
 EOF
 }
@@ -29,6 +30,7 @@ abs_path() {
 }
 
 param=''
+binary=BINARIES/LinuxChatScript64
 while [[ $# > 0 ]]; do
     case "$1" in
         --local)
@@ -67,6 +69,13 @@ while [[ $# > 0 ]]; do
             shift
             shift
             ;;
+        --mongodb)
+            uri=$2
+            param="$param mongo=\"mongodb://$uri ChatScript topic:Logs\""
+            binary=BINARIES/ChatScriptMongo
+            shift
+            shift
+            ;;
         --help|-h)
             show_help
             exit 0
@@ -83,7 +92,7 @@ cd $BASEDIR
 while true;
 do
     echo "Start at $(date)"
-    BINARIES/LinuxChatScript64 $param
+    $binary $param
     echo "ChatScript is crashed. Restarting"
     sleep 1
 done
