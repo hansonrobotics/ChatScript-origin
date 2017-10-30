@@ -17,6 +17,8 @@ WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN 
 
 #ifdef TREETAGGER
 void InitTreeTagger(char* params);
+void MarkChunk();
+bool MatchTag(char* tag,int i);
 #endif
 
 #define MAINLEVEL 1

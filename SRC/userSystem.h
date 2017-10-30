@@ -42,7 +42,7 @@ extern bool serverRetryOK;
 // process user
 void ReadNewUser();
 void ReadUserData();
-void WriteUserData(time_t curr);
+void WriteUserData(time_t curr,bool nobackup);
 char* WriteUserVariables(char* ptr,bool sharefile, bool compiling,char* saveJSON);
 void RecoverUser();
 void CopyUserTopicFile(char* newname);

@@ -123,19 +123,23 @@ bool MarkWordHit(int depth,int ucase,WORDP D, int start,int end)
 		if (!(D->internalBits & TOPIC)) Add2ConceptTopicList(concepts, D, start, end, false); // DOESNT need to be be marked as concept
 		else Add2ConceptTopicList(topics, D, start, end, false);
 	}
-	if (added && ( trace & (TRACE_PREPARE|TRACE_HIERARCHY)  || prepareMode == PREPARE_MODE || showMark) )  
+	if (added && (trace & (TRACE_PREPARE | TRACE_HIERARCHY) || prepareMode == PREPARE_MODE || showMark))
 	{
 		markLength += D->length;
 		if (markLength > MARK_LINE_LIMIT)
 		{
 			markLength = 0;
-			Log(STDTRACELOG,(char*)"\r\n");
-			Log(STDTRACETABLOG,(char*)"");
+			Log(STDTRACELOG, (char*)"\r\n");
+			Log(STDTRACETABLOG, (char*)"");
 		}
-		while (depth-- >= 0) Log((showMark) ? ECHOSTDTRACELOG : STDTRACELOG, (char*)"  ");
-		Log((showMark) ? ECHOSTDTRACELOG : STDTRACELOG,(D->internalBits & TOPIC) ? (char*)"+T%s%s " : (char*)" +%s%s",D->word,ucase ? "^" : "");
-		if (start != end) Log((showMark) ? ECHOSTDTRACELOG : STDTRACELOG,(char*)"(%d-%d)",start,end);
-		Log((showMark) ? ECHOSTDTRACELOG : STDTRACELOG, (char*)"\r\n");
+		if (D->word[1] != '-') // dont show marking of anonymous concepts [ xx yy ] in pattern
+		{
+			while (depth-- >= 0) Log((showMark) ? ECHOSTDTRACELOG : STDTRACELOG, (char*)"  ");
+			Log((showMark) ? ECHOSTDTRACELOG : STDTRACELOG, (D->internalBits & TOPIC) ? (char*)"+T%s%s " : (char*)" +%s%s", D->word, ucase ? "^" : "");
+			if (start != end) Log((showMark) ? ECHOSTDTRACELOG : STDTRACELOG, (char*)"(%d-%d)", start, end);
+			Log((showMark) ? ECHOSTDTRACELOG : STDTRACELOG, (char*)"\r\n");
+			markLength = 0;
+		}
 	}
 	return added;
 }
@@ -441,7 +445,7 @@ void MarkFacts(int depth, int ucase,MEANING M,int start, int end,bool canonical,
 	}
 }
 
-static void HuntMatch(char* word,bool strict,int start, int end, unsigned int& usetrace)
+static void HuntMatch(bool canonical, char* word,bool strict,int start, int end, unsigned int& usetrace)
 {
 	WORDP set[20];
 	WORDP D;
@@ -459,7 +463,7 @@ static void HuntMatch(char* word,bool strict,int start, int end, unsigned int& u
 		chunk[1] = Word2Index(D);
 		wordlist = Stack2Index((char*)chunk);
 
-		if (!(D->systemFlags & PATTERN_WORD) && !(D->properties & ESSENTIAL_POS)) // given no flag reason to use, see if concept member
+		if (!(D->systemFlags & PATTERN_WORD) && !(D->properties & PART_OF_SPEECH)) // given no flag reason to use, see if concept member
 		{
 			FACT* F = GetSubjectHead(D); // is it a part of some concept? Or a direct wor
 			while (F)
@@ -471,7 +475,7 @@ static void HuntMatch(char* word,bool strict,int start, int end, unsigned int& u
 		}
 		trace = (D->subjectHead || D->systemFlags & PATTERN_WORD || D->properties & PART_OF_SPEECH)  ? usetrace : 0; // being a subject head means belongs to some set. being a marked word means used as a keyword
 		if ((*D->word == 'I' || *D->word == 'i'  ) && !D->word[1]){;} // dont follow out this I or i word
-		else  MarkFacts(0, 0,MakeMeaning(D),start,end,false,true);
+		else  MarkFacts(0, 0,MakeMeaning(D),start,end, canonical,true);
 	}
 	trace = (modifiedTrace) ? modifiedTraceVal : oldtrace;
 }
@@ -496,6 +500,14 @@ static void SetSequenceStamp() //   mark words in sequence, original and canonic
 	//   consider all sets of up to 5-in-a-row 
 	for (int i = startSentence; i <= (int)endSentence; ++i)
 	{
+		while (wordlist)
+		{
+			int* chunk = (int*)Index2Stack(wordlist);
+			wordlist = chunk[0];
+			WORDP D = Index2Word(chunk[1]);
+			D->internalBits ^= BEEN_HERE;
+		}
+
 		if (!IsAlphaUTF8OrDigit(*wordStarts[i]) ) continue; // we only composite words, not punctuation or quoted stuff
 		if (IsDate(wordStarts[i])) continue;// 1 word date, caught later
 		// check for dates
@@ -516,9 +528,9 @@ static void SetSequenceStamp() //   mark words in sequence, original and canonic
 			i = end;
 			continue;
 		}
-        else if ((i + 4) <= wordCount && IsDigitWord(wordStarts[i]) && // multiword date
-            IsDigitWord(wordStarts[i + 2]) &&
-            IsDigitWord(wordStarts[i + 4]))
+        else if ((i + 4) <= wordCount && IsDigitWord(wordStarts[i], numberStyle) && // multiword date
+            IsDigitWord(wordStarts[i + 2], numberStyle) &&
+            IsDigitWord(wordStarts[i + 4], numberStyle))
         {
             int val = atoi(wordStarts[i + 2]); // must be legal 1 - 31
 
@@ -552,9 +564,9 @@ static void SetSequenceStamp() //   mark words in sequence, original and canonic
 		
 		// scan interesting initial words (spaced, underscored, capitalized) but we need to recognize bots in lower case, so try all cases here as well
 		NextInferMark();
-		HuntMatch(rawbuffer,(tokenControl & STRICT_CASING) ? true : false,i,i,usetrace);
-		HuntMatch(canonbuffer,(tokenControl & STRICT_CASING) ? true : false,i,i,usetrace);
-		HuntMatch(originalbuffer,(tokenControl & STRICT_CASING) ? true : false,i,i,usetrace);
+		HuntMatch(false,rawbuffer,(tokenControl & STRICT_CASING) ? true : false,i,i,usetrace);
+		HuntMatch(true,canonbuffer,(tokenControl & STRICT_CASING) ? true : false,i,i,usetrace);
+		HuntMatch(false,originalbuffer,(tokenControl & STRICT_CASING) ? true : false,i,i,usetrace);
 
 		//   fan out for addon pieces
 		int k = 0;
@@ -579,9 +591,9 @@ static void SetSequenceStamp() //   mark words in sequence, original and canonic
 
 			// we  composite anything, not just words, in case they made a typo
 			NextInferMark();
-			HuntMatch(rawbuffer,(tokenControl & STRICT_CASING) ? true : false,i,i+k,usetrace);
-			HuntMatch(canonbuffer,(tokenControl & STRICT_CASING) ? true : false,i,i+k,usetrace);
-			HuntMatch(originalbuffer,(tokenControl & STRICT_CASING) ? true : false,i,i+k,usetrace);
+			HuntMatch(false,rawbuffer,(tokenControl & STRICT_CASING) ? true : false,i,i+k,usetrace);
+			HuntMatch(true,canonbuffer,(tokenControl & STRICT_CASING) ? true : false,i,i+k,usetrace);
+			HuntMatch(false,originalbuffer,(tokenControl & STRICT_CASING) ? true : false,i,i+k,usetrace);
 			if (logCount != logbasecount && usetrace)  Log(STDTRACELOG,(char*)"\r\n"); // if we logged something, separate
 			if (++index >= SEQUENCE_LIMIT) break; //   up thru 5 words in a phrase
 			logbasecount = logCount;
@@ -648,6 +660,10 @@ static void SetSequenceStamp() //   mark words in sequence, original and canonic
 		WORDP D = Index2Word(chunk[1]);
 		D->internalBits ^= BEEN_HERE;
 	}
+
+#ifdef TREETAGGER
+	MarkChunk();
+#endif
 
 	trace = (modifiedTrace) ? modifiedTraceVal : oldtrace;
 	ReleaseStack(rawbuffer); // short term
@@ -759,7 +775,20 @@ void MarkAllImpliedWords()
 				if (*wordStarts[i] == '#') MarkFacts(0, ucase,MakeMeaning(StoreWord("~hashtag_label")),i,i);
 			}
 		}
-	
+
+		// detect acronym
+		char* ptrx = wordStarts[i];
+		while (*++ptrx)
+		{
+			if (!IsUpperCase(*ptrx) && *ptrx != '&' ) break;
+		}
+		if (!*ptrx && wordStarts[i][1])
+		{
+			bool ok = true;
+			if (wordStarts[i - 1] && IsUpperCase(wordStarts[i - 1][0])) ok = false;
+			if (wordStarts[i + 1] && IsUpperCase(wordStarts[i + 1][0])) ok = false;
+			if (ok) MarkFacts(0, ucase, MakeMeaning(StoreWord("~capacronym")), i, i);
+		}
 		// mark general number property -- (datezone can be marked noun_proper_singular) // adjective noun January 18, 2017 9:00 am
 			
 		if (finalPosValues[i] & (ADJECTIVE_NOUN | NOUN_PROPER_SINGULAR))  // a date can become an idiom, marking it as a proper noun and not a number
@@ -770,10 +799,11 @@ void MarkAllImpliedWords()
 		{
 			NextInferMark();
 			MarkFacts(0, true, MakeMeaning(FindWord((char*)"~dateinfo")), i, i, false, false);
+			MarkFacts(0, true, MakeMeaning(FindWord((char*)"~formatteddate")), i, i, false, false);
 		}
 
-		int number = IsNumber(wordStarts[i]);
-		if (number)
+		int number = IsNumber(wordStarts[i], numberStyle);
+		if (number && number != NOT_A_NUMBER)
 		{
 			if (!wordCanonical[i][1] || !wordCanonical[i][2]) // 2 digit or 1 digit
 			{
@@ -795,12 +825,12 @@ void MarkAllImpliedWords()
 			}
 
 			//   handle finding fractions as 3 token sequence  mark as placenumber 
-			if (i < wordCount && *wordStarts[i+1] == '/' && wordStarts[i+1][1] == 0 && IsDigitWord(wordStarts[i+2]) )
+			if (i < wordCount && *wordStarts[i+1] == '/' && wordStarts[i+1][1] == 0 && IsDigitWord(wordStarts[i+2], numberStyle) )
 			{
 				MarkFacts(0, 0,MakeMeaning(Dplacenumber),i,i);
 				if (trace & TRACE_PREPARE || prepareMode == PREPARE_MODE) Log(STDTRACELOG,(char*)"=%s/%s \r\n",wordStarts[i],wordStarts[i+2]);
 			}
-			else if (IsPlaceNumber(wordStarts[i])) // finalPosValues[i] & (NOUN_NUMBER | ADJECTIVE_NUMBER) 
+			else if (IsPlaceNumber(wordStarts[i],numberStyle)) // finalPosValues[i] & (NOUN_NUMBER | ADJECTIVE_NUMBER) 
 			{
 				MarkFacts(0,0,MakeMeaning(Dplacenumber),i,i);  
 			}
@@ -831,7 +861,7 @@ void MarkAllImpliedWords()
 				}
 			}
 		}
-		else if (IsNumber(wordStarts[i]) == WORD_NUMBER)
+		else if (IsNumber(wordStarts[i], numberStyle) == WORD_NUMBER)
 		{
 			MarkFacts(0, 0, Mnumber, i, i);
 		}
@@ -938,21 +968,11 @@ void MarkAllImpliedWords()
 			unsigned int k;
 			for (k = 0; k < n; ++k) strcpy(words[k],GetBurstWord(k)); // need local copy since burstwords might be called again..
 
-            for (unsigned int k = 0; k < n; ++k)
+            for (unsigned int k = n-1; k < n; ++k) // just last word since common form  "bank teller"
             {
   				unsigned int prior = (k == (n-1)) ? i : (i-1); //   -1  marks its word match INSIDE a string before the last word, allow it to see last word still
-                E = FindWord(words[k],0,PRIMARY_CASE_ALLOWED); 
-                if (E)
-				{
-					if (!(E->properties & (NOUN_PROPER_SINGULAR|NOUN_PROPER_PLURAL))) StdMark(MakeMeaning(E),i,prior,false);
-					else MarkFacts(0, (E->internalBits & UPPERCASE_HASH) ? true : false,MakeMeaning(E),i,prior);
-				}
-                E = FindWord(words[k],0,SECONDARY_CASE_ALLOWED); 
-				if (E)
-				{
-					if (!(E->properties & (NOUN_PROPER_SINGULAR|NOUN_PROPER_PLURAL))) StdMark(MakeMeaning(E),i,prior,false);
-					else MarkFacts(0, ucase,MakeMeaning(E),i,prior);
-				}
+                E = FindWord(words[k],0,LOWERCASE_LOOKUP); 
+                if (E) StdMark(MakeMeaning(E),i,prior,false);
            }
         }
 

@@ -8,7 +8,8 @@
 #include "..\..\src\common.h"
 #define MAX_LOADSTRING 100
 static char* computerName = "Rose";
-static 	char* pathname;
+static 	char* fromJudgepathname;
+static 	char* toJudgepathname;
 char inputMessage[30000];
 char* msgPtr = inputMessage;
 char response[30000];
@@ -72,7 +73,7 @@ static char specialChar[] =
 '~',
 '`',
 '&',
-'\n',
+'\n', // end of input from judge
 ':',
 ';',
 '?',
@@ -149,9 +150,9 @@ void InitChatbot(char* name)
 	in = fopen("sequence", "rb");
 	if (in)
 	{
-		fgets(buffer,1000,in);
+		// fgets(buffer,1000,in);
 		fclose(in);
-		sequence = atoi(buffer);
+		// sequence = atoi(buffer);
 	}
 	
 	sprintf(buffer,"judge%d",judgeid);
@@ -168,7 +169,7 @@ void Stall(int ms)
 	DWORD start = GetTickCount();
 	while (1)
 	{
-		int stall = GetTickCount()- start;
+		int stall = GetTickCount() - start;
 		if (stall > ms) break;
 	}
 }
@@ -177,18 +178,19 @@ bool SendChar(char c,char next,int inputCount)
 {
 	static char lastChar = 0;
 	bool answer = true;
+	lastChar = c;
+
 	int delay;
-	if ( c == ' ') delay = spaceDelays[delayIndex++];
-	else if ( c == '.' || c == ',') delay = spaceDelays[delayIndex];
-	else if ( c == '-') delay = 300;
+	if (c == ' ') delay = spaceDelays[delayIndex++];
+	else if (c == '.' || c == ',') delay = spaceDelays[delayIndex];
+	else if (c == '-') delay = 300;
 	else  delay = spaceDelays[delayIndex++];
 	delay = (delay * 2) / 3; // speed it up a bit
 	if (lastChar == '.' || lastChar == ',') delay += spaceDelays[delayIndex] / 5;
-	if ( (inputCount % 7) == 0) delay += spaceDelays[delayIndex] / 2; 
-	lastChar = c;
+	if ((inputCount % 7) == 0) delay += spaceDelays[delayIndex] / 2;
 	if (delayIndex == 30) delayIndex = 0;
 	delay = (4 * delay) / 5;	// 20% faster
-	Stall(delay);// uneven typing delays
+	// Stall(delay);// uneven typing delays
 
 	int returnValue; 
 	char word[1000];
@@ -197,10 +199,8 @@ bool SendChar(char c,char next,int inputCount)
 	{
 		if (c == specialChar[i]) 
 		{
-			sprintf(word,"%s\\%010d.%s.other",pathname,sequence++,specialName[i]);
+			sprintf(word,"%s\\%d.%s.other",toJudgepathname,sequence++,specialName[i]);
 			returnValue = CreateDirectory(word, NULL);
-			// hesitate after sentences conjoined
-			if ((c == '.' || c == '!' || c == '?') && next == ' ') Stall(200);
 			return answer;
 		}
 		++i;
@@ -212,7 +212,7 @@ bool SendChar(char c,char next,int inputCount)
 	else if ( c >= '0' && c <= '9');
 	else return answer; // a nonalpha char we dont care about
 
-	sprintf(word,"%s\\%010d.%c.other",pathname,sequence++,c);
+	sprintf(word,"%s\\%d.%c.other",toJudgepathname,sequence++,c);
 	returnValue = CreateDirectory(word, NULL);
 
 	return answer;
@@ -223,7 +223,7 @@ char ReadChar()
 	// find filename of lowest value from judge
 	HANDLE fh;
 	char	 path[MAX_PATH];
-	sprintf(path,"%s/*",pathname);
+	sprintf(path,"%s/*",fromJudgepathname);
 retry:
 
 	// read all file names to find the least one
@@ -231,10 +231,11 @@ retry:
 	_WIN32_FIND_DATAA* fd = (_WIN32_FIND_DATAA*)data;
 	fh = FindFirstFile((LPCSTR) path,fd);
 	char bestName[1000];
-	strcpy(bestName,"z"); // higher than any sequence number
 	char badname[1000];
-	strcpy(badname,"z");
+	*badname = 'z';
+	strcpy(bestName,"z"); // higher than any sequence number
 	char name[1000];
+	int lastid = 1000000;
 	if (fh != INVALID_HANDLE_VALUE)
 	{
 		int n = 0;
@@ -243,19 +244,17 @@ retry:
 			strcpy(name,fd->cFileName);
 			char* at = strchr(name,'.'); // end of sequence
 			if (!at || at == name) continue;
+			int index = atoi(name);	// what is sequence id
 			char* judge = strchr(at+1,'.'); // end of char 
 			if (!judge) continue;
 
 			if (stricmp(judge+1,"judge")) continue;	 // wrong player
 
-			// this is a judge file-- is it old or new and if new, is it the earliest one
-			// < means name1 less than name2
-			if ( *lastName != 'z' && strcmp(name,lastName) <= 0)   // shouldnt be happening
+			if (index < lastid)
 			{
-				strcpy(badname,name);
-				break;
+				strcpy(bestName, name); // found earlier name
+				lastid = index;
 			}
-			else if ( strcmp(name,bestName) < 0) strcpy(bestName,name); // found earlier name
 		}
 		while(FindNextFile(fh,fd));
 		FindClose(fh);
@@ -263,7 +262,7 @@ retry:
 
 	if (*badname != 'z') // did see an out of sequence character from before? Get rid of it
 	{
-		sprintf(path,"%s/%s",pathname,badname); // failed to delete before?
+		sprintf(path,"%s/%s",fromJudgepathname,badname); // failed to delete before?
 		int ok = RemoveDirectory(path);
 		if (!ok) RemoveDirectory(path); // try again
 		goto retry;
@@ -276,14 +275,14 @@ retry:
 
 	// found a character
 	strcpy(lastName,bestName);	// prevent repeat even if delete not yet happened
-	sprintf(path,"%s/%s",pathname,bestName);
+	sprintf(path,"%s/%s",fromJudgepathname,bestName);
 	int ok = RemoveDirectory(path);
 	if (!ok) RemoveDirectory(path); // try again
 	*period = 0;
 	int i = 0;
 	while (specialName[i])
 	{
-		if (!stricmp(at,specialName[i])) return specialChar[i];
+		if (!stricmp(at,specialName[i])) return specialChar[i]; // case insensitive
 		++i;
 	}
 	return *at;
@@ -311,7 +310,7 @@ VOID CALLBACK TimeCheck( HWND hwnd, UINT uMsg,UINT_PTR idEvent,DWORD dwTime) // 
 		{
 			if ( msgPtr != inputMessage) *--msgPtr = 0;
 		}
-		else if ( c == '\n' || c == '\r') // prepare for NEW input and get response
+		else if ( c == '\n' ) // prepare for NEW input and get response
 		{
 			if (msgPtr == inputMessage) continue;	// ignore empty lines
 			*msgPtr = 0;
@@ -384,15 +383,15 @@ VOID CALLBACK TimeCheck( HWND hwnd, UINT uMsg,UINT_PTR idEvent,DWORD dwTime) // 
 VOID CALLBACK StartCheck( HWND hwnd, UINT uMsg,UINT_PTR idEvent,DWORD dwTime) 
 {
 	KillTimer(hwnd,startid);
-	static bool init = false;
-	if (!init)
+	static bool inited = false;
+	if (!inited)
 	{
-		init = true;
+		inited = true;
 		InitChatbot(computerName);
 		RECT rect;
 		GetClientRect(hwnd, &rect);
 		InvalidateRect(hwnd, &rect, TRUE);
-		strcpy(response,"Chatbot initialization complete");
+		strcpy(response,"Chatbot initialization complete -- ready to talk to Judge!");
 		UINT id = SetTimer ( hwnd, 1, 50, TimeCheck ); // 50 ms timeouts
 	}
 }
@@ -434,17 +433,18 @@ int APIENTRY _tWinMain(HINSTANCE hInstance,
 	hAccelTable = LoadAccelerators(hInstance, MAKEINTRESOURCE(IDC_LOEBNER_CHATBOT));
 	strcpy(lastName,"z");
 	BROWSEINFO bi = { 0 };
-    bi.lpszTitle = _T("Pick a Chatbot Communication Directory ");
+
+    bi.lpszTitle = _T("Pick Directory From Judge ");
     LPITEMIDLIST pidl = SHBrowseForFolder ( &bi );
     TCHAR path[MAX_PATH];
 	path[0] = 0;
-	pathname = path;
+	fromJudgepathname = path;
     if ( pidl != 0 )
     {
         // get the name of the folder
         if ( SHGetPathFromIDList ( pidl, path ) )
         {
-            printf ( "Selected Folder: %s\n", pathname );
+            printf ( "Selected From Judge Folder: %s\n", fromJudgepathname );
         }
 
         // free memory used
@@ -456,13 +456,35 @@ int APIENTRY _tWinMain(HINSTANCE hInstance,
         }
     }
 	
+	bi.lpszTitle = _T("Pick Directory To Judge ");
+	LPITEMIDLIST pidl1 = SHBrowseForFolder(&bi);
+	TCHAR pathOutput[MAX_PATH];
+	pathOutput[0] = 0;
+	toJudgepathname = pathOutput;
+	if (pidl1 != 0)
+	{
+		// get the name of the folder
+		if (SHGetPathFromIDList(pidl1, pathOutput))
+		{
+			printf("Selected To Judge Folder: %s\n", toJudgepathname);
+		}
+
+		// free memory used
+		IMalloc * imalloc = 0;
+		if (SUCCEEDED(SHGetMalloc(&imalloc)))
+		{
+			imalloc->Free(pidl1);
+			imalloc->Release();
+		}
+	}
+
 	hwnd = FindWindow(szWindowClass,NULL);
 	RECT rect;
 	GetClientRect(hwnd, &rect);
 	InvalidateRect(hwnd, &rect, TRUE);
 
 	startid = SetTimer ( hwnd, 1, 50, StartCheck ); 
-	strcpy(response,"Chatbot beginning initialization");
+	strcpy(response,"Chatbot beginning initialization -- NOT READY TO TALK TO JUDGE!");
 
 	// Main message loop:
 	while (GetMessage(&msg, NULL, 0, 0))

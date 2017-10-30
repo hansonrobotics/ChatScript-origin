@@ -369,6 +369,7 @@ char* GetLabelledRule(int& topicid, char* label,char* notdisabled,bool &fulllabe
 		if (!topicid) topicid = currentTopicID;
 		else crosstopic = true;
 		label = dot+1; // the label 
+		*dot = '.';
 	}
 
 	return FindNextLabel(topicid,label, GetTopicData(topicid),id,!*notdisabled);
@@ -536,7 +537,7 @@ unsigned int FindTopicIDByName(char* name,bool exact)
 	}
 	else MakeLowerCopy((*name == '~') ? word : (word+1),name);
 
-	WORDP D = FindWord(word);
+	WORDP D = FindWord(word,0,LOWERCASE_LOOKUP);
 	duplicateCount = 0;
 	while (D && D->internalBits & TOPIC) 
 	{
@@ -1646,7 +1647,7 @@ FunctionResult PerformTopic(int active,char* buffer,char* rule, unsigned int id)
 	if (!limit)
 	{
 		SetUserVariable((char*)"$$topic_retry_limit_exceeded", "true");
-		ReportBug((char*)"Exceeded retry topic limit");
+		ReportBug((char*)"Exceeded retry topic limit of %s ", *val ? val : "30");
 	}
 	result = (FunctionResult)(result & (-1 ^ ENDTOPIC_BIT)); // dont propogate 
 	if (result & FAILTOPIC_BIT) result = FAILRULE_BIT; // downgrade
@@ -1778,37 +1779,41 @@ bool ReadUserTopics()
     volleyCount = atoi(word);
 
     ptr = ReadCompiledWord(ptr,word);  //   rejoinder topic name
-	if (*word == '0') inputRejoinderTopic = inputRejoinderRuleID = NO_REJOINDER; 
-    else
+	if (*word == '0') inputRejoinderTopic = inputRejoinderRuleID = NO_REJOINDER;
+	else
 	{
+		char ruleid[MAX_WORD_SIZE];
 		inputRejoinderTopic  = FindTopicIDByName(word,true);
-		ptr = ReadCompiledWord(ptr,word); //  rejoinder location
-		inputRejoinderRuleID = ((int)FullDecode(word)); 
+		ptr = ReadCompiledWord(ptr, ruleid); //  rejoinder location
+		inputRejoinderRuleID = ((int)FullDecode(ruleid));
 		// prove topic didnt change (in case of system topic or one we didnt write out)
 		int checksum;
-		ptr = ReadCompiledWord(ptr,word); 
-		checksum = (int) FullDecode(word); // topic checksum
+		ptr = ReadCompiledWord(ptr, ruleid);
+		checksum = (int) FullDecode(ruleid); // topic checksum
 		if (!inputRejoinderTopic) inputRejoinderTopic = inputRejoinderRuleID = NO_REJOINDER;  // topic changed
 		if (checksum != TI(inputRejoinderTopic)->topicChecksum && TI(inputRejoinderTopic)->topicChecksum && !(GetTopicFlags(inputRejoinderTopic) & TOPIC_SAFE)) inputRejoinderTopic = inputRejoinderRuleID = NO_REJOINDER;  // topic changed
 	}
-	bool badLayer1 = false;
-	if (*ptr == 'D' && ptr[1] == 'Y') // we have more modern data
+	if (trace & TRACE_USER)
 	{
-		ptr += 3;	// skip dy
-		ptr = ReadCompiledWord(ptr,word);
-		int lev0topics = atoi(word);
-		if (lev0topics != numberOfTopicsInLayer[LAYER_0]) {} // things have changed. after :build there are a different number of topics.
-		ptr = ReadCompiledWord(ptr,word);
-		int lev1topics = atoi(word);
-		ReadCompiledWord(ptr,word);
-		if (lev1topics != numberOfTopicsInLayer[LAYER_1]) {} // things have changed. after :build there are a different number of topics.
-		ptr = ReadCompiledWord(ptr,word);
-		int lev2topics = atoi(word);
-		ReadCompiledWord(ptr,word);
-		ptr = ReadCompiledWord(ptr,word);
-		if (*word != '0' || word[1]) LoadLayer(LAYER_BOOT,word,BUILD2); // resume existing layer 2
-		if (lev2topics != numberOfTopicsInLayer[LAYER_BOOT]) {}  // things have changed. after :build there are a different number of topics.
+		if (inputRejoinderTopic == NO_REJOINDER) Log(STDTRACELOG, (char*)"No rejoinder pending\r\n");
+		else Log(STDTRACELOG, (char*)"\r\nPending Rejoinder %s.%d.%d\r\n", word, TOPLEVELID(inputRejoinderRuleID), REJOINDERID(inputRejoinderRuleID));
 	}
+
+	bool badLayer1 = false;
+	ptr += 3;	// skip dy which indicates more modern data
+	ptr = ReadCompiledWord(ptr,word);
+	int lev0topics = atoi(word);
+	if (lev0topics != numberOfTopicsInLayer[LAYER_0]) {} // things have changed. after :build there are a different number of topics.
+	ptr = ReadCompiledWord(ptr,word);
+	int lev1topics = atoi(word);
+	ReadCompiledWord(ptr,word);
+	if (lev1topics != numberOfTopicsInLayer[LAYER_1]) {} // things have changed. after :build there are a different number of topics.
+	ptr = ReadCompiledWord(ptr,word);
+	int lev2topics = atoi(word);
+	ReadCompiledWord(ptr,word);
+	ptr = ReadCompiledWord(ptr,word);
+	if (*word != '0' || word[1]) LoadLayer(LAYER_BOOT,word,BUILD2); // resume existing layer 2
+	if (lev2topics != numberOfTopicsInLayer[LAYER_BOOT]) {}  // things have changed. after :build there are a different number of topics.
 
     //   pending stack
     ReadALine(readBuffer,0);
@@ -2508,7 +2513,7 @@ void InitKeywords(const char* fname,const char* layer,unsigned int build,bool di
 				AddInternalFlag(set,HAS_EXCLUDE);
 			}
 			U = ReadMeaning(p1,true,true);
-
+			if (!U) continue; // bug fix for "Buchon Fris " ending in space incorrectly
 			if (Meaning2Index(U)) U = GetMaster(U); // use master if given specific meaning
 				
 			WORDP D = Meaning2Word(U);
@@ -2523,7 +2528,7 @@ void InitKeywords(const char* fname,const char* layer,unsigned int build,bool di
 				if (type & NOUN && *p1 != '~' && !(D->properties & (NOUN_SINGULAR|NOUN_PLURAL|NOUN_PROPER_SINGULAR|NOUN_PROPER_PLURAL|NOUN_NUMBER)))
 				{
 					if (D->internalBits & UPPERCASE_HASH) AddProperty(D,NOUN_PROPER_SINGULAR);
-					else if (IsNumber(word)) AddProperty(D,NOUN_NUMBER);
+					else if (IsNumber(word) != NOT_A_NUMBER) AddProperty(D,NOUN_NUMBER);
 					else AddProperty(D,NOUN_SINGULAR);
 				}
 			}

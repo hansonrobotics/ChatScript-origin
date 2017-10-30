@@ -1,0 +1,942 @@
+\documentclass[]{article}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+\else % if luatex or xelatex
+  \ifxetex
+    \usepackage{mathspec}
+  \else
+    \usepackage{fontspec}
+  \fi
+  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+\fi
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+% use microtype if available
+\IfFileExists{microtype.sty}{%
+\usepackage[]{microtype}
+\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\PassOptionsToPackage{hyphens}{url} % url is loaded by hyperref
+\usepackage[unicode=true]{hyperref}
+\hypersetup{
+            pdfborder={0 0 0},
+            breaklinks=true}
+\urlstyle{same}  % don't use monospace font for urls
+\IfFileExists{parskip.sty}{%
+\usepackage{parskip}
+}{% else
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{0}
+% Redefines (sub)paragraphs to behave more like sections
+\ifx\paragraph\undefined\else
+\let\oldparagraph\paragraph
+\renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+\let\oldsubparagraph\subparagraph
+\renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+
+% set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+
+
+\date{}
+
+\begin{document}
+
+\section{ChatScript Tutorial}\label{chatscript-tutorial}
+
+\begin{quote}
+Copyright 2011 By Erel Segal Revised 2016 by Wilcox
+\end{quote}
+
+This tutorial will show you how to use ChatScript for building a simple
+but useful chatbot - one that can help a human plan a travel.
+
+First download ChatScript, read the manual, go through the overview, and
+make sure you can chat with the default bot about its childhood.
+
+Now, in order to build a new chat-script from scratch: Create a folder
+called TEST inside the RAWDATA folder. Create an empty file named
+\texttt{tutorial.top}, and put it inside this TEST folder.
+
+Copy the file \texttt{RAWDATA/filesHarry.txt} that comes with the zip
+file into a new file \texttt{RAWDATA/filesmine.txt}.
+
+In \texttt{filesmine.txt}, insert a reference to your newly created file
+and revise the reference to HARRY. \texttt{filesmine.txt} looks like
+this:
+
+\begin{verbatim}
+RAWDATA/HARRY/simplecontrol.top # default bot control
+RAWDATA/TEST/tutorial.top # tutorial bot data
+\end{verbatim}
+
+From now on, we will work with the file \texttt{tutorial.top}.
+
+NOTE: This tutorial will cover only a small part of ChatScript's
+features - only those features needed for building our traveling-agent
+bot. You can find many more features in the documentation.
+
+\section{Contents}\label{contents}
+
+\begin{itemize}
+\tightlist
+\item
+  \href{ChatScript-Tutorial-md\#speaking-topic--t}{Speaking (topic: ,
+  t:)}
+\item
+  \href{ChatScript-Tutorial.md\#saying-more-keep-random-selection--repeat}{Saying
+  more (\^{}keep, random selection {[}{]}, \^{}repeat)}
+\item
+  \href{ChatScript-Tutorial.md\#listening-u-reuse}{Listening (u:,
+  \^{}reuse)}
+\item
+  \href{ChatScript-Tutorial.md\#short-term-memory--_}{Short-term memory
+  (* \_)}
+\item
+  \href{ChatScript-Tutorial.md\#long-term-memory-}{Long-term memory
+  (\$)}
+\item
+  \href{ChatScript-Tutorial.md\#dialog-management-conditions}{Dialog
+  Management (conditions)}
+\item
+  \href{ChatScript-Tutorial.md\#implicit-confirmations-respond}{Implicit
+  Confirmations (\^{}respond)}
+\item
+  \href{ChatScript-Tutorial.md\#explicit-confirmation-rejoinders-a-b-c-}{Explicit
+  Confirmation (rejoinders: a: b: c:\ldots{})}
+\item
+  \href{ChatScript-Tutorial.md\#knowledge-createfact-table}{Knowledge
+  (\^{}createfact, table:)}
+\end{itemize}
+
+\subsection{\texorpdfstring{Speaking (\texttt{topic:} ,
+\texttt{t:})}{Speaking (topic: , t:)}}\label{speaking-topic-t}
+
+The simplest possible chat-script should include a topic and a sentence
+to say, for example:
+
+\begin{verbatim}
+topic: ~introductions []
+
+t: Hello, talk to me!
+\end{verbatim}
+
+Where:
+
+\begin{itemize}
+\item
+  The keyword topic: defines a topic for conversation. We called our
+  topic \texttt{\textasciitilde{}introductions} (topic names always
+  start with \texttt{\textasciitilde{}}).
+\item
+  The keyword \texttt{t:} defines a sentence to say within a topic (it's
+  called a ``gambit'', as the bot says it without waiting for our
+  input).
+\end{itemize}
+
+Put this text in \texttt{tutorial.top}. Then, at the client's prompt,
+type \texttt{:build\ mine}. You should see something like this:
+
+\begin{verbatim}
+ >:build mine
+ 
+ ----Reading file simplecontrol.top
+ Reading outputmacro: ^harry
+ Reading outputmacro: ^georgia
+ Reading table tbl:defaultbot
+ Reading topic ~control
+ Reading topic ~alternate_control
+ 
+ ----Reading file tutorial.top
+ Reading topic ~introductions
+ No errors or warnings in build
+ Read 302,955 Dictionary entries
+ Read 304,588 Dictionary facts
+ Read 110,851 Build0 facts
+ Read 1 Build1 facts
+ Concept sets: 1421
+ Free space: 123,252,280 bytes FreeFacts: 4,584,560
+ 
+ Hello, talk to me!
+ >
+\end{verbatim}
+
+Chatting with this bot results in a dialog such as this:
+
+\begin{verbatim}
+
+  Hello, talk to me!
+  
+  >hi
+  I don't know what to say.
+  
+  >why?
+  I don't know what to say.
+ 
+\end{verbatim}
+
+The bot just says what we told it to say, and then stuck, as it does not
+have anything else to say.
+
+If you are tired of speaking with the bot, you can exit the client using
+the \texttt{:quit} command.
+
+\subsection{\texorpdfstring{Saying more (\texttt{\^{}keep}, random
+selection \texttt{{[}{]}},
+\texttt{\^{}repeat})}{Saying more (\^{}keep, random selection {[}{]}, \^{}repeat)}}\label{saying-more-keep-random-selection-repeat}
+
+Let's make our bot a bit more interesting:
+
+\begin{verbatim}
+topic: ~introductions []
+
+t: ^keep() [Hello] [Hi] [Hey], [talk] [speak] [say something] to me!
+\end{verbatim}
+
+Here:
+
+\begin{itemize}
+\item
+  We called the \texttt{\^{}keep} function, which tells the bot not to
+  erase the rule after it is used (normally, rules are used only once
+  and then discarded).
+\item
+  We also added some options in brackets, from which the bot may select
+  at random. In any continuous sequence of bracketed phrases, the bot
+  may select one at random.
+\end{itemize}
+
+Building this chatbot will result in a dialog such as this:
+
+\begin{verbatim}
+
+  Hello, say something to me!
+
+  >hi
+  Hey, say something to me!
+
+  >what
+  Hey, talk to me!
+
+  >why?
+   Hello, speak to me!
+
+  >who
+  Hi, talk to me!
+
+  >abc
+  I don't know what to say.
+
+  >def
+  I don't know what to say.
+\end{verbatim}
+
+The bot tries some random combinations from our output pattern, and then
+gets stuck again as it starts to repeat itself. A bot normally doesn't
+like to repeat itself, except when we tell it explicitly using the
+\texttt{\^{}repeat()} macro:
+
+\begin{verbatim}
+topic: ~introductions []
+
+t: ^keep() ^repeat() [Hello] [Hi] [Hey], [talk] [speak] [say something] to me!
+\end{verbatim}
+
+With this bot we can chat forever.
+
+\subsection{\texorpdfstring{Listening (\texttt{u:},
+\texttt{\^{}reuse})}{Listening (u:, \^{}reuse)}}\label{listening-u-reuse}
+
+Our previous bots could only talk - they did not listen to us. Now let's
+build a bot that listens and reacts to what we say:
+
+\begin{verbatim}
+topic: ~introductions []
+
+t: [Hello] [Hi] [Hey], [talk] [speak] [say something] to me!
+
+u: (what are you) ^keep() ^repeat() I am a bot.
+
+u: (where do you live) ^keep() ^repeat() I live on your computer.
+
+u: ([what where]) ^keep() ^repeat() Good question.
+\end{verbatim}
+
+Here:
+
+\begin{itemize}
+\tightlist
+\item
+  The \texttt{u:} keyword tells the bot to match the user input against
+  the pattern given in parenthesis.
+\item
+  Brackets \texttt{{[}} \texttt{{]}} inside the pattern mean
+  disjunction, so the third line means ``If there is `what' or `where'
+  anywhere in the user's input, say''Good question``.
+\end{itemize}
+
+Here is a possible dialog with this bot;
+
+\begin{verbatim}
+
+  Hello, say something to me!
+
+  >hi
+  I don't know what to say.
+
+  >What are you?
+  I am a bot.
+
+  >Tell me where do you live.
+  I live on your computer.
+
+  >What is the time?
+  Good question.
+
+  >why?
+  I don't know what to say.
+
+  >Remind me where did you live please.
+  I live on your computer.
+\end{verbatim}
+
+The bot selects the first line that generates output, prints the output,
+and stops matching (conclusion: order your patterns from the more
+specific to the more general). If it doesn't find any match, it just
+replies with the default \emph{I don't know what to say}.
+
+Note that the match is case-insensitive (`what' matches `What'), and
+uses canonical forms of verbs and nouns (`do' matches `did'). The engine
+uses a POS tagger to detect nouns, verbs and other types of words, and
+convert them to canonical form.
+
+If we want an exact match, we can use an apostrophe, for example, if we
+replace the ``where do you live'' line with this line:
+
+\begin{verbatim}
+u: (Where 'do you live) ^keep() ^repeat() I live on your computer.
+\end{verbatim}
+
+we will get this dialog:
+
+\begin{verbatim}
+
+  Hey, speak to me!
+
+  >where do you live
+  I live on your computer.
+
+  >where did you live
+  Good question.
+\end{verbatim}
+
+If we use a non-canonical form, it will match only that exact form, even
+if we don't use an apostrophe, so the patterns ``(Where 'did you live)''
+and ``(Where did you live)'' will both match only that exact phrase, and
+not ``where do you live''.
+
+What if we want to use a totally different input pattern, but still get
+the same output? We can, of course, repeat the same line with a
+different output, but we can also \^{}reuse:
+
+\begin{verbatim}
+topic: ~introductions keep repeat []
+
+t: HI () [Hello] [Hi] [Hey], [talk] [speak] [say something] to me!
+
+u: WHAT (what are you) I am a bot.
+
+u: (tell me about yourself) ^reuse(WHAT) ^reuse(HI)
+
+u: (where do you live) I live on your computer.
+
+u: ([what where]) good question.
+\end{verbatim}
+
+Here:
+
+\begin{itemize}
+\tightlist
+\item
+  we moved \texttt{keep} and \texttt{repeat} to the topic definition, so
+  we don't have to repeat them for each statement.
+\item
+  We gave the first two rules a label.
+\item
+  We added a new third rule, which reuses the first two rules.
+\end{itemize}
+
+Here is a sample dialog:
+
+\begin{verbatim}
+
+  Hello, speak to me!
+
+  >tell me about yourself
+  I am a bot. Hi, talk to me!
+
+  >what are you
+  I am a bot.
+\end{verbatim}
+
+\subsection{\texorpdfstring{Short-term memory (\texttt{*}
+\texttt{\_})}{Short-term memory (* \_)}}\label{short-term-memory-_}
+
+Our previous bots could listen and talk. The third thing a bot should do
+is remember. In ChatScript, the memory of a bot is contained in
+variables.
+
+Using variables we can start building our travel-agent bot. Our bot will
+try to understand where the user is and where he wants to be, and will
+try to supply useful information.
+
+\begin{verbatim}
+topic: ~introductions keep repeat []
+
+t: [Hello] [Hi] [Hey], I will help you plan your travel. Just tell me where you want to go.
+
+u: (I want to go to _*) OK, you want to go to _0. 
+\end{verbatim}
+
+Here:
+
+\begin{itemize}
+\tightlist
+\item
+  We use \texttt{*} as a wildcard that means ``0 or more words'',
+  because we want to match any sentence where the user says his
+  destination.
+\item
+  In the input pattern, we use \texttt{\_} before the wildcard to
+  capture what the user actually said.
+\item
+  In the output, we use \texttt{\_0} to refer to the first thing we
+  captured (if we have more patterns to capture, we can use
+  \texttt{\_1}, \texttt{\_2}, \ldots{} \texttt{\_9})
+\end{itemize}
+
+Here is a sample dialog:
+
+\begin{verbatim}
+
+  Hello, I will help you plan your travel. Just tell me where you want to go.
+
+  >I want to go to the moon.
+  OK, you want to go to a moon.
+
+  >I want to go to earth.
+  OK, you want to go to earth.
+
+  >I want to go back to the moon.
+  I don't know what to say.
+\end{verbatim}
+
+Note that the last sentence did not match because of the word ``back''.
+We could use another wildcard to make our sentence more general, such
+as:
+
+\begin{verbatim}
+u: (I want to go * to _*) OK, you want to go to _0.
+\end{verbatim}
+
+In this case we don't need to capture the first wildcard, so we don't
+put a \texttt{\_} before it.
+
+\subsection{\texorpdfstring{Long-term memory
+(\texttt{\$})}{Long-term memory (\$)}}\label{long-term-memory}
+
+The \texttt{\_0}, \texttt{\_1}\ldots{} variables are ``short-term
+memory'' because they exist only in the output line next to the pattern
+where they were created. We can create ``long-term memory'' by using
+\texttt{\$}-variables. Let's use these variables to extend our
+travel-agent bot:
+
+\begin{verbatim}
+topic: ~introductions keep repeat []
+
+t: [Hello] [Hi] [Hey], I will help you plan your travel. Just tell me where you are and
+where you want to go to.
+
+u: (be * at _*)
+    OK, you want to go from _0.
+    $source = '_0
+
+u: ([go fly travel] to _*)
+   $target = '_0
+   OK, you want to go to $target .
+
+u: (what do I want)
+   You want to go from $source to $target .
+\end{verbatim}
+
+Notes: We can put the different parts of a rule (input pattern, output
+pattern, update commands) in different lines, to make it more readable.
+Chat Script doesn't care.
+
+Here is a sample dialog:
+
+\begin{verbatim}
+
+  Hey, I will help you plan your travel. 
+  Just tell me where you are and where you want to go to.
+
+  >I am at Earth. 
+  OK, you want to go from Earth.
+
+  >I would like to fly to the moon.
+  OK, you want to go to the moon.
+
+  >What do I want? 
+  You want to go from Earth to the moon. 
+
+  >Actually, I want to go to the sky.
+  OK, you want to go to the sky.
+
+  >What do I want?
+  You want to go from Earth to the sky. 
+\end{verbatim}
+
+The above dialog with some explanations:
+
+\begin{verbatim}
+  Hey, I will help you plan your travel. 
+  Just tell me where you are and where you want to go to.
+
+  >I am at Earth. 
+\end{verbatim}
+
+`be' in the pattern is the cannonical form of `am'.
+
+\begin{verbatim}
+  OK, you want to go from Earth.
+\end{verbatim}
+
+the bot prints the temporary variable \texttt{\_0}, which contains
+`Earth'.
+
+\begin{verbatim}
+  >I would like to fly to the moon.
+  OK, you want to go to the moon.
+\end{verbatim}
+
+the bot prints the permanent variable `\$target', where we put `the
+moon'.
+
+\begin{verbatim}
+  >What do I want? 
+  You want to go from Earth to the moon. 
+\end{verbatim}
+
+the bot remembers the permanent variables.
+
+\begin{verbatim}
+  >Actually, I want to go to the sky.
+  OK, you want to go to the sky.
+
+  >What do I want?
+  You want to go from Earth to the sky. 
+\end{verbatim}
+
+the bot updated the variable `\$target'.
+
+\subsection{Dialog Management
+(conditions)}\label{dialog-management-conditions}
+
+The bots we built so far decided what to do based solely on the user's
+input. But suppose we need to make a more sophisticated decision, for
+example, check if the user already said where he wants to go, and if
+not, ask him specifically. For this kind of tasks, we can use
+conditions.
+
+The most basic condition is testing whether a variable is set. This is
+done simply by putting the variable inside the parens of the input
+pattern.
+
+\begin{verbatim}
+topic: ~introductions repeat keep []
+
+t: [Hello] [Hi] [Hey], I will help you plan your travel. Just tell me where you are and
+where you want to go to.
+
+u: (be * at _*)
+   $source = '_0
+
+u: (go to _*)
+   $target = '_0
+
+u: (!$source)
+   Where are you?
+
+u: (!$target)
+   Where do you want to go?
+
+u: ($source $target)
+   You want to go from $source to $target .
+\end{verbatim}
+
+The last rule will be selected only if both \texttt{\$source} and
+\texttt{\$target} are defined. The previous rule will be selected only
+if \texttt{\$target} is NOT defined, and similarly for the rule before
+it.
+
+This script allows the user to specify what he wants in any order. It
+will fill the appropriate variables, and ask appropriate questions if
+they are not set yet:
+
+Hello, I will help you plan your travel. Just tell me where you are and
+where you want to go to.
+
+\begin{verbatim}
+
+  Hello, I will help you plan your travel. 
+  Just tell me where you are and where you want to go to.
+
+  >great!
+  Where are you?
+
+  >Hod Hasharon
+  Where are you?
+
+  >I am at Hod Hasharon
+  Where do you want to go?
+
+  >I don't know
+  Where do you want to go?
+
+  >I want to go to Jerusalem
+  You want to go from Hod Hasharon to Jerusalem.
+
+  >really?
+  You want to go from Hod Hasharon to Jerusalem.
+
+  >Actually I am at Haifa.
+  You want to go from Haifa to Jerusalem.
+\end{verbatim}
+
+Those familiar with Dialog System terminology will probably notice that
+we implement an information-state-update dialog manager. The information
+state is defined by the variables. In each volley, the system first
+tries to understand what the user said, then updates the current state,
+and then generates output to the user.
+
+Our previous bot didn't pay any attention to context - it just looked
+for an input pattern, so it didn't understand that the words \emph{Hod
+Hasharon} are actually a reply to the previous question \emph{Where are
+you?}.
+
+One solution to this is to add another variable that will remember the
+subject of the last question asked. Here is the modified script, where
+we added some comments after the \texttt{\#} symbols:
+
+\begin{verbatim}
+topic: ~introductions repeat keep []
+
+t: [Hello] [Hi] [Hey], I will help you plan your travel.
+   $issue = null # initialize the current issue
+
+u: SOURCE (be * at _*)
+   $source = '_0 # remember the source
+   $issue = null # clear the current issue
+
+u: TARGET (go to _*)
+   $target = '_0
+   $issue = null
+
+u: ($issue=source _*) ^reuse(SOURCE) 
+   # If current issue is source, then assume the 
+   # user answered the question about his source
+
+u: ($issue=target _*) ^reuse(TARGET)
+
+u: (!$source)
+   $issue = source # Remember that we asked the user about his source
+   Where are you?
+
+u: (!$target)
+   $issue = target
+   Where do you want to go?
+
+u: ($source $target)
+   You want to go from $source to $target .
+\end{verbatim}
+
+Note: When testing variable values inside input patterns, there must be
+no spaces between the variable name and the \texttt{=} operator (e.g.
+\texttt{\$issue=source}), otherwise the engine will parse it as two
+different input conditions \texttt{\$issue} and \texttt{source}.
+
+\begin{verbatim}
+
+  Hello, I will help you plan your travel.
+
+  >great!
+  Where are you?
+
+  >Jerusalem
+  Where do you want to go?
+
+  >Actually I am at Haifa
+  Where do you want to go?
+
+  >Hebron
+  You want to go from Haifa to Hebron.
+\end{verbatim}
+
+\subsection{\texorpdfstring{Implicit Confirmations
+(\texttt{\^{}respond})}{Implicit Confirmations (\^{}respond)}}\label{implicit-confirmations-respond}
+
+Our previous bot understood the user perfectly, but usually it is not
+the case, we would like our bot to confirm that it understood the user
+correctly. There are two types of confirmation:
+
+\begin{itemize}
+\tightlist
+\item
+  Implicit confirmation - just tell the user what we understood.
+\item
+  Explicit confirmation - tell the user what we understood, and ask
+  him/her if it's correct.
+\end{itemize}
+
+Let's start with implicit confirmation. For simplicity, we will start
+this section with the bot at the beginning of the ``Dialog Management''
+chapter (without context), and add the confirmation statements from the
+bot at the ``Long-term memory'' chapter:
+
+\begin{verbatim}
+topic: ~introductions repeat keep []
+
+t: [Hello] [Hi] [Hey], I will help you plan your travel. Just tell me where you are and
+where you want to go to.
+
+u: (be * at _*)
+   $source = '_0
+   OK, you want to go from $source .
+
+u: (go to _*)
+   $target = '_0 
+   OK, you want to go to $target .
+
+u: (!$source)
+   Where are you?
+
+u: (!$target)
+   Where do you want to go?
+
+u: ($source $target)
+   You want to go from $source to $target .
+\end{verbatim}
+
+This works, but produces an awkward dialog:
+
+\begin{verbatim}
+  Hello, I will help you plan your travel. 
+  Just tell me where you are and where you want to go to.
+
+  >I am at Haifa
+  OK, you want to go from Haifa.
+
+  >well?
+  Where do you want to go?
+
+  >I want to go to Jerusalem.
+  OK, you want to go to Jerusalem.
+
+  >what now?
+  You want to go from Haifa to Jerusalem.
+\end{verbatim}
+
+By default, the bot stops processing the rules when it finds a rule that
+produces output, so after the confirmation \emph{you want to go from
+Haifa} the bot doesn't go on and ask the next question \emph{Where do
+you want to go}, until the user says another thing.
+
+We can change this by creating a new topic, and using the
+\texttt{\^{}respond} command;
+
+\begin{verbatim}
+topic: ~introductions []
+
+t: Hi, I will help you plan your travel.
+ ^respond(~question)
+
+u: SOURCE (be * at _*)
+   OK, you want to go from _0.
+   $source = '_0
+   ^respond(~question)
+
+u: TARGET (go to _*)
+   $target = '_0
+   OK, you want to go to $target .
+   ^respond(~question)
+
+u: DEFAULT ()
+   ^respond(~question)
+
+topic: ~question repeat keep nostay []
+
+u: (!$source)
+   Where are you?
+
+u: (!$target)
+   Where do you want to go?
+
+u: ($source $target)
+   You want to go from $source to $target . 
+\end{verbatim}
+
+The \texttt{\^{}respond} tells the bot to use the
+\texttt{\textasciitilde{}question} subtopic, and add whatever text it
+gets from it to the current statement.
+
+Notes: * We use \texttt{\^{}respond} after all 4 rules - after the
+initial gambit, after the user replies with a source or a target, and
+also in the default case where we don't understand the user. * We added
+the \texttt{nostay} directive to the \texttt{\textasciitilde{}question}
+topic. By default, if the bot gets a response from a certain topics, it
+`stays' in this topic and gives it priority over other topics. In this
+case we don't want the \texttt{\textasciitilde{}question} topic to get
+priority, because our first priority is to handle the user response, so
+we override this behavior.
+
+This produces a much shorter dialog:
+
+\begin{verbatim}
+
+  Hi, I will help you plan your travel. Where are you?
+
+  >I am at Haifa
+  OK, you want to go from Haifa. Where do you want to go?
+
+  >I don't know
+  Where do you want to go?
+
+  >go to Jerusalem
+  OK, you want to go to Jerusalem. You want to go from Haifa to Jerusalem.
+\end{verbatim}
+
+\subsection{\texorpdfstring{Explicit Confirmation (rejoinders:
+\texttt{a:} \texttt{b:} \texttt{c:}
+\ldots{})}{Explicit Confirmation (rejoinders: a: b: c: \ldots{})}}\label{explicit-confirmation-rejoinders-a-b-c}
+
+Sometimes we want to explicitly ask the user what he meant. In this case
+we expect a yes/no answer, but the meaning of the answer obviously
+depends on the context - the question that we just asked. One way to
+handle this is to use rejoinders.
+
+ChatScript allows us to understand the user input based on the current
+context of the dialog, by labeling statements with \texttt{a:},
+\texttt{b:}, \texttt{c:}, \ldots{} \texttt{q:}, instead of the u and t
+we used so far. For example:
+
+\begin{verbatim}
+topic: ~introductions repeat keep []
+
+t: [Hello][Hi][Hey], I will help you plan your travel.
+   ^respond(~question)
+
+u: SOURCE (at _*)
+   Is your current location \" '_0 \" ?
+   a: (~yes)
+       $source = '_0
+       ^respond(~question)
+   a: (~no)
+       OK, so where are you?
+
+u: TARGET (to _*)
+   Is your destination \" '_0 \" ?
+   a: (~yes)
+       $target = '_0
+       ^respond(~question)
+   a: (~no)
+       OK, so where do you want to go?
+
+u: DEFAULT ()
+   ^respond(~question)
+
+topic: ~question repeat keep nostay []
+
+u: (!$source)
+   Where are you?
+
+u: (!$target)
+   Where do you want to go?
+
+u: ($source $target)
+   You want to go from $source to $target . 
+\end{verbatim}
+
+Here, every time the user answers our question, we ask him if that's
+what he meant.
+
+Note that we use \texttt{\textasciitilde{}yes} and
+\texttt{\textasciitilde{}no} as the patterns for yes and no; this will
+also match ``sure'', ``yeah'' and other forms.
+
+Here is a sample dialog:
+
+\begin{verbatim}
+
+  Hello, I will help you plan your travel. Where are you?
+
+  > at Haifa
+  Is your current location "Haifa "?
+
+  > no
+  OK, so where are you?
+
+  > at Ramat Gan
+  Is your current location "Ramat Gan "?
+
+  > yes
+  Where do you want to go?
+
+  > actually I am at Givat Shmuel
+  Is your current location "Givat Shmuel "?
+
+  > sure
+  Where do you want to go?
+
+  > to Jerusalem
+  Is your destination "Jerusalem "?
+
+  > y
+  Where do you want to go?
+
+  > to Jerusalem
+  Is your destination "Jerusalem "?
+
+  > yeah
+  You want to go from Givat Shmuel to Jerusalem.
+
+  > ...
+\end{verbatim}
+
+\subsection{\texorpdfstring{Knowledge (\texttt{\^{}createfact},
+\texttt{table:})}{Knowledge (\^{}createfact, table:)}}\label{knowledge-createfact-table}
+
+Our previous bot could understand what the user wants, but it couldn't
+really help him reach his goal because it had no knowledge of
+transportation means. We can give our bot some knowledge by creating
+facts.
+
+----- THE TUTORIAL AS ORIGINALLY AUTHORED ENDS HERE ---
+
+\textbf{TO DO}
+
+\end{document}

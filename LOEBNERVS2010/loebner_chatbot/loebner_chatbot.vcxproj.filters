@@ -102,6 +102,9 @@
     <ClCompile Include="..\..\SRC\json.cpp">
       <Filter>Source Files\chatbot</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\SRC\mysql.cpp">
+      <Filter>Source Files\chatbot</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\src\common.h">

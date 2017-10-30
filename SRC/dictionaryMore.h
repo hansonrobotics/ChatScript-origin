@@ -71,7 +71,7 @@
 #define FN_TIME_BITS ( MACRO_TIME | NOTIME_FN )
 
 ///   DEFINITION OF A MEANING 
-#define GETTYPERESTRICTION(x) ( ((x)>>TYPE_RESTRICTION_SHIFT) & TYPE_RESTRICTION)
+unsigned int GETTYPERESTRICTION(MEANING x);
 #define STDMEANING ( INDEX_BITS | MEANING_BASE | TYPE_RESTRICTION ) // no synset marker
 #define SIMPLEMEANING ( INDEX_BITS | MEANING_BASE ) // simple meaning, no type
 
@@ -156,6 +156,7 @@ void SetComparison(WORDP D,MEANING M);
 WORDP GetTense(WORDP D);
 void SetTense(WORDP D,MEANING M);
 WORDP GetCanonical(WORDP D);
+WORDP RawCanonical(WORDP D);
 void SetCanonical(WORDP D,MEANING M);
 uint64 GetTriedMeaning(WORDP D);
 void SetTriedMeaning(WORDP D,uint64 bits);
@@ -234,7 +235,6 @@ void ClearBacktracks();
 unsigned int* AllocateWhereInSentence(WORDP D);
 MEANING GetFactBack(WORDP D);
 void SetFactBack(WORDP D, MEANING M);
-void ReadForeignTagConcepts();
 bool ReadForeignPosTags(char* fname);
 int GetWords(char* word, WORDP* set,bool strict);
 void ReadQueryLabels(char* file);
@@ -242,6 +242,7 @@ void ClearWordWhere(WORDP D,int at);
 void RemoveConceptTopic(int list[256],WORDP D, int at);
 char* UseDictionaryFile(char* name);
 void ClearWhereInSentence();
+void ClearTriedData();
 void ClearDictionaryFiles();
 inline unsigned int GlossIndex(MEANING M) { return M >> 24;}
 void ReadAbbreviations(char* file);
@@ -294,7 +295,7 @@ void WriteDictionary(WORDP D, uint64 data);
 void DumpDictionaryEntry(char* word,unsigned int limit);
 bool ReadDictionary(char* file);
 char* ReadDictionaryFlags(WORDP D, char* ptr,unsigned int *meaningcount = NULL, unsigned int *glosscount = NULL);
-void WriteDictionaryFlags(WORDP D, FILE* out);
+char* WriteDictionaryFlags(WORDP D, char* out);
 void WriteBinaryDictionary();
 bool ReadBinaryDictionary();
 void Write32(unsigned int val, FILE* out);

@@ -1,4 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -9,19 +9,19 @@
 </head>
 <body>
 <h1 id="chatscript-system-functions-manual">ChatScript System Functions Manual</h1>
-<p>© Bruce Wilcox, gowilcox@gmail.com www.brilligunderstanding.com <br>Revision 7/8/2017 cs7.52</p>
+<p>© Bruce Wilcox, gowilcox@gmail.com www.brilligunderstanding.com <br>Revision 10/26/2017 cs7.6</p>
 <ul>
-<li><a href="ChatScript-System-Functions-Manual.md#topic-functions">Topic Functions</a></li>
-<li><a href="ChatScript-System-Functions-Manual.md#marking-functions">Marking Functions</a></li>
-<li><a href="ChatScript-System-Functions-Manual.md#input-functions">Input Functions</a></li>
-<li><a href="ChatScript-System-Functions-Manual.md#number-functions">Number Functions</a></li>
-<li><a href="ChatScript-System-Functions-Manual.md#output-functions">Output Functions</a></li>
-<li><a href="ChatScript-System-Functions-Manual.md#control-flow-functions">Control Flow Functions</a></li>
-<li><a href="ChatScript-System-Functions-Manual.md#external-access-functions">External Access Functions</a></li>
-<li><a href="ChatScript-System-Functions-Manual.md#json-functions">JSON Functions</a></li>
-<li><a href="ChatScript-System-Functions-Manual.md#word-manipulation-functions">Word Manipulation Functions</a></li>
-<li><a href="ChatScript-System-Functions-Manual.md#multipurpose-functions">Multipurpose Functions</a></li>
-<li><a href="ChatScript-System-Functions-Manual.md#fact-functions">Facts Functions</a></li>
+<li><a href="ChatScript-System-Functions-Manual.html#topic-functions">Topic Functions</a></li>
+<li><a href="ChatScript-System-Functions-Manual.html#marking-functions">Marking Functions</a></li>
+<li><a href="ChatScript-System-Functions-Manual.html#input-functions">Input Functions</a></li>
+<li><a href="ChatScript-System-Functions-Manual.html#number-functions">Number Functions</a></li>
+<li><a href="ChatScript-System-Functions-Manual.html#output-functions">Output Functions</a></li>
+<li><a href="ChatScript-System-Functions-Manual.html#control-flow-functions">Control Flow Functions</a></li>
+<li><a href="ChatScript-System-Functions-Manual.html#external-access-functions">External Access Functions</a></li>
+<li><a href="ChatScript-System-Functions-Manual.html#json-functions">JSON Functions</a></li>
+<li><a href="ChatScript-System-Functions-Manual.html#word-manipulation-functions">Word Manipulation Functions</a></li>
+<li><a href="ChatScript-System-Functions-Manual.html#multipurpose-functions">Multipurpose Functions</a></li>
+<li><a href="ChatScript-System-Functions-Manual.html#fact-functions">Facts Functions</a></li>
 </ul>
 <p>System functions are predefined and can be intermixed with direct output. Generally they are used from the output side of a rule, but in many cases nothing prevents you from invoking them from inside a pattern. When used in a pattern, they do not write out any text output to the user. But their output will be tested the same as it would from an <code>if</code> statement, meaning 0 and false are failures.</p>
 <p>You can write them with or without a <code>^</code> in front of their name. With is clearer, but you don’t have to. The only time you must is if the first thing you want to do in a gambit is call a function (unlikely).</p>
@@ -231,7 +231,7 @@ u: what&#39;s your first name?
 <h3 id="setwildcardindex-value"><code>^setwildcardindex ( value )</code></h3>
 <p>Tells the system to start at <code>value</code> for future allocations of wildcard slots. This is only useful inside some pattern where you are trying to protect data from some previous match. Eg.</p>
 <pre><code>u: (_~animals) refine()
-    a: ( ^setwildcardindex(1) _~color)</code></pre>
+    a: ( ^setwildcardindex(_1) _~color)</code></pre>
 <p><code>_0</code> is set to an animal. Normally the rejoinder would set a color onto <code>_0</code> and clobber it, but the call to <code>^setwildcardindex</code> forces it to use <code>_1</code> instead, so both <code>_0</code> and <code>_1</code> have values.</p>
 <h3 id="isnormalword-value"><code>^isnormalword (value)</code></h3>
 <p>Fails if value has a character that is not alphabetic, numberic, a hyphen, an underscore, or an apostrophe.</p>
@@ -293,9 +293,9 @@ u: what&#39;s your first name?
 <h3 id="timeinfofromseconds-seconds"><code>^timeinfofromseconds ( seconds )</code></h3>
 <p>This converts time in seconds (Unix epoch time) into its component bits, spread across 7 match variables. Starting by default at <code>_0</code>, if you assign it like this:</p>
 <pre><code>_3 = ^timeinfofromseconds(%fulltime)</code></pre>
-<p>it will start at <code>_3</code>. The items you get are: seconds, minutes, hours, date in month, month name, year, day name of week.</p>
+<p>it will start at <code>_3</code>. The items you get are: seconds, minutes, hours, date in month, month name, year, day name of week, month index (jan==0), dayofweek index (sun==0).</p>
 <h3 id="timetoseconds-seconds-minutes-hours-date-of-month-month-year"><code>^timetoseconds ( seconds minutes hours date-of-month month year )</code></h3>
-<p>This converts time data since 1970 (Unix epoch time). Analogous to <code>%fulltime</code>, which returns the current time in seconds. Month can be number 1-12 or name of month or abbreviation of month.</p>
+<p>This converts time data since 1970 (Unix epoch time). Analogous to <code>%fulltime</code>, which returns the current time in seconds. Month can be number 1-12 or name of month or abbreviation of month. Date-of-month must be 1 or more. Year must be on or 1970 and less than 2100. Optional 7th argument indicates whether time is within daylight savings or not , values can be 1 or 0, t or f, T or F. Default is false.</p>
 <h3 id="isnumber-value"><code>^isnumber ( value )</code></h3>
 <p>Fails if value is not an integer, float, or currency,</p>
 <h1 id="output-functions">Output Functions</h1>
@@ -386,6 +386,10 @@ u: what&#39;s your first name?
 <td><code>RESPONSE_NOCONVERTSPECIAL</code></td>
 <td>don't convert ecaped n, r, and t into ascii direct characters</td>
 </tr>
+<tr class="odd">
+<td><code>RESPONSE_CURLYQUOTES</code></td>
+<td>change simple quotes to curly quotes (starting and ending)</td>
+</tr>
 </tbody>
 </table>
 <h3 id="preprint-stream"><code>^preprint ( stream )</code></h3>
@@ -422,6 +426,7 @@ u: what&#39;s your first name?
 <h3 id="command-args"><code>^command ( args )</code></h3>
 <p>Execute this stream of arguments through the <code>:</code> command processor. You can execute debugging commands through here. E.g.,</p>
 <pre><code>^command(:execute ^print(&quot;Hello&quot;) )</code></pre>
+<p>Note that it is hard to turn on :trace this way, because the system resets It internally at various points. The correct way to manipulate trace is to do $cs_trace = -1 in regular script, outside of ^command.</p>
 <h3 id="end-code"><code>^end ( code )</code></h3>
 <p>Takes 1 argument and returns a code which will stop processing. Any data pending in the output stream will be shipped to the user. If <code>^end</code> is contained within the condition of an if, it merely stops it. An end rule inside a loop merely stops the loop. All other codes propagate past the loop. The codes are:</p>
 <table style="width:33%;">
@@ -912,146 +917,151 @@ u: (%document)
 <td>return 1 if it begins with an uppercase letter, fails otherwise</td>
 </tr>
 <tr class="even">
+<td><code>isalluppercase</code></td>
+<td>word</td>
+<td>return 1 if it starts uppercase, and consists of entirely uppercase letters, hyphen, underscore and ampersand, fails otherwise</td>
+</tr>
+<tr class="odd">
 <td><code>type</code></td>
 <td>word</td>
 <td>returns concept, number, word, or unknown</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><code>common</code></td>
 <td>word</td>
 <td>returns level of commonness of the word</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><code>verb</code></td>
 <td>verb</td>
 <td>given verb in any form, return requested form</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><code>present_participle</code></td>
 <td>verb</td>
 <td></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><code>past_participle</code></td>
 <td>verb</td>
 <td></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><code>infinitive</code></td>
 <td>verb</td>
 <td></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><code>past</code></td>
 <td>verb</td>
 <td></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><code>present3ps</code></td>
 <td>verb</td>
 <td></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><code>present</code></td>
 <td>verb</td>
 <td></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><code>verb</code></td>
 <td><code>match</code> noun</td>
 <td>returns noun form matching verb (sing./plural).<br>e.g. (<em>walk match dog</em>) -&gt; <em>walks</em></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><code>aux</code></td>
 <td>auxverb <code>pronoun</code></td>
 <td>returns verb form matching pronoun supplied.<br>for <em>do</em>,<em>have</em>, <em>be</em></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><code>pronoun</code></td>
 <td>word <code>flip</code></td>
 <td>changes person form for 1st and 2nd person</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><code>adjective</code></td>
 <td>word <code>more</code></td>
 <td>writes the adjective in its comparative form: <em>fast</em> -&gt; <em>faster</em></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><code>most</code></td>
 <td>word</td>
 <td>the superlative form. <em>beautiful</em> -&gt; <em>most beautiful</em></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><code>adverb</code></td>
 <td>word <code>more</code></td>
 <td>writes comparative form: <em>strong</em> -&gt; <em>strongly</em></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><code>noun</code></td>
 <td>word <code>proper</code></td>
 <td>return word as a proper noun (appropriately cased)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><code>lowercaseexist</code></td>
 <td>word</td>
 <td></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><code>uppercaseexist</code></td>
 <td>word</td>
 <td></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><code>singular</code></td>
 <td>word or a number</td>
 <td>== 1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><code>plural</code></td>
 <td>word or a number</td>
 <td>&gt; 1</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><code>irregular</code></td>
 <td>word</td>
 <td>return value only for irregular nouns</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><code>determiner</code></td>
 <td>word <code>noun</code></td>
 <td>add a determiner &quot;a/an&quot; if it needs one</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><code>place</code></td>
 <td>integer</td>
 <td>return place number of integer</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><code>capitalize</code></td>
 <td>word</td>
 <td></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><code>uppercase</code></td>
 <td>word</td>
 <td></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><code>lowercase</code></td>
 <td>word</td>
 <td></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><code>allupper</code></td>
 <td>word</td>
 <td></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><code>canonical</code></td>
 <td>word</td>
-<td></td>
+<td>see notes</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><code>integer</code></td>
 <td>floatnumber</td>
 <td>generate integer if float is exact integer</td>
@@ -1066,6 +1076,9 @@ u: what&#39;s your first name?
    $_name = ^original(_0)
    Nice to meet you, ^pos(capitalize $_name)
    # if user enter giuditta, the rejoinder output: Nice to meet you, Giuditta </code></pre>
+<p>For ^pos(canonical), there is an optional third argument which is the concept name of the pos-tag. Foreign words may have multiple lemma forms based on part of speech. E.g., in the German dictionary you can find this entry:</p>
+<pre><code>    Informationstechnische ( NOUN ADJECTIVE NOUN_SINGULAR NOUN_PLURAL ) lemma=`informationstechnisch`Informationstechnische` ADJA  NN  </code></pre>
+<p>which says there are two forms of canonical, one for ADJA (adjective) and one for NN (noun). If you don't specify a 3rd argument, you get the first one (ADJA). If you specify <code>~ADJA</code> you get the first and if you specify <code>~NN</code> you get the second.</p>
 <h3 id="decodeinputtoken-number"><code>^decodeInputtoken ( number )</code></h3>
 <p>Display the text values of tokenflag bits. You can pass it <code>%token</code> to see the meanings of the current sentence analysis or <code>$cs_token</code> to see what you have current set as token controls.</p>
 <h3 id="decodepos-pos-location"><code>^decodepos ( pos location )</code></h3>
@@ -1348,7 +1361,7 @@ concept: ~canine (dog)</code></pre>
 <p><code>all</code> just displays a human normal dictionary word, so if the value were actually <code>plants~1</code> you'd get just plants whereas raw would return what was actually there <code>plants~1</code>.</p>
 <p>You can also retrieve a field via <code>$$f.subject</code> or <code>$$f.verb</code> or <code>$$f.object</code>.</p>
 <h3 id="find-setname-itemname"><code>^find ( setname itemname )</code></h3>
-<p>given a concept set, find the ordered position of the 2nd argument within it. ^Output that index. Used, for example, to compare two poker hands.</p>
+<p>given a concept set, find the ordered position of the 2nd argument within it. ^Output that index (0-based). Used, for example, to compare two poker hands.</p>
 <h3 id="findmarkedfact-subject-verb-mark"><code>^findmarkedfact ( subject verb mark )</code></h3>
 <p>given the arguments, start at subject, follow all facts having the verb, and stop if you can find a fact with the mark given.</p>
 <h3 id="first-fact-set-annotated"><code>^first ( fact-set-annotated )</code></h3>

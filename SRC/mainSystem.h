@@ -36,6 +36,7 @@ typedef struct RESPONSE
 typedef void (*DEBUGAPI)(char* buffer);
 extern DEBUGAPI debugInput;
 extern DEBUGAPI debugOutput;
+extern int forkcount;
 
 #define START_BIT 0x8000000000000000ULL	// used looping thru bit masks
 #define INPUTMARKER '`'	// used to start and end ^input data
@@ -64,7 +65,7 @@ extern DEBUGAPI debugOutput;
 	SOURCE_ECHO_LOG = 2,
 };
 #define MAX_TRACED_FUNCTIONS 50
- 
+extern char treetaggerParams[200];
 extern unsigned short int derivationIndex[256];
 extern int derivationLength;
 extern char* derivationSentence[MAX_SENTENCE_LENGTH];
@@ -91,8 +92,10 @@ extern bool documentMode;
 extern bool assignedLogin;
 extern bool servertrace;
 extern char apikey[100];
+extern char defaultbot[100];
 extern unsigned int volleyCount;
 extern FILE* sourceFile;
+extern bool multiuser;
 extern bool oobExists;
 extern char hostname[100];
 extern int argc;
@@ -108,6 +111,7 @@ extern unsigned int choiceCount;
 extern int externalTagger;
 extern bool redo;
 extern bool commandLineCompile;
+extern char websocketParam[1000];
 extern int inputCounter,totalCounter;
 extern int inputSentenceCount;  
 extern char* extraTopicData;
@@ -200,6 +204,7 @@ int main(int argc, char * argv[]);
 void ProcessOOB(char* buffer);
 void ComputeWhy(char* buffer, int n);
 void FlipResponses();
+void MoreToCome();
 int CountWordsInBuckets(int& unused, unsigned int* depthcount, int limit);
 // Input processing
 void MainLoop();

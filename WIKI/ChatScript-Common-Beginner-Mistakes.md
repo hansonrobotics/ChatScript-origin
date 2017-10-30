@@ -3,12 +3,21 @@
 > © Bruce Wilcox, gowilcox@gmail.com brilligunderstanding.com
 
 
-> Revision 1/17/2016 cs6.1
+<br>Revision 9/24/2017 cs7.55
 
 
 Here are a collection of common beginner mistakes I have seen. Many will work, they are just
 unnecessary and inefficient and potentially more obscure to read.
 
+## Failing to separate tokens with a space 
+```
+u:MYLABEL()
+```
+is not the same as
+```u: MYLABEL()
+```
+While ChatScript will automatically space around balanced things like parens or brackets, it will not do so around ordinary text,
+so `u:MYLABEL` is a single token, an ordinary word for printout, and not a rule header.
 
 ## Leading and trailing `*` in a pattern
 
@@ -254,3 +263,15 @@ equivalent, and thus imagines CS will simply find the next occurrence of any of 
 efficiency, that's not how CS works. It will try each in turn, and if a match is found, it will stop trying
 words in the `[]` immediately. 
 So input like: _the raccoon ate the bear_ will fail because bear will be found first, and _ate_ does not happen immediately after that. If you convert `[]` into a concept set, then a pattern of `u: (the * ~myanimals ate)` will match, because all members of a concept set are considered simultaneously.
+
+## Querying with the same value in 2 positions
+
+A query like
+```^query(svo $_tmp $_tmp value)
+```
+will likely fail when 2 of the values being checked are the same. This
+is because the query marks its arguments with index flags for efficiency
+and marking the second use of a word overwrites the mark set on the first.
+Then query testing fails. Usually there is no need to create a fact 
+repeating the same word twice. It's just laziness of not using a different
+arbitrary fixed value.

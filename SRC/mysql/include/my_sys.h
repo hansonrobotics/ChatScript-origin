@@ -53,7 +53,7 @@ C_MODE_START
 # define MEM_CHECK_ADDRESSABLE(a,len) ((void) 0)
 #endif /* HAVE_VALGRIND */
 
-#include <typelib.h>
+#include "typelib.h"
 
 #define MY_INIT(name)   { my_progname= name; my_init(); }
 
@@ -517,7 +517,7 @@ my_off_t my_b_safe_tell(IO_CACHE* info); /* picks the correct tell() */
 
 typedef uint32 ha_checksum;
 
-#include <my_alloc.h>
+#include "my_alloc.h"
 
 
 	/* Prototypes for mysys and my_func functions */

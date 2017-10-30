@@ -3,8 +3,8 @@
  Y-Betreuung ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  Y-Burg ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  Y-Chromosom ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
- Y-Chromosoms ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=Y-Chromosom 
- Y-Frauen ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=Y-Frau 
+ Y-Chromosoms ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=`Y-Chromosom` NN  
+ Y-Frauen ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=`Y-Frau` NN  
  Y-MP ( NOUN NOUN_PROPER_SINGULAR ) 
  Y-Stück ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  Y-Weg ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
@@ -13,8 +13,8 @@
  Y.H. ( NOUN NOUN_PROPER_SINGULAR ) 
  Y.S. ( NOUN NOUN_PROPER_SINGULAR ) 
  YATAMA-Führer ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
- YORK ( NOUN NOUN_PROPER_SINGULAR ) lemma=York 
- YPF-Aktien ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=YPF-Aktie 
+ YORK ( NOUN NOUN_PROPER_SINGULAR ) lemma=`York` NE  
+ YPF-Aktien ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=`YPF-Aktie` NN  
  YVONNE ( NOUN NOUN_PROPER_SINGULAR ) 
  Yabaolu-Markt ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  Yacht ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
@@ -26,13 +26,13 @@
  Yachtbesitzer ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  Yachtcharter ( NOUN NOUN_PROPER_SINGULAR ) 
  Yachtclub ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
- Yachtclubrebellen ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=Yachtclubrebell 
- Yachtclubs ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=Yachtclub 
- Yachten ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=Yacht 
+ Yachtclubrebellen ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=`Yachtclubrebell` NN  
+ Yachtclubs ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=`Yachtclub` NN  
+ Yachten ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=`Yacht` NN  
  Yachtgeschäft ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  Yachthafen ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
- Yachthafens ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=Yachthafen 
- Yachthäfen ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=Yachthafen 
+ Yachthafens ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=`Yachthafen` NN  
+ Yachthäfen ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=`Yachthafen` NN  
  Yachtschule ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  Yachtwerft ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  Yad-Vashem-Medaille ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
@@ -52,14 +52,14 @@
  Yahya ( NOUN NOUN_PROPER_SINGULAR ) 
  Yak ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  Yak- ( ) 
- Yaks ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=Yak 
+ Yaks ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=`Yak` NN  
  Yakup ( NOUN NOUN_PROPER_SINGULAR ) 
  Yakut ( NOUN NOUN_PROPER_SINGULAR ) 
  Yakuza- ( ) 
- Yakuza-Chefs ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=Yakuza-Chef 
+ Yakuza-Chefs ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=`Yakuza-Chef` NN  
  Yakuza-Gangster ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
- Yakuza-Gangstern ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=Yakuza-Gangster 
- Yakuza-Gruppen ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=Yakuza-Gruppe 
+ Yakuza-Gangstern ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=`Yakuza-Gangster` NN  
+ Yakuza-Gruppen ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=`Yakuza-Gruppe` NN  
  Yakuza-Mafia ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  Yalap ( NOUN NOUN_PROPER_SINGULAR ) 
  Yalcin ( NOUN NOUN_PROPER_SINGULAR ) 
@@ -67,14 +67,14 @@
  Yale-Universität ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  Yamada ( NOUN NOUN_PROPER_SINGULAR ) 
  Yamaha-Flügel ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
- Yamaha-Motorräder ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=Yamaha-Motorrad 
+ Yamaha-Motorräder ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=`Yamaha-Motorrad` NN  
  Yamaichi- ( ) 
  Yaman ( NOUN NOUN_PROPER_SINGULAR ) 
  Yamar ( NOUN NOUN_PROPER_SINGULAR ) 
  Yamashita ( NOUN NOUN_PROPER_SINGULAR ) 
  Yami ( NOUN NOUN_PROPER_SINGULAR ) 
  Yamina ( NOUN NOUN_PROPER_SINGULAR ) 
- Yamswurzeln ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=Yamswurzel 
+ Yamswurzeln ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=`Yamswurzel` NN  
  Yan ( NOUN NOUN_PROPER_SINGULAR ) 
  Yan-Lio ( NOUN NOUN_PROPER_SINGULAR ) 
  Yana ( NOUN NOUN_PROPER_SINGULAR ) 
@@ -85,10 +85,10 @@
  Yang-Ohrstecker ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  Yangling ( NOUN NOUN_PROPER_SINGULAR ) 
  Yangtse-Fluss ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
- Yangtse-Fluß ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=Yangtse-Fluss 
+ Yangtse-Fluß ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=`Yangtse-Fluss` NN  
  Yangzi- ( ) 
  Yangzi-Region ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
- Yangzi-Schluchten ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=Yangzi-Schlucht 
+ Yangzi-Schluchten ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=`Yangzi-Schlucht` NN  
  Yani ( NOUN NOUN_PROPER_SINGULAR ) 
  Yanik ( NOUN NOUN_PROPER_SINGULAR ) 
  Yankee ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
@@ -97,7 +97,7 @@
  Yankee-Lösung ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  Yankee-Stadion ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  Yankee-Zensur ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
- Yankees ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=Yankee 
+ Yankees ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=`Yankee` NN  
  Yankeetum ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  Yann ( NOUN NOUN_PROPER_SINGULAR ) 
  Yann-Christophe ( NOUN NOUN_PROPER_SINGULAR ) 
@@ -105,13 +105,13 @@
  Yannoula ( NOUN NOUN_PROPER_SINGULAR ) 
  Yanomami- ( ) 
  Yanomami-Gebiet ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
- Yanomami-Gebiete ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=Yanomami-Gebiet 
+ Yanomami-Gebiete ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=`Yanomami-Gebiet` NN  
  Yanomami-Häuptling ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  Yanomami-Indianer ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
- Yanomami-Indianern ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=Yanomami-Indianer 
- Yanomami-Morde ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=Yanomami-Mord 
+ Yanomami-Indianern ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=`Yanomami-Indianer` NN  
+ Yanomami-Morde ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=`Yanomami-Mord` NN  
  Yanomami-Reservat ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
- Yanomami-Reservats ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=Yanomami-Reservat 
+ Yanomami-Reservats ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=`Yanomami-Reservat` NN  
  Yanomani-Reservat ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  Yanonami-Indianer ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  Yanping ( NOUN NOUN_PROPER_SINGULAR ) 
@@ -119,11 +119,11 @@
  Yanzhi ( NOUN NOUN_PROPER_SINGULAR ) 
  Yao ( NOUN NOUN_PROPER_SINGULAR ) 
  Yaprak-Imbiss ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
- Yaprak-Imbiß ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=Yaprak-Imbiss 
+ Yaprak-Imbiß ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=`Yaprak-Imbiss` NN  
  Yaqub-Khan ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  Yard ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  Yard-Party ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
- Yards ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=Yard 
+ Yards ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=`Yard` NN  
  Yarmouk-Universität ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  Yarmuk-Anrainer ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  Yarmuk-Klinik ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
@@ -183,8 +183,8 @@
  Yen-Hoch ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  Yen-Kao ( NOUN NOUN_PROPER_SINGULAR ) 
  Yen-Kurs ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
- Yen-Kurses ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=Yen-Kurs 
- Yen-Milliarden ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=Yen-Milliarde 
+ Yen-Kurses ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=`Yen-Kurs` NN  
+ Yen-Milliarden ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=`Yen-Milliarde` NN  
  Yen-Schock ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  Yen-Schwäche ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  Yen-Zone ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
@@ -192,12 +192,12 @@
  Yeni ( NOUN NOUN_PROPER_SINGULAR ) 
  Yenkurs ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  Yenny ( NOUN NOUN_PROPER_SINGULAR ) 
- Yens ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=Yen 
+ Yens ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=`Yen` NN  
  Yervant ( NOUN NOUN_PROPER_SINGULAR ) 
  Yes-Album ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  Yes-Musiker ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
- Yes-Songs ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=Yes-Song 
- Yeschiva-Studenten ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=Yeschiva-Student 
+ Yes-Songs ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=`Yes-Song` NN  
+ Yeschiva-Studenten ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=`Yeschiva-Student` NN  
  Yesil ( NOUN NOUN_PROPER_SINGULAR ) 
  Yesim ( NOUN NOUN_PROPER_SINGULAR ) 
  Yesra ( NOUN NOUN_PROPER_SINGULAR ) 
@@ -231,7 +231,7 @@
  Yilmar ( NOUN NOUN_PROPER_SINGULAR ) 
  Yilmaz ( NOUN NOUN_PROPER_SINGULAR ) 
  Yima ( NOUN NOUN_PROPER_SINGULAR ) 
- Yimou-Filme ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=Yimou-Film 
+ Yimou-Filme ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=`Yimou-Film` NN  
  Yin ( NOUN NOUN_PROPER_SINGULAR ) 
  Yin-Yang-Zeichen ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  Ying ( NOUN NOUN_PROPER_SINGULAR ) 
@@ -243,8 +243,8 @@
  Yisa ( NOUN NOUN_PROPER_SINGULAR ) 
  Ylmaz ( NOUN NOUN_PROPER_SINGULAR ) 
  Ylva ( NOUN NOUN_PROPER_SINGULAR ) 
- Ymos-Aktien ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=Ymos-Aktie 
- Ymos-Betriebsrates ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=Ymos-Betriebsrat 
+ Ymos-Aktien ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=`Ymos-Aktie` NN  
+ Ymos-Betriebsrates ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=`Ymos-Betriebsrat` NN  
  Ymos-Chef ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  Yodollah ( NOUN NOUN_PROPER_SINGULAR ) 
  Yoeng ( NOUN NOUN_PROPER_SINGULAR ) 
@@ -252,22 +252,22 @@
  Yoga ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  Yoga- ( ) 
  Yoga-Kurs ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
- Yoga-Kurse ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=Yoga-Kurs 
+ Yoga-Kurse ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=`Yoga-Kurs` NN  
  Yoga-Kursus ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  Yoga-Meister ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  Yoga-Übungsreihe ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
- Yoga-Übungsstunden ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=Yoga-Übungsstunde 
+ Yoga-Übungsstunden ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=`Yoga-Übungsstunde` NN  
  Yogakurs ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
- Yogakurse ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=Yogakurs 
- Yogakursen ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=Yogakurs 
- Yogakurses ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=Yogakurs 
+ Yogakurse ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=`Yogakurs` NN  
+ Yogakursen ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=`Yogakurs` NN  
+ Yogakurses ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=`Yogakurs` NN  
  Yogakursus ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  Yoganathan ( NOUN NOUN_PROPER_SINGULAR ) 
- Yogaübungen ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=Yogaübung 
+ Yogaübungen ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=`Yogaübung` NN  
  Yoghurt ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  Yoghurtbecher ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  Yogi ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
- Yogis ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=Yogi 
+ Yogis ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=`Yogi` NN  
  Yohannes ( NOUN NOUN_PROPER_SINGULAR ) 
  Yohko ( NOUN NOUN_PROPER_SINGULAR ) 
  Yoka ( NOUN NOUN_PROPER_SINGULAR ) 
@@ -278,7 +278,7 @@
  Yokozuna-Komitee ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  Yokozuna-Titel ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  Yol-Prozess ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
- Yol-Prozeß ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=Yol-Prozess 
+ Yol-Prozeß ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=`Yol-Prozess` NN  
  Yolanda ( NOUN NOUN_PROPER_SINGULAR ) 
  Yolande ( NOUN NOUN_PROPER_SINGULAR ) 
  Yolari ( NOUN NOUN_PROPER_SINGULAR ) 
@@ -313,15 +313,15 @@
  York-Ulrich ( NOUN NOUN_PROPER_SINGULAR ) 
  York-Werner ( NOUN NOUN_PROPER_SINGULAR ) 
  York/Mexiko-Stadt ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
- Yorkbrücken ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=Yorkbrücke 
- Yorker ( NOUN ADJECTIVE NOUN_SINGULAR NOUN_PLURAL ) 
+ Yorkbrücken ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=`Yorkbrücke` NN  
+ Yorker ( NOUN ADJECTIVE NOUN_SINGULAR NOUN_PLURAL ) lemma=`Yorker`Yorker`Yorker` ADJA  ADJD  NN  
  Yorkerin ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
- Yorkern ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=Yorker 
- Yorkers ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=Yorker 
- Yorks ( NOUN NOUN_PROPER_SINGULAR ) lemma=York 
+ Yorkern ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=`Yorker` NN  
+ Yorkers ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=`Yorker` NN  
+ Yorks ( NOUN NOUN_PROPER_SINGULAR ) lemma=`York` NE  
  Yorkshire- ( ) 
  Yorkshire-Terrier ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
- Yorkstrasse ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=Yorkstraße 
+ Yorkstrasse ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=`Yorkstraße` NN  
  Yorkstraße ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  Yoruba- ( ) 
  Yoruba-Sprache ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
@@ -359,7 +359,7 @@
  Ypern-Kaserne ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  Ypsilon ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  Ysaye-Quartett ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
- Ysaye-Quartetts ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=Ysaye-Quartett 
+ Ysaye-Quartetts ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=`Ysaye-Quartett` NN  
  Ysop ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  Ytong-Gruppe ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  Ytong-Holding ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
@@ -372,7 +372,7 @@
  Yucatán-Halbinsel ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  Yucca-Bar ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  Yucca-Palme ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
- Yucca-Palmen ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=Yucca-Palme 
+ Yucca-Palmen ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=`Yucca-Palme` NN  
  Yucel ( NOUN NOUN_PROPER_SINGULAR ) 
  Yud ( NOUN NOUN_PROPER_SINGULAR ) 
  Yue ( NOUN NOUN_PROPER_SINGULAR ) 
@@ -397,10 +397,10 @@
  Yunus ( NOUN NOUN_PROPER_SINGULAR ) 
  Yuppi-Mädchen ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  Yuppie- ( ) 
- Yuppie-Agenturen ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=Yuppie-Agentur 
- Yuppie-Bastards ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=Yuppie-Bastard 
+ Yuppie-Agenturen ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=`Yuppie-Agentur` NN  
+ Yuppie-Bastards ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=`Yuppie-Bastard` NN  
  Yuppie-Bier ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
- Yuppie-City ( NOUN NOUN_SINGULAR NOUN_PLURAL NOUN_PROPER_SINGULAR ) 
+ Yuppie-City ( NOUN NOUN_SINGULAR NOUN_PLURAL NOUN_PROPER_SINGULAR ) lemma=`Yuppie-City`Yuppie-City` NE  NN  
  Yuppie-Design ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  Yuppie-Ehepaar ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  Yuppie-Faschist ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
@@ -419,7 +419,7 @@
  Yuppie-Streik ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  Yuppie-Trip ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  Yuppie-Welt ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
- Yuppie-Wohnungen ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=Yuppie-Wohnung 
+ Yuppie-Wohnungen ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=`Yuppie-Wohnung` NN  
  Yurdagül ( NOUN NOUN_PROPER_SINGULAR ) 
  Yurdakul ( NOUN NOUN_PROPER_SINGULAR ) 
  Yurdal ( NOUN NOUN_PROPER_SINGULAR ) 
@@ -448,7 +448,7 @@
  Yvonne ( NOUN NOUN_PROPER_SINGULAR ) 
  Yvonne-E. ( NOUN NOUN_PROPER_SINGULAR ) 
  Yvonne-Eva ( NOUN NOUN_PROPER_SINGULAR ) 
- Yvonnes ( NOUN NOUN_PROPER_SINGULAR ) lemma=Yvonne 
+ Yvonnes ( NOUN NOUN_PROPER_SINGULAR ) lemma=`Yvonne` NE  
  Yvonnet ( NOUN NOUN_PROPER_SINGULAR ) 
  Yörn ( NOUN NOUN_PROPER_SINGULAR ) 
  Yü ( NOUN NOUN_PROPER_SINGULAR ) 
@@ -456,25 +456,4 @@
  Yüksel ( NOUN NOUN_PROPER_SINGULAR ) 
  Yüsüf ( NOUN NOUN_PROPER_SINGULAR ) 
  yayla-System ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
- yogaähnlicher ( ADJECTIVE ) 
- Y-Frau ( ) 
- YPF-Aktie ( ) 
- Yachtclubrebell ( ) 
- Yakuza-Chef ( ) 
- Yakuza-Gruppe ( ) 
- Yamaha-Motorrad ( ) 
- Yamswurzel ( ) 
- Yangzi-Schlucht ( ) 
- Yanomami-Mord ( ) 
- Yen-Milliarde ( ) 
- Yes-Song ( ) 
- Yeschiva-Student ( ) 
- Yimou-Film ( ) 
- Ymos-Aktie ( ) 
- Ymos-Betriebsrat ( ) 
- Yoga-Übungsstunde ( ) 
- Yogaübung ( ) 
- Yorkbrücke ( ) 
- Yuppie-Agentur ( ) 
- Yuppie-Bastard ( ) 
- Yuppie-Wohnung ( ) 
+ yogaähnlicher ( ADJECTIVE ) lemma=`yogaähnlicher`yogaähnlich` ADJA  ADJD  

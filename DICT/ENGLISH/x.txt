@@ -415,8 +415,8 @@
     ninety-seven~1a 
  xcviii ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON1 ) 
     ninety-eight~1a 
- xcl ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON1 ) 
-    one_hundred_ninety~1a 
+ xcl ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON1 ) 
+    xcl~1az being ten more than one hundred eighty
  xeric ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:ADJECTIVE ) 
     xeric~1az being deficient in moisture
  xenogeneic ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:ADJECTIVE ) 
@@ -432,14 +432,14 @@
  xylophagous ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON1 ) 
     xylophagous~1az 
  xenically ( meanings=2 ADVERB ) 
-    xenically~1bz 
-    xenically~2bz 
+    xenically~1z 
+    xenically~2z 
  xeroradiographically ( meanings=2 ADVERB ) 
-    xeroradiographically~1bz 
-    xeroradiographically~2bz 
+    xeroradiographically~1z 
+    xeroradiographically~2z 
  xeromammographically ( meanings=2 ADVERB ) 
-    xeromammographically~1bz 
-    xeromammographically~2bz 
+    xeromammographically~1z 
+    xeromammographically~2z 
  x-ray ( meanings=2 glosses=2 VERB_PRESENT VERB_INFINITIVE VERB VERB_DIRECTOBJECT ) 
     x-ray~1vz take an x-ray of something or somebody
     x-ray~2vz examine by taking x-rays

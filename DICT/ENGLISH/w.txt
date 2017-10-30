@@ -884,7 +884,7 @@
     unanimous~2az acting together as a single undiversified whole
     hale~1az exhibiting or restored to vigorous good health
     unscathed~1az not injured
-    entirely~1b 
+    entirely~1z 
  withdrawal ( meanings=9 glosses=6 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON4 NOUN_NODETERMINER posdefault:NOUN ) 
     withdrawal~1nz (^going~1) the act of withdrawing
     drug_withdrawal~1n 
@@ -933,8 +933,8 @@
     untamed~1az in a natural state
     wild~15az marked by extreme lack of restraint or control
     wild~16az 
-    wild~17bz in a wild or undomesticated manner
-    rampantly~1bz in an uncontrolled and rampant manner
+    wild~17z in a wild or undomesticated manner
+    rampantly~1z in an uncontrolled and rampant manner
  wink ( meanings=7 glosses=6 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON1 KINDERGARTEN posdefault:NOUN VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     nictation~1nz (^physiological_reaction~1) a reflex that closes and opens the eyes rapidly
     wink~2nz (^facial_expression~2) closing one eye quickly as a signal
@@ -974,7 +974,7 @@
     worst~2nz (^evil~2) the greatest damage or wickedness of which one is capable
     worst~3nz (^result~3) the least favorable outcome
     worst~4az most wanting in quality or value or condition
-    worst~5bz to the highest degree of inferiority or badness
+    worst~5z to the highest degree of inferiority or badness
     rack_up~2vz defeat thoroughly
  whiff ( meanings=8 glosses=5 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 posdefault:NOUN VERB_DIRECTOBJECT ) 
     whiff~1nz (^strikeout~1) a strikeout resulting from the batter swinging at and missing the ball for the third strike
@@ -1031,7 +1031,7 @@
     way~10nz (^share~4) a portion of something divided into shares
     room~3n 
     way~12nz (^status~1) the condition of things generally
-    right_smart~2bz to a great degree or by a great distance
+    right_smart~2z to a great degree or by a great distance
  weaning ( meanings=1 NOUN NOUN_SINGULAR COMMON2 COMMON1 posdefault:VERB ) 
     ablactation~1n 
  whitelash ( meanings=1 NOUN NOUN_SINGULAR ) 
@@ -1395,7 +1395,7 @@
     wrong~9az used of the side of cloth or clothing intended to face inward
     incorrect~4az not in accord with established usage or procedure
     wrong~11az contrary to conscience or morality or law
-    wrongly~1bz in an inaccurate manner
+    wrongly~1z in an inaccurate manner
     wrong~13vz treat unjustly
  whist ( meanings=1 NOUN NOUN_SINGULAR COMMON2 posdefault:NOUN ) 
     long_whist~1n 
@@ -1750,8 +1750,8 @@
  wholesale ( meanings=5 glosses=5 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB ADJECTIVE ADVERB ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 COMMON1 NOUN_NODETERMINER GRADE5_6 posdefault:ADJECTIVE VERB_DIRECTOBJECT ) comparative=wholesaler 
     wholesale~1nz (^merchandising~1) the selling of goods to merchants
     sweeping~2az ignoring distinctions
-    in_large_quantities~1bz on a large scale without careful discrimination
-    wholesale~4bz at a wholesale price
+    in_large_quantities~1z on a large scale without careful discrimination
+    wholesale~4z at a wholesale price
     wholesale~5vz sell in large quantities
  white_sale ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     white_sale~1nz (^sale~3) a sale of household linens
@@ -1771,7 +1771,7 @@
  whacking ( meanings=3 glosses=3 NOUN_ABSTRACT NOUN ADJECTIVE ADVERB ADJECTIVE_NORMAL NOUN_SINGULAR ADJECTIVE_NOT_PREDICATE COMMON2 COMMON1 GRADE1_2 posdefault:VERB ) 
     beating~1nz (^corporal_punishment~1) the act of inflicting corporal punishment with repeated blows
     whacking~2az enormous
-    whacking~3bz extremely
+    whacking~3z extremely
  whipping ( meanings=5 glosses=2 NOUN_ABSTRACT NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 posdefault:VERB ) 
     flagellation~1n 
     beating~2nz (^fight~3) the act of overcoming or outdoing
@@ -3453,19 +3453,19 @@
     good~11a 
     well~8az in good health especially after having suffered illness or injury
     well~9az 
-    good~27b 
-    well~11bz without unusual distress or resentment
-    easily~1b 
-    well~13bz thoroughly or completely
-    well~14bz favorably
-    well~15bz to a suitable or appropriate extent or degree
-    comfortably~1bz in financial comfort
-    advantageously~1bz in a manner affording benefit or advantage
-    substantially~1bz to a great extent or degree
-    well~19bz with skill or in a pleasing manner
-    well~20bz with prudence or propriety
-    intimately~1bz with great or especially intimate knowledge
-    well~22bz entirely or fully
+    good~27z 
+    well~11z without unusual distress or resentment
+    easily~1z 
+    well~13z thoroughly or completely
+    well~14z favorably
+    well~15z to a suitable or appropriate extent or degree
+    comfortably~1z in financial comfort
+    advantageously~1z in a manner affording benefit or advantage
+    substantially~1z to a great extent or degree
+    well~19z with skill or in a pleasing manner
+    well~20z with prudence or propriety
+    intimately~1z with great or especially intimate knowledge
+    well~22z entirely or fully
     swell~9vz come up, as of a liquid
  wellhead ( meanings=2 glosses=1 NOUN NOUN_SINGULAR COMMON2 COMMON1 posdefault:NOUN ) 
     wellhead~1nz (^structure~1) a structure built over a well
@@ -3639,10 +3639,10 @@
     broad~9a 
     wide~7az great in degree
     wide~8az 
-    widely~1bz to or over a great extent or range
-    wide~10bz with or by a broad space
-    astray~2bz far from the intended target
-    wide~12bz to the fullest extent possible
+    widely~1z to or over a great extent or range
+    wide~10z with or by a broad space
+    astray~2z far from the intended target
+    wide~12z to the fullest extent possible
  WAN ( meanings=1 NOUN NOUN_PROPER_SINGULAR ) 
     wide_area_network~1n 
  widebody_aircraft ( meanings=1 NOUN NOUN_SINGULAR ) 
@@ -4291,11 +4291,11 @@
  worthlessness ( meanings=2 glosses=2 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON2 ) 
     ineptitude~1nz (^quality~1) having no qualities that would render it valuable or useful
     worthlessness~2nz (^unusefulness~1) the quality of being without practical use
- worse ( meanings=4 glosses=3 MORE_FORM ADJECTIVE ADVERB ADJECTIVE_NORMAL ADJECTIVE_NOT_PREDICATE COMMON4 COMMON1 KINDERGARTEN posdefault:ADJECTIVE ) comparative=bad 
+ worse ( meanings=4 glosses=3 MORE_FORM ADJECTIVE ADJECTIVE_NORMAL ADJECTIVE_NOT_PREDICATE COMMON4 COMMON1 KINDERGARTEN posdefault:ADJECTIVE ) comparative=bad 
     worse~1az inferior to another in quality or condition or desirability
     worsened~2az changed for the worse in health or fitness
     worse~3az 
-    worse~4bz in a less effective or successful or desirable manner
+    worse~4z in a less effective or successful or desirable manner
  whip_hand ( meanings=1 NOUN NOUN_SINGULAR ) 
     upper_hand~1n 
  weak_point ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
@@ -4648,7 +4648,7 @@
  weekly ( meanings=3 glosses=3 NOUN ADJECTIVE ADVERB ADJECTIVE_NORMAL NOUN_SINGULAR ADJECTIVE_NOT_PREDICATE COMMON4 COMMON1 KINDERGARTEN posdefault:ADJECTIVE TIMEWORD ) 
     weekly~1nz (^serial_publication~1) a periodical that is published every week
     hebdomadary~1az of or occurring every seven days
-    each_week~1bz without missing a week
+    each_week~1z without missing a week
  word_meaning ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     word_sense~1nz (^sense~5) the accepted meaning of a word
  word_sense ( meanings=1 NOUN NOUN_SINGULAR ) 
@@ -5522,7 +5522,7 @@
     westward~1nz (^cardinal_compass_point~1) the cardinal compass point that is a 270 degrees
     west~3nz (^direction~9) the direction corresponding to the westward cardinal compass point
     west~4az situated in or facing or moving toward the west
-    west~5bz to, toward, or in the west
+    west~5z to, toward, or in the west
  weather_station ( meanings=1 NOUN NOUN_SINGULAR ) 
     meteorological_observation_post~1n 
  Wind_Cave_National_Park ( meanings=1 glosses=1 NOUN NOUN_PROPER_SINGULAR ) 
@@ -5531,7 +5531,7 @@
     windward~1nz (^face~12) the side of something that is toward the wind
     windward~2nz (^direction~9) the direction from which the wind is coming
     windward~3az on the side exposed to the wind
-    downwind~3bz away from the wind
+    downwind~3z away from the wind
  Wrangell-St_._Elias_National_Park ( meanings=1 glosses=1 NOUN NOUN_PROPER_SINGULAR ) 
     Wrangell-St_._Elias_National_Park~1nz (^national_park~1) the largest national park of the United States
  waterfront ( meanings=1 glosses=1 NOUN NOUN_SINGULAR COMMON4 posdefault:NOUN ) 
@@ -5774,7 +5774,7 @@
  weakly ( meanings=3 glosses=1 ADJECTIVE ADVERB ADJECTIVE_NORMAL ADJECTIVE_NOT_PREDICATE COMMON4 posdefault:ADVERB ) comparative=weakliest 
     weak~8a 
     weakly~2az 
-    weakly~3bz in a weak or feeble manner or to a minor degree
+    weakly~3z in a weak or feeble manner or to a minor degree
  WIMP ( meanings=1 NOUN NOUN_PROPER_SINGULAR ) 
     weakly_interacting_massive_particle~1n 
  Weddell_Sea ( meanings=1 glosses=1 NOUN NOUN_PROPER_SINGULAR ) 
@@ -6714,7 +6714,7 @@
  William_Wymark_Jacobs ( meanings=1 glosses=1 NOUN NOUN_PROPER_SINGULAR ) 
     Jacobs~3nz (^writer~1) English writer of macabre short stories
  William_James ( meanings=1 NOUN NOUN_PROPER_SINGULAR ) 
-    James~6n 
+    James~5n 
  William_Le_Baron_Jenny ( meanings=1 NOUN NOUN_PROPER_SINGULAR ) 
     Jenny~1n 
  William_Stanley_Jevons ( meanings=1 glosses=1 NOUN NOUN_PROPER_SINGULAR ) 
@@ -7051,7 +7051,7 @@
     warm~9az psychologically warm
     warm~10az inducing the impression of warmth
     warm~11az 
-    warmly~2bz in a warm manner
+    warmly~2z in a warm manner
     warm~13vz make warm or warmer
     warm_up~4vz get warm or warmer
  whole_gale ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
@@ -7076,8 +7076,8 @@
     prevailing_westerly~1n 
     westward~2a 
     western~3az of wind
-    westerly~4bz from the west
-    westerly~5bz toward the west
+    westerly~4z from the west
+    westerly~5z toward the west
  whirlwind ( meanings=1 glosses=1 NOUN NOUN_SINGULAR COMMON2 COMMON1 posdefault:NOUN ) 
     whirlwind~1nz (^windstorm~1) a more or less vertical column of air whirling around itself as it moves over the surface of the Earth
  wind_generation ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
@@ -8246,7 +8246,7 @@
  westward ( meanings=3 NOUN ADJECTIVE ADVERB ADJECTIVE_NORMAL NOUN_SINGULAR ADJECTIVE_NOT_PREDICATE COMMON2 COMMON1 posdefault:ADVERB ) 
     due_west~1n 
     westbound~1a 
-    westwards~1b 
+    westwards~1z 
  west_by_north ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     WbN~1nz (^point~22) the compass point that is one point north of due west
  WbN ( meanings=1 NOUN NOUN_PROPER_SINGULAR COMMON1 ) 
@@ -8703,7 +8703,7 @@
  woops ( INTERJECTION ) 
  wuzzup ( INTERJECTION ) 
  wholly ( meanings=1 ADVERB COMMON4 GRADE5_6 posdefault:ADVERB ) 
-    altogether~2b 
+    altogether~2z 
  wrapped ( meanings=4 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:VERB ) 
     captive~4a 
     clothed~2a 
@@ -9194,9 +9194,9 @@
  widely_distributed ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL CONDITIONAL_IDIOM  poscondition=?=A ) 
     cosmopolitan~4az 
  widely ( meanings=3 glosses=2 ADVERB COMMON4 COMMON1 posdefault:ADVERB ) 
-    wide~9b 
-    widely~2bz to a great degree
-    widely~3bz so as to leave much space or distance between
+    wide~9z 
+    widely~2z to a great degree
+    widely~3z so as to leave much space or distance between
  well-behaved ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL posdefault:ADJECTIVE ) 
     well_behaved~1az someone who behaves in a manner that the speaker believes is correct
  well_behaved ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL CONDITIONAL_IDIOM  poscondition=?=A ) 
@@ -9294,7 +9294,7 @@
     woeful~3az 
  whopping ( meanings=2 glosses=1 ADJECTIVE ADVERB ADJECTIVE_NORMAL ADJECTIVE_NOT_PREDICATE COMMON2 COMMON1 posdefault:ADVERB ADJECTIVE_GOOD_SUBJECT_COMPLEMENT ) 
     humongous~1a 
-    whopping~2bz extremely
+    whopping~2z extremely
  weeny ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:ADJECTIVE ) comparative=weeniest 
     teeny~1a 
  weensy ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 ) comparative=weensiest 
@@ -9379,7 +9379,7 @@
     wide-eyed~3az 
  well-timed ( meanings=2 glosses=1 ADJECTIVE ADVERB ADJECTIVE_NORMAL ADJECTIVE_NOT_PREDICATE posdefault:ADJECTIVE ) 
     timely~1a 
-    seasonably~1bz at an opportune time
+    seasonably~1z at an opportune time
  well_timed ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL CONDITIONAL_IDIOM ADJECTIVE_ONLY_PREDICATE  poscondition=?=A ) 
     well-timed~1a 
  well-conducted ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL posdefault:ADJECTIVE ) 
@@ -9392,7 +9392,7 @@
  wondrous ( meanings=3 ADJECTIVE ADVERB ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
     wonderful~1a 
     wondrous~2az 
-    toppingly~1b 
+    toppingly~1z 
  wonderworking ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON1 ) 
     wonderworking~1az performing or able to perform wonders or miracles
  well-worn ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL posdefault:ADJECTIVE ) 
@@ -9580,7 +9580,7 @@
     aroused~6az 
  wafer-thin ( meanings=2 glosses=2 ADJECTIVE ADVERB ADJECTIVE_NORMAL posdefault:ADJECTIVE ) 
     wafer-thin~1az very thin
-    wafer-thin~2bz very thin
+    wafer-thin~2z very thin
  well_thought_out ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL CONDITIONAL_IDIOM ADJECTIVE_ONLY_PREDICATE  poscondition=?=A ) 
     well_thought_out~1az 
  well-groomed ( meanings=3 glosses=2 ADJECTIVE ADJECTIVE_NORMAL posdefault:ADJECTIVE ) 
@@ -9968,158 +9968,158 @@
  wryer ( MORE_FORM ADJECTIVE ADJECTIVE_NORMAL COMMON1 ) comparative=wriest 
  wryest ( MOST_FORM ADJECTIVE ADJECTIVE_NORMAL COMMON1 ) comparative=wryer 
  withal ( meanings=3 glosses=1 ADVERB PREPOSITION COMMON2 COMMON1 posdefault:ADVERB ) 
-    still~13b 
-    withal~2bz together with this
+    still~13z 
+    withal~2z together with this
     withal~3z 
  what_is_more ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    moreover~1b 
+    moreover~1z 
  willy-nilly ( meanings=2 glosses=1 ADVERB posdefault:ADVERB ) 
-    haphazardly~1b 
-    willy-nilly~2bz without having a choice
+    haphazardly~1z 
+    willy-nilly~2z without having a choice
  well-nigh ( meanings=1 ADVERB posdefault:ADVERB ) 
-    virtually~1b 
+    virtually~1z 
  wearily ( meanings=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    tiredly~1b 
+    tiredly~1z 
  woefully ( meanings=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    lamentably~1b 
+    lamentably~1z 
  when_first_seen ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    at_first_blush~1bz 
+    at_first_blush~1z 
  within ( meanings=2 ADVERB PREPOSITION EXTENT_ADVERB COMMON4 COMMON2 COMMON1 KINDERGARTEN posdefault:PREPOSITION ) 
-    inside~10b 
+    inside~10z 
     within~2z 
  wordlessly ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    taciturnly~1bz without speaking
+    taciturnly~1z without speaking
  wickedly ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    evilly~1bz in a wicked evil manner
+    evilly~1z in a wicked evil manner
  without_doubt ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    no_doubt~1bz 
+    no_doubt~1z 
  whatever_may_come ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    no_matter_what_happens~1b 
+    no_matter_what_happens~1z 
  when_the_time_comes ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    in_due_course~1bz 
+    in_due_course~1z 
  wildly ( meanings=3 glosses=3 ADVERB COMMON4 posdefault:ADVERB ) 
-    wildly~1bz to an extreme or greatly exaggerated degree
-    wildly~2bz with violent and uncontrollable passion
-    wildly~3bz in an uncontrolled or unrestrained manner
+    wildly~1z to an extreme or greatly exaggerated degree
+    wildly~2z with violent and uncontrollable passion
+    wildly~3z in an uncontrolled or unrestrained manner
  week_after_week ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    week_after_week~1bz 
+    week_after_week~1z 
  week_by_week ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    week_by_week~1bz 
+    week_by_week~1z 
  wonderfully ( meanings=1 ADVERB COMMON4 posdefault:ADVERB ) 
-    marvellously~1b 
+    marvellously~1z 
  wondrously ( meanings=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    wonderfully~1b 
+    wonderfully~1z 
  weirdly ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    weirdly~1bz in a weird manner
+    weirdly~1z in a weird manner
  woodenly ( meanings=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    ungracefully~1b 
+    ungracefully~1z 
  wrongheadedly ( meanings=1 glosses=1 ADVERB COMMON1 ) 
-    wrongheadedly~1bz in a wrongheaded manner
+    wrongheadedly~1z in a wrongheaded manner
  wisely ( meanings=1 glosses=1 ADVERB COMMON4 posdefault:ADVERB ) 
-    sagely~1bz in a wise manner
+    sagely~1z in a wise manner
  wrongly ( meanings=2 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    incorrectly~1b 
-    wrongly~2bz without justice or fairness
+    incorrectly~1z 
+    wrongly~2z without justice or fairness
  warmly ( meanings=2 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    heartily~2b 
-    warm~12b 
+    heartily~2z 
+    warm~12z 
  wryly ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    wryly~1bz in a wry manner
+    wryly~1z in a wry manner
  warily ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    warily~1bz in a wary manner
+    warily~1z in a wary manner
  winsomely ( meanings=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    engagingly~1b 
+    engagingly~1z 
  wittingly ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    knowingly~1bz with full knowledge and deliberation
+    knowingly~1z with full knowledge and deliberation
  word_for_word ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    verbatim~2bz 
+    verbatim~2z 
  wackily ( meanings=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    nuttily~1b 
+    nuttily~1z 
  willingly ( meanings=1 ADVERB COMMON4 posdefault:ADVERB ) 
-    volitionally~1b 
+    volitionally~1z 
  westwards ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    westward~3bz toward the west
+    westward~3z toward the west
  whimsically ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    fancifully~1bz in a fanciful manner
+    fancifully~1z in a fanciful manner
  wonderingly ( meanings=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    questioningly~1b 
+    questioningly~1z 
  wantonly ( meanings=2 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    promiscuously~1b 
-    wantonly~2bz in a wanton manner
+    promiscuously~1z 
+    wantonly~2z in a wanton manner
  wastefully ( meanings=2 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    prodigally~1bz to a wasteful manner or to a wasteful degree
-    wastefully~2bz 
+    prodigally~1z to a wasteful manner or to a wasteful degree
+    wastefully~2z 
  windily ( meanings=1 ADVERB COMMON1 ) 
-    long-windedly~1b 
+    long-windedly~1z 
  wordily ( meanings=1 ADVERB COMMON1 ) 
-    verbosely~1b 
+    verbosely~1z 
  watchfully ( meanings=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    vigilantly~1b 
+    vigilantly~1z 
  waggishly ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    waggishly~1bz in a waggish manner
+    waggishly~1z in a waggish manner
  waist-deep ( meanings=1 glosses=1 ADVERB ) 
-    waist-high~1bz up to the waist
+    waist-high~1z up to the waist
  waist-high ( meanings=1 ADVERB ) 
-    waist-deep~1b 
+    waist-deep~1z 
  wanly ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    wanly~1bz in a weak or pale or languid manner
+    wanly~1z in a weak or pale or languid manner
  wealthily ( meanings=1 glosses=1 ADVERB COMMON1 ) 
-    wealthily~1bz with riches
+    wealthily~1z with riches
  weightily ( meanings=2 glosses=2 ADVERB COMMON1 posdefault:ADVERB ) 
-    weightily~1bz as something very heavy
-    weightily~2bz in a serious manner
+    weightily~1z as something very heavy
+    weightily~2z in a serious manner
  wheezily ( meanings=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    wheezingly~1b 
+    wheezingly~1z 
  wheezingly ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    wheezily~1bz with a wheeze
+    wheezily~1z with a wheeze
  wholeheartedly ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    wholeheartedly~1bz without reserve
+    wholeheartedly~1z without reserve
  wholesomely ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    wholesomely~1bz in a wholesome manner
+    wholesomely~1z in a wholesome manner
  whence ( meanings=1 glosses=1 QWORD ADVERB CONJUNCTION_SUBORDINATE COMMON2 COMMON1 KINDERGARTEN ) 
-    whence~1bz from what place, source, or cause
+    whence~1z from what place, source, or cause
  wherever ( meanings=2 glosses=1 ADVERB CONJUNCTION_SUBORDINATE COMMON4 KINDERGARTEN CONJUNCT_SUBORD_NOUN ) 
-    wheresoever~1bz where in the world
+    wheresoever~1z where in the world
     wherever~2z 
  wheresoever ( meanings=1 ADVERB COMMON2 ) 
-    wherever~1b 
+    wherever~1z 
  willfully ( meanings=2 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    wilfully~1bz in a willful manner
-    willfully~2bz 
+    wilfully~1z in a willful manner
+    willfully~2z 
  wilfully ( meanings=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    willfully~1b 
+    willfully~1z 
  wishfully ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    wishfully~1bz in a wishful manner
+    wishfully~1z in a wishful manner
  wistfully ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    wistfully~1bz in a wistful manner
+    wistfully~1z in a wistful manner
  witheringly ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    witheringly~1bz in a withering manner
+    witheringly~1z in a withering manner
  wittily ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    wittily~1bz in a witty manner
+    wittily~1z in a witty manner
  wolfishly ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    wolfishly~1bz in the manner of a wolf
+    wolfishly~1z in the manner of a wolf
  worryingly ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    worryingly~1bz in a manner to cause worry
+    worryingly~1z in a manner to cause worry
  worriedly ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    worriedly~1bz in a worried manner
+    worriedly~1z in a worried manner
  worthily ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    worthily~1bz in a worthy manner
+    worthily~1z in a worthy manner
  worthlessly ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    worthlessly~1bz in a worthless manner
+    worthlessly~1z in a worthless manner
  wrathfully ( meanings=2 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    wrathfully~1bz in a wrathful manner
-    wrathfully~2bz 
+    wrathfully~1z in a wrathful manner
+    wrathfully~2z 
  wretchedly ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    wretchedly~1bz in a wretched manner
+    wretchedly~1z in a wretched manner
  wrongfully ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    wrongfully~1bz in an unjust or unfair manner
+    wrongfully~1z in an unjust or unfair manner
  whether ( meanings=4 ADVERB CONJUNCTION_COORDINATE CONJUNCTION_SUBORDINATE COMMON4 COMMON1 KINDERGARTEN posdefault:PREPOSITION ) 
-    whether~1bz 
+    whether~1z 
     whether~2z 
     whether~3z 
     whether~4z 
  wrong-headedly ( meanings=1 ADVERB ) 
-    wrong-headedly~1bz 
+    wrong-headedly~1z 
  whom ( meanings=1 QWORD PRONOUN_OBJECT COMMON4 COMMON1 KINDERGARTEN PRONOUN_RELATIVE ) 
     whom~1z 
  whomever ( meanings=1 QWORD PRONOUN_OBJECT COMMON2 COMMON1 KINDERGARTEN PRONOUN_SINGULAR PRONOUN_RELATIVE ) 

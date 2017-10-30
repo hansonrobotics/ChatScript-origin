@@ -1,0 +1,9 @@
+{
+	"name": "loebner-bridge",
+	"version":"1.0.0",
+	"description": "Bridge between old and new Loebner protocols",
+	"author": "Nir Oren",
+	"dependencies":{
+		"socket.io-client":"1.7.2"
+	}
+}

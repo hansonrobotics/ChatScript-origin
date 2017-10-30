@@ -235,7 +235,6 @@ re_tweet retweet
 sec seconde
 sec. seconde
 secs secondes
-sept septembre
 sept. septembre
 tv TV
 u_s_a États-Unis

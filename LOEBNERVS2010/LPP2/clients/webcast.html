@@ -1,0 +1,162 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <style>
+            .left {
+                text-align: left;
+                color: green;
+            }
+
+            .right{
+                text-align: right;
+                color: blue;
+            }
+            #messagepaneL{
+                height: 60%;
+                position: absolute;
+                left: 10%;
+                word-wrap: break-word;
+                border-style:solid;
+                border-width: 1px;
+                margin-top: 5px;
+                margin-bottom: 5px;
+                width: 35%;
+            }
+
+
+            #messagepaneR{
+                height: 60%;
+                position: absolute;
+                right: 10%;
+                word-wrap: break-word;
+                border-style:solid;
+                border-width: 1px;
+                margin-top: 5px;
+                margin-bottom: 5px;
+                width: 35%;
+            }
+
+            #robotL{
+                position: absolute;
+                left:10%;
+                bottom:20%;
+            }
+
+            #robotR{
+                position: absolute;
+                right:10%;
+                bottom:20%;
+            }
+
+        </style>
+        <script src="http://127.0.0.1:8080/scripts/jquery.min.js"></script>
+        <script src="http://127.0.0.1:8080/scripts/socket.io-1.4.5.js"></script>
+        <script>
+            var URL="http://127.0.0.1:8080";
+            var NAME="webcast";
+            var partnerL;
+            var partnerR;
+	    var judgeName;
+	    var socket;
+
+//taken from https://github.com/janl/mustache.js/blob/master/mustache.js#L60
+            var entityMap = {
+                '&': '&amp;',
+                '<': '&lt;',
+                '>': '&gt;',
+                '"': '&quot;',
+                "'": '&#39;',
+                '/': '&#x2F;',
+                '`': '&#x60;',
+                '=': '&#x3D;'
+            };
+
+            function escapeHtml (string) {
+                return String(string).replace(/[&<>"'`=\/]/g, function fromEntityMap (s) {
+                  return entityMap[s];
+                });
+            }
+
+            function toJSON(map) {
+                map["id"]=NAME;
+                map["secret"]=SECRET;
+                return JSON.stringify(map);
+            }
+
+            function setPartners(partnerArray) {
+                partnerL=partnerArray[0];
+                partnerR=partnerArray[0];
+                if (Math.random()<0.5) partnerL=partnerArray[1];
+                else partnerR=partnerArray[1];
+            }
+
+	    function handleMessage(m) {
+                    if (m.id==partnerR) {
+                      $('#messagepaneR').append("<div class='right'>"+escapeHtml(m.content)+"</div>");
+                      $('#messagepaneR').scrollTop($('#messagepaneR').height());
+                    }
+                    else if (m.id==partnerL) {
+                      $('#messagepaneL').append("<div class='right'>"+escapeHtml(m.content)+"</div>");
+                      $('#messagepaneL').scrollTop($('#messagepaneL').height());
+                    }
+		    else if (m.to==partnerR){
+                      $('#messagepaneR').append("<div class='left'>"+escapeHtml(m.content)+"</div>");
+                      $('#messagepaneR').scrollTop($('#messagepaneR').height());
+	            }
+		    else if (m.to==partnerL){
+                      $('#messagepaneL').append("<div class='left'>"+escapeHtml(m.content)+"</div>");
+                      $('#messagepaneL').scrollTop($('#messagepaneR').height());
+	            }
+
+	    }
+
+
+            $(document).ready(function() {
+
+            });
+
+	  function setRound(){
+		if (socket!=undefined)
+		  socket.close();
+                socket=io(URL);
+                socket.on('message',function(data){
+			handleMessage(JSON.parse(data));
+                });
+
+		socket.on('recap',function(data){
+                        $('#messagepaneL').empty();
+                        $('#messagepaneR').empty();
+			var d=JSON.parse(data);
+			for (var t in d){
+				handleMessage(d[t]);
+			}
+		});
+
+
+                socket.on('participants',function(data) {
+                    var d=JSON.parse(data);
+		    judgeName=d["judge"];
+		    setPartners([d["participant1"],d["participant2"]]);
+                });
+		socket.emit("webcast",JSON.stringify({"round":document.getElementById("round").selectedIndex,"judge":document.getElementById("judge").selectedIndex,"status":"setView"}));
+	  }
+        </script>
+    </head>
+    <body>
+        Round: <select id="round">
+	         <option value="0">1 </option>
+	         <option value="1">2 </option>
+	         <option value="2">3 </option>
+	         <option value="3">4 </option>
+	       </select>
+	Judge: <select id="judge"> 
+	         <option value="0">1 </option>
+	         <option value="1">2 </option>
+	         <option value="2">3 </option>
+	         <option value="3">4 </option>
+	       </select>
+	<button name="go" onclick="setRound()">Go</button>       
+        <div id="messagepaneL" style="overflow-y: scroll; "></div>
+        <div id="messagepaneR" style="overflow-y: scroll; "></div>
+    </body>
+</html>

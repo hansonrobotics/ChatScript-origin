@@ -179,8 +179,357 @@ static bool idiomed = false;
 
 unsigned char quotationInProgress = 0;
 
+
 #ifdef TREETAGGER
-static void TreeTagger();
+// TreeTagger is something you must license for pos-tagging a collection of foreign languages
+// Buying a license will get the the library you need to load with this code
+// http://www.cis.uni-muenchen.de/~schmid/tools/TreeTagger/
+
+#pragma comment(lib, "../treetagger/treetagger.lib") // where windows library is
+
+typedef struct {
+	int  number_of_words;  /* number of words to be tagged */
+	int  next_word;        /* needed internally */
+	char **word;           /* array of pointers to the words */
+	char **inputtag;       /* array of pointers to the pretagging information */
+	const char **resulttag;/* array of pointers to the resulting tags */
+	const char **lemma;    /* array of pointers to the lemmas */
+} TAGGER_STRUCT;
+typedef char*(*FindIt)(char* word);
+#ifdef WIN32
+bool __declspec(dllimport)  init_treetagger(char *param_file_name, AllocatePtr allocator, FindIt getwordfn);
+double __declspec(dllimport)  tag_sentence(int index, TAGGER_STRUCT *ts);
+void __declspec(dllimport)  write_treetagger();
+#else
+bool init_treetagger(char *param_file_name, AllocatePtr allocator, FindIt getwordfn);
+double  tag_sentence(int index, TAGGER_STRUCT *ts);
+void   write_treetagger();
+#endif
+
+TAGGER_STRUCT ts;  /* tagger interface data structure */
+TAGGER_STRUCT tschunk;  /* tagger interface data structure */
+
+bool MatchTag(char* tag,int i)
+{
+	if (!stricmp(tag, ts.resulttag[i - 1])) return true;
+	if (!stricmp(tag, "NNP") && !stricmp("NP", ts.resulttag[i - 1])) return true;
+	if (!stricmp(tag, "NNPS") && !stricmp("NPS", ts.resulttag[i - 1])) return true;
+
+	return false;
+}
+
+void MarkChunk()
+{
+	if (tschunk.number_of_words == 0) return;
+
+	WORDP type = NULL;
+	int start = 0;
+	unsigned int i;
+	char word[MAX_WORD_SIZE];
+	*word = '~';
+	for (i = 0; i < wordCount; ++i)
+	{
+		char* tag = (char*)tschunk.resulttag[i];
+/* Status can be B - starting a chunk or I - inside a chunk continuing a chunk or O - outside a chunk like punctuation, quotation, parentheses, coordinating conjunctions(and, or ).
+English tags:
+ADJC	  adjective chunks(not inside of noun chunks)
+ADVC	  adverb chunks(not inside of noun or adjective chunks)
+CONJC	  complex coordinating conjunctions such as "as well (as)" or "rather (than)"
+INTJ	  interjection
+LST	  enumeration symbol
+NC	  noun chunk(non - recursive noun phrase)
+PC	  prepositional chunk(usually embeds a noun chunk
+PRT	  verb particle
+VC	  verb complex
+CD/B-NC
+*/
+		char* complex = strrchr(tag, '-'); // just before complex
+		if (!complex) continue;
+		strcpy(word+1, complex);
+		if (*(complex - 1) == 'B') // complex begin
+		{
+			if (type) // end prior chunk
+			{
+				MarkFacts(0, 0, MakeMeaning(type), start, i,false, true);
+			}
+			type = StoreWord(word);
+			type->internalBits |= CONCEPT;
+			start = i+1;
+		}
+		else if (*(complex - 1) == 'O') // complex output of chunk (like punctuation)
+		{
+			if (type) // end prior chunk
+			{
+				MarkFacts(0, 0, MakeMeaning(type), start, i,false, true);
+				type = NULL;
+			}
+		}
+		else if (!strcmp(type->word,complex))  // I  prior complex continued
+		{
+		}
+		else// shouldnt happen
+		{
+		}
+	}
+	if (type) MarkFacts(0, 0, MakeMeaning(type), start, wordCount,false,true);
+}
+
+static void TreeTagger()
+{
+	int i;
+	for (i = 0; i < wordCount; ++i)
+	{
+		ts.word[i] = wordStarts[i + 1];
+		ts.inputtag[i] = NULL;
+	}
+	ts.number_of_words = wordCount;
+	tag_sentence(0, &ts);
+	if (trace & (TRACE_PREPARE|TRACE_POS)) Log(STDTRACELOG, "External Tagging: ");
+
+	bool chunk = strstr(treetaggerParams, "chunk");
+	if (chunk) // do chunking here but marking later
+	{
+		for (i = 0; i < wordCount; ++i)
+		{
+			tschunk.word[i] = (char*)ts.resulttag[i];
+			tschunk.inputtag[i] = NULL;
+		}
+		tschunk.number_of_words = wordCount;
+		tag_sentence(1, &tschunk);
+	}
+
+	// TreeTagger results may need a bit of tweaking, so gambit a topic
+	char* taggingTopic = GetUserVariable((char*)"$cs_externaltag");
+	if (*taggingTopic)
+	{ 
+		char* oldhow = howTopic;
+		howTopic = "gambit";
+
+		int oldreuseid = currentReuseID;
+		int oldreusetopic = currentReuseTopic;
+		int oldCurrentTopic = currentTopicID;
+
+		int topicid = FindTopicIDByName(taggingTopic);
+		if (topic && !(GetTopicFlags(topicid) & TOPIC_BLOCKED))
+		{
+			ChangeDepth(1, (char*)"$cs_externaltag");
+			int pushed = PushTopic(topicid);
+			if (pushed >= 0)
+			{
+				PerformTopic(GAMBIT, currentOutputBase);
+				if (pushed) PopTopic();
+			}
+			ChangeDepth(-1, (char*)"$cs_externaltag");
+
+			currentTopicID = oldCurrentTopic; // this is where we were
+			currentReuseID = oldreuseid;
+			currentReuseTopic = oldreusetopic;
+			howTopic = oldhow;
+		}
+	}
+
+	/* mix a bit of ours and theirs */
+	if (stricmp(language, "english")) for (i = 1; i <= wordCount; i++)
+	{
+		originalUpper[i] = NULL;
+		originalLower[i] = NULL;
+
+		WORDP canonical0 = NULL;
+		// Canonicals are initialized to word starts
+		// but might have adjusted lemma explicitily via SetCanon() in the $cs_externaltag topic
+		if (strcmp(wordStarts[i], wordCanonical[i]))
+		{
+			canonical0 = FindWord(wordCanonical[i]);
+		}
+		if (!canonical0)
+		{
+			canonicalUpper[i] = NULL;
+			canonicalLower[i] = NULL;
+
+			char* lemma = (char*)ts.lemma[i - 1];
+			if (!lemma || !strcmp(lemma, "<unknown>")) lemma = (char*)"unknown-word";
+
+			canonical0 = StoreWord(lemma, 0);
+		}
+
+		// Might have adjusted TT's initial tag via SetTag() in the $cs_externaltag topic
+		char newtag[MAX_WORD_SIZE];
+		if (wordTag[i])
+		{
+			strcpy(newtag, wordTag[i]->word);
+		}
+		else
+		{
+			char* tag = (char*)ts.resulttag[i-1];
+			if (!tag) tag = (char*)"unknown-tag";
+			*newtag = '~';	// concept from the tag
+			strcpy(newtag + 1, tag);
+			wordTag[i] = FindWord(newtag);
+		}
+		*newtag = '_';
+		WORDP X = FindWord(newtag);
+
+		int start = 1;
+		WORDP entry = NULL;
+		WORDP canonical = 0;
+		uint64 sysflags = 0;
+		uint64 cansysflags = 0;
+		WORDP revise;
+		uint64 flags = GetPosData(i, wordStarts[i], revise, entry, canonical, sysflags, cansysflags, true, false, start); // flags will be potentially beyond what is stored on the word itself (like noun_gerund) but not adjective_noun
+		if (revise != NULL) wordStarts[i] = revise->word;
+
+		// Reuse the lemma word unless
+		// - the word is a concept, 
+		// - we have found a better version of the canonical
+		// - this is a number and TT thinks so too, the CS canonical will be digits
+		if (*wordStarts[i] == '~') { ; }
+		else if (canonical0->properties == 0 && canonical->properties > 0) { ; }
+		else if (flags & NUMBER_BITS && X && X->properties & NUMBER_BITS) { ; }
+		else
+		{
+			canonical = canonical0;
+			flags = 0;
+		}
+		if (!canonical) canonical = entry;
+
+		if (IsUpperCase(canonical->word[0]))
+		{
+			originalUpper[i] = entry;
+			canonicalUpper[i] = canonical;
+		}
+		else
+		{
+			originalLower[i] = entry;
+			canonicalLower[i] = canonical;
+		}
+
+		parseFlags[i] = canonical->parseBits;
+		posValues[i] = flags;
+		if (originalLower[i]) lcSysFlags[i] = sysflags; // from lower case
+		canSysFlags[i] = cansysflags;
+		if (entry->properties & PART_OF_SPEECH) ++knownWords; // known as lower or upper
+		if (*wordStarts[i] == '~') posValues[i] = 0;	// interjection
+		wordCanonical[i] = canonical->word;
+		if (X) posValues[i] |= X->properties; // english pos tag references added
+	}
+	if (trace & (TRACE_PREPARE|TRACE_POS))
+	{
+		for (i = 1; i <= wordCount; i++)
+		{
+			char* tag = (char*)ts.resulttag[i - 1];
+			if (chunk)
+			{
+				char* tag1 = (char*)tschunk.resulttag[i - 1];
+				Log(STDTRACELOG, "%s(%s %s) ", wordStarts[i], tag1, ts.lemma[i-1]);
+			}
+			else Log(STDTRACELOG, "%s(%s %s) ", wordStarts[i], tag, ts.lemma[i-1]);
+		}
+		Log(STDTRACELOG, "\r\n");
+	}
+}
+
+static void BlendWithTreetagger(bool &changed)
+{
+	if (!ts.number_of_words) return;
+
+	ts.number_of_words = 0;	// do only once
+	char word[MAX_WORD_SIZE];
+	*word = '_';	// marker to keep any collision away from foreign pos
+
+	for (int i = 1; i <= wordCount; ++i)
+	{
+		strcpy(word+1,ts.resulttag[i-1]);
+		WORDP D = FindWord(word, 0, PRIMARY_CASE_ALLOWED);
+		if (!D) continue;	// didnt find it?
+		uint64 bits = D->properties & TAG_TEST; // dont want general headers like NOUN or VERB
+		uint64 possiblebits = posValues[i] & TAG_TEST; // bits we are trying to resolve
+		if (bits & VERB_INFINITIVE && possiblebits & VERB_PRESENT) possiblebits |= VERB_INFINITIVE; // when we launch, we want to be right
+		uint64 allowable = bits & possiblebits; // bits for this tagtype
+		if (allowable && allowable != possiblebits) // we can update choices
+		{
+			posValues[i] ^= possiblebits;
+			posValues[i] |= allowable;
+			bitCounts[i] = BitCount(posValues[i]); 
+			changed = true;
+			if (trace)
+			{
+				Log(STDTRACELOG, (char*)"Treetagger adjusted %d: %s given %s, removing: ",i,wordStarts[i], ts.resulttag[i - 1]);
+				uint64 lost = possiblebits ^ allowable; // these bits disappeared
+				uint64 bit = START_BIT;
+				while (bit)
+				{
+					if (lost & bit) Log(STDTRACELOG, (char*)"%s ", FindNameByValue(bit));
+					bit >>= 1;
+				}
+				Log(STDTRACELOG, (char*)"\r\n");
+			}
+			return;	// as soon as changed. return
+		}
+		else if (!allowable && trace & TRACE_PREPARE)
+		{
+			Log(STDTRACELOG, (char*)"Treetagger could not adjust %d: %s given %s, leaves: ",i, wordStarts[i], ts.resulttag[i - 1]);
+			uint64 bit = START_BIT;
+			while (bit)
+			{
+				if (possiblebits & bit) Log(STDTRACELOG, (char*)"%s ", FindNameByValue(bit));
+				bit >>= 1;
+			}
+			Log(STDTRACELOG, (char*)"\r\n");
+			 
+			Log(STDTRACELOG, (char*)"    Treetagger had extra choices for tag %s(%s): ",ts.resulttag[i - 1],ts.lemma[i-1]);
+			uint64 lost = bits & (-1 ^ possiblebits); // these bits disappeared from treetagger
+			bit = START_BIT;
+			while (bit)
+			{
+				if (lost & bit) Log(STDTRACELOG, (char*)"%s ", FindNameByValue(bit));
+				bit >>= 1;
+			}
+			Log(STDTRACELOG, (char*)"\r\n");
+		}
+	}
+}
+
+void InitTreeTagger(char* params) // tags=xxxx - just triggers this thing
+{
+	if (!*params) return;
+
+	// load each foreign postag and its correspondence to english postags
+	char name[MAX_WORD_SIZE];
+	char lang[MAX_WORD_SIZE];
+	MakeLowerCopy(lang, language);
+	sprintf(name, "DICT/%s_tags.txt", lang);
+	if (!ReadForeignPosTags(name)) return; //failed 
+
+	externalTagger = 2;	// using external tagging
+	char langfile[MAX_WORD_SIZE];
+	sprintf(langfile, "treetagger/%s.par", language);
+	MakeLowerCase(langfile);
+	//write_treetagger();
+	bool result = init_treetagger(langfile, AllocateHeap, GetWord); //  NULL, NULL);  /*  Initialization of the tagger with the language parameter file */
+	if (strstr(params, "chunk") && result)
+	{
+		sprintf(langfile, "treetagger/%s_chunker.par", language);
+		MakeLowerCase(langfile);
+		result = init_treetagger(langfile, AllocateHeap, GetWord); //  NULL, NULL);  /*  Initialization of the tagger with the chunker parameter file */
+		if (!result) strcpy(params, "1"); // give up chunking
+	}
+	if (result) externalPostagger = TreeTagger;
+	else
+	{
+		printf("Unable to load %s\r\n", langfile);
+		return;
+	}
+
+	/* Memory allocation (the maximal input sentence length is here 1000) */
+	ts.word = (char**)AllocateHeap(NULL, sizeof(char*) * MAX_SENTENCE_LENGTH);
+	ts.inputtag = (char**)AllocateHeap(NULL, sizeof(char*) * MAX_SENTENCE_LENGTH, true);
+	ts.resulttag = (const char**)AllocateHeap(NULL, sizeof(char*) * MAX_SENTENCE_LENGTH, true);
+	ts.lemma = (const char**)AllocateHeap(NULL, sizeof(char*) * MAX_SENTENCE_LENGTH, true);
+	tschunk.word = (char**)AllocateHeap(NULL, sizeof(char*) * MAX_SENTENCE_LENGTH);
+	tschunk.inputtag = (char**)AllocateHeap(NULL, sizeof(char*) * MAX_SENTENCE_LENGTH, true);
+	tschunk.resulttag = (const char**)AllocateHeap(NULL, sizeof(char*) * MAX_SENTENCE_LENGTH, true);
+	tschunk.lemma = (const char**)AllocateHeap(NULL, sizeof(char*) * MAX_SENTENCE_LENGTH, true);
+}
 #endif
 
 static void DumpCrossReference(int start, int end)
@@ -834,15 +1183,17 @@ void TagIt() // get the set of all possible tags. Parse if one can to reduce thi
 	endSentence = wordCount;
 
 #ifdef TREETAGGER
+	ts.number_of_words = 0; // declare no data in english known to merge into our postagging code
 	if (externalPostagger) (*externalPostagger)();
 #endif
-	if (*GetUserVariable((char*)"$cs_externaltag"))
+	if (!externalTagger && *GetUserVariable((char*)"$cs_externaltag"))
 	{
-		if (!externalTagger) externalTagger = 1;
+		// not treetagger, just a named topic
+		externalTagger = 1;
 		OnceCode((char*)"$cs_externaltag");
 	}
 
-	if (externalPostagger) return; // Nothing left to pos tag if done externally (by Treetagger)
+	if (externalPostagger && stricmp(language,"english")) return; // Nothing left to pos tag if done externally (by Treetagger) unless doing english
 
 	// handle regular area
 	for (i = 1; i <= wordCount; ++i)
@@ -1794,7 +2145,7 @@ unsigned int ProcessIdiom(char* word, int i, unsigned int words,bool &changed)
 		if (!(posValues[verb] & (VERB_BITS|NOUN_INFINITIVE|NOUN_GERUND|ADJECTIVE_PARTICIPLE))) return 0; // cannot accept phrasal verb, its not used as a verb
 
 		// dont want "as factors in the loss" to be phrasal verb, since verb makes no sense
-		if (!(posValues[verb-1] & (NOUN_BITS|PRONOUN_BITS)) && stricmp(wordStarts[verb-1],(char*)"and") && stricmp(wordStarts[verb-1],(char*)"or") )
+		if (!(posValues[verb-1] & (NOUN_BITS|PRONOUN_BITS)) && stricmp(wordStarts[verb-1],(char*)"and") && stricmp(wordStarts[verb - 1], (char*)"&") && stricmp(wordStarts[verb-1],(char*)"or") )
 		{
 			return 0;
 		}
@@ -1850,7 +2201,7 @@ unsigned int ProcessIdiom(char* word, int i, unsigned int words,bool &changed)
 			LimitValues(verb,NOUN_BITS|VERB_BITS|NOUN_INFINITIVE|NOUN_GERUND|ADJECTIVE_PARTICIPLE,(char*)"designated sequential phrasal verb or noun still possible",changed);
 			for (int x = verb + 1; x <= i; ++x) 
 			{
-				posValues[x] |= PARTICLE; // we'd have to see if noun infinitive was after // can be particle whatever it is, part of verb
+				posValues[x] = PARTICLE; // we'd have to see if noun infinitive was after // can be particle whatever it is, part of verb
 				bitCounts[x] = 1;
 				phrasalVerb[x-1] = (unsigned char)x; // forward pointer
 			}
@@ -2284,7 +2635,6 @@ retry:
 			if (trace & TRACE_POS) Log(STDTRACELOG,(char*)"ApplyRules overran\r\n");
 			return false;
 		}
-
 		if (trace & TRACE_POS) 
 			Log(STDTRACELOG,(char*)"\r\n------------- POS rules pass %d: \r\n",pass);
 
@@ -2292,13 +2642,16 @@ retry:
 		for (int wordIndex =  startSentence; wordIndex <= endSentence; ++wordIndex)
 		{
 			if (ignoreWord[wordIndex]) continue;
-			 int j = (reverseWords) ? (endSentence + 1 - wordIndex) : wordIndex; // test from rear of sentence forwards to prove rules are independent
+			int j = (reverseWords) ? (endSentence + 1 - wordIndex) : wordIndex; // test from rear of sentence forwards to prove rules are independent
 			if (bitCounts[j] != 1)  
 				ApplyRulesToWord(j,changed);
 		} // end loop on words
 		
 		if (ambiguous && trace & TRACE_POS && changed) Log(STDTRACELOG,(char*)"\r\n%s",DumpAnalysis(startSentence,endSentence,posValues,(char*)"POS",false,false));
-		
+#ifdef TREETAGGER
+		if (!changed && ts.number_of_words) BlendWithTreetagger(changed); // can override us even when we know
+		if (changed) continue;
+#endif	
 		if (!changed && ambiguous) // no more rules changed anything and we still need help
 		{
 			if (!(tokenControl & (DO_PARSE-DO_POSTAG))) // guess based on probability
@@ -2322,6 +2675,9 @@ retry:
 #endif
 		}
 	}
+#ifdef TREETAGGER
+	if (ts.number_of_words) BlendWithTreetagger(changed); // can override us even when we know
+#endif	
 #ifndef DISCARDPARSER
 	bool modified = false;
 	if (!parsed)  ParseSentence(resolved,modified); 
@@ -2657,8 +3013,8 @@ void MarkTags(unsigned int i)
 	while (posValues[start-1] == IDIOM) --start;	
 
 	// swallow sequential particle verbs as single marks and idioms also
-	while (posValues[stop+1] == PARTICLE || posValues[stop+1] == IDIOM) ++stop;
-	if (posValues[stop] == IDIOM) ++stop; // onto the non-idiom
+	while (posValues[stop] & VERB && posValues[stop+1] == PARTICLE) ++stop;
+	while (posValues[stop] == IDIOM) ++stop; // onto the non-idiom
 
 	// mark pos data and supplemental checking on original proper names, because canonical may mess up, like james -->  jam
 	uint64 bit = START_BIT;
@@ -3811,6 +4167,9 @@ static bool FinishSentenceAdjust(bool resolved,bool & changed,int start,int end)
 	
 		// update after things, because VERB2 can be used as object of earlier VERB2 before becoming verb2 in its own right "let us stop and hear him *play the guitar"
 		if (roles[i] & VERB2) currentVerb2 = i;
+
+		if (clauses[i] && posValues[i] == VERB_PRESENT)
+			LimitValues(i, VERB_INFINITIVE, (char*)"change present tense in clause to infinitive", changed);
 	}
 
 	// was aux assigned as main verb, now we have actual verb?
@@ -4985,7 +5344,11 @@ static void CloseLevel(int  i)
 		{
 			if (needRoles[roleIndex] & OBJECT2) break;	 // need vital stuff
 			if (posValues[at] & COMMA) --at; // stop before here
-			if (!phrases[at]) ExtendChunk(lastPhrase,at,phrases);
+			if (!phrases[at])
+			{
+				ExtendChunk(lastPhrase, at, phrases); 
+				if (at > 1 && clauses[at-1]) ExtendChunk(lastPhrase-1, at, clauses);
+			}
 			lastPhrase = 0;
 		}
 		else if (needRoles[roleIndex] & CLAUSE) // closes out a clause, drag clause over it
@@ -5481,6 +5844,9 @@ retry:
 				crossReference[i] = (unsigned char) lastPhrase; // objects point back to prep that spawned them
 				ExtendChunk(lastPhrase,i,phrases);
 				DropLevel(); 
+				// though I walk thru the valley *"of the shadow" merge to clause
+				if (lastPhrase != 1 && clauses[lastPhrase - 1])
+					ExtendChunk(lastPhrase - 1, i, clauses);
 				lastPhrase = 0;
 			}
 		}
@@ -5995,7 +6361,7 @@ static void AssignZones() // zones are comma areas
 	{
 		if ((endSentence-lastComma) == 3 && posValues[lastComma+1] & VERB_BITS && allOriginalWordBits[lastComma+1] & AUX_VERB && !stricmp(wordStarts[lastComma+2],(char*)"not") && posValues[lastComma+3] & PRONOUN_BITS) roles[lastComma] = TAGQUESTION; // don't they ?
 		if ((endSentence-lastComma) == 2 && posValues[lastComma+1] & VERB_BITS  && allOriginalWordBits[lastComma+1] & AUX_VERB  && posValues[lastComma+2] & PRONOUN_BITS) roles[lastComma] = TAGQUESTION; // do you ? do theirs?
-		if ((endSentence-lastComma) == 2 &&  !stricmp(wordStarts[lastComma+1],(char*)"and") &&  !strnicmp(wordStarts[lastComma+2],(char*)"you",3)) roles[lastComma] = TAGQUESTION;//  and you ?  - and yours?
+		if ((endSentence-lastComma) == 2 &&  (!stricmp(wordStarts[lastComma+1],(char*)"and") || !stricmp(wordStarts[lastComma + 1], (char*)"&") ) &&  !strnicmp(wordStarts[lastComma+2],(char*)"you",3)) roles[lastComma] = TAGQUESTION;//  and you ?  - and yours?
 		if ((endSentence-lastComma) == 2 &&  !strnicmp(wordStarts[lastComma+1],(char*)"you",3) &&  !stricmp(wordStarts[lastComma+2],(char*)"too")) roles[lastComma] = TAGQUESTION;//  yours too?
 		if ((endSentence-lastComma) == 1 &&  !strnicmp(wordStarts[lastComma+1],(char*)"you",3) ) roles[lastComma] = TAGQUESTION; //  you ?  yours?
 	}
@@ -6885,6 +7251,7 @@ static unsigned int GuessAmbiguousAdjective(int i, bool &changed)
 			if (ignoreWord[at]) continue;
 			if (!stricmp(wordStarts[at],(char*)"nor") && !stricmp(wordStarts[i],(char*)"neither")) break;
 			if (!stricmp(wordStarts[at],(char*)"and") && !stricmp(wordStarts[i],(char*)"both")) break;
+			if (!stricmp(wordStarts[at], (char*)"&") && !stricmp(wordStarts[i], (char*)"both")) break;
 			if (!stricmp(wordStarts[at],(char*)"or") && (!stricmp(wordStarts[i],(char*)"whether") || !stricmp(wordStarts[i],(char*)"either"))) break;
 			if (!stricmp(wordStarts[at],(char*)"but_also") && (!stricmp(wordStarts[i],(char*)"not_only") || !stricmp(wordStarts[i],(char*)"either"))) break;
 			if (at > 1 && !stricmp(wordStarts[at],(char*)"also") && !stricmp(wordStarts[at-1],(char*)"but") && !stricmp(wordStarts[i-1],(char*)"not") && !stricmp(wordStarts[i],(char*)"only")) break;
@@ -7159,6 +7526,7 @@ static unsigned int GuessAmbiguousAdverb(int i, bool &changed)
 			if (ignoreWord[at]) continue;
 			if (!stricmp(wordStarts[at],(char*)"nor") && !stricmp(wordStarts[i],(char*)"neither")) break;
 			if (!stricmp(wordStarts[at],(char*)"and") && !stricmp(wordStarts[i],(char*)"both")) break;
+			if (!stricmp(wordStarts[at], (char*)"&") && !stricmp(wordStarts[i], (char*)"both")) break;
 			if (!stricmp(wordStarts[at],(char*)"or") && (!stricmp(wordStarts[i],(char*)"whether") || !stricmp(wordStarts[i],(char*)"either"))) break;
 			if (!stricmp(wordStarts[at],(char*)"but_also") && (!stricmp(wordStarts[i],(char*)"not_only") || !stricmp(wordStarts[i],(char*)"either"))) break;
 			if (at > 1 && !stricmp(wordStarts[at],(char*)"also") && !stricmp(wordStarts[at-1],(char*)"but") && !stricmp(wordStarts[i-1],(char*)"not") && !stricmp(wordStarts[i],(char*)"only")) break;
@@ -8211,7 +8579,8 @@ static void StartImpliedClause( int i,bool & changed)
 		}
 		// we are at main level and have subject   object, "I like the pictures children draw"
 		// we are after closing object of a phrase, "I like the songs of pictures children draw"
-		if (roles[i-1] & (MAINOBJECT|OBJECT2|MAINSUBJECT) && roleIndex == MAINLEVEL)
+		// but if we just closed a clause "though I walk through the valley I fear no evil" dont worry.
+		if (roles[i-1] & (MAINOBJECT|OBJECT2|MAINSUBJECT) && roleIndex == MAINLEVEL && !clauses[i-1])
 		{
 			//  possible verb ahead?
 			int at = i;
@@ -8633,7 +9002,7 @@ restart:
 							SetRole(objectStack[MAINLEVEL],MAINSUBJECT,true,0);
 							needRoles[MAINLEVEL] =  MAINVERB; // we will still need this as our verb
 						}
-						else
+						else 
 						{
 							needRoles[roleIndex] |= roles[i-1];
 							SetRole(i-1,0);
@@ -9545,139 +9914,5 @@ void ParseSentence(bool &resolved,bool &changed)
 	{
 		if (trace & TRACE_POS) Log(STDTRACELOG,(char*)"\r\nNot trying to parse\r\n");
 	}
-}
-#endif
-
-#ifdef TREETAGGER
-// TreeTagger is something you must license for pos-tagging a collection of foreign languages
-// Buying a license will get the the library you need to load with this code
-// http://www.cis.uni-muenchen.de/~schmid/tools/TreeTagger/
-
-#pragma comment(lib, "../treetagger/treetagger.lib") // where windows library is
-
-typedef struct {
-  int  number_of_words;  /* number of words to be tagged */
-  int  next_word;        /* needed internally */
-  char **word;           /* array of pointers to the words */
-  char **inputtag;       /* array of pointers to the pretagging information */
-  const char **resulttag;/* array of pointers to the resulting tags */
-  const char **lemma;    /* array of pointers to the lemmas */
-} TAGGER_STRUCT;
-typedef char*(*FindIt)(char* word);
-#ifdef WIN32
-void __declspec( dllimport )  init_treetagger(char *param_file_name,AllocatePtr allocator,FindIt getwordfn);
-double __declspec( dllimport )  tag_sentence( TAGGER_STRUCT *ts );
-void __declspec(dllimport)  write_treetagger();
-#else
-void init_treetagger(char *param_file_name,AllocatePtr allocator,FindIt getwordfn);
-double  tag_sentence( TAGGER_STRUCT *ts );
-void   write_treetagger();
-#endif
-
-TAGGER_STRUCT ts;  /* tagger interface data structure */
-
-
-static void TreeTagger()
-{	
-	int i;
-	for (i = 0; i < wordCount; ++i)
-	{
-		ts.word[i] = wordStarts[i+1];
-		ts.inputtag[i] = NULL;
-	}
-    ts.number_of_words = wordCount;
-	tag_sentence(&ts);
-    if (trace & TRACE_PREPARE) Log(STDTRACELOG,"External Tagging: ");
-
-    /* The tagger output is printed */
-    for( i=1; i <= ts.number_of_words; i++) 
-	{
-		originalUpper[i] = NULL;
-		canonicalUpper[i] = NULL;
-		originalLower[i] = NULL;
-		canonicalLower[i] = NULL;
-
-		char* lemma = (char*) ts.lemma[i-1];
-		if (!lemma || !strcmp(lemma, "<unknown>")) lemma= (char*)"unknown-word";
-		WORDP canonical0 = StoreWord(lemma, 0);
-
-		int start = 1;
-		WORDP entry = NULL;
-		WORDP canonical = 0;
-		uint64 sysflags = 0;
-		uint64 cansysflags = 0;
-		WORDP revise;
-		uint64 flags = GetPosData(i, wordStarts[i], revise, entry, canonical, sysflags, cansysflags, true, false, start); // flags will be potentially beyond what is stored on the word itself (like noun_gerund) but not adjective_noun
-		if (revise != NULL) wordStarts[i] = revise->word;
-		if (!(flags & NOUN_NUMBER))
-		{
-			canonical = canonical0; // Reuse the lemma word unless this is a number
-			flags = 0;
-		}
-		if (!canonical) canonical = entry;
-
-		if (IsUpperCase(canonical->word[0]))
-		{
-			originalUpper[i] = entry;
-			canonicalUpper[i] = canonical;
-		}
-		else
-		{
-			originalLower[i] = entry;
-			canonicalLower[i] = canonical;
-		}
-
-		parseFlags[i] = canonical->parseBits;
-		posValues[i] = flags;
-		if (originalLower[i]) lcSysFlags[i] = sysflags; // from lower case
-		canSysFlags[i] = cansysflags;
-		if (entry->properties & PART_OF_SPEECH) ++knownWords; // known as lower or upper
-		if (*wordStarts[i] == '~') posValues[i] = 0;	// interjection
-		wordCanonical[i] = canonical->word;
-
-		char* tag = (char*) ts.resulttag[i-1];
-		if (!tag) tag = (char*)"unknown-tag";
-		char newtag[MAX_WORD_SIZE];
-		*newtag = '~';	// concept from the tag
-		strcpy(newtag+1,tag);
-		WORDP X = StoreWord(newtag);
-		wordTag[i] = X;
-		*newtag = '_';
-		X = FindWord(newtag);
-		if (X) posValues[i] |= X->properties; // english pos tag references
-
-		if (trace & TRACE_PREPARE) Log(STDTRACELOG,"%s/%s/%s ",wordStarts[i], tag, wordCanonical[i]);
-    }
-    if (trace & TRACE_PREPARE) Log(STDTRACELOG,"\r\n");
-}
-
-void InitTreeTagger(char* params) // tags=xxxx - just triggers this thing
-{
-	if (!*params) return;
-
-	// load each foreign postag and its correspondence to english postags
-	char name[MAX_WORD_SIZE];
-	char lang[MAX_WORD_SIZE];
-	MakeLowerCopy(lang, language);
-	sprintf(name,"DICT/%s_tags.txt", lang);
-	if (!ReadForeignPosTags(name)) return; //failed 
-
-	externalTagger = 2;	// using external tagging
-	char langfile[MAX_WORD_SIZE];
-	sprintf(langfile, "treetagger/%s.par",language);
-	MakeLowerCase(langfile);
-	// write_treetagger();
-	init_treetagger(langfile, NULL, NULL); //  AllocateHeap, GetWord);  /*  Initialization of the tagger with the language parameter file */
-	externalPostagger = TreeTagger;
-
-	/* Memory allocation (the maximal input sentence length is here 1000) */
-	ts.word = (char**)AllocateHeap(NULL,sizeof(char*) * MAX_SENTENCE_LENGTH);
-	ts.inputtag = (char**)AllocateHeap(NULL,sizeof(char*) * MAX_SENTENCE_LENGTH);
-	ts.resulttag = (const char**)AllocateHeap(NULL,sizeof(char*) * MAX_SENTENCE_LENGTH);
-	ts.lemma = (const char**)AllocateHeap(NULL,sizeof(char*) * MAX_SENTENCE_LENGTH);
-
-	memset(ts.inputtag,0,sizeof(char*) * MAX_SENTENCE_LENGTH); // we never force an input tag
-	memset(ts.lemma,0,sizeof(char*) * MAX_SENTENCE_LENGTH); // in case we never generate anything
-	memset(ts.resulttag,0,sizeof(char*) * MAX_SENTENCE_LENGTH); // in case we never generate anything
 }
 #endif

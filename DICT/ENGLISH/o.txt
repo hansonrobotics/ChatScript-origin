@@ -594,7 +594,7 @@
  offside ( meanings=3 glosses=2 NOUN_ABSTRACT NOUN ADJECTIVE ADVERB ADJECTIVE_NORMAL NOUN_SINGULAR ADJECTIVE_NOT_PREDICATE COMMON2 COMMON1 posdefault:ADJECTIVE posdefault:ADVERB ) 
     offside~1nz (^mistake~1) the mistake of occupying an illegal position on the playing field (in football, soccer, ice hockey, field hockey, etc.)
     offsides~1a 
-    offside~3bz illegally in advance of the ball or puck
+    offside~3z illegally in advance of the ball or puck
  oversight ( meanings=3 glosses=3 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON4 NOUN_NODETERMINER GRADE5_6 posdefault:NOUN ) 
     lapse~2nz (^mistake~1) a mistake resulting from inattention
     superintendence~1nz (^direction~2) management by overseeing the performance or operation of a person or group
@@ -645,9 +645,9 @@
     out~9az not worth considering as a possibility
     out~10az not allowed to continue to bat or run
     out~11az out of power
-    out~12bz away from home
-    away~5b 
-    out~14bz moving or appearing to move away from a place, especially one that is enclosed or hidden
+    out~12z away from home
+    away~5z 
+    out~14z moving or appearing to move away from a place, especially one that is enclosed or hidden
     out~15z 
     come_out~6vz be made known
     out~17vz reveal about somebody's identity or lifestyle
@@ -691,8 +691,8 @@
     out-of-door~1az located, suited for, or taking place in the open air
     outside~12az relating to or being on or near the outer side or limit
     outside~13az 
-    out_of_doors~1bz outside a building
-    outside~15bz on the outside
+    out_of_doors~1z outside a building
+    outside~15z on the outside
     outside~16z 
  open_sesame ( meanings=2 glosses=2 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     open_sesame~1nz (^agency~1) any very successful means of achieving a result
@@ -856,8 +856,8 @@
  onward_motion ( meanings=1 NOUN NOUN_SINGULAR ) 
     forward_motion~1n 
  onward ( meanings=2 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    ahead~4b 
-    forward~10b 
+    ahead~4z 
+    forward~10z 
  overflight ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON2 posdefault:NOUN ) 
     overflight~1nz (^flight~3) a flight by an aircraft over a particular area
  odyssey ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON2 COMMON1 posdefault:NOUN ) 
@@ -1014,8 +1014,8 @@
     budget_items~1nz (^disbursement~2) the expense of maintaining property 
     command_overhead~1nz (^processing_time~1) the processing time required by a device prior to the execution of a command
     overhead~7az located or originating from above
-    overhead~8bz above the head
-    overhead~9bz above your head
+    overhead~8z above the head
+    overhead~9z above your head
  office ( meanings=7 glosses=5 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON4 COMMON1 KINDERGARTEN posdefault:NOUN ) 
     berth~1n 
     role~1nz (^duty~1) the actions and activities assigned to or required or expected of a person or group
@@ -2569,7 +2569,7 @@
  offshore ( meanings=3 glosses=3 ADJECTIVE ADVERB ADJECTIVE_NORMAL ADJECTIVE_NOT_PREDICATE COMMON4 posdefault:ADJECTIVE ) 
     seaward~4az coming from the land
     offshore~2az at some distance from the shore
-    offshore~3bz away from shore
+    offshore~3z away from shore
  oilrig ( meanings=1 NOUN NOUN_SINGULAR COMMON1 posdefault:NOUN ) 
     drill_rig~1n 
  oil_rig ( meanings=1 NOUN NOUN_SINGULAR ) 
@@ -2616,8 +2616,8 @@
     abroad~1a 
     oversea~1az being or passing over or across the sea
     overseas~3az 
-    abroad~3b 
-    oversea~2bz beyond or across the sea
+    abroad~3z 
+    oversea~2z beyond or across the sea
  orchestral_bells ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
     glockenspiel~1nz (^percussion_instrument~1) a percussion instrument consisting of a set of graduated metal bars mounted on a frame and played with small hammers
  orchestral ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
@@ -3157,8 +3157,8 @@
     overnight_case~1n 
  overnight ( meanings=3 glosses=3 ADJECTIVE ADVERB ADJECTIVE_NORMAL ADJECTIVE_NOT_PREDICATE COMMON4 posdefault:ADVERB ) comparative=overnighter 
     all-night~1az lasting, open, or operating through the whole night
-    overnight~2bz during or for the length of one night
-    overnight~3bz happening in a short time or with great speed
+    overnight~2z during or for the length of one night
+    overnight~3z happening in a short time or with great speed
  overnight_case ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
     overnighter~1nz (^suitcase~1) a small traveling bag to carry clothing and accessories for staying overnight
  overpass ( meanings=1 glosses=1 NOUN NOUN_SINGULAR COMMON2 COMMON1 ) 
@@ -3304,8 +3304,8 @@
     wing~5n 
     offstage~2az situated or taking place in the area of a stage not visible to the audience
     backstage~2a 
-    offstage~4bz not in public
-    offstage~5bz behind the scenes
+    offstage~4z not in public
+    offstage~5z behind the scenes
  obsessive-compulsive_personality ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     obsessive-compulsive_personality~1nz (^personality~1) personality characterized by a strong need to repeat certain acts or rituals
  obsessive-compulsive ( meanings=2 glosses=2 NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR posdefault:ADJECTIVE ) 
@@ -3568,7 +3568,7 @@
  overmuch ( meanings=4 glosses=3 NOUN_ABSTRACT NOUN ADJECTIVE ADVERB DETERMINER ADJECTIVE_NORMAL NOUN_SINGULAR ADJECTIVE_NOT_PREDICATE COMMON2 KINDERGARTEN posdefault:ADVERB ) 
     superabundance~1nz (^copiousness~1) a quantity that is more than what is appropriate
     overmuch~2az very great in quantity
-    too_much~1bz more than necessary
+    too_much~1z more than necessary
     overmuch~4z 
  overmuchness ( meanings=1 NOUN NOUN_SINGULAR ) 
     overabundance~1n 
@@ -3888,7 +3888,7 @@
     opposite~9az being directly across from each other
     opposite~10az moving or facing away from each other
     opposite~11az 
-    face-to-face~3bz directly facing each other
+    face-to-face~3z directly facing each other
     opposite~13z 
  overconfidence ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON2 NOUN_NODETERMINER posdefault:NOUN ) 
     certitude~1nz (^certainty~2) total certainty or greater certainty than circumstances warrant
@@ -4198,17 +4198,17 @@
     oath~3nz (^promise~2) a solemn promise, usually invoking a divine witness, regarding your future acts or behavior
  O.K. ( meanings=3 VERB_PRESENT VERB_INFINITIVE NOUN VERB ADVERB NOUN_PROPER_SINGULAR VERB_DIRECTOBJECT ) 
     OK~1n 
-    all_right~2b 
+    all_right~2z 
     okay~5v 
  OK ( meanings=3 glosses=1 NOUN ADVERB NOUN_PROPER_SINGULAR COMMON2 KINDERGARTEN ) 
     okay~1n 
     Sooner_State~1nz (^American_state~1) a state in south central United States
-    alright~4b 
+    alright~4z 
  okay ( meanings=5 glosses=2 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB ADJECTIVE ADVERB ADJECTIVE_NORMAL INTERJECTION NOUN_SINGULAR ADJECTIVE_NOT_PREDICATE COMMON4 COMMON1 KINDERGARTEN posdefault:ADVERB VERB_DIRECTOBJECT ) 
     okeh~1nz (^countenance~3) an endorsement
     fine~5a 
     okay~3az 
-    alright~3b 
+    alright~3z 
     approve~2vz give sanction to
  okey ( meanings=1 NOUN NOUN_SINGULAR COMMON2 posdefault:NOUN ) 
     O.K.~1n 
@@ -4837,7 +4837,7 @@
     old_country~1nz (^country_of_origin~1) the country of origin of an immigrant
  outdoors ( meanings=2 NOUN ADVERB NOUN_SINGULAR COMMON4 posdefault:NOUN posdefault:ADVERB ) 
     open~3n 
-    outside~14b 
+    outside~14z 
  out-of-doors ( meanings=2 NOUN PREPOSITION NOUN_SINGULAR ) 
     outdoors~1n 
     out-of-doors~2z 
@@ -6517,12 +6517,12 @@
     compensating_balance~1n 
  over_the_counter_security ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     OTC_security~1nz (^security~8) a security traded in the over-the-counter market
- over ( meanings=6 glosses=5 PARTICLE ADVERB PREPOSITION EXTENT_ADVERB ADJECTIVE_ONLY_PREDICATE ADJECTIVE_NOT_PREDICATE COMMON4 COMMON2 COMMON1 KINDERGARTEN posdefault:ADVERB ) 
-    all_over~3bz over the entire area
-    o'er~1bz throughout a period of time
-    over~3bz at or to a point across intervening space etc.
-    over~4bz throughout an area
-    over~5bz beyond the top or upper surface or edge
+ over ( meanings=6 glosses=5 PARTICLE PREPOSITION EXTENT_ADVERB ADJECTIVE_ONLY_PREDICATE ADJECTIVE_NOT_PREDICATE COMMON4 COMMON2 COMMON1 KINDERGARTEN posdefault:ADVERB ) 
+    all_over~3z over the entire area
+    o'er~1z throughout a period of time
+    over~3z at or to a point across intervening space etc.
+    over~4z throughout an area
+    over~5z beyond the top or upper surface or edge
     over~6z 
  OTC_security ( meanings=1 NOUN NOUN_PROPER_SINGULAR ) 
     unlisted_security~1n 
@@ -7168,7 +7168,7 @@
  overtime ( meanings=3 glosses=3 NOUN_ABSTRACT NOUN ADVERB NOUN_SINGULAR COMMON4 NOUN_NODETERMINER GRADE3_4 posdefault:NOUN ) 
     overtime~1nz (^work_time~1) work done in addition to regular working hours
     extra_time~1nz (^period~3) playing time beyond regulation, to break a tie
-    overtime~3bz beyond the regular time
+    overtime~3z beyond the regular time
  oral_stage ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     oral_phase~1nz (^phase~4) the first sexual and social stage of an infant's development
  oral_phase ( meanings=1 NOUN NOUN_SINGULAR ) 
@@ -7188,9 +7188,9 @@
     cancelled~1az no longer planned or scheduled
     off~4az below a satisfactory level
     turned~1a 
-    off~6bz no longer on or in contact or attached
-    away~4b 
-    away~12b 
+    off~6z no longer on or in contact or attached
+    away~4z 
+    away~12z 
     off~9z 
     hit~24v 
  Oct ( meanings=1 NOUN NOUN_PROPER_SINGULAR MONTH COMMON1 ) 
@@ -7268,7 +7268,7 @@
     overclocking~1nz 
  o'clock ( meanings=2 glosses=1 NOUN ADVERB NOUN_SINGULAR COMMON4 NOUN_NODETERMINER KINDERGARTEN posdefault:ADVERB TIMEWORD ) 
     o'clock~1nz 
-    o'clock~2bz according to the clock
+    o'clock~2z according to the clock
  oldies ( meanings=1 NOUN NOUN_PLURAL COMMON2 COMMON1 NOUN_NODETERMINER posdefault:NOUN ) plural=oldies 
     oldies~1nz 
  orgone ( meanings=1 NOUN NOUN_SINGULAR COMMON2 NOUN_NODETERMINER ) 
@@ -7311,7 +7311,7 @@
  oh_no ( INTERJECTION ) 
  okey-dokey ( INTERJECTION ) 
  om ( meanings=1 ADVERB INTERJECTION ) 
-    om~1bz 
+    om~1z 
  oof ( INTERJECTION ) 
  ooh ( meanings=1 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB INTERJECTION COMMON2 COMMON1 KINDERGARTEN VERB_NOOBJECT QUOTEABLE_VERB ) 
     aah~1vz express admiration and pleasure by uttering `ooh' or `aah'
@@ -7323,7 +7323,7 @@
     our~1z 
     our~2z 
  o'er ( meanings=1 ADVERB COMMON2 COMMON1 ) 
-    over~2b 
+    over~2z 
  owe ( meanings=3 glosses=3 VERB_PRESENT VERB_INFINITIVE VERB COMMON4 COMMON1 posdefault:VERB VERB_DIRECTOBJECT VERB_INDIRECTOBJECT VERB_NOOBJECT ) 
     owe~1vz be in debt
     owe~2vz be obliged to pay or repay
@@ -7366,7 +7366,7 @@
  onshore ( meanings=3 glosses=2 ADJECTIVE ADVERB ADJECTIVE_NORMAL ADJECTIVE_NOT_PREDICATE COMMON2 COMMON1 ) 
     onshore~1az on the edge of the land
     shoreward~1a 
-    onshore~3bz on or toward the land
+    onshore~3z on or toward the land
  overland ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 ) 
     overland~1az traveling or passing over land
  offish ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 ) 
@@ -7377,7 +7377,7 @@
     out-of-pocket~1az calling for the spending of cash
  out_of_place ( meanings=2 glosses=2 ADJECTIVE ADVERB ADJECTIVE_NORMAL ADJECTIVE_NOT_PREDICATE ) 
     inapposite~1az of an inappropriate or misapplied nature
-    out_of_place~2bz in a setting where one is or feels inappropriate or incongruous
+    out_of_place~2z in a setting where one is or feels inappropriate or incongruous
  on_guard ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL CONDITIONAL_IDIOM  poscondition=?=A ) 
     on_one_'s_guard~1a 
  on_one_'s_guard ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL CONDITIONAL_IDIOM ADJECTIVE_ONLY_PREDICATE  poscondition=?=A ) 
@@ -7465,13 +7465,13 @@
  offhand ( meanings=4 ADJECTIVE ADVERB ADJECTIVE_NORMAL ADJECTIVE_NOT_PREDICATE COMMON2 COMMON1 posdefault:ADJECTIVE posdefault:ADVERB ) 
     offhanded~1a 
     impromptu~3a 
-    offhanded~3b 
-    offhanded~4b 
+    offhanded~3z 
+    offhanded~4z 
  offhanded ( meanings=4 glosses=1 ADJECTIVE ADVERB ADJECTIVE_NORMAL ADJECTIVE_NOT_PREDICATE COMMON1 ) 
     offhand~1az casually thoughtless or inconsiderate
     offhand~2a 
-    offhandedly~1b 
-    offhandedly~2b 
+    offhandedly~1z 
+    offhandedly~2z 
  omnivorous ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:ADJECTIVE ) 
     omnivorous~1az feeding on both plants and animals
     omnivorous~2az 
@@ -7575,7 +7575,7 @@
  one-on-one ( meanings=3 glosses=2 ADJECTIVE ADVERB ADJECTIVE_NORMAL ADJECTIVE_NOT_PREDICATE ) 
     man-to-man~1az being a system of play in which an individual defensive player guards an individual offensive player
     one-on-one~2az directly between two individuals
-    person-to-person~2b 
+    person-to-person~2z 
  openhearted ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON1 ) 
     openhearted~1az freely communicative
     benevolent~3a 
@@ -7747,7 +7747,7 @@
     overexcited~1az unduly excited
  out_of_the_blue ( meanings=2 glosses=2 ADJECTIVE ADVERB ADJECTIVE_NORMAL ADJECTIVE_ONLY_PREDICATE ADJECTIVE_NOT_PREDICATE ) 
     unanticipated~1az not anticipated
-    unexpectedly~2bz in a way that was not expected
+    unexpectedly~2z in a way that was not expected
  overpriced ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:VERB ) 
     overpriced~1az too costly for the value
     overpriced~2az 
@@ -7762,7 +7762,7 @@
  outward ( meanings=3 glosses=1 ADJECTIVE ADVERB ADJECTIVE_NORMAL ADJECTIVE_NOT_PREDICATE COMMON4 posdefault:ADJECTIVE ) 
     outward~1az relating to physical reality rather than with thoughts or the mind
     outbound~1a 
-    outwards~1b 
+    outwards~1z 
  one-eyed ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL posdefault:ADJECTIVE ) 
     one-eyed~1az having or showing only one eye
  out-of-bounds ( meanings=2 glosses=2 ADJECTIVE ADJECTIVE_NORMAL ADJECTIVE_ONLY_PREDICATE ) 
@@ -7927,7 +7927,7 @@
     seagoing~1az used on the high seas
  oversea ( meanings=2 ADJECTIVE ADVERB ADJECTIVE_NORMAL ADJECTIVE_NOT_PREDICATE COMMON2 COMMON1 posdefault:NOUN ) 
     overseas~2a 
-    overseas~5b 
+    overseas~5z 
  outsized ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:ADJECTIVE ) 
     oversized~1a 
  oversize ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
@@ -8028,7 +8028,7 @@
     off-site~1az taking place or located away from the site
  onstage ( meanings=2 glosses=2 ADJECTIVE ADVERB ADJECTIVE_NORMAL ADJECTIVE_NOT_PREDICATE COMMON2 COMMON1 posdefault:ADJECTIVE ) 
     onstage~1az situated or taking place on the area of a stage visible to the audience
-    onstage~2bz on the stage
+    onstage~2z on the stage
  off-street ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL posdefault:ADJECTIVE ) 
     off-street~1az not on the streets
  on-street ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL posdefault:ADJECTIVE ) 
@@ -8112,10 +8112,10 @@
     omnipotent~2az 
  on_the_nose ( meanings=2 ADJECTIVE ADVERB ADJECTIVE_NORMAL ADJECTIVE_NOT_PREDICATE ) 
     on_the_button~1a 
-    precisely~3b 
+    precisely~3z 
  on_the_button ( meanings=2 glosses=1 ADJECTIVE ADVERB ADJECTIVE_NORMAL ADJECTIVE_NOT_PREDICATE ) 
     on_the_nose~1az being precise with regard to a prescribed or specified criterion
-    exactly~3b 
+    exactly~3z 
  oven-ready ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL posdefault:ADJECTIVE ) 
     oven-ready~1az prepared before sale and ready to be cooked
  off-the-cuff ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL posdefault:ADJECTIVE ) 
@@ -8133,13 +8133,13 @@
     alone~2a 
     solitary~4a 
     only~3az 
-    but~1b 
-    entirely~2b 
-    only~6bz with nevertheless the final result
-    only~7bz in the final outcome
-    only~8bz as recently as
-    only~9bz except that
-    only_when~1bz never except when
+    but~1z 
+    entirely~2z 
+    only~6z with nevertheless the final result
+    only~7z in the final outcome
+    only~8z as recently as
+    only~9z except that
+    only_when~1z never except when
  oil-bearing ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL posdefault:ADJECTIVE ) 
     oil-bearing~1az containing oil
  opisthognathous ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON1 posdefault:ADJECTIVE ) 
@@ -8152,9 +8152,9 @@
     on_trial~1az 
  outright ( meanings=4 glosses=2 ADJECTIVE ADVERB ADJECTIVE_NORMAL ADJECTIVE_NOT_PREDICATE COMMON4 posdefault:ADJECTIVE posdefault:ADVERB ) 
     straight-out~1a 
-    instantaneously~1b 
-    outright~3bz without reservation or concealment
-    outright~4bz without restrictions or stipulations or further payments
+    instantaneously~1z 
+    outright~3z without reservation or concealment
+    outright~4z without restrictions or stipulations or further payments
  oxidizable ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:ADJECTIVE ) 
     oxidizable~1az capable of undergoing a chemical reaction with oxygen
  off-guard ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL ADJECTIVE_NOT_PREDICATE posdefault:ADJECTIVE ) 
@@ -8223,16 +8223,14 @@
     on_the_hook~1az 
  otherwise ( meanings=3 glosses=3 ADJECTIVE ADVERB ADJECTIVE_NORMAL ADJECTIVE_NOT_PREDICATE COMMON4 COMMON1 KINDERGARTEN posdefault:ADVERB ) 
     otherwise~1az other than as supposed or expected
-    otherwise~2bz in other respects or ways
-    differently~1bz in another and different manner
+    otherwise~2z in other respects or ways
+    differently~1z in another and different manner
  of_sound_mind ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL CONDITIONAL_IDIOM ADJECTIVE_ONLY_PREDICATE  poscondition=?=A ) 
     compos_mentis~1a 
  of_unsound_mind ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL CONDITIONAL_IDIOM ADJECTIVE_ONLY_PREDICATE  poscondition=?=A ) 
     non_compos_mentis~1a 
  o.k. ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL posdefault:ADJECTIVE ) 
     all_right~1a 
- ok ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON4 COMMON1 GRADE1_2 posdefault:ADJECTIVE posdefault:ADVERB ) 
-    o.k.~1a 
  oecumenic ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON1 ) 
     ecumenic~1a 
  overanxious ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON1 posdefault:ADJECTIVE ) 
@@ -8247,42 +8245,24 @@
     oven-shaped~1az shaped like an oven
  one_hundred ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL CONDITIONAL_IDIOM  poscondition=?=A ) 
     c~1a 
- one_hundred_one ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL CONDITIONAL_IDIOM  poscondition=?=A ) 
-    hundred_and_one~1a 
- one_hundred_five ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL CONDITIONAL_IDIOM  poscondition=?=A ) 
-    cv~1az 
- one_hundred_ten ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL CONDITIONAL_IDIOM  poscondition=?=A ) 
-    cx~1az 
- one_hundred_fifteen ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL CONDITIONAL_IDIOM  poscondition=?=A ) 
-    cxv~1az 
- one_hundred_twenty ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL CONDITIONAL_IDIOM  poscondition=?=A ) 
-    cxx~1az 
- one_hundred_twenty-five ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL CONDITIONAL_IDIOM  poscondition=?=A ) 
-    cxxv~1az 
- one_hundred_thirty ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL CONDITIONAL_IDIOM  poscondition=?=A ) 
-    cxxx~1az 
- one_hundred_thirty-five ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL CONDITIONAL_IDIOM  poscondition=?=A ) 
-    cxxxv~1az 
- one_hundred_forty ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL CONDITIONAL_IDIOM  poscondition=?=A ) 
-    cxl~1az 
- one_hundred_forty-five ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL CONDITIONAL_IDIOM  poscondition=?=A ) 
-    cxlv~1az 
- one_hundred_fifty ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL CONDITIONAL_IDIOM  poscondition=?=A ) 
-    cl~2az 
- one_hundred_fifty-five ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL CONDITIONAL_IDIOM  poscondition=?=A ) 
-    clv~1az 
- one_hundred_sixty ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL CONDITIONAL_IDIOM  poscondition=?=A ) 
-    clx~1az 
- one_hundred_sixty-five ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL CONDITIONAL_IDIOM  poscondition=?=A ) 
-    clxv~1az 
- one_hundred_seventy ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL CONDITIONAL_IDIOM  poscondition=?=A ) 
-    clxx~1az 
- one_hundred_seventy-five ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL CONDITIONAL_IDIOM  poscondition=?=A ) 
-    clxxv~1az 
- one_hundred_eighty ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL CONDITIONAL_IDIOM  poscondition=?=A ) 
-    clxxx~1az 
- one_hundred_ninety ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL CONDITIONAL_IDIOM  poscondition=?=A ) 
-    xcl~1az 
+ one_hundred_one ( CONDITIONAL_IDIOM  poscondition=(null) ) 
+ one_hundred_five ( CONDITIONAL_IDIOM  poscondition=(null) ) 
+ one_hundred_ten ( CONDITIONAL_IDIOM  poscondition=(null) ) 
+ one_hundred_fifteen ( CONDITIONAL_IDIOM  poscondition=(null) ) 
+ one_hundred_twenty ( CONDITIONAL_IDIOM  poscondition=(null) ) 
+ one_hundred_twenty-five ( CONDITIONAL_IDIOM  poscondition=(null) ) 
+ one_hundred_thirty ( CONDITIONAL_IDIOM  poscondition=(null) ) 
+ one_hundred_thirty-five ( CONDITIONAL_IDIOM  poscondition=(null) ) 
+ one_hundred_forty ( CONDITIONAL_IDIOM  poscondition=(null) ) 
+ one_hundred_forty-five ( CONDITIONAL_IDIOM  poscondition=(null) ) 
+ one_hundred_fifty ( CONDITIONAL_IDIOM  poscondition=(null) ) 
+ one_hundred_fifty-five ( CONDITIONAL_IDIOM  poscondition=(null) ) 
+ one_hundred_sixty ( CONDITIONAL_IDIOM  poscondition=(null) ) 
+ one_hundred_sixty-five ( CONDITIONAL_IDIOM  poscondition=(null) ) 
+ one_hundred_seventy ( CONDITIONAL_IDIOM  poscondition=(null) ) 
+ one_hundred_seventy-five ( CONDITIONAL_IDIOM  poscondition=(null) ) 
+ one_hundred_eighty ( CONDITIONAL_IDIOM  poscondition=(null) ) 
+ one_hundred_ninety ( CONDITIONAL_IDIOM  poscondition=(null) ) 
  one-person ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL ADJECTIVE_NOT_PREDICATE posdefault:ADJECTIVE ) 
     one-woman~1az designed for or restricted to a single person
  one-woman ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL ADJECTIVE_NOT_PREDICATE posdefault:ADJECTIVE ) 
@@ -8341,8 +8321,8 @@
     omnifarious~1az of all varieties or forms or kinds
  out_of_sight ( meanings=3 glosses=2 ADJECTIVE ADVERB ADJECTIVE_NORMAL ) 
     concealed~2a 
-    in_hiding~1bz quietly in concealment
-    out_of_view~1bz no longer visible
+    in_hiding~1z quietly in concealment
+    out_of_view~1z no longer visible
  oviparous ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:ADJECTIVE ) 
     oviparous~1az egg-laying
  ovoviviparous ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON1 ) 
@@ -8633,495 +8613,495 @@
     submerge~2v 
     whelm~1vz overcome, as with emotions or perceptual stimuli
  or_so ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    more_or_less~1b 
+    more_or_less~1z 
  or ( meanings=1 CONJUNCTION_COORDINATE COMMON4 COMMON2 COMMON1 KINDERGARTEN posdefault:PREPOSITION ) 
     or~1z 
  occasionally ( meanings=1 glosses=1 ADVERB COMMON4 GRADE5_6 posdefault:ADVERB ) 
-    from_time_to_time~1bz now and then or here and there
+    from_time_to_time~1z now and then or here and there
  on_occasion ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    occasionally~1b 
+    occasionally~1z 
  once_in_a_while ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    on_occasion~1b 
+    on_occasion~1z 
  once ( meanings=6 glosses=3 ADVERB PREPOSITION CONJUNCTION_SUBORDINATE PREDETERMINER COMMON4 COMMON1 KINDERGARTEN posdefault:ADVERB posdefault:PREPOSITION ) 
-    in_one_case~1bz on one occasion
-    erst~1bz at a previous time
-    once~3bz as soon as
+    in_one_case~1z on one occasion
+    erst~1z at a previous time
+    once~3z as soon as
     once~4z 
     once~5z 
     once~6z 
  often ( meanings=3 glosses=3 ADVERB COMMON4 COMMON1 KINDERGARTEN posdefault:ADVERB ) comparative=oftener 
-    ofttimes~1bz many times at short intervals
-    a_great_deal~2bz frequently or in great quantities
-    often~3bz in many cases or instances
+    ofttimes~1z many times at short intervals
+    a_great_deal~2z frequently or in great quantities
+    often~3z in many cases or instances
  oftentimes ( meanings=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    frequently~1b 
+    frequently~1z 
  oft ( meanings=2 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    oftentimes~1b 
-    oft~2bz 
+    oftentimes~1z 
+    oft~2z 
  ofttimes ( meanings=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    oft~1b 
+    oft~1z 
  oftener ( meanings=1 glosses=1 MORE_FORM ADVERB COMMON2 KINDERGARTEN posdefault:ADVERB ) comparative=often 
-    oftener~1bz more often or more frequently
+    oftener~1z more often or more frequently
  oddly ( meanings=2 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    peculiarly~1b 
-    queerly~2b 
+    peculiarly~1z 
+    queerly~2z 
  of_course ( meanings=1 ADVERB CONDITIONAL_IDIOM posdefault:ADVERB  poscondition=?=R ) 
-    naturally~1b 
+    naturally~1z 
  obviously ( meanings=1 ADVERB COMMON4 COMMON1 GRADE5_6 posdefault:ADVERB ) 
-    plainly~2b 
+    plainly~2z 
  ostensibly ( meanings=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    seemingly~1b 
+    seemingly~1z 
  on_the_face_of_it ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    apparently~2bz 
+    apparently~2z 
  once_again ( meanings=1 ADVERB CONDITIONAL_IDIOM posdefault:ADVERB  poscondition=?=R ) 
-    again~1b 
+    again~1z 
  once_more ( meanings=1 ADVERB CONDITIONAL_IDIOM posdefault:ADVERB  poscondition=?=R ) 
-    once_again~1b 
+    once_again~1z 
  over_again ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    once_more~1b 
+    once_more~1z 
  out_of_the_way ( meanings=6 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    out_of_the_way~1bz 
-    out_of_the_way~2bz 
-    out_of_the_way~3bz 
-    out_of_the_way~4bz 
-    out_of_the_way~5bz 
-    out_of_the_way~6bz 
+    out_of_the_way~1z 
+    out_of_the_way~2z 
+    out_of_the_way~3z 
+    out_of_the_way~4z 
+    out_of_the_way~5z 
+    out_of_the_way~6z 
  out_and_away ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    by_far~1b 
+    by_far~1z 
  overly ( meanings=1 ADVERB COMMON4 posdefault:ADVERB ) 
-    excessively~1b 
+    excessively~1z 
  openly ( meanings=1 glosses=1 ADVERB COMMON4 posdefault:ADVERB ) 
-    openly~1bz in an open way
+    openly~1z in an open way
  of_a_sudden ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    all_of_a_sudden~1b 
+    all_of_a_sudden~1z 
  on_purpose ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    designedly~1b 
+    designedly~1z 
  or_else ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    alternatively~1b 
+    alternatively~1z 
  onwards ( meanings=1 ADVERB COMMON4 posdefault:ADVERB ) 
-    forward~7b 
+    forward~7z 
  out_front ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    in_the_lead~2b 
+    in_the_lead~2z 
  out_loud ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    aloud~1b 
+    aloud~1z 
  overtly ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    overtly~1bz in an overt manner
+    overtly~1z in an overt manner
  once_and_for_all ( meanings=1 ADVERB CONDITIONAL_IDIOM posdefault:ADVERB  poscondition=?=R ) 
-    conclusively~1bz 
+    conclusively~1z 
  on_a_lower_floor ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    down_the_stairs~1b 
+    down_the_stairs~1z 
  on_a_higher_floor ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    up_the_stairs~1b 
+    up_the_stairs~1z 
  on_the_sly ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    furtively~1bz 
+    furtively~1z 
  ordinarily ( meanings=1 ADVERB COMMON4 posdefault:ADVERB ) 
-    commonly~1b 
+    commonly~1z 
  outstandingly ( meanings=2 glosses=2 ADVERB COMMON2 posdefault:ADVERB ) 
-    unco~1bz to a remarkable degree or extent
-    outstandingly~2bz in an outstanding manner or to an outstanding degree
+    unco~1z to a remarkable degree or extent
+    outstandingly~2z in an outstanding manner or to an outstanding degree
  of_late ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    late~10b 
+    late~10z 
  on_that_point ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    in_that_respect~1b 
+    in_that_respect~1z 
  out_of_doors ( meanings=2 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    alfresco~2b 
-    out_of_doors~2bz 
+    alfresco~2z 
+    out_of_doors~2z 
  of_necessity ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    inevitably~1b 
+    inevitably~1z 
  other_than ( meanings=1 PREPOSITION posdefault:PREPOSITION ) 
     other_than~1z 
  organically ( meanings=3 glosses=3 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    organically~1bz involving carbon compounds
-    organically~2bz as an important constituent
-    organically~3bz in an organic manner
+    organically~1z involving carbon compounds
+    organically~2z as an important constituent
+    organically~3z in an organic manner
  officially ( meanings=2 glosses=2 ADVERB COMMON4 posdefault:ADVERB ) 
-    officially~1bz in an official role
-    formally~2bz with official authorization
+    officially~1z in an official role
+    formally~2z with official authorization
  outrageously ( meanings=2 glosses=2 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    atrociously~2bz to an extravagant or immoderate degree
-    outrageously~2bz in a very offensive manner
+    atrociously~2z to an extravagant or immoderate degree
+    outrageously~2z in a very offensive manner
  one_time ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    once~1b 
+    once~1z 
  on_the_coattails ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    one_one_'s_coattails~1b 
+    one_one_'s_coattails~1z 
  one_one_'s_coattails ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    on_the_coattails~1bz 
+    on_the_coattails~1z 
  on_the_other_hand ( meanings=1 ADVERB CONDITIONAL_IDIOM KINDERGARTEN  poscondition=?=R ) 
-    but_then~1bz 
+    but_then~1z 
  on_the_one_hand ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    on_one_hand~1bz 
+    on_one_hand~1z 
  on_one_hand ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    on_the_one_hand~1b 
+    on_the_one_hand~1z 
  optically ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    optically~1bz in an optical manner
+    optically~1z in an optical manner
  operatively ( meanings=2 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    operatively~1bz in a manner to produce an effect
-    operatively~2bz 
+    operatively~1z in a manner to produce an effect
+    operatively~2z 
  of_all_time ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    ever~2b 
+    ever~2z 
  out_of_hand ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    beyond_control~1b 
+    beyond_control~1z 
  on_the_whole ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    all_in_all~1b 
+    all_in_all~1z 
  originally ( meanings=3 glosses=1 ADVERB COMMON4 COMMON1 posdefault:ADVERB ) 
-    originally~1bz in an original manner
-    in_the_first_place~2b 
-    in_the_beginning~2b 
+    originally~1z in an original manner
+    in_the_first_place~2z 
+    in_the_beginning~2z 
  one_by_one ( meanings=3 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    by_the_piece~1b 
-    severally~2b 
-    one_after_another~1b 
+    by_the_piece~1z 
+    severally~2z 
+    one_after_another~1z 
  orally ( meanings=2 glosses=1 ADVERB COMMON4 posdefault:ADVERB ) 
-    by_word_of_mouth~1b 
-    orally~2bz through the mouth rather than through injection
+    by_word_of_mouth~1z 
+    orally~2z through the mouth rather than through injection
  on_request ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    for_the_asking~1b 
+    for_the_asking~1z 
  on_the_Q.T. ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    on_the_QT~1bz 
+    on_the_QT~1z 
  on_the_QT ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    secretly~2b 
+    secretly~2z 
  off_and_on ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    on_and_off~1bz 
+    on_and_off~1z 
  on_and_off ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    off_and_on~1b 
+    off_and_on~1z 
  off_the_cuff ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    off_the_cuff~1bz 
+    off_the_cuff~1z 
  off_the_record ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    off_the_record~1bz 
+    off_the_record~1z 
  on_all_fours ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    on_all_fours~1bz 
+    on_all_fours~1z 
  on_the_average ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    on_average~1bz 
+    on_average~1z 
  on_average ( meanings=2 ADVERB PREPOSITION posdefault:ADVERB ) 
-    on_the_average~1b 
+    on_the_average~1z 
     on_average~2z 
  on_approval ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    on_approval~1bz 
+    on_approval~1z 
  on_faith ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    on_faith~1bz 
+    on_faith~1z 
  oppositely ( meanings=2 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    oppositely~1bz in an opposite position
-    oppositely~2bz 
+    oppositely~1z in an opposite position
+    oppositely~2z 
  on_the_contrary ( meanings=1 ADVERB CONDITIONAL_IDIOM KINDERGARTEN  poscondition=?=R ) 
-    contrarily~1bz 
+    contrarily~1z 
  on_the_fly ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    on_the_fly~1bz 
+    on_the_fly~1z 
  on_the_spot ( meanings=3 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    on_the_spot~1bz 
-    on_the_spot~2bz 
-    on_the_spot~3bz 
+    on_the_spot~1z 
+    on_the_spot~2z 
+    on_the_spot~3z 
  on_the_spur_of_the_moment ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    suddenly~3b 
+    suddenly~3z 
  on_the_way ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    en_route~1bz 
+    en_route~1z 
  on_time ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    on_time~1bz 
+    on_time~1z 
  out_of_thin_air ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    from_nowhere~1bz 
+    from_nowhere~1z 
  out_of_nothing ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    out_of_thin_air~1b 
+    out_of_thin_air~1z 
  out_of_wedlock ( meanings=2 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    outside_marriage~1b 
-    illegitimately~1bz 
+    outside_marriage~1z 
+    illegitimately~1z 
  outside_marriage ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    out_of_wedlock~1bz 
+    out_of_wedlock~1z 
  orad ( meanings=1 glosses=1 ADVERB COMMON1 ) 
-    orad~1bz toward the mouth or oral region
+    orad~1z toward the mouth or oral region
  overboard ( meanings=2 glosses=2 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    overboard~1bz from on board a vessel into the water
-    overboard~2bz to extremes
+    overboard~1z from on board a vessel into the water
+    overboard~2z to extremes
  over_and_over ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    again_and_again~1b 
+    again_and_again~1z 
  over_and_over_again ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    time_and_time_again~1bz 
+    time_and_time_again~1z 
  on_a_regular_basis ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    regularly~1bz 
+    regularly~1z 
  on_an_irregular_basis ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    irregularly~2bz 
+    irregularly~2z 
  obdurately ( meanings=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    stubbornly~1b 
+    stubbornly~1z 
  obstinately ( meanings=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    mulishly~1b 
+    mulishly~1z 
  ornamentally ( meanings=1 glosses=1 ADVERB COMMON1 ) 
-    ornamentally~1bz in an ornamental, nonfunctional manner
+    ornamentally~1z in an ornamental, nonfunctional manner
  ornately ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    ornately~1bz in an ornate manner
+    ornately~1z in an ornate manner
  on_an_individual_basis ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    separately~1b 
+    separately~1z 
  outwardly ( meanings=2 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    outwardly~1bz in outward appearance
-    externally~1b 
+    outwardly~1z in outward appearance
+    externally~1z 
  obligingly ( meanings=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    accommodatingly~1b 
+    accommodatingly~1z 
  out_of ( meanings=1 PREPOSITION posdefault:PREPOSITION ) 
     out_of~1z 
  ominously ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    ominously~1bz in an ominous manner
+    ominously~1z in an ominous manner
  overwhelmingly ( meanings=1 glosses=1 ADVERB COMMON4 posdefault:ADVERB ) 
-    irresistibly~1bz incapable of being resisted
+    irresistibly~1z incapable of being resisted
  overpoweringly ( meanings=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    overwhelmingly~1b 
+    overwhelmingly~1z 
  obsessively ( meanings=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    obsessionally~1b 
+    obsessionally~1z 
  obsessionally ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    compulsively~1bz in a compulsive manner
+    compulsively~1z in a compulsive manner
  on_the_side ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    unofficially~2b 
+    unofficially~2z 
  on_paper ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    in_writing~2b 
+    in_writing~2z 
  obscurely ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    obscurely~1bz in an obscure manner
+    obscurely~1z in an obscure manner
  on_base ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    aboard~1b 
+    aboard~1z 
  on_board ( meanings=1 ADVERB CONDITIONAL_IDIOM posdefault:ADVERB  poscondition=?=R ) 
-    aboard~2b 
+    aboard~2z 
  only_too ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    all_too~1bz 
+    all_too~1z 
  one-sidedly ( meanings=2 ADVERB posdefault:ADVERB ) 
-    unilaterally~1b 
-    one-sidedly~2bz 
+    unilaterally~1z 
+    one-sidedly~2z 
  outwards ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    outward~3bz toward the outside
+    outward~3z toward the outside
  off-hand ( meanings=1 ADVERB posdefault:ADVERB ) 
-    ex_tempore~1b 
+    ex_tempore~1z 
  off-the-clock ( meanings=1 glosses=1 ADVERB ) 
-    off-the-clock~1bz overtime without extra compensation
+    off-the-clock~1z overtime without extra compensation
  over_here ( meanings=1 ADVERB CONDITIONAL_IDIOM posdefault:ADVERB  poscondition=?=R ) 
-    up_here~1bz 
+    up_here~1z 
  offhandedly ( meanings=2 glosses=2 ADVERB COMMON2 posdefault:ADVERB ) 
-    offhand~3bz in a casually inconsiderate manner
-    offhand~4bz without previous thought or preparation
+    offhand~3z in a casually inconsiderate manner
+    offhand~4z without previous thought or preparation
  obliquely ( meanings=2 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    athwart~1bz at an oblique angle
-    sidelong~4b 
+    athwart~1z at an oblique angle
+    sidelong~4z 
  on_air ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    on_air~1bz 
+    on_air~1z 
  obligatorily ( meanings=3 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    compulsorily~1b 
-    obligatorily~2bz in an obligatory manner
-    obligatorily~3bz 
+    compulsorily~1z 
+    obligatorily~2z in an obligatory manner
+    obligatorily~3z 
  offensively ( meanings=3 glosses=2 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    offensively~1bz in an aggressive manner
-    objectionably~1b 
-    offensively~3bz in an unpleasantly offensive manner
+    offensively~1z in an aggressive manner
+    objectionably~1z 
+    offensively~3z in an unpleasantly offensive manner
  objectionably ( meanings=1 glosses=1 ADVERB COMMON1 ) 
-    obnoxiously~1bz in an obnoxious manner
+    obnoxiously~1z in an obnoxious manner
  obnoxiously ( meanings=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    offensively~2b 
+    offensively~2z 
  odiously ( meanings=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    abominably~2b 
+    abominably~2z 
  obediently ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    yieldingly~1bz in an obedient manner
+    yieldingly~1z in an obedient manner
  obtusely ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    densely~2bz in a stupid manner
+    densely~2z in a stupid manner
  observably ( meanings=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    noticeably~1b 
+    noticeably~1z 
  on_the_dot ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    on_the_nose~2b 
+    on_the_nose~2z 
  opportunely ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    opportunely~1bz at an opportune time
+    opportunely~1z at an opportune time
  obscenely ( meanings=2 glosses=2 ADVERB COMMON2 posdefault:ADVERB ) 
-    lewdly~1bz in a lewd and obscene manner
-    obscenely~2bz to an obscene degree
+    lewdly~1z in a lewd and obscene manner
+    obscenely~2z to an obscene degree
  objectively ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    objectively~1bz with objectivity
+    objectively~1z with objectivity
  obsequiously ( meanings=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    subserviently~1b 
+    subserviently~1z 
  observantly ( meanings=1 glosses=1 ADVERB COMMON1 ) 
-    observingly~1bz in an observant manner
+    observingly~1z in an observant manner
  observingly ( meanings=1 ADVERB COMMON1 ) 
-    observantly~1b 
+    observantly~1z 
  obstreperously ( meanings=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    loudly~3b 
+    loudly~3z 
  obtrusively ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    obtrusively~1bz in an obtrusive manner
+    obtrusively~1z in an obtrusive manner
  officiously ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    officiously~1bz in an officious manner
+    officiously~1z in an officious manner
  obstructively ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    hinderingly~1bz in an obstructive manner
+    hinderingly~1z in an obstructive manner
  onerously ( meanings=1 glosses=1 ADVERB COMMON1 ) 
-    onerously~1bz in an onerous manner
+    onerously~1z in an onerous manner
  opaquely ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    opaquely~1bz in an opaque manner
+    opaquely~1z in an opaque manner
  operationally ( meanings=2 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    operationally~1bz in respect to operation
-    operationally~2bz 
+    operationally~1z in respect to operation
+    operationally~2z 
  oppressively ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    oppressively~1bz in a heavy and oppressive way
+    oppressively~1z in a heavy and oppressive way
  optimally ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    optimally~1bz in an optimal and most desirable way
+    optimally~1z in an optimal and most desirable way
  optimistically ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    optimistically~1bz with optimism
+    optimistically~1z with optimism
  optionally ( meanings=1 glosses=1 ADVERB COMMON4 posdefault:ADVERB ) 
-    optionally~1bz in an optional manner
+    optionally~1z in an optional manner
  opulently ( meanings=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    sumptuously~1b 
+    sumptuously~1z 
  organizationally ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    organizationally~1bz with regard to organization
+    organizationally~1z with regard to organization
  osmotically ( meanings=2 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    osmotically~1bz by means of osmosis
-    osmotically~2bz 
+    osmotically~1z by means of osmosis
+    osmotically~2z 
  ostentatiously ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    showily~2bz with ostentation
+    showily~2z with ostentation
  outlandishly ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    outlandishly~1bz in an outlandish manner
+    outlandishly~1z in an outlandish manner
  outspokenly ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    outspokenly~1bz in an outspoken manner
+    outspokenly~1z in an outspoken manner
  overbearingly ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    overbearingly~1bz in an overbearing manner
+    overbearingly~1z in an overbearing manner
  overleaf ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 ) 
-    overleaf~1bz on or to the other side of a page
+    overleaf~1z on or to the other side of a page
  overside ( meanings=1 glosses=1 ADVERB COMMON1 ) 
-    overside~1bz over the side of a boat
+    overside~1z over the side of a boat
  owlishly ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    owlishly~1bz in an owlish manner
+    owlishly~1z in an owlish manner
  on_it ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    thereon~1b 
+    thereon~1z 
  of_each_person ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    per_capita~2b 
+    per_capita~2z 
  on_the_wing ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    in_flight~1bz 
+    in_flight~1z 
  only_if ( meanings=3 CONJUNCTION_SUBORDINATE KINDERGARTEN ) 
     only_if~1z 
     only_if~2z 
     only_if~3z 
  only_when ( meanings=2 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    only~10b 
-    only_when~2bz 
+    only~10z 
+    only_when~2z 
  one_after_another ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    one_at_a_time~1bz 
+    one_at_a_time~1z 
  one_at_a_time ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    one_by_one~3b 
+    one_by_one~3z 
  on_earth ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    on_earth~1bz 
+    on_earth~1z 
  out_of_view ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    out_of_sight~3b 
+    out_of_sight~3z 
  on_camera ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    on_camera~1bz 
+    on_camera~1z 
  ophthalmometrically ( meanings=2 ADVERB ) 
-    ophthalmometrically~1bz 
-    ophthalmometrically~2bz 
+    ophthalmometrically~1z 
+    ophthalmometrically~2z 
  ophthalmofunduscopically ( meanings=2 ADVERB ) 
-    ophthalmofunduscopically~1bz 
-    ophthalmofunduscopically~2bz 
+    ophthalmofunduscopically~1z 
+    ophthalmofunduscopically~2z 
  optometrically ( meanings=2 ADVERB ) 
-    optometrically~1bz 
-    optometrically~2bz 
+    optometrically~1z 
+    optometrically~2z 
  osmometrically ( meanings=2 ADVERB ) 
-    osmometrically~1bz 
-    osmometrically~2bz 
+    osmometrically~1z 
+    osmometrically~2z 
  oncometrically ( meanings=2 ADVERB ) 
-    oncometrically~1bz 
-    oncometrically~2bz 
+    oncometrically~1z 
+    oncometrically~2z 
  ordinately ( meanings=2 ADVERB COMMON1 ) 
-    ordinately~1bz 
-    ordinately~2bz 
+    ordinately~1z 
+    ordinately~2z 
  otoscopically ( meanings=2 ADVERB posdefault:ADVERB ) 
-    otoscopically~1bz 
-    otoscopically~2bz 
+    otoscopically~1z 
+    otoscopically~2z 
  oscillographically ( meanings=2 ADVERB ) 
-    oscillographically~1bz 
-    oscillographically~2bz 
+    oscillographically~1z 
+    oscillographically~2z 
  observerscopically ( meanings=2 ADVERB ) 
-    observerscopically~1bz 
-    observerscopically~2bz 
+    observerscopically~1z 
+    observerscopically~2z 
  occcasionally ( meanings=2 ADVERB COMMON1 ) 
-    occcasionally~1bz 
-    occcasionally~2bz 
+    occcasionally~1z 
+    occcasionally~2z 
  over-ridingly ( meanings=2 ADVERB posdefault:ADVERB ) 
-    over-ridingly~1bz 
-    over-ridingly~2bz 
+    over-ridingly~1z 
+    over-ridingly~2z 
  otoacoustically ( meanings=2 ADVERB ) 
-    otoacoustically~1bz 
-    otoacoustically~2bz 
+    otoacoustically~1z 
+    otoacoustically~2z 
  oculoplethysmographically ( meanings=2 ADVERB ) 
-    oculoplethysmographically~1bz 
-    oculoplethysmographically~2bz 
+    oculoplethysmographically~1z 
+    oculoplethysmographically~2z 
  optomyometrically ( meanings=2 ADVERB ) 
-    optomyometrically~1bz 
-    optomyometrically~2bz 
+    optomyometrically~1z 
+    optomyometrically~2z 
  optoelectronically ( meanings=2 ADVERB COMMON1 ) 
-    optoelectronically~1bz 
-    optoelectronically~2bz 
+    optoelectronically~1z 
+    optoelectronically~2z 
  organismically ( meanings=2 ADVERB COMMON1 ) 
-    organismically~1bz 
-    organismically~2bz 
+    organismically~1z 
+    organismically~2z 
  otomicroscopically ( meanings=2 ADVERB ) 
-    otomicroscopically~1bz 
-    otomicroscopically~2bz 
+    otomicroscopically~1z 
+    otomicroscopically~2z 
  ophthalmodiastimetrically ( meanings=2 ADVERB ) 
-    ophthalmodiastimetrically~1bz 
-    ophthalmodiastimetrically~2bz 
+    ophthalmodiastimetrically~1z 
+    ophthalmodiastimetrically~2z 
  orogastrically ( meanings=2 ADVERB COMMON1 posdefault:ADVERB ) 
-    orogastrically~1bz 
-    orogastrically~2bz 
+    orogastrically~1z 
+    orogastrically~2z 
  oculographically ( meanings=2 ADVERB ) 
-    oculographically~1bz 
-    oculographically~2bz 
+    oculographically~1z 
+    oculographically~2z 
  ophthalmotonometrically ( meanings=2 ADVERB ) 
-    ophthalmotonometrically~1bz 
-    ophthalmotonometrically~2bz 
+    ophthalmotonometrically~1z 
+    ophthalmotonometrically~2z 
  ophthalmodynamometrically ( meanings=2 ADVERB ) 
-    ophthalmodynamometrically~1bz 
-    ophthalmodynamometrically~2bz 
+    ophthalmodynamometrically~1z 
+    ophthalmodynamometrically~2z 
  ophthalmotropometrically ( meanings=2 ADVERB ) 
-    ophthalmotropometrically~1bz 
-    ophthalmotropometrically~2bz 
+    ophthalmotropometrically~1z 
+    ophthalmotropometrically~2z 
  odynometrically ( meanings=2 ADVERB ) 
-    odynometrically~1bz 
-    odynometrically~2bz 
+    odynometrically~1z 
+    odynometrically~2z 
  orthotopically ( meanings=2 ADVERB COMMON1 ) 
-    orthotopically~1bz 
-    orthotopically~2bz 
+    orthotopically~1z 
+    orthotopically~2z 
  octahedrally ( meanings=2 ADVERB COMMON1 ) 
-    octahedrally~1bz 
-    octahedrally~2bz 
+    octahedrally~1z 
+    octahedrally~2z 
  ophthalmographically ( meanings=2 ADVERB ) 
-    ophthalmographically~1bz 
-    ophthalmographically~2bz 
+    ophthalmographically~1z 
+    ophthalmographically~2z 
  ophthalmometroscopically ( meanings=2 ADVERB ) 
-    ophthalmometroscopically~1bz 
-    ophthalmometroscopically~2bz 
+    ophthalmometroscopically~1z 
+    ophthalmometroscopically~2z 
  osteosynthetically ( meanings=2 ADVERB ) 
-    osteosynthetically~1bz 
-    osteosynthetically~2bz 
+    osteosynthetically~1z 
+    osteosynthetically~2z 
  oscillometrically ( meanings=2 ADVERB ) 
-    oscillometrically~1bz 
-    oscillometrically~2bz 
+    oscillometrically~1z 
+    oscillometrically~2z 
  oscillotonometrically ( meanings=2 ADVERB ) 
-    oscillotonometrically~1bz 
-    oscillotonometrically~2bz 
+    oscillotonometrically~1z 
+    oscillotonometrically~2z 
  orchidometrically ( meanings=2 ADVERB ) 
-    orchidometrically~1bz 
-    orchidometrically~2bz 
+    orchidometrically~1z 
+    orchidometrically~2z 
  olfactometrically ( meanings=2 ADVERB ) 
-    olfactometrically~1bz 
-    olfactometrically~2bz 
+    olfactometrically~1z 
+    olfactometrically~2z 
  ophthalmodiaphanoscopically ( meanings=2 ADVERB ) 
-    ophthalmodiaphanoscopically~1bz 
-    ophthalmodiaphanoscopically~2bz 
+    ophthalmodiaphanoscopically~1z 
+    ophthalmodiaphanoscopically~2z 
  ophthalmoleukoscopically ( meanings=2 ADVERB ) 
-    ophthalmoleukoscopically~1bz 
-    ophthalmoleukoscopically~2bz 
+    ophthalmoleukoscopically~1z 
+    ophthalmoleukoscopically~2z 
  omnicardiographically ( meanings=2 ADVERB ) 
-    omnicardiographically~1bz 
-    omnicardiographically~2bz 
+    omnicardiographically~1z 
+    omnicardiographically~2z 
  ophthalmoleucoscopically ( meanings=2 ADVERB ) 
-    ophthalmoleucoscopically~1bz 
-    ophthalmoleucoscopically~2bz 
+    ophthalmoleucoscopically~1z 
+    ophthalmoleucoscopically~2z 
  osmoscopically ( meanings=2 ADVERB ) 
-    osmoscopically~1bz 
-    osmoscopically~2bz 
+    osmoscopically~1z 
+    osmoscopically~2z 
  occupationally ( meanings=1 ADVERB posdefault:ADVERB ) 
-    occupationally~1bz 
+    occupationally~1z 
  o.h. ( meanings=1 ADVERB ) 
-    o.h.~1bz 
+    o.h.~1z 
  o.m. ( meanings=1 ADVERB ) 
-    o.m.~1bz 
+    o.m.~1z 
  omni_nocte ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    omni_nocte~1bz 
+    omni_nocte~1z 
  oxidatively ( meanings=1 ADVERB posdefault:ADVERB ) 
-    oxidatively~1bz 
+    oxidatively~1z 
  on_the_grounds_that ( meanings=1 CONJUNCTION_SUBORDINATE KINDERGARTEN ) 
     on_the_grounds_that~1z 
  on_grounds_that ( meanings=1 CONJUNCTION_SUBORDINATE KINDERGARTEN ) 

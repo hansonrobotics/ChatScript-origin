@@ -383,7 +383,7 @@
  yearly ( meanings=3 NOUN ADJECTIVE ADVERB ADJECTIVE_NORMAL NOUN_SINGULAR ADJECTIVE_NOT_PREDICATE COMMON4 KINDERGARTEN posdefault:ADJECTIVE ) 
     annual~1n 
     annual~4a 
-    annually~1b 
+    annually~1z 
  yearbook ( meanings=2 glosses=1 NOUN NOUN_SINGULAR COMMON2 COMMON1 posdefault:NOUN ) 
     yearly~1n 
     yearbook~2nz (^book~4) a book published annually by the graduating class of a high school or college usually containing photographs of faculty and graduating students
@@ -487,7 +487,7 @@
     yes~1nz (^affirmative~1) an affirmative
  yea ( meanings=2 glosses=1 NOUN_ABSTRACT NOUN ADVERB INTERJECTION NOUN_SINGULAR COMMON4 GRADE1_2 ) 
     yea~1nz (^affirmative~1) an affirmative
-    yeah~1b 
+    yeah~1z 
  yellow_pages ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
     yellow_pages~1nz (^telephone_directory~1) a telephone directory or section of a directory where business products and services are listed alphabetically by field along with classified advertising
  yip ( meanings=2 glosses=2 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 KINDERGARTEN posdefault:NOUN VERB_NOOBJECT QUOTEABLE_VERB ) 
@@ -1138,8 +1138,8 @@
  yesterday ( meanings=4 glosses=4 NOUN_ABSTRACT NOUN ADVERB NOUN_SINGULAR COMMON4 COMMON1 NOUN_NODETERMINER KINDERGARTEN posdefault:ADVERB TIMEWORD ) 
     yesterday~1nz (^day~4) the day immediately before today
     yesterday~2nz (^past~2) the recent past
-    yesterday~3bz on the day preceding today
-    yesterday~4bz in the recent past
+    yesterday~3z on the day preceding today
+    yesterday~4z in the recent past
  Yom_Kippur ( meanings=1 NOUN NOUN_PROPER_SINGULAR ) 
     Day_of_Atonement~1n 
  Yuletide ( meanings=1 NOUN NOUN_PROPER_SINGULAR NOUN_NODETERMINER ) 
@@ -1172,7 +1172,7 @@
  yuk> ( INTERJECTION ) 
  ya ( INTERJECTION KINDERGARTEN ) 
  yeah ( meanings=1 glosses=1 ADVERB INTERJECTION COMMON4 COMMON1 KINDERGARTEN ) 
-    yea~2bz not only so, but
+    yea~2z not only so, but
  yippee ( INTERJECTION ) 
  yo ( INTERJECTION ) 
  yoo-hoo ( INTERJECTION ) 
@@ -1209,11 +1209,11 @@
     yokel-like~1az stupid and ignorant like proverbial rural inhabitants
  yonder ( meanings=3 glosses=2 ADJECTIVE ADVERB DETERMINER ADJECTIVE_NORMAL ADJECTIVE_NOT_PREDICATE COMMON2 COMMON1 KINDERGARTEN posdefault:ADVERB ) 
     yon~1az distant but within sight 
-    yon~2bz at or in an indicated place (`yon' is archaic and dialectal)
+    yon~2z at or in an indicated place (`yon' is archaic and dialectal)
     yonder~3z 
  yon ( meanings=2 ADJECTIVE ADVERB ADJECTIVE_NORMAL ADJECTIVE_NOT_PREDICATE COMMON2 COMMON1 posdefault:ADVERB ) 
     yonder~1a 
-    yonder~2b 
+    yonder~2z 
  yarn-spinning ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL ) 
     yarn-spinning~1az inclined to tell long and involved stories
  yeasty ( meanings=4 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:ADJECTIVE ) comparative=yeastiest 
@@ -1283,25 +1283,25 @@
  yummier ( MORE_FORM ADJECTIVE ADJECTIVE_NORMAL COMMON1 GRADE1_2 ) comparative=yummy 
  yummiest ( MOST_FORM ADJECTIVE ADJECTIVE_NORMAL COMMON2 GRADE1_2 posdefault:ADJECTIVE ) comparative=yummier 
  yet ( meanings=7 glosses=4 ADVERB CONJUNCTION_COORDINATE COMMON4 COMMON1 KINDERGARTEN posdefault:ADVERB ) 
-    even~10b 
-    nevertheless~1b 
-    yet~3bz up to the present time
-    until_now~1bz used in negative statement to describe a situation that has existed up to this point or up to the present time
-    so_far~2bz used after a superlative
-    in_time~2bz within an indefinite time or at an unspecified future time
+    even~10z 
+    nevertheless~1z 
+    yet~3z up to the present time
+    until_now~1z used in negative statement to describe a situation that has existed up to this point or up to the present time
+    so_far~2z used after a superlative
+    in_time~2z within an indefinite time or at an unspecified future time
     yet~7z 
  you_bet ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    you_said_it~1b 
+    you_said_it~1z 
  you ( meanings=1 PRONOUN_SUBJECT PRONOUN_OBJECT COMMON4 COMMON2 COMMON1 PRONOUN_INDIRECTOBJECT KINDERGARTEN ANIMATE_BEING ) 
     you~1z 
  you_said_it ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    and_how~1bz 
+    and_how~1z 
  yieldingly ( meanings=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    obediently~1b 
+    obediently~1z 
  yearningly ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    longingly~1bz in a yearning manner
+    longingly~1z in a yearning manner
  youthfully ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    youthfully~1bz in a youthful manner
+    youthfully~1z in a youthful manner
  yarn-dye ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB VERB_DIRECTOBJECT ) 
     impress~2v 
  yammer ( meanings=2 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 posdefault:VERB VERB_NOOBJECT QUOTEABLE_VERB ) 

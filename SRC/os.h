@@ -30,6 +30,7 @@ extern char hide[4000];
 #define NORMALFILES 0
 #define MONGOFILES 1
 #define POSTGRESFILES 2
+#define MYSQLFILES 3
 extern bool logged;
 extern int filesystemOverride;
 #define MAX_GLOBAL 600

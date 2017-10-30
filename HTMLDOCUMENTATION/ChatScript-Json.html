@@ -46,7 +46,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 </head>
 <body>
 <h1 id="chatscript-json-manual">ChatScript JSON Manual</h1>
-<p>© Bruce Wilcox, mailto:gowilcox@gmail.com www.brilligunderstanding.com <br>Revision 6/25/2017 cs7.51</p>
+<p>© Bruce Wilcox, mailto:gowilcox@gmail.com www.brilligunderstanding.com <br>Revision 9/24/2017 cs7.55</p>
 <h1 id="real-world-json">Real World JSON</h1>
 <p>JSON (JavaScript Object Notation) is an open standard format using human-readable text to transmit data objects over the web. It is a common standard largely replacing XML which is too wordy and hard to read. JSON has two datatypes that represents collections of values, the array and the object. A JSON array is a list of JSON entities separated by commas and placed within <code>[]</code>, e.g.,</p>
 <pre><code>[ A 2 [ help life] [] ]</code></pre>
@@ -61,7 +61,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <span class="fu">}</span></code></pre></div>
 <p>Each key must be encased in quotes and joined to an ending colon. Whitespace separates the colon from the value. Again types can be mixed in the values. <code>{}</code> is the empty object. Key-value pairs have no guaranteed order and may shuffle around if you manipulate the structure. You can nest arrays and objects inside each other.</p>
 <h1 id="chatscript-json">ChatScript &amp; JSON</h1>
-<p>JSON is an excellent language to represent more complex ChatScript facts as well as interact with the web. ChatScript can convert back and forth between JSON the text string passed over the web and ChatScript facts that represent the structure internally. If you tried to create facts using CreateFact, you would find making the data shown below extremely difficult and non-obvious. But as JSON, it is easy to create facts to represent the structure and to access pieces of it.</p>
+<p>JSON is an excellent language to represent more complex ChatScript facts as well as interact with the web. ChatScript can convert back and forth between JSON the text string passed over the web and ChatScript facts that represent the structure internally. If you tried to create facts using ^CreateFact, you would find making the data shown below extremely difficult and non-obvious. But as JSON, it is easy to create facts to represent the structure and to access pieces of it.</p>
 <div class="sourceCode"><pre class="sourceCode json"><code class="sourceCode json"><span class="fu">{</span>
     <span class="dt">&quot;firstName&quot;</span><span class="fu">:</span> <span class="st">&quot;John&quot;</span><span class="fu">,</span>
     <span class="dt">&quot;lastName&quot;</span><span class="fu">:</span> <span class="st">&quot;Smith&quot;</span><span class="fu">,</span>
@@ -86,6 +86,22 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
     <span class="dt">&quot;spouse&quot;</span><span class="fu">:</span> <span class="kw">null</span>
 <span class="fu">}</span></code></pre></div>
 <p>Note that JSON has no mechanism for sharing JSON subtrees. Hence anytime you create a JSON fact structure in CS, the facts will all be unique.</p>
+<h2 id="accessing-the-web-with-json">Accessing the web with JSON</h2>
+<p>You will learn how to create JSON structures below. The other key to a web-enabled CS is ^jsonopen. To see how easy it is to talk to the web, just look at this code.</p>
+<pre><code># The cleanest way to build json data
+$_var = ^jsoncreate(transient object)
+$_var.fieldname = $myvar 
+
+An alternative limited to max output buffer size (~80K):
+$_var = ^jsonparse(^&quot;{ fieldname: $myvar }&quot;) 
+
+And now to send data upstream:
+$_url = ^&quot;http://myHost:myIP&quot;
+$_userAgent = ^&quot;User-Agent: %bot, ChatScript”
+$_header = ^&quot; ~Accept: application/json 
+                  $_userAgent
+                  ~Content-Type: application/json &quot;
+$_response = ^jsonopen(transient POST $_url $_data $_header $_userAgent) </code></pre>
 <h2 id="jsonflags---optional-1st-arg-to-some-json-routines">JSONFLAGS - Optional 1st arg to some JSON routines</h2>
 <p>Routines that will create facts for JSON will by default create them as transients (they die at end of volley unless you work to save them). You can override this default by saying <code>permanent</code> or <code>transient</code>. This applies to <code>^jsonopen</code>, <code>^jsonparse</code>, <code>^jsoncreate</code>, <code>^jsonobjectinsert</code>, <code>^jsonarrayinsert</code>, <code>^jsoncopy</code>.</p>
 <p>You can also add a flag <code>safe</code> to <code>^jsonparse</code>, <code>^jsonobjectinsert</code>, <code>^jsonarraydelete</code>. You can also add a flag <code>unique</code> to <code>^jsonarrayinsert</code>. You can also add <code>duplicate</code> to ^jsonobjectinsert.</p>

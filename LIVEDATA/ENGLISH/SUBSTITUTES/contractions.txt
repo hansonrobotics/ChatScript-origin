@@ -5,6 +5,7 @@
  'n	and
   & and
   e'en even
+  n't not
   ne'er never
  'bot robot
  'bout about

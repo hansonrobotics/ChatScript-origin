@@ -318,7 +318,7 @@ void ReformatString(char starter, char* input,char*& output, FunctionResult& res
 		{
 			char* at = var;
 			*at++ = *input++;
-			while (IsAlphaUTF8(*input) ) *at++ = *input++;
+			while (IsLegalNameCharacter(*input) ) *at++ = *input++;
 			*at = 0;
 			if (output != start && *(output-1) == ' ') --output; // no space before
 			input = Output_Function(var, input, NULL, output, controls,result,false);
@@ -369,7 +369,7 @@ void StdNumber(char* word,char*& buffer,int controls) // text numbers may have s
 {
 	size_t len = strlen(word);
 	char* ptr = word;
-    if ( IsAlphaUTF8(*ptr) ||  !IsDigitWord(word) || strchr(word,':')) // either its not a number or its a time - leave unchanged
+    if ( IsAlphaUTF8(*ptr) || !IsDigitWord(word, AMERICAN_NUMBERS) || strchr(word,':')) // either its not a number or its a time - leave unchanged
     {
         strcpy(buffer,word);  
 		if (controls & OUTPUT_NOUNDERSCORE)

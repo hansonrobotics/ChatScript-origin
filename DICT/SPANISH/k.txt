@@ -1,10 +1,10 @@
-﻿ K ( ) 
+﻿ K ( ) lemma=`K`K` ACRNM  ALFS  
  K-1 ( ) 
  K.21 ( ) 
  KDD ( NOUN NOUN_PROPER_SINGULAR NOUN_PROPER_PLURAL ) 
  KKKK ( ) 
  KLKL ( ) 
- KP ( NOUN NOUN_PROPER_SINGULAR NOUN_PROPER_PLURAL ) 
+ KP ( NOUN NOUN_PROPER_SINGULAR NOUN_PROPER_PLURAL ) lemma=`KP`KP` ACRNM  NP  
  KP1 ( ) 
  KP2 ( ) 
  KRYTER ( NOUN NOUN_PROPER_SINGULAR NOUN_PROPER_PLURAL ) 
@@ -72,46 +72,41 @@
  karatazo ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  kb ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  kbit ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
- kcal ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=kilocaloría 
+ kcal ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=`kilocaloría` NC  
  kernel ( ) 
  ketoconasole ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  ketoconazol ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  ketotifeno ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  keyboard ( ) 
  keying ( ) 
- keynesianas ( ADJECTIVE ) lemma=keynesiano 
+ keynesianas ( ADJECTIVE ) lemma=`keynesiano` ADJ  
  keynesiano ( ADJECTIVE ) 
- kg ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=kilogramo 
+ kg ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=`kilogramo` NC  
  kilo ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
- kilobases ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=kilobase 
+ kilobases ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=`kilobase` NC  
  kilocaloría ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  kilogramo ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  kilogramo-metro ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
- kilogramos ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=kilogramo 
+ kilogramos ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=`kilogramo` NC  
  kilométrico ( ADJECTIVE ) 
- kilométricos ( ADJECTIVE ) lemma=kilométrico 
- kilooctectos ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=kiloocteto 
- kilooctetos ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=kiloocteto 
- kilos ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=kilo 
- kilovatios ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=kilovatio 
+ kilométricos ( ADJECTIVE ) lemma=`kilométrico` ADJ  
+ kilooctectos ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=`kiloocteto` NMEA  
+ kilooctetos ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=`kiloocteto` NMEA  
+ kilos ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=`kilo` NC  
+ kilovatios ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=`kilovatio` NC  
  kilómetro ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
- kilómetros ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=kilómetro 
+ kilómetros ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=`kilómetro` NC  
  kinesioterapia ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  kinesiólogo ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  kinésico ( ADJECTIVE ) 
  kiosco ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
- kioscos ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=kiosco 
- kits ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=kit 
- km ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=kilómetro 
+ kioscos ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=`kiosco` NC  
+ kits ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=`kit` NC  
+ km ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=`kilómetro`km` NC  UMMX  
  knockout ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  kraissl ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
- kurdos ( ADJECTIVE ) lemma=kurdo 
+ kurdos ( ADJECTIVE ) lemma=`kurdo` ADJ  
  kw ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  kwashiorkor ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  kárate ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  kásra ( ) 
- kilobase ( ) 
- kiloocteto ( ) 
- kilovatio ( ) 
- kit ( ) 
- kurdo ( ) 

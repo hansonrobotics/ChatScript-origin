@@ -25,12 +25,12 @@ typedef unsigned int MEANING;					//   a flagged indexed dict ptr
 #define MULTIHEADERBITS 0xFF000000
 
 #define MAX_MEANING			63			// limit
-#define MEANING_BASE		0x001fffff	//   the index of the dictionary item (may expand to use synset_marker
-#define SYNSET_MARKER		0x00200000  // this meaning is a synset head - on keyword import, its quote flag for binary read
+#define MEANING_BASE		0x003fffff	//   the index of the dictionary item 
 #define INDEX_BITS          0x0fC00000  //   6 bits of ontology meaning indexing ability  63 possible meanings allowed
 #define INDEX_MINUS			0x00400000  // what to decrement to decrement the meaning index
 #define INDEX_OFFSET        22          //   shift for ontoindex  (rang 0..63)  
-#define TYPE_RESTRICTION	 0xf0000000  // corresponds to basic pos
+#define TYPE_RESTRICTION	0xe0000000  // corresponds to basic pos less adverb
+#define SYNSET_MARKER		0x10000000  // this meaning is a synset head - on keyword import, its quote flag for binary read
 #define TYPE_RESTRICTION_SHIFT 0
 
 // A meaning = TYPE_RESTRICTION(4 bit) + INDEX_BITS (6 bits) + MEANING_BASE(21 bits) + SYNSET_MARKER(1 bit)

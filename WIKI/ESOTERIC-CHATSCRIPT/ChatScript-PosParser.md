@@ -313,7 +313,7 @@ on his website. I have only tried the Windows installation.
 
 To use a foreign tagger, you set the `$cs_externaltag` variable in your bot definition to a topic that will
 perform the work. And you need to disable ChatScript from performing the work. Make your bot
-definition `$cs_token` NOT use the following: `#DO_SPELLCHEC`K, `#DO_PARSE`,
+definition `$cs_token` NOT use the following: `#DO_SPELLCHECK`, `#DO_PARSE`,
 `#DO_SUBSTITUTE_SYSTEM` (since that is english substitutions and punctuation processing). 
 
 In your tagging topic, you invoke your spellchecker, or tagger, or parser, either locally via `^popen` or

@@ -5,6 +5,10 @@
       <Configuration>Debug Mongo</Configuration>
       <Platform>Win32</Platform>
     </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug MySQL|Win32">
+      <Configuration>Debug MySQL</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
     <ProjectConfiguration Include="Debug Postgres|Win32">
       <Configuration>Debug Postgres</Configuration>
       <Platform>Win32</Platform>
@@ -71,9 +75,9 @@
     <ClCompile Include="..\SRC\csocket.cpp" />
     <ClCompile Include="..\SRC\cs_ev.c" />
     <ClCompile Include="..\SRC\dictionarySystem.cpp" />
-    <ClCompile Include="..\SRC\duktape\duktape.c" />
+    <ClCompile Include="..\SRC\duktape\duktape.cpp" />
     <ClCompile Include="..\SRC\english.cpp" />
-    <ClCompile Include="..\SRC\englishtagger.cpp" />
+    <ClCompile Include="..\SRC\englishTagger.cpp" />
     <ClCompile Include="..\SRC\evserver.cpp" />
     <ClCompile Include="..\SRC\factSystem.cpp" />
     <ClCompile Include="..\SRC\javascript.cpp" />
@@ -138,6 +142,13 @@
     <UseOfMfc>false</UseOfMfc>
     <PlatformToolset>v140</PlatformToolset>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug MySQL|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>false</UseOfMfc>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug Treetagger|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
@@ -173,6 +184,9 @@
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug Postgres|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug MySQL|Win32'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug Treetagger|Win32'" Label="PropertySheets">
@@ -220,6 +234,15 @@
     <LibraryPath>c:/chatscript/treetagger;c:\chatscript/BINARIES;$(ProjectDir)..SRC/;../SRC/curl;$(LibraryPath)</LibraryPath>
     <SourcePath>$(VCInstallDir)atlmfc\src\mfc;$(VCInstallDir)atlmfc\src\mfcm;$(VCInstallDir)atlmfc\src\atl;$(VCInstallDir)crt\src;</SourcePath>
     <TargetName>ChatScriptpg</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug MySQL|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)..\BINARIES\</OutDir>
+    <GenerateManifest>false</GenerateManifest>
+    <IncludePath>c:\chatscript\SRC\mysql\include;c:\chatscript/privatesrc;$(VC_IncludePath);$(WindowsSDK_IncludePath)</IncludePath>
+    <LibraryPath>c:/chatscript/treetagger;c:\chatscript/BINARIES;$(ProjectDir)..SRC/;../SRC/curl;$(LibraryPath)</LibraryPath>
+    <SourcePath>$(VCInstallDir)atlmfc\src\mfc;$(VCInstallDir)atlmfc\src\mfcm;$(VCInstallDir)atlmfc\src\atl;$(VCInstallDir)crt\src;</SourcePath>
+    <TargetName>ChatScriptmy</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug Treetagger|Win32'">
     <LinkIncremental>true</LinkIncremental>
@@ -350,12 +373,38 @@
       </AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug MySQL|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>DISCARDMONGO;DISCARDPOSTGRES;SAFETIME;WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <StringPooling>true</StringPooling>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <AdditionalOptions>/J %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>..\lib\libev;..\SRC\curl;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ShowIncludes>false</ShowIncludes>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <UndefinePreprocessorDefinitions>
+      </UndefinePreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <OutputFile>..\BINARIES\ChatScriptpg$(TargetExt)</OutputFile>
+      <AdditionalDependencies>../BINARIES/mysqlclient.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ShowProgress>NotSet</ShowProgress>
+      <AdditionalLibraryDirectories>
+      </AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug Treetagger|Win32'">
     <ClCompile>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level4</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <PreprocessorDefinitions>DISCARDMONGO;DISCARDPOSTGRES;DISCARDSQL;SAFETIME;TREETAGGER;WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>DISCARDMONGO;DISCARDPOSTGRES;DISCARDMYSQL;SAFETIME;TREETAGGER;WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
       <StringPooling>true</StringPooling>
       <FloatingPointModel>Fast</FloatingPointModel>

@@ -41,6 +41,10 @@ char serverIP[100];
 #include "evserver.h"
 #endif
 
+#define WEBSOCKET 1
+#include "easywclient/easywsclient.hpp"
+#include "easywclient/easywsclient.cpp" 
+
 #define DOSOCKETS 1
 #endif
 #ifndef DISCARDCLIENT
@@ -275,9 +279,11 @@ restart: // start with user
 	// message to server is 3 strings-   username, botname, null (start conversation) or message
 	char* ptr = data;
 	strcpy(ptr,from); // username
-	ptr += strlen(ptr) + 1;
+	ptr += strlen(ptr);
+	*ptr++ = 0; 
 	strcpy(ptr,bot);
-	ptr += strlen(ptr) + 1; // botname
+	ptr += strlen(ptr); // botname
+	*ptr++ = 0; 
 	strcpy(ptr,input);  // null message - start conversation or given message, user starts first
 	try 
 	{
@@ -810,15 +816,48 @@ void PrepareServer()
 	InitializeCriticalSection(&TestCriticalSection ) ;
 }
 
-void InternetServer()
+void handle_message(const std::string & message)
 {
-	_beginthread((void (__cdecl *)(void *) )AcceptSockets,0,0);	// the thread that does accepts... spinning off clients
-	MainChatbotServer();  // run the server from the main thread
-	CloseHandle( hChatLockMutex );
-	DeleteCriticalSection(&TestCriticalSection);
-	DeleteCriticalSection(&LogCriticalSection);
+	char* buffer = (char*)  message.c_str();
+	printf("received %s\r\n", buffer);
+	char* ascii1 = buffer;
+	while ((ascii1 = strchr(ascii1, 1))) *ascii1 = 0; // allow ascii 1 instead of 0 as separator for JavaScript conventions.
+	char* user = buffer;
+	char* bot = buffer + strlen(user) + 1;
+	char* input = buffer + strlen(bot) + 1;
+	int returnValue = PerformChat(user, bot, ourMainInputBuffer, "122.22.22.22", ourMainOutputBuffer);	// this takes however long it takes, exclusive control of chatbot.
 }
 
+void InternetServer()
+{
+	if (!*websocketParam)
+	{
+		_beginthread((void(__cdecl *)(void *))AcceptSockets, 0, 0);	// the thread that does accepts... spinning off clients
+		MainChatbotServer();  // run the server from the main thread
+		CloseHandle(hChatLockMutex);
+		DeleteCriticalSection(&TestCriticalSection);
+		DeleteCriticalSection(&LogCriticalSection);
+	}
+	else
+	{
+		using easywsclient::WebSocket;
+		WebSocket::pointer ws = WebSocket::from_url(websocketParam); //"ws://localhost:8126/foo"
+		if (!ws) myexit("unable to establish websocket\r\n");
+		assert(ws);
+
+		ws->send("{\"id\" : \"ai0\", \"secret\" : \"abc123\", \"status\":\"register\" }");
+		ws->send("{\"id\" : \"ai0\", \"secret\" : \"abc123\",\"status\":\"roundInformation\" }");
+
+		while (true) {
+			ws->poll(-1);
+			ws->dispatch(handle_message);
+			printf("sent %s\r\n", ourMainOutputBuffer);
+			ws->send(ourMainOutputBuffer);
+		}
+		ws->close();
+		delete ws;
+	}
+}
 #endif
 
 static void ServerTransferDataToClient()
@@ -901,6 +940,7 @@ static void* HandleTCPClient(void *sock1)  // individual client, data on STACK..
 		{
 			int len1 = sock->recv(p, SERVERTRANSERSIZE-50); // leave ip address in front alone
 			len += len1; // total read in so far
+
 			if (len1 <= 0 || len >= (SERVERTRANSERSIZE - 100))  // error or too big a transfer. we dont want it
 			{
 				if (len1 < 0) 
@@ -922,10 +962,10 @@ static void* HandleTCPClient(void *sock1)  // individual client, data on STACK..
 				free(memory);
 				return NULL;
 			} 
+			p[len1] = 0;  // force extra string end at end of buffer
 
 			// break apart the data into its 3 strings
 			p += len1; // actual end of read buffer
-			*p = 0; // force extra string end at end of buffer
 			char* nul = p; // just a loop starter
 			while (nul && strs < 3) // find nulls in data
 			{
@@ -1118,7 +1158,7 @@ RESTART_RETRY:
 #else
 	catch (...) 
 #endif
-	{ ReportBug((char*)"Server exception\r\n") Crash();}
+	{ ReportBug((char*)"Catch Server exception\r\n") Crash();}
 
 #ifdef WIN32
 	_try { // catch crashes in windows

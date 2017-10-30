@@ -54,6 +54,7 @@ Handling client:
 
 #include <vector>
 #include <algorithm>
+extern char serverLogfileName[200];
 extern bool serverctrlz;
 #define CLIENT_CHUNK_LENGTH 4*1024
 #define HIDDEN_OVERLAP 103	// possible concealed data
@@ -71,6 +72,7 @@ ev_io ev_accept_r_g;
 ev_timer tt_g;
 
 bool postgresInited = false;
+bool mysqlInited = false;
 	   
 #ifdef EVSERVER_FORK
 // child monitors
@@ -219,21 +221,19 @@ struct Client_t
 
     int received_request() {
         int nulls = count(this->incomming.begin(), this->incomming.end(), 0);
-        if (nulls < 3)  return 0;
-        if (nulls > 3)   return -1;
+		if ((nulls) < 3)  return 0;
+        if ((nulls) > 3)   return -1;
 
         this->requestValid = true;
         user = &this->incomming[0];
 
         if (strlen(user) == 0)  return -1;
 
-        Buffer_t::iterator next_null;
-        next_null = find(this->incomming.begin(), this->incomming.end(), 0);
-
-        bot = ITER_TO_OFFSET(this->incomming, next_null + 1);
-
-        next_null = find(next_null + 1, this->incomming.end(), 0);
-        message = ITER_TO_OFFSET(this->incomming, next_null + 1);
+		Buffer_t::iterator next_null;
+		next_null = find(this->incomming.begin(), this->incomming.end(), 0);
+		bot = ITER_TO_OFFSET(this->incomming, next_null + 1);
+		next_null = find(next_null + 1, this->incomming.end(), 0);
+		message = ITER_TO_OFFSET(this->incomming, next_null + 1);
 
         // since we received complete request, we will stop reading from client socket until we process it
         ev_io_stop(this->l, &this->ev_r);
@@ -471,6 +471,7 @@ int evsrv_init(const string &interfaceKind, int port, char* arg) {
     ev_io_start(l_g, &ev_accept_r_g);
 	Log(SERVERLOG, "  evserver: running pid: %d\r\n",getpid());
 	printf( "  evserver: running pid: %d\r\n", getpid());
+	if (forkcount > 1) sprintf(serverLogfileName, (char*)"%s/serverlog%d-%d.txt", logs, port, getpid());
 
     return 1;
 }
@@ -609,6 +610,14 @@ int evsrv_do_chat(Client_t *client)
 		postgresInited = true;
 	}
 #endif
+#ifndef DISCARDMYSQL
+	if (mysqlconf && !mysqlInited)
+	{
+		MySQLUserFilesCode(); //Forked must hook uniquely AFTER forking
+		mysqlInited = true;
+	}
+#endif
+
 	if (!client->data) 	client->data = (char*) malloc(outputsize);
 	if (!client->data) printf("Malloc failed for child data\r\n");
 

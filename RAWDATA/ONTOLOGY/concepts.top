@@ -109,7 +109,7 @@
           violence violent wasteful ) ##>>
 ##<<ENGLISH concept: ~animal_kingdoms   ANIMATE_BEING (~animals ~microlife ~plants ) ##>>
 ##<<ENGLISH concept: ~animal_product (animal_product~1 cowhide rawhide ) ##>>
-##<<ENGLISH concept: ~animals   PROBABLE_NOUN ANIMATE_BEING (~bird ~fishes ~insects ~mammals ~pet_animals ~reptiles bitch boy girl hack human man woman ) ##>>
+##<<ENGLISH concept: ~animals   PROBABLE_NOUN ANIMATE_BEING (~bird ~fishes ~insects ~mammals ~pet_animals ~reptiles   ) ##>>
 ##<<ENGLISH concept: ~animals_generic (~animals beast bird creature fish mammal reptile ) ##>>
 ##<<ENGLISH concept: ~animate_thing (~beings ~bodyparts ~microlife ~plants ) ##>>
 ##<<ENGLISH concept: ~appliance_store (appliance dryer freezer refrigerator TV washer ) ##>>
@@ -132,7 +132,7 @@
           ~weapon ~xmeasurers ) ##>>
 ##<<ENGLISH concept: ~artist (~glassblower ~painter ~sculptor ) ##>>
 ##<<ENGLISH concept: ~arts (paint play~40 sculpt sing ) ##>>
-##<<ENGLISH concept: ~assassin   PROBABLE_NOUN (assassin gunman hit_man hitman kill killer mercenary murderer ) ##>>
+##<<ENGLISH concept: ~assassin   PROBABLE_NOUN (assassin gunman hit_man hitman  killer mercenary murderer ) ##>>
 ##<<ENGLISH concept: ~astrology_signs (Aquarius Aries Cancer Capricorn Gemini Leo Libra Pisces Sagittarius Scorpio Taurus Virgo ) ##>>
 ##<<ENGLISH concept: ~astronautics (astronautics launchpad NASA space_probe space_shuttle space_station spacesuit ) ##>>
 ##<<ENGLISH concept: ~attaches (~fasteners ) ##>>
@@ -239,7 +239,7 @@
 ##<<ENGLISH concept: ~carnivore (alligator badger cat cheetah crocodile dog dolphin eagle falcon foxhawk hyena lion orca owl polar-bear puma salmon scorpion shark spider tiger whale wolf ) ##>>
 ##<<ENGLISH concept: ~carryable (~nutrient ) ##>>
 ##<<ENGLISH concept: ~cashable_item (cash coin money treasure ) ##>>
-##<<ENGLISH concept: ~cat_breeds   PROBABLE_NOUN ANIMATE_BEING (Abysinnian Aegean Americal_Curl American_Bobtail American_Shorthair American_Wirehair Arabian_Mau Asian Asian_Semi-longhair 
+##<<ENGLISH concept: ~cat_breeds   PROBABLE_NOUN ANIMATE_BEING (Abysinnian Aegean Americal_Curl American_Bobtail American_Shorthair American_Wirehair Arabian_Mau  Asian_Semi-longhair 
           Australian_Mist Balinese Bambino Bengal Birman Bombay Brazilian_Shorthair British_Longhair British_Semi-longhair British_Shorthair coon kitten kitty maine Mau Persian siamese 
           tabby Toybob ) ##>>
 ##<<ENGLISH concept: ~category (brand breed breed_of category class class_of division flavor_of genre grouping kind kind_of kind_of_stuff kinds_of make_of model sort_of species style_of subdivision 
@@ -308,7 +308,7 @@
 ##<<ENGLISH concept: ~communications (message signal ) ##>>
 ##<<ENGLISH concept: ~communicators (~communication_artifacts ~gesturelist ~sounds ) ##>>
 ##<<ENGLISH concept: ~company (company ) ##>>
-##<<ENGLISH concept: ~company_groups PROBABLE_NOUN (association company corporation guild partnership ) ##>>
+##<<ENGLISH concept: ~company_groups PROBABLE_NOUN (association company corporation guild partnership  business  ) ##>>
 ##<<ENGLISH concept: ~comparisons (best better compare difference different further higher least less like lower more most opposite same similar similarity than unlike various worse worst ) ##>>
 ##<<ENGLISH concept: ~compass_directions (east north northeast northwest south southeast southwest west ) ##>>
 ##<<ENGLISH concept: ~compassdirection (CNTR E N NE NW S SE SW W ) ##>>
@@ -493,13 +493,13 @@
           stepsister ) ##>>
 ##<<ENGLISH concept: ~family_children_generic NOUN_HUMAN  PROBABLE_NOUN ANIMATE_BEING (baby child cousin grandchild grandkid infant kid offspring progeny sibling step-child stepchild 
           teen teenager toddler tot twin ward youth nephling) ##>>
-##<<ENGLISH concept: ~family_children_male PROBABLE_NOUN ANIMATE_BEING (~brother brother grandnephew grandson nephew scion son sstep-son step-brother stepson  ) ##>>
+##<<ENGLISH concept: ~family_children_male PROBABLE_NOUN ANIMATE_BEING (~brother brother grandnephew grandson nephew scion son step-son step-brother stepson  ) ##>>
 ##<<ENGLISH concept: ~family_grandfather  PROBABLE_NOUN ANIMATE_BEING (granddad granddaddy grandfather grandpa grandpaw grandpop ) ##>>
 ##<<ENGLISH concept: ~family_members  PROBABLE_NOUN ANIMATE_BEING (~family_adult ~family_children relative twin ) ##>>
 ##<<ENGLISH concept: ~farm_animals  PROBABLE_NOUN ANIMATE_BEING (boar bull calf chick cow duck duckling ewe foal goose gosling hen mare pig piglet ram rooster stallion ) ##>>
 ##<<ENGLISH concept: ~farm_items (~farm_animals barn barnyard corn corral crop hay silo sow wheat ) ##>>
 ##<<ENGLISH concept: ~fashionlist (~clothes ) ##>>
-##<<ENGLISH concept: ~fast (bolt bounce brisk briskly careen chase dart dash dive drive drop fast flick fly gallop hurl hurry plummet propel quick quickly race ram rapid rapidly rip run rush sail 
+##<<ENGLISH concept: ~fast ocal(bolt bounce brisk briskly careen chase dart dash dive drive drop fast flick fly gallop hurl hurry plummet propel quick quickly race ram rapid rapidly rip run rush sail 
           scamper scramble shove skip smash speed spin spring sprint streak stride swat swerve swing swoop trot whisk zip ) ##>>
 ##<<ENGLISH concept: ~fasteners (adhesive bolt brad buckle button cable chain clamp clothespin doornail embroidery_stitch fastener fastening fixing glue harness hitch holdfast lacing nail paperclip 
           paste peg pin ribbon rivet riveter rope safety_pin scotch_tape screw shoe_lace shoelace shoestring spike stake staple stitch strap string tape tent_peg thread thumbtack twine 
@@ -1224,7 +1224,7 @@
           white-tailed_jackrabbit white_elephant white_fox white_rhinoceros white_sheep white_tail white_whale white_wolf whiteface whitetail whitetail_antelope_squirrel whitetail_deer 
           whitetail_jackrabbit whitetail_prairie_dog wild_ass wild_boar wild_cavy wild_dog wild_goat wild_horse wild_ox wild_sheep wildcat wildebeest wire-haired_fox_terrier wire-haired_pointing_griffon 
           wire-haired_terrier wirehair wirehaired_terrier wisent wolf wolf_cub wolf_pup wolfhound wolverine wombat wood-rat wood_mouse wood_pussy wood_rabbit wood_rat woodchuck woodland_caribou 
-          woolly_indris woolly_mammoth woolly_monkey woolly_rhinoceros workhorse working_dog world yak yearling yellow-throated_marten yellowbelly_marmot Yorkshire_Terrier young_carnivore 
+          woolly_indris woolly_mammoth woolly_monkey woolly_rhinoceros workhorse working_dog  yak yearling yellow-throated_marten yellowbelly_marmot Yorkshire_Terrier young_carnivore 
           young_mammal young_mammal~1 Zalophus_californianus Zalophus_californicus Zalophus_lobatus Zapodidae Zapus_hudsonius zebra zebu Zinjanthropus Ziphiidae zoril ) ##>>
 ##<<ENGLISH concept: ~marital_state (available divorced marital_state marital_status~1 married separated single spinster unattached unmarried ) ##>>
 ##<<ENGLISH concept: ~markers (~region beacon buoy chalk_line landmark lighthouse marker memorial monument tombstone ) ##>>
@@ -1405,7 +1405,7 @@
 ##<<ENGLISH concept: ~occupation_insurance PROBABLE_NOUN (actuary insurance_broker statistician ) ##>>
 ##<<ENGLISH concept: ~occupation_inventor PROBABLE_NOUN (inventor tinkerer ) ##>>
 ##<<ENGLISH concept: ~occupation_jobless PROBABLE_NOUN (bum hobo jobless unemployed vagrant ) ##>>
-##<<ENGLISH concept: ~occupation_law PROBABLE_NOUN (~occupation_lawyer  bail_agent beat_cop civil_investigator cop correctional_services detective guard investigator judge law 
+##<<ENGLISH concept: ~occupation_law PROBABLE_NOUN (~occupation_lawyer  bail_agent beat_cop civil_investigator cop correctional_services detective guard investigator judge  
           magistrate  patrolman police police_officer policeman policewoman security_officer sheriff traffic_officer ) ##>>
 ##<<ENGLISH concept: ~occupation_lawyer (advocate arbitrator attorney jurist lawyer   mediator patent_attorney  barrister solicitor ) ##>>
 ##<<ENGLISH concept: ~occupation_magic PROBABLE_NOUN (astrologer psychic soothsayer thaumaturgist warlock witch wizard ) ##>>
@@ -1672,11 +1672,12 @@
 ##<<ENGLISH concept: ~role_legalbadguy   PROBABLE_NOUN (~assassin accomplice arsonist assassin bad_guy bastard bully con_artist confidence_man criminal crook culprit delinquent 
           fiend fugitive jerk killer malefactor menace militant murderer pilferer predator prey prisoner pyromaniac rebel sociopath suspect swindler thief threat traitor trickster troublemaker 
           villain ) ##>>
-##<<ENGLISH concept: ~role_legalgoodguy   PROBABLE_NOUN (barrister defendant hostage juror plaintiff victim witness ) ##>>
-##<<ENGLISH concept: ~role_medical   PROBABLE_NOUN (patient ) ##>>
+##<<ENGLISH concept: ~role_legalgoodguy   PROBABLE_NOUN (barrister defendant hostage juror plaintiff victim witness 
+executor beneficiary magistrate conservator ) ##>>
+##<<ENGLISH concept: ~role_medical   PROBABLE_NOUN (patient "guinea pig" corpse deceased ) ##>>
 ##<<ENGLISH concept: ~role_member PROBABLE_NOUN (~role_nationality_member ~role_political_member ~role_religious_member citizen civilian foreigner immigrant local member native passenger pilgrim 
           refugee resident settler stranger tourist traveler ) ##>>
-##<<ENGLISH concept: ~role_misc   PROBABLE_NOUN (adult altar_boy audience bum character disciplinarian fellow fool hippie hobo human individual mutant peer player predecessor scavenger 
+##<<ENGLISH concept: ~role_misc   PROBABLE_NOUN (adult altar_boy audience bum character disciplinarian fellow fool hippie hobo human individual mutant peer player predecessor scavenger zombie
           scout servant spokespersonstick-in-the-mud spokeswoman sponsor stakeholder stooge stoolie stoolpigeon straggler supplicant surfboarder survivalist survivor swinger sympathizer 
           tattletale taxpayer techie technophile technophobe teetotalist teetotaller telepathist tempter temptress third-rater thrill-seeker throwback thrower toastmaster tomboy weirdo ) ##>>
 ##<<ENGLISH concept: ~role_nationality_member PROBABLE_NOUN (African Algerian alien American Andorrian Arab Argentinian Armenian Asian Athenian Australian Austrian Bolivian Bosnian Brazilian Brit 
@@ -1780,7 +1781,7 @@
 ##<<ENGLISH concept: ~shootable (~projectile_weapon ) ##>>
 ##<<ENGLISH concept: ~shopping_stores (Bloomingdales Costco eBay Harrods IKEA JC_Penny Kmart Kohl Macy Marks_and_Spencer Marshalls Neiman_Marcus Nordstrom Nordstrom_Rack Ross Saks Saks_5th_Avenue 
           Sears Target Walmart Zappos Zara ) ##>>
-##<<ENGLISH concept: ~sicknesses (~birth_defect ~diseaselist ~mental_illnesses ~symptom ailment allergy amnesia blind deaf deafness death disease epidemic Fibromyalgia ill illness infection malfunction 
+##<<ENGLISH concept: ~sicknesses (~birth_defect ~diseaselist ~mental_illnesses ~symptom ailment allergy amnesia blind deaf ulcer deafness death disease epidemic Fibromyalgia ill illness infection malfunction 
           mute parasite plague sick symptom toothache ) ##>>
 ##<<ENGLISH concept: ~similar (akin alike analogous comparable compare congruent congruous identical in_common like much_the_same relate resemble same similar similarity the_same ) ##>>
 ##<<ENGLISH concept: ~singinglist (choral_group kibuki musical musical_theater~1 opera ) ##>>
@@ -1838,7 +1839,7 @@
 ##<<ENGLISH concept: ~startreklist NOUN NOUN_PROPER_SINGULAR (7_of_9 Bajor Brent_Spiner Captain_Janeway Captain_Kirk Data Deep_Space_9 Doohan DS9 Ensign_Ohura Enterprise Federation Ferengi Janeway 
           Jonathan_Frakes Kate_Mulgrew Kirk Klingon Koenig McCoy Michael_Dorn Nichols Nimoy Patrick_Stewart Picard Riker Roddenberry Romulan Scotty Shatner Sisko Spock Star_Trek Sulu 
           Takei trekkie tribble United_Federation_of_Planets Voyager Worf ) ##>>
-##<<ENGLISH concept: ~state (Alabama Alaska Arizona Arkansas California Colorado Connecticut Delaware Florida Georgia Hawaii Idaho Illinois Iowa Kansas Kentucky Louisiana Maine Maryland Massachusetts 
+##<<ENGLISH concept: ~state (Alabama Alaska Arizona Arkansas California Colorado Connecticut Delaware Florida Georgia Hawaii Idaho Illinois Iowa Indiana Kansas Kentucky Louisiana Maine Maryland Massachusetts 
           Michigan Minnesota Mississippi Missouri Montana Nebraska Nevada New_Hampshire New_Jersey New_Mexico New_York North_Carolina North_Dakota Ohio Oklahoma Oregon Pennsylvania 
           Rhode_Island South_Carolina South_Dakota Tennessee Texas Utah Vermont Virginia Washington West_Virginia Wisconsin Wyoming ) ##>>
 ##<<ENGLISH concept: ~state_abbreviations NOUN NOUN_PROPER_SINGULAR ( AL AK AZ AR CA CO CT DE  FL GA HI ID IL IN IA KS KY LA ME MD MA MI MN MS MO MT NE NV NH NJ NM NY NC ND OH OK OR PA RI SC SD TN TX UT VT VA WA WV WI WY ) ##>>

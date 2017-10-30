@@ -169,7 +169,7 @@
  <fortune_does_not_smile_on_that ~no
  <fortune_smiles_on_that ~yes
  <fully ~yes
- <funny ~emolaugh
+ <funny> ~emolaugh
  <gee> ~emosurprise
  <geez ~emosurprise
  <generally ~yes
@@ -339,6 +339,9 @@
  <I_disagree ~no
  <I_do_also> ~emomutual
  <I_do_apologise ~emoapology
+ <I_do_apologize ~emoapology
+ <I_apologise ~emoapology
+ <I_apologize ~emoapology
  <I_do_not_agree ~no
  <I_do_not_believe_it> ~no
  <I_do_not_believe_so ~no
@@ -484,7 +487,12 @@
  <not_to_my_knowledge> ~no
  <not_to_speak_of ~no
  <not_understand ~emomisunderstand
+ <you_misunderstand ~emomisunderstand
+ <misunderstand ~emomisunderstand
  <not_understanding ~emomisunderstand
+ <you_are_misunderstanding_me ~emomisunderstand
+ <you_are_misunderstanding ~emomisunderstand
+ <misunderstanding ~emomisunderstand
  <not_understood ~emomisunderstand
  <not_very_often> ~no
  <nuts_to_you ~no

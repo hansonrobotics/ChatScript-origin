@@ -3,7 +3,7 @@
 > © Bruce Wilcox, gowilcox@gmail.com
 
 
-> Revision 8/13/2013 cs6.8
+<br>Revision 9/24/2017 cs7.55
 
 If you want to make your chatbot visible on the web, you need a server. As it turns out, for low traffic,
 Amazon will let you have a server machine for free for a year and a low fee thereafter. Here is an

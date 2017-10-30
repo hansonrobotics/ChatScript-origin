@@ -1,6 +1,6 @@
 # ChatScript System Functions Manual
 © Bruce Wilcox, gowilcox@gmail.com www.brilligunderstanding.com
-<br>Revision 7/8/2017 cs7.52
+<br>Revision 10/26/2017 cs7.6
 
 * [Topic Functions](ChatScript-System-Functions-Manual.md#topic-functions)
 * [Marking Functions](ChatScript-System-Functions-Manual.md#marking-functions)
@@ -609,7 +609,7 @@ Tells the system to start at `value` for future allocations of wildcard slots.
 This is only useful inside some pattern where you are trying to protect data from some previous match. Eg.
 
     u: (_~animals) refine()
-        a: ( ^setwildcardindex(1) _~color)
+        a: ( ^setwildcardindex(_1) _~color)
 
 `_0` is set to an animal. Normally the rejoinder would set a color onto `_0` and clobber it, but
 the call to `^setwildcardindex` forces it to use `_1` instead, so both `_0` and `_1` have values.
@@ -666,14 +666,17 @@ Starting by default at `_0`, if you assign it like this:
     _3 = ^timeinfofromseconds(%fulltime)
     
 it will start at `_3`. 
-The items you get are: seconds, minutes, hours, date in month, month name, year, day name of week.
+The items you get are: seconds, minutes, hours, date in month, month name, year, day name of week, month index (jan==0), dayofweek index (sun==0).
 
 
 ### `^timetoseconds ( seconds minutes hours date-of-month month year )`
 
 This converts time data since 1970 (Unix epoch time). Analogous to `%fulltime`, which returns the
 current time in seconds. Month can be number 1-12 or name of month or abbreviation of
-month.
+month. Date-of-month must be 1 or more. Year must be on or  1970 and less than 2100.
+Optional 7th argument indicates whether time is within daylight savings or not , values can 
+be 1 or 0, t or f, T or F. Default is false.
+	
 
 
 ### `^isnumber ( value )`
@@ -740,6 +743,7 @@ These flags apply to output as it is sent to the user:
 | `RESPONSE_ALTERUNDERSCORES`       | convert underscores to spaces                 |
 | `RESPONSE_REMOVETILDE`            | remove leading ~ on class names               |
 | `RESPONSE_NOCONVERTSPECIAL`    | don't convert ecaped n, r, and t into ascii direct characters  |
+| `RESPONSE_CURLYQUOTES`    | change simple quotes to curly quotes (starting and ending)  |
 
 
 ### `^preprint ( stream )`
@@ -840,6 +844,10 @@ Execute this stream of arguments through the `:` command processor.
 You can execute debugging commands through here. E.g.,
 
     ^command(:execute ^print("Hello") )
+
+Note that it is hard to turn on :trace this way, because the system resets It
+internally at various points. The correct way to manipulate trace is 
+to do  $cs_trace = -1 in regular script, outside of ^command.
 
 
 ### `^end ( code )`
@@ -1670,6 +1678,7 @@ For verbs with irregular pronoun conjugation, supply 4th argument of pronoun to 
 | `isinteger`      | word | return 1 if it is all digits, fails otherwise
 | `isfloat`      | word | return 1 if it is float, fails otherwise
 | `isuppercase`      | word | return 1 if it begins with an uppercase letter, fails otherwise
+| `isalluppercase`      | word | return 1 if it starts uppercase, and consists of entirely uppercase letters, hyphen, underscore and ampersand, fails otherwise
 | `type`               | word         | returns concept, number, word, or unknown
 | `common`             | word         | returns level of commonness of the word
 | `verb`               | verb         | given verb in any form, return requested form
@@ -1697,7 +1706,7 @@ For verbs with irregular pronoun conjugation, supply 4th argument of pronoun to 
 | `uppercase`          | word         |
 | `lowercase`          | word         |
 | `allupper`           | word         |
-| `canonical`          | word         |
+| `canonical`          | word         | see notes
 | `integer`            | floatnumber  | generate integer if float is exact integer
 
 Example:
@@ -1709,6 +1718,14 @@ Example:
 	   $_name = ^original(_0)
 	   Nice to meet you, ^pos(capitalize $_name)
 	   # if user enter giuditta, the rejoinder output: Nice to meet you, Giuditta 
+
+For ^pos(canonical), there is an optional third argument which is the concept name of the pos-tag.  Foreign words may have multiple
+lemma forms based on part of speech. E.g., in the German dictionary you can find this entry:
+```	    
+	Informationstechnische ( NOUN ADJECTIVE NOUN_SINGULAR NOUN_PLURAL ) lemma=`informationstechnisch`Informationstechnische` ADJA  NN  
+```
+which says there are two forms of canonical, one for ADJA (adjective) and one for NN (noun).  If you don't specify a 3rd argument,
+you get the first one (ADJA). If you specify `~ADJA` you get the first and if you specify `~NN`  you get the second.
 
 
 ### `^decodeInputtoken ( number )`
@@ -2410,7 +2427,7 @@ You can also retrieve a field via `$$f.subject` or `$$f.verb` or `$$f.object`.
 ### `^find ( setname itemname )`
 
 given a concept set, find the ordered position of the 2nd
-argument within it. ^Output that index. Used, for example, to compare two poker hands.
+argument within it. ^Output that index (0-based). Used, for example, to compare two poker hands.
 
 
 ### `^findmarkedfact ( subject verb mark )`

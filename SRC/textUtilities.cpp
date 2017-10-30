@@ -48,6 +48,7 @@ typedef struct CURRENCYDECODE
 } CURRENCYDECODE;
 
 static CURRENCYDECODE* currencies;
+static int* monthnames;
 
 char toHex[16] = {
 	'0','1','2','3','4','5','6','7','8','9','A','B','C','D','E','F'};
@@ -262,6 +263,16 @@ unsigned char isComparatorData[256] = //    = < > & ? ! %
 	0,0,0,0,0,0
 };
 
+unsigned char decimalMarkData[3] = // American, Indian, French
+{
+	'.','.',','
+};
+
+unsigned char digitGroupingData[3] = // American, Indian, French
+{
+	',',',','.'
+};
+
 /////////////////////////////////////////////
 // STARTUP
 /////////////////////////////////////////////
@@ -276,6 +287,11 @@ void InitTextUtilities()
 		if (c) c -= 128;	// remove top bit
 		utf82extendedascii[c] = (unsigned char)i;
 	}
+}
+
+bool IsComparator(char* word)
+{
+	return (!stricmp(word, (char*)"&=") || !stricmp(word, (char*)"|=") || !stricmp(word, (char*)"^=") || !stricmp(word, (char*)"=") || !stricmp(word, (char*)"+=") || !stricmp(word, (char*)"-=") || !stricmp(word, (char*)"/=") || !stricmp(word, (char*)"*="));
 }
 
 void ClearNumbers()
@@ -319,7 +335,7 @@ void InitTextUtilities1()
 		else if (!stricmp(kind, "WORD_NUMBER")) kindval = WORD_NUMBER;
 		else if (!stricmp(kind, "REAL_NUMBER")) kindval = WORD_NUMBER;
 		else myexit("Bad number table");
-		char* w = StoreWord(word,AS_IS)->word;
+		char* w = StoreWord(word,AS_IS| ADJECTIVE | NOUN | ADJECTIVE_NUMBER | NOUN_NUMBER)->word;
 		int index = Heap2Index(w);
 		*data++ = index;
 		*data++ = strlen(word);
@@ -336,7 +352,7 @@ void InitTextUtilities1()
 	fclose(in);
 
 	sprintf(file, (char*)"%s/%s/currencies.txt", livedata, language);
-	in = FopenStaticReadOnly(file); // LIVEDATA substitutes or from script TOPIC world
+	in = FopenStaticReadOnly(file); 
 	if (!in) return;
 	stack = InfiniteStack64(limit, "initcurrency");
 	data = (int*)stack;
@@ -362,6 +378,99 @@ void InitTextUtilities1()
 	currencies = (CURRENCYDECODE*)AllocateHeap(stack, size + 1, 8);
 	ReleaseInfiniteStack();
 	fclose(in);
+
+	sprintf(file, (char*)"%s/%s/months.txt", livedata, language);
+	in = FopenStaticReadOnly(file); 
+	if (!in) return;
+	stack = InfiniteStack64(limit, "initmonths");
+	data = (int*)stack;
+	while (ReadALine(readBuffer, in) >= 0) // month name or abbrev
+	{
+		if (*readBuffer == '#' || *readBuffer == 0) continue;
+		char* ptr = ReadCompiledWord(readBuffer, word);
+		char* w = StoreWord(word, AS_IS)->word; // month name
+		int index = Heap2Index(w);
+		*data++ = index;
+	}
+	*data++ = 0;	 // terminal value for end detection
+	size = (char*)data - stack;
+	size /= 8;	 // 64bit chunks
+	monthnames = (int*)AllocateHeap(stack, size + 1, 8);
+	ReleaseInfiniteStack();
+	fclose(in);
+}
+
+bool IsDate(char* original)
+{
+	// Jan-26-2017 or 2017/MAY/26   also jan-02  or jan-2017  or 2017-jan or 02-jan BUT NOT 02-2017
+	// 24/15/2007 etc
+	size_t len = strlen(original);
+	if (!IsDigit(original[0]) && !IsDigit(original[len - 1])) return false;
+	// date must either start or end with a digit. 
+
+	char separator = 0;
+	int digitcount = 0;
+	bool digit4 = false;
+	int separatorcount = 0;
+	char* alpha = NULL;
+	int alphacount = 0;
+	bool acceptalpha = true;
+	--original;
+	while (*++original)
+	{
+		if (IsDigit(*original))
+		{
+			if (acceptalpha == false) return false; // cannot mix alpha and digit
+			++digitcount; // count digit block size
+		}
+		else if (IsAlphaUTF8(*original) && *original != '-' && *original != '.' && *original != '/')
+		{
+			if (acceptalpha)
+			{
+				alpha = original; // 1st one seen
+				acceptalpha = false;
+			}
+		}
+		else if (!separator) separator = *original;
+		else if (*original != separator) return false; // cannot be
+
+		if (*original == separator) // start a new block
+		{
+			if (digitcount == 4)  // only 1 year is allowed
+			{
+				if (digit4) return false; // only 1 of these
+				digit4 = true;
+			}
+			else if (digitcount > 2) return false; // not legal count, must be 1,2 or 4 digits
+
+			if (acceptalpha == false && ++alphacount  > 1) return false;	// only one text month is allowed
+			acceptalpha = true;
+
+			digitcount = 0;
+			if (++separatorcount > 2) return false; // only 2 separators (3 components) allowed
+		}
+	}
+	if (separator != '/'  && separator != '-' && separator != '.') return false;
+	if (!alpha)
+	{
+		return (separatorcount == 2);
+	}
+
+	if (separatorcount < 1) return false; // 2 or 3 allowed
+
+										  // confirm its a month
+	int* name = monthnames;
+	for (int i = 0; i < 1000; ++i)
+	{
+		if (!*name) return false;
+		char* w = Index2Heap(*name);
+		name++;
+		if (*w != toUppercaseData[*alpha]) continue;
+		size_t n = strlen(w);
+		if (strnicmp(w, alpha, n)) continue;
+		if (alpha[n] == 0 || alpha[n] == separator) return true;
+	}
+	return false;
 }
 
 void CloseTextUtilities()
@@ -377,10 +486,10 @@ bool IsFraction(char* token)
 		{
 			at = token;
 			while (IsDigit(*++at)) {;}
-			if (*at == '/')
+			if (*at == '/' && (at[1] != '0' || at[2]))
 			{
 				while (IsDigit(*++at)) {;}
-				if (!*at) return true;
+				if (!*at ) return true;
 			}
 		}
 	}
@@ -521,26 +630,32 @@ char* AddEscapes(char* to, char* from, bool normal,int limit) // normal true mea
 	return to; // return where we ended
 }
 
-double Convert2Float(char* original)
+double Convert2Float(char* original, int useNumberStyle)
 {
+	char decimalMark = decimalMarkData[useNumberStyle];
+	char digitGroup = digitGroupingData[useNumberStyle];
 	char num[MAX_WORD_SIZE];
+	char* numloc = num;
 	strcpy(num, original);
 	char* comma;
-	while ((comma = strchr(num, numberComma))) memmove(comma, comma + 1, strlen(comma));
-	char* period = strchr(num, numberPeriod);
+	while ((comma = strchr(num, digitGroup))) memmove(comma, comma + 1, strlen(comma));
+	char* period = strchr(num, decimalMark);
 	if (period) *period = '.'; // force us period
-	double val = atof(num);
-	if (IsDigitWithNumberSuffix(num)) // 10K  10M 10B
+
+	char* currency1;
+	char* cur1 = (char*)GetCurrency((unsigned char*)numloc, currency1); // alpha part
+	if (cur1 && cur1 == numloc) numloc = currency1; // point to number part
+	double val = atof(numloc);
+	if (IsDigitWithNumberSuffix(numloc, useNumberStyle)) // 10K  10M 10B
 	{
-		size_t len = strlen(num);
-		char d = num[len - 1];
+		size_t len = strlen(numloc);
+		char d = numloc[len - 1];
 		if (d == 'k' || d == 'K') val *= 1000;
 		else if (d == 'm' || d == 'M') val *= 1000000;
 		else if (d == 'B' || d == 'b' || d == 'G' || d == 'g') val *= 1000000000;
 	}
 	return val;
 }
-
 
 void AcquireDefines(char* fileName)
 { // dictionary entries:  `xxxx (property names)  ``xxxx  (systemflag names)  ``` (parse flags values)  -- and flipped:  `nxxxx and ``nnxxxx and ```nnnxxx with infermrak being ptr to original name
@@ -795,13 +910,14 @@ char* FindNameByValue(uint64 val) // works for invertable pos bits only
 bool IsModelNumber(char* word)
 {
 	int alphanumeric = 0;
+	char* start = word;
 	--word;
 	while (*++word)
 	{
 		if (IsAlphaUTF8(*word)) alphanumeric |= 1;
 		else if (IsDigit(*word)) alphanumeric |= 2;
 	}
-	return (alphanumeric == 3);
+	return (alphanumeric == 3 && !IsDate(start));
 }
 
 uint64 FindSystemValueByName(char* name)
@@ -957,7 +1073,7 @@ char* IsTextCurrency(char* ptr,char* end)
 	if (!end)
 	{
 		end = ptr;
-		while (*++end && !IsDigit(*end)); // locate nominal end of text
+		while (*++end && !(IsDigit(*end) || IsNonDigitNumberStarter(*end))); // locate nominal end of text
 	}
 
 	// look up direct word numbers
@@ -968,9 +1084,9 @@ char* IsTextCurrency(char* ptr,char* end)
 		int index = currencies[i].word;
 		if (!index) break;
 		char* w = Index2Heap(index);
-		if (!strnicmp(ptr, Index2Heap(index), len))
+		if (!strnicmp(ptr, w, len))
 		{
-			if (ptr[len] == 0 || IsDigit(ptr[len])) return Index2Heap(currencies[i].concept);  // a match 
+			if (ptr[len] == 0 || IsDigit(ptr[len]) || IsNonDigitNumberStarter(ptr[len])) return Index2Heap(currencies[i].concept);  // a match 
 		}
 	}
 	return NULL;
@@ -978,6 +1094,7 @@ char* IsTextCurrency(char* ptr,char* end)
 
 char* IsSymbolCurrency(char* ptr)
 {
+	if (!*ptr) return NULL;
 	char* end = ptr;
 	while (*++end && !IsDigit(*end)); // locate nominal end of text
 
@@ -996,21 +1113,29 @@ char* IsSymbolCurrency(char* ptr)
    
 unsigned char* GetCurrency(unsigned char* ptr,char* &number) // does this point to a currency token, return currency and point to number (NOT PROVEN its a number)
 {
-	char* prefixEnd = IsSymbolCurrency((char*)ptr); // is it at start
+	unsigned char* at = ptr;
+	if (*at == '+' || *at == '-') ++at; //   skip sign indicator, -$1,234.56
+
+	char* prefixEnd = IsSymbolCurrency((char*)at); // is it at start
 	if (prefixEnd)
 	{
 		number = prefixEnd;
+		if (at != ptr) // was there a sign before the symbol
+		{
+			char c = *ptr;
+			memmove(ptr, at, (number - (char*)at));
+			(--number)[0] = c;
+		}
 		return ptr;
 	}
 
-	if (IsDigit(*ptr))  // number first
+	if (IsDigit(*at))  // number first
 	{
-		unsigned char* at = ptr;
-		while (IsDigit(*at) || *at == '.') ++at; // get end of number
+		while (IsDigit(*at) || *at == '.' || *at == ',') ++at; // get end of number
 		prefixEnd = IsSymbolCurrency((char*)at);
 		if (prefixEnd)
 		{
-			number = ( char*)ptr;
+			number = (char*)ptr;
 			return at;
 		}
 	}
@@ -1031,7 +1156,7 @@ bool IsLegalName(char* name) // start alpha (or ~) and be alpha _ digit (concept
 	return true;
 }
 
-bool IsDigitWithNumberSuffix(char* number)
+bool IsDigitWithNumberSuffix(char* number, int useNumberStyle)
 {
 	size_t len = strlen(number);
 	char d = number[len-1];
@@ -1039,45 +1164,49 @@ bool IsDigitWithNumberSuffix(char* number)
 	if (d == 'k' || d == 'K' || d == 'm' || d == 'M' || d == 'B' || d == 'b' || d == 'G' || d == 'g' || d == '$')
 	{
 		number[len-1] = 0;
-		num = IsDigitWord(number);
+		num = IsDigitWord(number, useNumberStyle);
 		number[len-1] = d;
 	}
 	return num;
 }
 
-bool IsInteger(char* ptr, bool comma)
+bool IsInteger(char* ptr, bool comma, int useNumberStyle)
 {
+	char digitGroup = digitGroupingData[useNumberStyle];
 	if (IsNonDigitNumberStarter(*ptr)) ++ptr; //   skip numeric nondigit header (+ - # )
 	bool foundDigit = false;
 	while (*ptr)
 	{
 		if (IsDigit(*ptr)) foundDigit = true; // we found SOME part of a number
-		else if (*ptr == ',' && comma); // allow comma
+		else if (*ptr == digitGroup && comma); // allow comma
 		else  return false;
 		++ptr;
 	}
 	return foundDigit;
 }
 
-bool IsDigitWord(char* ptr,bool comma) // digitized number
+bool IsDigitWord(char* ptr,int useNumberStyle,bool comma) // digitized number
 {
+	if (!*ptr) return false;
 	char* end = ptr + strlen(ptr);
-	if (IsFloat(ptr, end)) return true; // sentence end if . at end, not a float
+	char decimalMark = decimalMarkData[useNumberStyle];
+	char digitGroup = digitGroupingData[useNumberStyle];
+	if (IsFloat(ptr, end, useNumberStyle)) return true; // sentence end if . at end, not a float
     //   signing, # marker or currency markers are still numbers
-    if (IsNonDigitNumberStarter(*ptr)) ++ptr; //   skip numeric nondigit header (+ - # )
 	char* number = 0;
 	char* currency = 0;
 	if ((currency = ( char*)GetCurrency((unsigned char*) ptr,number))) ptr = number; // if currency, find number start of it
-    if (!*ptr) return false;
+	if (IsNonDigitNumberStarter(*ptr)) ++ptr; //   skip numeric nondigit header (+ - # )
+	if (!*ptr) return false;
 
     bool foundDigit = false;
     while (*ptr) 
     {
 		if (IsDigit(*ptr)) foundDigit = true; // we found SOME part of a number
-		else if (*ptr == numberPeriod) return false; // float will find that
+		else if (*ptr == decimalMark) return false; // float will find that
 		else if (*ptr == '%' && !ptr[1]) break; // percentage
 		else if (*ptr == ':');	//   TIME delimiter
-		else if (*ptr == numberComma && comma && IsCommaNumberSegment(ptr+1)); // allow comma, but rest of word needs to be valid too
+		else if (*ptr == digitGroup && comma && IsCommaNumberSegment(ptr+1, currency)); // allow comma, but rest of word needs to be valid too
 		else if (ptr == currency) break; // dont need to see currency end
 		else return false;		//   1800s is done by substitute, so fail this
 		++ptr;
@@ -1085,7 +1214,7 @@ bool IsDigitWord(char* ptr,bool comma) // digitized number
     return foundDigit;
 }  
 
-bool IsCommaNumberSegment(char* ptr) // number after a comma
+bool IsCommaNumberSegment(char* ptr, char* end) // number after a comma
 {
 	// next three characters (perhaps only 2 if Indian) should be numbers
 	if (!*ptr || !IsDigit(*ptr) || !IsDigit(ptr[1])) return false; // must have 2 digits
@@ -1095,10 +1224,11 @@ bool IsCommaNumberSegment(char* ptr) // number after a comma
 
 	if (!IsDigit(*(comma-1))) return false; // must be a number in the preceeding position
 
+	if (end && comma == end) return true; // end of number, start of currency symbol
 	if (i == 3 && !*comma) return true; // end of number
 	if (i == 2 && IsDigit(*comma) && !comma[1]) return true; // end of number, final 3 digit segment
 
-	if (*comma && *comma == numberComma && IsCommaNumberSegment(comma+1)) return true; // valid number segments all the way
+	if (*comma && *comma == numberComma && IsCommaNumberSegment(comma+1, end)) return true; // valid number segments all the way
 	return false;
 }
 
@@ -1155,58 +1285,59 @@ void ComputeWordData(char* word, WORDINFO* info) // how many characters in word
     }
 }
 
-unsigned int IsNumber(char* num,bool placeAllowed) // simple digit number or word number or currency number
+unsigned int IsNumber(char* num, int useNumberStyle, bool placeAllowed) // simple digit number or word number or currency number
 {
 	if (!*num) return false;
 	char word[MAX_WORD_SIZE];
-	MakeLowerCopy(word,num); // accept number words in upper case as well
+	MakeLowerCopy(word, num); // accept number words in upper case as well
 	if (word[1] && (word[1] == ':' || word[2] == ':')) return false;	// 05:00 // time not allowed
 	size_t len = strlen(word);
 	if (word[len - 1] == '%') word[len - 1] = 0;	// % after a number is still a number
- 	
+
 	char* number = NULL;
-	char* cur = (char*)GetCurrency((unsigned char*) word,number);
-	if (cur) 
+	char* cur = (char*)GetCurrency((unsigned char*)word, number);
+	if (cur)
 	{
 		char c = *cur;
 		*cur = 0;
-		char* at = strchr(number,'.');
+		char* at = strchr(number, '.');
 		if (at) *at = 0;
-		int64 val = Convert2Integer(number);
+		int64 val = Convert2Integer(number, useNumberStyle);
 		if (at) *at = '.';
 		*cur = c;
-		return (val != NOT_A_NUMBER) ? CURRENCY_NUMBER : 0 ;
+		return (val != NOT_A_NUMBER) ? CURRENCY_NUMBER : NOT_A_NUMBER;
 	}
-	if (IsDigitWord(word,true)) return DIGIT_NUMBER; // a numeric number
+	if (IsDigitWord(word, useNumberStyle, true)) return DIGIT_NUMBER; // a numeric number
 
-	if (*word == '#' && IsDigitWord(word+1)) return DIGIT_NUMBER; // #123
+	if (*word == '#' && IsDigitWord(word + 1, useNumberStyle)) return DIGIT_NUMBER; // #123
 
-	if (*word == '\'' && !strchr(word+1,'\'') && IsDigitWord(word+1)) return DIGIT_NUMBER;	// includes date and feet
+	if (*word == '\'' && !strchr(word + 1, '\'') && IsDigitWord(word + 1, useNumberStyle)) return DIGIT_NUMBER;	// includes date and feet
 	uint64 valx;
-	if (IsRomanNumeral(word,valx)) return ROMAN_NUMBER;
-	if (IsDigitWithNumberSuffix(word)) return WORD_NUMBER;
+	if (IsRomanNumeral(word, valx)) return ROMAN_NUMBER;
+	if (IsDigitWithNumberSuffix(word, useNumberStyle)) return WORD_NUMBER;
 	WORDP D;
 	char* ptr;
-    if (placeAllowed && IsPlaceNumber(word)) return PLACETYPE_NUMBER; // th or first or second etc. but dont call if came from there
-    else if (!IsDigit(*word) && ((ptr = strchr(word+1,'-')) || (ptr = strchr(word+1,'_'))))	// composite number as word, but not digits
-    {
-        D = FindWord(word,ptr-word);			// 1st part
-		WORDP W = FindWord(ptr+1);		// 2nd part of word
-		if (D && W && D->properties & NUMBER_BITS && W->properties & NUMBER_BITS && IsPlaceNumber(W->word)) return FRACTION_NUMBER; 
- 		if (D && W && D->properties & NUMBER_BITS && W->properties & NUMBER_BITS) return WORD_NUMBER; 
-    }
+	if (placeAllowed && IsPlaceNumber(word, useNumberStyle)) return PLACETYPE_NUMBER; // th or first or second etc. but dont call if came from there
+	else if (!IsDigit(*word) && ((ptr = strchr(word + 1, '-')) || (ptr = strchr(word + 1, '_'))))	// composite number as word, but not digits
+	{
+		D = FindWord(word, ptr - word);			// 1st part
+		WORDP W = FindWord(ptr + 1);		// 2nd part of word
+		if (D && W && D->properties & NUMBER_BITS && W->properties & NUMBER_BITS && IsPlaceNumber(W->word)) return FRACTION_NUMBER;
+		if (D && W && D->properties & NUMBER_BITS && W->properties & NUMBER_BITS) return WORD_NUMBER;
+	}
 
-	char* hyphen = strchr(word+1,'-');
-	if (!hyphen) hyphen = strchr(word+1,'_'); // two_thirds
+	char* hyphen = strchr(word + 1, '-');
+	if (!hyphen) hyphen = strchr(word + 1, '_'); // two_thirds
+	if (hyphen && hyphen[1] && (IsDigit(*word) || IsDigit(hyphen[1]))) return NOT_A_NUMBER; // not multihypened words
 	if (hyphen && hyphen[1])
 	{
 		char c = *hyphen;
 		*hyphen = 0;
-		int kind = IsNumber(word); // what kind of number
-        int64 piece1 = Convert2Integer(word);      
+		int kind = IsNumber(word, useNumberStyle); // what kind of number
+		int64 piece1 = Convert2Integer(word, useNumberStyle);
 		*hyphen = c;
-		if (piece1 == NOT_A_NUMBER && stricmp(word,(char*)"zero") && *word != '0') {;}
-		else if (IsPlaceNumber(hyphen+1) || kind == FRACTION_NUMBER) return FRACTION_NUMBER;
+		if (piece1 == NOT_A_NUMBER && stricmp(word, (char*)"zero") && *word != '0') { ; }
+		else if (IsPlaceNumber(hyphen + 1, useNumberStyle) || kind == FRACTION_NUMBER) return FRACTION_NUMBER;
 	}
 
 	// test for fraction or percentage
@@ -1217,35 +1348,36 @@ unsigned int IsNumber(char* num,bool placeAllowed) // simple digit number or wor
 		char* ptr = word;
 		while (*++ptr)
 		{
-			if (*ptr == '/' && !slash) slash = true; 
-			else if (*ptr == '%' && !ptr[1]) percent = true; 
+			if (*ptr == '/' && !slash) slash = true;
+			else if (*ptr == '%' && !ptr[1]) percent = true;
 			else if (!IsDigit(*ptr)) break;	// not good
 		}
-		if (slash && !*ptr) return FRACTION_NUMBER;  
-		if (percent && !*ptr) return FRACTION_NUMBER;  
+		if (slash && !*ptr) return FRACTION_NUMBER;
+		if (percent && !*ptr) return FRACTION_NUMBER;
 	}
 
-    D = FindWord(word);
-    if (D && D->properties & NUMBER_BITS) 
-		return (D->systemFlags & ORDINAL) ? PLACETYPE_NUMBER : WORD_NUMBER;   // known number
-
 	// look up direct word numbers
-	if (numberValues) for (unsigned int i = 0; i < 1000; ++i)
+	D = FindWord(word);
+	len = strlen(word);
+	if (D && D->properties & (NOUN_NUMBER|ADJECTIVE_NUMBER) && numberValues) for (unsigned int i = 0; i < 1000; ++i)
 	{
-		size_t len = strlen(word);
 		int index = numberValues[i].word;
 		if (!index) break;
 		char* w = Index2Heap(index);
-		if (len == numberValues[i].length && !strnicmp(word, Index2Heap(index), len))
+		char* num = Index2Heap(index);
+		if (len == numberValues[i].length && !strnicmp(word, num, len))
 		{
 			return numberValues[i].realNumber;  // a match 
 		}
 	}
 
-    return (Convert2Integer(word) != NOT_A_NUMBER) ? WORD_NUMBER : 0;		//   try to read the number
+	if (D && D->properties & NUMBER_BITS)
+		return (D->systemFlags & ORDINAL) ? PLACETYPE_NUMBER : WORD_NUMBER;   // known number
+
+    return (Convert2Integer(word,useNumberStyle) != NOT_A_NUMBER) ? WORD_NUMBER : NOT_A_NUMBER;		//   try to read the number
 }
 
-bool IsPlaceNumber(char* word) // place number and fraction numbers
+bool IsPlaceNumber(char* word, int useNumberStyle) // place number and fraction numbers
 {   
     size_t len = strlen(word);
 	if (len < 3) return false; // min is 1st
@@ -1265,7 +1397,7 @@ bool IsPlaceNumber(char* word) // place number and fraction numbers
 		size_t l = strlen(tok);
 		tok[l - size] = 0;
 		if (tok[l-size-1] == '-') tok[l - size - 1] = 0; // fifty-second
-		if (IsNumber(tok)) return true;
+		if (IsNumber(tok,useNumberStyle) != NOT_A_NUMBER) return true;
 		else return false;
 	}
 
@@ -1292,7 +1424,7 @@ bool IsPlaceNumber(char* word) // place number and fraction numbers
     if (len < 4 && !IsDigit(*word)) return false; // want a number
 	char num[MAX_WORD_SIZE];
 	strcpy(num,word);
-	return (IsNumber(num,false) == PLACETYPE_NUMBER) ? true : false; // show it is correctly a number - pass false to avoid recursion from IsNumber
+	return (IsNumber(num,useNumberStyle,false) == PLACETYPE_NUMBER) ? true : false; // show it is correctly a number - pass false to avoid recursion from IsNumber
 }
 
 void WriteInteger(char* word, char* buffer, int useNumberStyle)
@@ -1358,18 +1490,20 @@ char* WriteFloat(char* buffer, double value, int useNumberStyle)
 	return buffer;
 }
 
-bool IsFloat(char* word, char* end)
+bool IsFloat(char* word, char* end, int useNumberStyle)
 {
 	if (*(end - 1) == '.') return false;	 // float does not end with ., that is sentence end
 	if (*word == '-' || *word == '+') ++word; // ignore sign
 	if (!IsDigit(*word)) return false;
-    int period = 0;
+	char decimalMark = decimalMarkData[useNumberStyle];
+	char digitGroup = digitGroupingData[useNumberStyle];
+	int period = 0;
 	--word;
 	bool exponent = false;
 	while (++word < end) // count periods
 	{
-	    if (*word == numberPeriod && !exponent) ++period;
-		else if (!IsDigit(*word) && *word != numberComma)
+	    if (*word == decimalMark && !exponent) ++period;
+		else if (!IsDigit(*word) && *word != digitGroup)
 		{
 			if ((*word == 'e' || *word == 'E') && !exponent)
 			{
@@ -1629,12 +1763,17 @@ char* ReadInt64(char* ptr, int64 &spot)
          sign = -1;
          ++ptr;
      }
+	 char* currency1;
+	 char* cur1 = (char*) GetCurrency((unsigned char*)ptr, currency1); // alpha part
+	 if (cur1 && cur1 == ptr) ptr = currency1; // point to number part
+
 	 --ptr;
 	 while (!IsWhiteSpace(*++ptr) && *ptr) 
      {  
          if (*ptr == ',') continue;    // swallow this
          spot *= 10;
          if (IsDigit(*ptr)) spot += *ptr - '0';
+		 else if (cur1 && ptr == cur1) break;	 // end of number part of like 65$
          else 
          {
 			 Bug(); // ReportBug((char*)"bad number1 %s\r\n", original)
@@ -1647,6 +1786,7 @@ char* ReadInt64(char* ptr, int64 &spot)
 	 if (*ptr) ++ptr;	// skip trailing blank
      return ptr;  
 }
+
 char* ReadHex(char* ptr, uint64 & value)
 {
 	ptr = SkipWhitespace(ptr);
@@ -1792,6 +1932,18 @@ bool AdjustUTF8(char* start,char* buffer)
 					memmove(buffer + 1, x, strlen(x) + 1);
 					if (compiling) WARNSCRIPT("UTF8 opening double quote revised to Ascii %s | %s", start, buffer);
 				}
+				else if (buffer[0] == 0xef && buffer[1] == 0xbc &&  buffer[2] == 0x88)  // open curly paren 
+				{
+					*buffer = '(';
+					memmove(buffer + 1, x, strlen(x) + 1);
+					if (compiling) WARNSCRIPT("UTF8 opening curly paren quote revised to Ascii %s | %s", start, buffer);
+				}
+				else if (buffer[0] == 0xef && buffer[1] == 0xbc && buffer[2] == 0x89)  // closing curly paren 
+				{
+					*buffer = ')';
+					memmove(buffer + 1, x, strlen(x) + 1);
+					if (compiling) WARNSCRIPT("UTF8 closing curly paren quote revised to Ascii %s | %s", start, buffer);
+				}
 				else if (buffer[0] == 0xe2 && buffer[1] == 0x80 && buffer[2] == 0x9d)  // closing double quote
 				{
 					*buffer = '"';
@@ -1880,7 +2032,6 @@ RESUME:
 		if (c == '\t' && convertTabs) c = ' ';
 		if (c & 0x80 ) // high order utf?
 		{
-			hasHighChar = true;
 			unsigned char convert = 0;
 			if (!BOM && !hasutf && !server) // local mode might get extended ansi so transcribe to utf8 (but dont touch BOM)
 			{
@@ -1899,6 +2050,7 @@ RESUME:
 				}
 			}
 			if (!convert) hasutf = true;
+			else hasHighChar = true; // we change extended ansi to normal (not utf8)
 		}
 		
 		// format string stuff
@@ -2119,7 +2271,7 @@ RESUME:
     return (buffer - start);
 }
 
-char* ReadQuote(char* ptr, char* buffer,bool backslash,bool noblank)
+char* ReadQuote(char* ptr, char* buffer,bool backslash,bool noblank,int limit)
 { //   ptr is at the opening quote or a \quote... internal	" must have \ preceeding the start of a quoted expression
 	//  kinds of quoted strings:
 	//  a) simple  "this is stuff"  -- same as \"xxxxx" - runs to first non-backslashed quote so cant have freestanding quotes in it but \" is converted at script compile
@@ -2128,7 +2280,7 @@ char* ReadQuote(char* ptr, char* buffer,bool backslash,bool noblank)
 	//  d) literal quote \" - system outputs the quote only (script has nothing or blank or tab or ` after it
 	//  e) internal "`xxxxx`"  - argument to tcpopen pass back untouched stripping the markers on both ends - allows us to pay no attention to OTHER quotes within
     char c;
-    int n = MAX_WORD_SIZE-10;		// quote must close within this limit
+    int n = limit;		// quote must close within this limit
 	char* start = ptr;
 	char* original = buffer;
 	// "` is an internal marker of argument passed from TCPOPEN   "'arguments'" ) , return the section untouched as one lump 
@@ -2428,6 +2580,42 @@ size_t OutputLimit(unsigned char* data) // insert eols where limitations exist
 	return data - original;
 }
 
+unsigned int UTFStrlen(char* ptr)
+{
+	unsigned int len = 0;
+	while (*ptr)
+	{
+		len++;
+		ptr += UTFCharSize(ptr);
+	}
+	return len;
+}
+
+unsigned int UTFPosition(char* ptr, unsigned int pos)
+{
+	unsigned int index = 0;
+	unsigned int posChar = 0;
+	while (*ptr && index++ < pos)
+	{
+		unsigned int charLen = UTFCharSize(ptr);
+		posChar += charLen;
+		ptr += charLen;
+	}
+	return posChar;
+}
+
+unsigned int UTFOffset(char* ptr, char* c)
+{
+	unsigned int index = 0;
+	unsigned int posChar = 0;
+	while (*ptr && ptr < c)
+	{
+		ptr += UTFCharSize(ptr);
+		index++;
+	}
+	return index;
+}
+
 char* UTF2ExtendedAscii(char* bufferfrom) 
 {
 	char* limit;
@@ -2459,6 +2647,22 @@ void ForceUnderscores(char* ptr)
 {
 	--ptr;
 	while (*++ptr) if (*ptr == ' ') *ptr = '_';
+}
+
+void ConvertQuotes(char* ptr)
+{
+	--ptr;
+	bool start = false;
+	while (*++ptr)
+	{
+		if (*ptr == '"' && *(ptr - 1) != '\\')
+		{
+			memmove(ptr + 2, ptr + 1, strlen(ptr + 1) + 1); // make room for utf8 replacement
+			if (!start) *ptr = '"';
+			if (start) *ptr = '"';
+			start = !start;
+		}
+	}
 }
 
 void Convert2Blanks(char* ptr)
@@ -2552,10 +2756,10 @@ void RemoveTilde(char* output)
     }
 }
 
-int64 NumberPower(char* number)
+int64 NumberPower(char* number, int useNumberStyle)
 {
     if (*number == '-') return 2000000000;    // isolated - always stays in front
-	int64 num = Convert2Integer(number);
+	int64 num = Convert2Integer(number, useNumberStyle);
 	if (num < 10) return 1;
 	if (num < 100) return 10;
 	if (num < 1000) return 100;
@@ -2568,22 +2772,26 @@ int64 NumberPower(char* number)
 	return  10000000000ULL; 
 }
 
-int64 Convert2Integer(char* number)  //  non numbers return NOT_A_NUMBER    
+int64 Convert2Integer(char* number, int useNumberStyle)  //  non numbers return NOT_A_NUMBER    
 {  // ProcessCompositeNumber will have joined all number words together in appropriate number power order: two hundred and fifty six billion and one -> two-hundred-fifty-six-billion-one , while four and twenty -> twenty-four
 	if (!number || !*number) return NOT_A_NUMBER;
+	char decimalMark = decimalMarkData[useNumberStyle];
+	char digitGroup = digitGroupingData[useNumberStyle];
 	char c = *number;
 	if (c == '$'){;}
-	else if (c == '#' && IsDigitWord(number+1)) return Convert2Integer(number+1);
-	else if (!IsAlphaUTF8DigitNumeric(c) || c == '.') return NOT_A_NUMBER; // not  0-9 letters + - 
+	else if (c == '#' && IsDigitWord(number+1,useNumberStyle)) return Convert2Integer(number+1, useNumberStyle);
+	else if (!IsAlphaUTF8DigitNumeric(c) || c == decimalMark) return NOT_A_NUMBER; // not  0-9 letters + - 
+
+	bool csEnglish = (externalTagger && stricmp(language, "english")) ? false : true;
 
 	size_t len = strlen(number);
 	uint64 valx;
 	if (IsRomanNumeral(number,valx)) return (int64) valx;
-	if (IsDigitWithNumberSuffix(number)) // 10K  10M 10B or currency
+	if (IsDigitWithNumberSuffix(number, useNumberStyle)) // 10K  10M 10B or currency
 	{
 		char d = number[len-1];
 		number[len-1] = 0;
-		int64 answer = Convert2Integer(number);
+		int64 answer = Convert2Integer(number, useNumberStyle);
 		if (d == 'k' || d == 'K') answer *= 1000;
 		else if (d == 'm' || d == 'M') answer *= 1000000;
 		else if (d == 'B' || d == 'b' || d == 'G' || d == 'g') answer *= 1000000000;
@@ -2608,13 +2816,13 @@ int64 Convert2Integer(char* number)  //  non numbers return NOT_A_NUMBER
 	char* comma = copy;
 	while (*++comma)
 	{
-		if (*comma == ',') memmove(comma,comma+1,strlen(comma));
+		if (*comma == digitGroup) memmove(comma,comma+1,strlen(comma));
 		else if (*comma == '_') *comma = '-';
 	}
     char* word = copy+1;
 
 	// remove place suffixes
-	if (numberValues && len > 3 && !stricmp(word+len-3,(char*)"ies")) // twenties?
+	if (csEnglish && numberValues && len > 3 && !stricmp(word+len-3,(char*)"ies")) // twenties?
 	{
 		char xtra[MAX_WORD_SIZE];
 		strcpy(xtra,word);
@@ -2636,7 +2844,7 @@ int64 Convert2Integer(char* number)  //  non numbers return NOT_A_NUMBER
 		}
 	}
 
-    if (numberValues && len > 3 && word[len-1] == 's') // if s attached to a fraction, remove it
+    if (csEnglish && numberValues && len > 3 && word[len-1] == 's') // if s attached to a fraction, remove it
 	{
 		size_t len1 = len - 1;
 		if (word[len1-1] == 'e') --len1; // es ending like zeroes
@@ -2657,8 +2865,9 @@ int64 Convert2Integer(char* number)  //  non numbers return NOT_A_NUMBER
 		}
 	}
 	unsigned int oldlen = len;
-	// remove 
-    if (len < 3); // cannot have suffix
+	// remove
+	if (!csEnglish);
+    else if (len < 3); // cannot have suffix
     else if (word[len-2] == 's' && word[len-1] == 't' && !strstr(word,(char*)"first")) word[len -= 2] = 0; // 1st 
     else if (word[len-2] == 'n' && word[len-1] == 'd' && !strstr(word,(char*)"second") && !strstr(word,(char*)"thousand")) word[len -= 2] = 0; // 2nd but not second or thousandf"
     else if (word[len-2] == 'r' && word[len-1] == 'd' && !strstr(word,(char*)"third")) word[len -= 2] = 0; // 3rd 
@@ -2723,7 +2932,7 @@ int64 Convert2Integer(char* number)  //  non numbers return NOT_A_NUMBER
 	// if lead piece is not a number, the whole thing isnt
 	c = *hyphen;
 	*hyphen = 0;
-	int64 val = Convert2Integer(word); // convert lead piece to see if its a number
+	int64 val = Convert2Integer(word, useNumberStyle); // convert lead piece to see if its a number
 	*hyphen = c;
 	if (val == NOT_A_NUMBER) return NOT_A_NUMBER; // lead is not a number
 
@@ -2738,7 +2947,7 @@ int64 Convert2Integer(char* number)  //  non numbers return NOT_A_NUMBER
 	{
 		num *= 10;
 		*xpiece = 0;
-		val1 = Convert2Integer(oldhyphen);
+		val1 = Convert2Integer(oldhyphen, useNumberStyle);
 		*xpiece = '-';
 		if (val1 > 9)
 		{
@@ -2751,7 +2960,7 @@ int64 Convert2Integer(char* number)  //  non numbers return NOT_A_NUMBER
 	if (num >= 0 && num < 10) // simple digit
 	{
 		num *= 10;
-		val1 = Convert2Integer(oldhyphen);
+		val1 = Convert2Integer(oldhyphen, useNumberStyle);
 		if (val1 < 10)
 		{
 			num += val1;
@@ -2765,7 +2974,7 @@ int64 Convert2Integer(char* number)  //  non numbers return NOT_A_NUMBER
     if (found && *(found-1) == '-') // is 2nd piece
     {
         *(found-1) = 0; // hide the word billion
-        billion = (int)Convert2Integer(word);  // determine the number of billions
+        billion = (int)Convert2Integer(word, useNumberStyle);  // determine the number of billions
         if (billion == NOT_A_NUMBER && stricmp(word,(char*)"zero") && *word != '0') return NOT_A_NUMBER;
         word = found + 7; // now points to next part
         if (*word == '-' || *word == '_') ++word; // has another hypen after it
@@ -2784,7 +2993,7 @@ int64 Convert2Integer(char* number)  //  non numbers return NOT_A_NUMBER
     if (found && *(found-1) == '-')
     {
         *(found-1) = 0;
-        million = (int)Convert2Integer(word); 
+        million = (int)Convert2Integer(word, useNumberStyle); 
         if (million == NOT_A_NUMBER && stricmp(word,(char*)"zero") && *word != '0') return NOT_A_NUMBER;
         word = found + 7;
         if (*word == '-' || *word == '_') ++word; // has another hypen after it
@@ -2803,7 +3012,7 @@ int64 Convert2Integer(char* number)  //  non numbers return NOT_A_NUMBER
     if (found && *(found-1) == '-')
     {
         *(found-1) = 0;
-        thousand = (int)Convert2Integer(word);
+        thousand = (int)Convert2Integer(word, useNumberStyle);
         if (thousand == NOT_A_NUMBER && stricmp(word,(char*)"zero") && *word != '0') return NOT_A_NUMBER;
         word = found + 8;
 		if (*word == '-' || *word == '_') ++word; // has another hypen after it
@@ -2822,7 +3031,7 @@ int64 Convert2Integer(char* number)  //  non numbers return NOT_A_NUMBER
     if (found && *(found-1) == '-') // do we have four-hundred
     {
         *(found-1) = 0;
-        hundred = (int) Convert2Integer(word);
+        hundred = (int) Convert2Integer(word, useNumberStyle);
         if (hundred == NOT_A_NUMBER && stricmp(word,(char*)"zero") && *word != '0') return NOT_A_NUMBER;
         word = found + 7;
  		if (*word == '-' || *word == '_') ++word; // has another hypen after it
@@ -2835,7 +3044,8 @@ int64 Convert2Integer(char* number)  //  non numbers return NOT_A_NUMBER
 	}
 
 	// now do tens and ones, which can include omitted hundreds label like two-fifty-two
-    hyphen = strchr(word,'-'); 
+	bool isFrench = (!stricmp(language, "french")) ? true : false;
+	hyphen = strchr(word,'-');
 	if (!hyphen) hyphen = strchr(word,'_'); 
     int64 value = 0;
     while (word && *word) // read each smaller part and scale
@@ -2843,11 +3053,26 @@ int64 Convert2Integer(char* number)  //  non numbers return NOT_A_NUMBER
         if (!hyphen) // last piece (a tens or a ones)
 		{
             if (!strcmp(word,number)) return NOT_A_NUMBER;  // never decoded anything so far
-            int64 n = Convert2Integer(word);
+            int64 n = Convert2Integer(word, useNumberStyle);
             if (n == NOT_A_NUMBER && stricmp(word,(char*)"zero") && *word != '0') return NOT_A_NUMBER;
             value += n; // handled LAST piece
             break;
         }
+
+		// Find the longest item that is a single number
+		// French has composite base numbers, e.g. quatre-vingt-un is 81 not 421, and quatre-vingt-dix-neuf is 99
+		int64 piece1 = NOT_A_NUMBER;
+		char* hyphen2 = word;
+		while ((hyphen2 = strchr(hyphen2, '-')))
+		{
+			char c = *hyphen2;
+			*hyphen2 = 0;
+			int64 val2 = Convert2Integer(word, useNumberStyle); // convert lead piece to see if its a number
+			*hyphen2 = c;
+			if (val2 == NOT_A_NUMBER) break;
+			hyphen = hyphen2++;
+			piece1 = val2;
+		}
 
         *hyphen++ = 0; // split pieces
 
@@ -2856,22 +3081,22 @@ int64 Convert2Integer(char* number)  //  non numbers return NOT_A_NUMBER
 		if (!next) next = strchr(hyphen,'_');    
         if (next) *next = 0; 
 
-        int64 piece1 = Convert2Integer(word);      
         if (piece1 == NOT_A_NUMBER && stricmp(word,(char*)"zero") && *word != '0') return NOT_A_NUMBER;
 
-        int64 piece2 = Convert2Integer(hyphen);   
+        int64 piece2 = Convert2Integer(hyphen, useNumberStyle);   
         if (piece2 == NOT_A_NUMBER && stricmp(hyphen,(char*)"0")) return NOT_A_NUMBER;
 
         int64 subpiece = 0;
 		if (piece1 > piece2 && piece2 < 10) subpiece = piece1 + piece2; // can be larger-smaller (like twenty one) 
-		if (piece2 >= 10 && piece2 < 100 && piece1 >= 1 && piece1 < 100) subpiece = piece1 * 100 + piece2; // two-fifty-two is omitted hundred
+		if (isFrench && (piece1 == 60 || piece1 == 80) && piece2 < 20) subpiece = piece1 + piece2; // French 60+ or 80+ 
+		else if (piece2 >= 10 && piece2 < 100 && piece1 >= 1 && piece1 < 100) subpiece = piece1 * 100 + piece2; // two-fifty-two is omitted hundred
 		else if (piece2 == 10 || piece2 == 100 || piece2 == 1000) subpiece = piece1 * piece2; // must be smaller larger pair (like four hundred)
         value += subpiece; // 2 pieces mean item was  power of ten and power of one
         // if 3rd piece, now recycle to handle the ones part
 		if (next) ++next;
         word = next;
         hyphen = NULL; 
-    }
+	}
 	
 	return value + ((int64)billion * 1000000000) + ((int64)million * 1000000) + ((int64)thousand * 1000) + ((int64)hundred * 100);
 }
@@ -2887,8 +3112,11 @@ void MakeLowerCase(char* ptr)
 		if (utfcharacter[1] && *ptr == 0xc3 && (unsigned char)ptr[1] >= 0x80 && (unsigned char)ptr[1] <= 0x9e)
 		{
 			unsigned char c = (unsigned char)*++ptr; // get the cap form
-			c -= 0x80;
-			c += 0x9f; // get lower case form
+			if (c != 0x97) // multiplication sign doesn't change
+			{
+				c -= 0x80;
+				c += 0xa0; // get lower case form
+			}
 			*ptr = (char)c;
 		}
 		else if (utfcharacter[1] && *ptr >= 0xc4 && *ptr <= 0xc9)
@@ -2911,8 +3139,11 @@ void MakeUpperCase(char* ptr)
 		if (utfcharacter[1] && *ptr == 0xc3 && ptr[1] >= 0x9f && ptr[1] <= 0xbf)
 		{
 			unsigned char c = (unsigned char)*++ptr; // get the cap form
-			c -= 0x9f;
-			c += 0x80; // get upper case form
+			if (c != 0x9f && c != 0xb7) // sharp s and division sign don't change
+			{
+				c -= 0xa0;
+				c += 0x80; // get upper case form
+			}
 			*ptr = (char)c;
 		}
 		else if (utfcharacter[1] && *ptr >= 0xc4 && *ptr <= 0xc9)
@@ -2936,8 +3167,11 @@ char*  MakeLowerCopy(char* to, char* from)
 		{
 			*to++ = *from;
 			unsigned char c = from[1]; // get the cap form
-			c -= 0x80;
-			c += 0x9f; // get lower case form
+			if (c != 0x97) // multiplication sign doesn't change
+			{
+				c -= 0x80;
+				c += 0xa0; // get lower case form
+			}
 			*to++ = c;
 			from = x;
 		}
@@ -2970,8 +3204,11 @@ char* MakeUpperCopy(char* to, char* from)
 		{
 			*to++ = *from;
 			unsigned char c = from[1]; // get the cap form
-			c -= 0x9f;
-			c += 0x80; // get upper case form
+			if (c != 0x9f && c != 0xb7) // sharp s and division sign don't change
+			{
+				c -= 0xa0;
+				c += 0x80; // get upper case form
+			}
 			*to++ = c;
 			from = x;
 		}

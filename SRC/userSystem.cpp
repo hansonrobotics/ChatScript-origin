@@ -77,7 +77,6 @@ void Login(char* caller,char* usee,char* ip) //   select the participants
 	*computerIDwSpace = ' ';
 	MakeLowerCopy(computerIDwSpace+1,computerID);
 	strcat(computerIDwSpace,(char*)" ");
-
 	if (*ipAddress) // maybe use ip in generating unique login
 	{
 		if (!stricmp(caller,(char*)"guest")) sprintf(caller,(char*)"guest%s", ipAddress);
@@ -96,6 +95,11 @@ void Login(char* caller,char* usee,char* ip) //   select the participants
 
 void ReadComputerID()
 {
+	if (*defaultbot)
+	{
+		strcpy(computerID, defaultbot); // command line parameter
+		return;
+	}
 	strcpy(computerID,(char*)"anonymous");
 	WORDP D = FindWord((char*)"defaultbot",0); // do we have a FACT with the default bot in it as verb
 	if (D)
@@ -476,7 +480,6 @@ char* WriteUserVariables(char* ptr,bool sharefile, bool compiled,char* saveJSON)
 		sprintf(ptr,(char*)"$cs_trace=%d\r\n",trace);
 		ptr += strlen(ptr);
 	}
-	userVariableThreadList = 0;
 
 	// now put out the function tracing bits
 	unsigned int index = tracedFunctionsIndex;
@@ -608,7 +611,7 @@ static char* GatherUserData(char* ptr,time_t curr,bool sharefile)
 	return ptr;
 }
 
-void WriteUserData(time_t curr)
+void WriteUserData(time_t curr, bool nobackup)
 { 
 	if (!numberOfTopics)  return; //   no topics ever loaded or we are not responding
 	if (!userCacheCount) return;	// never save users - no history
@@ -636,12 +639,12 @@ void WriteUserData(time_t curr)
 	if (filesystemOverride == NORMALFILES && (!server || serverRetryOK) && !documentMode && !callback)  
 	{
 		char fname[MAX_WORD_SIZE];
-		sprintf(fname,(char*)"%s/backup-%s_%s.bin",tmp,loginID,computerID);
-		CopyFile2File(fname, name,false);	// backup for debugging BUT NOT if callback of some kind...
+		sprintf(fname,(char*)"%s/backup-%s_%s.txt",tmp,loginID,computerID);
+		if (!nobackup) CopyFile2File(fname, name,false);	// backup for debugging BUT NOT if callback of some kind...
 		if (redo) // multilevel backup enabled
 		{
-			sprintf(fname,(char*)"%s/backup%d-%s_%s.bin",tmp,volleyCount,loginID,computerID);
-			CopyFile2File(fname,userDataBase,false);	// backup for debugging BUT NOT if callback of some kind...
+			sprintf(fname,(char*)"%s/backup%d-%s_%s.txt",tmp,volleyCount,loginID,computerID);
+			if (!nobackup) CopyFile2File(fname,userDataBase,false);	// backup for debugging BUT NOT if callback of some kind...
 		}
 	}
 #endif
@@ -664,12 +667,12 @@ void WriteUserData(time_t curr)
 #ifndef DISCARDTESTING
 		if (filesystemOverride == NORMALFILES &&  (!server || serverRetryOK)  && !documentMode  && !callback)  
 		{
-			sprintf(name,(char*)"%s/backup-share-%s_%s.bin",tmp,loginID,computerID);
-			CopyFile2File(name,userDataBase,false);	// backup for debugging
+			sprintf(name,(char*)"%s/backup-share-%s_%s.txt",tmp,loginID,computerID);
+			if (!nobackup) CopyFile2File(name,userDataBase,false);	// backup for debugging
 			if (redo)
 			{
-				sprintf(name,(char*)"%s/backup%d-share-%s_%s.bin",tmp,volleyCount,loginID,computerID);
-				CopyFile2File(name,userDataBase,false);	// backup for debugging BUT NOT if callback of some kind...
+				sprintf(name,(char*)"%s/backup%d-share-%s_%s.txt",tmp,volleyCount,loginID,computerID);
+				if (!nobackup) CopyFile2File(name,userDataBase,false);	// backup for debugging BUT NOT if callback of some kind...
 			}
 		}
 #endif
@@ -779,13 +782,7 @@ void ReadUserData() // passed  buffer with file content (where feasible)
 		int diff = ElapsedMilliseconds() - start_time;
 		if (timing & TIME_ALWAYS || diff > 0) Log(STDTIMELOG, (char*)"Read user data time: %d ms\r\n", diff);
 	}
-	if (server && servertrace) trace = -1; // complete server trace
-
-	if (numberStyle ==  FRENCH_NUMBERS)
-	{
-		numberComma = '.';
-		numberPeriod = ',';
-	}
+	if (server && servertrace) trace = (unsigned int)-1; // complete server trace
 }
 
 void KillShare()

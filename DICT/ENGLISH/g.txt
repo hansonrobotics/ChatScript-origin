@@ -2341,8 +2341,8 @@
     skilful~1az having or showing knowledge and skill and aptitude
     safe~7a 
     good~26az 
-    well~10bz in a good or proper or satisfactory manner or to a high standard (`good' is a nonstandard dialectal variant for `well')
-    soundly~1bz completely and absolutely 
+    well~10z in a good or proper or satisfactory manner or to a high standard (`good' is a nonstandard dialectal variant for `well')
+    soundly~1z completely and absolutely 
  gallantry ( meanings=3 glosses=3 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON2 COMMON1 NOUN_NODETERMINER GRADE5_6 posdefault:NOUN ) 
     gallantry~1nz (^courtesy~1) polite attentiveness to women
     valiancy~1nz (^courage~1) the qualities of a hero or heroine
@@ -9699,7 +9699,7 @@
     gimel~1nz (^letter~3) the 3rd letter of the Hebrew alphabet
  glissando ( meanings=2 glosses=2 NOUN_ABSTRACT NOUN ADVERB NOUN_SINGULAR COMMON2 posdefault:NOUN ) plural=glissandi 
     glissando~1nz (^line~18) a rapid series of ascending or descending notes on the musical scale
-    glissando~2bz in the manner of a glissando (with a rapidly executed series of notes)
+    glissando~2z in the manner of a glissando (with a rapidly executed series of notes)
  Gregorian_mode ( meanings=1 NOUN NOUN_PROPER_SINGULAR ) 
     ecclesiastical_mode~1n 
  Greek_mode ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_PROPER_SINGULAR ) 
@@ -10387,9 +10387,9 @@
  generally_accepted_accounting_principles ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     GAAP~1nz (^collection~4) a collection of rules and procedures and conventions that define accepted accounting practice
  generally ( meanings=3 glosses=2 ADVERB COMMON4 COMMON1 GRADE5_6 posdefault:ADVERB ) 
-    in_the_main~1bz without distinction of one from others
-    mostly~2b 
-    broadly_speaking~1bz without regard to specific details or exceptions
+    in_the_main~1z without distinction of one from others
+    mostly~2z 
+    broadly_speaking~1z without regard to specific details or exceptions
  GAAP ( meanings=1 NOUN NOUN_PROPER_SINGULAR COMMON1 ) 
     generally_accepted_accounting_principles~1n 
  governed ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON4 posdefault:VERB ) 
@@ -19351,7 +19351,7 @@
     grass-eating~1az feeding on grasses
  gingerly ( meanings=2 glosses=2 ADJECTIVE ADVERB ADJECTIVE_NORMAL ADJECTIVE_NOT_PREDICATE COMMON2 COMMON1 posdefault:ADVERB ) 
     gingerly~1az with extreme care or delicacy
-    gingerly~2bz in a gingerly manner
+    gingerly~2z in a gingerly manner
  guarded ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:VERB ADJECTIVE_GOOD_SUBJECT_COMPLEMENT ) 
     restrained~1a 
  groping ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:VERB ) 
@@ -19499,14 +19499,14 @@
     goodish~3az 
  goddam ( meanings=2 ADJECTIVE ADVERB ADJECTIVE_NORMAL ADJECTIVE_NOT_PREDICATE COMMON2 posdefault:ADJECTIVE ) 
     deuced~1a 
-    goddamn~3b 
+    goddamn~3z 
  goddamn ( meanings=3 glosses=1 ADJECTIVE ADVERB ADJECTIVE_NORMAL ADJECTIVE_NOT_PREDICATE COMMON2 COMMON1 posdefault:ADJECTIVE ) 
     goddam~1a 
     damn~3az used as expletives
-    goddamned~2b 
+    goddamned~2z 
  goddamned ( meanings=2 glosses=1 ADJECTIVE ADVERB ADJECTIVE_NORMAL ADJECTIVE_NOT_PREDICATE COMMON2 COMMON1 posdefault:ADJECTIVE ) 
     goddamn~1a 
-    goddam~2bz extremely
+    goddam~2z extremely
  glum ( meanings=3 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) comparative=glummest 
     glum~1az moody and melancholic
     sullen~2a 
@@ -19796,7 +19796,7 @@
  gratis ( meanings=3 ADJECTIVE ADVERB ADJECTIVE_NORMAL ADJECTIVE_ONLY_PREDICATE ADJECTIVE_NOT_PREDICATE COMMON4 COMMON1 posdefault:ADVERB ) 
     costless~1a 
     gratis~2az 
-    for_free~1b 
+    for_free~1z 
  galled ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:VERB ) 
     chafed~1a 
  glib ( meanings=3 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 GRADE5_6 posdefault:ADJECTIVE ) comparative=glibbest 
@@ -20382,234 +20382,234 @@
     indulge~1v 
     satisfy~2v 
  grossly ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    grossly~1bz in a gross manner
+    grossly~1z in a gross manner
  gravely ( meanings=2 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    severely~1b 
-    staidly~1bz in a grave and sober manner
+    severely~1z 
+    staidly~1z in a grave and sober manner
  good_and ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    good_and~1bz 
+    good_and~1z 
  genuinely ( meanings=2 ADVERB COMMON4 posdefault:ADVERB ) 
-    truly~1b 
-    authentically~1b 
+    truly~1z 
+    authentically~1z 
  gayly ( meanings=2 ADVERB COMMON2 ) 
-    happily~2b 
-    gayly~2bz 
+    happily~2z 
+    gayly~2z 
  greatly ( meanings=1 glosses=1 ADVERB COMMON4 COMMON1 KINDERGARTEN posdefault:ADVERB ) 
-    greatly~1bz to an extraordinary extent or degree
+    greatly~1z to an extraordinary extent or degree
  giddily ( meanings=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    light-headedly~1b 
+    light-headedly~1z 
  geometrically ( meanings=2 glosses=2 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    geometrically~1bz in a geometric fashion
-    geometrically~2bz with respect to geometry
+    geometrically~1z in a geometric fashion
+    geometrically~2z with respect to geometry
  girlishly ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    girlishly~1bz like a girl
+    girlishly~1z like a girl
  gradually ( meanings=1 glosses=1 ADVERB COMMON4 KINDERGARTEN posdefault:ADVERB ) 
-    step_by_step~1bz in a gradual manner
+    step_by_step~1z in a gradual manner
  grimly ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    grimly~1bz in a grim implacable manner
+    grimly~1z in a grim implacable manner
  genetically ( meanings=1 glosses=1 ADVERB COMMON4 posdefault:ADVERB ) 
-    genetically~1bz by genetic mechanisms
+    genetically~1z by genetic mechanisms
  graphically ( meanings=3 glosses=2 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    graphically~1bz in a graphic way
-    graphically~2bz with respect to graphic aspects
-    diagrammatically~1b 
+    graphically~1z in a graphic way
+    graphically~2z with respect to graphic aspects
+    diagrammatically~1z 
  geothermally ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    geothermally~1bz by means of heat from the interior of the earth
+    geothermally~1z by means of heat from the interior of the earth
  globally ( meanings=1 glosses=1 ADVERB COMMON4 posdefault:ADVERB ) 
-    globally~1bz throughout the world
+    globally~1z throughout the world
  governmentally ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    governmentally~1bz by government
+    governmentally~1z by government
  glacially ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    glacially~1bz by a glacier
+    glacially~1z by a glacier
  glaringly ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    glaringly~1bz in a glaring manner
+    glaringly~1z in a glaring manner
  gravitationally ( meanings=2 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    gravitationally~1bz with respect to gravitation
-    gravitationally~2bz 
+    gravitationally~1z with respect to gravitation
+    gravitationally~2z 
  gutturally ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    gutturally~1bz in a guttural manner
+    gutturally~1z in a guttural manner
  gaily ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    gaily~1bz in a gay manner
+    gaily~1z in a gay manner
  gracefully ( meanings=2 glosses=2 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    gracefully~1bz in a graceful manner
-    graciously~1bz in a gracious or graceful manner
+    gracefully~1z in a graceful manner
+    graciously~1z in a gracious or graceful manner
  gracelessly ( meanings=2 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    gracelessly~1bz in a graceless manner
-    ungraciously~1b 
+    gracelessly~1z in a graceless manner
+    ungraciously~1z 
  gently ( meanings=3 glosses=1 ADVERB COMMON4 posdefault:ADVERB ) 
-    softly~2b 
-    gently~2bz in a gradual manner
-    mildly~2b 
+    softly~2z 
+    gently~2z in a gradual manner
+    mildly~2z 
  gratifyingly ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    satisfyingly~1bz in a gratifying manner
+    satisfyingly~1z in a gratifying manner
  God_knows_how ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    God_knows_how~1bz 
+    God_knows_how~1z 
  graciously ( meanings=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    gracefully~2b 
+    gracefully~2z 
  generously ( meanings=1 ADVERB COMMON4 posdefault:ADVERB ) 
-    liberally~1b 
+    liberally~1z 
  gratefully ( meanings=2 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    thankfully~2b 
-    appreciatively~1b 
+    thankfully~2z 
+    appreciatively~1z 
  genially ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    affably~1bz in an affable manner
+    affably~1z in an affable manner
  geographically ( meanings=1 glosses=1 ADVERB COMMON4 posdefault:ADVERB ) 
-    geographically~1bz with respect to geography
+    geographically~1z with respect to geography
  gloomily ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    gloomily~1bz with gloom
+    gloomily~1z with gloom
  glibly ( meanings=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    slickly~1b 
+    slickly~1z 
  glumly ( meanings=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    dourly~1b 
+    dourly~1z 
  greenly ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    greenly~1bz with green color
+    greenly~1z with green color
  give_or_take ( meanings=2 glosses=1 ADVERB PREPOSITION ) 
-    give_or_take~1bz plus or minus a small amount
+    give_or_take~1z plus or minus a small amount
     give_or_take~2z 
  grandiosely ( meanings=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    bombastically~1b 
+    bombastically~1z 
  greedily ( meanings=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    covetously~1b 
+    covetously~1z 
  gallantly ( meanings=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    chivalrously~1b 
+    chivalrously~1z 
  guardedly ( meanings=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    cautiously~2b 
+    cautiously~2z 
  grouchily ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    grumpily~1bz in an ill-natured manner
+    grumpily~1z in an ill-natured manner
  grumpily ( meanings=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    crossly~1b 
+    crossly~1z 
  gainfully ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    gainfully~1bz in a gainful way
+    gainfully~1z in a gainful way
  gamely ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    gamely~1bz in a plucky manner
+    gamely~1z in a plucky manner
  garishly ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    gaudily~1bz in a tastelessly garish manner
+    gaudily~1z in a tastelessly garish manner
  gaudily ( meanings=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    tawdrily~1b 
+    tawdrily~1z 
  genealogically ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    genealogically~1bz in a genealogical manner
+    genealogically~1z in a genealogical manner
  generically ( meanings=2 glosses=2 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    generically~1bz as sharing a common genus
-    generically~2bz without a trademark or brand name
+    generically~1z as sharing a common genus
+    generically~2z without a trademark or brand name
  genteelly ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    genteelly~1bz in a genteel manner
+    genteelly~1z in a genteel manner
  geologically ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    geologically~1bz with respect to geology
+    geologically~1z with respect to geology
  gibingly ( meanings=1 ADVERB COMMON1 ) 
-    jeeringly~1b 
+    jeeringly~1z 
  gladly ( meanings=1 glosses=1 ADVERB COMMON4 posdefault:ADVERB ) 
-    lief~1bz in a willing manner
+    lief~1z in a willing manner
  gleefully ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    joyfully~1bz in a joyous and gleeful manner
+    joyfully~1z in a joyous and gleeful manner
  gloatingly ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    gloatingly~1bz in a gloating manner
+    gloatingly~1z in a gloating manner
  gloriously ( meanings=2 glosses=2 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    gloriously~1bz blessedly or wonderfully
-    gloriously~2bz with glory or in a glorious manner
+    gloriously~1z blessedly or wonderfully
+    gloriously~2z with glory or in a glorious manner
  glossily ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    glossily~1bz in a glossy manner
+    glossily~1z in a glossy manner
  gloweringly ( meanings=1 glosses=1 ADVERB COMMON1 ) 
-    gloweringly~1bz in a glowering manner
+    gloweringly~1z in a glowering manner
  glowingly ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    glowingly~1bz in an enthusiastically glowing manner
+    glowingly~1z in an enthusiastically glowing manner
  gluttonously ( meanings=1 glosses=1 ADVERB COMMON1 ) 
-    gluttonously~1bz in a gluttonous manner
+    gluttonously~1z in a gluttonous manner
  good-naturedly ( meanings=1 glosses=1 ADVERB posdefault:ADVERB ) 
-    good-naturedly~1bz in a good-natured manner
+    good-naturedly~1z in a good-natured manner
  gorgeously ( meanings=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    splendidly~2b 
+    splendidly~2z 
  grandly ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    grandly~1bz in a grand manner
+    grandly~1z in a grand manner
  gratingly ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    harshly~1bz in a harsh and grating manner
+    harshly~1z in a harsh and grating manner
  gratuitously ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    gratuitously~1bz in an uncalled-for manner
+    gratuitously~1z in an uncalled-for manner
  greasily ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    greasily~1bz in a greasy manner
+    greasily~1z in a greasy manner
  gregariously ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    sociably~1bz in a gregarious manner
+    sociably~1z in a gregarious manner
  grayly ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    greyly~1bz having a grey appearance
+    greyly~1z having a grey appearance
  greyly ( meanings=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    grayly~1b 
+    grayly~1z 
  grievously ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    grievously~1bz in a grievous manner
+    grievously~1z in a grievous manner
  gropingly ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    gropingly~1bz in an uncertain groping manner
+    gropingly~1z in an uncertain groping manner
  grotesquely ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    monstrously~1bz in a grotesque manner
+    monstrously~1z in a grotesque manner
  grudgingly ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    grudgingly~1bz in a grudging manner
+    grudgingly~1z in a grudging manner
  gruesomely ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    gruesomely~1bz in a gruesome manner
+    gruesomely~1z in a gruesome manner
  gruffly ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    gruffly~1bz in a gruff manner
+    gruffly~1z in a gruff manner
  guiltily ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    guiltily~1bz in the manner of someone who has committed an offense
+    guiltily~1z in the manner of someone who has committed an offense
  gushingly ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    gushingly~1bz in a gushing manner
+    gushingly~1z in a gushing manner
  garrulously ( meanings=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    loquaciously~1b 
+    loquaciously~1z 
  grandiloquently ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    magniloquently~1bz in a rhetorically grandiloquent manner
+    magniloquently~1z in a rhetorically grandiloquent manner
  gainlessly ( meanings=1 ADVERB COMMON1 ) 
-    profitlessly~1b 
+    profitlessly~1z 
  grammatically ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    grammatically~1bz in a grammatical manner
+    grammatically~1z in a grammatical manner
  grubbily ( meanings=1 glosses=1 ADVERB COMMON1 ) 
-    grungily~1bz in a dingy manner
+    grungily~1z in a dingy manner
  grungily ( meanings=1 ADVERB COMMON1 ) 
-    dingily~1b 
+    dingily~1z 
  gerontopsychiatrically ( meanings=2 ADVERB ) 
-    gerontopsychiatrically~1bz 
-    gerontopsychiatrically~2bz 
+    gerontopsychiatrically~1z 
+    gerontopsychiatrically~2z 
  geochemically ( meanings=2 ADVERB COMMON1 posdefault:ADVERB ) 
-    geochemically~1bz 
-    geochemically~2bz 
+    geochemically~1z 
+    geochemically~2z 
  glycosidically ( meanings=2 ADVERB COMMON1 ) 
-    glycosidically~1bz 
-    glycosidically~2bz 
+    glycosidically~1z 
+    glycosidically~2z 
  gastroduodenoscopically ( meanings=2 ADVERB ) 
-    gastroduodenoscopically~1bz 
-    gastroduodenoscopically~2bz 
+    gastroduodenoscopically~1z 
+    gastroduodenoscopically~2z 
  gustometrically ( meanings=2 ADVERB ) 
-    gustometrically~1bz 
-    gustometrically~2bz 
+    gustometrically~1z 
+    gustometrically~2z 
  gastroenterologically ( meanings=2 ADVERB ) 
-    gastroenterologically~1bz 
-    gastroenterologically~2bz 
+    gastroenterologically~1z 
+    gastroenterologically~2z 
  gonioscopically ( meanings=2 ADVERB ) 
-    gonioscopically~1bz 
-    gonioscopically~2bz 
+    gonioscopically~1z 
+    gonioscopically~2z 
  geomagnetically ( meanings=2 ADVERB COMMON1 ) 
-    geomagnetically~1bz 
-    geomagnetically~2bz 
+    geomagnetically~1z 
+    geomagnetically~2z 
  goniometrically ( meanings=2 ADVERB ) 
-    goniometrically~1bz 
-    goniometrically~2bz 
+    goniometrically~1z 
+    goniometrically~2z 
  glucometrically ( meanings=2 ADVERB ) 
-    glucometrically~1bz 
-    glucometrically~2bz 
+    glucometrically~1z 
+    glucometrically~2z 
  gastrographically ( meanings=2 ADVERB ) 
-    gastrographically~1bz 
-    gastrographically~2bz 
+    gastrographically~1z 
+    gastrographically~2z 
  genomically ( meanings=2 ADVERB COMMON1 ) 
-    genomically~1bz 
-    genomically~2bz 
+    genomically~1z 
+    genomically~2z 
  genotypically ( meanings=1 ADVERB posdefault:ADVERB ) 
-    genotypically~1bz 
+    genotypically~1z 
  gerontologically ( meanings=1 ADVERB ) 
-    gerontologically~1bz 
+    gerontologically~1z 
  gestationally ( meanings=1 ADVERB ) 
-    gestationally~1bz 
+    gestationally~1z 
  gesturally ( meanings=1 ADVERB posdefault:ADVERB ) 
-    gesturally~1bz 
+    gesturally~1z 
  gingivally ( meanings=1 ADVERB ) 
-    gingivally~1bz 
+    gingivally~1z 
  Grad. ( meanings=1 ADVERB ) 
-    Grad.~1bz 
+    Grad.~1z 
  gynecologically ( meanings=1 ADVERB ) 
-    gynecologically~1bz 
+    gynecologically~1z 
  glabellad ( meanings=1 PREPOSITION ) 
     glabellad~1z 
  give_forth ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB VERB_DIRECTOBJECT VERB_CONJUGATE1 ) 

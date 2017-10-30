@@ -7,6 +7,7 @@ Revision 1/28/2017 cs7.12
 * [Function Run-time Model](ChatScript-Engine-md#function-run-time-model)
 * [Script Execution](ChatScript-Engine-md#script-execution)
 * [Evaluation Contexts](ChatScript-Engine-md#evaluation-contexts)
+* [Rule Tags](ChatScript-Engine-md#rule-tags)
 * [Natural Language Pipeline](ChatScript-Engine-md#natural-language-pipeline)
 * [Private Code](ChatScript-Engine-md#private-code)
 * [Code Zones](ChatScript-Engine-md#code-zones)
@@ -35,7 +36,7 @@ Strings are allocated out of either the stack or the heap.
 
 ## Dictionary Entries
 
-The second fundamental datatype is the dictionary entry. A dictionary entry refers to a string and may
+The second fundamental datatype is the dictionary entry. A dictionary entry refers to a string and has
 have other data attached. Function names in the dictionary tell you how many arguments they require,
 where to go to execute their code. User variable names in the dictionary store a pointer to their value
 (in the stack or heap). Ordinary English words have bits describing their part-of-speech information
@@ -160,7 +161,7 @@ ChatScript support user variables, for considerations of efficiency and ease of 
 
 Many programs use malloc and free extensively upon demand. These functions are not particularly fast.
 And they lead to memory fragmentation, whereupon one might fail a malloc even though overall the
-space exists. ChatScript follows video game design principles and manages its own memory. It
+space exists. ChatScript follows video game design principles and manages its own memory (except for 3rd party extensions like duktape and curl). It
 allocates everything in advance and then (with rare exception) it never dynamically allocates memory
 again, so it should not fail by calling the OS for memory. And you have control over the allocations
 upon startup via command line parameters.
@@ -258,6 +259,17 @@ This predictability allows the system to avoid all the logic involved in knowing
 The other trick the script compiler uses is to put in characters indicating how far something extends. 
 This jump value is used for things like if statements to skip over failing segments of the if. 
 Actual script execution, be it output processing or pattern processing jumps via switch statements on the initial character of a token.
+
+# Rule Tags
+
+CS executes rules. While scripters can add their own label to a rule, all rules are automatically labelled internally by their position
+in a topic. The topic has a list of rules, numbered from 0 ... for top level rules. Top level rules can have rejoinders, which are 
+numbered from 1 ... The system creates a text rule tag like: ~books.12.0  which means in the topic books, the 13th top level rule, and at 
+the top level (not a rejoinder).  ~books.12.3 is the third rejoinder under top-level rule 12. Internally a rule id has the bottom 16 bits
+for top level id and the next 16 for the rejoinder id.
+
+Engine function arguments involving rules can accept either user labels or rule tags. While rule tags are completely unique, nothing
+prevents a user from labelling multiple rules in a topic with the same label, which is sometimes useful (eg in ^reuse for finding a rule not yet disabled or in ^incontext).
 
 # Evaluation Contexts
 
@@ -392,7 +404,8 @@ find pos values that make it so in a simple way, changing things if it discovers
 For foreign languages, the system has code that allows you to plug in as a script call things that could
 connect to web-api pos-taggers. It also can directly integrate with the TreeTagger pos-tagger if you
 obtain a commerical license for one or more languages from them. Parsing is not done by TreeTagger
-so while you know part-of-speech data, you don't know roles like mainsubject, mainverb, etc.
+so while you know part-of-speech data, you don't know roles like mainsubject, mainverb, etc. But some languages
+come with chunking, which you can also use to mark chunks as concepts.
 
 ## Ontology Marking
 
@@ -509,6 +522,15 @@ The system is divided into the code zones shown above. All code is in SRC.
 * `memory allocation` is `os`
 * `output eval` is `outputSystem`
 * `os access` is `os`
+
+* folders inside SRC are external systems included in CS, including:
+```
+* curl (web api handling)
+* duktape (javascript evalutation)
+* mongo (mongodb access)
+* postgres (postgres access)
+* evserver (LINUX fast server)
+```
 
 * Code to handle if and loop are in `constructCode`
 * Miscellaneous text processing abilities are in `textUtilities`.

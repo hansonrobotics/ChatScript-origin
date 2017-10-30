@@ -103,7 +103,7 @@ char* GetNounPhrase(int i,const char* avoid)
 		if (posValues[start] & COMMA && !(posValues[start-1] & ADJECTIVE_BITS)) break; // NOT like:  the big, red, tall human
 		if (posValues[start] & CONJUNCTION_COORDINATE)
 		{
-			if ( canonicalLower[start] && strcmp(canonicalLower[start]->word,(char*)"and")) break;	// not "and"
+			if ( canonicalLower[start] && strcmp(canonicalLower[start]->word,(char*)"and") && strcmp(canonicalLower[start]->word, (char*)"&")) break;	// not "and"
 			if (!(posValues[start-1] & (ADJECTIVE_BITS|COMMA))) break;	// NOT like:  the big, red, and very tall human
 			if (posValues[start-1] & COMMA && !(posValues[start-2] & ADJECTIVE_BITS)) break;	// NOT like:  the big, red, and very tall human
 		}

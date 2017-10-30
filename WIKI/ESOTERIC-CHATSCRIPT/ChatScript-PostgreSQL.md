@@ -41,6 +41,38 @@ Each user will get an entry in the userfiles table.
 If Postgres is not available, the CS server will quit. Hopefully you have an automatic restart cron job and
 it will be able to connect to Postgres the next time.
 
+### Update 2017-10-04
+
+You can now specify the name of the postgres db:
+```
+pguser="dbname = mydb host = 129.22.22.24 port = 5432 user = postgres password = somepassword "
+```
+
+If the dbname is specified, the postgres module will not try to create a new database or a userfiles table.
+If dbname is not specified, the postgres module will provide its original behavior.
+
+The postgres code uses the following parameter queries to read, insert, and update a user record:
+```
+-- read a user
+SELECT file FROM userfiles WHERE userid = $1::varchar ;
+-- insert a user
+INSERT INTO userfiles (file, userid) VALUES ($1::bytea, $2::varchar) ;
+-- update a user
+UPDATE userfiles SET file = $1::bytea WHERE userid = $2::varchar ;
+```
+
+You can override these queries to support alternate schemas.  However, the postgres module
+assumes that any sql used to override the default queries will use the same sequence of arguments.
+For example, assume you want to store user data in a table named 'randomusertable.' The following
+parameters can be used to override the default postgres SQL:
+```
+pguserread=SELECT userdata FROM randomusertable WHERE username=$1::varchar ;
+pguserinsert=INSERT INTO randomusertable (userdata,username) VALUES ($1::bytea, $2::varchar) ;
+pguserupdate=UPDATE randomusertable SET userdata = $1::bytea WHERE username = $2::varchar ;
+```
+
+Note that the default and override queries use the same arguments in the same order.
+
 
 ## Access A PostgreSQL Database
 

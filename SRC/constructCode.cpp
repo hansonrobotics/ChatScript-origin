@@ -310,11 +310,56 @@ char* HandleLoop(char* ptr, char* buffer, FunctionResult &result)
 	}
 	ChangeDepth(-1,"^Loop",true); // allows step out to cover a loop 
 	if (trace & TRACE_OUTPUT && CheckTopicTrace()) Log(STDTRACETABLOG,(char*)"end of loop\r\n");
-	if (counter < 0 && infinite) ReportBug("Loop ran to limit %d",limit);
+	if (counter < 0 && infinite) ReportBug("Loop ran to limit %d\r\n",limit);
 	--withinLoop;
 	currentIterator = oldIterator;
 	return endofloop;
 }  
+
+FunctionResult MemberRelation(WORDP set,char* val1)
+{
+	FunctionResult result = FAILRULE_BIT;
+	if (!set) return result;
+	if (strchr(val1, '_')) // try alternate form with no _
+	{
+		char* underscore = val1;
+		bool changed = false;
+		while ((underscore = strchr(underscore, '_')))
+		{
+			*underscore = ' ';
+			changed = true;
+		}
+		if (changed)
+		{
+			WORDP D1 = FindWord(val1);
+			if (D1)
+			{
+				NextInferMark();
+				if (SetContains(MakeMeaning(set), MakeMeaning(D1))) result = NOPROBLEM_BIT;
+			}
+		}
+	}
+	else if (strchr(val1, ' ')) // try alternate form with no space
+	{
+		char* underscore = val1;
+		bool changed = false;
+		while ((underscore = strchr(underscore, ' ')))
+		{
+			*underscore = '_';
+			changed = true;
+		}
+		if (changed)
+		{
+			WORDP D1 = FindWord(val1);
+			if (D1)
+			{
+				NextInferMark();
+				if (SetContains(MakeMeaning(set), MakeMeaning(D1))) result = NOPROBLEM_BIT;
+			}
+		}
+	}
+	return result;
+}
 
 FunctionResult HandleRelation(char* word1,char* op, char* word2,bool output,int& id, char* word1val, char* word2val)
 { //   word1 and word2 are RAW, ready to be evaluated.
@@ -346,21 +391,23 @@ FunctionResult HandleRelation(char* word1,char* op, char* word2,bool output,int&
 		{
 			unsigned int index = GetWildcardID(word1);
 			index = WILDCARD_START(wildcardPosition[index]);
-			D = FindWord(val2);
+			D = FindWord(val2); // as is
+			WORDP D2 = NULL;
 			if (index && D)
 			{
-				int junk;
-				if (GetNextSpot(D,index-1,junk,junk) == index) result = NOPROBLEM_BIT; // otherwise failed and we would have known
+				int start, end;
+				if (GetNextSpot(D,index-1,start,end) == index) result = NOPROBLEM_BIT; // otherwise failed and we would have known
 			}
 			char* was = wildcardOriginalText[GetWildcardID(word1)];
-			if (result == FAILRULE_BIT && (!index || strchr(was,'_') || strchr(was,' '))) // laborious match try now
+			if (result == FAILRULE_BIT && (!index || strchr(was, '_') || strchr(was, ' '))) // laborious match try now
 			{
-				D1 = FindWord(val1);
+				D1 = FindWord(val1); // original word
 				if (D1 && D)
 				{
 					NextInferMark();
-					if (SetContains(MakeMeaning(D),MakeMeaning(D1))) result = NOPROBLEM_BIT;
+					if (SetContains(MakeMeaning(D), MakeMeaning(D1))) result = NOPROBLEM_BIT;
 				}
+				if (result != NOPROBLEM_BIT && index) result = MemberRelation(D, val1); // try alternate form with no _
 			}
 			if (*op == '!') result = (result != NOPROBLEM_BIT) ? NOPROBLEM_BIT : FAILRULE_BIT;
 		}
@@ -390,42 +437,23 @@ FunctionResult HandleRelation(char* word1,char* op, char* word2,bool output,int&
 				NextInferMark();
 				if (SetContains(MakeMeaning(D2),MakeMeaning(D1))) result = NOPROBLEM_BIT;
 			}
-			if (result != NOPROBLEM_BIT)
-			{
-				char* verb = GetInfinitive(val1,true);
-				if (verb && stricmp(verb,val1))
-				{
-					D1 = FindWord(verb);
-					if (D1 && D2)
-					{
-						NextInferMark();
-						if (SetContains(MakeMeaning(D2),MakeMeaning(D1))) result = NOPROBLEM_BIT;
-					}
-				}
-			}
-			if (result != NOPROBLEM_BIT)
-			{
-				char* noun = GetSingularNoun(val1,true,true);
-				if (noun && stricmp(noun,val1))
-				{
-					D1 = FindWord(noun);
-					if (D1 && D2)
-					{
-						NextInferMark();
-						if (SetContains(MakeMeaning(D2),MakeMeaning(D1))) result = NOPROBLEM_BIT;
-					}
-				}
-			}
+			if (result != NOPROBLEM_BIT) result = MemberRelation(D2, val1);
 			if (*op == '!') result = (result != NOPROBLEM_BIT) ? NOPROBLEM_BIT : FAILRULE_BIT;
 		}
 	}
 	else //   boolean tests
 	{
 		// convert null to numeric operator for < or >  -- but not for equality
-		if (!*val1 && IsDigit(*val2) && IsNumber(val2) && (*op == '<' || *op == '>')) strcpy(val1,(char*)"0");
-		else if (!*val2 && IsDigit(*val1) && IsNumber(val1) && (*op == '<' || *op == '>')) strcpy(val2,(char*)"0");
+		if (!*val1 && IsDigit(*val2) && IsNumber(val2) != NOT_A_NUMBER && (*op == '<' || *op == '>')) strcpy(val1,(char*)"0");
+		else if (!*val2 && IsDigit(*val1) && IsNumber(val1) != NOT_A_NUMBER  && (*op == '<' || *op == '>')) strcpy(val2,(char*)"0");
 		// treat #123 as string but +21545 and -12345 as numbers
-		if (*val1 == '#' || !IsDigitWord(val1,true) || *val2 == '#' ||  !IsDigitWord(val2,true)) //   non-numeric string compare - bug, can be confused if digit starts text string
+
+		char* currency1;
+		char* currency2;
+		unsigned char* cur1 = GetCurrency((unsigned char*) val1, currency1);
+		unsigned char* cur2 = GetCurrency((unsigned char*) val2, currency2); // use text string comparison though isdigitword calls it a number
+
+		if (*val1 == '#' || !IsDigitWord(val1,numberStyle,true) || *val2 == '#' ||  !IsDigitWord(val2,numberStyle,true) || cur1 || cur2) //   non-numeric string compare - bug, can be confused if digit starts text string
 		{
 			char* arg1 = val1;
 			char* arg2 = val2;

@@ -1,6 +1,6 @@
 # ChatScript System Variables and Engine-defined Concepts
 © Bruce Wilcox, gowilcox@gmail.com www.brilligunderstanding.com
-<br>Revision 6/25/2017 cs7.51
+<br>Revision 10/22/2017 cs7.6
 
 
 * [Engine-defined Concepts](ChatScript-System-Variables-and-Engine-defined-Concepts.md#engine-defined-concepts)
@@ -244,6 +244,8 @@ include:
 | `~clause`              | a subordinate clause start 
 | `~verbal`              | a verb phrase
 
+and special concepts:
+| `~capacronym`           | word is in all caps (and &) and is likely an acronym
 
 # System Variables
 

@@ -638,8 +638,8 @@
     clandestine~1a 
     belowground~2az under the level of the ground
     underground~5az 
-    underground~6bz beneath the surface of the earth
-    underground~7bz in or into hiding or secret operation
+    underground~6z beneath the surface of the earth
+    underground~7z in or into hiding or secret operation
  United_States_National_Library_of_Medicine ( meanings=1 glosses=1 NOUN NOUN_PROPER_SINGULAR ) 
     U.S._National_Library_of_Medicine~1nz (^library~3) the world's largest medical library
  U.S._National_Library_of_Medicine ( meanings=1 NOUN NOUN_PROPER_SINGULAR ) 
@@ -829,15 +829,15 @@
     upstage~1nz (^part~3) the rear part of the stage
     distant~5a 
     upstage~3az of the back half of a stage
-    upstage~4bz at or toward the rear of the stage
+    upstage~4z at or toward the rear of the stage
     upstage~5vz steal the show, draw attention to oneself away from someone else
     upstage~6vz move upstage, forcing the other actors to turn away from the audience
     upstage~7vz treat snobbishly, put in one's place
  upstairs ( meanings=4 glosses=4 NOUN ADJECTIVE ADVERB ADJECTIVE_NORMAL NOUN_SINGULAR ADJECTIVE_NOT_PREDICATE COMMON4 KINDERGARTEN ADJECTIVE_POSTPOSITIVE ) 
     upstairs~1nz (^part~3) the part of a building above the ground floor
     upstair~1az on or of upper floors of a building
-    on_a_higher_floor~1bz on a floor above
-    upstairs~4bz with respect to the mind
+    on_a_higher_floor~1z on a floor above
+    upstairs~4z with respect to the mind
  urceole ( meanings=1 glosses=1 NOUN NOUN_SINGULAR COMMON1 ) 
     urceole~1nz (^vessel~2) a vessel that holds water for washing the hands
  urinal ( meanings=1 glosses=1 NOUN NOUN_SINGULAR COMMON2 COMMON1 posdefault:NOUN ) 
@@ -2067,7 +2067,7 @@
  uptown ( meanings=3 glosses=3 NOUN ADJECTIVE ADVERB ADJECTIVE_NORMAL NOUN_SINGULAR ADJECTIVE_NOT_PREDICATE COMMON2 COMMON1 KINDERGARTEN posdefault:ADVERB ) 
     uptown~1nz (^community~4) a residential part of town away from the central commercial district
     uptown~2az of or located in the upper part of a town
-    uptown~3bz toward or in the upper part of town
+    uptown~3z toward or in the upper part of town
  upper_limit ( meanings=2 glosses=1 NOUN NOUN_SINGULAR ) 
     upper_limit~1nz (^limit~2) the limit on the upper side of something
     maximum~3n 
@@ -2192,8 +2192,8 @@
  uphill ( meanings=4 glosses=4 NOUN ADJECTIVE ADVERB ADJECTIVE_NORMAL NOUN_SINGULAR ADJECTIVE_NOT_PREDICATE COMMON2 COMMON1 KINDERGARTEN posdefault:ADJECTIVE posdefault:ADVERB ) 
     uphill~1nz (^raise~4) the upward slope of a hill
     acclivitous~1az sloping upward
-    uphill~3bz upward on a hill or incline
-    uphill~4bz against difficulties
+    uphill~3z upward on a hill or incline
+    uphill~4z against difficulties
  upper_mantle ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
     upper_mantle~1nz (^layer~5) the upper part of the mantle
  Upper_Peninsula ( meanings=1 glosses=1 NOUN NOUN_PROPER_SINGULAR ) 
@@ -2209,11 +2209,11 @@
     upward~1az extending or moving toward a higher place
     improving~1az getting higher or more vigorous
     up~8az being or moving higher in position or greater in some value
-    upwardly~1bz spatially or metaphorically from a lower to a higher position
-    upwards~2bz to a later time
-    up~11bz to a more central or a more northerly place
-    up~12bz nearer to the speaker
-    up~13bz to a higher intensity
+    upwardly~1z spatially or metaphorically from a lower to a higher position
+    upwards~2z to a later time
+    up~11z to a more central or a more northerly place
+    up~12z nearer to the speaker
+    up~13z to a higher intensity
     up~14z 
     up~15vz raise
  Urals ( meanings=1 NOUN NOUN_PROPER_SINGULAR ) 
@@ -3671,7 +3671,7 @@
  unmanly ( meanings=3 ADJECTIVE ADVERB ADJECTIVE_NORMAL COMMON2 posdefault:ADJECTIVE ) 
     poor-spirited~1a 
     unmanful~1a 
-    unmanfully~1b 
+    unmanfully~1z 
  uncrystallized ( meanings=2 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON1 posdefault:ADJECTIVE ) 
     uncrystallised~1az without real or apparent crystalline form
     uncrystallised~2az not finally or definitely formed
@@ -3921,7 +3921,7 @@
     thoughtless~1a 
     unreflective~1a 
     unthinking~4az 
-    thoughtlessly~2b 
+    thoughtlessly~2z 
  uncousinly ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON1 ) 
     uncousinly~1az not befitting a cousin
  underdressed ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 ) 
@@ -4617,14 +4617,14 @@
  under ( meanings=11 glosses=10 PARTICLE ADJECTIVE ADVERB PREPOSITION ADJECTIVE_NORMAL EXTENT_ADVERB ADJECTIVE_NOT_PREDICATE COMMON4 COMMON2 COMMON1 KINDERGARTEN posdefault:ADVERB posdefault:PREPOSITION DISTANCE_ADVERB ) 
     under~1az lower in rank, power, or authority
     nether~1az located below or beneath something else
-    below~5bz further down
-    under~4bz down below
-    under~5bz below the horizon
-    under~6bz below some quantity or limit
-    under~7bz in or into a state of subordination or subjugation
-    under~8bz down to defeat, death, or ruin
-    under~9bz into unconsciousness
-    under~10bz through a range downward
+    below~5z further down
+    under~4z down below
+    under~5z below the horizon
+    under~6z below some quantity or limit
+    under~7z in or into a state of subordination or subjugation
+    under~8z down to defeat, death, or ruin
+    under~9z into unconsciousness
+    under~10z through a range downward
     under~11z 
  undramatic ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:ADJECTIVE ) 
     undramatic~1az lacking dramatic force and quality
@@ -4655,7 +4655,7 @@
     premature~1a 
     wrong~8a 
     untimely~3az 
-    prematurely~1b 
+    prematurely~1z 
  uneatable ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON1 posdefault:ADJECTIVE ) 
     inedible~1az not suitable for food
  unlearned ( meanings=3 glosses=1 VERB_PAST VERB_PAST_PARTICIPLE VERB ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:ADJECTIVE ) conjugate=unlearnt 
@@ -5301,7 +5301,7 @@
     unrecognisable~1az defying recognition as e.g. because of damage or alteration
  unrecognisable ( meanings=2 glosses=1 ADJECTIVE ADVERB ADJECTIVE_NORMAL COMMON2 posdefault:ADJECTIVE ) 
     unrecognizable~1a 
-    unrecognizably~1bz beyond recognition
+    unrecognizably~1z beyond recognition
  unimpaired ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
     unimpaired~1az not damaged or diminished in any respect
  unimportant ( meanings=3 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
@@ -5437,7 +5437,7 @@
     undesigned~1az not done or made or performed with purpose or intent
  ultra_vires ( meanings=2 glosses=2 ADJECTIVE ADVERB ADJECTIVE_NORMAL ADJECTIVE_NOT_PREDICATE posdefault:ADJECTIVE posdefault:ADVERB ) 
     ultra_vires~1az beyond the legal power or authority of a person or official or body etc
-    ultra_vires~2bz beyond the scope or in excess of legal power or authority
+    ultra_vires~2z beyond the scope or in excess of legal power or authority
  ultra ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:ADVERB ) 
     radical~8a 
  unintrusive ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:ADJECTIVE ) 
@@ -5470,7 +5470,7 @@
     undeserved~1az not deserved or earned
  unkindly ( meanings=2 glosses=1 ADJECTIVE ADVERB ADJECTIVE_NORMAL ADJECTIVE_NOT_PREDICATE COMMON2 posdefault:ADVERB ) 
     unsympathetic~2a 
-    unkindly~2bz in an unkind manner or with unkindness
+    unkindly~2z in an unkind manner or with unkindness
  unknowable ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
     unknowable~1az not knowable
  uncharted ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
@@ -5479,10 +5479,10 @@
     uncharted~1a 
  unbeknown ( meanings=2 ADJECTIVE ADVERB ADJECTIVE_NORMAL ADJECTIVE_ONLY_PREDICATE ADJECTIVE_NOT_PREDICATE COMMON2 posdefault:ADVERB ) 
     unbeknownst~1a 
-    unbeknownst~2b 
+    unbeknownst~2z 
  unbeknownst ( meanings=2 glosses=2 ADJECTIVE ADVERB ADJECTIVE_NORMAL ADJECTIVE_ONLY_PREDICATE ADJECTIVE_NOT_PREDICATE COMMON2 COMMON1 posdefault:ADVERB ) 
     unbeknown~1az occurring or existing without the knowledge of
-    unbeknown~2bz without someone's knowledge
+    unbeknown~2z without someone's knowledge
  undiagnosed ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
     undiagnosed~1az eluding diagnosis
  undiscovered ( meanings=2 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
@@ -5522,8 +5522,8 @@
     unleavened~1a 
  upwind ( meanings=3 ADJECTIVE ADVERB ADJECTIVE_NORMAL ADJECTIVE_NOT_PREDICATE COMMON2 COMMON1 ) 
     weather~2a 
-    against_the_wind~1b 
-    leeward~4b 
+    against_the_wind~1z 
+    leeward~4z 
  under-the-counter ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL posdefault:ADJECTIVE ) 
     under-the-counter~1az done or sold illicitly and secretly
  unratified ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:ADJECTIVE ) 
@@ -6537,7 +6537,7 @@
     unaccompanied~1az taking place without something specified occurring at the same time
     unaccompanied~2az being without an escort
     unaccompanied~3az playing or singing without accompaniment
-    solo~5b 
+    solo~5z 
  unsanitary ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
     unhealthful~2a 
     unsanitary~2az 
@@ -6740,8 +6740,8 @@
  underhand ( meanings=4 glosses=1 ADJECTIVE ADVERB ADJECTIVE_NORMAL ADJECTIVE_NOT_PREDICATE COMMON2 posdefault:ADJECTIVE posdefault:ADVERB ) 
     underhanded~1a 
     underhanded~2a 
-    underarm~2bz with the hand swung below shoulder level
-    underhandedly~1b 
+    underarm~2z with the hand swung below shoulder level
+    underhandedly~1z 
  underhanded ( meanings=3 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:ADJECTIVE ) 
     sneaky~2az marked by deception
     underarm~1az with hand brought forward and up from below shoulder level
@@ -6928,8 +6928,8 @@
     atonal~1az characterized by avoidance of traditional western tonality
  uppermost ( meanings=3 glosses=3 ADJECTIVE ADVERB ADJECTIVE_NORMAL ADJECTIVE_NOT_PREDICATE COMMON2 COMMON1 posdefault:ADJECTIVE posdefault:ADVERB ) 
     upmost~1az at or nearest to the top
-    uppermost~2bz in or into the highest position
-    uppermost~3bz in or into the most prominent position, as in the mind
+    uppermost~2z in or into the highest position
+    uppermost~3z in or into the most prominent position, as in the mind
  upmost ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:ADJECTIVE ) 
     topmost~1a 
  unchewable ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON1 posdefault:ADJECTIVE ) 
@@ -6977,7 +6977,7 @@
     unrepresentative~1az not exemplifying a class
  underarm ( meanings=2 ADJECTIVE ADVERB ADJECTIVE_NORMAL ADJECTIVE_NOT_PREDICATE COMMON2 COMMON1 posdefault:ADJECTIVE posdefault:ADVERB ) 
     underhand~2a 
-    underhand~3b 
+    underhand~3z 
  undersea ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 ) 
     submarine~3a 
  uniparous ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON1 ) 
@@ -6989,8 +6989,8 @@
  upward ( meanings=4 glosses=1 ADJECTIVE ADVERB ADJECTIVE_NORMAL ADJECTIVE_NOT_PREDICATE COMMON4 posdefault:ADJECTIVE ) 
     up~6a 
     upward~2az directed up
-    up~9b 
-    up~10b 
+    up~9z 
+    up~10z 
  upmarket ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
     upmarket~1az designed for consumers with high incomes
  upscale ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON4 ) 
@@ -7009,7 +7009,7 @@
     upstairs~2a 
  upstream ( meanings=2 glosses=2 ADJECTIVE ADVERB ADJECTIVE_NORMAL ADJECTIVE_NOT_PREDICATE COMMON4 posdefault:ADVERB ) 
     upstream~1az in the direction against a stream's current
-    upriver~1bz toward the source or against the current
+    upriver~1z toward the source or against the current
  utilized ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:VERB ) 
     utilised~1az put to use
  utilised ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:VERB ) 
@@ -7936,583 +7936,583 @@
  unsettle ( meanings=1 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 posdefault:VERB VERB_DIRECTOBJECT COMMON_PARTICIPLE_VERB ) 
     enervate~2vz disturb the composure of
  unabashedly ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    unabashedly~1bz in an unabashed manner
+    unabashedly~1z in an unabashed manner
  ultrasonically ( meanings=2 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    ultrasonically~1bz by ultrasonic means
-    ultrasonically~2bz 
+    ultrasonically~1z by ultrasonic means
+    ultrasonically~2z 
  utterly ( meanings=1 ADVERB COMMON4 posdefault:ADVERB ) 
-    perfectly~1b 
+    perfectly~1z 
  unsatisfactorily ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    unsatisfactorily~1bz in an unsatisfactory manner
+    unsatisfactorily~1z in an unsatisfactory manner
  unconventionally ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    unconventionally~1bz in an unconventional manner
+    unconventionally~1z in an unconventional manner
  up_to_now ( meanings=2 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    thus_far~1b 
-    to_date~1bz 
+    thus_far~1z 
+    to_date~1z 
  until_now ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    til_now~1b 
+    til_now~1z 
  unreasonably ( meanings=2 glosses=2 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    immoderately~1bz to a degree that exceeds the bounds or reason or moderation
-    unreasonably~2bz not in a reasonable or intelligent manner
+    immoderately~1z to a degree that exceeds the bounds or reason or moderation
+    unreasonably~2z not in a reasonable or intelligent manner
  unquestionably ( meanings=2 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    definitely~1b 
-    unimpeachably~1bz without question
+    definitely~1z 
+    unimpeachably~1z without question
  unnaturally ( meanings=4 glosses=2 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    unnaturally~1bz in a manner at variance with what is natural or normal
-    artificially~1b 
-    unnaturally~3bz in an unnatural way
-    unnaturally~4bz 
+    unnaturally~1z in a manner at variance with what is natural or normal
+    artificially~1z 
+    unnaturally~3z in an unnatural way
+    unnaturally~4z 
  unclearly ( meanings=2 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    unclearly~1bz in a manner that is unclear
-    unclearly~2bz 
+    unclearly~1z in a manner that is unclear
+    unclearly~2z 
  unexpectedly ( meanings=2 ADVERB COMMON4 posdefault:ADVERB ) 
-    circumstantially~1b 
-    out_of_the_blue~2b 
+    circumstantially~1z 
+    out_of_the_blue~2z 
  unhappily ( meanings=2 glosses=2 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    sadly~1bz in an unfortunate way
-    unhappily~2bz in an unpleasant way
+    sadly~1z in an unfortunate way
+    unhappily~2z in an unpleasant way
  unfortunately ( meanings=1 glosses=1 ADVERB COMMON4 posdefault:ADVERB ) 
-    alas~1bz by bad luck
+    alas~1z by bad luck
  unluckily ( meanings=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    unfortunately~1b 
+    unfortunately~1z 
  ultimately ( meanings=1 ADVERB COMMON4 posdefault:ADVERB ) 
-    finally~1b 
+    finally~1z 
  unwaveringly ( meanings=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    steadfastly~1b 
+    steadfastly~1z 
  unacceptably ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    intolerably~1bz to an unacceptable degree
+    intolerably~1z to an unacceptable degree
  unintentionally ( meanings=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    accidentally~2b 
+    accidentally~2z 
  urgently ( meanings=1 ADVERB COMMON4 posdefault:ADVERB ) 
-    desperately~1b 
+    desperately~1z 
  up_and_down ( meanings=3 ADVERB PREPOSITION CONDITIONAL_IDIOM  poscondition=?[NPAd]=p?=R ) 
-    up_and_down~1bz 
-    up_and_down~2bz 
+    up_and_down~1z 
+    up_and_down~2z 
     up_and_down~3z 
  undoubtedly ( meanings=1 glosses=1 ADVERB COMMON4 posdefault:ADVERB ) 
-    doubtlessly~1bz without doubt
+    doubtlessly~1z without doubt
  unconditionally ( meanings=2 glosses=2 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    flatly~1bz in an unqualified manner
-    unconditionally~2bz not subject to a condition
+    flatly~1z in an unqualified manner
+    unconditionally~2z not subject to a condition
  up_the_stairs ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    upstairs~3b 
+    upstairs~3z 
  upwards ( meanings=2 ADVERB COMMON4 posdefault:ADVERB ) 
-    upward~3b 
-    upward~4b 
+    upward~3z 
+    upward~4z 
  upwardly ( meanings=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    upwards~1b 
+    upwards~1z 
  upriver ( meanings=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    upstream~2b 
+    upstream~2z 
  unanimously ( meanings=1 ADVERB COMMON4 posdefault:ADVERB ) 
-    nem_con~1b 
+    nem_con~1z 
  usually ( meanings=1 glosses=1 ADVERB COMMON4 COMMON1 KINDERGARTEN posdefault:ADVERB ) 
-    ordinarily~1bz under normal conditions
+    ordinarily~1z under normal conditions
  unremarkably ( meanings=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    normally~1b 
+    normally~1z 
  unusually ( meanings=1 ADVERB COMMON4 posdefault:ADVERB ) 
-    remarkably~1b 
+    remarkably~1z 
  unco ( meanings=1 ADVERB COMMON2 ) 
-    unusually~1b 
+    unusually~1z 
  unpredictably ( meanings=2 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    erratically~1bz in an erratic unpredictable manner
-    unpredictably~2bz 
+    erratically~1z in an erratic unpredictable manner
+    unpredictably~2z 
  unscientifically ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    unscientifically~1bz in an unscientific way
+    unscientifically~1z in an unscientific way
  unfailingly ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    unfailingly~1bz without fail
+    unfailingly~1z without fail
  unofficially ( meanings=2 glosses=2 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    unofficially~1bz not in an official capacity
-    on_the_side~1bz without official authorization
+    unofficially~1z not in an official capacity
+    on_the_side~1z without official authorization
  unitedly ( meanings=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    together~3b 
+    together~3z 
  unsystematically ( meanings=2 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    unsystematically~1bz in an unsystematic manner
-    unsystematically~2bz 
+    unsystematically~1z in an unsystematic manner
+    unsystematically~2z 
  unconstitutionally ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    unconstitutionally~1bz in an unconstitutional manner
+    unconstitutionally~1z in an unconstitutional manner
  undemocratically ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    undemocratically~1bz in an undemocratic manner
+    undemocratically~1z in an undemocratic manner
  untypically ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    atypically~1bz in a manner that is not typical
+    atypically~1z in a manner that is not typical
  undramatically ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    undramatically~1bz in an undramatic manner
+    undramatically~1z in an undramatic manner
  unsuitably ( meanings=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    inappropriately~1b 
+    inappropriately~1z 
  unhesitatingly ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    unhesitatingly~1bz without hesitation
+    unhesitatingly~1z without hesitation
  unmindfully ( meanings=1 glosses=1 ADVERB COMMON1 ) 
-    unmindfully~1bz in a careless and thoughtless manner
+    unmindfully~1z in a careless and thoughtless manner
  unoriginally ( meanings=1 glosses=1 ADVERB COMMON1 ) 
-    unoriginally~1bz in an unoriginal manner
+    unoriginally~1z in an unoriginal manner
  uncomfortably ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    uncomfortably~1bz in physical discomfort
+    uncomfortably~1z in physical discomfort
  unsuccessfully ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    unsuccessfully~1bz without success
+    unsuccessfully~1z without success
  under_the_circumstances ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    under_the_circumstances~1bz 
+    under_the_circumstances~1z 
  upstate ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    upstate~1bz in or toward the northern parts of a state
+    upstate~1z in or toward the northern parts of a state
  unsteadily ( meanings=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    falteringly~1b 
+    falteringly~1z 
  uncertainly ( meanings=2 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    unsteadily~1b 
-    uncertainly~2bz showing lack of certainty
+    unsteadily~1z 
+    uncertainly~2z showing lack of certainty
  uniquely ( meanings=1 ADVERB COMMON4 posdefault:ADVERB ) 
-    unambiguously~1b 
+    unambiguously~1z 
  unambiguously ( meanings=2 glosses=2 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    uniquely~1bz so as to be unique
-    unequivocally~1bz in an unambiguous manner
+    uniquely~1z so as to be unique
+    unequivocally~1z in an unambiguous manner
  unsymmetrically ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    asymmetrically~1bz in an asymmetrical manner
+    asymmetrically~1z in an asymmetrical manner
  unnecessarily ( meanings=2 glosses=2 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    unnecessarily~1bz without any necessity
-    unnecessarily~2bz in an unnecessary manner
+    unnecessarily~1z without any necessity
+    unnecessarily~2z in an unnecessary manner
  uproariously ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    hilariously~1bz in a hilarious manner
+    hilariously~1z in a hilarious manner
  unhelpfully ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    unhelpfully~1bz in an unhelpful manner
+    unhelpfully~1z in an unhelpful manner
  uncritically ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    uncritically~1bz in an uncritical manner
+    uncritically~1z in an uncritical manner
  unemotionally ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    unemotionally~1bz in an unemotional manner
+    unemotionally~1z in an unemotional manner
  uneasily ( meanings=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    apprehensively~1b 
+    apprehensively~1z 
  unenthusiastically ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    unenthusiastically~1bz without enthusiasm
+    unenthusiastically~1z without enthusiasm
  unsympathetically ( meanings=2 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    unsympathetically~1bz without sympathy
-    unsympathetically~2bz 
+    unsympathetically~1z without sympathy
+    unsympathetically~2z 
  unconvincingly ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    unconvincingly~1bz in an unconvincing manner
+    unconvincingly~1z in an unconvincing manner
  ungraciously ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    woodenly~1bz without grace
+    woodenly~1z without grace
  ungracefully ( meanings=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    gracelessly~2b 
+    gracelessly~2z 
  universally ( meanings=1 glosses=1 ADVERB COMMON4 posdefault:ADVERB ) 
-    universally~1bz everywhere
+    universally~1z everywhere
  unwisely ( meanings=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    foolishly~1b 
+    foolishly~1z 
  unintelligently ( meanings=1 glosses=1 ADVERB COMMON1 ) 
-    unintelligently~1bz in an unintelligent manner
+    unintelligently~1z in an unintelligent manner
  understandably ( meanings=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    intelligibly~1b 
+    intelligibly~1z 
  unintelligibly ( meanings=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    ununderstandably~1b 
+    ununderstandably~1z 
  ununderstandably ( meanings=1 glosses=1 ADVERB COMMON1 ) 
-    unintelligibly~1bz in an unintelligible manner
+    unintelligibly~1z in an unintelligible manner
  undiplomatically ( meanings=1 glosses=1 ADVERB COMMON1 ) 
-    undiplomatically~1bz without diplomacy
+    undiplomatically~1z without diplomacy
  unjustly ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    unjustly~1bz in an unjust manner
+    unjustly~1z in an unjust manner
  unhurriedly ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    unhurriedly~1bz without haste
+    unhurriedly~1z without haste
  unavoidably ( meanings=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    ineluctably~1b 
+    ineluctably~1z 
  unable_to_help ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    helplessly~1bz 
+    helplessly~1z 
  unimaginatively ( meanings=2 glosses=2 ADVERB COMMON1 posdefault:ADVERB ) 
-    unimaginatively~1bz without imagination
-    prosaically~1bz in a matter-of-fact manner
+    unimaginatively~1z without imagination
+    prosaically~1z in a matter-of-fact manner
  unashamedly ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    barefacedly~1bz without shame
+    barefacedly~1z without shame
  understandingly ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    understandingly~1bz with understanding
+    understandingly~1z with understanding
  unmistakably ( meanings=2 glosses=2 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    unmistakably~1bz without possibility of mistake
-    signally~1bz in a signal manner
+    unmistakably~1z without possibility of mistake
+    signally~1z in a signal manner
  unfalteringly ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    unshakably~1bz with determination
+    unshakably~1z with determination
  unshakably ( meanings=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    determinedly~1b 
+    determinedly~1z 
  unimpressively ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    unimpressively~1bz in an unimpressive manner
+    unimpressively~1z in an unimpressive manner
  unproductively ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    unprofitably~1bz in an unproductive manner
+    unprofitably~1z in an unproductive manner
  unprofitably ( meanings=2 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    fruitlessly~1b 
-    gainlessly~1bz without gain or profit
+    fruitlessly~1z 
+    gainlessly~1z without gain or profit
  uninterestingly ( meanings=1 glosses=1 ADVERB COMMON1 ) 
-    uninterestingly~1bz in an uninteresting manner
+    uninterestingly~1z in an uninteresting manner
  unrealistically ( meanings=2 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    unrealistically~1bz in an unrealistic manner
-    unrealistically~2bz 
+    unrealistically~1z in an unrealistic manner
+    unrealistically~2z 
  unthinkingly ( meanings=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    unthinking~5b 
+    unthinking~5z 
  unpropitiously ( meanings=1 ADVERB COMMON1 ) 
-    inauspiciously~1b 
+    inauspiciously~1z 
  unrelentingly ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    relentlessly~1bz in a relentless manner
+    relentlessly~1z in a relentless manner
  unpleasantly ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    unpleasantly~1bz in an unpleasant manner
+    unpleasantly~1z in an unpleasant manner
  upside_down ( meanings=2 ADVERB CONDITIONAL_IDIOM posdefault:ADVERB  poscondition=?=R ) 
-    upside_down~1bz 
-    upside_down~2bz 
+    upside_down~1z 
+    upside_down~2z 
  unequivocally ( meanings=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    unambiguously~2b 
+    unambiguously~2z 
  unceremoniously ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    unceremoniously~1bz in an unceremonious manner
+    unceremoniously~1z in an unceremonious manner
  unfaithfully ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    unreliably~1bz in an unfaithful undependable unreliable manner
+    unreliably~1z in an unfaithful undependable unreliable manner
  undependably ( meanings=1 ADVERB ) 
-    unfaithfully~1b 
+    unfaithfully~1z 
  unreliably ( meanings=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    undependably~1b 
+    undependably~1z 
  unwarily ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    unwarily~1bz without heed or caution
+    unwarily~1z without heed or caution
  unquietly ( meanings=1 glosses=1 ADVERB COMMON1 ) 
-    unquietly~1bz with agitation or turbulence
+    unquietly~1z with agitation or turbulence
  unqualifiedly ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    unqualifiedly~1bz without qualification or limitation
+    unqualifiedly~1z without qualification or limitation
  unfavorably ( meanings=1 ADVERB COMMON2 ) 
-    unfavourably~1b 
+    unfavourably~1z 
  unfavourably ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    unfavorably~1bz showing disapproval
+    unfavorably~1z showing disapproval
  unerringly ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    unerringly~1bz without making errors
+    unerringly~1z without making errors
  unharmoniously ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    discordantly~1bz in a discordant manner
+    discordantly~1z in a discordant manner
  unwittingly ( meanings=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    inadvertently~1b 
+    inadvertently~1z 
  unknowingly ( meanings=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    unwittingly~1b 
+    unwittingly~1z 
  unfeelingly ( meanings=2 glosses=2 ADVERB COMMON1 posdefault:ADVERB ) 
-    callously~1bz in a callous way
-    unfeelingly~2bz without compassionate feelings
+    callously~1z in a callous way
+    unfeelingly~2z without compassionate feelings
  unjustifiably ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    inexcusably~1bz without any excuse
+    inexcusably~1z without any excuse
  under_way ( meanings=1 ADVERB CONDITIONAL_IDIOM posdefault:ADVERB  poscondition=?=R ) 
-    under_way~1bz 
+    under_way~1z 
  unattractively ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    unattractively~1bz in an unattractive manner
+    unattractively~1z in an unattractive manner
  unconsciously ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    unconsciously~1bz without awareness
+    unconsciously~1z without awareness
  unbelievably ( meanings=2 glosses=2 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    unbelievably~1bz in an unbelievable manner
-    implausibly~1bz not easy to believe
+    unbelievably~1z in an unbelievable manner
+    implausibly~1z not easy to believe
  underfoot ( meanings=2 glosses=2 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    underfoot~1bz under the feet
-    underfoot~2bz in the way and hindering progress
+    underfoot~1z under the feet
+    underfoot~2z in the way and hindering progress
  uncharacteristically ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    uncharacteristically~1bz in uncharacteristic manner
+    uncharacteristically~1z in uncharacteristic manner
  uniformly ( meanings=1 glosses=1 ADVERB COMMON4 posdefault:ADVERB ) 
-    uniformly~1bz in a uniform manner
+    uniformly~1z in a uniform manner
  unlawfully ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    unlawfully~1bz not conforming to the law
+    unlawfully~1z not conforming to the law
  unilaterally ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    one-sidedly~1bz in a unilateral manner
+    one-sidedly~1z in a unilateral manner
  up_here ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    over_here~1b 
+    over_here~1z 
  unappealingly ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    unappealingly~1bz in an unappealing manner
+    unappealingly~1z in an unappealing manner
  unambitiously ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    unambitiously~1bz in an unambitious manner
+    unambitiously~1z in an unambitious manner
  unassertively ( meanings=1 glosses=1 ADVERB COMMON1 ) 
-    unassertively~1bz in an unassertive manner
+    unassertively~1z in an unassertive manner
  ungratefully ( meanings=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    unappreciatively~1b 
+    unappreciatively~1z 
  unappreciatively ( meanings=1 glosses=1 ADVERB COMMON1 ) 
-    ungratefully~1bz in an ungrateful manner
+    ungratefully~1z in an ungrateful manner
  unseasonably ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    unseasonably~1bz not in accordance with the season
+    unseasonably~1z not in accordance with the season
  unceasingly ( meanings=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    ceaselessly~1b 
+    ceaselessly~1z 
  unendingly ( meanings=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    unceasingly~1b 
+    unceasingly~1z 
  unfairly ( meanings=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    below_the_belt~2b 
+    below_the_belt~2z 
  uncomplainingly ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    uncomplainingly~1bz without complaining
+    uncomplainingly~1z without complaining
  unbelievingly ( meanings=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    disbelievingly~1b 
+    disbelievingly~1z 
  undeservedly ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    undeservedly~1bz in an unmerited manner
+    undeservedly~1z in an unmerited manner
  uncontroversially ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    uncontroversially~1bz not involving any controversy
+    uncontroversially~1z not involving any controversy
  unbecomingly ( meanings=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    indecorously~1b 
+    indecorously~1z 
  unwillingly ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    unwillingly~1bz in an unwilling manner
+    unwillingly~1z in an unwilling manner
  unselfishly ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    unselfishly~1bz in an unselfish manner
+    unselfishly~1z in an unselfish manner
  unethically ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    unethically~1bz in an unethical manner
+    unethically~1z in an unethical manner
  unevenly ( meanings=3 glosses=2 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    unevenly~1bz in an uneven and irregular way
-    unequally~1b 
-    raggedly~3bz in a ragged uneven manner
+    unevenly~1z in an uneven and irregular way
+    unequally~1z 
+    raggedly~3z in a ragged uneven manner
  unequally ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    unevenly~2bz in an unequal or partial manner
+    unevenly~2z in an unequal or partial manner
  unexcitingly ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    unexcitingly~1bz in an unexciting manner
+    unexcitingly~1z in an unexciting manner
  unpardonably ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    unforgivably~1bz in an unpardonable manner or to an unpardonable degree
+    unforgivably~1z in an unpardonable manner or to an unpardonable degree
  unforgivably ( meanings=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    inexcusably~2b 
+    inexcusably~2z 
  usuriously ( meanings=1 ADVERB COMMON1 ) 
-    exorbitantly~1b 
+    exorbitantly~1z 
  unfashionably ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    unfashionably~1bz in an unfashionable manner
+    unfashionably~1z in an unfashionable manner
  uncivilly ( meanings=1 glosses=1 ADVERB COMMON1 ) 
-    uncivilly~1bz in an uncivil manner
+    uncivilly~1z in an uncivil manner
  unforgivingly ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    unforgivingly~1bz without forgiveness
+    unforgivingly~1z without forgiveness
  ungrudgingly ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    ungrudgingly~1bz in a generous and ungrudging manner
+    ungrudgingly~1z in a generous and ungrudging manner
  unadvisedly ( meanings=1 glosses=1 ADVERB COMMON1 ) 
-    unadvisedly~1bz in an unadvised manner
+    unadvisedly~1z in an unadvised manner
  unhygienically ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    unhygienically~1bz in an unhygienic manner
+    unhygienically~1z in an unhygienic manner
  undecipherably ( meanings=1 glosses=1 ADVERB ) 
-    unreadably~1bz in an illegible manner
+    unreadably~1z in an illegible manner
  unreadably ( meanings=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    illegibly~1b 
+    illegibly~1z 
  unrepentantly ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    impenitently~1bz in an impenitent manner
+    impenitently~1z in an impenitent manner
  unnoticeably ( meanings=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    imperceptibly~1b 
+    imperceptibly~1z 
  uncomparably ( meanings=1 ADVERB COMMON1 ) 
-    incomparably~1b 
+    incomparably~1z 
  unutterably ( meanings=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    ineffably~1b 
+    ineffably~1z 
  unspeakably ( meanings=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    unutterably~1b 
+    unutterably~1z 
  uninformatively ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    uninstructively~1bz in an uninformative manner
+    uninstructively~1z in an uninformative manner
  uninstructively ( meanings=1 ADVERB ) 
-    uninformatively~1b 
+    uninformatively~1z 
  unreproducibly ( meanings=1 glosses=1 ADVERB ) 
-    inimitably~1bz in an unreproducible manner
+    inimitably~1z in an unreproducible manner
  unsatiably ( meanings=2 ADVERB ) 
-    insatiably~1b 
-    insatiably~2b 
+    insatiably~1z 
+    insatiably~2z 
  unfeignedly ( meanings=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    truly~4b 
+    truly~4z 
  under_arms ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    under_arms~1bz 
+    under_arms~1z 
  unenergetically ( meanings=1 glosses=1 ADVERB ) 
-    lethargically~1bz without energy
+    lethargically~1z without energy
  unmanageably ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    unmanageably~1bz so as to be unmanageable
+    unmanageably~1z so as to be unmanageable
  unmanfully ( meanings=1 glosses=1 ADVERB ) 
-    unmanly~3bz without qualities thought to befit a man
+    unmanly~3z without qualities thought to befit a man
  unmelodiously ( meanings=1 glosses=1 ADVERB COMMON1 ) 
-    unmelodiously~1bz in an unmelodious manner
+    unmelodiously~1z in an unmelodious manner
  unforgettably ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    memorably~1bz in a memorable manner
+    memorably~1z in a memorable manner
  unmemorably ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    unmemorably~1bz in an unmemorable manner
+    unmemorably~1z in an unmemorable manner
  untruthfully ( meanings=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    mendaciously~1b 
+    mendaciously~1z 
  unmercifully ( meanings=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    pitilessly~1b 
+    pitilessly~1z 
  untidily ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    messily~1bz in a messy, untidy manner
+    messily~1z in a messy, untidy manner
  unmusically ( meanings=1 glosses=1 ADVERB COMMON1 ) 
-    unmusically~1bz in an unmusical manner
+    unmusically~1z in an unmusical manner
  unobtrusively ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    unobtrusively~1bz in an unobtrusive manner
+    unobtrusively~1z in an unobtrusive manner
  unpalatably ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    unpalatably~1bz in an unpalatable way
+    unpalatably~1z in an unpalatable way
  unpatriotically ( meanings=1 glosses=1 ADVERB COMMON1 ) 
-    unpatriotically~1bz in an unpatriotic manner
+    unpatriotically~1z in an unpatriotic manner
  unrecognizably ( meanings=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    unrecognisable~2b 
+    unrecognisable~2z 
  unpretentiously ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    unpretentiously~1bz in an unpretentious manner
+    unpretentiously~1z in an unpretentious manner
  unimpeachably ( meanings=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    unquestionably~2b 
+    unquestionably~2z 
  unrighteously ( meanings=1 glosses=1 ADVERB COMMON1 ) 
-    unrighteously~1bz in an unrighteous manner
+    unrighteously~1z in an unrighteous manner
  unsparingly ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    scathingly~1bz in a scathing and unsparing manner
+    scathingly~1z in a scathing and unsparing manner
  unselfconsciously ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    unselfconsciously~1bz in a comfortable unselfconscious manner
+    unselfconsciously~1z in a comfortable unselfconscious manner
  unsentimentally ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    unsentimentally~1bz in an unsentimental manner
+    unsentimentally~1z in an unsentimental manner
  unawares ( meanings=3 glosses=2 ADVERB COMMON2 posdefault:ADVERB ) 
-    short~18b 
-    unawares~2bz suddenly and unexpectedly
-    unawares~3bz without forethought or plan
+    short~18z 
+    unawares~2z suddenly and unexpectedly
+    unawares~3z without forethought or plan
  unsmilingly ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    unsmilingly~1bz without smile
+    unsmilingly~1z without smile
  uppishly ( meanings=1 ADVERB COMMON1 ) 
-    snootily~1b 
+    snootily~1z 
  unsociably ( meanings=1 glosses=1 ADVERB COMMON1 ) 
-    unsociably~1bz in an unsociable manner
+    unsociably~1z in an unsociable manner
  unsportingly ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    unsportingly~1bz in an unsportsmanlike manner
+    unsportingly~1z in an unsportsmanlike manner
  unsuspectingly ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    unsuspectingly~1bz without suspicions
+    unsuspectingly~1z without suspicions
  under_that ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    thereunder~1b 
+    thereunder~1z 
  under_it ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    under_that~1b 
+    under_that~1z 
  unromantically ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    unromantically~1bz without romance
+    unromantically~1z without romance
  unaccountably ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    unaccountably~1bz in an unaccountable manner
+    unaccountably~1z in an unaccountable manner
  unalterably ( meanings=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    unchangeably~1b 
+    unchangeably~1z 
  unchangeably ( meanings=1 glosses=1 ADVERB COMMON1 ) 
-    immutably~1bz in an unalterable and unchangeable manner
+    immutably~1z in an unalterable and unchangeable manner
  unassailably ( meanings=1 ADVERB COMMON1 ) 
-    unalterably~1b 
+    unalterably~1z 
  unarguably ( meanings=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    undisputedly~1b 
+    undisputedly~1z 
  undisputedly ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    unarguably~1bz in an unarguable and undisputed manner
+    unarguably~1z in an unarguable and undisputed manner
  unassumingly ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    unassumingly~1bz in an unassuming manner
+    unassumingly~1z in an unassuming manner
  unattainably ( meanings=1 glosses=1 ADVERB COMMON1 ) 
-    unachievably~1bz in an unattainable manner or to an unattainable degree
+    unachievably~1z in an unattainable manner or to an unattainable degree
  unachievably ( meanings=1 ADVERB COMMON1 ) 
-    unattainably~1b 
+    unattainably~1z 
  unbearably ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    unbearably~1bz to an unbearable degree
+    unbearably~1z to an unbearable degree
  unblushingly ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    unblushingly~1bz without blushing
+    unblushingly~1z without blushing
  uncannily ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    uncannily~1bz in an uncanny manner
+    uncannily~1z in an uncanny manner
  unchivalrously ( meanings=1 glosses=1 ADVERB COMMON1 ) 
-    unchivalrously~1bz in an unchivalrous and ungallant manner
+    unchivalrously~1z in an unchivalrous and ungallant manner
  uncommonly ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    uncommonly~1bz exceptionally
+    uncommonly~1z exceptionally
  uncompromisingly ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    uncompromisingly~1bz in an uncompromising manner
+    uncompromisingly~1z in an uncompromising manner
  undesirably ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    unwantedly~1bz in an undesirable manner
+    unwantedly~1z in an undesirable manner
  unwantedly ( meanings=1 ADVERB COMMON1 ) 
-    undesirably~1b 
+    undesirably~1z 
  uninvitedly ( meanings=1 glosses=1 ADVERB COMMON1 ) 
-    uninvitedly~1bz without invitation
+    uninvitedly~1z without invitation
  unwontedly ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    unwontedly~1bz in an unusual manner
+    unwontedly~1z in an unusual manner
  unconcernedly ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    unconcernedly~1bz in an unconcerned manner
+    unconcernedly~1z in an unconcerned manner
  uncontrollably ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    uncontrollably~1bz in an uncontrolled manner
+    uncontrollably~1z in an uncontrolled manner
  uncouthly ( meanings=1 glosses=1 ADVERB COMMON1 ) 
-    uncouthly~1bz in an uncouth manner
+    uncouthly~1z in an uncouth manner
  unctuously ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    fulsomely~1bz in an unctuous manner
+    fulsomely~1z in an unctuous manner
  undeniably ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    undeniably~1bz to an undeniable degree or in an undeniable manner
+    undeniably~1z to an undeniable degree or in an undeniable manner
  underhandedly ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    underhand~4bz slyly and secretly
+    underhand~4z slyly and secretly
  underneath ( meanings=3 glosses=2 ADVERB PREPOSITION COMMON4 GRADE1_2 posdefault:ADVERB ) 
-    underneath~1bz under or below an object or a surface
-    underneath~2bz on the lower or downward side
+    underneath~1z under or below an object or a surface
+    underneath~2z on the lower or downward side
     underneath~3z 
  unduly ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    unduly~1bz to an undue degree
+    unduly~1z to an undue degree
  uneventfully ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    uneventfully~1bz in an uneventful manner
+    uneventfully~1z in an uneventful manner
  ungrammatically ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    ungrammatically~1bz in an ungrammatical manner
+    ungrammatically~1z in an ungrammatical manner
  unimaginably ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    unthinkably~1bz to an unimaginable extent
+    unthinkably~1z to an unimaginable extent
  unthinkably ( meanings=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    unimaginably~1b 
+    unimaginably~1z 
  uninterruptedly ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    uninterruptedly~1bz without interruption
+    uninterruptedly~1z without interruption
  unprecedentedly ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    unprecedentedly~1bz in an unprecedented manner
+    unprecedentedly~1z in an unprecedented manner
  unreservedly ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    unreservedly~1bz without reservation
+    unreservedly~1z without reservation
  unrestrainedly ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    unrestrainedly~1bz in an unrestrained manner
+    unrestrainedly~1z in an unrestrained manner
  unscrupulously ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    unscrupulously~1bz without scruples
+    unscrupulously~1z without scruples
  unstintingly ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    unstintingly~1bz in an unstinting manner
+    unstintingly~1z in an unstinting manner
  unswervingly ( meanings=2 glosses=2 ADVERB COMMON2 posdefault:ADVERB ) 
-    unswervingly~1bz without swerving
-    unswervingly~2bz in a constant and steadfast manner
+    unswervingly~1z without swerving
+    unswervingly~2z in a constant and steadfast manner
  untruly ( meanings=1 glosses=1 ADVERB COMMON1 ) 
-    untruly~1bz in a untrue manner
+    untruly~1z in a untrue manner
  unwarrantably ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    unwarrantably~1bz in an unwarrantable manner or to an unwarranted degree
+    unwarrantably~1z in an unwarrantable manner or to an unwarranted degree
  unworthily ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    unworthily~1bz in an unworthy manner
+    unworthily~1z in an unworthy manner
  up-country ( meanings=1 glosses=1 ADVERB posdefault:ADVERB ) 
-    up-country~1bz to or in the interior of a country or region
+    up-country~1z to or in the interior of a country or region
  uprightly ( meanings=2 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    uprightly~1bz in an upright position
-    honorably~2b 
+    uprightly~1z in an upright position
+    honorably~2z 
  urbanely ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    urbanely~1bz in an urbane manner
+    urbanely~1z in an urbane manner
  usefully ( meanings=2 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    usefully~1bz in a useful manner
-    usefully~2bz 
+    usefully~1z in a useful manner
+    usefully~2z 
  uselessly ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    uselessly~1bz in a useless manner
+    uselessly~1z in a useless manner
  uxoriously ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    uxoriously~1bz in a loving and uxorious manner
+    uxoriously~1z in a loving and uxorious manner
  unquestioningly ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    unquestioningly~1bz in an unquestioning manner
+    unquestioningly~1z in an unquestioning manner
  unblinkingly ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    unblinkingly~1bz showing no emotion
+    unblinkingly~1z showing no emotion
  unreasoningly ( meanings=1 glosses=1 ADVERB COMMON1 ) 
-    viscerally~2bz in an unreasoning visceral manner
+    viscerally~2z in an unreasoning visceral manner
  ulteriorly ( meanings=1 glosses=1 ADVERB COMMON1 ) 
-    ulteriorly~1bz in an ulterior manner
+    ulteriorly~1z in an ulterior manner
  until_recently ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    until_recently~1bz 
+    until_recently~1z 
  unappetized ( meanings=1 ADVERB ) 
-    unappetized~1bz 
+    unappetized~1z 
  unequivocably ( meanings=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    unequivocably~1bz 
+    unequivocably~1z 
  ultrasonographically ( meanings=2 ADVERB COMMON1 posdefault:ADVERB ) 
-    ultrasonographically~1bz 
-    ultrasonographically~2bz 
+    ultrasonographically~1z 
+    ultrasonographically~2z 
  unphysiologically ( meanings=2 ADVERB COMMON1 ) 
-    unphysiologically~1bz 
-    unphysiologically~2bz 
+    unphysiologically~1z 
+    unphysiologically~2z 
  ureterorenoscopically ( meanings=2 ADVERB ) 
-    ureterorenoscopically~1bz 
-    ureterorenoscopically~2bz 
+    ureterorenoscopically~1z 
+    ureterorenoscopically~2z 
  under_no_circumstances ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    under_no_circumstances~1bz 
+    under_no_circumstances~1z 
  urethrometrically ( meanings=2 ADVERB ) 
-    urethrometrically~1bz 
-    urethrometrically~2bz 
+    urethrometrically~1z 
+    urethrometrically~2z 
  urodynamically ( meanings=2 ADVERB COMMON1 ) 
-    urodynamically~1bz 
-    urodynamically~2bz 
+    urodynamically~1z 
+    urodynamically~2z 
  ureteroscopically ( meanings=2 ADVERB ) 
-    ureteroscopically~1bz 
-    ureteroscopically~2bz 
+    ureteroscopically~1z 
+    ureteroscopically~2z 
  unproblematically ( meanings=2 ADVERB COMMON1 posdefault:ADVERB ) 
-    unproblematically~1bz 
-    unproblematically~2bz 
+    unproblematically~1z 
+    unproblematically~2z 
  uroflowmetrically ( meanings=2 ADVERB ) 
-    uroflowmetrically~1bz 
-    uroflowmetrically~2bz 
+    uroflowmetrically~1z 
+    uroflowmetrically~2z 
  urethrographically ( meanings=2 ADVERB ) 
-    urethrographically~1bz 
-    urethrographically~2bz 
+    urethrographically~1z 
+    urethrographically~2z 
  urinometrically ( meanings=2 ADVERB ) 
-    urinometrically~1bz 
-    urinometrically~2bz 
+    urinometrically~1z 
+    urinometrically~2z 
  univariately ( meanings=2 ADVERB COMMON1 posdefault:ADVERB ) 
-    univariately~1bz 
-    univariately~2bz 
+    univariately~1z 
+    univariately~2z 
  uniparentally ( meanings=2 ADVERB COMMON1 ) 
-    uniparentally~1bz 
-    uniparentally~2bz 
+    uniparentally~1z 
+    uniparentally~2z 
  ultrastructurally ( meanings=2 ADVERB COMMON1 posdefault:ADVERB ) 
-    ultrastructurally~1bz 
-    ultrastructurally~2bz 
+    ultrastructurally~1z 
+    ultrastructurally~2z 
  undisputably ( meanings=1 ADVERB COMMON1 ) 
-    undisputably~1bz 
+    undisputably~1z 
  ubiquitously ( meanings=1 ADVERB posdefault:ADVERB ) 
-    ubiquitously~1bz 
+    ubiquitously~1z 
  unaggressively ( meanings=1 ADVERB posdefault:ADVERB ) 
-    unaggressively~1bz 
+    unaggressively~1z 
  uncompetitively ( meanings=1 ADVERB posdefault:ADVERB ) 
-    uncompetitively~1bz 
+    uncompetitively~1z 
  univalently ( meanings=1 ADVERB ) 
-    univalently~1bz 
+    univalently~1z 
  unless ( meanings=1 CONJUNCTION_SUBORDINATE COMMON4 COMMON1 KINDERGARTEN posdefault:PREPOSITION ) 
     unless~1z 
  under_cover_of ( meanings=1 PREPOSITION ) 

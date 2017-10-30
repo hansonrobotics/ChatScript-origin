@@ -1396,7 +1396,7 @@
  vis-a-vis ( meanings=4 glosses=1 NOUN ADVERB PREPOSITION NOUN_SINGULAR ) 
     love_seat~1n 
     counterpart~2n 
-    vis-a-vis~3bz face-to-face with
+    vis-a-vis~3z face-to-face with
     vis-a-vis~4z 
  Versed ( meanings=1 NOUN NOUN_PROPER_SINGULAR ) 
     midazolam~1n 
@@ -2071,8 +2071,8 @@
  very ( meanings=4 glosses=3 ADJECTIVE ADVERB ADJECTIVE_NORMAL EXTENT_ADVERB ADJECTIVE_NOT_PREDICATE COMMON4 COMMON2 KINDERGARTEN posdefault:ADVERB ) 
     very~1az precisely as stated
     selfsame~1az being the exact same one
-    really~1b 
-    very~4bz precisely so
+    really~1z 
+    very~4z precisely so
  VLF ( meanings=1 NOUN NOUN_PROPER_SINGULAR COMMON1 NOUN_NODETERMINER ) 
     very_low_frequency~1n 
  very_high_frequency ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR NOUN_NODETERMINER ) 
@@ -3030,7 +3030,7 @@
     verbalism~2n 
  viva_voce ( meanings=2 NOUN ADVERB NOUN_SINGULAR posdefault:NOUN ) 
     oral~1n 
-    by_word_of_mouth~2b 
+    by_word_of_mouth~2z 
  viva ( meanings=1 NOUN NOUN_SINGULAR COMMON2 COMMON1 posdefault:NOUN ) 
     viva_voce~1n 
  vow ( meanings=3 glosses=2 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 posdefault:NOUN VERB_TAKES_TOINFINITIVE VERB_DIRECTOBJECT ) 
@@ -3797,7 +3797,7 @@
  visually_impaired_person ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
     visually_impaired_person~1nz (^individual~1) someone who has inferior vision
  visually ( meanings=1 glosses=1 ADVERB COMMON4 posdefault:ADVERB ) 
-    visually~1bz with respect to vision
+    visually~1z with respect to vision
  vitalist ( meanings=1 glosses=1 NOUN NOUN_SINGULAR COMMON1 ) 
     vitalist~1nz (^believer~2) one who believes in vitalism
  vital_principle ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
@@ -5267,7 +5267,7 @@
     disfranchised~1a 
  verbatim ( meanings=2 ADJECTIVE ADVERB ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE posdefault:ADVERB ) 
     direct~8a 
-    word_for_word~1b 
+    word_for_word~1z 
  vicarious ( meanings=3 glosses=3 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
     vicarious~1az suffered or done by one person as a substitute for another
     vicarious~2az occurring in an abnormal part of the body instead of the usual site involved in that function
@@ -5290,7 +5290,7 @@
     voguish~3az 
  vivace ( meanings=2 glosses=2 ADJECTIVE ADVERB ADJECTIVE_NORMAL ADJECTIVE_NOT_PREDICATE COMMON2 ) 
     vivace~1az very fast and lively
-    vivace~2bz lively, in music
+    vivace~2z lively, in music
  vaned ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON1 posdefault:ADJECTIVE ) 
     fledged~1a 
  velvety-plumaged ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL ) 
@@ -5710,202 +5710,202 @@
  vulcanological ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON1 ) 
     vulcanological~1az 
  vastly ( meanings=1 ADVERB COMMON4 posdefault:ADVERB ) 
-    immensely~1b 
+    immensely~1z 
  vocationally ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    vocationally~1bz affecting the pursuit of a vocation or occupation
+    vocationally~1z affecting the pursuit of a vocation or occupation
  variously ( meanings=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    diversely~1b 
+    diversely~1z 
  very_well ( meanings=2 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    fine~9b 
-    first-rate~2b 
+    fine~9z 
+    first-rate~2z 
  very_much ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    a_great_deal~1b 
+    a_great_deal~1z 
  virtually ( meanings=2 glosses=1 ADVERB COMMON4 posdefault:ADVERB ) 
-    nearly~1b 
-    virtually~2bz in essence or effect but not in fact
+    nearly~1z 
+    virtually~2z in essence or effect but not in fact
  ventrally ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    ventrally~1bz in a ventral location or direction
+    ventrally~1z in a ventral location or direction
  vitally ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    vitally~1bz to a vital degree
+    vitally~1z to a vital degree
  volumetrically ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    volumetrically~1bz with respect to volume
+    volumetrically~1z with respect to volume
  verbally ( meanings=2 glosses=2 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    verbally~1bz by means of language
-    verbally~2bz as a verb
+    verbally~1z by means of language
+    verbally~2z as a verb
  vocally ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    vocally~1bz in a vocal manner
+    vocally~1z in a vocal manner
  viscerally ( meanings=2 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    viscerally~1bz in the viscera
-    unreasoningly~1b 
+    viscerally~1z in the viscera
+    unreasoningly~1z 
  volcanically ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    volcanically~1bz by or like volcanoes
+    volcanically~1z by or like volcanoes
  vociferously ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    vociferously~1bz in a vociferous manner
+    vociferously~1z in a vociferous manner
  vainly ( meanings=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    in_vain~1b 
+    in_vain~1z 
  vice_versa ( meanings=2 ADVERB CONDITIONAL_IDIOM posdefault:ADVERB  poscondition=?=R ) 
-    the_other_way_around~1b 
-    vice_versa~2bz 
+    the_other_way_around~1z 
+    vice_versa~2z 
  vigorously ( meanings=1 glosses=1 ADVERB COMMON4 posdefault:ADVERB ) 
-    smartly~2bz with vigor
+    smartly~2z with vigor
  viz. ( meanings=2 ADVERB COMMON2 posdefault:ADVERB ) 
-    that_is_to_say~1b 
-    viz.~2bz 
+    that_is_to_say~1z 
+    viz.~2z 
  videlicet ( meanings=1 ADVERB COMMON2 ) 
-    to_wit~1b 
+    to_wit~1z 
  very_much_like ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?[dNP]=<RRp?=R ) 
-    much_as~1bz 
+    much_as~1z 
  visibly ( meanings=2 glosses=2 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    visibly~1bz so as to be visible
-    visibly~2bz in a visible manner
+    visibly~1z so as to be visible
+    visibly~2z in a visible manner
  victoriously ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    victoriously~1bz in a victorious manner
+    victoriously~1z in a victorious manner
  viciously ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    savagely~1bz in a vicious manner
+    savagely~1z in a vicious manner
  violently ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    violently~1bz in a violent manner
+    violently~1z in a violent manner
  vauntingly ( meanings=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    boastfully~1b 
+    boastfully~1z 
  voluntarily ( meanings=1 glosses=1 ADVERB COMMON4 posdefault:ADVERB ) 
-    voluntarily~1bz out of your own free will
+    voluntarily~1z out of your own free will
  vaguely ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    mistily~1bz in a vague way
+    mistily~1z in a vague way
  vividly ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    vividly~1bz in a vivid manner
+    vividly~1z in a vivid manner
  vitriolically ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    caustically~1bz in a caustic vitriolic manner
+    caustically~1z in a caustic vitriolic manner
  virtuously ( meanings=2 glosses=2 ADVERB COMMON2 posdefault:ADVERB ) 
-    chastely~1bz in a chaste and virtuous manner
-    morally~2bz in a moral manner
+    chastely~1z in a chaste and virtuous manner
+    morally~2z in a moral manner
  volubly ( meanings=2 ADVERB COMMON2 posdefault:ADVERB ) 
-    chattily~1b 
-    volubly~2bz 
+    chattily~1z 
+    volubly~2z 
  volitionally ( meanings=1 glosses=1 ADVERB COMMON1 ) 
-    willingly~1bz in a willing manner
+    willingly~1z in a willing manner
  venally ( meanings=1 ADVERB COMMON1 ) 
-    dishonestly~1b 
+    dishonestly~1z 
  very_softly ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    pianissimo~3bz 
+    pianissimo~3z 
  very_loudly ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    fortissimo~3bz 
+    fortissimo~3z 
  vertically ( meanings=1 glosses=1 ADVERB COMMON4 posdefault:ADVERB ) 
-    vertically~1bz in a vertical direction
+    vertically~1z in a vertical direction
  venomously ( meanings=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    poisonously~1b 
+    poisonously~1z 
  vengefully ( meanings=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    revengefully~1b 
+    revengefully~1z 
  vindictively ( meanings=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    vengefully~1b 
+    vengefully~1z 
  voluptuously ( meanings=3 glosses=2 ADVERB COMMON1 posdefault:ADVERB ) 
-    voluptuously~1bz in an indulgently voluptuous manner
-    voluptuously~2bz in a shapely and voluptuous manner
-    voluptuously~3bz 
+    voluptuously~1z in an indulgently voluptuous manner
+    voluptuously~2z in a shapely and voluptuous manner
+    voluptuously~3z 
  vulgarly ( meanings=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    smuttily~1b 
+    smuttily~1z 
  viscidly ( meanings=1 ADVERB ) 
-    stickily~1b 
+    stickily~1z 
  vacantly ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    vacantly~1bz in a vacant manner
+    vacantly~1z in a vacant manner
  vacuously ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    vacuously~1bz in a vacuous manner
+    vacuously~1z in a vacuous manner
  valiantly ( meanings=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    valorously~1b 
+    valorously~1z 
  valorously ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    valiantly~1bz with valor
+    valiantly~1z with valor
  validly ( meanings=2 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    validly~1bz with validity
-    validly~2bz 
+    validly~1z with validity
+    validly~2z 
  vapidly ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    vapidly~1bz in a vapid manner
+    vapidly~1z in a vapid manner
  variably ( meanings=2 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    variably~1bz with variation
-    variably~2bz 
+    variably~1z with variation
+    variably~2z 
  vehemently ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    vehemently~1bz in a vehement manner
+    vehemently~1z in a vehement manner
  verbosely ( meanings=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    windily~1b 
+    windily~1z 
  verily ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    verily~1bz in truth
+    verily~1z in truth
  vicariously ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    vicariously~1bz indirectly, as, by, or through a substitute
+    vicariously~1z indirectly, as, by, or through a substitute
  vigilantly ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    watchfully~1bz in a watchful manner
+    watchfully~1z in a watchful manner
  vilely ( meanings=2 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    vilely~1bz in a vile manner
-    vilely~2bz 
+    vilely~1z in a vile manner
+    vilely~2z 
  virulently ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    virulently~1bz in a virulent manner
+    virulently~1z in a virulent manner
  vivaciously ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    vivaciously~1bz with vivacity
+    vivaciously~1z with vivacity
  voraciously ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    voraciously~1bz in an eagerly voracious manner
+    voraciously~1z in an eagerly voracious manner
  voyeuristically ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    voyeuristically~1bz like a voyeur
+    voyeuristically~1z like a voyeur
  vulnerably ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    vulnerably~1bz in a vulnerable manner
+    vulnerably~1z in a vulnerable manner
  vanishingly ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    vanishingly~1bz so as to disappear or approach zero
+    vanishingly~1z so as to disappear or approach zero
  vexatiously ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    vexatiously~1bz in a vexatious manner
+    vexatiously~1z in a vexatious manner
  venographically ( meanings=2 ADVERB COMMON1 ) 
-    venographically~1bz 
-    venographically~2bz 
+    venographically~1z 
+    venographically~2z 
  videomicroscopically ( meanings=2 ADVERB ) 
-    videomicroscopically~1bz 
-    videomicroscopically~2bz 
+    videomicroscopically~1z 
+    videomicroscopically~2z 
  videodensitometrically ( meanings=2 ADVERB ) 
-    videodensitometrically~1bz 
-    videodensitometrically~2bz 
+    videodensitometrically~1z 
+    videodensitometrically~2z 
  ventriculoscopically ( meanings=2 ADVERB ) 
-    ventriculoscopically~1bz 
-    ventriculoscopically~2bz 
+    ventriculoscopically~1z 
+    ventriculoscopically~2z 
  voltammetrically ( meanings=2 ADVERB COMMON1 ) 
-    voltammetrically~1bz 
-    voltammetrically~2bz 
+    voltammetrically~1z 
+    voltammetrically~2z 
  vectorially ( meanings=2 ADVERB COMMON1 posdefault:ADVERB ) 
-    vectorially~1bz 
-    vectorially~2bz 
+    vectorially~1z 
+    vectorially~2z 
  velocimetrically ( meanings=2 ADVERB ) 
-    velocimetrically~1bz 
-    velocimetrically~2bz 
+    velocimetrically~1z 
+    velocimetrically~2z 
  vectorcardiographically ( meanings=2 ADVERB ) 
-    vectorcardiographically~1bz 
-    vectorcardiographically~2bz 
+    vectorcardiographically~1z 
+    vectorcardiographically~2z 
  vibrophonocardiographically ( meanings=2 ADVERB ) 
-    vibrophonocardiographically~1bz 
-    vibrophonocardiographically~2bz 
+    vibrophonocardiographically~1z 
+    vibrophonocardiographically~2z 
  ventriculo-peritoneally ( meanings=2 ADVERB ) 
-    ventriculo-peritoneally~1bz 
-    ventriculo-peritoneally~2bz 
+    ventriculo-peritoneally~1z 
+    ventriculo-peritoneally~2z 
  ventriculographically ( meanings=2 ADVERB ) 
-    ventriculographically~1bz 
-    ventriculographically~2bz 
+    ventriculographically~1z 
+    ventriculographically~2z 
  visuometrically ( meanings=2 ADVERB ) 
-    visuometrically~1bz 
-    visuometrically~2bz 
+    visuometrically~1z 
+    visuometrically~2z 
  vaginoscopically ( meanings=2 ADVERB ) 
-    vaginoscopically~1bz 
-    vaginoscopically~2bz 
+    vaginoscopically~1z 
+    vaginoscopically~2z 
  vibrometrically ( meanings=2 ADVERB ) 
-    vibrometrically~1bz 
-    vibrometrically~2bz 
+    vibrometrically~1z 
+    vibrometrically~2z 
  vaginometrically ( meanings=2 ADVERB ) 
-    vaginometrically~1bz 
-    vaginometrically~2bz 
+    vaginometrically~1z 
+    vaginometrically~2z 
  viscometrically ( meanings=2 ADVERB ) 
-    viscometrically~1bz 
-    viscometrically~2bz 
+    viscometrically~1z 
+    viscometrically~2z 
  vitreally ( meanings=2 ADVERB ) 
-    vitreally~1bz 
-    vitreally~2bz 
+    vitreally~1z 
+    vitreally~2z 
  vagally ( meanings=1 ADVERB posdefault:ADVERB ) 
-    vagally~1bz 
+    vagally~1z 
  vaginally ( meanings=1 ADVERB posdefault:ADVERB ) 
-    vaginally~1bz 
+    vaginally~1z 
  vascularly ( meanings=1 ADVERB ) 
-    vascularly~1bz 
+    vascularly~1z 
  virally ( meanings=1 ADVERB posdefault:ADVERB ) 
-    virally~1bz 
+    virally~1z 
  vs. ( meanings=2 PREPOSITION CONJUNCTION_COORDINATE COMMON4 COMMON1 KINDERGARTEN ) 
     vs.~1z 
     vs.~2z 

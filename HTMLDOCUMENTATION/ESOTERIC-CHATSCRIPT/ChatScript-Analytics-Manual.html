@@ -62,6 +62,7 @@ s: &quot;Knock&quot; =&gt; Who&#39;s there? </code></pre>
 <p>will not display rules that only have code output You can do all topics in a file by naming the file name instead of the topicname. Don't use the full path, just the actual name of the file.</p>
 <h1 id="views-over-user-logs---trim">Views over User Logs - <code>:trim</code></h1>
 <p>If you get a lot of user logs (say thousands), reading through them becomes a chore. The logs have a bunch of excess information and are in a bunch of different files. This is where <code>:trim</code> comes in, making it easier to see things. <code>:trim</code> assumes all files in the LOGS directory are user logs and will process them in some manner. It will normally put its output in <code>TMP/tmp.txt</code>.</p>
+<p>If you give a quoted string as first argument and it has &quot;keepname&quot; in it, then instead of dumping everything into tmp.txt, it will create files named after the user logs it discovers (username.txt)</p>
 <p>Your first argument to trim can also be just the name of a user (whose log file will be in <code>USERS/log-xxx.txt</code>) or if that doesn't exist then it is the directory to use, or you can use the name of a log file within the USERs directory (the name should begin <code>log-</code> and not include the directory and need not include the <code>.txt</code> suffix). E.g.,</p>
 <pre><code>:trim c:\FULLLOGS 6</code></pre>
 <p>a directory to read all files within</p>
@@ -140,5 +141,7 @@ s: &quot;Knock&quot; =&gt; Who&#39;s there? </code></pre>
 <p><code>:trim 11</code> looks like this:</p>
 <pre><code>Jan25&#39;17-13:49:21  when is the help desk open?
                The Helpdesk is available Monday through Friday from 7:00AM to 7:00PM Pacific. </code></pre>
+<h1 id="deduping-a-file---dedupe">Deduping a file - <code>:dedupe</code></h1>
+<p><code>:dedupe  filepath</code> outputs into tmp/filename just unique lines from the input (ignoring data after a hash comment marker).</p>
 </body>
 </html>

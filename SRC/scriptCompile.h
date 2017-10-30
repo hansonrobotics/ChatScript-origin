@@ -37,14 +37,16 @@ void SaveCanon(char* word, char* canon);
 char* ReadDisplayOutput(char* ptr,char* buffer);
   
 #ifndef DISCARDSCRIPTCOMPILER
-
 int ReadTopicFiles(char* name,unsigned int build, int spell);
 char* ReadPattern(char* ptr, FILE* in, char* &data,bool macro,bool ifstatement, bool livecall = false);
-char* ReadOutput(bool nested,char* ptr, FILE* in,char* &data,char* rejoinders,char* existingRead = NULL,WORDP call = NULL, bool choice = false);
+char* ReadOutput(bool optionalBrace,bool nested,char* ptr, FILE* in,char* &data,char* rejoinders,char* existingRead = NULL,WORDP call = NULL, bool choice = false);
 char* CompileString(char* ptr);
 void ScriptWarn();
 void EndScriptCompiler();
-void StartScriptCompiler();
+bool StartScriptCompiler();
+#define WARNSCRIPT(...) {if (compiling) {ScriptWarn(); Log(STDTRACELOG, __VA_ARGS__);} } // readpattern calls from functions should not issue warnings
+#else
+#define WARNSCRIPT(...) {Log(STDTRACELOG, __VA_ARGS__); } // readpattern calls from functions should not issue warnings
 #endif
 
 // ALWAYS AVAILABLE
@@ -56,6 +58,5 @@ char* ReadNextSystemToken(FILE* in,char* ptr, char* word, bool separateUnderscor
 char* ReadSystemToken(char* ptr, char* word, bool separateUnderscore=true);
 
 #define BADSCRIPT(...) {ScriptError(); Log((compiling) ? BADSCRIPTLOG : STDTRACELOG , __VA_ARGS__); JumpBack();}
-#define WARNSCRIPT(...) {if (compiling) {ScriptWarn(); Log(STDTRACELOG, __VA_ARGS__); }} // readpattern calls from functions should not issue warnings
 
 #endif

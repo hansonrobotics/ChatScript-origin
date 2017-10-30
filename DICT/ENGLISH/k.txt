@@ -2048,7 +2048,7 @@
  knee-high ( meanings=3 glosses=2 NOUN ADJECTIVE ADVERB ADJECTIVE_NORMAL NOUN_SINGULAR posdefault:ADJECTIVE ) 
     knee-hi~1nz (^sock~1) a sock or stocking that reaches up to just below the knees
     knee-high~2az 
-    knee-deep~3bz up to the knees
+    knee-deep~3z up to the knees
  knee-hi ( meanings=1 NOUN NOUN_SINGULAR ) 
     knee-high~1n 
  kneeler ( meanings=2 glosses=2 NOUN NOUN_SINGULAR COMMON2 posdefault:NOUN ) 
@@ -4546,7 +4546,7 @@
     kindly~1az pleasant and agreeable
     charitable~2a 
     kindly~3az 
-    kindly~4bz in a kind manner or out of kindness
+    kindly~4z in a kind manner or out of kindness
  kaleidoscopic ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:ADJECTIVE ) 
     kaleidoscopical~1a 
     kaleidoscopic~2az 
@@ -4575,7 +4575,7 @@
  knee-deep ( meanings=3 ADJECTIVE ADVERB ADJECTIVE_NORMAL ADJECTIVE_NOT_PREDICATE posdefault:ADVERB ) 
     ankle-deep~1a 
     knee-deep~2az 
-    knee-high~3b 
+    knee-high~3z 
  kaput ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL ADJECTIVE_ONLY_PREDICATE COMMON2 posdefault:ADJECTIVE ) 
     done_for~1a 
     kaput~2az 
@@ -4743,40 +4743,40 @@
  kookier ( MORE_FORM ADJECTIVE ADJECTIVE_NORMAL COMMON1 ) comparative=kooky 
  kookiest ( MOST_FORM ADJECTIVE ADJECTIVE_NORMAL COMMON1 ) comparative=kookier 
  kinda ( meanings=1 ADVERB COMMON4 posdefault:ADVERB ) 
-    rather~1b 
+    rather~1z 
  kinesthetically ( meanings=1 ADVERB COMMON1 ) 
-    kinaesthetically~1b 
+    kinaesthetically~1z 
  kinaesthetically ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    kinesthetically~1bz in a kinesthetic manner
+    kinesthetically~1z in a kinesthetic manner
  knowingly ( meanings=1 ADVERB COMMON4 posdefault:ADVERB ) 
-    wittingly~1b 
+    wittingly~1z 
  knavishly ( meanings=1 ADVERB COMMON1 ) 
-    foxily~1b 
+    foxily~1z 
  keenly ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    keenly~1bz in a keen and discriminating manner
+    keenly~1z in a keen and discriminating manner
  killingly ( meanings=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    sidesplittingly~1b 
+    sidesplittingly~1z 
  kinetically ( meanings=2 ADVERB COMMON2 posdefault:ADVERB ) 
-    kinetically~1bz 
-    kinetically~2bz 
+    kinetically~1z 
+    kinetically~2z 
  kinesimetrically ( meanings=2 ADVERB ) 
-    kinesimetrically~1bz 
-    kinesimetrically~2bz 
+    kinesimetrically~1z 
+    kinesimetrically~2z 
  kinaesthesiometrically ( meanings=2 ADVERB ) 
-    kinaesthesiometrically~1bz 
-    kinaesthesiometrically~2bz 
+    kinaesthesiometrically~1z 
+    kinaesthesiometrically~2z 
  kinematically ( meanings=2 ADVERB COMMON2 posdefault:ADVERB ) 
-    kinematically~1bz 
-    kinematically~2bz 
+    kinematically~1z 
+    kinematically~2z 
  kinesthesiometrically ( meanings=2 ADVERB ) 
-    kinesthesiometrically~1bz 
-    kinesthesiometrically~2bz 
+    kinesthesiometrically~1z 
+    kinesthesiometrically~2z 
  keratoscopically ( meanings=2 ADVERB ) 
-    keratoscopically~1bz 
-    keratoscopically~2bz 
+    keratoscopically~1z 
+    keratoscopically~2z 
  karyotypically ( meanings=2 ADVERB COMMON1 ) 
-    karyotypically~1bz 
-    karyotypically~2bz 
+    karyotypically~1z 
+    karyotypically~2z 
  kip_down ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB VERB_NOOBJECT PHRASAL_VERB INSEPARABLE_PHRASAL_VERB VERB_CONJUGATE1 ) 
     crawl_in~1v 
  keep_up ( meanings=5 glosses=2 VERB_PRESENT VERB_INFINITIVE VERB VERB_DIRECTOBJECT VERB_NOOBJECT PHRASAL_VERB VERB_CONJUGATE1 ) 
