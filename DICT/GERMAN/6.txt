@@ -4,7 +4,7 @@
  6,3 ( ADJECTIVE_NUMBER NOUN_NUMBER ) 
  6,47 ( ADJECTIVE_NUMBER NOUN_NUMBER ) 
  6,5 ( ADJECTIVE_NUMBER NOUN_NUMBER ) 
- 6,5fache ( ADJECTIVE ) lemma=6,5fach 
+ 6,5fache ( ADJECTIVE ) lemma=`6,5fach` ADJA  
  6,6 ( ADJECTIVE_NUMBER NOUN_NUMBER ) 
  6,6-Millionen-Umbau ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  6,7 ( ADJECTIVE_NUMBER NOUN_NUMBER ) 
@@ -17,11 +17,11 @@
  6-Motor ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  6-Stunden-Tag ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  6-TV ( NOUN NOUN_PROPER_SINGULAR ) 
- 6-Tage ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=6-Tag 
+ 6-Tage ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=`6-Tag` NN  
  6-Tage- ( ) 
  6-Tage-Krieg ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  6-Tage-Rennen ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
- 6-Tage-Rennens ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=6-Tage-Rennen 
+ 6-Tage-Rennens ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=`6-Tage-Rennen` NN  
  6-Tage-Woche ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  6-Verlängerung ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  6-Zylinder ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
@@ -148,18 +148,18 @@
  60- ( ) 
  60-Grad-Regel ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  60-Jahr-Feier ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
- 60-Jahr-Feiern ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=60-Jahr-feier 
- 60-Jahr-Jubiläums ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=60-Jahr-Jubiläum 
+ 60-Jahr-Feiern ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=`60-Jahr-feier` NN  
+ 60-Jahr-Jubiläums ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=`60-Jahr-Jubiläum` NN  
  60-Kilo-Mann ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  60-Kilometer-Radius ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  60-Liter- ( ) 
  60-Liter-Tonne ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  60-Liter-Variante ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  60-Meter- ( ) 
- 60-Meter-Hürden ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=60-Meter-Hürde 
+ 60-Meter-Hürden ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=`60-Meter-Hürde` NN  
  60-Millionen- ( ) 
  60-Millionen-Mark-Projekt ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
- 60-Millionen-Mark-Projekts ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=60-Millionen-Mark-Projekt 
+ 60-Millionen-Mark-Projekts ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=`60-Millionen-Mark-Projekt` NN  
  60-Millionen-Programm ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  60-Millionen-Projekt ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  60-Minuten- ( ) 
@@ -177,9 +177,9 @@
  60-Sekunden-Takt ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  60-Stunden-Woche ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  60-Stundenwoche ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
- 60-jährigen ( ADJECTIVE ) lemma=60-jährig 
+ 60-jährigen ( ADJECTIVE ) lemma=`60-jährig` ADJA  
  60-m-Bestmarke ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
- 60-m-Hürden ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=60-m-Hürde 
+ 60-m-Hürden ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=`60-m-Hürde` NN  
  60-m-Sieg ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  60.000/120.000 ( ADJECTIVE_NUMBER NOUN_NUMBER ) 
  60.000er ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
@@ -211,35 +211,35 @@
  60000-Mark-Grenze ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  600000 ( ADJECTIVE_NUMBER NOUN_NUMBER ) 
  600er ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
- 600jährige ( ADJECTIVE ) lemma=600jährig 
- 600jährigen ( ADJECTIVE ) lemma=600jährig 
- 600jähriger ( ADJECTIVE ) lemma=600jährig 
- 600köpfige ( ADJECTIVE ) lemma=600köpfig 
- 600köpfigen ( ADJECTIVE ) lemma=600köpfig 
+ 600jährige ( ADJECTIVE ) lemma=`600jährig` ADJA  
+ 600jährigen ( ADJECTIVE ) lemma=`600jährig` ADJA  
+ 600jähriger ( ADJECTIVE ) lemma=`600jährig` ADJA  
+ 600köpfige ( ADJECTIVE ) lemma=`600köpfig` ADJA  
+ 600köpfigen ( ADJECTIVE ) lemma=`600köpfig` ADJA  
  604/90 ( ADJECTIVE_NUMBER NOUN_NUMBER ) 
- 60er ( ADJECTIVE ) 
+ 60er ( ADJECTIVE ) lemma=`60er`60er` ADJA  ADJD  
  60er- ( ) 
- 60er-Jahre ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=60er-Jahr 
+ 60er-Jahre ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=`60er-Jahr` NN  
  60er-Jahre- ( ) 
  60er-Jahre-Planungssünde ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
- 60ern ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=60er 
- 60fache ( ADJECTIVE ) lemma=60fach 
+ 60ern ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=`60er` NN  
+ 60fache ( ADJECTIVE ) lemma=`60fach` ADJA  
  60jährig ( ADJECTIVE ) 
- 60jährige ( ADJECTIVE ) lemma=60jährig 
- 60jährigem ( ADJECTIVE ) lemma=60jährig 
- 60jährigen ( ADJECTIVE ) lemma=60jährig 
- 60jähriger ( ADJECTIVE ) lemma=60jährig 
- 60jähriges ( ADJECTIVE ) lemma=60jährig 
- 60köpfige ( ADJECTIVE ) lemma=60köpfig 
- 60köpfigen ( ADJECTIVE ) lemma=60köpfig 
- 60köpfiger ( ADJECTIVE ) lemma=60köpfig 
- 60köpfiges ( ADJECTIVE ) lemma=60köpfig 
- 60prozentige ( ADJECTIVE ) lemma=60prozentig 
- 60prozentigen ( ADJECTIVE ) lemma=60prozentig 
- 60prozentiger ( ADJECTIVE ) lemma=60prozentig 
- 60tägige ( ADJECTIVE ) lemma=60tägig 
- 60tägigen ( ADJECTIVE ) lemma=60tägig 
- 61-jährige ( ADJECTIVE ) lemma=61-jährig 
+ 60jährige ( ADJECTIVE ) lemma=`60jährig` ADJA  
+ 60jährigem ( ADJECTIVE ) lemma=`60jährig` ADJA  
+ 60jährigen ( ADJECTIVE ) lemma=`60jährig` ADJA  
+ 60jähriger ( ADJECTIVE ) lemma=`60jährig` ADJA  
+ 60jähriges ( ADJECTIVE ) lemma=`60jährig` ADJA  
+ 60köpfige ( ADJECTIVE ) lemma=`60köpfig` ADJA  
+ 60köpfigen ( ADJECTIVE ) lemma=`60köpfig` ADJA  
+ 60köpfiger ( ADJECTIVE ) lemma=`60köpfig` ADJA  
+ 60köpfiges ( ADJECTIVE ) lemma=`60köpfig` ADJA  
+ 60prozentige ( ADJECTIVE ) lemma=`60prozentig` ADJA  
+ 60prozentigen ( ADJECTIVE ) lemma=`60prozentig` ADJA  
+ 60prozentiger ( ADJECTIVE ) lemma=`60prozentig` ADJA  
+ 60tägige ( ADJECTIVE ) lemma=`60tägig` ADJA  
+ 60tägigen ( ADJECTIVE ) lemma=`60tägig` ADJA  
+ 61-jährige ( ADJECTIVE ) lemma=`61-jährig` ADJA  
  61/121 ( ADJECTIVE_NUMBER NOUN_NUMBER ) 
  61/2 ( ADJECTIVE_NUMBER NOUN_NUMBER ) 
  61/5 ( ADJECTIVE_NUMBER NOUN_NUMBER ) 
@@ -251,46 +251,46 @@
  6146/91 ( ADJECTIVE_NUMBER NOUN_NUMBER ) 
  61er ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  61er-Gruppe ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
- 61jährige ( ADJECTIVE ) lemma=61jährig 
- 61jährigen ( ADJECTIVE ) lemma=61jährig 
- 61jähriger ( ADJECTIVE ) lemma=61jährig 
+ 61jährige ( ADJECTIVE ) lemma=`61jährig` ADJA  
+ 61jährigen ( ADJECTIVE ) lemma=`61jährig` ADJA  
+ 61jähriger ( ADJECTIVE ) lemma=`61jährig` ADJA  
  62-Millionen-Mark-Komplex ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  62-Millionen-Mark-Objekt ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  62/91 ( ADJECTIVE_NUMBER NOUN_NUMBER ) 
  62/92 ( ADJECTIVE_NUMBER NOUN_NUMBER ) 
- 622-Ringe ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=622-Ring 
+ 622-Ringe ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=`622-Ring` NN  
  624/33 ( ADJECTIVE_NUMBER NOUN_NUMBER ) 
  624/90 ( ADJECTIVE_NUMBER NOUN_NUMBER ) 
  62er ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  62jährig ( ADJECTIVE ) 
- 62jährige ( ADJECTIVE ) lemma=62jährig 
- 62jährigen ( ADJECTIVE ) lemma=62jährig 
- 62jähriger ( ADJECTIVE ) lemma=62jährig 
+ 62jährige ( ADJECTIVE ) lemma=`62jährig` ADJA  
+ 62jährigen ( ADJECTIVE ) lemma=`62jährig` ADJA  
+ 62jähriger ( ADJECTIVE ) lemma=`62jährig` ADJA  
  63 ( ADJECTIVE_NUMBER NOUN_NUMBER ) 
  63-Teiler ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
- 63-jährigen ( ADJECTIVE ) lemma=63-jährig 
+ 63-jährigen ( ADJECTIVE ) lemma=`63-jährig` ADJA  
  63/64 ( ADJECTIVE_NUMBER NOUN_NUMBER ) 
  63/92 ( ADJECTIVE_NUMBER NOUN_NUMBER ) 
  63000 ( ADJECTIVE_NUMBER NOUN_NUMBER ) 
  632 ( ADJECTIVE_NUMBER NOUN_NUMBER ) 
  63jährig ( ADJECTIVE ) 
- 63jährige ( ADJECTIVE ) lemma=63jährig 
- 63jährigen ( ADJECTIVE ) lemma=63jährig 
- 63jähriger ( ADJECTIVE ) lemma=63jährig 
+ 63jährige ( ADJECTIVE ) lemma=`63jährig` ADJA  
+ 63jährigen ( ADJECTIVE ) lemma=`63jährig` ADJA  
+ 63jähriger ( ADJECTIVE ) lemma=`63jährig` ADJA  
  64 ( ADJECTIVE_NUMBER NOUN_NUMBER ) 
  64- ( ) 
  64-Chefredakteur ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
- 64-Fans ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=64-Fan 
+ 64-Fans ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=`64-Fan` NN  
  64-Frequenz ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
- 64-Frequenzen ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=64-Frequenz 
- 64-Freunde ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=64-Freund 
+ 64-Frequenzen ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=`64-Frequenz` NN  
+ 64-Freunde ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=`64-Freund` NN  
  64-Freundeskreis ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
- 64-Hörern ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=64-Hörer 
+ 64-Hörern ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=`64-Hörer` NN  
  64-Kilobit-Leitung ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  64-Megabit-Chip ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  64-Megabit-Chip-Produktion ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
- 64-Megabit-Chips ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=64-Megabit-Chip 
- 64-Megabit-Speicherchips ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=64-Megabit-Speicherchip 
+ 64-Megabit-Chips ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=`64-Megabit-Chip` NN  
+ 64-Megabit-Speicherchips ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=`64-Megabit-Speicherchip` NN  
  64-Redakteurin ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  64-Redaktion ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  64-Teiler ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
@@ -304,15 +304,15 @@
  645/89 ( ADJECTIVE_NUMBER NOUN_NUMBER ) 
  64er ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  64er-Feld ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
- 64jährige ( ADJECTIVE ) lemma=64jährig 
- 64jährigen ( ADJECTIVE ) lemma=64jährig 
- 64jähriger ( ADJECTIVE ) lemma=64jährig 
- 64köpfigen ( ADJECTIVE ) lemma=64köpfig 
- 64seitige ( ADJECTIVE ) lemma=64seitig 
+ 64jährige ( ADJECTIVE ) lemma=`64jährig` ADJA  
+ 64jährigen ( ADJECTIVE ) lemma=`64jährig` ADJA  
+ 64jähriger ( ADJECTIVE ) lemma=`64jährig` ADJA  
+ 64köpfigen ( ADJECTIVE ) lemma=`64köpfig` ADJA  
+ 64seitige ( ADJECTIVE ) lemma=`64seitig` ADJA  
  65 ( ADJECTIVE_NUMBER NOUN_NUMBER ) 
  65- ( ) 
  65-Hektar-Betrieb ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
- 65-Quadratmeter-Wohnungen ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=65-Quadratmeter-Wohnung 
+ 65-Quadratmeter-Wohnungen ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=`65-Quadratmeter-Wohnung` NN  
  65-Rennen ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  65-Wette ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  65-kg-Klasse ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
@@ -324,35 +324,35 @@
  650000 ( ADJECTIVE_NUMBER NOUN_NUMBER ) 
  6572 ( ADJECTIVE_NUMBER NOUN_NUMBER ) 
  65er ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
- 65fache ( ADJECTIVE ) lemma=65fach 
+ 65fache ( ADJECTIVE ) lemma=`65fach` ADJA  
  65jährig ( ADJECTIVE ) 
- 65jährige ( ADJECTIVE ) lemma=65jährig 
- 65jährigen ( ADJECTIVE ) lemma=65jährig 
- 65jähriger ( ADJECTIVE ) lemma=65jährig 
+ 65jährige ( ADJECTIVE ) lemma=`65jährig` ADJA  
+ 65jährigen ( ADJECTIVE ) lemma=`65jährig` ADJA  
+ 65jähriger ( ADJECTIVE ) lemma=`65jährig` ADJA  
  66,1-Teiler ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  66-Minuten-Stunde ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
- 66-jährige ( ADJECTIVE ) lemma=66-jährig 
- 66-jährigen ( ADJECTIVE ) lemma=66-jährig 
+ 66-jährige ( ADJECTIVE ) lemma=`66-jährig` ADJA  
+ 66-jährigen ( ADJECTIVE ) lemma=`66-jährig` ADJA  
  66/12 ( ADJECTIVE_NUMBER NOUN_NUMBER ) 
  66/661-Anschluss ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
- 66/661-Anschluß ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=66/661-Anschluss 
+ 66/661-Anschluß ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=`66/661-Anschluss` NN  
  66/67 ( ADJECTIVE_NUMBER NOUN_NUMBER ) 
  661-Anschluss ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
- 661-Anschluß ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=661-Anschluss 
- 661-Trasse ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=661-trasse 
+ 661-Anschluß ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=`661-Anschluss` NN  
+ 661-Trasse ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=`661-trasse` NN  
  666-Jahr-Feier ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  666-Jahrfeier ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
- 666jährige ( ADJECTIVE ) lemma=666jährig 
- 66:32-Spiele ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=66:32-Spiel 
+ 666jährige ( ADJECTIVE ) lemma=`666jährig` ADJA  
+ 66:32-Spiele ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=`66:32-Spiel` NN  
  66er ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  66jährig ( ADJECTIVE ) 
- 66jährige ( ADJECTIVE ) lemma=66jährig 
- 66jährigen ( ADJECTIVE ) lemma=66jährig 
- 66jähriger ( ADJECTIVE ) lemma=66jährig 
- 66köpfigen ( ADJECTIVE ) lemma=66köpfig 
+ 66jährige ( ADJECTIVE ) lemma=`66jährig` ADJA  
+ 66jährigen ( ADJECTIVE ) lemma=`66jährig` ADJA  
+ 66jähriger ( ADJECTIVE ) lemma=`66jährig` ADJA  
+ 66köpfigen ( ADJECTIVE ) lemma=`66köpfig` ADJA  
  67-Teiler ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  67-Tonnen-Abrams-Panzer ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
- 67-jährigen ( ADJECTIVE ) lemma=67-jährig 
+ 67-jährigen ( ADJECTIVE ) lemma=`67-jährig` ADJA  
  67/68 ( ADJECTIVE_NUMBER NOUN_NUMBER ) 
  67/91 ( ADJECTIVE_NUMBER NOUN_NUMBER ) 
  670000 ( ADJECTIVE_NUMBER NOUN_NUMBER ) 
@@ -363,16 +363,16 @@
  67er ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  67er-Runde ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  67jährig ( ADJECTIVE ) 
- 67jährige ( ADJECTIVE ) lemma=67jährig 
- 67jährigen ( ADJECTIVE ) lemma=67jährig 
- 67jähriger ( ADJECTIVE ) lemma=67jährig 
- 67prozentigen ( ADJECTIVE ) lemma=67prozentig 
- 67tägiger ( ADJECTIVE ) lemma=67tägig 
+ 67jährige ( ADJECTIVE ) lemma=`67jährig` ADJA  
+ 67jährigen ( ADJECTIVE ) lemma=`67jährig` ADJA  
+ 67jähriger ( ADJECTIVE ) lemma=`67jährig` ADJA  
+ 67prozentigen ( ADJECTIVE ) lemma=`67prozentig` ADJA  
+ 67tägiger ( ADJECTIVE ) lemma=`67tägig` ADJA  
  68 ( ADJECTIVE_NUMBER NOUN_NUMBER ) 
  68-Generation ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  68-Millionen-Mark-Projekt ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  68-Teiler ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
- 68-jährige ( ADJECTIVE ) lemma=68-jährig 
+ 68-jährige ( ADJECTIVE ) lemma=`68-jährig` ADJA  
  68. ( ADJECTIVE ) 
  68/63 ( ADJECTIVE_NUMBER NOUN_NUMBER ) 
  68/69 ( ADJECTIVE_NUMBER NOUN_NUMBER ) 
@@ -384,31 +384,31 @@
  68er ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  68er- ( ) 
  68er-Aktivist ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
- 68er-Aktivisten ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=68er-Aktivist 
+ 68er-Aktivisten ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=`68er-Aktivist` NN  
  68er-Aufbruch ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  68er-Bewegung ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  68er-Generation ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
- 68er-Ideen ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=68er-Idee 
+ 68er-Ideen ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=`68er-Idee` NN  
  68er-Invasion ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
- 68er-Kollegen ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=68er-Kollege 
+ 68er-Kollegen ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=`68er-Kollege` NN  
  68er-Lehrer ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
- 68er-Linken ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=68er-Linke 
- 68er-Proteste ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=68er-Protest 
+ 68er-Linken ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=`68er-Linke` NN  
+ 68er-Proteste ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=`68er-Protest` NN  
  68er-Pädagogik ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  68er-Revolte ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  68er-Revolution ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  68er-Runde ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  68er-Studentenbewegung ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  68er-Studentenrevolte ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
- 68er-Themen ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=68er-Thema 
- 68er-Utopien ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=68er-Utopie 
- 68er-Veteranen ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=68er-Veteran 
+ 68er-Themen ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=`68er-Thema` NN  
+ 68er-Utopien ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=`68er-Utopie` NN  
+ 68er-Veteranen ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=`68er-Veteran` NN  
  68er-Zeit ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
- 68ern ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=68er 
+ 68ern ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=`68er` NN  
  68jährig ( ADJECTIVE ) 
- 68jährige ( ADJECTIVE ) lemma=68jährig 
- 68jährigen ( ADJECTIVE ) lemma=68jährig 
- 68jähriger ( ADJECTIVE ) lemma=68jährig 
+ 68jährige ( ADJECTIVE ) lemma=`68jährig` ADJA  
+ 68jährigen ( ADJECTIVE ) lemma=`68jährig` ADJA  
+ 68jähriger ( ADJECTIVE ) lemma=`68jährig` ADJA  
  69 ( ADJECTIVE_NUMBER NOUN_NUMBER ) 
  69/5 ( ADJECTIVE_NUMBER NOUN_NUMBER ) 
  69/70 ( ADJECTIVE_NUMBER NOUN_NUMBER ) 
@@ -420,20 +420,20 @@
  69er ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  69er-Runde ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  69jährig ( ADJECTIVE ) 
- 69jährige ( ADJECTIVE ) lemma=69jährig 
- 69jährigen ( ADJECTIVE ) lemma=69jährig 
- 69jähriger ( ADJECTIVE ) lemma=69jährig 
+ 69jährige ( ADJECTIVE ) lemma=`69jährig` ADJA  
+ 69jährigen ( ADJECTIVE ) lemma=`69jährig` ADJA  
+ 69jähriger ( ADJECTIVE ) lemma=`69jährig` ADJA  
  6:0- ( ) 
  6:0-Deckung ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  6:0-Deckungsvariante ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  6:0-Erfolg ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  6:0-Formation ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  6:0-Führung ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
- 6:0-Punkte ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=6:0-Punkt 
- 6:0-Punkten ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=6:0-Punkt 
+ 6:0-Punkte ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=`6:0-Punkt` NN  
+ 6:0-Punkten ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=`6:0-Punkt` NN  
  6:0-Sieg ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
- 6:0-Siege ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=6:0-Sieg 
- 6:0-Toren ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=6:0-Tor 
+ 6:0-Siege ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=`6:0-Sieg` NN  
+ 6:0-Toren ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=`6:0-Tor` NN  
  6:0-Zähler ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  6:1-Endstand ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  6:1-Erfolg ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
@@ -445,10 +445,10 @@
  6:2-Erfolg ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  6:2-Finalsieg ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  6:2-Halbfinalsieg ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
- 6:2-Punkte ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=6:2-Punkt 
- 6:2-Punkten ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=6:2-Punkt 
+ 6:2-Punkte ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=`6:2-Punkt` NN  
+ 6:2-Punkten ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=`6:2-Punkt` NN  
  6:2-Sieg ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
- 6:2-Tore ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=6:2-Tor 
+ 6:2-Tore ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=`6:2-Tor` NN  
  6:3,6:3-Sieg ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  6:3- ( ) 
  6:3-Erfolg ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
@@ -459,18 +459,18 @@
  6:4-Erfolg ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  6:4-Finalsieg ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  6:4-Führung ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
- 6:4-Punkte ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=6:4-Punkt 
- 6:4-Punkten ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=6:4-Punkt 
+ 6:4-Punkte ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=`6:4-Punkt` NN  
+ 6:4-Punkten ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=`6:4-Punkt` NN  
  6:4-Satzgewinn ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  6:4-Sieg ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  6:4-Vorsprung ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  6:5-Sieg ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
- 6:5-Toren ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=6:5-Tor 
+ 6:5-Toren ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=`6:5-Tor` NN  
  6:53,29 ( ADJECTIVE_NUMBER NOUN_NUMBER ) 
  6:53,75 ( ADJECTIVE_NUMBER NOUN_NUMBER ) 
  6:56,72 ( ADJECTIVE_NUMBER NOUN_NUMBER ) 
- 6:6-Punkte ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=6:6-Punkt 
- 6:6-Punkten ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=6:6-Punkt 
+ 6:6-Punkte ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=`6:6-Punkt` NN  
+ 6:6-Punkten ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=`6:6-Punkt` NN  
  6:7-Niederlage ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  6:8-Niederlage ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  6:9-Heimniederlage ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
@@ -479,62 +479,9 @@
  6er ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  6fach-Kombinations-Drogenschnelltest ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  6fach-Kombinations-Drogentest ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
- 6jährige ( ADJECTIVE ) lemma=6jährig 
- 6jährigen ( ADJECTIVE ) lemma=6jährig 
- 6jähriger ( ADJECTIVE ) lemma=6jährig 
- 6jähriges ( ADJECTIVE ) lemma=6jährig 
- 6monatigen ( ADJECTIVE ) lemma=6monatig 
- 6prozentige ( ADJECTIVE ) lemma=6prozentig 
- 6,5fach ( ) 
- 6-Tag ( ) 
- 60-Jahr-feier ( ) 
- 60-Jahr-Jubiläum ( ) 
- 60-Meter-Hürde ( ) 
- 60-jährig ( ) 
- 60-m-Hürde ( ) 
- 600jährig ( ) 
- 600köpfig ( ) 
- 60er-Jahr ( ) 
- 60fach ( ) 
- 60köpfig ( ) 
- 60prozentig ( ) 
- 60tägig ( ) 
- 61-jährig ( ) 
- 61jährig ( ) 
- 622-Ring ( ) 
- 63-jährig ( ) 
- 64-Fan ( ) 
- 64-Freund ( ) 
- 64-Hörer ( ) 
- 64-Megabit-Speicherchip ( ) 
- 64jährig ( ) 
- 64köpfig ( ) 
- 64seitig ( ) 
- 65-Quadratmeter-Wohnung ( ) 
- 65fach ( ) 
- 66-jährig ( ) 
- 661-trasse ( ) 
- 666jährig ( ) 
- 66:32-Spiel ( ) 
- 66köpfig ( ) 
- 67-jährig ( ) 
- 67prozentig ( ) 
- 67tägig ( ) 
- 68-jährig ( ) 
- 68er-Idee ( ) 
- 68er-Kollege ( ) 
- 68er-Linke ( ) 
- 68er-Protest ( ) 
- 68er-Thema ( ) 
- 68er-Utopie ( ) 
- 68er-Veteran ( ) 
- 6:0-Punkt ( ) 
- 6:0-Tor ( ) 
- 6:2-Punkt ( ) 
- 6:2-Tor ( ) 
- 6:4-Punkt ( ) 
- 6:5-Tor ( ) 
- 6:6-Punkt ( ) 
- 6jährig ( ) 
- 6monatig ( ) 
- 6prozentig ( ) 
+ 6jährige ( ADJECTIVE ) lemma=`6jährig` ADJA  
+ 6jährigen ( ADJECTIVE ) lemma=`6jährig` ADJA  
+ 6jähriger ( ADJECTIVE ) lemma=`6jährig` ADJA  
+ 6jähriges ( ADJECTIVE ) lemma=`6jährig` ADJA  
+ 6monatigen ( ADJECTIVE ) lemma=`6monatig` ADJA  
+ 6prozentige ( ADJECTIVE ) lemma=`6prozentig` ADJA  

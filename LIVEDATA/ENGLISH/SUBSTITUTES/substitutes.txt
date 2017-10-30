@@ -61,7 +61,8 @@
  ufos UFOs
  Apr. April
  ariz. Arizona
- Britain Great+Britain
+ Great_Britain United+Kingdom
+ Britain United+Kingdom
  Aug August
  México Mexico
  Aug. August
@@ -578,7 +579,7 @@ prof. professor
  damnit damn+it
  darn_tootin correct
  dats that+is
- daughter_in_law daughters-in-law
+ daughter_in_law daughter-in-law
  daughters_in_law daughters-in-law
  definitely_to_be_sure definitely
  deg degree
@@ -970,7 +971,6 @@ prof. professor
  mais_oui yes
  major_breakthrough breakthrough
  make_a_statement say
- mam mom
  manually_by_hand manually
  many_frequent frequent
  marital_spouse spouse

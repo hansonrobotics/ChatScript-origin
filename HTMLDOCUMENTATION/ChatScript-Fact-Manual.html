@@ -1,4 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -9,11 +9,11 @@
 </head>
 <body>
 <h1 id="chatscript-fact-manual">ChatScript Fact Manual</h1>
-<p>© Bruce Wilcox, gowilcox@gmail.com www.brilligunderstanding.com <br>Revision 12/7/2016 cs6.91</p>
+<p>© Bruce Wilcox, gowilcox@gmail.com www.brilligunderstanding.com <br>Revision 10/22/2017 cs7.6</p>
 <ul>
-<li><a href="ChatScript-Fact-Manual.md#simple-facts">Simple Facts</a></li>
-<li><a href="ChatScript-Fact-Manual.md#advanced-facts">Advanced Facts</a></li>
-<li><a href="ChatScript-Fact-Manual.md#esoteric-facts">Esoteric Facts</a></li>
+<li><a href="ChatScript-Fact-Manual.html#simple-facts">Simple Facts</a></li>
+<li><a href="ChatScript-Fact-Manual.html#advanced-facts">Advanced Facts</a></li>
+<li><a href="ChatScript-Fact-Manual.html#esoteric-facts">Esoteric Facts</a></li>
 </ul>
 <h1 id="simple-facts">SIMPLE FACTS</h1>
 <p>Facts are triples of <em>subject</em>, <em>verb</em>, <em>object</em> – though those are just the names of the fields and may or may not be their content. Facts look like this:</p>
@@ -360,7 +360,7 @@ datum: ^secondkeys(~accidents) repair</code></pre>
 <p><code>all</code> just displays a human normal dictionary word, so if the value were actually <code>plants~1</code> you'd get just plants whereas raw would return what was actually there <code>plants~1</code>.</p>
 <p>You can also retrieve a field via <code>$$f.subject</code> or <code>$$f.verb</code> or <code>$$f.object</code>.</p>
 <h3 id="find-setname-itemname"><code>^find</code>( setname itemname )</h3>
-<p>given a concept set, find the ordered position of the 2nd argument within it. ^Output that index. Used, for example, to compare two poker hands.</p>
+<p>given a concept set, find the ordered position of the 2nd argument within it. ^Output that index (0-based). Used, for example, to compare two poker hands.</p>
 <h3 id="first-fact-set-annotated"><code>^first</code>( fact-set-annotated )</h3>
 <p>retrieve the first fact. You must qualify with what you want from it. Retrieve means the fact is removed from the set. <code>^first(@0subject)</code> retrieves the subject field of the first fact.</p>
 <p>Other obvious qualifications are <code>verb</code>, <code>object</code>, <code>fact</code> (return the index of the fact itself), <code>all</code> (spread all 3 fields onto a match variable triple, <code>raw</code> (like all but all displays just a normal human-readable word like plant whereas raw displays what was actually there, which might have been plant~1).</p>
@@ -511,7 +511,7 @@ datum: ^secondkeys(~accidents) repair</code></pre>
 </tbody>
 </table>
 <h2 id="json">JSON</h2>
-<p>Json is a great representation for creating and accessing complex fact structures. See the <a href="ChatScript-Json.md">ChatScript JSON manual</a> for more details.</p>
+<p>Json is a great representation for creating and accessing complex fact structures. See the <a href="ChatScript-Json.html">ChatScript JSON manual</a> for more details.</p>
 <h1 id="esoteric-facts">ESOTERIC FACTS</h1>
 <h2 id="compiled-script-table-arguments">Compiled Script Table Arguments</h2>
 <p>You can specify that a table argument string is to be compiled as output script. Normally it's standard word processing like all English phrases. To compile it, you prefix the doublequoted string with the function designator <code>^</code>. E.g.,</p>

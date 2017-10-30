@@ -1,6 +1,6 @@
 # ChatScript Command Line Parameters
 Copyright Bruce Wilcox, gowilcox@gmail.com www.brilligunderstanding.com<br>
-Revision 6/25/2017 cs7.51
+Revision 10/22/2017 cs7.6
 
 # Command Line Parameters
 
@@ -104,7 +104,7 @@ so that the system can do complete logs. You are welcome to set log size lots sm
 |`redo`            | see documentation for :redo in [ChatScript Debugging Manual](ChatScript-Debugging-Manual.md) manual
 |`noboot`          | Do not run any boot script on engine startup
 |`logsize=n`          | When server log file exceeds n megabytes, rename it and start with a new file.
-
+|`defaultbot=name`   | overrides defaultbot table for what bot to default to
 
 Here few command line parameters usage examples of usual edit/compile developement phase, running ChatScript from a Linux terminal console (standalone mode):
 

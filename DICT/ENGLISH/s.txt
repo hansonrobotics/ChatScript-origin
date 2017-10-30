@@ -2357,7 +2357,7 @@
     overhead~1nz (^return~6) a hard return hitting the tennis ball above your head
     smash-up~1nz (^collision~2) a serious collision
     bash~1nz (^blow~5) a vigorous blow
-    smashingly~1bz with a loud crash
+    smashingly~1z with a loud crash
     smash~7vz break suddenly into pieces, as from a violent blow
     dash~8vz break into pieces, as by striking or knocking over
     smash~9vz overthrow or destroy 
@@ -2524,13 +2524,13 @@
     scant~1az less than the correct or legal or full amount often deliberately so
     little~9a 
     short~15az 
-    suddenly~1bz quickly and without warning
-    curtly~1bz in a curt, abrupt and discourteous manner
-    unawares~1bz at a disadvantage
-    short~19bz so as to interrupt
-    short~20bz at some point or distance before a goal is reached
-    short~21bz clean across
-    short~22bz without possessing something at the time it is contractually sold
+    suddenly~1z quickly and without warning
+    curtly~1z in a curt, abrupt and discourteous manner
+    unawares~1z at a disadvantage
+    short~19z so as to interrupt
+    short~20z at some point or distance before a goal is reached
+    short~21z clean across
+    short~22z without possessing something at the time it is contractually sold
     short-circuit~2vz create a short circuit in
     short-change~2vz cheat someone by not returning him enough money
  short_selling ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
@@ -2652,7 +2652,7 @@
     service~13nz (^company~1) a company or agency that performs a public service
     armed_service~1nz (^force~8) a force that is a branch of the armed forces
     service~15vz make fit for use
-    serve~6vz mate with
+    serve~6vz (^copulate~1) mate with
     serve~10vz be used by
  self-service ( meanings=2 glosses=2 NOUN_ABSTRACT NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR posdefault:ADJECTIVE ) 
     self-service~1nz (^service~1) the practice of serving yourself
@@ -2994,7 +2994,7 @@
     solo~2nz (^activity~1) any activity that is performed alone without assistance
     solo~3nz (^piece~8) a musical composition for one voice or instrument
     solo~4az composed or performed by a single voice or instrument
-    alone~6b 
+    alone~6z 
     solo~6vz perform a piece written for a single instrument
     solo~7vz fly alone, without a co-pilot or passengers
  solo_blast ( meanings=1 NOUN NOUN_SINGULAR ) 
@@ -3018,7 +3018,7 @@
     smack~4nz (^sailing_vessel~1) a sailing ship used in fishing and sailing along the coast
     nip~4n 
     slap~2n 
-    bang~6b 
+    bang~6z 
     smack~8vz press together and open (the lips) noisily, as in eating
     thwack~2v 
     peck~8v 
@@ -3029,7 +3029,7 @@
  slap ( meanings=4 glosses=3 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB ADVERB NOUN_SINGULAR COMMON4 GRADE1_2 posdefault:NOUN posdefault:VERB VERB_DIRECTOBJECT ) comparative=slapper 
     smack~1nz (^blow~2) the act of smacking something
     smack~6nz (^blow~5) a blow from a flat object
-    smack~7b 
+    smack~7z 
     slap~4vz hit with something flat, like a paddle or the open hand
  smacker ( meanings=2 glosses=2 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON1 posdefault:NOUN ) comparative=smack 
     smacker~1nz (^blow~2) a very powerful blow with the fist
@@ -3365,9 +3365,9 @@
     square~13az characterized by honesty and fairness
     straight~18az neatly arranged
     straight~19az 
-    directly~2bz without deviation
-    directly~3bz in a forthright manner
-    straight~22bz in a straight line
+    directly~2z without deviation
+    directly~3z in a forthright manner
+    straight~22z in a straight line
  spare ( meanings=14 glosses=7 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 GRADE3_4 posdefault:VERB posdefault:ADJECTIVE VERB_DIRECTOBJECT VERB_INDIRECTOBJECT ) conjugate=sparing comparative=sparer 
     spare~1nz (^score~2) a score in tenpins
     fifth_wheel~2nz (^car_wheel~1) an extra car wheel and tire for a four-wheel vehicle
@@ -3705,7 +3705,7 @@
     soak~1n 
     drenching~1n 
     soak~2n 
-    dripping~4b 
+    dripping~4z 
  shampoo ( meanings=3 glosses=3 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 NOUN_NODETERMINER KINDERGARTEN posdefault:NOUN VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     shampoo~1nz (^hairdressing~1) the act of washing your hair with shampoo
     shampoo~2nz (^cleaner~1) cleansing agent consisting of soaps or detergents used for washing the hair
@@ -4462,7 +4462,7 @@
  second_nature ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     second_nature~1nz (^habit~1) acquired behavior that is practiced so long it seems innate
  second ( meanings=3 glosses=3 VERB_PRESENT VERB_INFINITIVE NOUN VERB ADJECTIVE ADVERB ADJECTIVE_NUMBER NOUN_NUMBER COMMON4 COMMON2 COMMON1 ORDINAL KINDERGARTEN posdefault:NOUN VERB_DIRECTOBJECT TIMEWORD TIME_NOUN QUANTITY_NOUN ) comparative=seconder 
-    secondly~1bz in the second place
+    secondly~1z in the second place
     second~2vz transfer an employee to a different, temporary assignment
     indorse~4vz give support or one's approval to
  slavery ( meanings=3 glosses=3 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON4 NOUN_NODETERMINER GRADE5_6 posdefault:NOUN ) 
@@ -4971,9 +4971,9 @@
     straight~17a 
     satisfying~2az providing abundant nourishment
     square~15az 
-    squarely~2bz firmly and solidly
-    squarely~3bz in a square shape
-    squarely~5bz in a straight direct way
+    squarely~2z firmly and solidly
+    squarely~3z in a square shape
+    squarely~5z in a straight direct way
     square_up~1vz make square
     square~20vz raise to the second power
     feather~5vz turn the oar, while rowing
@@ -5643,10 +5643,10 @@
     silent~6a 
     noneffervescent~2az not sparkling
     still~11az 
-    yet~1bz to a greater degree or extent
-    however~1b 
-    still~14bz with reference to action or condition
-    stock-still~2bz without moving or making a sound
+    yet~1z to a greater degree or extent
+    however~1z 
+    still~14z with reference to action or condition
+    stock-still~2z without moving or making a sound
     silence~5v 
     still~17vz make motionless
     calm_down~3vz make calm or still
@@ -7011,7 +7011,7 @@
     delicate~7az easily hurt
     soft~19az falling or likely to fall in value
     soft~20az 
-    easy~15b 
+    easy~15z 
  seller_'s_market ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     sellers_'_market~1nz (^market~1) a market in which more people want to buy than want to sell
  seller ( meanings=1 NOUN NOUN_SINGULAR COMMON4 COMMON1 posdefault:NOUN ) 
@@ -7192,7 +7192,7 @@
     peg~5nz (^leg~6) informal terms for the leg
     stick~6nz (^limb~6) a small thin branch of a tree
     pose~4v 
-    sting~5vz saddle with something disagreeable or disadvantageous
+    sting~5vz (^butter~1) saddle with something disagreeable or disadvantageous
     cohere~1vz come or be in close contact with
     hold_fast~1vz stick to firmly
     stick~11vz pierce or penetrate or puncture with something pointed
@@ -7589,8 +7589,8 @@
     slow~5az indicating a time earlier than the correct time
     wearisome~1az so lacking in interest as to cause mental weariness
     slow~7az 
-    slowly~1b 
-    behind~7b 
+    slowly~1z 
+    behind~7z 
     slow_up~1vz lose velocity
     slow_up~2vz become slow or slower
     slow_up~3vz cause to proceed more slowly
@@ -9659,7 +9659,7 @@
     small~11az have fine or very small constituent particles
     lowly~4az low or inferior in station or quality
     small~13az 
-    small~14bz on a small scale
+    small~14z on a small scale
  Suricata ( meanings=1 NOUN NOUN_PROPER_SINGULAR ) 
     genus_Suricata~1n 
  slender-tailed_meerkat ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
@@ -11295,7 +11295,7 @@
     economy_class~1n 
     second_class~2nz (^inferiority~1) not the highest quality in a classification
     second_class~3nz (^rank~5) not the highest rank in a classification
-    second_class~4bz by second class conveyance
+    second_class~4z by second class conveyance
  storage_locker ( meanings=1 NOUN NOUN_SINGULAR ) 
     locker~1n 
  steam_organ ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
@@ -11704,7 +11704,7 @@
     super~2az including more than a specified category
     super~3az extremely large
     ace~5a 
-    extremely~1b 
+    extremely~1z 
  special_K ( meanings=1 NOUN NOUN_PROPER_SINGULAR ) 
     super_acid~1n 
  super_C ( meanings=1 NOUN NOUN_PROPER_SINGULAR ) 
@@ -11891,7 +11891,7 @@
     sweet~13az having or denoting the characteristic taste of sugar
     unfermented~1az not soured or preserved
     sweet~15az 
-    sweetly~1bz in an affectionate or loving manner 
+    sweetly~1z in an affectionate or loving manner 
  slicker ( meanings=3 glosses=2 NOUN NOUN_SINGULAR COMMON2 COMMON1 GRADE1_2 posdefault:NOUN posdefault:ADJECTIVE ) comparative=slick 
     oilskin~1nz (^mackintosh~1) a macintosh made from cotton fabric treated with oil and pigment to make it waterproof
     cheat~3n 
@@ -12771,7 +12771,7 @@
  second_hand ( meanings=3 glosses=3 NOUN ADVERB NOUN_SINGULAR ADJECTIVE_GOOD_SUBJECT_COMPLEMENT ) 
     second_hand~1nz (^hand~3) hand marking seconds on a timepiece
     second_hand~2nz (^intermediator~1) an intermediate person
-    second_hand~3bz from a source of previously owned goods
+    second_hand~3z from a source of previously owned goods
  secretaire ( meanings=1 NOUN NOUN_SINGULAR COMMON2 posdefault:NOUN ) 
     escritoire~1n 
  segment ( meanings=4 glosses=2 VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON1 posdefault:NOUN VERB_DIRECTOBJECT VERB_NOOBJECT ) 
@@ -13179,7 +13179,7 @@
     sharp-worded~1az harsh
     needlelike~1az ending in a sharp point
     sharp~15az 
-    acutely~4bz changing suddenly in direction and degree
+    acutely~4z changing suddenly in direction and degree
  sharpener ( meanings=1 glosses=1 NOUN NOUN_SINGULAR COMMON2 COMMON1 posdefault:NOUN ) 
     sharpener~1nz (^implement~1) any implement that is used to make something sharper
  sharpie ( meanings=3 glosses=1 NOUN NOUN_SINGULAR COMMON2 posdefault:NOUN ) 
@@ -13562,7 +13562,7 @@
     side_road~1nz (^road~2) a minor road branching off of a main road
  sidesaddle ( meanings=2 glosses=2 NOUN ADVERB NOUN_SINGULAR COMMON2 ) 
     sidesaddle~1nz (^saddle~3) a saddle for a woman
-    sidesaddle~2bz on or as if on a sidesaddle
+    sidesaddle~2z on or as if on a sidesaddle
  side_street ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
     side_street~1nz (^street~1) a street intersecting a main street and terminating there
  sidewalk ( meanings=1 glosses=1 NOUN NOUN_SINGULAR COMMON4 GRADE3_4 posdefault:NOUN ) 
@@ -15470,7 +15470,7 @@
  straightaway ( meanings=3 NOUN ADJECTIVE ADVERB ADJECTIVE_NORMAL NOUN_SINGULAR ADJECTIVE_NOT_PREDICATE COMMON2 COMMON1 posdefault:ADVERB ) 
     straight~1n 
     prompt~3a 
-    now~3b 
+    now~3z 
  straight_chair ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
     side_chair~1nz (^chair~2) a straight-backed chair without arms
  side_chair ( meanings=1 NOUN NOUN_SINGULAR ) 
@@ -16262,7 +16262,7 @@
  secondhand ( meanings=3 glosses=2 ADJECTIVE ADVERB ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
     used~1a 
     secondhand~2az derived from what is primary or original
-    secondhand~3bz by indirect means
+    secondhand~3z by indirect means
  sacristy ( meanings=1 glosses=1 NOUN NOUN_SINGULAR COMMON2 posdefault:NOUN ) 
     vestry~1nz (^room~1) a room in a church where sacred vessels and vestments are kept or meetings are held
  strake ( meanings=1 glosses=1 NOUN NOUN_SINGULAR COMMON2 posdefault:NOUN ) 
@@ -16770,7 +16770,7 @@
     sure~8az infallible or unfailing
     trusted~1az worthy of trust or confidence
     sure~10az 
-    surely~1b 
+    surely~1z 
     sure~12z 
  surety ( meanings=5 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON2 COMMON1 posdefault:NOUN ) 
     surety~1nz (^foregone_conclusion~1) something clearly established
@@ -17032,8 +17032,8 @@
     strong~5a 
     steady~4a 
     stiff~9az powerful
-    stiffly~1bz in a stiff manner
-    stiff~11bz extremely
+    stiffly~1z in a stiff manner
+    stiff~11z extremely
     stiff~12vz 
  sottishness ( meanings=2 glosses=2 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON1 ) 
     sottishness~1nz (^unrestraint~1) lack of restraint in use of alcohol
@@ -19025,7 +19025,7 @@
     steady~5az securely in position
     firm~10a 
     steady~7az not subject to change or variation especially in behavior
-    steadily~2bz in a steady manner
+    steadily~2z in a steady manner
     calm~7v 
     brace~12v 
  string_theory ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
@@ -19988,11 +19988,11 @@
  semiweekly ( meanings=3 glosses=3 NOUN ADJECTIVE ADVERB ADJECTIVE_NORMAL NOUN_SINGULAR ADJECTIVE_NOT_PREDICATE COMMON2 KINDERGARTEN TIMEWORD ) 
     semiweekly~1nz (^serial_publication~1) a periodical that is published twice each week
     biweekly~2az occurring twice a week
-    biweekly~5bz twice a week
+    biweekly~5z twice a week
  semimonthly ( meanings=3 glosses=3 NOUN ADJECTIVE ADVERB ADJECTIVE_NORMAL NOUN_SINGULAR ADJECTIVE_NOT_PREDICATE COMMON2 KINDERGARTEN TIMEWORD ) 
     semimonthly~1nz (^serial_publication~1) a periodical that is published twice each month
     bimonthly~3az occurring twice a month
-    bimonthly~5bz twice a month
+    bimonthly~5z twice a month
  scratch_sheet ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
     dope_sheet~1nz (^tip_sheet~1) a racing publication giving information on horses and the outcomes of horse races
  slick_magazine ( meanings=1 NOUN NOUN_SINGULAR ) 
@@ -20063,18 +20063,18 @@
     good_day~1n 
  so_long ( meanings=1 NOUN NOUN_SINGULAR ) 
     sayonara~1n 
- so ( meanings=13 glosses=6 PRONOUN_SUBJECT PRONOUN_OBJECT ADJECTIVE ADVERB CONJUNCTION_COORDINATE ADJECTIVE_NORMAL EXTENT_ADVERB COMMON4 COMMON2 KINDERGARTEN PRONOUN_PLURAL posdefault:ADVERB ) 
+ so ( meanings=13 glosses=6 PRONOUN_SUBJECT PRONOUN_OBJECT ADJECTIVE CONJUNCTION_COORDINATE ADJECTIVE_NORMAL EXTENT_ADVERB COMMON4 COMMON2 KINDERGARTEN PRONOUN_PLURAL posdefault:ADVERB ) 
     so~1az 
-    indeed~2b 
-    hence~1b 
-    then~2b 
-    so~5bz in a manner that facilitates
-    thus~2b 
-    so~7bz to a very great extent or degree
-    so~8bz to an extent or degree as expressed
-    so~9bz in such a condition or manner, especially as expressed or implied
-    so~10bz to a certain unspecified extent or degree
-    so~11bz in the same way
+    indeed~2z 
+    hence~1z 
+    then~2z 
+    so~5z in a manner that facilitates
+    thusly~1z 
+    so~7z to a very great extent or degree
+    so~8z to an extent or degree as expressed
+    so~9z in such a condition or manner, especially as expressed or implied
+    so~10z to a certain unspecified extent or degree
+    so~11z in the same way
     so~12z 
     so~13z 
  send-off ( meanings=2 NOUN NOUN_SINGULAR ) 
@@ -23307,7 +23307,7 @@
  supra_expressionism ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     supra_expressionism~1nz (^expressionism~1) a movement that tried to go beyond expressionism
  supra ( meanings=1 ADVERB COMMON4 ) 
-    above~3b 
+    above~3z 
  sezession ( meanings=1 NOUN NOUN_SINGULAR COMMON1 posdefault:NOUN ) 
     secession~2n 
  surrealism ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON2 COMMON1 NOUN_NODETERMINER posdefault:NOUN ) 
@@ -23325,7 +23325,7 @@
     Soviet~1az of or relating to or characteristic of the former Soviet Union or its people
  somewhere ( meanings=2 glosses=2 NOUN ADVERB NOUN_SINGULAR COMMON4 COMMON1 KINDERGARTEN posdefault:ADVERB ) 
     somewhere~1nz (^location~1) an indefinite or unknown location
-    someplace~1bz in or at or to some place
+    someplace~1z in or at or to some place
  street_address ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
     street_address~1nz (^address~8) the address where a person or organization can be found
  skyway ( meanings=1 NOUN NOUN_SINGULAR COMMON2 posdefault:NOUN ) 
@@ -23384,20 +23384,20 @@
     southeast~3nz (^direction~9) the direction corresponding to the southeastward compass point
     southeasterly~1a 
     southeasterly~2a 
-    sou'-east~2b 
+    sou'-east~2z 
  south ( meanings=5 glosses=5 NOUN_ABSTRACT NOUN ADJECTIVE ADVERB ADJECTIVE_NORMAL NOUN_SINGULAR ADJECTIVE_NOT_PREDICATE COMMON4 COMMON1 NOUN_NODETERMINER KINDERGARTEN posdefault:NOUN ) comparative=souther 
     south~1nz (^location~1) a location in the southern part of a country, region, or city
     southward~1nz (^cardinal_compass_point~1) the cardinal compass point that is at 180 degrees
     south~3nz (^direction~9) the direction corresponding to the southward cardinal compass point
     south~4az situated in or facing or moving toward or coming from the south
-    in_the_south~1bz in a southern direction
+    in_the_south~1z in a southern direction
  southwest ( meanings=6 glosses=2 NOUN_ABSTRACT NOUN ADJECTIVE ADVERB ADJECTIVE_NORMAL NOUN_SINGULAR ADJECTIVE_NOT_PREDICATE COMMON4 NOUN_NODETERMINER posdefault:NOUN ) comparative=southwester 
     southwest~1nz (^location~1) a location in the southwestern part of a country, region, or city
     sou'-west~1n 
     southwest~3nz (^direction~9) the direction corresponding to the southwestward compass point
     southwesterly~1a 
     southwesterly~2a 
-    south-west~1b 
+    south-west~1z 
  southland ( meanings=1 glosses=1 NOUN NOUN_SINGULAR COMMON2 posdefault:NOUN ) 
     southland~1nz (^region~4) any region lying in or toward the south
  Southeast ( meanings=1 NOUN NOUN_PROPER_SINGULAR ) 
@@ -27553,7 +27553,7 @@
  Stonewall_Jackson ( meanings=1 NOUN NOUN_PROPER_SINGULAR ) 
     Jackson~6n 
  Saint_James ( meanings=1 NOUN NOUN_PROPER_SINGULAR ) 
-    James~4n 
+    James~3n 
  St_._James ( meanings=1 NOUN NOUN_PROPER_SINGULAR ) 
     Saint_James~1n 
  Saint_James_the_Apostle ( meanings=1 NOUN NOUN_PROPER_SINGULAR ) 
@@ -28542,8 +28542,8 @@
     south_wind~1n 
     southern~1a 
     southern~2a 
-    southerly~4bz from the south
-    southward~3b 
+    southerly~4z from the south
+    southward~3z 
  sound_projection ( meanings=1 NOUN NOUN_SINGULAR ) 
     acoustic_projection~1n 
  spherical_aberration ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
@@ -32712,19 +32712,19 @@
     seaward~2az directed or situated away from inland regions and toward the sea or coast
     inshore~2a 
     offshore~1a 
-    seawards~1b 
+    seawards~1z 
  southeast_by_east ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     SEbE~1nz (^point~22) the compass point that is one point east of southeast
  SEbE ( meanings=1 NOUN NOUN_PROPER_SINGULAR ) 
     southeast_by_east~1n 
  sou'-east ( meanings=2 NOUN ADVERB NOUN_SINGULAR ) 
     southeastward~1n 
-    south-east~1b 
+    south-east~1z 
  southeastward ( meanings=4 glosses=2 NOUN_ABSTRACT NOUN ADJECTIVE ADVERB ADJECTIVE_NORMAL NOUN_SINGULAR ADJECTIVE_NOT_PREDICATE COMMON2 ) 
     SE~1nz (^point~22) the compass point midway between south and east
     southeastward~2az toward the southeast
     southeastward~3az 
-    southeastwardly~1b 
+    southeastwardly~1z 
  SE ( meanings=1 NOUN NOUN_PROPER_SINGULAR COMMON2 ) 
     southeast~2n 
  southeast_by_south ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
@@ -32735,7 +32735,7 @@
     SSE~1nz (^point~22) the compass point midway between south and southeast
  sou'-sou'-east ( meanings=2 NOUN ADVERB NOUN_SINGULAR ) 
     south_southeast~1n 
-    south-southeast~1b 
+    south-southeast~1z 
  SSE ( meanings=1 NOUN NOUN_PROPER_SINGULAR COMMON1 ) 
     sou'-sou'-east~1n 
  south_by_east ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
@@ -32745,7 +32745,7 @@
  southward ( meanings=3 NOUN ADJECTIVE ADVERB ADJECTIVE_NORMAL NOUN_SINGULAR ADJECTIVE_NOT_PREDICATE COMMON2 COMMON1 posdefault:ADVERB ) 
     due_south~1n 
     southbound~1a 
-    southwards~1b 
+    southwards~1z 
  south_by_west ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     SbW~1nz (^point~22) the compass point that is one point west of due south
  SbW ( meanings=1 NOUN NOUN_PROPER_SINGULAR COMMON1 ) 
@@ -32754,7 +32754,7 @@
     SSW~1nz (^point~22) the compass point midway between south and southwest
  sou'-sou'-west ( meanings=2 NOUN ADVERB NOUN_SINGULAR ) 
     south_southwest~1n 
-    south-southwest~1b 
+    south-southwest~1z 
  SSW ( meanings=1 NOUN NOUN_PROPER_SINGULAR COMMON1 ) 
     sou'-sou'-west~1n 
  southwest_by_south ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
@@ -32766,7 +32766,7 @@
  southwestward ( meanings=3 glosses=2 NOUN_ABSTRACT NOUN ADJECTIVE ADVERB ADJECTIVE_NORMAL NOUN_SINGULAR ADJECTIVE_NOT_PREDICATE COMMON2 ) 
     SW~1nz (^point~22) the compass point midway between south and west
     southwestward~2az toward the southwest
-    southwestwardly~1b 
+    southwestwardly~1z 
  SW ( meanings=1 NOUN NOUN_PROPER_SINGULAR COMMON2 ) 
     southwest~2n 
  southwest_by_west ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
@@ -33055,8 +33055,8 @@
  sexually_transmitted_disease ( meanings=1 NOUN NOUN_SINGULAR NOUN_NODETERMINER ) 
     Venus_'s_curse~1n 
  sexually ( meanings=2 glosses=2 ADVERB COMMON4 posdefault:ADVERB ) 
-    sexually~1bz by sexual means
-    sexually~2bz with respect to sexuality
+    sexually~1z by sexual means
+    sexually~2z with respect to sexuality
  syphilis ( meanings=1 NOUN NOUN_SINGULAR COMMON2 COMMON1 NOUN_NODETERMINER ) 
     pox~2n 
  syph ( meanings=1 NOUN NOUN_SINGULAR COMMON1 NOUN_NODETERMINER ) 
@@ -35193,8 +35193,8 @@
     plain~9a 
     gossamer~4a 
     sheer~5az 
-    sheer~6bz directly
-    perpendicularly~2b 
+    sheer~6z directly
+    perpendicularly~2z 
     sheer~8vz cause to sheer
     slew~3v 
  shone ( VERB_PAST VERB_PAST_PARTICIPLE VERB ADJECTIVE ADJECTIVE_PARTICIPLE COMMON2 COMMON1 KINDERGARTEN posdefault:VERB ) conjugate=shine 
@@ -35213,7 +35213,7 @@
     some~2az relatively much but unspecified in amount or extent
     some~3az remarkable
     some~4az quantifier
-    around~1b 
+    around~1z 
     some~6z 
     some~7z 
  sewn ( meanings=1 VERB_PAST_PARTICIPLE VERB ADJECTIVE ADJECTIVE_NORMAL ADJECTIVE_PARTICIPLE COMMON2 COMMON1 KINDERGARTEN posdefault:VERB ) conjugate=sewed 
@@ -35234,9 +35234,9 @@
  semiannual ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 KINDERGARTEN posdefault:ADJECTIVE TIMEWORD ) 
     half-yearly~1az occurring or payable twice each year
  soon ( meanings=1 glosses=1 ADVERB COMMON4 COMMON1 KINDERGARTEN posdefault:ADVERB TIMEWORD ) comparative=soonest 
-    before_long~1bz in the near future
+    before_long~1z in the near future
  someday ( meanings=1 glosses=1 ADVERB COMMON4 KINDERGARTEN posdefault:ADVERB TIMEWORD ) 
-    someday~1bz some unspecified time in the future
+    someday~1z some unspecified time in the future
  shortened ( meanings=4 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:VERB ) 
     cut~21a 
     sawed-off~1a 
@@ -35267,7 +35267,7 @@
     superabundant~1az most excessively abundant
  scarce ( meanings=2 glosses=1 ADJECTIVE ADVERB ADJECTIVE_NORMAL COMMON4 GRADE3_4 posdefault:ADJECTIVE ADJECTIVE_GOOD_SUBJECT_COMPLEMENT ) 
     scarce~1az deficient in quantity or number compared with the demand
-    scarcely~1b 
+    scarcely~1z 
  saltlike ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON1 ) 
     saltlike~1az resembling a compound formed by replacing hydrogen in an acid by a metal
  self-confessed ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL ADJECTIVE_NOT_PREDICATE posdefault:ADJECTIVE ) 
@@ -35619,7 +35619,7 @@
     stiff-backed~1az having a stiff back
  straight-backed ( meanings=2 glosses=2 ADJECTIVE ADVERB ADJECTIVE_NORMAL ADJECTIVE_NOT_PREDICATE posdefault:ADJECTIVE ) 
     straight-backed~1az having a straight back
-    erectly~1bz in a straight-backed manner
+    erectly~1z in a straight-backed manner
  sweptback ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON1 ) 
     backswept~1a 
     sweptback~2az angled rearward from the point of attachment
@@ -35695,7 +35695,7 @@
  second-best ( meanings=3 glosses=2 ADJECTIVE ADVERB ADJECTIVE_NORMAL posdefault:ADJECTIVE posdefault:ADVERB ) 
     second-best~1az next to the best
     second-best~2az 
-    second-best~3bz in second place
+    second-best~3z in second place
  superfine ( meanings=3 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 ) 
     superfine~1az very fine in quality
     overrefined~1a 
@@ -35885,8 +35885,8 @@
     studious~3az 
  slapdash ( meanings=3 ADJECTIVE ADVERB ADJECTIVE_NORMAL COMMON2 posdefault:ADJECTIVE ) 
     sloppy~1a 
-    bolt~9b 
-    slam-bang~4b 
+    bolt~9z 
+    slam-bang~4z 
  slipshod ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:ADJECTIVE ) 
     slapdash~1a 
  sloppy ( meanings=7 glosses=6 ADJECTIVE ADJECTIVE_NORMAL COMMON4 GRADE1_2 posdefault:ADJECTIVE ) comparative=sloppiest 
@@ -35933,7 +35933,7 @@
     one-celled~1az having a single cell
  sure_as_shooting ( meanings=2 glosses=1 ADJECTIVE ADVERB ADJECTIVE_NORMAL ADJECTIVE_NOT_PREDICATE ) 
     sure_as_shooting~1az absolutely certain
-    certainly~1b 
+    certainly~1z 
  self-assured ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL posdefault:ADJECTIVE ADJECTIVE_GOOD_SUBJECT_COMPLEMENT ) 
     self-confident~1a 
     self-assured~2az 
@@ -36163,11 +36163,11 @@
     everlasting~2a 
     stark~4az complete or extreme
     austere~3a 
-    stark~6bz completely
+    stark~6z completely
  scantily_clad ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL CONDITIONAL_IDIOM  poscondition=?=A ) 
     underclothed~1az 
  scantily ( meanings=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    barely~2b 
+    barely~2z 
  seminude ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 ) 
     seminude~1az partially clothed
  starkers ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON1 ) 
@@ -36592,7 +36592,7 @@
  single-handed ( meanings=3 glosses=2 ADJECTIVE ADVERB ADJECTIVE_NORMAL ADJECTIVE_NOT_PREDICATE posdefault:ADVERB ) 
     single-handed~1az without help from others
     unbacked~1az unsupported by other people
-    single-handedly~1b 
+    single-handedly~1z 
  strong-minded ( meanings=3 glosses=2 ADJECTIVE ADJECTIVE_NORMAL posdefault:ADJECTIVE ) 
     strong-minded~1az marked by vigorous independence of thought and judgment
     strong-willed~1az having a determined will
@@ -36658,9 +36658,9 @@
     squinty~1a 
     sidelong~2az inclining or directed to one side
     lateral~3a 
-    sideways~2b 
-    sidelong~5bz with the side toward someone or something
-    sidelong~6bz on the side
+    sideways~2z 
+    sidelong~5z with the side toward someone or something
+    sidelong~6z on the side
  straight-from-the-shoulder ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL posdefault:ADJECTIVE ) 
     plainspoken~1a 
  scattershot ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 ) 
@@ -37189,7 +37189,7 @@
     piecemeal~1a 
  stepwise ( meanings=2 ADJECTIVE ADVERB ADJECTIVE_NORMAL ADJECTIVE_NOT_PREDICATE COMMON2 COMMON1 posdefault:ADJECTIVE ) 
     step-by-step~1a 
-    step_by_step~2b 
+    step_by_step~2z 
  steepish ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON1 posdefault:ADJECTIVE ) 
     steepish~1az somewhat steep
  steep-sided ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL posdefault:ADJECTIVE ) 
@@ -37351,7 +37351,7 @@
     spouting~1a 
  scorching ( meanings=2 glosses=2 ADJECTIVE ADVERB ADJECTIVE_NORMAL ADJECTIVE_NOT_PREDICATE COMMON2 COMMON1 posdefault:VERB ) 
     scorching~1az hot and dry enough to burn or parch a surface
-    scorching~2bz capable of causing burns
+    scorching~2z capable of causing burns
  sizzling ( meanings=2 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:VERB ) 
     sizzling~1az hot enough to burn with or as if with a hissing sound
     red-hot~3az characterized by intense emotion or interest or excitement
@@ -37678,7 +37678,7 @@
     lurid~3az glaringly vivid and graphic
  such ( meanings=7 glosses=2 PRONOUN_SUBJECT PRONOUN_OBJECT ADJECTIVE ADVERB PREDETERMINER DETERMINER ADJECTIVE_NORMAL ADJECTIVE_NOT_PREDICATE COMMON4 COMMON2 COMMON1 KINDERGARTEN DETERMINER_PLURAL PRONOUN_SINGULAR PRONOUN_PLURAL ) 
     such~1az of so extreme a degree or extent
-    such~2bz to so extreme a degree
+    such~2z to so extreme a degree
     such~3z 
     such~4z 
     such~5z 
@@ -37688,7 +37688,7 @@
     stirring~3az exciting strong but not unpleasant emotions
  stock-still ( meanings=2 ADJECTIVE ADVERB ADJECTIVE_NORMAL ADJECTIVE_NOT_PREDICATE posdefault:ADJECTIVE ) 
     rooted~1a 
-    still~15b 
+    still~15z 
  seamanlike ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON1 posdefault:ADJECTIVE ) 
     seamanly~1az characteristic of or befitting a seaman
  seamanly ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON1 ) 
@@ -37798,7 +37798,7 @@
     integrated~3a 
  so-so ( meanings=2 ADJECTIVE ADVERB ADJECTIVE_NORMAL ADJECTIVE_ONLY_PREDICATE ADJECTIVE_NOT_PREDICATE posdefault:ADVERB ) 
     indifferent~6a 
-    acceptably~1b 
+    acceptably~1z 
  surpassing ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:VERB ) 
     olympian~1a 
     transcendent~2a 
@@ -37853,16 +37853,16 @@
     saddle-sore~1az sore after riding a horse
  sideways ( meanings=5 glosses=5 ADJECTIVE ADVERB ADJECTIVE_NORMAL ADJECTIVE_NOT_PREDICATE COMMON2 COMMON1 KINDERGARTEN posdefault:ADVERB ) 
     crabwise~1az at an angle
-    obliquely~2bz to, toward or at one side
-    sidewise~1bz toward one side
-    sidewise~2bz from the side
-    sidewise~3bz with one side forward or to the front
+    obliquely~2z to, toward or at one side
+    sidewise~1z toward one side
+    sidewise~2z from the side
+    sidewise~3z with one side forward or to the front
  surmountable ( meanings=2 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:ADJECTIVE ) 
     climbable~1az capable of being surmounted
     surmountable~2az capable of being surmounted or overcome
  sometime ( meanings=2 glosses=2 ADJECTIVE ADVERB ADJECTIVE_NORMAL ADJECTIVE_NOT_PREDICATE COMMON4 KINDERGARTEN posdefault:ADVERB ) 
     old~8az belonging to some prior time
-    sometime~2bz at some indefinite or unstated time
+    sometime~2z at some indefinite or unstated time
  superpatriotic ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON1 ) 
     nationalistic~2a 
  sharp-sighted ( meanings=3 ADJECTIVE ADJECTIVE_NORMAL posdefault:ADJECTIVE ) 
@@ -38499,14 +38499,14 @@
     six-fold~1az having six units or components
  sixfold ( meanings=2 glosses=1 ADJECTIVE ADVERB ADJECTIVE_NORMAL COMMON2 posdefault:ADJECTIVE posdefault:ADVERB ) 
     sextuple~1a 
-    sixfold~2bz by a factor of six
+    sixfold~2z by a factor of six
  six-fold ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL posdefault:ADJECTIVE ) 
     sixfold~1a 
  septuple ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON1 ) 
     sevenfold~1a 
  sevenfold ( meanings=2 glosses=1 ADJECTIVE ADVERB ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE posdefault:ADVERB ) 
     seven-fold~1a 
-    sevenfold~2bz seven times
+    sevenfold~2z seven times
  seven-fold ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL posdefault:ADJECTIVE ) 
     septuple~1az having seven units or components
  single-lane ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL posdefault:ADJECTIVE ) 
@@ -38639,7 +38639,7 @@
     seismic~1a 
  staccato ( meanings=2 glosses=1 ADJECTIVE ADVERB ADJECTIVE_NORMAL ADJECTIVE_NOT_PREDICATE COMMON2 COMMON1 ) 
     disconnected~3a 
-    staccato~2bz separating the notes
+    staccato~2z separating the notes
  substandard ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
     inferior~3a 
  starchlike ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON1 ) 
@@ -38676,7 +38676,7 @@
     stomatal~2az relating to or of the nature of or having a mouth or mouthlike opening
  skew-whiff ( meanings=2 ADJECTIVE ADVERB ADJECTIVE_NORMAL ADJECTIVE_NOT_PREDICATE posdefault:ADJECTIVE ) 
     lopsided~1a 
-    awry~4b 
+    awry~4z 
  squiggly ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 GRADE1_2 posdefault:ADJECTIVE ) 
     squiggly~1az wavy and twisting
  sickle-shaped ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL posdefault:ADJECTIVE ) 
@@ -38967,8 +38967,8 @@
     solid-hoofed~1az having solid hooves
  skyward ( meanings=3 ADJECTIVE ADVERB ADJECTIVE_NORMAL ADJECTIVE_NOT_PREDICATE COMMON2 COMMON1 posdefault:ADVERB ) 
     heavenward~1a 
-    skywards~1b 
-    skyward~3bz 
+    skywards~1z 
+    skyward~3z 
  sprouted ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:VERB ) 
     sprouted~1az having just emerged from the ground
  sophistic ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 ) 
@@ -38980,9 +38980,9 @@
     semiprecious~1az used of gemstones having less commercial value than precious stones
  slam-bang ( meanings=4 glosses=4 ADJECTIVE ADVERB ADJECTIVE_NORMAL ADJECTIVE_NOT_PREDICATE ) 
     slam-bang~1az violent and sudden and noisy
-    slap-bang~1bz in a violent or sudden or noisy manner
-    slam-bang~3bz with heedless speed
-    slapdash~3bz in a careless or reckless manner
+    slap-bang~1z in a violent or sudden or noisy manner
+    slam-bang~3z with heedless speed
+    slapdash~3z in a careless or reckless manner
  sinless ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
     impeccant~1a 
     sinless~2az 
@@ -39018,7 +39018,7 @@
     rainy~1a 
  steaming ( meanings=2 glosses=2 ADJECTIVE ADVERB ADJECTIVE_NORMAL ADJECTIVE_NOT_PREDICATE COMMON2 COMMON1 GRADE1_2 posdefault:VERB ) 
     steamy~3az filled with steam or emitting moisture in the form of vapor or mist
-    piping~4bz extremely
+    piping~4z extremely
  semiarid ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:ADJECTIVE ) 
     semiarid~1az somewhat arid
  semi-dry ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL posdefault:ADJECTIVE ) 
@@ -39052,7 +39052,7 @@
     shopworn~2az worn or faded from being on display in a store
  summa_cum_laude ( meanings=2 glosses=2 ADJECTIVE ADVERB ADJECTIVE_NORMAL ADJECTIVE_NOT_PREDICATE posdefault:ADVERB ) 
     summa_cum_laude~1az with highest honor
-    summa_cum_laude~2bz with highest honor
+    summa_cum_laude~2z with highest honor
  syncategorematic ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON1 ) 
     syncategorematic~1az of a term that cannot stand as the subject or the predicate of a proposition but must be used in conjunction with other terms
  synsemantic ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON1 ) 
@@ -39420,7 +39420,7 @@
     salvific~1az pertaining to the power of salvation or redemption
  sidearm ( meanings=2 glosses=2 ADJECTIVE ADVERB ADJECTIVE_NORMAL ADJECTIVE_NOT_PREDICATE COMMON2 ) 
     sidearm~1az made with the arm moving parallel to the ground
-    sidearm~2bz in a sidearm manner
+    sidearm~2z in a sidearm manner
  surmounted ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:VERB ) 
     surmounted~1az having something on top
  sanitized ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:VERB ) 
@@ -39502,9 +39502,9 @@
     single-word~1az 
  sky-high ( meanings=4 glosses=2 ADJECTIVE ADVERB ADJECTIVE_NORMAL ADJECTIVE_NOT_PREDICATE posdefault:ADJECTIVE ) 
     sky-high~1az 
-    sky-high~2bz to a very high level
-    enthusiastically~2b 
-    sky-high~4bz destroyed completely
+    sky-high~2z to a very high level
+    enthusiastically~2z 
+    sky-high~4z destroyed completely
  smalltime ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON1 ) 
     smalltime~1az 
  snowcapped ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:ADJECTIVE ) 
@@ -39928,7 +39928,7 @@
     sophomoric~1az 
  sopping ( meanings=2 ADJECTIVE ADVERB ADJECTIVE_NORMAL ADJECTIVE_NOT_PREDICATE COMMON2 posdefault:ADVERB ) 
     sopping~1az 
-    soaking~4b 
+    soaking~4z 
  sorrowless ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON1 posdefault:ADJECTIVE ) 
     sorrowless~1az 
  soubrettish ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL ) 
@@ -40328,9 +40328,9 @@
  synecological ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON1 ) 
     synecological~1az 
  slower ( meanings=1 glosses=1 MORE_FORM ADJECTIVE ADVERB ADJECTIVE_NORMAL COMMON4 KINDERGARTEN posdefault:ADJECTIVE ) comparative=slow 
-    slower~1bz more slowly
+    slower~1z more slowly
  slowest ( meanings=1 glosses=1 MOST_FORM ADJECTIVE ADVERB ADJECTIVE_NORMAL COMMON2 COMMON1 KINDERGARTEN posdefault:ADJECTIVE ) comparative=slower 
-    slowest~1bz most slowly
+    slowest~1z most slowly
  sadder ( MORE_FORM ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 KINDERGARTEN posdefault:ADJECTIVE ) comparative=sad 
  saddest ( MOST_FORM ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 KINDERGARTEN posdefault:ADJECTIVE ) comparative=sadder 
  saltier ( MORE_FORM ADJECTIVE ADJECTIVE_NORMAL COMMON2 GRADE3_4 posdefault:ADJECTIVE ) comparative=salty 
@@ -40576,1057 +40576,1057 @@
     revolt~2v 
     nauseate~2v 
  scarcely ( meanings=2 glosses=2 ADVERB COMMON4 KINDERGARTEN posdefault:ADVERB NEGATIVE_ADVERB_STARTER ) 
-    just~6bz only a very short time before
-    hardly~2bz almost not
+    just~6z only a very short time before
+    hardly~2z almost not
  simply ( meanings=4 glosses=3 ADVERB EXTENT_ADVERB COMMON4 COMMON1 KINDERGARTEN posdefault:ADVERB ) 
-    just~8b 
-    simply~2bz absolutely
-    plainly~1bz in a simple manner
-    just~11bz absolutely
+    just~8z 
+    simply~2z absolutely
+    plainly~1z in a simple manner
+    just~11z absolutely
  significantly ( meanings=3 glosses=3 ADVERB COMMON4 COMMON1 posdefault:ADVERB ) 
-    significantly~1bz in a significant manner
-    importantly~2bz in an important way or to an important degree
-    significantly~3bz in a statistically significant way
+    significantly~1z in a significant manner
+    importantly~2z in an important way or to an important degree
+    significantly~3z in a statistically significant way
  smartly ( meanings=3 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    modishly~1b 
-    vigorously~1b 
-    cleverly~1b 
+    modishly~1z 
+    vigorously~1z 
+    cleverly~1z 
  sprucely ( meanings=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    smartly~1b 
+    smartly~1z 
  solely ( meanings=1 ADVERB COMMON4 posdefault:ADVERB ) 
-    exclusively~1b 
+    exclusively~1z 
  substantially ( meanings=2 glosses=1 ADVERB COMMON4 posdefault:ADVERB ) 
-    considerably~1b 
-    substantially~2bz in a strong substantial way
+    considerably~1z 
+    substantially~2z in a strong substantial way
  satisfactorily ( meanings=1 glosses=1 ADVERB COMMON4 posdefault:ADVERB ) 
-    satisfactorily~1bz in a satisfactory manner
+    satisfactorily~1z in a satisfactory manner
  severely ( meanings=3 glosses=1 ADVERB COMMON4 posdefault:ADVERB ) 
-    seriously~1b 
-    hard~17b 
-    sternly~1bz with sternness
+    seriously~1z 
+    hard~17z 
+    sternly~1z with sternness
  seriously ( meanings=2 glosses=2 ADVERB EXTENT_ADVERB COMMON4 COMMON1 KINDERGARTEN posdefault:ADVERB ) 
-    badly~6bz to a severe or serious degree
-    in_earnest~1bz in a serious manner
+    badly~6z to a severe or serious degree
+    in_earnest~1z in a serious manner
  sort_of ( meanings=1 ADVERB CONDITIONAL_IDIOM posdefault:ADVERB  poscondition=?[dNP]=<Np?!N=R ) 
-    kinda~1b 
+    kinda~1z 
  sometimes ( meanings=1 glosses=1 ADVERB COMMON4 COMMON1 KINDERGARTEN posdefault:ADVERB ) 
-    sometimes~1bz on certain occasions or in certain cases but not always
+    sometimes~1z on certain occasions or in certain cases but not always
  someplace ( meanings=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    somewhere~2b 
+    somewhere~2z 
  somehow ( meanings=2 glosses=1 ADVERB COMMON4 posdefault:ADVERB ) 
-    in_some_way~1b 
-    somehow~2bz for some unspecified reason
+    in_some_way~1z 
+    somehow~2z for some unspecified reason
  someway ( meanings=1 ADVERB COMMON2 ) 
-    in_some_manner~1b 
+    in_some_manner~1z 
  someways ( meanings=1 ADVERB COMMON1 ) 
-    someway~1b 
+    someway~1z 
  so_far ( meanings=4 ADVERB PREPOSITION ) 
-    yet~4b 
-    yet~5b 
-    in_so_far~1b 
+    yet~4z 
+    yet~5z 
+    in_so_far~1z 
     so_far~4z 
  shortly ( meanings=5 glosses=3 ADVERB COMMON4 GRADE1_2 posdefault:ADVERB ) 
-    soon~1b 
-    shortly~2bz for a short time
-    shortly~3bz at a short distance
-    in_short~1bz in a concise manner
-    short~17b 
+    soon~1z 
+    shortly~2z for a short time
+    shortly~3z at a short distance
+    in_short~1z in a concise manner
+    short~17z 
  shoulder-to-shoulder ( meanings=1 glosses=1 ADVERB posdefault:ADJECTIVE ) 
-    shoulder-to-shoulder~1bz side by side and close together
+    shoulder-to-shoulder~1z side by side and close together
  soonest ( meanings=1 glosses=1 MOST_FORM ADVERB COMMON4 KINDERGARTEN posdefault:ADVERB ) comparative=sooner 
-    earliest~2bz with the least delay
+    earliest~2z with the least delay
  spiritedly ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    spiritedly~1bz in a spirited or lively manner
+    spiritedly~1z in a spirited or lively manner
  sportively ( meanings=1 glosses=1 ADVERB COMMON1 ) 
-    sportively~1bz in a merry sportive manner
+    sportively~1z in a merry sportive manner
  stormily ( meanings=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    turbulently~1b 
+    turbulently~1z 
  seldom ( meanings=1 ADVERB COMMON4 GRADE3_4 posdefault:ADVERB NEGATIVE_ADVERB_STARTER ) 
-    rarely~2b 
+    rarely~2z 
  somewhat ( meanings=2 glosses=2 ADVERB EXTENT_ADVERB COMMON4 COMMON1 KINDERGARTEN posdefault:ADVERB ) 
-    passably~1bz to a moderately sufficient extent or degree
-    slightly~1bz to a small degree or extent
+    passably~1z to a moderately sufficient extent or degree
+    slightly~1z to a small degree or extent
  slightly ( meanings=2 glosses=1 ADVERB EXTENT_ADVERB COMMON4 COMMON1 KINDERGARTEN posdefault:ADVERB ) 
-    more_or_less~2b 
-    slimly~1bz in a slim or slender manner
+    more_or_less~2z 
+    slimly~1z in a slim or slender manner
  seemingly ( meanings=1 ADVERB COMMON4 posdefault:ADVERB ) 
-    on_the_face_of_it~1b 
+    on_the_face_of_it~1z 
  specifically ( meanings=1 glosses=1 ADVERB COMMON4 COMMON1 posdefault:ADVERB ) 
-    specifically~1bz in distinction from others
+    specifically~1z in distinction from others
  sadly ( meanings=3 glosses=1 ADVERB COMMON4 posdefault:ADVERB ) 
-    unhappily~1b 
-    deplorably~1b 
-    sadly~3bz with sadness
+    unhappily~1z 
+    deplorably~1z 
+    sadly~3z with sadness
  straight_off ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    immediately~1b 
+    immediately~1z 
  sharply ( meanings=4 glosses=1 ADVERB COMMON4 posdefault:ADVERB ) 
-    aggressively~1b 
-    crisply~1bz in a well delineated manner
-    precipitously~2b 
-    sharp~16b 
+    aggressively~1z 
+    crisply~1z in a well delineated manner
+    precipitously~2z 
+    sharp~16z 
  shrilly ( meanings=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    piercingly~1b 
+    piercingly~1z 
  steadily ( meanings=2 glosses=1 ADVERB COMMON4 posdefault:ADVERB ) 
-    steadily~1bz at a steady rate or pace
-    steady~8b 
+    steadily~1z at a steady rate or pace
+    steady~8z 
  steadfastly ( meanings=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    firmly~1b 
+    firmly~1z 
  squarely ( meanings=5 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    straightforwardly~1b 
-    square~16b 
-    square~17b 
-    forthrightly~1b 
-    square~18b 
+    straightforwardly~1z 
+    square~16z 
+    square~17z 
+    forthrightly~1z 
+    square~18z 
  straightforwardly ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    foursquare~3bz with firmness and conviction
+    foursquare~3z with firmness and conviction
  swiftly ( meanings=1 glosses=1 ADVERB COMMON4 posdefault:ADVERB ) 
-    fleetly~1bz in a swift manner
+    fleetly~1z in a swift manner
  soundly ( meanings=2 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    thoroughly~2b 
-    soundly~2bz deeply or completely
+    thoroughly~2z 
+    soundly~2z deeply or completely
  subsequently ( meanings=1 ADVERB COMMON4 posdefault:ADVERB ) 
-    later~3b 
+    later~3z 
  suddenly ( meanings=3 glosses=2 ADVERB COMMON4 GRADE1_2 posdefault:ADVERB ) 
-    abruptly~1b 
-    of_a_sudden~1bz happening unexpectedly
-    on_the_spur_of_the_moment~1bz on impulse
+    abruptly~1z 
+    of_a_sudden~1z happening unexpectedly
+    on_the_spur_of_the_moment~1z on impulse
  softly ( meanings=4 glosses=1 ADVERB COMMON4 posdefault:ADVERB ) 
-    quietly~1b 
-    lightly~4b 
-    piano~4b 
-    softly~4bz in a manner that is pleasing to the senses
+    quietly~1z 
+    lightly~4z 
+    piano~4z 
+    softly~4z in a manner that is pleasing to the senses
  statistically ( meanings=1 glosses=1 ADVERB COMMON4 posdefault:ADVERB ) 
-    statistically~1bz with respect to statistics
+    statistically~1z with respect to statistics
  scornfully ( meanings=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    disdainfully~1b 
+    disdainfully~1z 
  sanely ( meanings=2 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    sanely~1bz in a sane or lucid manner
-    reasonably~2b 
+    sanely~1z in a sane or lucid manner
+    reasonably~2z 
  singly ( meanings=2 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    singly~1bz one by one
-    one_by_one~2b 
+    singly~1z one by one
+    one_by_one~2z 
  specially ( meanings=2 ADVERB COMMON4 posdefault:ADVERB ) 
-    especially~1b 
-    especially~2b 
+    especially~1z 
+    especially~2z 
  speedily ( meanings=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    rapidly~1b 
+    rapidly~1z 
  spontaneously ( meanings=2 glosses=2 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    impromptu~4bz without advance preparation
-    spontaneously~2bz in a spontaneous manner
+    impromptu~4z without advance preparation
+    spontaneously~2z in a spontaneous manner
  strenuously ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    strenuously~1bz in a strenuous manner
+    strenuously~1z in a strenuous manner
  secondly ( meanings=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    second~1b 
+    second~1z 
  step_by_step ( meanings=2 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    bit_by_bit~1b 
-    stepwise~2bz 
+    bit_by_bit~1z 
+    stepwise~2z 
  scientifically ( meanings=1 glosses=1 ADVERB COMMON4 posdefault:ADVERB ) 
-    scientifically~1bz with respect to science
+    scientifically~1z with respect to science
  silently ( meanings=1 ADVERB COMMON4 posdefault:ADVERB ) 
-    mutely~1b 
+    mutely~1z 
  sooner ( meanings=2 MORE_FORM ADVERB COMMON4 KINDERGARTEN posdefault:ADVERB ) comparative=soon 
-    preferably~1b 
-    earlier~4b 
+    preferably~1z 
+    earlier~4z 
  self-indulgently ( meanings=1 glosses=1 ADVERB posdefault:ADVERB ) 
-    self-indulgently~1bz in a self-indulgent manner
+    self-indulgently~1z in a self-indulgent manner
  symbiotically ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    symbiotically~1bz in a symbiotic manner
+    symbiotically~1z in a symbiotic manner
  symbolically ( meanings=2 glosses=2 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    symbolically~1bz in a symbolic manner
-    symbolically~2bz by means of symbols
+    symbolically~1z in a symbolic manner
+    symbolically~2z by means of symbols
  successfully ( meanings=1 glosses=1 ADVERB COMMON4 COMMON1 posdefault:ADVERB ) 
-    successfully~1bz with success
+    successfully~1z with success
  simultaneously ( meanings=1 ADVERB COMMON4 posdefault:ADVERB ) 
-    at_the_same_time~1b 
+    at_the_same_time~1z 
  systematically ( meanings=1 glosses=1 ADVERB COMMON4 posdefault:ADVERB ) 
-    consistently~1bz in a systematic or consistent manner
+    consistently~1z in a systematic or consistent manner
  sacrilegiously ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    sacrilegiously~1bz in a sacrilegious manner
+    sacrilegiously~1z in a sacrilegious manner
  scenically ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    scenically~1bz with respect to stage scenery
+    scenically~1z with respect to stage scenery
  scholastically ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    scholastically~1bz with respect to scholastic activities
+    scholastically~1z with respect to scholastic activities
  serially ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    serially~1bz in a serial manner
+    serially~1z in a serial manner
  socially ( meanings=2 glosses=2 ADVERB COMMON4 posdefault:ADVERB ) 
-    socially~1bz by or with respect to society
-    socially~2bz in a social manner
+    socially~1z by or with respect to society
+    socially~2z in a social manner
  spatially ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    spatially~1bz with regard to space
+    spatially~1z with regard to space
  semantically ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    semantically~1bz with regard to meaning
+    semantically~1z with regard to meaning
  sociolinguistically ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    sociolinguistically~1bz with respect to sociolinguistics
+    sociolinguistically~1z with respect to sociolinguistics
  sociobiologically ( meanings=1 glosses=1 ADVERB COMMON1 ) 
-    sociobiologically~1bz with respect to sociobiology
+    sociobiologically~1z with respect to sociobiology
  subcutaneously ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    subcutaneously~1bz below the skin
+    subcutaneously~1z below the skin
  syntactically ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    syntactically~1bz with respect to syntax
+    syntactically~1z with respect to syntax
  spinally ( meanings=2 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    spinally~1bz in the spine
-    spinally~2bz 
+    spinally~1z in the spine
+    spinally~2z 
  surgically ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    surgically~1bz in a surgical manner
+    surgically~1z in a surgical manner
  severally ( meanings=3 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    respectively~1b 
-    individually~1b 
-    independently~2b 
+    respectively~1z 
+    individually~1z 
+    independently~2z 
  similarly ( meanings=1 ADVERB COMMON4 posdefault:ADVERB ) 
-    likewise~3b 
+    likewise~3z 
  secondarily ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    secondarily~1bz of secondary import
+    secondarily~1z of secondary import
  suitably ( meanings=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    appropriately~1b 
+    appropriately~1z 
  spherically ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    spherically~1bz in a spherical manner
+    spherically~1z in a spherical manner
  superficially ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    superficially~1bz in a superficial manner
+    superficially~1z in a superficial manner
  syllabically ( meanings=1 glosses=1 ADVERB COMMON1 ) 
-    syllabically~1bz in or with syllables
+    syllabically~1z in or with syllables
  symptomatically ( meanings=2 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    symptomatically~1bz by symptoms
-    symptomatically~2bz 
+    symptomatically~1z by symptoms
+    symptomatically~2z 
  surely ( meanings=1 ADVERB COMMON4 GRADE1_2 posdefault:ADVERB ) 
-    for_sure~2b 
+    for_sure~2z 
  sure_enough ( meanings=2 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    for_certain~1b 
-    sure_enough~2bz 
+    for_certain~1z 
+    sure_enough~2z 
  surprisingly ( meanings=2 glosses=1 ADVERB COMMON4 posdefault:ADVERB ) 
-    surprisingly~1bz in a surprising manner
-    amazingly~1b 
+    surprisingly~1z in a surprising manner
+    amazingly~1z 
  sufficiently ( meanings=1 glosses=1 ADVERB COMMON4 posdefault:ADVERB ) 
-    sufficiently~1bz to a sufficient degree
+    sufficiently~1z to a sufficient degree
  sic ( meanings=2 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB ADVERB COMMON4 COMMON1 posdefault:ADVERB VERB_DIRECTOBJECT ) 
-    sic~1bz intentionally so written
+    sic~1z intentionally so written
     set~33v 
  so_to_speak ( meanings=2 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    as_it_were~1bz 
-    as_we_say~1bz 
+    as_it_were~1z 
+    as_we_say~1z 
  safely ( meanings=1 glosses=1 ADVERB COMMON4 KINDERGARTEN posdefault:ADVERB ) 
-    safely~1bz with safety
+    safely~1z with safety
  supposedly ( meanings=1 ADVERB COMMON4 posdefault:ADVERB ) 
-    purportedly~1b 
+    purportedly~1z 
  sincerely ( meanings=2 glosses=2 ADVERB COMMON4 GRADE3_4 posdefault:ADVERB ) 
-    sincerely_yours~1bz written formula for ending a letter
-    unfeignedly~1bz with sincerity
+    sincerely_yours~1z written formula for ending a letter
+    unfeignedly~1z with sincerity
  sincerely_yours ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    sincerely~1b 
+    sincerely~1z 
  since_a_long_time_ago ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    from_way_back~1bz 
+    from_way_back~1z 
  since ( meanings=2 PREPOSITION CONJUNCTION_SUBORDINATE COMMON4 COMMON2 COMMON1 KINDERGARTEN posdefault:PREPOSITION ) 
     since~1z 
     since~2z 
  slowly ( meanings=2 glosses=2 ADVERB COMMON4 COMMON1 KINDERGARTEN posdefault:ADVERB ) 
-    easy~16bz without speed 
-    lento~2bz in music
+    easy~16z without speed 
+    lento~2z in music
  secretly ( meanings=2 glosses=1 ADVERB COMMON4 posdefault:ADVERB ) 
-    secretly~1bz not openly
-    in_secret~1b 
+    secretly~1z not openly
+    in_secret~1z 
  soon_enough ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    in_time~3bz 
+    in_time~3z 
  stupidly ( meanings=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    doltishly~1b 
+    doltishly~1z 
  symmetrically ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    symmetrically~1bz in a symmetrical manner
+    symmetrically~1z in a symmetrical manner
  strongly ( meanings=2 glosses=1 ADVERB COMMON4 COMMON1 posdefault:ADVERB ) 
-    strongly~1bz with strength or in a strong manner
-    powerfully~2b 
+    strongly~1z with strength or in a strong manner
+    powerfully~2z 
  sacredly ( meanings=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    religiously~1b 
+    religiously~1z 
  scrupulously ( meanings=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    conscientiously~1b 
+    conscientiously~1z 
  strictly ( meanings=3 glosses=1 ADVERB COMMON4 posdefault:ADVERB ) 
-    purely~1bz restricted to something
-    rigorously~1b 
-    stringently~1b 
+    purely~1z restricted to something
+    rigorously~1z 
+    stringently~1z 
  slackly ( meanings=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    loosely~2b 
+    loosely~2z 
  successively ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    in_turn~1bz in proper order or sequence
+    in_turn~1z in proper order or sequence
  splendidly ( meanings=2 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    excellently~1b 
-    magnificently~2b 
+    excellently~1z 
+    magnificently~2z 
  superbly ( meanings=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    wondrously~1b 
+    wondrously~1z 
  satisfyingly ( meanings=2 ADVERB COMMON2 posdefault:ADVERB ) 
-    gratifyingly~1b 
-    satisfyingly~2bz 
+    gratifyingly~1z 
+    satisfyingly~2z 
  soberly ( meanings=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    gravely~2b 
+    gravely~2z 
  staidly ( meanings=1 ADVERB COMMON1 ) 
-    soberly~1b 
+    soberly~1z 
  stiffly ( meanings=2 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    stiff~10b 
-    rigidly~1bz in a rigid manner
+    stiff~10z 
+    rigidly~1z in a rigid manner
  studiously ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    studiously~1bz in a studious manner
+    studiously~1z in a studious manner
  solemnly ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    solemnly~1bz in a grave and sedate manner
+    solemnly~1z in a grave and sedate manner
  sympathetically ( meanings=2 glosses=2 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    sympathetically~1bz with respect to the sympathetic nervous system
-    empathetically~1bz in a sympathetic manner
+    sympathetically~1z with respect to the sympathetic nervous system
+    empathetically~1z in a sympathetic manner
  stealthily ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    stealthily~1bz in a stealthy manner
+    stealthily~1z in a stealthy manner
  snugly ( meanings=3 glosses=3 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    snugly~1bz fitting closely
-    snugly~2bz safely protected
-    snugly~3bz warmly and comfortably sheltered
+    snugly~1z fitting closely
+    snugly~2z safely protected
+    snugly~3z warmly and comfortably sheltered
  strikingly ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    strikingly~1bz in a striking manner
+    strikingly~1z in a striking manner
  staggeringly ( meanings=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    hugely~1b 
+    hugely~1z 
  stubbornly ( meanings=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    pig-headedly~1b 
+    pig-headedly~1z 
  savagely ( meanings=2 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    brutally~1b 
-    savagely~2bz wildly
+    brutally~1z 
+    savagely~2z wildly
  spitefully ( meanings=2 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    spitefully~1bz with spite
-    despitefully~1b 
+    spitefully~1z with spite
+    despitefully~1z 
  sagely ( meanings=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    wisely~1b 
+    wisely~1z 
  socioeconomically ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    socioeconomically~1bz with respect to socioeconomic factors
+    socioeconomically~1z with respect to socioeconomic factors
  stoutly ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    stoutly~1bz in a resolute manner
+    stoutly~1z in a resolute manner
  sluggishly ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    sluggishly~1bz in a sluggish manner
+    sluggishly~1z in a sluggish manner
  separately ( meanings=1 ADVERB COMMON4 posdefault:ADVERB ) 
-    singly~2b 
+    singly~2z 
  shamelessly ( meanings=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    unashamedly~1b 
+    unashamedly~1z 
  spectacularly ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    stunningly~1bz in a spectacular manner
+    stunningly~1z in a spectacular manner
  stunningly ( meanings=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    spectacularly~1b 
+    spectacularly~1z 
  soulfully ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    soulfully~1bz in a soulful manner
+    soulfully~1z in a soulful manner
  satirically ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    satirically~1bz in a satirical manner
+    satirically~1z in a satirical manner
  smoothly ( meanings=2 glosses=1 ADVERB COMMON4 posdefault:ADVERB ) 
-    swimmingly~1b 
-    smoothly~2bz in a smooth and diplomatic manner
+    swimmingly~1z 
+    smoothly~2z in a smooth and diplomatic manner
  swimmingly ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    smoothly~1bz with no problems or difficulties
+    smoothly~1z with no problems or difficulties
  spiritually ( meanings=1 glosses=1 ADVERB COMMON4 posdefault:ADVERB ) 
-    spiritually~1bz in a spiritual manner
+    spiritually~1z in a spiritual manner
  sporadically ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    periodically~1bz in a sporadic manner
+    periodically~1z in a sporadic manner
  sensibly ( meanings=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    sanely~2b 
+    sanely~2z 
  stolidly ( meanings=2 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    stolidly~1bz in a stolid manner
-    stolidly~2bz 
+    stolidly~1z in a stolid manner
+    stolidly~2z 
  supremely ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    supremely~1bz to the maximum degree
+    supremely~1z to the maximum degree
  sunnily ( meanings=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    cheerily~1b 
+    cheerily~1z 
  securely ( meanings=4 glosses=4 ADVERB COMMON4 posdefault:ADVERB ) 
-    firmly~3bz in a secure manner
-    securely~2bz in an invulnerable manner
-    securely~3bz in a manner free from fear or risk
-    securely~4bz in a confident and unselfconscious manner
+    firmly~3z in a secure manner
+    securely~2z in an invulnerable manner
+    securely~3z in a manner free from fear or risk
+    securely~4z in a confident and unselfconscious manner
  strictly_speaking ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    properly_speaking~1b 
+    properly_speaking~1z 
  sedulously ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    sedulously~1bz in a sedulous manner
+    sedulously~1z in a sedulous manner
  shyly ( meanings=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    timidly~1b 
+    timidly~1z 
  solidly ( meanings=2 glosses=2 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    solidly~1bz with strength and soundness
-    solidly~2bz as an undiversified whole
+    solidly~1z with strength and soundness
+    solidly~2z as an undiversified whole
  seriatim ( meanings=1 glosses=1 ADVERB COMMON2 ) 
-    seriatim~1bz in a series
+    seriatim~1z in a series
  scienter ( meanings=1 glosses=1 ADVERB COMMON2 ) 
-    scienter~1bz deliberately or knowingly
+    scienter~1z deliberately or knowingly
  slickly ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    glibly~1bz with superficial plausibility
+    glibly~1z with superficial plausibility
  sternly ( meanings=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    severely~3b 
+    severely~3z 
  suspiciously ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    suspiciously~1bz with suspicion
+    suspiciously~1z with suspicion
  speculatively ( meanings=2 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    speculatively~1bz with speculation
-    speculatively~2bz 
+    speculatively~1z with speculation
+    speculatively~2z 
  sullenly ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    glumly~1bz in a sullen manner
+    glumly~1z in a sullen manner
  structurally ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    structurally~1bz with respect to structure
+    structurally~1z with respect to structure
  subconsciously ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    subconsciously~1bz from the subconscious mind
+    subconsciously~1z from the subconscious mind
  semiannually ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    biyearly~3bz twice a year
+    biyearly~3z twice a year
  sine_die ( meanings=1 ADVERB CONDITIONAL_IDIOM posdefault:ADVERB  poscondition=?=R ) 
-    sine_die~1bz 
+    sine_die~1z 
  sotto_voce ( meanings=1 ADVERB CONDITIONAL_IDIOM posdefault:ADVERB  poscondition=?=R ) 
-    in_a_low_voice~1b 
+    in_a_low_voice~1z 
  sub_rosa ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    sub_rosa~1bz 
+    sub_rosa~1z 
  scot_free ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    scot_free~1bz 
+    scot_free~1z 
  skywards ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    skyward~2bz toward the sky
+    skyward~2z toward the sky
  selflessly ( meanings=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    altruistically~1b 
+    altruistically~1z 
  shrewdly ( meanings=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    acutely~2b 
+    acutely~2z 
  sagaciously ( meanings=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    shrewdly~1b 
+    shrewdly~1z 
  sapiently ( meanings=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    sagaciously~1b 
+    sagaciously~1z 
  seasonably ( meanings=2 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    apropos~3b 
-    seasonably~2bz in accordance with the season
+    apropos~3z 
+    seasonably~2z in accordance with the season
  surlily ( meanings=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    churlishly~1b 
+    churlishly~1z 
  scrappily ( meanings=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    combatively~1b 
+    combatively~1z 
  self-conceitedly ( meanings=1 glosses=1 ADVERB ) 
-    conceitedly~1bz with conceit
+    conceitedly~1z with conceit
  succinctly ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    compactly~2bz with concise and precise brevity
+    compactly~2z with concise and precise brevity
  sequentially ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    consecutive~5bz in a consecutive manner
+    consecutive~5z in a consecutive manner
  slyly ( meanings=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    knavishly~1b 
+    knavishly~1z 
  scoffingly ( meanings=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    derisively~1b 
+    derisively~1z 
  screakily ( meanings=1 ADVERB ) 
-    creakily~1b 
+    creakily~1z 
  submissively ( meanings=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    deferentially~2b 
+    deferentially~2z 
  shamefully ( meanings=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    discreditably~1b 
+    discreditably~1z 
  sickeningly ( meanings=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    revoltingly~1b 
+    revoltingly~1z 
  slightingly ( meanings=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    disparagingly~1b 
+    disparagingly~1z 
  sorrowfully ( meanings=2 glosses=2 ADVERB COMMON2 posdefault:ADVERB ) 
-    dolefully~1bz with sadness
-    sorrowfully~2bz in a sorrowful manner
+    dolefully~1z with sadness
+    sorrowfully~2z in a sorrowful manner
  somnolently ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    drowsily~1bz in a drowsy manner
+    drowsily~1z in a drowsy manner
  spookily ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    eerily~1bz in an unnatural eery manner
+    eerily~1z in an unnatural eery manner
  selfishly ( meanings=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    egotistically~1b 
+    egotistically~1z 
  showily ( meanings=2 ADVERB COMMON1 ) 
-    flamboyantly~1b 
-    ostentatiously~1b 
+    flamboyantly~1z 
+    ostentatiously~1z 
  scarily ( meanings=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    frighteningly~1b 
+    frighteningly~1z 
  sociably ( meanings=2 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    gregariously~1b 
-    sociably~2bz in a sociable manner
+    gregariously~1z 
+    sociably~2z in a sociable manner
  saucily ( meanings=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    freshly~2b 
+    freshly~2z 
  sensitively ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    sensitively~1bz in a sensitive manner
+    sensitively~1z in a sensitive manner
  sidesplittingly ( meanings=1 glosses=1 ADVERB COMMON1 ) 
-    killingly~1bz in a very humorous manner
+    killingly~1z in a very humorous manner
  salaciously ( meanings=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    lasciviously~1b 
+    lasciviously~1z 
  scrumptiously ( meanings=1 glosses=1 ADVERB COMMON1 ) 
-    deliciously~2bz so as to produce a delightful taste
+    deliciously~2z so as to produce a delightful taste
  sparingly ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    meagrely~1bz to a meager degree or in a meager manner
+    meagrely~1z to a meager degree or in a meager manner
  slenderly ( meanings=2 ADVERB COMMON1 posdefault:ADVERB ) 
-    meagerly~2b 
-    slightly~2b 
+    meagerly~2z 
+    slightly~2z 
  scurvily ( meanings=1 glosses=1 ADVERB COMMON1 ) 
-    basely~1bz in a despicable, ignoble manner
+    basely~1z in a despicable, ignoble manner
  senselessly ( meanings=2 glosses=2 ADVERB COMMON2 posdefault:ADVERB ) 
-    mindlessly~1bz in an unreasonably senseless manner
-    senselessly~2bz in a meaningless and purposeless manner
+    mindlessly~1z in an unreasonably senseless manner
+    senselessly~2z in a meaningless and purposeless manner
  small-mindedly ( meanings=1 ADVERB ) 
-    narrow-mindedly~1b 
+    narrow-mindedly~1z 
  subjectively ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    subjectively~1bz in a subjective way
+    subjectively~1z in a subjective way
  subserviently ( meanings=1 glosses=1 ADVERB COMMON1 ) 
-    servilely~1bz in an obsequious manner
+    servilely~1z in an obsequious manner
  servilely ( meanings=1 ADVERB COMMON1 ) 
-    obsequiously~1b 
+    obsequiously~1z 
  sumptuously ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    opulently~1bz in a sumptuous and opulent manner
+    opulently~1z in a sumptuous and opulent manner
  spicily ( meanings=1 ADVERB COMMON1 ) 
-    piquantly~1b 
+    piquantly~1z 
  sententiously ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    pithily~1bz in a pithy sententious manner
+    pithily~1z in a pithy sententious manner
  supernaturally ( meanings=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    preternaturally~1b 
+    preternaturally~1z 
  strangely ( meanings=1 glosses=1 ADVERB COMMON4 posdefault:ADVERB ) 
-    funnily~1bz in a strange manner
+    funnily~1z in a strange manner
  stragglingly ( meanings=1 glosses=1 ADVERB COMMON1 ) 
-    raggedly~2bz in a ragged irregular manner
+    raggedly~2z in a ragged irregular manner
  spaciously ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    roomily~1bz with ample room
+    roomily~1z with ample room
  sonorously ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    rotundly~1bz in a sonorous manner
+    rotundly~1z in a sonorous manner
  sarcastically ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    sardonically~1bz in a sarcastic manner
+    sardonically~1z in a sarcastic manner
  sardonically ( meanings=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    sarcastically~1b 
+    sarcastically~1z 
  sanctimoniously ( meanings=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    self-righteously~1b 
+    self-righteously~1z 
  self-righteously ( meanings=1 glosses=1 ADVERB posdefault:ADVERB ) 
-    sanctimoniously~1bz in a sanctimonious manner
+    sanctimoniously~1z in a sanctimonious manner
  scandalously ( meanings=2 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    scandalously~1bz in a scandalous manner
-    scandalously~2bz 
+    scandalously~1z in a scandalous manner
+    scandalously~2z 
  scathingly ( meanings=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    unsparingly~1b 
+    unsparingly~1z 
  sceptically ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    skeptically~1bz with scepticism
+    skeptically~1z with scepticism
  skeptically ( meanings=1 ADVERB COMMON2 ) 
-    sceptically~1b 
+    sceptically~1z 
  schematically ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    schematically~1bz in a schematic manner
+    schematically~1z in a schematic manner
  screamingly ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    screamingly~1bz to an extreme degree
+    screamingly~1z to an extreme degree
  scurrilously ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    scurrilously~1bz in a scurrilously manner
+    scurrilously~1z in a scurrilously manner
  searchingly ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    searchingly~1bz in a searching manner
+    searchingly~1z in a searching manner
  seasonally ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    seasonally~1bz depending on the season
+    seasonally~1z depending on the season
  seawards ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    asea~1bz in the direction of the sea
+    asea~1z in the direction of the sea
  secretively ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    secretively~1bz in a secretive manner
+    secretively~1z in a secretive manner
  sedately ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    calmly~2bz in a sedate manner
+    calmly~2z in a sedate manner
  seductively ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    temptingly~1bz in a tempting seductive manner
+    temptingly~1z in a tempting seductive manner
  selectively ( meanings=1 glosses=1 ADVERB COMMON4 posdefault:ADVERB ) 
-    selectively~1bz by selection
+    selectively~1z by selection
  self-consciously ( meanings=1 glosses=1 ADVERB posdefault:ADVERB ) 
-    self-consciously~1bz in an uncomfortably self-conscious manner
+    self-consciously~1z in an uncomfortably self-conscious manner
  self-evidently ( meanings=1 glosses=1 ADVERB posdefault:ADVERB ) 
-    self-evidently~1bz in a self-evident manner
+    self-evidently~1z in a self-evident manner
  sensationally ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    sensationally~1bz in a sensational manner
+    sensationally~1z in a sensational manner
  sensuously ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    sensuously~1bz with aesthetic gratification or delight
+    sensuously~1z with aesthetic gratification or delight
  sensually ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    sultrily~1bz in a sultry and sensual manner
+    sultrily~1z in a sultry and sensual manner
  sultrily ( meanings=1 ADVERB COMMON1 ) 
-    sensually~1b 
+    sensually~1z 
  sentimentally ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    sentimentally~1bz in a sentimental manner
+    sentimentally~1z in a sentimental manner
  separably ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    separably~1bz with possibility of separation or individuation
+    separably~1z with possibility of separation or individuation
  serenely ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    serenely~1bz in a peacefully serene manner
+    serenely~1z in a peacefully serene manner
  seventhly ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    seventhly~1bz in the seventh place
+    seventhly~1z in the seventh place
  shabbily ( meanings=2 glosses=2 ADVERB COMMON2 posdefault:ADVERB ) 
-    shabbily~1bz in a mean and ungenerous manner
-    shabbily~2bz so as to appear worn and threadbare or dilapidated
+    shabbily~1z in a mean and ungenerous manner
+    shabbily~2z so as to appear worn and threadbare or dilapidated
  shaggily ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    shaggily~1bz in a shaggy manner
+    shaggily~1z in a shaggy manner
  shakily ( meanings=2 glosses=2 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    shakily~1bz in a manner characterized by trembling or shaking
-    shakily~2bz in an insecurely shaky manner
+    shakily~1z in a manner characterized by trembling or shaking
+    shakily~2z in an insecurely shaky manner
  shallowly ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    shallowly~1bz in a shallow manner
+    shallowly~1z in a shallow manner
  shambolically ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    shambolically~1bz in a shambolic manner
+    shambolically~1z in a shambolic manner
  shamefacedly ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    shamefacedly~1bz in a shamefaced manner
+    shamefacedly~1z in a shamefaced manner
  shapelessly ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    shapelessly~1bz in a shapeless manner
+    shapelessly~1z in a shapeless manner
  sheepishly ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    sheepishly~1bz in a sheepish manner
+    sheepishly~1z in a sheepish manner
  shiftily ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    shiftily~1bz in a shifty manner
+    shiftily~1z in a shifty manner
  shockingly ( meanings=2 glosses=2 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    shockingly~1bz so as to shock the feelings
-    shockingly~2bz extremely
+    shockingly~1z so as to shock the feelings
+    shockingly~2z extremely
  shoddily ( meanings=2 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    shoddily~1bz in a shoddy manner
-    shoddily~2bz 
+    shoddily~1z in a shoddy manner
+    shoddily~2z 
  shudderingly ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    shudderingly~1bz with a shudder
+    shudderingly~1z with a shudder
  sideward ( meanings=1 ADVERB COMMON2 ) 
-    sidewards~1b 
+    sidewards~1z 
  sidewards ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    sideward~1bz toward one side
+    sideward~1z toward one side
  sideway ( meanings=3 ADVERB COMMON2 posdefault:NOUN ) 
-    sideways~3b 
-    sideways~4b 
-    sideways~5b 
+    sideways~3z 
+    sideways~4z 
+    sideways~5z 
  sidewise ( meanings=3 ADVERB COMMON2 posdefault:ADVERB ) 
-    sideway~1b 
-    sideway~2b 
-    sideway~3b 
+    sideway~1z 
+    sideway~2z 
+    sideway~3z 
  signally ( meanings=2 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    remarkably~2b 
-    signally~2bz as a signal
+    remarkably~2z 
+    signally~2z as a signal
  silkily ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    silkily~1bz in a silky manner
+    silkily~1z in a silky manner
  simperingly ( meanings=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    pusillanimously~1b 
+    pusillanimously~1z 
  single-handedly ( meanings=1 glosses=1 ADVERB posdefault:ADVERB ) 
-    single-handed~3bz without assistance
+    single-handed~3z without assistance
  single-mindedly ( meanings=1 glosses=1 ADVERB posdefault:ADVERB ) 
-    single-mindedly~1bz in a single-minded manner
+    single-mindedly~1z in a single-minded manner
  singularly ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    singularly~1bz in a singular manner or to a singular degree
+    singularly~1z in a singular manner or to a singular degree
  sixthly ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    sixthly~1bz in the sixth place
+    sixthly~1z in the sixth place
  sketchily ( meanings=2 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    sketchily~1bz in a sketchy incomplete manner
-    sketchily~2bz 
+    sketchily~1z in a sketchy incomplete manner
+    sketchily~2z 
  skillfully ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 GRADE5_6 posdefault:ADVERB ) 
-    skilfully~1bz with skill
+    skilfully~1z with skill
  skilfully ( meanings=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    skillfully~1b 
+    skillfully~1z 
  skimpily ( meanings=1 glosses=1 ADVERB COMMON1 ) 
-    skimpily~1bz in a skimpy manner
+    skimpily~1z in a skimpy manner
  skittishly ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    skittishly~1bz in a skittish manner
+    skittishly~1z in a skittish manner
  slanderously ( meanings=1 glosses=1 ADVERB COMMON1 ) 
-    calumniously~1bz in a false and slanderous and defamatory manner
+    calumniously~1z in a false and slanderous and defamatory manner
  slangily ( meanings=1 glosses=1 ADVERB COMMON1 ) 
-    slangily~1bz with slang
+    slangily~1z with slang
  slantingly ( meanings=1 glosses=1 ADVERB COMMON1 ) 
-    slopingly~1bz with a slant
+    slopingly~1z with a slant
  slopingly ( meanings=1 ADVERB COMMON1 ) 
-    slantingly~1b 
+    slantingly~1z 
  slantwise ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    slantways~1bz at a slant
+    slantways~1z at a slant
  slantways ( meanings=1 ADVERB COMMON1 ) 
-    slantwise~1b 
+    slantwise~1z 
  slap-bang ( meanings=2 glosses=1 ADVERB ) 
-    slam-bang~2b 
-    slap-bang~2bz directly or immediately
+    slam-bang~2z 
+    slap-bang~2z directly or immediately
  slavishly ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    slavishly~1bz in a slavish manner
+    slavishly~1z in a slavish manner
  sleekly ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    sleekly~1bz in a sleek glossy manner
+    sleekly~1z in a sleek glossy manner
  sleepily ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    sleepily~1bz in a sleepy manner
+    sleepily~1z in a sleepy manner
  sleeplessly ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    sleeplessly~1bz without sleep
+    sleeplessly~1z without sleep
  slimly ( meanings=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    slenderly~2b 
+    slenderly~2z 
  sloppily ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    sloppily~1bz in a sloppy manner
+    sloppily~1z in a sloppy manner
  slouchingly ( meanings=1 glosses=1 ADVERB COMMON1 ) 
-    slouchingly~1bz with a slouching gait or posture
+    slouchingly~1z with a slouching gait or posture
  slouchily ( meanings=1 glosses=1 ADVERB ) 
-    slouchily~1bz in a slouchy manner
+    slouchily~1z in a slouchy manner
  smashingly ( meanings=1 ADVERB COMMON1 ) 
-    smash~6b 
+    smash~6z 
  smilingly ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    smilingly~1bz with smiles
+    smilingly~1z with smiles
  smugly ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    smugly~1bz in a smug manner
+    smugly~1z in a smug manner
  smuttily ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    vulgarly~1bz in a smutty manner
+    vulgarly~1z in a smutty manner
  snappishly ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    snappishly~1bz in an ill-natured and snappish manner
+    snappishly~1z in an ill-natured and snappish manner
  sneakingly ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    sneakingly~1bz in a sneaky manner
+    sneakingly~1z in a sneaky manner
  sneeringly ( meanings=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    superciliously~1b 
+    superciliously~1z 
  superciliously ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    snidely~1bz with a sneer
+    snidely~1z with a sneer
  snidely ( meanings=1 ADVERB COMMON2 ) 
-    sneeringly~1b 
+    sneeringly~1z 
  snobbishly ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    uppishly~1bz in a snobbish manner
+    uppishly~1z in a snobbish manner
  snootily ( meanings=1 ADVERB COMMON1 ) 
-    snobbishly~1b 
+    snobbishly~1z 
  sobbingly ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    sobbingly~1bz with sobs
+    sobbingly~1z with sobs
  sociologically ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    sociologically~1bz with regard to sociology
+    sociologically~1z with regard to sociology
  solicitously ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    solicitously~1bz in a concerned and solicitous manner
+    solicitously~1z in a concerned and solicitous manner
  solitarily ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    solitarily~1bz in solitude
+    solitarily~1z in solitude
  somberly ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    sombrely~1bz in a somber manner
+    sombrely~1z in a somber manner
  sombrely ( meanings=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    somberly~1b 
+    somberly~1z 
  soothingly ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    soothingly~1bz in a soothing manner
+    soothingly~1z in a soothing manner
  sordidly ( meanings=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    squalidly~1b 
+    squalidly~1z 
  squalidly ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    sordidly~1bz in a sordid or squalid way
+    sordidly~1z in a sordid or squalid way
  sorely ( meanings=2 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    sorely~1bz to a great degree
-    painfully~2b 
+    sorely~1z to a great degree
+    painfully~2z 
  sottishly ( meanings=1 glosses=1 ADVERB COMMON1 ) 
-    sottishly~1bz in a sottish manner
+    sottishly~1z in a sottish manner
  south-east ( meanings=1 glosses=1 ADVERB ) 
-    southeast~6bz to, toward, or in the southeast
+    southeast~6z to, toward, or in the southeast
  south-west ( meanings=1 glosses=1 ADVERB ) 
-    sou'west~1bz to, toward, or in the southwest
+    sou'west~1z to, toward, or in the southwest
  sou'west ( meanings=1 ADVERB COMMON1 ) comparative=sou'wester 
-    southwest~6b 
+    southwest~6z 
  south-southeast ( meanings=1 glosses=1 ADVERB ) 
-    sou'-sou'-east~2bz to, toward, or in the south southeast
+    sou'-sou'-east~2z to, toward, or in the south southeast
  south-southwest ( meanings=1 glosses=1 ADVERB ) 
-    sou'-sou'-west~2bz to, toward, or in the south southwest
+    sou'-sou'-west~2z to, toward, or in the south southwest
  soullessly ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    soullessly~1bz in a soulless manner
+    soullessly~1z in a soulless manner
  soundlessly ( meanings=2 ADVERB COMMON2 posdefault:ADVERB ) 
-    noiselessly~1b 
-    soundlessly~2bz 
+    noiselessly~1z 
+    soundlessly~2z 
  sourly ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    sourly~1bz in a sour manner
+    sourly~1z in a sour manner
  southwards ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    southerly~5bz toward the south
+    southerly~5z toward the south
  sparely ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    sparely~1bz in a spare manner
+    sparely~1z in a spare manner
  sparsely ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    sparsely~1bz in a sparse manner
+    sparsely~1z in a sparse manner
  spasmodically ( meanings=2 glosses=2 ADVERB COMMON2 posdefault:ADVERB ) 
-    spasmodically~1bz in spurts and fits
-    jerkily~2bz with spasms
+    spasmodically~1z in spurts and fits
+    jerkily~2z with spasms
  speciously ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    speciously~1bz in a specious manner
+    speciously~1z in a specious manner
  spectrographically ( meanings=2 glosses=1 ADVERB COMMON1 ) 
-    spectrographically~1bz by spectrographic means
-    spectrographically~2bz 
+    spectrographically~1z by spectrographic means
+    spectrographically~2z 
  speechlessly ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    speechlessly~1bz without speaking
+    speechlessly~1z without speaking
  spirally ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    spirally~1bz with spirals
+    spirally~1z with spirals
  sportingly ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    sportingly~1bz so as to be sporting
+    sportingly~1z so as to be sporting
  spotlessly ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    spotlessly~1bz in a spotless manner
+    spotlessly~1z in a spotless manner
  spuriously ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    spuriously~1bz in a false and spurious manner
+    spuriously~1z in a false and spurious manner
  squeamishly ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    squeamishly~1bz in a squeamish manner
+    squeamishly~1z in a squeamish manner
  stagily ( meanings=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    theatrically~2b 
+    theatrically~2z 
  standoffishly ( meanings=1 glosses=1 ADVERB COMMON1 ) 
-    standoffishly~1bz in a standoffish manner
+    standoffishly~1z in a standoffish manner
  starkly ( meanings=3 glosses=3 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    starkly~1bz in a blunt manner
-    starkly~2bz in sharp outline or contrast
-    starkly~3bz in a stark manner
+    starkly~1z in a blunt manner
+    starkly~2z in sharp outline or contrast
+    starkly~3z in a stark manner
  startlingly ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    startlingly~1bz in a startling manner
+    startlingly~1z in a startling manner
  statutorily ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    statutorily~1bz according to statute
+    statutorily~1z according to statute
  staunchly ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    stanchly~1bz in a staunch manner
+    stanchly~1z in a staunch manner
  stanchly ( meanings=1 ADVERB COMMON1 ) 
-    staunchly~1b 
+    staunchly~1z 
  steeply ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    steeply~1bz in a steep manner
+    steeply~1z in a steep manner
  stereotypically ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    stereotypically~1bz in a stereotypical manner
+    stereotypically~1z in a stereotypical manner
  stertorously ( meanings=2 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    stertorously~1bz in a noisy and stertorous manner
-    stertorously~2bz 
+    stertorously~1z in a noisy and stertorous manner
+    stertorously~2z 
  stickily ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    viscidly~1bz in a sticky viscid manner
+    viscidly~1z in a sticky viscid manner
  stiltedly ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    stiltedly~1bz in a stilted manner
+    stiltedly~1z in a stilted manner
  stingily ( meanings=1 ADVERB COMMON1 ) 
-    chintzily~1b 
+    chintzily~1z 
  stirringly ( meanings=1 glosses=1 ADVERB COMMON1 ) 
-    stirringly~1bz in a stirring manner
+    stirringly~1z in a stirring manner
  stochastically ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    stochastically~1bz by stochastic means
+    stochastically~1z by stochastic means
  straightway ( meanings=2 glosses=2 ADVERB COMMON2 COMMON1 ) 
-    straightway~1bz in a direct course
-    straightway~2bz at once
+    straightway~1z in a direct course
+    straightway~2z at once
  stockily ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    stockily~1bz so as to be stocky
+    stockily~1z so as to be stocky
  stoically ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    stoically~1bz without emotion
+    stoically~1z without emotion
  stonily ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    stonily~1bz in a stony manner
+    stonily~1z in a stony manner
  strategically ( meanings=1 glosses=1 ADVERB COMMON4 posdefault:ADVERB ) 
-    strategically~1bz with regard to strategy
+    strategically~1z with regard to strategy
  stridently ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    stridently~1bz in a strident manner
+    stridently~1z in a strident manner
  stringently ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    strictly~3bz in a stringent manner
+    strictly~3z in a stringent manner
  stuffily ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    stodgily~1bz in a stuffy manner
+    stodgily~1z in a stuffy manner
  stodgily ( meanings=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    stuffily~1b 
+    stuffily~1z 
  stupendously ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    stupendously~1bz to a stupendous degree
+    stupendously~1z to a stupendous degree
  sturdily ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    sturdily~1bz in a sturdy manner
+    sturdily~1z in a sturdy manner
  stylishly ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    stylishly~1bz in a stylish manner
+    stylishly~1z in a stylish manner
  stylistically ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    stylistically~1bz in a rhetorically stylistic manner
+    stylistically~1z in a rhetorically stylistic manner
  suavely ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    suavely~1bz with suavity
+    suavely~1z with suavity
  sublimely ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    sublimely~1bz completely
+    sublimely~1z completely
  subtly ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    subtly~1bz in a subtle manner
+    subtly~1z in a subtle manner
  sulkily ( meanings=2 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    sulkily~1bz in a sulky manner
-    sulkily~2bz 
+    sulkily~1z in a sulky manner
+    sulkily~2z 
  summarily ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    summarily~1bz without delay
+    summarily~1z without delay
  superfluously ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    superfluously~1bz in a superfluous manner
+    superfluously~1z in a superfluous manner
  superlatively ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    superlatively~1bz to a superlative degree
+    superlatively~1z to a superlative degree
  superstitiously ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    superstitiously~1bz in a superstitious manner
+    superstitiously~1z in a superstitious manner
  supinely ( meanings=2 glosses=2 ADVERB COMMON1 posdefault:ADVERB ) 
-    supinely~1bz in an indifferently supine manner
-    supinely~2bz with the face upward
+    supinely~1z in an indifferently supine manner
+    supinely~2z with the face upward
  surreptitiously ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    sneakily~1bz in a surreptitious manner
+    sneakily~1z in a surreptitious manner
  sneakily ( meanings=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    surreptitiously~1b 
+    surreptitiously~1z 
  surpassingly ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    surpassingly~1bz to a surpassing degree
+    surpassingly~1z to a surpassing degree
  surprisedly ( meanings=1 glosses=1 ADVERB COMMON1 ) 
-    surprisedly~1bz in the manner of one who is surprised
+    surprisedly~1z in the manner of one who is surprised
  sweepingly ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    sweepingly~1bz in a sweeping manner
+    sweepingly~1z in a sweeping manner
  sweetly ( meanings=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    sweet~16b 
+    sweet~16z 
  synchronously ( meanings=2 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    synchronously~1bz in synchrony
-    synchronously~2bz 
+    synchronously~1z in synchrony
+    synchronously~2z 
  synthetically ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    synthetically~1bz by synthesis
+    synthetically~1z by synthesis
  smarmily ( meanings=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    unctuously~1b 
+    unctuously~1z 
  shrewishly ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    shrewishly~1bz in a shrewish manner
+    shrewishly~1z in a shrewish manner
  smolderingly ( meanings=1 ADVERB COMMON1 ) 
-    smoulderingly~1b 
+    smoulderingly~1z 
  smoulderingly ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    smolderingly~1bz with barely repressed anger
+    smolderingly~1z with barely repressed anger
  soughingly ( meanings=1 glosses=1 ADVERB ) 
-    soughingly~1bz with a soft sound
+    soughingly~1z with a soft sound
  schismatically ( meanings=1 glosses=1 ADVERB COMMON1 ) 
-    schismatically~1bz in a manner that is schismatic
+    schismatically~1z in a manner that is schismatic
  southeastwardly ( meanings=1 glosses=1 ADVERB COMMON1 ) 
-    southeastward~4bz in a southeastward direction
+    southeastward~4z in a southeastward direction
  southwestwardly ( meanings=1 glosses=1 ADVERB COMMON1 ) 
-    southwestward~3bz in a southwestward direction
+    southwestward~3z in a southwestward direction
  sinuously ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    sinuously~1bz in a sinuous manner
+    sinuously~1z in a sinuous manner
  sinusoidally ( meanings=2 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    sinusoidally~1bz in a sinusoidal manner
-    sinusoidally~2bz 
+    sinusoidally~1z in a sinusoidal manner
+    sinusoidally~2z 
  spaceward ( meanings=1 ADVERB COMMON1 ) 
-    spacewards~1b 
+    spacewards~1z 
  spacewards ( meanings=1 glosses=1 ADVERB COMMON1 ) 
-    spaceward~1bz towards outer space
+    spaceward~1z towards outer space
  stably ( meanings=3 glosses=2 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    stably~1bz in a stable unchanging manner
-    stably~2bz in a stable solid fixed manner
-    stably~3bz 
+    stably~1z in a stable unchanging manner
+    stably~2z in a stable solid fixed manner
+    stably~3z 
  suggestively ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    suggestively~1bz in a suggestive manner
+    suggestively~1z in a suggestive manner
  synergistically ( meanings=3 glosses=2 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    synergistically~1bz in a synergistic or interactive manner
-    synergistically~2bz in a synergistic or cooperative manner
-    synergistically~3bz 
+    synergistically~1z in a synergistic or interactive manner
+    synergistically~2z in a synergistic or cooperative manner
+    synergistically~3z 
  synonymously ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    synonymously~1bz in a synonymous manner
+    synonymously~1z in a synonymous manner
  SUDO ( meanings=1 ADVERB ) 
-    SUDO~1bz 
+    SUDO~1z 
  superparamagnetically ( meanings=2 ADVERB ) 
-    superparamagnetically~1bz 
-    superparamagnetically~2bz 
+    superparamagnetically~1z 
+    superparamagnetically~2z 
  sonographically ( meanings=2 ADVERB COMMON1 ) 
-    sonographically~1bz 
-    sonographically~2bz 
+    sonographically~1z 
+    sonographically~2z 
  somatically ( meanings=2 ADVERB COMMON1 posdefault:ADVERB ) 
-    somatically~1bz 
-    somatically~2bz 
+    somatically~1z 
+    somatically~2z 
  subtotally ( meanings=2 ADVERB COMMON1 ) 
-    subtotally~1bz 
-    subtotally~2bz 
+    subtotally~1z 
+    subtotally~2z 
  skiascopically ( meanings=2 ADVERB ) 
-    skiascopically~1bz 
-    skiascopically~2bz 
+    skiascopically~1z 
+    skiascopically~2z 
  stereologically ( meanings=2 ADVERB COMMON1 ) 
-    stereologically~1bz 
-    stereologically~2bz 
+    stereologically~1z 
+    stereologically~2z 
  semiquantitatively ( meanings=2 ADVERB COMMON1 posdefault:ADVERB ) 
-    semiquantitatively~1bz 
-    semiquantitatively~2bz 
+    semiquantitatively~1z 
+    semiquantitatively~2z 
  stereomicroscopically ( meanings=2 ADVERB ) 
-    stereomicroscopically~1bz 
-    stereomicroscopically~2bz 
+    stereomicroscopically~1z 
+    stereomicroscopically~2z 
  sudorimetrically ( meanings=2 ADVERB ) 
-    sudorimetrically~1bz 
-    sudorimetrically~2bz 
+    sudorimetrically~1z 
+    sudorimetrically~2z 
  serospecifically ( meanings=2 ADVERB ) 
-    serospecifically~1bz 
-    serospecifically~2bz 
+    serospecifically~1z 
+    serospecifically~2z 
  subepithelially ( meanings=2 ADVERB COMMON1 ) 
-    subepithelially~1bz 
-    subepithelially~2bz 
+    subepithelially~1z 
+    subepithelially~2z 
  semispecifically ( meanings=2 ADVERB ) 
-    semispecifically~1bz 
-    semispecifically~2bz 
+    semispecifically~1z 
+    semispecifically~2z 
  supratubercular ( meanings=2 ADVERB ) 
-    supratubercular~1bz 
-    supratubercular~2bz 
+    supratubercular~1z 
+    supratubercular~2z 
  systemically ( meanings=2 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    systemically~1bz 
-    systemically~2bz 
+    systemically~1z 
+    systemically~2z 
  spectrophotometrically ( meanings=2 ADVERB COMMON2 posdefault:ADVERB ) 
-    spectrophotometrically~1bz 
-    spectrophotometrically~2bz 
+    spectrophotometrically~1z 
+    spectrophotometrically~2z 
  semiologically ( meanings=2 ADVERB COMMON1 ) 
-    semiologically~1bz 
-    semiologically~2bz 
+    semiologically~1z 
+    semiologically~2z 
  scintigraphically ( meanings=2 ADVERB COMMON1 posdefault:ADVERB ) 
-    scintigraphically~1bz 
-    scintigraphically~2bz 
+    scintigraphically~1z 
+    scintigraphically~2z 
  saprophytically ( meanings=2 ADVERB COMMON1 ) 
-    saprophytically~1bz 
-    saprophytically~2bz 
+    saprophytically~1z 
+    saprophytically~2z 
  sterically ( meanings=2 ADVERB COMMON2 posdefault:ADVERB ) 
-    sterically~1bz 
-    sterically~2bz 
+    sterically~1z 
+    sterically~2z 
  stereotactically ( meanings=2 ADVERB COMMON1 ) 
-    stereotactically~1bz 
-    stereotactically~2bz 
+    stereotactically~1z 
+    stereotactically~2z 
  subchronically ( meanings=2 ADVERB COMMON1 ) 
-    subchronically~1bz 
-    subchronically~2bz 
+    subchronically~1z 
+    subchronically~2z 
  sedimentometrically ( meanings=2 ADVERB ) 
-    sedimentometrically~1bz 
-    sedimentometrically~2bz 
+    sedimentometrically~1z 
+    sedimentometrically~2z 
  stoichiometrically ( meanings=2 ADVERB COMMON1 posdefault:ADVERB ) 
-    stoichiometrically~1bz 
-    stoichiometrically~2bz 
+    stoichiometrically~1z 
+    stoichiometrically~2z 
  stereotaxically ( meanings=2 ADVERB COMMON1 posdefault:ADVERB ) 
-    stereotaxically~1bz 
-    stereotaxically~2bz 
+    stereotaxically~1z 
+    stereotaxically~2z 
  spectrofluorimetrically ( meanings=2 ADVERB ) 
-    spectrofluorimetrically~1bz 
-    spectrofluorimetrically~2bz 
+    spectrofluorimetrically~1z 
+    spectrofluorimetrically~2z 
  sociodemographically ( meanings=2 ADVERB COMMON1 ) 
-    sociodemographically~1bz 
-    sociodemographically~2bz 
+    sociodemographically~1z 
+    sociodemographically~2z 
  subperiodically ( meanings=2 ADVERB ) 
-    subperiodically~1bz 
-    subperiodically~2bz 
+    subperiodically~1z 
+    subperiodically~2z 
  supraphysiologically ( meanings=2 ADVERB ) 
-    supraphysiologically~1bz 
-    supraphysiologically~2bz 
+    supraphysiologically~1z 
+    supraphysiologically~2z 
  spirographically ( meanings=2 ADVERB ) 
-    spirographically~1bz 
-    spirographically~2bz 
+    spirographically~1z 
+    spirographically~2z 
  semi-quantitatively ( meanings=2 ADVERB posdefault:ADVERB ) 
-    semi-quantitatively~1bz 
-    semi-quantitatively~2bz 
+    semi-quantitatively~1z 
+    semi-quantitatively~2z 
  subserosally ( meanings=2 ADVERB ) 
-    subserosally~1bz 
-    subserosally~2bz 
+    subserosally~1z 
+    subserosally~2z 
  synaptically ( meanings=2 ADVERB COMMON2 posdefault:ADVERB ) 
-    synaptically~1bz 
-    synaptically~2bz 
+    synaptically~1z 
+    synaptically~2z 
  sphygmocardiographically ( meanings=2 ADVERB ) 
-    sphygmocardiographically~1bz 
-    sphygmocardiographically~2bz 
+    sphygmocardiographically~1z 
+    sphygmocardiographically~2z 
  sialographically ( meanings=2 ADVERB ) 
-    sialographically~1bz 
-    sialographically~2bz 
+    sialographically~1z 
+    sialographically~2z 
  stereophotogrammetrically ( meanings=2 ADVERB ) 
-    stereophotogrammetrically~1bz 
-    stereophotogrammetrically~2bz 
+    stereophotogrammetrically~1z 
+    stereophotogrammetrically~2z 
  stereometrically ( meanings=2 ADVERB ) 
-    stereometrically~1bz 
-    stereometrically~2bz 
+    stereometrically~1z 
+    stereometrically~2z 
  semiautomatically ( meanings=2 ADVERB COMMON1 ) 
-    semiautomatically~1bz 
-    semiautomatically~2bz 
+    semiautomatically~1z 
+    semiautomatically~2z 
  sociometrically ( meanings=2 ADVERB ) 
-    sociometrically~1bz 
-    sociometrically~2bz 
+    sociometrically~1z 
+    sociometrically~2z 
  stereospecifically ( meanings=2 ADVERB COMMON1 posdefault:ADVERB ) 
-    stereospecifically~1bz 
-    stereospecifically~2bz 
+    stereospecifically~1z 
+    stereospecifically~2z 
  sphincteroscopically ( meanings=2 ADVERB ) 
-    sphincteroscopically~1bz 
-    sphincteroscopically~2bz 
+    sphincteroscopically~1z 
+    sphincteroscopically~2z 
  suboptimally ( meanings=2 ADVERB COMMON1 ) 
-    suboptimally~1bz 
-    suboptimally~2bz 
+    suboptimally~1z 
+    suboptimally~2z 
  stethographically ( meanings=2 ADVERB ) 
-    stethographically~1bz 
-    stethographically~2bz 
+    stethographically~1z 
+    stethographically~2z 
  sigmoidoscopically ( meanings=2 ADVERB posdefault:ADVERB ) 
-    sigmoidoscopically~1bz 
-    sigmoidoscopically~2bz 
+    sigmoidoscopically~1z 
+    sigmoidoscopically~2z 
  sublethally ( meanings=2 ADVERB COMMON1 ) 
-    sublethally~1bz 
-    sublethally~2bz 
+    sublethally~1z 
+    sublethally~2z 
  submaximally ( meanings=2 ADVERB COMMON1 ) 
-    submaximally~1bz 
-    submaximally~2bz 
+    submaximally~1z 
+    submaximally~2z 
  simplistically ( meanings=2 ADVERB COMMON2 posdefault:ADVERB ) 
-    simplistically~1bz 
-    simplistically~2bz 
+    simplistically~1z 
+    simplistically~2z 
  side-saddle ( meanings=1 ADVERB ) 
-    side-saddle~1bz 
+    side-saddle~1z 
  selfconsciously ( meanings=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    selfconsciously~1bz 
+    selfconsciously~1z 
  scot-free ( meanings=1 ADVERB ) 
-    scot-free~1bz 
+    scot-free~1z 
  sadistically ( meanings=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    sadistically~1bz 
+    sadistically~1z 
  state-wide ( meanings=1 ADVERB posdefault:ADVERB ) 
-    state-wide~1bz 
+    state-wide~1z 
  secundum_artem ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    secundum_artem~1bz 
+    secundum_artem~1z 
  secundum_naturam ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    secundum_naturam~1bz 
+    secundum_naturam~1z 
  segmentally ( meanings=1 ADVERB posdefault:ADVERB ) 
-    segmentally~1bz 
+    segmentally~1z 
  serendipitously ( meanings=1 ADVERB posdefault:ADVERB ) 
-    serendipitously~1bz 
+    serendipitously~1z 
  serologically ( meanings=1 ADVERB posdefault:ADVERB ) 
-    serologically~1bz 
+    serologically~1z 
  siderose ( meanings=1 ADVERB ) 
-    siderose~1bz 
+    siderose~1z 
  sigmoidally ( meanings=1 ADVERB ) 
-    sigmoidally~1bz 
+    sigmoidally~1z 
  skeletally ( meanings=1 ADVERB posdefault:ADVERB ) 
-    skeletally~1bz 
+    skeletally~1z 
  s.l. ( meanings=1 ADVERB ) 
-    s.l.~1bz 
+    s.l.~1z 
  some_day ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    some_day~1bz 
+    some_day~1z 
  spatiotemporally ( meanings=1 ADVERB posdefault:ADVERB ) 
-    spatiotemporally~1bz 
+    spatiotemporally~1z 
  spectrally ( meanings=1 ADVERB posdefault:ADVERB ) 
-    spectrally~1bz 
+    spectrally~1z 
  spectroscopically ( meanings=1 ADVERB posdefault:ADVERB ) 
-    spectroscopically~1bz 
+    spectroscopically~1z 
  spheroidally ( meanings=1 ADVERB ) 
-    spheroidally~1bz 
+    spheroidally~1z 
  spinelessly ( meanings=1 ADVERB posdefault:ADVERB ) 
-    spinelessly~1bz 
+    spinelessly~1z 
  spiritlessly ( meanings=1 ADVERB posdefault:ADVERB ) 
-    spiritlessly~1bz 
+    spiritlessly~1z 
  sublingually ( meanings=1 ADVERB ) 
-    sublingually~1bz 
+    sublingually~1z 
  supportively ( meanings=1 ADVERB posdefault:ADVERB ) 
-    supportively~1bz 
+    supportively~1z 
  supranormally ( meanings=1 ADVERB ) 
-    supranormally~1bz 
+    supranormally~1z 
  so_that ( meanings=1 CONJUNCTION_SUBORDINATE KINDERGARTEN posdefault:PREPOSITION ) 
     so_that~1z 
  supposing ( meanings=1 CONJUNCTION_SUBORDINATE COMMON2 COMMON1 KINDERGARTEN posdefault:PREPOSITION ) 

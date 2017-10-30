@@ -49,7 +49,9 @@ FACT* Index2Fact(FACTOID e)
 		F =  e + factBase;
 		if (F > factFree)
 		{
-			ReportBug((char*)"Illegal fact index")
+			char buf[MAX_WORD_SIZE];
+			strcpy(buf, StdIntOutput(factFree - factBase));
+			ReportBug((char*)"Illegal fact index %d last:%s ", e, buf);
 			F = NULL;
 		}
 	}

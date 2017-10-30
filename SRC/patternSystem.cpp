@@ -176,16 +176,17 @@ static bool FindPartialInSentenceTest(char* test, int start,int originalstart,bo
 	int& actualStart, int& actualEnd)
 {
 	if (!test || !*test) return false;
+	char* word = AllocateStack(NULL, MAX_WORD_SIZE);
 	if (reverse)
 	{
 		for ( int i = originalstart-1; i >= 1; --i) // can this be found in sentence backwards
 		{
-			char word[MAX_WORD_SIZE];
 			MakeLowerCopy(word,wordStarts[i]);
 			if (unmarked[i] || !MatchesPattern(word,test)) continue;	// if universally unmarked, skip it. Or if they dont match
 			// we have a match of a word
 			actualStart = i;
 			actualEnd = i;
+			ReleaseStack(word);
 			return true;
 		}
 	}
@@ -193,15 +194,16 @@ static bool FindPartialInSentenceTest(char* test, int start,int originalstart,bo
 	{
 		for (int i = start+1; i <= wordCount; ++i) // can this be found in sentence
 		{
-			char word[MAX_WORD_SIZE];
 			MakeLowerCopy(word,wordStarts[i]);
 			if (unmarked[i] || !MatchesPattern(word,test)) continue;	// if universally unmarked, skip it. Or if they dont match
 			// we have a match of a word
 			actualStart = i;
 			actualEnd = i;
+			ReleaseStack(word);
 			return true;
 		}
 	}
+	ReleaseStack(word);
 	return false;
 }
 
@@ -224,9 +226,11 @@ static bool MatchTest(bool reverse,WORDP D, int start,char* op, char* compare,in
 			else word = quote ? wordStarts[actualStart] : wordCanonical[actualStart];
 			int id;
 			if (deeptrace) Log(STDTRACELOG,(char*)" matchtest:optest ");
-			char word1val[MAX_WORD_SIZE];
-			char word2val[MAX_WORD_SIZE];
- 			if (HandleRelation(word,op,compare,false,id,word1val,word2val) & ENDCODES) continue; // failed 
+			char* word1val = AllocateStack(NULL,MAX_WORD_SIZE);
+			char* word2val = AllocateStack(NULL, MAX_WORD_SIZE);
+			FunctionResult res = HandleRelation(word, op, compare, false, id, word1val, word2val);
+			ReleaseStack(word1val);
+			if (res & ENDCODES) continue; // failed 
         }
  		if (*D->word == '~') 
 		{
@@ -769,16 +773,16 @@ bool Match(char* buffer,char* ptr, unsigned int depth, int startposition, char* 
 						else
 						{
 							int id;
-							char word1val[MAX_WORD_SIZE];
-							char word2val[MAX_WORD_SIZE];
+							char* word1val = AllocateStack(NULL, MAX_WORD_SIZE);
+							char* word2val = AllocateStack(NULL, MAX_WORD_SIZE);
  							result = HandleRelation(currentOutputBase,op,rhs,false,id,word1val,word2val); 
+							ReleaseStack(word1val);
 							matched = (result & ENDCODES) ? 0 : 1;
 						}
 					}
 					FreeOutputBuffer();
                 }
-				// else if (!(D->internalBits & IS_PATTERN_MACRO)) matched = false; // not allowed by compiler
-				else // user function - execute it in pattern context as continuation of current code
+				else // user patternmacro function - execute it in pattern context as continuation of current code
 				{ 
 					if (functionNest >= MAX_PAREN_NEST) // fail, too deep nesting
 					{
@@ -813,13 +817,14 @@ bool Match(char* buffer,char* ptr, unsigned int depth, int startposition, char* 
 					ptr = (char*)FindAppropriateDefinition(D, result); 
 					if (ptr)
 					{
-						char word[MAX_WORD_SIZE];
+						char* word = AllocateStack(NULL,MAX_WORD_SIZE);
 						ptr = ReadCompiledWord(ptr, word) + 2; // eat flags and count and (
-						while (*ptr) // skip over locals list
+						while (*ptr) // skip over locals list (which should be null)
 						{
 							ptr = ReadCompiledWord(ptr, word);
 							if (*word == ')') break;
 						}
+						ReleaseStack(word);
 					}
 					else ptr = ""; // null function
 					oldtrace = trace;
@@ -1060,9 +1065,9 @@ DOUBLELEFT:  case '(': case '[':  case '{': // nested condition (required or opt
 					if (IsComparison(*op)) // otherwise for words and concepts, look up in sentence and check relation there
 					{
 						if (result == '_' && quoted) --lhs; // include the quote
-						char word1val[MAX_WORD_SIZE];
-						char word2val[MAX_WORD_SIZE];
-						FunctionResult answer = HandleRelation(lhs,op,rhs,false,id,word1val,word2val); 
+						char* word1val = AllocateStack(NULL, MAX_WORD_SIZE);
+						char* word2val = AllocateStack(NULL, MAX_WORD_SIZE);
+						FunctionResult answer = HandleRelation(lhs,op,rhs,false,id,word1val,word2val);
 						matched = (answer & ENDCODES) ? 0 : 1;
 						if (trace  & TRACE_PATTERN) 
 						{
@@ -1073,6 +1078,7 @@ DOUBLELEFT:  case '(': case '[':  case '{': // nested condition (required or opt
 							else if (*word2val) sprintf(word,(char*)"%s%s%s(%s)",lhs,op,rhs,word2val);
 							else sprintf(word,(char*)"%s%s%s",lhs,op,rhs);
 						}
+						ReleaseStack(word1val);
 					}
 					else // find and test
 					{
@@ -1221,7 +1227,7 @@ DOUBLELEFT:  case '(': case '[':  case '{': // nested condition (required or opt
 						}
 						else
 						{
-							char word[MAX_WORD_SIZE];
+							char* word = AllocateStack(NULL,MAX_WORD_SIZE);
 							strcpy(word,wildcardOriginalText[index]);
 							char* at = word;
 							while ((at = strchr(at,' '))) *at = '_';
@@ -1231,17 +1237,19 @@ DOUBLELEFT:  case '(': case '[':  case '{': // nested condition (required or opt
 								strcpy(wildcardOriginalText[index],D->word);
 								strcpy(wildcardCanonicalText[index],D->word);
 							}
+							ReleaseStack(word);
 						}
 						uppercasematch = false;
 					}
 					else if (strchr(wildcardCanonicalText[index],' ')) // is lower case canonical a dictionary word with content?
 					{
-						char word[MAX_WORD_SIZE];
+						char* word = AllocateStack(NULL,MAX_WORD_SIZE);
 						strcpy(word,wildcardCanonicalText[index]);
 						char* at = word;
 						while ((at = strchr(at,' '))) *at = '_';
 						WORDP D = FindWord(word,0); // find without underscores..
 						if (D && D->properties & PART_OF_SPEECH)  strcpy(wildcardCanonicalText[index],D->word);
+						ReleaseStack(word);
 					}
 				}
 			}
@@ -1470,13 +1478,14 @@ DOUBLELEFT:  case '(': case '[':  case '{': // nested condition (required or opt
 	{
 		if (!matched)
 		{
-			char copy[MAX_WORD_SIZE];
+			char* copy = AllocateStack(NULL,MAX_WORD_SIZE);
 			strncpy(copy,ptr,80);
 			strcpy(copy+75,(char*)"...");
 			char* at = strchr(copy,')');
 			if (at) at[1] = 0;
 			CleanOutput(copy);
 			Log(STDTRACELOG,(char*)"        Remaining pattern: %s\r\n",copy);
+			ReleaseStack(copy);
 		}
 		else Log(STDTRACELOG,(char*)")+\r\n");
 	}

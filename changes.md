@@ -1,3 +1,30 @@
+# version 7.6 10/22/2017
+1. ~capacronym -  acronyms that are  all caps, all letters
+2. :trim now supports optional quoted first param :trim "keepname"
+	which instead of dumping all files it sees into a single tmp/tmp.txt file
+	keeps the names of the files it sees separated into tmp/*.txt
+3. you can now specify db name to postgres
+4, ^pos(isalluppercase xxx)
+5. implicit concept set for [] and {} in patterns when simple words/phrases/concepts
+6. :dedupe  filepath, outputs into tmp/filename just unique lines from the input
+7. command line parameter defaultbot=name gives the name of the default bot to use, overriding the defaultbot table value.
+8. ^timeinfofromseconds now returns 2 more values, the months index and the dayofweek index
+
+# Version 7.55 9/24/2017
+1. new PDF document: ChatScript Coding Standards
+2. RESPONSE_CURLYQUOTES converts on output plain quotes to curly ones
+
+# Version 7.54  8/27/2017
+1. limit on arguments to outputmacros raised to 31 from 15
+2. ^setresponse(index message) # revises existing response to this (can be used in postprocessing)
+3. CS server protocol allows a single null-terminated string, with user and bot components separated by ascii 1 instead of ascii 0.
+4. ^pos(canonical xxx yyy) takes optional 3rd argument yyy, the pos-tag of the word (since words using foreign dictionaries may have different canonical values based on pos-tag).
+
+# Version 7.53 8/12/2017
+1. :tsv  convert tsv to table form (putting quotes around things without it)
+2. %externaltagging
+3. improved control script manual
+
 # Version 7.52 7/8/2017
 1. ^respond(~xxx TEST) conditional execution of a topic to see if a match would occur (no output)
 2. revision of german noun pos tags in dictionary

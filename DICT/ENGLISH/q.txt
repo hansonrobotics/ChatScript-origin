@@ -89,7 +89,7 @@
     flying~2az hurried and brief
     ready~2az apprehending and responding with speed and sensitivity
     quick~8az 
-    quickly~2b 
+    quickly~2z 
  quickie ( meanings=1 NOUN NOUN_SINGULAR COMMON2 COMMON1 posdefault:NOUN ) 
     band_aid~1n 
  quicky ( meanings=1 NOUN NOUN_SINGULAR COMMON2 ) 
@@ -442,7 +442,7 @@
     restrained~3az not showy or obtrusive
     quiet~9az free of noise or uproar
     quiet~10az characterized by an absence or near absence of agitation or activity
-    quietly~3b 
+    quietly~3z 
     calm~9v 
     pipe_down~1vz become quiet or quieter
  quietness ( meanings=2 NOUN NOUN_SINGULAR COMMON2 COMMON1 NOUN_NODETERMINER ) 
@@ -561,8 +561,8 @@
  quarterly ( meanings=4 glosses=4 NOUN ADJECTIVE ADVERB ADJECTIVE_NORMAL NOUN_SINGULAR ADJECTIVE_NOT_PREDICATE COMMON4 KINDERGARTEN posdefault:ADJECTIVE TIMEWORD ) 
     quarterly~1nz (^serial_publication~1) a periodical that is published every quarter
     quarterly~2az of or relating to or consisting of a quarter
-    every_quarter~1bz in three month intervals
-    quarterly~4bz in diagonally opposed quarters of an escutcheon
+    every_quarter~1z in three month intervals
+    quarterly~4z in diagonally opposed quarters of an escutcheon
  quote ( meanings=6 glosses=6 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON1 GRADE5_6 posdefault:NOUN posdefault:VERB VERB_DIRECTOBJECT VERB_INDIRECTOBJECT VERB_NOOBJECT ) 
     quotation~2nz (^selection~3) a passage or expression that is quoted or cited
     inverted_comma~1nz (^punctuation_mark~1) a punctuation mark used to attribute the enclosed text to someone else
@@ -1187,10 +1187,10 @@
  quite_a_little ( meanings=1 NOUN NOUN_SINGULAR ) 
     passel~1n 
  quite ( meanings=5 glosses=3 ADVERB PREDETERMINER EXTENT_ADVERB COMMON4 COMMON1 KINDERGARTEN posdefault:ADVERB ) 
-    quite~1bz to the greatest extent
-    rather~2b 
-    quite_an~1bz of an unusually noticeable or exceptional or remarkable kind 
-    quite~4bz actually or truly or to an extreme
+    quite~1z to the greatest extent
+    rather~2z 
+    quite_an~1z of an unusually noticeable or exceptional or remarkable kind 
+    quite~4z actually or truly or to an extreme
     quite~5z 
  quantitative_relation ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR NOUN_NODETERMINER ) 
     magnitude_relation~1nz (^relation~1) a relation between magnitudes
@@ -1455,9 +1455,9 @@
  quarter-billion ( NOUN NOUN_NUMBER KINDERGARTEN ) 
  quarter-million ( NOUN NOUN_NUMBER KINDERGARTEN ) 
  quicker ( meanings=1 glosses=1 MORE_FORM ADJECTIVE ADVERB ADJECTIVE_NORMAL COMMON4 KINDERGARTEN posdefault:ADJECTIVE posdefault:ADVERB ) comparative=quick 
-    faster~1bz more quickly
+    faster~1z more quickly
  quickest ( meanings=1 glosses=1 MOST_FORM ADJECTIVE ADVERB ADJECTIVE_NORMAL COMMON2 COMMON1 KINDERGARTEN posdefault:ADJECTIVE ) comparative=quicker 
-    fastest~1bz most quickly
+    fastest~1z most quickly
  quaggier ( MORE_FORM ADJECTIVE ADJECTIVE_NORMAL ) comparative=quaggy 
  quaggiest ( MOST_FORM ADJECTIVE ADJECTIVE_NORMAL ) comparative=quaggier 
  queasier ( MORE_FORM ADJECTIVE ADJECTIVE_NORMAL COMMON1 posdefault:ADJECTIVE ) comparative=queasy 
@@ -1465,45 +1465,45 @@
  queenlier ( MORE_FORM ADJECTIVE ADJECTIVE_NORMAL COMMON1 ) comparative=queenly 
  queenliest ( MOST_FORM ADJECTIVE ADJECTIVE_NORMAL COMMON1 ) comparative=queenlier 
  quite_a ( meanings=1 ADVERB CONDITIONAL_IDIOM posdefault:ADVERB  poscondition=?=R ) 
-    quite~3b 
+    quite~3z 
  quite_an ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    quite_a~1b 
+    quite_a~1z 
  quietly ( meanings=4 glosses=4 ADVERB COMMON4 KINDERGARTEN posdefault:ADVERB ) 
-    softly~1bz with low volume
-    quietly~2bz with little or no sound
-    quiet~11bz with little or no activity or no agitation 
-    restfully~1bz in a restful manner
+    softly~1z with low volume
+    quietly~2z with little or no sound
+    quiet~11z with little or no activity or no agitation 
+    restfully~1z in a restful manner
  quickly ( meanings=3 glosses=3 ADVERB COMMON4 COMMON1 KINDERGARTEN posdefault:ADVERB ) 
-    apace~1bz with rapid movements
-    promptly~3bz with little or no delay
-    cursorily~1bz without taking pains
+    apace~1z with rapid movements
+    promptly~3z with little or no delay
+    cursorily~1z without taking pains
  quantitatively ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    quantitatively~1bz in a quantitative manner
+    quantitatively~1z in a quantitative manner
  questioningly ( meanings=2 glosses=2 ADVERB COMMON2 posdefault:ADVERB ) 
-    wonderingly~1bz in a curious and questioning manner
-    quizzically~1bz in a quizzical and questioning manner
+    wonderingly~1z in a curious and questioning manner
+    quizzically~1z in a quizzical and questioning manner
  querulously ( meanings=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    peevishly~1b 
+    peevishly~1z 
  quaintly ( meanings=2 glosses=2 ADVERB COMMON2 posdefault:ADVERB ) 
-    quaintly~1bz in a quaint old-fashioned manner
-    quaintly~2bz in a strange but not unpleasant manner
+    quaintly~1z in a quaint old-fashioned manner
+    quaintly~2z in a strange but not unpleasant manner
  qualitatively ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    qualitatively~1bz in a qualitative manner
+    qualitatively~1z in a qualitative manner
  queasily ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    queasily~1bz in a queasy manner
+    queasily~1z in a queasy manner
  queerly ( meanings=2 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    fishily~1bz in a questionably unusual manner
-    strangely~1b 
+    fishily~1z in a questionably unusual manner
+    strangely~1z 
  questionably ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    dubiously~2bz in a questionable and dubious manner
+    dubiously~2z in a questionable and dubious manner
  quizzically ( meanings=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    questioningly~2b 
+    questioningly~2z 
  quixotically ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    quixotically~1bz in a quixotic manner
+    quixotically~1z in a quixotic manner
  quaveringly ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    quaveringly~1bz in an unsteady quavering manner
+    quaveringly~1z in an unsteady quavering manner
  quaque_nocte ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    quaque_nocte~1bz 
+    quaque_nocte~1z 
  qua ( meanings=1 PREPOSITION COMMON4 COMMON1 ) 
     qua~1z 
  quicken ( meanings=5 glosses=2 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 COMMON1 posdefault:VERB VERB_DIRECTOBJECT VERB_NOOBJECT ) 

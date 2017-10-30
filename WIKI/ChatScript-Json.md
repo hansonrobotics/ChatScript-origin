@@ -1,6 +1,6 @@
 # ChatScript JSON Manual
 © Bruce Wilcox, mailto:gowilcox@gmail.com www.brilligunderstanding.com
-<br>Revision 6/25/2017 cs7.51
+<br>Revision 9/24/2017 cs7.55
 
 # Real World JSON
 
@@ -37,7 +37,7 @@ You can nest arrays and objects inside each other.
 
 JSON is an excellent language to represent more complex ChatScript facts as well as interact with the
 web. ChatScript can convert back and forth between JSON the text string passed over the web and
-ChatScript facts that represent the structure internally. If you tried to create facts using CreateFact, you
+ChatScript facts that represent the structure internally. If you tried to create facts using ^CreateFact, you
 would find making the data shown below extremely difficult and non-obvious. But as JSON, it is easy
 to create facts to represent the structure and to access pieces of it.
 
@@ -69,6 +69,29 @@ to create facts to represent the structure and to access pieces of it.
 
 Note that JSON has no mechanism for sharing JSON subtrees. Hence anytime you create a JSON fact
 structure in CS, the facts will all be unique.
+
+
+## Accessing the web with JSON
+
+You will learn how to create JSON structures below. The other key to a
+web-enabled CS is ^jsonopen. To see how easy it is to talk to the web,
+just look at this code.
+```
+# The cleanest way to build json data
+$_var = ^jsoncreate(transient object)
+$_var.fieldname = $myvar 
+
+An alternative limited to max output buffer size (~80K):
+$_var = ^jsonparse(^"{ fieldname: $myvar }") 
+
+And now to send data upstream:
+$_url = ^"http://myHost:myIP"
+$_userAgent = ^"User-Agent: %bot, ChatScript”
+$_header = ^" ~Accept: application/json 
+                  $_userAgent
+                  ~Content-Type: application/json "
+$_response = ^jsonopen(transient POST $_url $_data $_header $_userAgent) 
+```
 
 ## JSONFLAGS - Optional 1st arg to some JSON routines
 

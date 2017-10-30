@@ -341,7 +341,7 @@
 #GERMAN concept: ~FAMILY_CHILDREN PROBABLE_NOUN ANIMATE_BEING ( ~family_children_female ~family_children_generic ~family_children_male        )
 #GERMAN concept: ~FAMILY_CHILDREN_FEMALE PROBABLE_NOUN ANIMATE_BEING ( ~sister      Tochter Enkelin Großnichte Nichte Schwester Schwägerin Stieftochter Stiefschwester Stieftochter Stiefschwester   )
 #GERMAN concept: ~FAMILY_CHILDREN_GENERIC NOUN_HUMAN PROBABLE_NOUN ANIMATE_BEING (      Baby Kind Cousin Enkel grandkid Säugling Kind Nachwuchs Nachkommen Geschwister Stiefkind Stiefkind jugendlich Teenager Kleinkind Knirps Zwilling Station Jugend nephling  )
-#GERMAN concept: ~FAMILY_CHILDREN_MALE PROBABLE_NOUN ANIMATE_BEING ( ~brother      Bruder grandnephew Enkel Neffe Spross Sohn SSTEP-Sohn Stiefbruder Stiefsohn   )
+#GERMAN concept: ~FAMILY_CHILDREN_MALE PROBABLE_NOUN ANIMATE_BEING ( ~brother      Bruder grandnephew Enkel Neffe Spross Sohn  Stiefbruder Stiefsohn   )
 #GERMAN concept: ~FAMILY_GRANDFATHER PROBABLE_NOUN ANIMATE_BEING (      Opa Urvater Großvater Opa Grandpaw grandpop   )
 #GERMAN concept: ~FAMILY_MEMBERS PROBABLE_NOUN ANIMATE_BEING ( ~family_adult ~family_children      relativ Zwilling   )
 #GERMAN concept: ~FARM_ANIMALS PROBABLE_NOUN ANIMATE_BEING (      Eber Stier Kalb Küken Kuh Ente Entlein Mutterschaf Fohlen Gans Gänschen Henne Stute Schwein Ferkel RAM Hahn Hengst   )

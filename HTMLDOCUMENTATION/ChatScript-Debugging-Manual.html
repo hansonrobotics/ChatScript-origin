@@ -9,7 +9,7 @@
 </head>
 <body>
 <h1 id="chatscript-debugging-manual">ChatScript Debugging Manual</h1>
-<p>© Bruce Wilcox, mailto:gowilcox@gmail.com www.brilligunderstanding.com<br> <br>Revision 6/25/2017 cs7.51</p>
+<p>© Bruce Wilcox, mailto:gowilcox@gmail.com www.brilligunderstanding.com<br> <br>Revision 9/24/2017 cs7.55</p>
 <p>You've written script. It doesn't work. Now what? Now you need to debug it, fix it, and recompile it. Debugging is mostly a matter of tracing what the system does testpaand finding out where it doesn't do what you expected. Debugging mostly done by issuing commands to the engine, as opposed to chatting.</p>
 <p>If the system detects bugs during execution, they go into <code>TMP/bugs.txt</code> You can erase the entire contents of the TMP directory any time you want to. But odds are this is not your problem.</p>
 <p>Debugging generally requires use of some :xxxx commands. I don't always remember them all, so at times I might simply say</p>
@@ -105,6 +105,7 @@
 ---- Document Processing -
 :document - Switch input to named file/directory as a document {single, echo}
 :wikitext - read wiki xml and write plaintext
+:tsv    - convert a tab-delimited spreadsheet into CS table format, with double quotes around any string needing it
 
 ---- Analytics -
 :abstract     - Display overview of ChatScript topics
@@ -361,6 +362,7 @@ RAWDATA/simpletopic.top # things we can chat about
 <p>The system will set the limits, then upon hitting the topic name, swallow them to be used for that topic. This means you can do multiple topics and global limits in one command:</p>
 <pre><code>:trace pattern ~mytopic pos ~yourtopic varassign</code></pre>
 <p><code>~mytopic</code> gets the pattern limit, <code>~yourtopic</code> gets the pos limit, and globally you do varassign.</p>
+<p>Note: the correct way to turn on/off normal tracing from script is by changing the tracing variable, e.g., $cs_trace = -1.</p>
 <h3 id="understanding-a-pattern-trace">Understanding a pattern trace</h3>
 <pre><code>    try 3.0: ( ! %response=0 !%lastquestion !%outputrejoinder )   
             ( !%response(0)=0- Remaining pattern: !%lastquestion ! %outputrejoinder )

@@ -156,8 +156,8 @@ int ValidPeriodToken(char* start, char* end, char next,char next2) // token with
 	if (FindWord(start,len-1)) return TOKEN_EXCLUSIVE; // word exists independent of it
 
 	// is part of a word but word not yet done
-    if (IsFloat(start,end) && IsDigit(next)) return TOKEN_INCOMPLETE; //   decimal number9
-	if (*start == '$' && IsFloat(start+1,end) && IsDigit(next)) return TOKEN_INCOMPLETE; //   decimal number9 or money
+    if (IsFloat(start,end,numberStyle) && IsDigit(next)) return TOKEN_INCOMPLETE; //   decimal number9
+	if (*start == '$' && IsFloat(start+1,end,numberStyle) && IsDigit(next)) return TOKEN_INCOMPLETE; //   decimal number9 or money
 	if (IsNumericDate(start,end)) return TOKEN_INCOMPLETE;	//   swallow period date as a whole - bug . after it?
 	if ( next == '-') return TOKEN_INCOMPLETE;	// like N.J.-based
 	if (IsAlphaUTF8(next)) return TOKEN_INCOMPLETE;  // "file.txt" 
@@ -190,7 +190,8 @@ int BurstWord(char* word, int contractionStyle)
 	}
 
 	//   make it safe to write on the data while separating things
-	char* copy = AllocateStack(word,0);
+	char* copy = AllocateBuffer();
+	strcpy(copy, word);
 	word = copy;
 	unsigned int base = 0;
 
@@ -289,7 +290,7 @@ int BurstWord(char* word, int contractionStyle)
     if (start && *start && *start != ' ' && *start != '_') strcpy(burstWords[base++],start); // a trailing 's or '  won't have any followup word left
 	if (!base && underscoreSeen) strcpy(burstWords[base++],(char*)"_");
 	else if (!base) strcpy(burstWords[base++],start);
-	ReleaseStack(copy);
+	FreeBuffer();
 	burstLimit = base;	// note legality of burst word accessor GetBurstWord
     return base;
 }
@@ -340,8 +341,14 @@ char* JoinWords(unsigned int n,bool output) //
 static char* HandleQuoter(char* ptr,char** words, int& count)
 {
 	char c = *ptr; // kind of quoter
-	char* end = strchr(ptr+1,c); // find matching end?
-	if (!end) return NULL; 
+	char* end = ptr;
+	while (1)
+	{
+		end = strchr(end + 1, c); // find matching end?
+		if (!end) return NULL;
+		if (end[1] == '"') end++;	// skip over "" in quote
+		else break;
+	}
 	if (tokenControl & LEAVE_QUOTE) return end+1;
 
 	char pastEnd = IsPunctuation(end[1]); // what comes AFTER quote
@@ -376,6 +383,7 @@ static char* HandleQuoter(char* ptr,char** words, int& count)
 				++end; // subsume the closing marker
 				strncpy(buf,ptr,end-ptr);
 				buf[end-ptr] = 0;
+				buf[MAX_WORD_SIZE - 25] = 0; // force safe limit
 				++count;
 				words[count] = AllocateHeap(buf); 
 				ReleaseInfiniteStack();
@@ -394,7 +402,7 @@ static WORDP UnitSubstitution(char* buffer)
 {
 	char value[MAX_WORD_SIZE];
 	char* at = buffer - 1;
-	while (IsDigit(*++at) || *at == numberPeriod || *at == numberComma); // skip past number
+	while (IsDigit(*++at) || *at == '.' || *at == ','); // skip past number
 	strcpy(value, "?_");
 	strcat(value + 2, at); // presume word after number is not big
 	while ((at = strchr(value, '.'))) memmove(at, at + 1, strlen(at)); // remove abbreviation periods
@@ -479,9 +487,10 @@ static char* FindWordEnd(char* ptr, char* priorToken, char** words, int &count, 
 				return ptr + 1; // split up quote marks
 			else // see if merely highlighting a word
 			{
-				char word[MAX_WORD_SIZE];
+				char* word = AllocateStack(NULL,INPUT_BUFFER_SIZE,false,false);
 				char* tail = ReadCompiledWord(ptr, word);
 				char* close = strchr(word + 1, '"');
+				ReleaseStack(word);
 				if (close && !strchr(word, ' ')) // we dont need quotes
 				{
 					if (tokenControl & LEAVE_QUOTE) return tail;
@@ -505,6 +514,7 @@ static char* FindWordEnd(char* ptr, char* priorToken, char** words, int &count, 
 			char* end = HandleQuoter(ptr, words, count);
 			if (end)  return end;
 		}
+		return ptr + 1; // just return isolated quote
 	}
 
 	if (*ptr == '?') return ptr + 1; // we dont have anything that should join after ?    but  ) might start emoticon
@@ -524,7 +534,7 @@ static char* FindWordEnd(char* ptr, char* priorToken, char** words, int &count, 
 	ReadCompiledWord(ptr, token);
 
 	// if this was 93302-42345 then we need to keep - separate, not as minus
-	if (*token == '-' && IsInteger(token + 1, false) && IsInteger(priorToken, false))
+	if (*token == '-' && IsInteger(token + 1, false, numberStyle) && IsInteger(priorToken, false, numberStyle))
 	{
 		return ptr + 1;
 	}
@@ -540,15 +550,22 @@ static char* FindWordEnd(char* ptr, char* priorToken, char** words, int &count, 
 	if (strchr(token, numberPeriod) || strchr(token, 'e') || strchr(token, 'E'))
 	{
 		char* at = token;
+
+		// check for a currency symbol
+		char* number = token;
+		char* currency = 0;
+		if ((currency = (char*)GetCurrency((unsigned char*)at, number))) at = number; // if currency, find number start of it
+
 		bool seenExponent = false;
-		while (*++at && (IsDigit(*at) || *at == numberComma || *at == numberPeriod || (!seenExponent && (*at == 'e' || *at == 'E')) || *at == '-' || *at == '+'))
+		while (*++at && (IsDigit(*at) || *at == ',' || *at == '.' || (!seenExponent && (*at == 'e' || *at == 'E')) || *at == '-' || *at == '+'))
 		{
 			if (*at == 'e' || *at == 'E') seenExponent = true; // exponent can only appear once, 10e4euros
 		}
 
-		// may be units attached, so dont split that apart
-		if (IsFloat(token, at) && !UnitSubstitution(at)) // $50. is not a float, its end of sentene
+		// may be units or currency attached, so dont split that apart
+		if (IsFloat(number, at, numberStyle) && !UnitSubstitution(at)) // $50. is not a float, its end of sentene
 		{
+			if (currency && at == currency) at += strlen(currency);
 			if (*at == '%') ++at;
 			if (*at == 'k' || *at == 'K' || *at == 'm' || *at == 'M' || *at == 'B' || *at == 'b')
 			{
@@ -571,7 +588,36 @@ static char* FindWordEnd(char* ptr, char* priorToken, char** words, int &count, 
 	}
 
 	// check for ordinary integers whose commas may be confusing
-	if ((IsDigit(token[0])|| IsDigit(token[1])) && IsDigitWord(token, true)) return ptr + strlen(token);
+	if ((IsDigit(token[0])|| IsDigit(token[1])) && IsDigitWord(token, numberStyle, true)) return ptr + strlen(token);
+
+	// check for date
+	if (IsDate(token)) return ptr + strlen(token);
+
+	// check for two numbers separated by a hyphen
+	char* hyp = strchr(token, '-');
+	if (hyp && IsDigit(*token)) 
+	{
+		char* at = hyp;
+		while (*++at && IsDigit(*at)) { ; }
+		char* at1 = hyp;
+		while (--at1 != token && IsDigit(*--at1)) { ; }
+		if (at1 == token && *at == 0) return ptr + (hyp - token);
+	}
+	if (hyp && !strchr(hyp+1,'-')) // - used as measure separator 
+	{
+		if ((hyp[1] == 'x' || hyp[1] == 'X') && hyp[1] == '-') // measure like 2ft-x-5ft
+		{
+			ptr[hyp - token] = ' ';
+			if (hyp[2] == '-') ptr[hyp + 2 - token] = ' ';
+			return ptr + (hyp - token);
+		}
+		else if ((IsDigit(*token) || (*token == '.' && IsDigit(token[1]))) && IsAlphaUTF8(hyp[1]) && !(tokenControl & TOKEN_AS_IS)) // break apart measures like 4-ft except when penntag strict casing
+		{
+			ptr[hyp - token] = ' ';
+			return ptr + (hyp - token);	//   treat as space
+		}
+		else if (hyp[1] == '-') return ptr + (hyp - token); // the anyways-- break 
+	}
 
 	// find current token which has comma after it and separate it, like myba,atat,joha
 	char* comma = strchr(token + 1, ',');
@@ -635,7 +681,7 @@ static char* FindWordEnd(char* ptr, char* priorToken, char** words, int &count, 
 
 	if (comma && IsDigit(*(comma-1)) && !IsDigit(comma[1])) return comma; // $7 99
 	if (comma && IsDigit(comma[1]) && IsDigit(comma[2]) && IsDigit(comma[3]) && IsDigit(comma[4])) return comma; // 25,2019 
-	if (comma && !IsCommaNumberSegment(comma+1)) return comma; // 25,2 rest of word is not valid comma segments
+	if (comma && !IsCommaNumberSegment(comma+1,NULL)) return comma; // 25,2 rest of word is not valid comma segments
 
 	if (kind & BRACKETS && ( (c != '>' && c != '<') || next != '=') ) 
 	{
@@ -757,24 +803,7 @@ static char* FindWordEnd(char* ptr, char* priorToken, char** words, int &count, 
 	if (!strnicmp(token,"https://",8) || !strnicmp(token,"http://",7)) return after;
 	if (*priorToken != '/' && IsFraction(token)) return after; // fraction?
 
-	// check for date
-	if (IsDate(token)) return ptr + strlen(token);
-	
-	int pre = lsize - 5; // year separate at back
-	if ((token[pre] == '-' || token[pre] == '/') && IsDigit(token[pre+1]) &&  IsDigit(token[pre+2]) && IsDigit(token[pre+3]) && IsDigit(token[pre+4]))
-	{
-		char* at = token-1;
-		while (*++at && (IsDigit(*at) || *at == '-' || *at == '/')) {;}
-		if (!*at) // is pure number of some kind so can be date
-		{
-			char* hyphen = strchr(token,'-');
-			if (!hyphen) hyphen = strchr(token,'/');
-			if (hyphen == token) return ptr+1;
-			if (hyphen)	return ptr + (hyphen - token);	// break off regardless
-		}
-	}
-	
-	// check for place number
+															   // check for place number
 	char* place = ptr;
 	while (IsDigit(*place)) ++place;
 	if (!stricmp(language, "english") && (!stricmp(place,"st") || !stricmp(place,"nd") || !stricmp(place,"rd"))) return end;
@@ -839,23 +868,7 @@ static char* FindWordEnd(char* ptr, char* priorToken, char** words, int &count, 
 				else if (ptr[2] == ' ' || !ptr[2]) return ptr+2;
 				else if ((ptr[3] == ' ' || !ptr[3]) && IsDigit(ptr[2])) return ptr+3;
 			} 
-			else if (c == '-') // - used as measure separator or arithmetic
-			{
-				if (IsDigit(*start) && IsDigit(next)) break; // minus
-				if ((next == 'x' || next == 'X') && ptr[2] == '-') // measure like 2ft-x-5ft
-				{
-					ptr[2] = ' ';
-					*ptr = ' ';
-					break;
-				}
-				else if ((IsDigit(*start) || (*start == '.' && IsDigit(start[1]))) && IsAlphaUTF8(next) && !(tokenControl & TOKEN_AS_IS)) // break apart measures like 4-ft except when penntag strict casing
-				{
-					*ptr = ' ';
-					break;	//   treat as space
-				}
-				else if (next == '-' ) 
-					break; // the anyways-- break 
-			}
+			
 			// number before things? 8months but not 24%  And dont split 1.23 or time words 10:30 and 30:20:20. dont break 6E
 			if (IsDigit(*start) && IsDigit(*(ptr-1)) && !IsDigit(c) && c != '%' && c != '.' && c != ':' && ptr[1] && ptr[2] && ptr[1] != ' ' && ptr[2] != ' ')
 			{
@@ -872,14 +885,11 @@ static char* FindWordEnd(char* ptr, char* priorToken, char** words, int &count, 
 			}
 			if ( c == ']' || c == ')') break; //closers
 			if ((c == 'x' || c== 'X') && IsDigit(*start) && IsDigit(next)) break; // break  4x4
-			// allow 24%
-			if (kind & ARITHMETICS && IsDigit(next) && IsDigit(*(ptr-2))  && c != '/' && c != '.' && IsDigit(*start) && !(tokenControl & TOKEN_AS_IS)) 
-				break;  // split numeric operator like  60*2 => 60 * 2  but 60 1/2 stays // 1+1=  dont BREAK APART word-number like Ja-1
 		}
 
 		if (kind & BRACKETS) break; // separate brackets
 
-		if (kind & (PUNCTUATIONS|ENDERS) && IsWordTerminator(next)) 
+		if (kind & (PUNCTUATIONS|ENDERS|QUOTERS) && IsWordTerminator(next)) 
 		{
 			if (c == '-' && *ptr == '-' && next == ' ') return ptr + 1;
 			if (tokenControl & TOKEN_AS_IS && next == ' ' && ptr[1] && !IsWhiteSpace(ptr[2])) return ptr + 1; // our token ends and there is more text to come
@@ -987,19 +997,19 @@ char* Tokenize(char* input,int &mycount,char** words,bool all,bool nomodify,bool
 		int oldCount = count;
 		if (!*ptr) break; 
 		char* end = FindWordEnd(ptr,priorToken,words,count,nomodify,oobStart,oobJson);
-		if (count != oldCount)	// FindWordEnd performed allocation already 
-		{
-			if (count > 0) strcpy(priorToken,words[count]);
-			ptr = SkipWhitespace(end);
-			continue;
-		}
-		if ((end-ptr) > (MAX_WORD_SIZE-3)) 
+		if ((end - ptr) > (MAX_WORD_SIZE - 3)) // too big to handle, suppress it.
 		{
 			char word[MAX_WORD_SIZE];
-			strncpy(word,ptr,MAX_WORD_SIZE - 25);
-			word[MAX_WORD_SIZE-25] = 0;
-			ReportBug("Token too big: %s size %d limited to %d\r\n",word, (end-ptr), MAX_WORD_SIZE-25);
+			strncpy(word, ptr, MAX_WORD_SIZE - 25);
+			word[MAX_WORD_SIZE - 25] = 0;
+			ReportBug("Token too big: %s size %d limited to %d\r\n", word, (end - ptr), MAX_WORD_SIZE - 25);
 			end = ptr + MAX_WORD_SIZE - 25; // abort, too much jammed together. no token to reach MAX_WORD_SIZE
+		}
+		if (count != oldCount)	// FindWordEnd performed allocation already 
+		{
+			if (count > 0) strcpy(priorToken, words[count]);
+			ptr = SkipWhitespace(end);
+			continue;
 		}
 		if (*ptr == ' ')	// FindWordEnd removed stage direction start
 		{
@@ -1064,7 +1074,7 @@ char* Tokenize(char* input,int &mycount,char** words,bool all,bool nomodify,bool
 		if (*ptr == ')' && nest == 1){;}
 		else if (*ptr == ']' && nest == 1){;}
 		else if (tokenControl & TOKEN_AS_IS) {;} // penn bank input already broken up as sentences
-		else if (all || tokenControl & NO_SENTENCE_END || startc == ',' || token[1]){;}	// keep going - ) for closing whatever
+		else if (all || tokenControl & NO_SENTENCE_END || startc == ',' || token[1]){continue;}	// keep going - ) for closing whatever
 		else if ( (count > 1 && *token == '\'' && ( (*words[count-1] == '.' && !words[count-1][1]) || *words[count-1] == '!' || *words[count-1] == '?'))) break; // end here
 		else if (IsPunctuation(startc) & ENDERS || (startc == ']' && *words[1] == '[' && !nest)) //   done a sentence or oob fragment
 		{
@@ -1614,7 +1624,7 @@ static void MergeNumbers(int& start,int& end) //   four score and twenty = four-
     for (int i = start; i < end; ++i)
     {
 		char* item = wordStarts[i];
-        if (*item == ',') continue; //   ignore commas
+        if (*item == numberComma) continue; //   ignore commas
 		if (i > start && *item == '-') ++item; // skip leading -
 		if (i > start && IsDigit(*wordStarts[i-1]) && !IsDigit(*item)) // digit followed by word
 		{
@@ -1632,8 +1642,8 @@ static void MergeNumbers(int& start,int& end) //   four score and twenty = four-
 		//   OR  one and twenty 
         if (i > 1 && i < wordCount && (*item == 'a' || *item == 'A')) //   and,  maybe flip order if first, like one and twenty, then ignore
         {
-			int64 power1 = NumberPower(wordStarts[i-1]);
-			int64 power2 = NumberPower(wordStarts[i+1]);
+			int64 power1 = NumberPower(wordStarts[i-1], numberStyle);
+			int64 power2 = NumberPower(wordStarts[i+1], numberStyle);
 			if (power1 < power2) //   latter is bigger than former --- assume nothing before and just overwrite
 			{
 				strcpy(word,wordStarts[i+1]);
@@ -1656,8 +1666,8 @@ static void MergeNumbers(int& start,int& end) //   four score and twenty = four-
         *ptr = 0;
         if (i > 1 && i != start) //   prove not mixing types digits and words
         {
-  			int64 power1 = NumberPower(wordStarts[i-1]);
-			int64 power2 = NumberPower(wordStarts[i]);
+  			int64 power1 = NumberPower(wordStarts[i-1], numberStyle);
+			int64 power2 = NumberPower(wordStarts[i], numberStyle);
 			if (power1 == power2 && power1 != 1) // allow one two three
 			{
 				end = start = (unsigned int)UNINIT; 
@@ -1697,6 +1707,9 @@ void ProcessSplitUnderscores()
 		char* under = strchr(original,'_');
 		if (!under) continue;
 
+		// dont split if email or url
+		if (strchr(original, '@') || strchr(original, '.')) continue;
+
 		int index = 1;
 		while (under)
 		{
@@ -1724,7 +1737,7 @@ void ProcessCompositeNumber()
     for (int i = FindOOBEnd(1); i <= wordCount; ++i) 
     {
 		char* word = wordStarts[i];
-        bool isNumber = IsNumber(word) && !IsPlaceNumber(word) && !GetCurrency((unsigned char*) word,number);
+        bool isNumber = IsNumber(word,numberStyle) != NOT_A_NUMBER && !IsPlaceNumber(word,numberStyle) && !GetCurrency((unsigned char*) word,number);
 		size_t len = strlen(word);
         if (isNumber || (start == UNINIT && *word == '-' && i < wordCount && IsDigit(*wordStarts[i+1]))) // is this a number or part of one
         {
@@ -1737,19 +1750,19 @@ void ProcessCompositeNumber()
             if (i != wordCount && i != 1) // middle words AND and , 
 			{
 				// AND between words 
-				if (!strnicmp((char*)"and",word,len)) 
+				if (!strnicmp((char*)"and",word,len) || !strnicmp((char*)"&", word, len))
 				{
 					end = i;
 					if (!IsDigit(*wordStarts[i-1]) && !IsDigit(*wordStarts[i+1])) // potential word number 
 					{
-						int64 before = Convert2Integer(wordStarts[i-1]);  //  non numbers return NOT_A_NUMBER   
-						int64 after = Convert2Integer(wordStarts[i+1]);
+						int64 before = Convert2Integer(wordStarts[i-1],numberStyle);  //  non numbers return NOT_A_NUMBER   
+						int64 after = Convert2Integer(wordStarts[i+1],numberStyle);
 						if (after > before){;} // want them ordered--- ignore four score and twenty
 						else if (before == 100 || before == 1000 || before == 1000000) continue; // one thousand and five - ten thousand and fifty
 					}
 				}
 				// comma between digit tokens
-				else if (*wordStarts[i] == ',' ) 
+				else if (*wordStarts[i] == numberComma ) 
 				{
 					if (IsDigit(*wordStarts[i-1]) && IsDigit(*wordStarts[i+1])) // a numeric comma
 					{
@@ -2002,7 +2015,8 @@ static bool Substitute(WORDP found,char* sub, int i,int erasing)
 static WORDP Viability(WORDP word, int i, unsigned int n)
 {
 	if (!word) return NULL;
-    if (word->systemFlags & CONDITIONAL_IDIOM) //  dare not unless there are no conditions
+	if (word->systemFlags & ALWAYS_PROPER_NAME_MERGE) return word;
+	if (word->systemFlags & CONDITIONAL_IDIOM) //  dare not unless there are no conditions
     {
         char* script = word->w.conditionalIdiom;
         if (script[1] != '=') return 0; // no conditions listed
@@ -2010,7 +2024,7 @@ static WORDP Viability(WORDP word, int i, unsigned int n)
 	}
     if (word->internalBits & HAS_SUBSTITUTE)
     {
-        WORDP X = GetSubstitute(word);
+        WORDP X = GetSubstitute(word); //uh - but we would, uh, , buy, .. lollipops
         if (X && !strcmp(X->word, word->word)) return NULL; // avoid infinite substitute
         uint64 allowed = tokenControl & (DO_SUBSTITUTE_SYSTEM | DO_PRIVATE);
         return (allowed & word->internalBits) ? word : 0; // allowed transform
@@ -2038,7 +2052,8 @@ static WORDP Viability(WORDP word, int i, unsigned int n)
     if (!n) return 0;
 
     // how to handle proper nouns for merging here
-    if (!IsUpperCase(*word->word)) { ; }
+	if (word->systemFlags & NO_PROPER_MERGE) return 0;
+	if (!IsUpperCase(*word->word)) { ; }
     else if (!(tokenControl & DO_PROPERNAME_MERGE)) return 0; // do not merge any proper name
     else if (n && IsUpperCase(*word->word) && word->properties & PART_OF_SPEECH && !IS_NEW_WORD(word))
         return word;// Merge dictionary names.  We  merge other proper names later.  words declared ONLY as interjections wont convert in other slots

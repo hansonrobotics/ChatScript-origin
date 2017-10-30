@@ -32,7 +32,7 @@
        See include/mysql/psi/mysql_thread.h
 */
 
-#include <my_global.h>
+#include "my_global.h"
 #include "my_thread.h"
 
 C_MODE_START

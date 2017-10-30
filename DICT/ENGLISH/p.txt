@@ -1099,7 +1099,7 @@
     pass~17a 
     ephemeral~2a 
     passing~11az allowing you to pass satisfactorily
-    super~5b 
+    super~5z 
  pass ( meanings=42 glosses=34 VERB_PRESENT VERB_INFINITIVE VERB ADJECTIVE ADJECTIVE_NORMAL ADJECTIVE_NOT_PREDICATE COMMON4 COMMON1 KINDERGARTEN posdefault:VERB VERB_TAKES_INDIRECT_THEN_TOINFINITIVE VERB_DIRECTOBJECT VERB_INDIRECTOBJECT VERB_NOOBJECT ) 
     qualifying~1nz (^success~1) success in satisfying a test or requirement
     flip~1nz (^throw~1) the act of throwing the ball to another member of your team
@@ -1273,7 +1273,7 @@
     piping~1nz (^playing~2) playing a pipe or the bagpipes
     pipe~2n 
     piping~3nz (^cord~1) a thin strip of covered cord used to edge hems
-    steaming~2b 
+    steaming~2z 
  pitch ( meanings=22 glosses=22 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 NOUN_NODETERMINER KINDERGARTEN posdefault:NOUN VERB_DIRECTOBJECT VERB_INDIRECTOBJECT VERB_NOOBJECT ) 
     pitch~1nz (^throw~1) the action or manner of throwing something
     delivery~3nz (^throw~1) the act of throwing a baseball by a pitcher to a batter
@@ -1432,7 +1432,7 @@
     tap~7n 
     pat~3az exactly suited to the occasion
     glib~2az having only superficial plausibility
-    pat~5bz completely or perfectly
+    pat~5z completely or perfectly
     dab~3vz hit lightly
     chuck~5vz pat or squeeze fondly or playfully, especially under the chin
  pitching ( meanings=2 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON4 posdefault:VERB ) 
@@ -1446,7 +1446,7 @@
     soda~1n 
     daddy~1n 
     popular~1a 
-    pop~6bz like a pop or with a pop
+    pop~6z like a pop or with a pop
     pop~7vz burst open with a sharp, explosive sound
     pop~8vz cause to burst with a loud, explosive sound
     pop~9vz fire a weapon with a loud explosive noise
@@ -1470,7 +1470,7 @@
  plunk ( meanings=7 glosses=2 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB ADVERB NOUN_SINGULAR COMMON2 posdefault:VERB VERB_DIRECTOBJECT VERB_NOOBJECT ) comparative=plunker 
     plunker~1n 
     plunk~2nz (^sound~5) a hollow twanging sound
-    plop~2b 
+    plop~2z 
     pick~18v 
     plonk~3v 
     dive~6v 
@@ -1925,7 +1925,7 @@
     plain~8az not elaborate or elaborated
     unmingled~1az not mixed with extraneous elements
     plain~10az 
-    apparently~1bz unmistakably 
+    apparently~1z unmistakably 
     quetch~1vz express complaints, discontent, displeasure, or unhappiness
  promenade ( meanings=7 glosses=4 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 COMMON1 posdefault:NOUN VERB_NOOBJECT ) 
     stroll~1n 
@@ -2059,8 +2059,8 @@
     packing_material~1n 
  piggyback ( meanings=8 glosses=6 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB ADVERB NOUN_SINGULAR COMMON2 COMMON1 posdefault:NOUN VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     piggyback~1nz (^carry~1) the act of carrying something piggyback
-    pickaback~1b 
-    pickaback~2b 
+    pickaback~1z 
+    pickaback~2z 
     piggyback~4vz bring into alignment with
     piggyback~5vz support on the back and shoulders
     piggyback~6vz haul by railroad car
@@ -2650,8 +2650,8 @@
     plum~1nz (^position~2) a highly desirable position or assignment
     plum~2nz (^edible_fruit~1) any of numerous varieties of small to medium-sized round or oval fruit having a smooth skin and a single pit
     plum_tree~1nz (^fruit_tree~1) any of several trees producing edible oval fruit having a smooth skin and a single hard stone
-    clean~21b 
-    plumb~4bz exactly
+    clean~21z 
+    plumb~4z exactly
  praetorship ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON1 ) 
     praetorship~1nz (^position~2) the office of praetor
  precentorship ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON1 ) 
@@ -2954,7 +2954,7 @@
     piece~11n 
     share~4n 
     component_part~1nz (^relation~1) something determined in relation to something that includes it
-    partly~1bz in part
+    partly~1z in part
     separate~13v 
     separate~14v 
     start~17v 
@@ -3365,7 +3365,7 @@
     forte-piano~1nz (^keyboard_instrument~1) a keyboard instrument that is played by depressing keys that cause hammers to strike tuned strings and produce sounds
     pianissimo~1nz (^softness~7) low loudness
     soft~12az used chiefly as a direction or description in music
-    softly~3bz used as a direction in music
+    softly~3z used as a direction in music
  propaedeutic ( meanings=2 glosses=1 NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON1 ) 
     propaedeutic~1nz (^course~2) 
     preparative~1az preceding and preparing for something
@@ -7469,7 +7469,7 @@
     precious~3az of high worth or cost
     valued~2az held in great esteem for admirable qualities especially of an intrinsic nature
     precious~5az 
-    preciously~1bz extremely
+    preciously~1z extremely
  pinafore ( meanings=1 glosses=1 NOUN NOUN_SINGULAR COMMON2 posdefault:NOUN ) 
     pinny~1nz (^dress~3) a sleeveless dress resembling an apron
  pinny ( meanings=1 NOUN NOUN_SINGULAR COMMON1 posdefault:NOUN ) 
@@ -9103,9 +9103,9 @@
  plumb ( meanings=9 glosses=6 VERB_PRESENT VERB_INFINITIVE NOUN VERB ADJECTIVE ADVERB ADJECTIVE_NORMAL NOUN_SINGULAR COMMON2 COMMON1 posdefault:NOUN VERB_DIRECTOBJECT ) comparative=plumber 
     plumb_bob~1n 
     plumb~2az exactly vertical
-    plum~4b 
-    plum~5b 
-    plumb~5bz conforming to the direction of a plumb line
+    plum~4z 
+    plum~5z 
+    plumb~5z conforming to the direction of a plumb line
     plumb~6vz adjust with a plumb line so as to make vertical
     plumb~7vz examine thoroughly and in great depth
     plumb~8vz measure the depth of something
@@ -10773,7 +10773,7 @@
  pianissimo ( meanings=3 glosses=1 NOUN ADJECTIVE ADVERB ADJECTIVE_NORMAL NOUN_SINGULAR ADJECTIVE_NOT_PREDICATE COMMON2 posdefault:NOUN ) 
     piano~2n 
     pianissimo~2az chiefly a direction or description in music
-    very_softly~1b 
+    very_softly~1z 
  pungency ( meanings=2 NOUN NOUN_SINGULAR COMMON2 NOUN_NODETERMINER posdefault:NOUN ) 
     raciness~2n 
     bite~4n 
@@ -10935,7 +10935,7 @@
  plenty ( meanings=4 glosses=2 NOUN_ABSTRACT PRONOUN_SUBJECT PRONOUN_OBJECT NOUN ADVERB NOUN_SINGULAR EXTENT_ADVERB COMMON4 COMMON1 NOUN_NODETERMINER KINDERGARTEN PRONOUN_SINGULAR posdefault:NOUN posdefault:ADVERB ) 
     plentitude~1nz (^copiousness~1) a full supply
     raft~2n 
-    enough~2bz as much as necessary
+    enough~2z as much as necessary
     plenty~4z 
  plentifulness ( meanings=1 NOUN NOUN_SINGULAR COMMON1 ) 
     plenty~1n 
@@ -11843,7 +11843,7 @@
     plague~5n 
  peradventure ( meanings=2 glosses=1 NOUN_ABSTRACT NOUN ADVERB NOUN_SINGULAR COMMON2 posdefault:NOUN ) 
     peradventure~1nz (^doubt~2) doubt or uncertainty as to whether something is the case
-    perhaps~1b 
+    perhaps~1z 
  paying_attention ( meanings=2 NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR ) 
     heed~1n 
     heedful~2a 
@@ -12857,7 +12857,7 @@
     past~3nz (^period~3) a earlier period in someone's life 
     retiring~2az of a person who has held and relinquished a position or office
     past~5az earlier than the present time
-    by~2bz so as to pass a given point
+    by~2z so as to pass a given point
     past~7z 
  past_tense ( meanings=1 NOUN NOUN_SINGULAR ) 
     past~1n 
@@ -13250,7 +13250,7 @@
     pro~1nz (^argument~5) an argument in favor of a proposal
     professional~3n 
     pro~3az in favor of 
-    pro~4bz in favor of a proposition, opinion, etc.
+    pro~4z in favor of a proposition, opinion, etc.
     pro~5z 
  prescript ( meanings=1 NOUN NOUN_SINGULAR COMMON2 ) 
     rule~8n 
@@ -13707,7 +13707,7 @@
  pizzicato ( meanings=3 glosses=3 NOUN_ABSTRACT NOUN ADJECTIVE ADVERB ADJECTIVE_NORMAL NOUN_SINGULAR ADJECTIVE_NOT_PREDICATE COMMON2 posdefault:NOUN ) 
     pizzicato~1nz (^music~5) a note or passage that is played pizzicato
     pizzicato~2az to be plucked with the finger
-    pizzicato~3bz with a light plucking staccato sound
+    pizzicato~3z with a light plucking staccato sound
  polyphony ( meanings=1 NOUN NOUN_SINGULAR COMMON2 COMMON1 NOUN_NODETERMINER posdefault:NOUN ) 
     polyphonic_music~1n 
  polyphonic_music ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
@@ -13858,7 +13858,7 @@
     phonemic_system~1nz (^language_system~1) the system of phonemes recognized in a language
  phonemic ( meanings=2 glosses=2 ADJECTIVE ADVERB ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
     phonemic~1az of or relating to phonemes of a particular language
-    phonemic~2bz by phonemics
+    phonemic~2z by phonemics
  phonological_system ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     phonologic_system~1nz (^language_system~1) the system of phones used in a particular language
  phonological ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
@@ -14169,8 +14169,8 @@
     pink~7v 
  pitter-patter ( meanings=5 glosses=3 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB ADVERB NOUN_SINGULAR posdefault:NOUN VERB_NOOBJECT ) 
     pitter-patter~1nz (^tap~7) a series of rapid tapping sounds
-    pitty-pat~1bz describing a rhythmic beating
-    pitty-pat~2bz as of footsteps
+    pitty-pat~1z describing a rhythmic beating
+    pitty-pat~2z as of footsteps
     patter~3v 
     spit~8v 
  plonk ( meanings=3 glosses=2 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON2 NOUN_NODETERMINER posdefault:NOUN posdefault:VERB VERB_DIRECTOBJECT ) 
@@ -14179,7 +14179,7 @@
     plank~5v 
  plop ( meanings=5 glosses=5 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB ADVERB NOUN_SINGULAR COMMON2 COMMON1 GRADE1_2 posdefault:NOUN VERB_DIRECTOBJECT VERB_NOOBJECT ) 
     plop~1nz (^noise~5) the noise of a rounded object dropping into a liquid without a splash
-    plunk~3bz with a short hollow thud
+    plunk~3z with a short hollow thud
     plunk_down~1vz set down with or as if with a noise
     plop~4vz drop with the sound of something falling into water
     plop~5vz drop something with a plopping sound
@@ -14187,7 +14187,7 @@
     plump~1nz (^noise~5) the sound of a sudden heavy fall
     chubby~1a 
     plump~3az 
-    plump~4bz straight down especially heavily or abruptly
+    plump~4z straight down especially heavily or abruptly
     go~11v 
     fat~9v 
     plunk~5v 
@@ -15399,8 +15399,8 @@
  privately_held_corporation ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     closed_corporation~1nz (^corporation~2) a corporation owned by a few people
  privately ( meanings=2 glosses=1 ADVERB COMMON4 posdefault:ADVERB ) 
-    in_private~1b 
-    privately~2bz by a private person or interest
+    in_private~1z 
+    privately~2z by a private person or interest
  power_breakfast ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR NOUN_NODETERMINER ) 
     power_breakfast~1nz (^breakfast~1) a meeting of influential people to conduct business while eating breakfast
  people_in_power ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
@@ -17050,7 +17050,7 @@
     P.O.~1nz (^noncommissioned_officer~1) a noncommissioned officer in the Navy or Coast Guard with a rank comparable to sergeant in the Army
  P.O. ( meanings=2 NOUN ADVERB NOUN_PROPER_SINGULAR ) 
     PO~2n 
-    P.O.~2bz 
+    P.O.~2z 
  Pharaoh_of_Egypt ( meanings=1 glosses=1 NOUN NOUN_PROPER_SINGULAR ) 
     Pharaoh~1nz (^ruler~2) the title of the ancient Egyptian kings
  Pharisee ( meanings=1 glosses=1 NOUN NOUN_PROPER_SINGULAR ) 
@@ -20686,8 +20686,8 @@
  pickaback_plant ( meanings=1 NOUN NOUN_SINGULAR ) 
     youth-on-age~1n 
  pickaback ( meanings=2 ADVERB COMMON1 ) 
-    pig-a-back~1b 
-    pig-a-back~2b 
+    pig-a-back~1z 
+    pig-a-back~2z 
  piggyback_plant ( meanings=1 NOUN NOUN_SINGULAR ) 
     Tolmiea_menziesii~1n 
  Platanaceae ( meanings=1 NOUN NOUN_PROPER_SINGULAR ) 
@@ -21553,7 +21553,7 @@
     poverty_line~1nz (^personal_income~1) a level of personal income defining the state of poverty
  per_diem ( meanings=2 glosses=1 NOUN_ABSTRACT NOUN ADVERB NOUN_SINGULAR posdefault:ADVERB ) 
     per_diem~1nz (^allowance~5) a daily allowance for living expenses
-    by_the_day~1b 
+    by_the_day~1z 
  privy_purse ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR NOUN_NODETERMINER ) 
     privy_purse~1nz (^allowance~4) allowance for a monarch's personal expenses
  prebend ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON1 NOUN_NODETERMINER posdefault:NOUN ) 
@@ -24231,7 +24231,7 @@
  paleo_diet ( meanings=1 NOUN NOUN_SINGULAR NOUN_NODETERMINER ) 
     paleo_diet~1nz 
  paleo ( meanings=1 ADVERB COMMON2 COMMON1 ) 
-    paleo~1bz 
+    paleo~1z 
  paddleboat ( meanings=1 NOUN NOUN_SINGULAR COMMON2 NOUN_NODETERMINER posdefault:NOUN ) 
     paddleboat~1nz 
  parkour ( meanings=1 NOUN NOUN_SINGULAR COMMON2 NOUN_NODETERMINER ) 
@@ -24462,13 +24462,13 @@
  phew ( INTERJECTION ) 
  phooey ( INTERJECTION ) 
  please ( meanings=4 glosses=3 VERB_PRESENT VERB_INFINITIVE VERB ADVERB INTERJECTION COMMON4 COMMON2 COMMON1 KINDERGARTEN posdefault:ADVERB VERB_DIRECTOBJECT VERB_NOOBJECT COMMON_PARTICIPLE_VERB QUOTEABLE_VERB ) comparative=pleaser 
-    please~1bz used in polite request
+    please~1z used in polite request
     delight~4v 
     please~3vz give satisfaction
     please~4vz be the will of or have the will 
  pooh ( INTERJECTION ) 
  pow ( meanings=1 ADVERB INTERJECTION KINDERGARTEN ) comparative=power 
-    pow~1bz 
+    pow~1z 
  psst ( INTERJECTION ) 
  ptui ( INTERJECTION ) 
  pare ( meanings=4 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 COMMON1 posdefault:VERB VERB_DIRECTOBJECT ) 
@@ -24579,11 +24579,11 @@
     dirty~12a 
  plaguy ( meanings=2 ADJECTIVE ADVERB ADJECTIVE_NORMAL ADJECTIVE_NOT_PREDICATE COMMON1 ) 
     pestiferous~1a 
-    plaguey~3b 
+    plaguey~3z 
  plaguey ( meanings=3 ADJECTIVE ADVERB ADJECTIVE_NORMAL ADJECTIVE_NOT_PREDICATE COMMON1 ) 
     plaguy~1a 
     pestilential~1a 
-    plaguily~1b 
+    plaguily~1z 
  precocial ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON1 ) 
     precocial~1az covered with down and having eyes open
  pushful ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON1 posdefault:ADJECTIVE ) 
@@ -24647,7 +24647,7 @@
     postmeridian~1az after noon
  post_meridiem ( meanings=2 glosses=1 ADJECTIVE ADVERB ADJECTIVE_NORMAL ADJECTIVE_NOT_PREDICATE posdefault:ADVERB ) 
     p.m.~2a 
-    P.M.~1bz between noon and midnight
+    P.M.~1z between noon and midnight
  pertinent ( meanings=2 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:ADJECTIVE ) 
     apposite~1az being of striking appropriateness and pertinence
     pertinent~2az having precise or logical relevance to the matter at hand
@@ -24728,7 +24728,7 @@
     pretty~1az pleasing by delicacy or grace
     pretty~2az unexpectedly bad
     pretty~3az 
-    middling~3b 
+    middling~3z 
  pretty-pretty ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL posdefault:ADJECTIVE ) 
     pretty-pretty~1az ostentatiously or inappropriately pretty
  pulchritudinous ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON1 ) 
@@ -24854,8 +24854,8 @@
  positively_charged ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL CONDITIONAL_IDIOM  poscondition=?=A ) 
     electropositive~1a 
  positively ( meanings=2 glosses=2 ADVERB COMMON4 posdefault:ADVERB ) 
-    positively~1bz extremely
-    positively~2bz so as to be positive
+    positively~1z extremely
+    positively~2z so as to be positive
  promiscuous ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
     wanton~2a 
     promiscuous~2az not selective of a single class or person
@@ -24987,7 +24987,7 @@
     limpid~1a 
  prima_facie ( meanings=2 glosses=2 ADJECTIVE ADVERB ADJECTIVE_NORMAL ADJECTIVE_NOT_PREDICATE posdefault:ADJECTIVE posdefault:ADVERB ) 
     prima_facie~1az as it seems at first sight
-    prima_facie~2bz at first sight
+    prima_facie~2z at first sight
  perplexing ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:VERB ) 
     confusing~1a 
  puzzling ( meanings=3 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:VERB ) 
@@ -25036,7 +25036,7 @@
     symmetrical~1az exhibiting equivalence or correspondence among constituents of an entity or between different entities
  per_capita ( meanings=2 glosses=1 ADJECTIVE ADVERB ADJECTIVE_NORMAL ADJECTIVE_NOT_PREDICATE posdefault:ADJECTIVE posdefault:ADVERB ) 
     per_capita~1az per person
-    for_each_person~1b 
+    for_each_person~1z 
  proportionable ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON1 posdefault:ADJECTIVE ) 
     proportionable~1az proportionate
     proportionable~2az 
@@ -25180,7 +25180,7 @@
  profoundly_deaf ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL CONDITIONAL_IDIOM  poscondition=?=A ) 
     unhearing~1az 
  profoundly ( meanings=1 ADVERB COMMON4 posdefault:ADVERB ) 
-    deeply~1b 
+    deeply~1z 
  peremptory ( meanings=3 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
     peremptory~1az putting an end to all debate or action
     peremptory~2az not allowing contradiction or refusal
@@ -25270,7 +25270,7 @@
  point-blank ( meanings=3 glosses=2 ADJECTIVE ADVERB ADJECTIVE_NORMAL posdefault:ADJECTIVE ) 
     point-blank~1az close enough to go straight to the target
     outspoken~2a 
-    point-blank~3bz in a direct and unequivocal manner
+    point-blank~3z in a direct and unequivocal manner
  plainspoken ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 ) 
     free-spoken~1a 
     plainspoken~2az using simple and direct language
@@ -25437,11 +25437,11 @@
     swish~2a 
  presto ( meanings=3 glosses=3 ADJECTIVE ADVERB ADJECTIVE_NORMAL ADJECTIVE_NOT_PREDICATE COMMON2 COMMON1 ) 
     presto~1az very fast
-    presto~2bz suddenly
-    presto~3bz at a very fast tempo
+    presto~2z suddenly
+    presto~3z at a very fast tempo
  prestissimo ( meanings=2 glosses=2 ADJECTIVE ADVERB ADJECTIVE_NORMAL ADJECTIVE_NOT_PREDICATE COMMON1 ) 
     prestissimo~1az as fast as possible
-    prestissimo~2bz extremely fast
+    prestissimo~2z extremely fast
  prissy ( meanings=3 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:ADJECTIVE ) comparative=prissiest 
     overnice~1a 
     straightlaced~1a 
@@ -25518,7 +25518,7 @@
  pro_forma ( meanings=3 ADJECTIVE ADVERB ADJECTIVE_NORMAL ADJECTIVE_NOT_PREDICATE ) 
     perfunctory~2a 
     pro_forma~2az 
-    perfunctorily~1b 
+    perfunctorily~1z 
  providential ( meanings=3 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:ADJECTIVE ) 
     heaven-sent~1a 
     divine~5a 
@@ -25560,7 +25560,7 @@
  part-time ( meanings=3 glosses=1 ADJECTIVE ADVERB ADJECTIVE_NORMAL posdefault:ADJECTIVE ) comparative=part-timer 
     parttime~1az involving less than the standard or customary time for an activity
     part-time~2az 
-    half-time~3b 
+    half-time~3z 
  parttime ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 ) 
     part-time~1a 
  prepared ( meanings=3 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 COMMON1 posdefault:VERB ADJECTIVE_TAKING_NOUN_INFINITIVE ) 
@@ -25610,7 +25610,7 @@
  piecemeal ( meanings=3 ADJECTIVE ADVERB ADJECTIVE_NORMAL ADJECTIVE_NOT_PREDICATE COMMON2 COMMON1 posdefault:ADJECTIVE posdefault:ADVERB ) 
     bit-by-bit~1a 
     piecemeal~2az 
-    bit_by_bit~2b 
+    bit_by_bit~2z 
  precipitous ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
     abrupt~3a 
     precipitant~2a 
@@ -25704,7 +25704,7 @@
     sinewy~1az possessing physical strength and weight
     knock-down~1az strong enough to knock down or overwhelm
     powerful~6az 
-    mightily~1bz very
+    mightily~1z very
  pitiless ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:ADJECTIVE ) 
     unkind~1a 
     remorseless~1a 
@@ -25712,7 +25712,7 @@
     po-faced~1az humorless and disapproving
  pell-mell ( meanings=2 ADJECTIVE ADVERB ADJECTIVE_NORMAL ADJECTIVE_NOT_PREDICATE posdefault:ADJECTIVE ) 
     helter-skelter~1a 
-    harum-scarum~3b 
+    harum-scarum~3z 
  placeable ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:ADJECTIVE ) 
     recognisable~1a 
  piddling ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:VERB ) 
@@ -25968,7 +25968,7 @@
     paid-up~1az paid in advance
  post-free ( meanings=2 glosses=2 ADJECTIVE ADVERB ADJECTIVE_NORMAL ADJECTIVE_NOT_PREDICATE posdefault:ADJECTIVE ) 
     post-free~1az postpaid
-    post-paid~1bz having the postage paid by the sender
+    post-paid~1z having the postage paid by the sender
  postpaid ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 ) 
     prepaid~1a 
  prepaid ( meanings=1 glosses=1 VERB_PAST VERB_PAST_PARTICIPLE VERB ADJECTIVE ADJECTIVE_NORMAL ADJECTIVE_PARTICIPLE COMMON4 GRADE5_6 posdefault:VERB ) conjugate=prepay 
@@ -26067,10 +26067,10 @@
     undestroyable~2a 
  pro_tem ( meanings=2 ADJECTIVE ADVERB ADJECTIVE_NORMAL ADJECTIVE_NOT_PREDICATE posdefault:ADVERB ) 
     pro_tempore~1a 
-    pro_tempore~2b 
+    pro_tempore~2z 
  pro_tempore ( meanings=2 glosses=2 ADJECTIVE ADVERB ADJECTIVE_NORMAL ADJECTIVE_NOT_PREDICATE ) 
     pro_tem~1az for the time being
-    pro_tem~2bz for the time being
+    pro_tem~2z for the time being
  permissible ( meanings=2 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:ADJECTIVE ) 
     allowable~2az that may be permitted especially as according to rule
     permissible~2az that may be accepted or conceded
@@ -26099,7 +26099,7 @@
     personalized~1a 
  person-to-person ( meanings=2 glosses=2 ADJECTIVE ADVERB ADJECTIVE_NORMAL ADJECTIVE_NOT_PREDICATE posdefault:ADJECTIVE ) 
     person-to-person~1az involving direct communication or contact between persons or parties
-    one-on-one~3bz in direct encounter
+    one-on-one~3z in direct encounter
  persuasive ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON4 GRADE5_6 posdefault:ADJECTIVE ) 
     persuasive~1az intended or having the power to induce action or belief
     persuasive~2az 
@@ -26643,7 +26643,7 @@
  poorly ( meanings=3 ADJECTIVE ADVERB ADJECTIVE_NORMAL ADJECTIVE_ONLY_PREDICATE ADJECTIVE_NOT_PREDICATE COMMON4 posdefault:ADVERB ) 
     ailing~1a 
     poorly~2az 
-    badly~1b 
+    badly~1z 
  palsied ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:VERB ) 
     palsied~1az affected with palsy or uncontrollable tremor
  paralyzed ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:VERB ) 
@@ -26797,8 +26797,8 @@
  politically_correct ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL CONDITIONAL_IDIOM  poscondition=?=A ) 
     politically_correct~1az 
  politically ( meanings=2 glosses=2 ADVERB COMMON4 posdefault:ADVERB ) 
-    politically~1bz with regard to government
-    politically~2bz with regard to social relationships involving authority
+    politically~1z with regard to government
+    politically~2z with regard to social relationships involving authority
  politically_incorrect ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL CONDITIONAL_IDIOM  poscondition=?=A ) 
     politically_incorrect~1az 
  polydactyl ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON1 ) 
@@ -27893,966 +27893,966 @@
     perturb~4vz disturb or interfere with the usual path of an electron or atom
  preositions ( ADJECTIVE ADJECTIVE_NORMAL ADJECTIVE_NOT_PREDICATE ) 
  pointedly ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    pointedly~1bz in such a manner as to make something clearly evident
+    pointedly~1z in such a manner as to make something clearly evident
  plainly ( meanings=2 ADVERB COMMON4 posdefault:ADVERB ) 
-    simply~3b 
-    plain~11b 
+    simply~3z 
+    plain~11z 
  partially ( meanings=1 ADVERB COMMON4 posdefault:ADVERB ) 
-    part~13b 
+    part~13z 
  partly ( meanings=1 ADVERB COMMON4 GRADE5_6 posdefault:ADVERB ) 
-    partially~1b 
+    partially~1z 
  perfectly ( meanings=2 glosses=1 ADVERB COMMON4 COMMON1 posdefault:ADVERB ) 
-    absolutely~2b 
-    perfectly~2bz in a perfect or faultless way
+    absolutely~2z 
+    perfectly~2z in a perfect or faultless way
  prosperously ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    prosperously~1bz in the manner of prosperous people
+    prosperously~1z in the manner of prosperous people
  perpetually ( meanings=2 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    forever~1b 
-    perpetually~2bz everlastingly
+    forever~1z 
+    perpetually~2z everlastingly
  pretty_much ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    pretty_much~1bz 
+    pretty_much~1z 
  practically ( meanings=3 glosses=3 ADVERB EXTENT_ADVERB COMMON4 KINDERGARTEN posdefault:ADVERB ) 
-    much~2bz for all practical purposes but not completely
-    practically~2bz in a practical manner
-    practically~3bz almost
+    much~2z for all practical purposes but not completely
+    practically~2z in a practical manner
+    practically~3z almost
  palmately ( meanings=1 glosses=1 ADVERB COMMON2 ) 
-    palmately~1bz in a palmate manner
+    palmately~1z in a palmate manner
  paradoxically ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    paradoxically~1bz in a paradoxical manner
+    paradoxically~1z in a paradoxical manner
  parasitically ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    parasitically~1bz in a parasitic manner
+    parasitically~1z in a parasitic manner
  pathogenically ( meanings=1 glosses=1 ADVERB COMMON1 ) 
-    pathogenically~1bz in a pathogenic manner
+    pathogenically~1z in a pathogenic manner
  pictorially ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    pictorially~1bz in a pictorial manner
+    pictorially~1z in a pictorial manner
  presently ( meanings=2 glosses=1 ADVERB COMMON4 posdefault:ADVERB ) 
-    shortly~1b 
-    currently~1bz at this time or period
+    shortly~1z 
+    currently~1z at this time or period
  passionately ( meanings=2 glosses=2 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    stormily~1bz in a stormy or violent manner
-    passionately~2bz with passion
+    stormily~1z in a stormy or violent manner
+    passionately~2z with passion
  peculiarly ( meanings=3 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    curiously~1bz in a manner differing from the usual or expected
-    particularly~1b 
-    particularly~2b 
+    curiously~1z in a manner differing from the usual or expected
+    particularly~1z 
+    particularly~2z 
  passably ( meanings=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    fairly~1b 
+    fairly~1z 
  per_se ( meanings=2 ADVERB CONDITIONAL_IDIOM posdefault:ADVERB  poscondition=?=R ) 
-    in_and_of_itself~1b 
-    per_se~2bz 
+    in_and_of_itself~1z 
+    per_se~2z 
  patently ( meanings=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    manifestly~1b 
+    manifestly~1z 
  piercingly ( meanings=2 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    shrilly~1bz in a shrill voice
-    bitter~12b 
+    shrilly~1z in a shrill voice
+    bitter~12z 
  presumably ( meanings=1 ADVERB COMMON4 posdefault:ADVERB ) 
-    presumptively~1b 
+    presumptively~1z 
  presumptively ( meanings=2 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    presumably~1bz by reasonable assumption
-    presumptively~2bz 
+    presumably~1z by reasonable assumption
+    presumptively~2z 
  pyramidically ( meanings=1 glosses=1 ADVERB COMMON1 ) 
-    pyramidically~1bz in a pyramidal manner or shape
+    pyramidically~1z in a pyramidal manner or shape
  progressively ( meanings=1 glosses=1 ADVERB COMMON4 posdefault:ADVERB ) 
-    more_and_more~1bz advancing in amount or intensity
+    more_and_more~1z advancing in amount or intensity
  previously ( meanings=1 ADVERB COMMON4 COMMON1 posdefault:ADVERB ) 
-    antecedently~1b 
+    antecedently~1z 
  purposely ( meanings=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    on_purpose~1b 
+    on_purpose~1z 
  punctually ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    duly~1bz at the proper time
+    duly~1z at the proper time
  poignantly ( meanings=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    affectingly~1b 
+    affectingly~1z 
  principally ( meanings=1 ADVERB COMMON4 posdefault:ADVERB ) 
-    chiefly~1b 
+    chiefly~1z 
  primarily ( meanings=2 ADVERB COMMON4 COMMON1 posdefault:ADVERB ) 
-    principally~1b 
-    in_the_first_place~1b 
+    principally~1z 
+    in_the_first_place~1z 
  passively ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    passively~1bz in a passive manner
+    passively~1z in a passive manner
  particularly ( meanings=3 glosses=3 ADVERB EXTENT_ADVERB COMMON4 COMMON1 KINDERGARTEN posdefault:ADVERB ) 
-    specially~1bz to a distinctly greater extent or degree than is common
-    peculiarly~3bz uniquely or characteristically
-    in_particular~1bz specifically or especially distinguished from others
+    specially~1z to a distinctly greater extent or degree than is common
+    peculiarly~3z uniquely or characteristically
+    in_particular~1z specifically or especially distinguished from others
  permissively ( meanings=1 glosses=1 ADVERB COMMON1 ) 
-    permissively~1bz in a permissive manner
+    permissively~1z in a permissive manner
  permissibly ( meanings=1 glosses=1 ADVERB COMMON2 ) 
-    allowably~1bz in a permissible manner
+    allowably~1z in a permissible manner
  permanently ( meanings=1 glosses=1 ADVERB COMMON4 posdefault:ADVERB ) 
-    for_good~1bz for a long time without essential change
+    for_good~1z for a long time without essential change
  provisionally ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    provisionally~1bz temporarily and conditionally
+    provisionally~1z temporarily and conditionally
  perilously ( meanings=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    hazardously~1b 
+    hazardously~1z 
  promptly ( meanings=3 glosses=2 ADVERB COMMON4 GRADE5_6 posdefault:ADVERB ) 
-    pronto~1bz in a punctual manner
-    right_away~2bz at once 
-    quick~9b 
+    pronto~1z in a punctual manner
+    right_away~2z at once 
+    quick~9z 
  pronto ( meanings=1 ADVERB COMMON2 COMMON1 ) 
-    readily~1b 
+    readily~1z 
  peacefully ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    peacefully~1bz in a peaceful manner
+    peacefully~1z in a peaceful manner
  painfully ( meanings=2 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    distressingly~1b 
-    sorely~2bz in or as if in pain
+    distressingly~1z 
+    sorely~2z in or as if in pain
  peripherally ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    peripherally~1bz in or at or near a periphery or according to a peripheral role or function or relationship
+    peripherally~1z in or at or near a periphery or according to a peripheral role or function or relationship
  phylogenetically ( meanings=2 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    phylogenetically~1bz with regard to phylogeny
-    phylogenetically~2bz 
+    phylogenetically~1z with regard to phylogeny
+    phylogenetically~2z 
  physically ( meanings=1 glosses=1 ADVERB COMMON4 posdefault:ADVERB ) 
-    physically~1bz in accord with physical laws
+    physically~1z in accord with physical laws
  physiologically ( meanings=2 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    physiologically~1bz of or relating to physiological processes
-    physiologically~2bz 
+    physiologically~1z of or relating to physiological processes
+    physiologically~2z 
  preferably ( meanings=1 ADVERB COMMON4 posdefault:ADVERB ) 
-    rather~4b 
+    rather~4z 
  pornographically ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    pornographically~1bz in a pornographic manner
+    pornographically~1z in a pornographic manner
  photoelectrically ( meanings=1 glosses=1 ADVERB COMMON1 ) 
-    photoelectrically~1bz by photoelectric means
+    photoelectrically~1z by photoelectric means
  photographically ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    photographically~1bz by photographic means
+    photographically~1z by photographic means
  photometrically ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    photometrically~1bz by photometric means
+    photometrically~1z by photometric means
  predicatively ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    predicatively~1bz occurring within the predicate phrase
+    predicatively~1z occurring within the predicate phrase
  professorially ( meanings=1 glosses=1 ADVERB COMMON1 ) 
-    professorially~1bz in a professorial manner
+    professorially~1z in a professorial manner
  provincially ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    provincially~1bz by the province
+    provincially~1z by the province
  professionally ( meanings=1 glosses=1 ADVERB COMMON4 posdefault:ADVERB ) 
-    professionally~1bz in a professional manner
+    professionally~1z in a professional manner
  polyphonically ( meanings=1 glosses=1 ADVERB COMMON1 ) 
-    polyphonically~1bz in a polyphonic manner
+    polyphonically~1z in a polyphonic manner
  poetically ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    poetically~1bz in a poetic manner
+    poetically~1z in a poetic manner
  phonetically ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    phonetically~1bz by phonetics
+    phonetically~1z by phonetics
  personally ( meanings=5 glosses=5 ADVERB COMMON4 COMMON1 posdefault:ADVERB ) 
-    personally~1bz as a person
-    in_person~1bz in the flesh
-    personally~3bz concerning the speaker
-    personally~4bz in a personal way
-    personally~5bz as yourself
+    personally~1z as a person
+    in_person~1z in the flesh
+    personally~3z concerning the speaker
+    personally~4z in a personal way
+    personally~5z as yourself
  philosophically ( meanings=2 glosses=2 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    philosophically~1bz in a philosophic manner
-    philosophically~2bz with respect to philosophy
+    philosophically~1z in a philosophic manner
+    philosophically~2z with respect to philosophy
  pathologically ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    pathologically~1bz with respect to pathology
+    pathologically~1z with respect to pathology
  postoperatively ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    postoperatively~1bz after the operation
+    postoperatively~1z after the operation
  probably ( meanings=2 glosses=2 ADVERB COMMON4 COMMON1 KINDERGARTEN posdefault:ADVERB ) 
-    belike~1bz with considerable certainty
-    plausibly~1bz easy to believe on the basis of available evidence
+    belike~1z with considerable certainty
+    plausibly~1z easy to believe on the basis of available evidence
  polysyllabically ( meanings=1 glosses=1 ADVERB COMMON1 ) 
-    polysyllabically~1bz in a polysyllabic manner
+    polysyllabically~1z in a polysyllabic manner
  purportedly ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    supposedly~1bz believed or reputed to be the case
+    supposedly~1z believed or reputed to be the case
  precisely ( meanings=3 ADVERB COMMON4 posdefault:ADVERB ) 
-    exactly~1b 
-    exactly~2b 
-    on_the_button~2b 
+    exactly~1z 
+    exactly~2z 
+    on_the_button~2z 
  predominantly ( meanings=1 ADVERB COMMON4 posdefault:ADVERB ) 
-    preponderantly~1b 
+    preponderantly~1z 
  preponderantly ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    predominantly~1bz much greater in number or influence
+    predominantly~1z much greater in number or influence
  palpably ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    palpably~1bz so as to be palpable
+    palpably~1z so as to be palpable
  publicly ( meanings=2 glosses=1 ADVERB COMMON4 posdefault:ADVERB ) 
-    publically~1b 
-    publicly~2bz by the public or the people generally
+    publically~1z 
+    publicly~2z by the public or the people generally
  publically ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    in_public~1bz in a manner accessible to or observable by the public
+    in_public~1z in a manner accessible to or observable by the public
  patiently ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    patiently~1bz with patience
+    patiently~1z with patience
  purely ( meanings=1 ADVERB COMMON4 posdefault:ADVERB ) 
-    strictly~1b 
+    strictly~1z 
  put_differently ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    in_other_words~1b 
+    in_other_words~1z 
  pro_re_nata ( meanings=2 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    as_needed~1b 
-    pro_re_nata~2bz 
+    as_needed~1z 
+    pro_re_nata~2z 
  PRN ( meanings=1 ADVERB COMMON1 ) 
-    pro_re_nata~1b 
+    pro_re_nata~1z 
  preferentially ( meanings=2 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    preferentially~1bz in a preferential manner
-    preferentially~2bz 
+    preferentially~1z in a preferential manner
+    preferentially~2z 
  popularly ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    popularly~1bz among the people
+    popularly~1z among the people
  professedly ( meanings=2 glosses=2 ADVERB COMMON2 posdefault:ADVERB ) 
-    professedly~1bz with pretense or intention to deceive
-    avowedly~2bz by open declaration
+    professedly~1z with pretense or intention to deceive
+    avowedly~2z by open declaration
  proudly ( meanings=1 glosses=1 ADVERB COMMON4 posdefault:ADVERB ) 
-    proudly~1bz with pride
+    proudly~1z with pride
  properly ( meanings=2 ADVERB COMMON4 COMMON1 posdefault:ADVERB ) 
-    decent~8b 
-    by_rights~1b 
+    decent~8z 
+    by_rights~1z 
  pig-headedly ( meanings=1 glosses=1 ADVERB posdefault:ADVERB ) 
-    cussedly~1bz in a stubborn unregenerate manner
+    cussedly~1z in a stubborn unregenerate manner
  psychically ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    psychically~1bz from a psychic point of view
+    psychically~1z from a psychic point of view
  prominently ( meanings=1 ADVERB COMMON4 posdefault:ADVERB ) 
-    conspicuously~1b 
+    conspicuously~1z 
  protectively ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    protectively~1bz in a protective manner
+    protectively~1z in a protective manner
  periodically ( meanings=1 ADVERB COMMON4 posdefault:ADVERB ) 
-    sporadically~1b 
+    sporadically~1z 
  productively ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    profitably~1bz in a productive way
+    profitably~1z in a productive way
  profitably ( meanings=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    fruitfully~1b 
+    fruitfully~1z 
  profusely ( meanings=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    copiously~1b 
+    copiously~1z 
  petulantly ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    pettishly~1bz in a petulant manner
+    pettishly~1z in a petulant manner
  pettishly ( meanings=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    irritably~2b 
+    irritably~2z 
  propitiously ( meanings=1 ADVERB COMMON1 ) 
-    auspiciously~1b 
+    auspiciously~1z 
  politely ( meanings=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    courteously~1b 
+    courteously~1z 
  praiseworthily ( meanings=1 glosses=1 ADVERB COMMON1 ) 
-    commendable~3bz in an admirable manner
+    commendable~3z in an admirable manner
  pleasantly ( meanings=2 glosses=2 ADVERB COMMON4 posdefault:ADVERB ) 
-    enjoyably~1bz in an enjoyable manner
-    sunnily~1bz in a cheerful manner
+    enjoyably~1z in an enjoyable manner
+    sunnily~1z in a cheerful manner
  plastically ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    plastically~1bz in a plastic manner
+    plastically~1z in a plastic manner
  properly_speaking ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    to_be_precise~1bz 
+    to_be_precise~1z 
  perennially ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    perennially~1bz in a perennial manner
+    perennially~1z in a perennial manner
  pleasurably ( meanings=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    deliciously~1b 
+    deliciously~1z 
  pompously ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    pompously~1bz in a pompous manner
+    pompously~1z in a pompous manner
  pityingly ( meanings=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    compassionately~1b 
+    compassionately~1z 
  perversely ( meanings=2 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    perversely~1bz deliberately deviant
-    contrarily~2b 
+    perversely~1z deliberately deviant
+    contrarily~2z 
  prophetically ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    prophetically~1bz in a prophetic manner
+    prophetically~1z in a prophetic manner
  per_annum ( meanings=2 ADVERB CONDITIONAL_IDIOM posdefault:ADVERB  poscondition=?=R ) 
-    each_year~2b 
-    per_annum~2bz 
+    each_year~2z 
+    per_annum~2z 
  p.a. ( meanings=1 ADVERB COMMON1 ) 
-    per_annum~1b 
+    per_annum~1z 
  per_year ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    p.a.~1b 
+    p.a.~1z 
  P.M. ( meanings=1 ADVERB ) 
-    post_meridiem~2b 
+    post_meridiem~2z 
  par_excellence ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    par_excellence~1bz 
+    par_excellence~1z 
  pari_passu ( meanings=2 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    at_an_equal_rate~1b 
-    pari_passu~2bz 
+    at_an_equal_rate~1z 
+    pari_passu~2z 
  passim ( meanings=1 ADVERB COMMON2 COMMON1 ) 
-    throughout~2b 
+    throughout~2z 
  perforce ( meanings=2 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    perforce~1bz by necessity
-    perforce~2bz 
+    perforce~1z by necessity
+    perforce~2z 
  post-haste ( meanings=1 glosses=1 ADVERB ) 
-    post-haste~1bz as fast as possible
+    post-haste~1z as fast as possible
  perfunctorily ( meanings=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    as_a_formality~1b 
+    as_a_formality~1z 
  proportionately ( meanings=3 glosses=3 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    pro_rata~1bz in proportion
-    proportionally~1bz to a proportionate degree
-    proportionately~3bz in proportion
+    pro_rata~1z in proportion
+    proportionally~1z to a proportionate degree
+    proportionately~3z in proportion
  pro_rata ( meanings=2 ADVERB CONDITIONAL_IDIOM posdefault:ADVERB  poscondition=?=R ) 
-    proportionately~1b 
-    pro_rata~2bz 
+    proportionately~1z 
+    pro_rata~2z 
  perseveringly ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    perseveringly~1bz with perseverance
+    perseveringly~1z with perseverance
  persistently ( meanings=2 glosses=2 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    persistently~1bz with persistence
-    persistently~2bz in a persistent manner
+    persistently~1z with persistence
+    persistently~2z in a persistent manner
  privily ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    privily~1bz confidentially or in secret
+    privily~1z confidentially or in secret
  perniciously ( meanings=2 glosses=2 ADVERB COMMON1 posdefault:ADVERB ) 
-    banefully~1bz in a noxiously baneful way
-    insidiously~1bz in a harmfully insidious manner
+    banefully~1z in a noxiously baneful way
+    insidiously~1z in a harmfully insidious manner
  pleadingly ( meanings=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    imploringly~1b 
+    imploringly~1z 
  plentifully ( meanings=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    bounteously~1b 
+    bounteously~1z 
  plenteously ( meanings=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    plentifully~1b 
+    plentifully~1z 
  patronizingly ( meanings=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    condescendingly~1b 
+    condescendingly~1z 
  patronisingly ( meanings=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    patronizingly~1b 
+    patronizingly~1z 
  plausibly ( meanings=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    credibly~1b 
+    credibly~1z 
  possibly ( meanings=2 glosses=1 ADVERB COMMON4 COMMON1 posdefault:ADVERB ) 
-    maybe~1b 
-    possibly~2bz to a degree possible of achievement or by possible means
+    maybe~1z 
+    possibly~2z to a degree possible of achievement or by possible means
  perchance ( meanings=2 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    possibly~1b 
-    by_chance~3b 
+    possibly~1z 
+    by_chance~3z 
  perhaps ( meanings=1 ADVERB COMMON4 COMMON1 GRADE1_2 posdefault:ADVERB ) 
-    perchance~1b 
+    perchance~1z 
  potentially ( meanings=1 glosses=1 ADVERB COMMON4 posdefault:ADVERB ) 
-    potentially~1bz with a possibility of becoming actual
+    potentially~1z with a possibility of becoming actual
  polemically ( meanings=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    controversially~1b 
+    controversially~1z 
  provably ( meanings=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    incontrovertibly~1b 
+    incontrovertibly~1z 
  piously ( meanings=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    devoutly~1b 
+    devoutly~1z 
  pedagogically ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    didactically~1bz in a didactic manner
+    didactically~1z in a didactic manner
  proportionally ( meanings=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    proportionately~2b 
+    proportionately~2z 
  pardonably ( meanings=1 ADVERB COMMON1 ) 
-    excusably~1b 
+    excusably~1z 
  pig-a-back ( meanings=2 glosses=2 ADVERB ) 
-    piggyback~2bz on the back or shoulder or astraddle on the hip
-    piggyback~3bz on a railroad flatcar
+    piggyback~2z on the back or shoulder or astraddle on the hip
+    piggyback~3z on a railroad flatcar
  precipitately ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    headlong~5bz at breakneck speed
+    headlong~5z at breakneck speed
  penitently ( meanings=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    penitentially~1b 
+    penitentially~1z 
  penitentially ( meanings=1 glosses=1 ADVERB COMMON1 ) 
-    repentantly~1bz showing remorse
+    repentantly~1z showing remorse
  peremptorily ( meanings=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    imperatively~1b 
+    imperatively~1z 
  perceptibly ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    observably~1bz in a noticeable manner
+    observably~1z in a noticeable manner
  pertly ( meanings=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    saucily~1b 
+    saucily~1z 
  puckishly ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    impishly~1bz in an appealing but bold manner
+    impishly~1z in an appealing but bold manner
  providently ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    providently~1bz in a provident manner
+    providently~1z in a provident manner
  prudently ( meanings=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    providentially~1b 
+    providentially~1z 
  providentially ( meanings=3 glosses=3 ADVERB COMMON2 posdefault:ADVERB ) 
-    prudently~1bz in a prudent manner
-    providentially~2bz in a providential manner
-    providentially~3bz in a fortunately providential manner
+    prudently~1z in a prudent manner
+    providentially~2z in a providential manner
+    providentially~3z in a fortunately providential manner
  preposterously ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    laughably~1bz so as to arouse or deserve laughter
+    laughably~1z so as to arouse or deserve laughter
  promiscuously ( meanings=2 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    licentiously~1bz in a licentious and promiscuous manner
-    indiscriminately~2b 
+    licentiously~1z in a licentious and promiscuous manner
+    indiscriminately~2z 
  pellucidly ( meanings=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    perspicuously~1b 
+    perspicuously~1z 
  perspicuously ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    lucidly~1bz in a clear and lucid manner
+    lucidly~1z in a clear and lucid manner
  patrilineally ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    patrilineally~1bz by descent through the male line
+    patrilineally~1z by descent through the male line
  protractedly ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    lingeringly~1bz in a slow, leisurely or prolonged way
+    lingeringly~1z in a slow, leisurely or prolonged way
  pitilessly ( meanings=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    remorselessly~1b 
+    remorselessly~1z 
  pessimistically ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    pessimistically~1bz with pessimism
+    pessimistically~1z with pessimism
  pacifistically ( meanings=1 glosses=1 ADVERB COMMON1 ) 
-    pacifistically~1bz in a pacifistic manner
+    pacifistically~1z in a pacifistic manner
  painstakingly ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    fastidiously~2bz in a fastidious and painstaking manner
+    fastidiously~2z in a fastidious and painstaking manner
  palatably ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    palatably~1bz in a palatable way
+    palatably~1z in a palatable way
  palely ( meanings=2 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    palely~1bz in a pale manner
-    pallidly~1b 
+    palely~1z in a pale manner
+    pallidly~1z 
  pallidly ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    dimly~3bz in a manner lacking interest or vitality
+    dimly~3z in a manner lacking interest or vitality
  parentally ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    parentally~1bz in a parental manner
+    parentally~1z in a parental manner
  parenterally ( meanings=2 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    parenterally~1bz by parenteral means
-    parenterally~2bz 
+    parenterally~1z by parenteral means
+    parenterally~2z 
  parenthetically ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    parenthetically~1bz in a parenthetical manner
+    parenthetically~1z in a parenthetical manner
  parochially ( meanings=1 glosses=1 ADVERB COMMON1 ) 
-    parochially~1bz in a parochial manner
+    parochially~1z in a parochial manner
  patchily ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    patchily~1bz in spots
+    patchily~1z in spots
  paternally ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    paternally~1bz in a paternal manner
+    paternally~1z in a paternal manner
  pathetically ( meanings=2 glosses=2 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    pathetically~1bz arousing scornful pity
-    pitiably~1bz in a manner arousing sympathy and compassion
+    pathetically~1z arousing scornful pity
+    pitiably~1z in a manner arousing sympathy and compassion
  pitiably ( meanings=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    pathetically~2b 
+    pathetically~2z 
  patriotically ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    patriotically~1bz in a patriotic manner
+    patriotically~1z in a patriotic manner
  peaceably ( meanings=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    pacifically~1b 
+    pacifically~1z 
  pacifically ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    peaceably~1bz in a peaceable manner
+    peaceably~1z in a peaceable manner
  pedantically ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    pedantically~1bz in a pedantic manner
+    pedantically~1z in a pedantic manner
  peevishly ( meanings=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    fractiously~2b 
+    fractiously~2z 
  pejoratively ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    pejoratively~1bz in a pejorative manner
+    pejoratively~1z in a pejorative manner
  penetratingly ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    penetratively~1bz with ability to see into deeply
+    penetratively~1z with ability to see into deeply
  penetratively ( meanings=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    penetratingly~1b 
+    penetratingly~1z 
  pensively ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    pensively~1bz in a pensive manner
+    pensively~1z in a pensive manner
  penuriously ( meanings=1 glosses=1 ADVERB COMMON1 ) 
-    penuriously~1bz in a penurious manner
+    penuriously~1z in a penurious manner
  perceptively ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    perceptively~1bz in a perceptive manner
+    perceptively~1z in a perceptive manner
  perceptually ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    perceptually~1bz with regard to perception
+    perceptually~1z with regard to perception
  perfidiously ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    perfidiously~1bz in a perfidious manner
+    perfidiously~1z in a perfidious manner
  perkily ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    perkily~1bz in a perky manner
+    perkily~1z in a perky manner
  perpendicularly ( meanings=2 glosses=2 ADVERB COMMON2 posdefault:ADVERB ) 
-    perpendicularly~1bz in a perpendicular manner
-    sheer~7bz straight up or down without a break
+    perpendicularly~1z in a perpendicular manner
+    sheer~7z straight up or down without a break
  perplexedly ( meanings=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    confoundedly~1b 
+    confoundedly~1z 
  persuasively ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    persuasively~1bz in a persuasive manner
+    persuasively~1z in a persuasive manner
  pertinaciously ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    pertinaciously~1bz in a dogged and pertinacious manner
+    pertinaciously~1z in a dogged and pertinacious manner
  pertinently ( meanings=2 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    pertinently~1bz in a pertinent way
-    pertinently~2bz 
+    pertinently~1z in a pertinent way
+    pertinently~2z 
  pervasively ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    pervasively~1bz in a pervasive manner
+    pervasively~1z in a pervasive manner
  pettily ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    pettily~1bz in a petty way
+    pettily~1z in a petty way
  pharmacologically ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    pharmacologically~1bz with regard to pharmacology
+    pharmacologically~1z with regard to pharmacology
  phenomenally ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    phenomenally~1bz to a phenomenal degree
+    phenomenally~1z to a phenomenal degree
  philanthropically ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    philanthropically~1bz in a philanthropic manner
+    philanthropically~1z in a philanthropic manner
  philatelically ( meanings=1 glosses=1 ADVERB COMMON1 ) 
-    philatelically~1bz in a philatelic manner
+    philatelically~1z in a philatelic manner
  phlegmatically ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    phlegmatically~1bz in a phlegmatic manner
+    phlegmatically~1z in a phlegmatic manner
  picturesquely ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    picturesquely~1bz in a picturesque manner
+    picturesquely~1z in a picturesque manner
  piggishly ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    piggishly~1bz in a piggish manner
+    piggishly~1z in a piggish manner
  pinnately ( meanings=1 glosses=1 ADVERB COMMON2 ) 
-    pinnately~1bz having a pinnate shape
+    pinnately~1z having a pinnate shape
  piquantly ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    spicily~1bz with strong spices
+    spicily~1z with strong spices
  placidly ( meanings=2 glosses=2 ADVERB COMMON2 posdefault:ADVERB ) 
-    placidly~1bz in a placid and good-natured manner
-    placidly~2bz in a quiet and tranquil manner
+    placidly~1z in a placid and good-natured manner
+    placidly~2z in a quiet and tranquil manner
  posthumously ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    posthumously~1bz after death
+    posthumously~1z after death
  piratically ( meanings=1 glosses=1 ADVERB COMMON1 ) 
-    piratically~1bz in a piratical manner
+    piratically~1z in a piratical manner
  pit-a-pat ( meanings=2 ADVERB ) 
-    pitter-patter~2b 
-    pitter-patter~3b 
+    pitter-patter~2z 
+    pitter-patter~3z 
  pitty-patty ( meanings=2 ADVERB ) 
-    pit-a-pat~1b 
-    pit-a-pat~2b 
+    pit-a-pat~1z 
+    pit-a-pat~2z 
  pitty-pat ( meanings=2 ADVERB ) 
-    pitty-patty~1b 
-    pitty-patty~2b 
+    pitty-patty~1z 
+    pitty-patty~2z 
  piteously ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    piteously~1bz in a piteous manner
+    piteously~1z in a piteous manner
  pithily ( meanings=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    sententiously~1b 
+    sententiously~1z 
  pitifully ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    pitifully~1bz to a pitiful degree
+    pitifully~1z to a pitiful degree
  placatingly ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    placatingly~1bz in a placating manner
+    placatingly~1z in a placating manner
  plaguily ( meanings=1 glosses=1 ADVERB COMMON1 ) 
-    plaguy~2bz in a disagreeable manner
+    plaguy~2z in a disagreeable manner
  plaintively ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    plaintively~1bz in a plaintive manner
+    plaintively~1z in a plaintive manner
  playfully ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    playfully~1bz in a playful manner
+    playfully~1z in a playful manner
  pleasingly ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    pleasingly~1bz in a pleasing manner
+    pleasingly~1z in a pleasing manner
  plenarily ( meanings=1 glosses=1 ADVERB COMMON1 ) 
-    plenarily~1bz in a plenary manner
+    plenarily~1z in a plenary manner
  ploddingly ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    ploddingly~1bz in a plodding manner
+    ploddingly~1z in a plodding manner
  pneumatically ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    pneumatically~1bz in a pneumatic manner
+    pneumatically~1z in a pneumatic manner
  pointlessly ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    pointlessly~1bz in a pointless manner
+    pointlessly~1z in a pointless manner
  poisonously ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    venomously~1bz in a very malevolent manner
+    venomously~1z in a very malevolent manner
  pluckily ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    pluckily~1bz in a plucky manner
+    pluckily~1z in a plucky manner
  ponderously ( meanings=2 glosses=2 ADVERB COMMON2 posdefault:ADVERB ) 
-    ponderously~1bz in a heavy ponderous manner
-    ponderously~2bz in an uninterestingly ponderous manner
+    ponderously~1z in a heavy ponderous manner
+    ponderously~2z in an uninterestingly ponderous manner
  popishly ( meanings=1 glosses=1 ADVERB COMMON1 ) 
-    popishly~1bz like the Pope
+    popishly~1z like the Pope
  portentously ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    portentously~1bz in a portentous manner
+    portentously~1z in a portentous manner
  possessively ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    possessively~1bz in a possessive manner
+    possessively~1z in a possessive manner
  post-paid ( meanings=1 ADVERB ) 
-    post-free~2b 
+    post-free~2z 
  potently ( meanings=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    powerfully~1b 
+    powerfully~1z 
  powerfully ( meanings=2 glosses=2 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    potently~1bz in a manner having a powerful influence
-    strongly~2bz in a powerful manner
+    potently~1z in a manner having a powerful influence
+    strongly~2z in a powerful manner
  poutingly ( meanings=1 glosses=1 ADVERB COMMON1 ) 
-    poutingly~1bz with a pout or in a pouting manner
+    poutingly~1z with a pout or in a pouting manner
  powerlessly ( meanings=1 glosses=1 ADVERB COMMON1 ) 
-    powerlessly~1bz in a powerless manner
+    powerlessly~1z in a powerless manner
  practicably ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    feasibly~1bz in a practicable manner
+    feasibly~1z in a practicable manner
  pragmatically ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    pragmatically~1bz in a realistic manner
+    pragmatically~1z in a realistic manner
  pre-eminently ( meanings=1 glosses=1 ADVERB posdefault:ADVERB ) 
-    preeminently~1bz to a preeminent degree
+    preeminently~1z to a preeminent degree
  preeminently ( meanings=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    pre-eminently~1b 
+    pre-eminently~1z 
  precariously ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    precariously~1bz in a precarious manner
+    precariously~1z in a precarious manner
  preciously ( meanings=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    precious~6b 
+    precious~6z 
  precipitously ( meanings=2 glosses=2 ADVERB COMMON2 posdefault:ADVERB ) 
-    precipitously~1bz abruptly
-    sharply~3bz very suddenly and to a great degree
+    precipitously~1z abruptly
+    sharply~3z very suddenly and to a great degree
  precociously ( meanings=2 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    precociously~1bz in a precocious manner
-    precociously~2bz 
+    precociously~1z in a precocious manner
+    precociously~2z 
  predictably ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    predictably~1bz in a predictable manner or to a predictable degree
+    predictably~1z in a predictable manner or to a predictable degree
  prematurely ( meanings=2 glosses=2 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    untimely~4bz too soon
-    prematurely~2bz before the end of the normal period of gestation
+    untimely~4z too soon
+    prematurely~2z before the end of the normal period of gestation
  presciently ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    cannily~1bz with foresight
+    cannily~1z with foresight
  presentably ( meanings=1 glosses=1 ADVERB COMMON1 ) 
-    presentably~1bz in a presentable manner
+    presentably~1z in a presentable manner
  pressingly ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    pressingly~1bz in a pressing manner
+    pressingly~1z in a pressing manner
  presumptuously ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    presumptuously~1bz in a presumptuous manner
+    presumptuously~1z in a presumptuous manner
  pretentiously ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    pretentiously~1bz in a pretentious manner
+    pretentiously~1z in a pretentious manner
  preternaturally ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    supernaturally~1bz in a supernatural manner
+    supernaturally~1z in a supernatural manner
  prettily ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    prettily~1bz in a pretty manner
+    prettily~1z in a pretty manner
  priggishly ( meanings=1 glosses=1 ADVERB COMMON1 ) 
-    priggishly~1bz in a priggish manner
+    priggishly~1z in a priggish manner
  primly ( meanings=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    prissily~1b 
+    prissily~1z 
  prissily ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    primly~1bz in a prissy manner
+    primly~1z in a prissy manner
  primitively ( meanings=2 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    primitively~1bz in a primitive style or manner
-    originally~3b 
+    primitively~1z in a primitive style or manner
+    originally~3z 
  probabilistically ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    probabilistically~1bz by the use of probability theory
+    probabilistically~1z by the use of probability theory
  problematically ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    problematically~1bz in such a way as to pose a problem
+    problematically~1z in such a way as to pose a problem
  prodigally ( meanings=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    wastefully~1b 
+    wastefully~1z 
  prodigiously ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    prodigiously~1bz to a prodigious degree
+    prodigiously~1z to a prodigious degree
  profanely ( meanings=2 glosses=2 ADVERB COMMON2 posdefault:ADVERB ) 
-    profanely~1bz in an irreverent or profane manner
-    profanely~2bz with curses
+    profanely~1z in an irreverent or profane manner
+    profanely~2z with curses
  proficiently ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    proficiently~1bz in a proficient manner
+    proficiently~1z in a proficient manner
  profitlessly ( meanings=1 ADVERB COMMON1 ) 
-    unprofitably~2b 
+    unprofitably~2z 
  prohibitively ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    prohibitively~1bz to a prohibitive degree
+    prohibitively~1z to a prohibitive degree
  promisingly ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    promisingly~1bz in an auspicious manner
+    promisingly~1z in an auspicious manner
  prosaically ( meanings=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    unimaginatively~2b 
+    unimaginatively~2z 
  prosily ( meanings=1 glosses=1 ADVERB COMMON1 ) 
-    prosily~1bz in a prosy manner
+    prosily~1z in a prosy manner
  proverbially ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    proverbially~1bz in the manner of something that has become a byword
+    proverbially~1z in the manner of something that has become a byword
  provocatively ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    provokingly~1bz in a provocative manner
+    provokingly~1z in a provocative manner
  provokingly ( meanings=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    provocatively~1b 
+    provocatively~1z 
  prudishly ( meanings=1 ADVERB COMMON1 ) 
-    puritanically~1b 
+    puritanically~1z 
  puritanically ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    prudishly~1bz in a prudish manner
+    prudishly~1z in a prudish manner
  pruriently ( meanings=1 glosses=1 ADVERB COMMON1 ) 
-    pruriently~1bz in a prurient manner
+    pruriently~1z in a prurient manner
  pryingly ( meanings=1 glosses=1 ADVERB COMMON1 ) 
-    pryingly~1bz in a curious and prying manner
+    pryingly~1z in a curious and prying manner
  psychologically ( meanings=2 glosses=2 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    psychologically~1bz with regard to psychology
-    psychologically~2bz in terms of psychology
+    psychologically~1z with regard to psychology
+    psychologically~2z in terms of psychology
  pugnaciously ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    pugnaciously~1bz in a pugnacious manner
+    pugnaciously~1z in a pugnacious manner
  punctiliously ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    punctiliously~1bz in a punctilious manner
+    punctiliously~1z in a punctilious manner
  pungently ( meanings=2 glosses=2 ADVERB COMMON1 posdefault:ADVERB ) 
-    pungently~1bz with a pungent taste or smell
-    pungently~2bz with pungency
+    pungently~1z with a pungent taste or smell
+    pungently~2z with pungency
  punily ( meanings=1 glosses=1 ADVERB COMMON1 ) 
-    punily~1bz in a puny manner
+    punily~1z in a puny manner
  punishingly ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    punishingly~1bz in a punishing manner
+    punishingly~1z in a punishing manner
  punitively ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    penally~1bz in a punishing manner
+    penally~1z in a punishing manner
  punitorily ( meanings=1 ADVERB ) 
-    punitively~1b 
+    punitively~1z 
  penally ( meanings=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    punitorily~1b 
+    punitorily~1z 
  purposefully ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    purposefully~1bz in a purposeful manner
+    purposefully~1z in a purposeful manner
  purposelessly ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    purposelessly~1bz without a clear purpose
+    purposelessly~1z without a clear purpose
  pusillanimously ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    simperingly~1bz with a lack of courage and determination
+    simperingly~1z with a lack of courage and determination
  precedentedly ( meanings=1 glosses=1 ADVERB ) 
-    precedentedly~1bz with precedent
+    precedentedly~1z with precedent
  profligately ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    dissolutely~1bz in a dissolute way
+    dissolutely~1z in a dissolute way
  painlessly ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    painlessly~1bz without pain
+    painlessly~1z without pain
  polygonally ( meanings=1 glosses=1 ADVERB COMMON1 ) 
-    polygonally~1bz in a polygonal manner
+    polygonally~1z in a polygonal manner
  prepositionally ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    prepositionally~1bz as a preposition
+    prepositionally~1z as a preposition
  presidentially ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    presidentially~1bz in a presidential manner
+    presidentially~1z in a presidential manner
  pathogenetically ( meanings=1 ADVERB COMMON1 ) 
-    pathogenetically~1bz 
+    pathogenetically~1z 
  post-operatively ( meanings=2 ADVERB posdefault:ADVERB ) 
-    post-operatively~1bz 
-    post-operatively~2bz 
+    post-operatively~1z 
+    post-operatively~2z 
  parasitologically ( meanings=2 ADVERB COMMON1 ) 
-    parasitologically~1bz 
-    parasitologically~2bz 
+    parasitologically~1z 
+    parasitologically~2z 
  polyspermically ( meanings=2 ADVERB ) 
-    polyspermically~1bz 
-    polyspermically~2bz 
+    polyspermically~1z 
+    polyspermically~2z 
  parthenogenetically ( meanings=2 ADVERB COMMON1 ) 
-    parthenogenetically~1bz 
-    parthenogenetically~2bz 
+    parthenogenetically~1z 
+    parthenogenetically~2z 
  paramagnetically ( meanings=2 ADVERB COMMON1 ) 
-    paramagnetically~1bz 
-    paramagnetically~2bz 
+    paramagnetically~1z 
+    paramagnetically~2z 
  panendoscopically ( meanings=2 ADVERB ) 
-    panendoscopically~1bz 
-    panendoscopically~2bz 
+    panendoscopically~1z 
+    panendoscopically~2z 
  pyrometrically ( meanings=2 ADVERB ) 
-    pyrometrically~1bz 
-    pyrometrically~2bz 
+    pyrometrically~1z 
+    pyrometrically~2z 
  peranally ( meanings=2 ADVERB ) 
-    peranally~1bz 
-    peranally~2bz 
+    peranally~1z 
+    peranally~2z 
  polysomnographically ( meanings=2 ADVERB COMMON1 ) 
-    polysomnographically~1bz 
-    polysomnographically~2bz 
+    polysomnographically~1z 
+    polysomnographically~2z 
  photofluorometrically ( meanings=2 ADVERB ) 
-    photofluorometrically~1bz 
-    photofluorometrically~2bz 
+    photofluorometrically~1z 
+    photofluorometrically~2z 
  peritoneoscopically ( meanings=2 ADVERB ) 
-    peritoneoscopically~1bz 
-    peritoneoscopically~2bz 
+    peritoneoscopically~1z 
+    peritoneoscopically~2z 
  phoniatrically ( meanings=2 ADVERB ) 
-    phoniatrically~1bz 
-    phoniatrically~2bz 
+    phoniatrically~1z 
+    phoniatrically~2z 
  psychotically ( meanings=2 ADVERB COMMON1 posdefault:ADVERB ) 
-    psychotically~1bz 
-    psychotically~2bz 
+    psychotically~1z 
+    psychotically~2z 
  paradigmatically ( meanings=2 ADVERB COMMON1 posdefault:ADVERB ) 
-    paradigmatically~1bz 
-    paradigmatically~2bz 
+    paradigmatically~1z 
+    paradigmatically~2z 
  photoacoustically ( meanings=2 ADVERB ) 
-    photoacoustically~1bz 
-    photoacoustically~2bz 
+    photoacoustically~1z 
+    photoacoustically~2z 
  postthrombotically ( meanings=2 ADVERB ) 
-    postthrombotically~1bz 
-    postthrombotically~2bz 
+    postthrombotically~1z 
+    postthrombotically~2z 
  paraarterially ( meanings=2 ADVERB ) 
-    paraarterially~1bz 
-    paraarterially~2bz 
+    paraarterially~1z 
+    paraarterially~2z 
  preconceptionally ( meanings=2 ADVERB COMMON1 ) 
-    preconceptionally~1bz 
-    preconceptionally~2bz 
+    preconceptionally~1z 
+    preconceptionally~2z 
  phototachometrically ( meanings=2 ADVERB ) 
-    phototachometrically~1bz 
-    phototachometrically~2bz 
+    phototachometrically~1z 
+    phototachometrically~2z 
  post-translationally ( meanings=2 ADVERB posdefault:ADVERB ) 
-    post-translationally~1bz 
-    post-translationally~2bz 
+    post-translationally~1z 
+    post-translationally~2z 
  piezoelectrically ( meanings=2 ADVERB COMMON1 ) 
-    piezoelectrically~1bz 
-    piezoelectrically~2bz 
+    piezoelectrically~1z 
+    piezoelectrically~2z 
  pneumatographically ( meanings=2 ADVERB ) 
-    pneumatographically~1bz 
-    pneumatographically~2bz 
+    pneumatographically~1z 
+    pneumatographically~2z 
  phonostethographically ( meanings=2 ADVERB ) 
-    phonostethographically~1bz 
-    phonostethographically~2bz 
+    phonostethographically~1z 
+    phonostethographically~2z 
  phototactically ( meanings=2 ADVERB COMMON1 ) 
-    phototactically~1bz 
-    phototactically~2bz 
+    phototactically~1z 
+    phototactically~2z 
  physiotherapeutically ( meanings=2 ADVERB ) 
-    physiotherapeutically~1bz 
-    physiotherapeutically~2bz 
+    physiotherapeutically~1z 
+    physiotherapeutically~2z 
  plethysmographically ( meanings=2 ADVERB COMMON1 ) 
-    plethysmographically~1bz 
-    plethysmographically~2bz 
+    plethysmographically~1z 
+    plethysmographically~2z 
  pupillographically ( meanings=2 ADVERB ) 
-    pupillographically~1bz 
-    pupillographically~2bz 
+    pupillographically~1z 
+    pupillographically~2z 
  penetrometrically ( meanings=2 ADVERB ) 
-    penetrometrically~1bz 
-    penetrometrically~2bz 
+    penetrometrically~1z 
+    penetrometrically~2z 
  para-arterially ( meanings=2 ADVERB ) 
-    para-arterially~1bz 
-    para-arterially~2bz 
+    para-arterially~1z 
+    para-arterially~2z 
  periplasmically ( meanings=2 ADVERB COMMON1 ) 
-    periplasmically~1bz 
-    periplasmically~2bz 
+    periplasmically~1z 
+    periplasmically~2z 
  paracentrically ( meanings=2 ADVERB ) 
-    paracentrically~1bz 
-    paracentrically~2bz 
+    paracentrically~1z 
+    paracentrically~2z 
  pharyngoscopically ( meanings=2 ADVERB ) 
-    pharyngoscopically~1bz 
-    pharyngoscopically~2bz 
+    pharyngoscopically~1z 
+    pharyngoscopically~2z 
  phototrophically ( meanings=2 ADVERB COMMON1 ) 
-    phototrophically~1bz 
-    phototrophically~2bz 
+    phototrophically~1z 
+    phototrophically~2z 
  photoplethysmographically ( meanings=2 ADVERB ) 
-    photoplethysmographically~1bz 
-    photoplethysmographically~2bz 
+    photoplethysmographically~1z 
+    photoplethysmographically~2z 
  prophylactically ( meanings=2 ADVERB COMMON2 posdefault:ADVERB ) 
-    prophylactically~1bz 
-    prophylactically~2bz 
+    prophylactically~1z 
+    prophylactically~2z 
  photomicrographically ( meanings=2 ADVERB ) 
-    photomicrographically~1bz 
-    photomicrographically~2bz 
+    photomicrographically~1z 
+    photomicrographically~2z 
  potentiometrically ( meanings=2 ADVERB COMMON1 ) 
-    potentiometrically~1bz 
-    potentiometrically~2bz 
+    potentiometrically~1z 
+    potentiometrically~2z 
  polyclonally ( meanings=2 ADVERB COMMON1 ) 
-    polyclonally~1bz 
-    polyclonally~2bz 
+    polyclonally~1z 
+    polyclonally~2z 
  preliminarily ( meanings=2 ADVERB COMMON2 ) 
-    preliminarily~1bz 
-    preliminarily~2bz 
+    preliminarily~1z 
+    preliminarily~2z 
  perioperatively ( meanings=2 ADVERB COMMON1 posdefault:ADVERB ) 
-    perioperatively~1bz 
-    perioperatively~2bz 
+    perioperatively~1z 
+    perioperatively~2z 
  proteolytically ( meanings=2 ADVERB COMMON2 posdefault:ADVERB ) 
-    proteolytically~1bz 
-    proteolytically~2bz 
+    proteolytically~1z 
+    proteolytically~2z 
  phaneroscopically ( meanings=2 ADVERB ) 
-    phaneroscopically~1bz 
-    phaneroscopically~2bz 
+    phaneroscopically~1z 
+    phaneroscopically~2z 
  pyrolytically ( meanings=2 ADVERB COMMON1 ) 
-    pyrolytically~1bz 
-    pyrolytically~2bz 
+    pyrolytically~1z 
+    pyrolytically~2z 
  parasystolically ( meanings=2 ADVERB ) 
-    parasystolically~1bz 
-    parasystolically~2bz 
+    parasystolically~1z 
+    parasystolically~2z 
  pneumotachographically ( meanings=2 ADVERB ) 
-    pneumotachographically~1bz 
-    pneumotachographically~2bz 
+    pneumotachographically~1z 
+    pneumotachographically~2z 
  posttranscriptionally ( meanings=2 ADVERB COMMON1 ) 
-    posttranscriptionally~1bz 
-    posttranscriptionally~2bz 
+    posttranscriptionally~1z 
+    posttranscriptionally~2z 
  postischaemically ( meanings=2 ADVERB ) 
-    postischaemically~1bz 
-    postischaemically~2bz 
+    postischaemically~1z 
+    postischaemically~2z 
  petechiometrically ( meanings=2 ADVERB ) 
-    petechiometrically~1bz 
-    petechiometrically~2bz 
+    petechiometrically~1z 
+    petechiometrically~2z 
  pathomorphologically ( meanings=2 ADVERB ) 
-    pathomorphologically~1bz 
-    pathomorphologically~2bz 
+    pathomorphologically~1z 
+    pathomorphologically~2z 
  pantographically ( meanings=2 ADVERB ) 
-    pantographically~1bz 
-    pantographically~2bz 
+    pantographically~1z 
+    pantographically~2z 
  pelviscopically ( meanings=2 ADVERB ) 
-    pelviscopically~1bz 
-    pelviscopically~2bz 
+    pelviscopically~1z 
+    pelviscopically~2z 
  postischemically ( meanings=2 ADVERB ) 
-    postischemically~1bz 
-    postischemically~2bz 
+    postischemically~1z 
+    postischemically~2z 
  planigraphically ( meanings=2 ADVERB ) 
-    planigraphically~1bz 
-    planigraphically~2bz 
+    planigraphically~1z 
+    planigraphically~2z 
  posteroanteriorly ( meanings=2 ADVERB ) 
-    posteroanteriorly~1bz 
-    posteroanteriorly~2bz 
+    posteroanteriorly~1z 
+    posteroanteriorly~2z 
  photofluoroscopically ( meanings=2 ADVERB ) 
-    photofluoroscopically~1bz 
-    photofluoroscopically~2bz 
+    photofluoroscopically~1z 
+    photofluoroscopically~2z 
  pyeloscopically ( meanings=2 ADVERB ) 
-    pyeloscopically~1bz 
-    pyeloscopically~2bz 
+    pyeloscopically~1z 
+    pyeloscopically~2z 
  pelvimetrically ( meanings=2 ADVERB ) 
-    pelvimetrically~1bz 
-    pelvimetrically~2bz 
+    pelvimetrically~1z 
+    pelvimetrically~2z 
  phorometrically ( meanings=2 ADVERB ) 
-    phorometrically~1bz 
-    phorometrically~2bz 
+    phorometrically~1z 
+    phorometrically~2z 
  proctosigmoidoscopically ( meanings=2 ADVERB ) 
-    proctosigmoidoscopically~1bz 
-    proctosigmoidoscopically~2bz 
+    proctosigmoidoscopically~1z 
+    proctosigmoidoscopically~2z 
  pachymetrically ( meanings=2 ADVERB ) 
-    pachymetrically~1bz 
-    pachymetrically~2bz 
+    pachymetrically~1z 
+    pachymetrically~2z 
  planimetrically ( meanings=2 ADVERB COMMON1 posdefault:ADVERB ) 
-    planimetrically~1bz 
-    planimetrically~2bz 
+    planimetrically~1z 
+    planimetrically~2z 
  parturiometrically ( meanings=2 ADVERB ) 
-    parturiometrically~1bz 
-    parturiometrically~2bz 
+    parturiometrically~1z 
+    parturiometrically~2z 
  psychometrically ( meanings=2 ADVERB COMMON2 posdefault:ADVERB ) 
-    psychometrically~1bz 
-    psychometrically~2bz 
+    psychometrically~1z 
+    psychometrically~2z 
  pluralistically ( meanings=2 ADVERB COMMON1 posdefault:ADVERB ) 
-    pluralistically~1bz 
-    pluralistically~2bz 
+    pluralistically~1z 
+    pluralistically~2z 
  polycardiographically ( meanings=2 ADVERB ) 
-    polycardiographically~1bz 
-    polycardiographically~2bz 
+    polycardiographically~1z 
+    polycardiographically~2z 
  pupillometrically ( meanings=2 ADVERB ) 
-    pupillometrically~1bz 
-    pupillometrically~2bz 
+    pupillometrically~1z 
+    pupillometrically~2z 
  postmetamorphically ( meanings=2 ADVERB ) 
-    postmetamorphically~1bz 
-    postmetamorphically~2bz 
+    postmetamorphically~1z 
+    postmetamorphically~2z 
  pre-attentively ( meanings=2 ADVERB ) 
-    pre-attentively~1bz 
-    pre-attentively~2bz 
+    pre-attentively~1z 
+    pre-attentively~2z 
  prethymically ( meanings=2 ADVERB ) 
-    prethymically~1bz 
-    prethymically~2bz 
+    prethymically~1z 
+    prethymically~2z 
  pre-operatively ( meanings=2 ADVERB posdefault:ADVERB ) 
-    pre-operatively~1bz 
-    pre-operatively~2bz 
+    pre-operatively~1z 
+    pre-operatively~2z 
  perorally ( meanings=2 ADVERB COMMON1 ) 
-    perorally~1bz 
-    perorally~2bz 
+    perorally~1z 
+    perorally~2z 
  polygraphically ( meanings=2 ADVERB COMMON1 ) 
-    polygraphically~1bz 
-    polygraphically~2bz 
+    polygraphically~1z 
+    polygraphically~2z 
  posttranslationally ( meanings=2 ADVERB COMMON1 ) 
-    posttranslationally~1bz 
-    posttranslationally~2bz 
+    posttranslationally~1z 
+    posttranslationally~2z 
  postcatheterisation ( meanings=2 ADVERB ) 
-    postcatheterisation~1bz 
-    postcatheterisation~2bz 
+    postcatheterisation~1z 
+    postcatheterisation~2z 
  pyroscopically ( meanings=2 ADVERB ) 
-    pyroscopically~1bz 
-    pyroscopically~2bz 
+    pyroscopically~1z 
+    pyroscopically~2z 
  preattentively ( meanings=2 ADVERB COMMON1 posdefault:ADVERB ) 
-    preattentively~1bz 
-    preattentively~2bz 
+    preattentively~1z 
+    preattentively~2z 
  prognostically ( meanings=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    prognostically~1bz 
+    prognostically~1z 
  perenially ( meanings=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    perenially~1bz 
+    perenially~1z 
  pentagonally ( meanings=1 ADVERB posdefault:ADVERB ) 
-    pentagonally~1bz 
+    pentagonally~1z 
  per_anum ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    per_anum~1bz 
+    per_anum~1z 
  per_cent ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    per_cent~1bz 
+    per_cent~1z 
  per_contiguum ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    per_contiguum~1bz 
+    per_contiguum~1z 
  per_continuum ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    per_continuum~1bz 
+    per_continuum~1z 
  percutaneously ( meanings=1 ADVERB posdefault:ADVERB ) 
-    percutaneously~1bz 
+    percutaneously~1z 
  per_cutem ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    per_cutem~1bz 
+    per_cutem~1z 
  perinatally ( meanings=1 ADVERB posdefault:ADVERB ) 
-    perinatally~1bz 
+    perinatally~1z 
  periodontally ( meanings=1 ADVERB ) 
-    periodontally~1bz 
+    periodontally~1z 
  peritoneally ( meanings=1 ADVERB ) 
-    peritoneally~1bz 
+    peritoneally~1z 
  peritrichously ( meanings=1 ADVERB ) 
-    peritrichously~1bz 
+    peritrichously~1z 
  per_os ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    per_os~1bz 
+    per_os~1z 
  per_primam ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    per_primam~1bz 
+    per_primam~1z 
  per_primam_intentionem ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    per_primam_intentionem~1bz 
+    per_primam_intentionem~1z 
  per_rectum ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    per_rectum~1bz 
+    per_rectum~1z 
  per_saltum ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    per_saltum~1bz 
+    per_saltum~1z 
  per_secundam ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    per_secundam~1bz 
+    per_secundam~1z 
  per_secundam_intentionem ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    per_secundam_intentionem~1bz 
+    per_secundam_intentionem~1z 
  per_tertiam ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    per_tertiam~1bz 
+    per_tertiam~1z 
  per_tubam ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    per_tubam~1bz 
+    per_tubam~1z 
  per_vaginam ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    per_vaginam~1bz 
+    per_vaginam~1z 
  per_vias_naturales ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    per_vias_naturales~1bz 
+    per_vias_naturales~1z 
  pharmaceutically ( meanings=1 ADVERB ) 
-    pharmaceutically~1bz 
+    pharmaceutically~1z 
  phenotypically ( meanings=1 ADVERB posdefault:ADVERB ) 
-    phenotypically~1bz 
+    phenotypically~1z 
  photochemically ( meanings=1 ADVERB posdefault:ADVERB ) 
-    photochemically~1bz 
+    photochemically~1z 
  placentally ( meanings=1 ADVERB ) 
-    placentally~1bz 
+    placentally~1z 
  p.o. ( meanings=1 ADVERB ) 
-    p.o.~1bz 
+    p.o.~1z 
  po ( meanings=1 ADVERB ) 
-    po~1bz 
+    po~1z 
  post-catheterisation ( meanings=1 ADVERB ) 
-    post-catheterisation~1bz 
+    post-catheterisation~1z 
  post_cibos ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    post_cibos~1bz 
+    post_cibos~1z 
  post_mortem ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    post_mortem~1bz 
+    post_mortem~1z 
  postnatally ( meanings=1 ADVERB posdefault:ADVERB ) 
-    postnatally~1bz 
+    postnatally~1z 
  post_operatively ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    post_operatively~1bz 
+    post_operatively~1z 
  post_partum ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    post_partum~1bz 
+    post_partum~1z 
  postprandially ( meanings=1 ADVERB posdefault:ADVERB ) 
-    postprandially~1bz 
+    postprandially~1z 
  post_singulas_sedes_liquidas ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    post_singulas_sedes_liquidas~1bz 
+    post_singulas_sedes_liquidas~1z 
  predominately ( meanings=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    predominately~1bz 
+    predominately~1z 
  premenopausally ( meanings=1 ADVERB ) 
-    premenopausally~1bz 
+    premenopausally~1z 
  prenatally ( meanings=1 ADVERB posdefault:ADVERB ) 
-    prenatally~1bz 
+    prenatally~1z 
  prevalently ( meanings=1 ADVERB ) 
-    prevalently~1bz 
+    prevalently~1z 
  p.r.n. ( meanings=1 ADVERB ) 
-    p.r.n.~1bz 
+    p.r.n.~1z 
  prolately ( meanings=1 ADVERB ) 
-    prolately~1bz 
+    prolately~1z 
  prospectively ( meanings=1 ADVERB posdefault:ADVERB ) 
-    prospectively~1bz 
+    prospectively~1z 
  prototypically ( meanings=1 ADVERB posdefault:ADVERB ) 
-    prototypically~1bz 
+    prototypically~1z 
  psychiatrically ( meanings=1 ADVERB posdefault:ADVERB ) 
-    psychiatrically~1bz 
+    psychiatrically~1z 
  psychoanalytically ( meanings=1 ADVERB posdefault:ADVERB ) 
-    psychoanalytically~1bz 
+    psychoanalytically~1z 
  pulselessly ( meanings=1 ADVERB ) 
-    pulselessly~1bz 
+    pulselessly~1z 
  provided ( meanings=1 CONJUNCTION_SUBORDINATE COMMON4 COMMON2 KINDERGARTEN posdefault:VERB ) 
     provided~1z 
  provided_that ( meanings=1 CONJUNCTION_SUBORDINATE KINDERGARTEN posdefault:PREPOSITION ) 

@@ -106,6 +106,9 @@ bunch of excess information and are in a bunch of different files. This is where
 it easier to see things. `:trim` assumes all files in the LOGS directory are user logs and will process them
 in some manner. It will normally put its output in `TMP/tmp.txt`. 
 
+If you give a quoted string as first argument and it has "keepname" in it, then instead of
+dumping everything into tmp.txt, it will create files named after the user logs it discovers (username.txt)
+
 Your first argument to trim can also be just the name of a user (whose log file will be in `USERS/log-xxx.txt`) 
 or if that doesn't exist then it is the directory to use, or you can use the name of a log file within the USERs directory (the name should begin `log-` and not include the directory and need not include the `.txt` suffix). E.g.,
 ```
@@ -156,3 +159,7 @@ You can separately choose to trim input and output oob using a numeric bits, whe
 Jan25'17-13:49:21  when is the help desk open?
                The Helpdesk is available Monday through Friday from 7:00AM to 7:00PM Pacific. 
 ```
+
+# Deduping a file  - `:dedupe`
+
+`:dedupe  filepath` outputs into tmp/filename just unique lines from the input (ignoring data after a hash comment marker).

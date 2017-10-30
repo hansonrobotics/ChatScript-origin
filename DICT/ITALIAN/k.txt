@@ -34,105 +34,105 @@
  Kurt ( NOUN NOUN_PROPER_SINGULAR ) 
  Kuwait ( NOUN NOUN_PROPER_SINGULAR ) 
  k.o. ( ) 
- kafkiana ( ADJECTIVE ) lemma=kafkiano 
- kafkiane ( ADJECTIVE ) lemma=kafkiano 
- kafkiani ( ADJECTIVE ) lemma=kafkiano 
- kafkianissima ( ADJECTIVE ) lemma=kafkiano 
- kafkianissime ( ADJECTIVE ) lemma=kafkiano 
- kafkianissimi ( ADJECTIVE ) lemma=kafkiano 
- kafkianissimo ( ADJECTIVE ) lemma=kafkiano 
+ kafkiana ( ADJECTIVE ) lemma=`kafkiano` ADJ  
+ kafkiane ( ADJECTIVE ) lemma=`kafkiano` ADJ  
+ kafkiani ( ADJECTIVE ) lemma=`kafkiano` ADJ  
+ kafkianissima ( ADJECTIVE ) lemma=`kafkiano` ADJ  
+ kafkianissime ( ADJECTIVE ) lemma=`kafkiano` ADJ  
+ kafkianissimi ( ADJECTIVE ) lemma=`kafkiano` ADJ  
+ kafkianissimo ( ADJECTIVE ) lemma=`kafkiano` ADJ  
  kafkiano ( ADJECTIVE ) 
  kaki ( ADJECTIVE ) 
  kalashnikov ( NOUN NOUN_SINGULAR ) 
  kamikaze ( NOUN NOUN_SINGULAR ) 
  kanak ( ADJECTIVE ) 
- kantiana ( ADJECTIVE ) lemma=kantiano 
- kantiane ( ADJECTIVE ) lemma=kantiano 
- kantiani ( ADJECTIVE ) lemma=kantiano 
- kantianissima ( ADJECTIVE ) lemma=kantiano 
- kantianissime ( ADJECTIVE ) lemma=kantiano 
- kantianissimi ( ADJECTIVE ) lemma=kantiano 
- kantianissimo ( ADJECTIVE ) lemma=kantiano 
+ kantiana ( ADJECTIVE ) lemma=`kantiano` ADJ  
+ kantiane ( ADJECTIVE ) lemma=`kantiano` ADJ  
+ kantiani ( ADJECTIVE ) lemma=`kantiano` ADJ  
+ kantianissima ( ADJECTIVE ) lemma=`kantiano` ADJ  
+ kantianissime ( ADJECTIVE ) lemma=`kantiano` ADJ  
+ kantianissimi ( ADJECTIVE ) lemma=`kantiano` ADJ  
+ kantianissimo ( ADJECTIVE ) lemma=`kantiano` ADJ  
  kantiano ( ADJECTIVE ) 
  karaoke ( NOUN NOUN_SINGULAR ) 
  kayak ( NOUN NOUN_SINGULAR ) 
- kazaki ( NOUN NOUN_SINGULAR ) lemma=kazako 
+ kazaki ( NOUN NOUN_SINGULAR ) lemma=`kazako` NOUN  
  kazako ( NOUN NOUN_SINGULAR ) 
- ke ( CONJUNCTION_SUBORDINATE DETERMINER ) lemma=che 
+ ke ( CONJUNCTION_SUBORDINATE DETERMINER ) lemma=`che`che`che` CHE  CON  DET:wh  
  kefiah ( NOUN NOUN_SINGULAR ) 
  keirin ( NOUN NOUN_SINGULAR ) 
- keniana ( ADJECTIVE ) lemma=keniano 
- keniane ( ADJECTIVE ) lemma=keniano 
- keniani ( NOUN ADJECTIVE NOUN_SINGULAR ) lemma=keniano 
- kenianissima ( ADJECTIVE ) lemma=keniano 
- kenianissime ( ADJECTIVE ) lemma=keniano 
- kenianissimi ( ADJECTIVE ) lemma=keniano 
- kenianissimo ( ADJECTIVE ) lemma=keniano 
- keniano ( NOUN ADJECTIVE NOUN_SINGULAR ) 
+ keniana ( ADJECTIVE ) lemma=`keniano` ADJ  
+ keniane ( ADJECTIVE ) lemma=`keniano` ADJ  
+ keniani ( NOUN ADJECTIVE NOUN_SINGULAR ) lemma=`keniano`keniano` ADJ  NOUN  
+ kenianissima ( ADJECTIVE ) lemma=`keniano` ADJ  
+ kenianissime ( ADJECTIVE ) lemma=`keniano` ADJ  
+ kenianissimi ( ADJECTIVE ) lemma=`keniano` ADJ  
+ kenianissimo ( ADJECTIVE ) lemma=`keniano` ADJ  
+ keniano ( NOUN ADJECTIVE NOUN_SINGULAR ) lemma=`keniano`keniano` ADJ  NOUN  
  keniota ( ADJECTIVE ) 
- keniote ( ADJECTIVE ) lemma=keniota 
- kenioti ( ADJECTIVE ) lemma=keniota 
- keniotissima ( ADJECTIVE ) lemma=keniota 
- keniotissime ( ADJECTIVE ) lemma=keniota 
- keniotissimi ( ADJECTIVE ) lemma=keniota 
- keniotissimo ( ADJECTIVE ) lemma=keniota 
- kennedyana ( ADJECTIVE ) lemma=kennedyano 
- kennedyane ( ADJECTIVE ) lemma=kennedyano 
- kennedyani ( ADJECTIVE ) lemma=kennedyano 
- kennedyanissima ( ADJECTIVE ) lemma=kennedyano 
- kennedyanissime ( ADJECTIVE ) lemma=kennedyano 
- kennedyanissimi ( ADJECTIVE ) lemma=kennedyano 
- kennedyanissimo ( ADJECTIVE ) lemma=kennedyano 
+ keniote ( ADJECTIVE ) lemma=`keniota` ADJ  
+ kenioti ( ADJECTIVE ) lemma=`keniota` ADJ  
+ keniotissima ( ADJECTIVE ) lemma=`keniota` ADJ  
+ keniotissime ( ADJECTIVE ) lemma=`keniota` ADJ  
+ keniotissimi ( ADJECTIVE ) lemma=`keniota` ADJ  
+ keniotissimo ( ADJECTIVE ) lemma=`keniota` ADJ  
+ kennedyana ( ADJECTIVE ) lemma=`kennedyano` ADJ  
+ kennedyane ( ADJECTIVE ) lemma=`kennedyano` ADJ  
+ kennedyani ( ADJECTIVE ) lemma=`kennedyano` ADJ  
+ kennedyanissima ( ADJECTIVE ) lemma=`kennedyano` ADJ  
+ kennedyanissime ( ADJECTIVE ) lemma=`kennedyano` ADJ  
+ kennedyanissimi ( ADJECTIVE ) lemma=`kennedyano` ADJ  
+ kennedyanissimo ( ADJECTIVE ) lemma=`kennedyano` ADJ  
  kennedyano ( ADJECTIVE ) 
- kentuckiana ( ADJECTIVE ) lemma=kentuckiano 
- kentuckiane ( ADJECTIVE ) lemma=kentuckiano 
- kentuckiani ( ADJECTIVE ) lemma=kentuckiano 
- kentuckianissima ( ADJECTIVE ) lemma=kentuckiano 
- kentuckianissime ( ADJECTIVE ) lemma=kentuckiano 
- kentuckianissimi ( ADJECTIVE ) lemma=kentuckiano 
- kentuckianissimo ( ADJECTIVE ) lemma=kentuckiano 
+ kentuckiana ( ADJECTIVE ) lemma=`kentuckiano` ADJ  
+ kentuckiane ( ADJECTIVE ) lemma=`kentuckiano` ADJ  
+ kentuckiani ( ADJECTIVE ) lemma=`kentuckiano` ADJ  
+ kentuckianissima ( ADJECTIVE ) lemma=`kentuckiano` ADJ  
+ kentuckianissime ( ADJECTIVE ) lemma=`kentuckiano` ADJ  
+ kentuckianissimi ( ADJECTIVE ) lemma=`kentuckiano` ADJ  
+ kentuckianissimo ( ADJECTIVE ) lemma=`kentuckiano` ADJ  
  kentuckiano ( ADJECTIVE ) 
- kenyana ( ADJECTIVE ) lemma=kenyano 
- kenyane ( ADJECTIVE ) lemma=kenyano 
- kenyani ( NOUN ADJECTIVE NOUN_SINGULAR ) lemma=kenyano 
- kenyanissima ( ADJECTIVE ) lemma=kenyano 
- kenyanissime ( ADJECTIVE ) lemma=kenyano 
- kenyanissimi ( ADJECTIVE ) lemma=kenyano 
- kenyanissimo ( ADJECTIVE ) lemma=kenyano 
- kenyano ( NOUN ADJECTIVE NOUN_SINGULAR ) 
+ kenyana ( ADJECTIVE ) lemma=`kenyano` ADJ  
+ kenyane ( ADJECTIVE ) lemma=`kenyano` ADJ  
+ kenyani ( NOUN ADJECTIVE NOUN_SINGULAR ) lemma=`kenyano`kenyano` ADJ  NOUN  
+ kenyanissima ( ADJECTIVE ) lemma=`kenyano` ADJ  
+ kenyanissime ( ADJECTIVE ) lemma=`kenyano` ADJ  
+ kenyanissimi ( ADJECTIVE ) lemma=`kenyano` ADJ  
+ kenyanissimo ( ADJECTIVE ) lemma=`kenyano` ADJ  
+ kenyano ( NOUN ADJECTIVE NOUN_SINGULAR ) lemma=`kenyano`kenyano` ADJ  NOUN  
  kermesse ( NOUN NOUN_SINGULAR ) 
- keynesiana ( ADJECTIVE ) lemma=keynesiano 
- keynesiane ( ADJECTIVE ) lemma=keynesiano 
- keynesiani ( NOUN ADJECTIVE NOUN_SINGULAR ) lemma=keynesiano 
- keynesianissima ( ADJECTIVE ) lemma=keynesiano 
- keynesianissime ( ADJECTIVE ) lemma=keynesiano 
- keynesianissimi ( ADJECTIVE ) lemma=keynesiano 
- keynesianissimo ( ADJECTIVE ) lemma=keynesiano 
- keynesiano ( NOUN ADJECTIVE NOUN_SINGULAR ) 
- kg. ( NOUN NOUN_SINGULAR ) lemma=kilogrammo 
+ keynesiana ( ADJECTIVE ) lemma=`keynesiano` ADJ  
+ keynesiane ( ADJECTIVE ) lemma=`keynesiano` ADJ  
+ keynesiani ( NOUN ADJECTIVE NOUN_SINGULAR ) lemma=`keynesiano`keynesiano` ADJ  NOUN  
+ keynesianissima ( ADJECTIVE ) lemma=`keynesiano` ADJ  
+ keynesianissime ( ADJECTIVE ) lemma=`keynesiano` ADJ  
+ keynesianissimi ( ADJECTIVE ) lemma=`keynesiano` ADJ  
+ keynesianissimo ( ADJECTIVE ) lemma=`keynesiano` ADJ  
+ keynesiano ( NOUN ADJECTIVE NOUN_SINGULAR ) lemma=`keynesiano`keynesiano` ADJ  NOUN  
+ kg. ( NOUN NOUN_SINGULAR ) lemma=`kilogrammo` NOUN  
  khatamista ( ADJECTIVE ) 
- khatamiste ( ADJECTIVE ) lemma=khatamista 
- khatamisti ( ADJECTIVE ) lemma=khatamista 
- khatamistissima ( ADJECTIVE ) lemma=khatamista 
- khatamistissime ( ADJECTIVE ) lemma=khatamista 
- khatamistissimi ( ADJECTIVE ) lemma=khatamista 
- khatamistissimo ( ADJECTIVE ) lemma=khatamista 
- khmer ( NOUN ADJECTIVE NOUN_SINGULAR ) 
- khomeinismi ( NOUN NOUN_SINGULAR ) lemma=khomeinismo 
+ khatamiste ( ADJECTIVE ) lemma=`khatamista` ADJ  
+ khatamisti ( ADJECTIVE ) lemma=`khatamista` ADJ  
+ khatamistissima ( ADJECTIVE ) lemma=`khatamista` ADJ  
+ khatamistissime ( ADJECTIVE ) lemma=`khatamista` ADJ  
+ khatamistissimi ( ADJECTIVE ) lemma=`khatamista` ADJ  
+ khatamistissimo ( ADJECTIVE ) lemma=`khatamista` ADJ  
+ khmer ( NOUN ADJECTIVE NOUN_SINGULAR ) lemma=`khmer`khmer` ADJ  NOUN  
+ khomeinismi ( NOUN NOUN_SINGULAR ) lemma=`khomeinismo` NOUN  
  khomeinismo ( NOUN NOUN_SINGULAR ) 
- khomeinista ( NOUN ADJECTIVE NOUN_SINGULAR ) 
- khomeiniste ( ADJECTIVE ) lemma=khomeinista 
- khomeinisti ( NOUN ADJECTIVE NOUN_SINGULAR ) lemma=khomeinista 
- khomeinistissima ( ADJECTIVE ) lemma=khomeinista 
- khomeinistissime ( ADJECTIVE ) lemma=khomeinista 
- khomeinistissimi ( ADJECTIVE ) lemma=khomeinista 
- khomeinistissimo ( ADJECTIVE ) lemma=khomeinista 
+ khomeinista ( NOUN ADJECTIVE NOUN_SINGULAR ) lemma=`khomeinista`khomeinista` ADJ  NOUN  
+ khomeiniste ( ADJECTIVE ) lemma=`khomeinista` ADJ  
+ khomeinisti ( NOUN ADJECTIVE NOUN_SINGULAR ) lemma=`khomeinista`khomeinista` ADJ  NOUN  
+ khomeinistissima ( ADJECTIVE ) lemma=`khomeinista` ADJ  
+ khomeinistissime ( ADJECTIVE ) lemma=`khomeinista` ADJ  
+ khomeinistissimi ( ADJECTIVE ) lemma=`khomeinista` ADJ  
+ khomeinistissimo ( ADJECTIVE ) lemma=`khomeinista` ADJ  
  kibbutz ( NOUN NOUN_SINGULAR ) 
- killer ( NOUN ADJECTIVE NOUN_SINGULAR ) 
- killers ( NOUN NOUN_SINGULAR ) lemma=killer 
- kilogrammi ( NOUN NOUN_SINGULAR ) lemma=kilogrammo 
+ killer ( NOUN ADJECTIVE NOUN_SINGULAR ) lemma=`killer`killer` ADJ  NOUN  
+ killers ( NOUN NOUN_SINGULAR ) lemma=`killer` NOUN  
+ kilogrammi ( NOUN NOUN_SINGULAR ) lemma=`kilogrammo` NOUN  
  kilogrammo ( NOUN NOUN_SINGULAR ) 
- kilometri ( NOUN NOUN_SINGULAR ) lemma=kilometro 
+ kilometri ( NOUN NOUN_SINGULAR ) lemma=`kilometro` NOUN  
  kilometro ( NOUN NOUN_SINGULAR ) 
  kilt ( NOUN NOUN_SINGULAR ) 
  kimono ( NOUN NOUN_SINGULAR ) 
@@ -141,28 +141,28 @@
  kitsch ( ADJECTIVE ) 
  kiwi ( NOUN NOUN_SINGULAR ) 
  km ( NOUN NOUN_SINGULAR ) 
- km. ( NOUN NOUN_SINGULAR ) lemma=kilometro 
+ km. ( NOUN NOUN_SINGULAR ) lemma=`kilometro` NOUN  
  know-how ( NOUN NOUN_SINGULAR ) 
  ko ( NOUN NOUN_SINGULAR ) 
- koine' ( NOUN NOUN_SINGULAR ) lemma=koiné 
+ koine' ( NOUN NOUN_SINGULAR ) lemma=`koiné` NOUN  
  koiné ( NOUN NOUN_SINGULAR ) 
  kolkhoz ( NOUN NOUN_SINGULAR ) 
- kolossal ( NOUN ADJECTIVE NOUN_SINGULAR ) 
+ kolossal ( NOUN ADJECTIVE NOUN_SINGULAR ) lemma=`kolossal`kolossal` ADJ  NOUN  
  kombinat ( NOUN NOUN_SINGULAR ) 
  kosher ( ADJECTIVE ) 
- kosovara ( ADJECTIVE ) lemma=kosovaro 
- kosovare ( ADJECTIVE ) lemma=kosovaro 
- kosovari ( NOUN ADJECTIVE NOUN_SINGULAR ) lemma=kosovaro 
- kosovarissima ( ADJECTIVE ) lemma=kosovaro 
- kosovarissime ( ADJECTIVE ) lemma=kosovaro 
- kosovarissimi ( ADJECTIVE ) lemma=kosovaro 
- kosovarissimo ( ADJECTIVE ) lemma=kosovaro 
- kosovaro ( NOUN ADJECTIVE NOUN_SINGULAR ) 
- kuwaitiana ( ADJECTIVE ) lemma=kuwaitiano 
- kuwaitiane ( ADJECTIVE ) lemma=kuwaitiano 
- kuwaitiani ( NOUN ADJECTIVE NOUN_SINGULAR ) lemma=kuwaitiano 
- kuwaitianissima ( ADJECTIVE ) lemma=kuwaitiano 
- kuwaitianissime ( ADJECTIVE ) lemma=kuwaitiano 
- kuwaitianissimi ( ADJECTIVE ) lemma=kuwaitiano 
- kuwaitianissimo ( ADJECTIVE ) lemma=kuwaitiano 
- kuwaitiano ( NOUN ADJECTIVE NOUN_SINGULAR ) 
+ kosovara ( ADJECTIVE ) lemma=`kosovaro` ADJ  
+ kosovare ( ADJECTIVE ) lemma=`kosovaro` ADJ  
+ kosovari ( NOUN ADJECTIVE NOUN_SINGULAR ) lemma=`kosovaro`kosovaro` ADJ  NOUN  
+ kosovarissima ( ADJECTIVE ) lemma=`kosovaro` ADJ  
+ kosovarissime ( ADJECTIVE ) lemma=`kosovaro` ADJ  
+ kosovarissimi ( ADJECTIVE ) lemma=`kosovaro` ADJ  
+ kosovarissimo ( ADJECTIVE ) lemma=`kosovaro` ADJ  
+ kosovaro ( NOUN ADJECTIVE NOUN_SINGULAR ) lemma=`kosovaro`kosovaro` ADJ  NOUN  
+ kuwaitiana ( ADJECTIVE ) lemma=`kuwaitiano` ADJ  
+ kuwaitiane ( ADJECTIVE ) lemma=`kuwaitiano` ADJ  
+ kuwaitiani ( NOUN ADJECTIVE NOUN_SINGULAR ) lemma=`kuwaitiano`kuwaitiano` ADJ  NOUN  
+ kuwaitianissima ( ADJECTIVE ) lemma=`kuwaitiano` ADJ  
+ kuwaitianissime ( ADJECTIVE ) lemma=`kuwaitiano` ADJ  
+ kuwaitianissimi ( ADJECTIVE ) lemma=`kuwaitiano` ADJ  
+ kuwaitianissimo ( ADJECTIVE ) lemma=`kuwaitiano` ADJ  
+ kuwaitiano ( NOUN ADJECTIVE NOUN_SINGULAR ) lemma=`kuwaitiano`kuwaitiano` ADJ  NOUN  

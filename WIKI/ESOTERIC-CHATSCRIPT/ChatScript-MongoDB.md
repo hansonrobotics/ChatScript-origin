@@ -3,7 +3,7 @@
 > © Bruce Wilcox, gowilcox@gmail.com brilligunderstanding.com
 
 
-> Revision 6/25/2017 CS7.51
+> Revision 8/12/2017 CS7.53
 
 ChatScript ships with code and WINDOWS libraries for accessing Mongo but you need a database
 somewhere. On windows mongo access is using ChatScriptMongo.exe . On Linux you have to make `mongoserver`.
@@ -11,6 +11,8 @@ On Mac and IOS #define DISCARDMONGO is on by default.
 
 If you have access to a Mongo server remotely, that's fine. If you need one installed on your
 machine, see the end for how to install one.
+
+Remember, you need to be running a version of CS that has been explicitly compiled with Mongo support.
 
 ## Using Mongo as file server
 Aside from using Mongo to store data for a chatbot to look up, one can also use Mongo as a
@@ -22,11 +24,18 @@ To set collections, on the command line use:
 ```
 mongo="mongodb://localhost:27017 ChatScript topic:MyCollection"
 ```
-or
+or for user topic and ltm files 
 ```
 mongo="mongodb://localhost:27017 ChatScript topic:MyCollection ltm:MyLtm"
 ```
-or whatever. Obviously put the correct data for your mongo machine. 
+or for a remote host with no ltm file
+```
+mongo=mongodb://127.0.0.1:27017 ChatScript topic:UserTopics
+```
+or whatever. Using a cs_init.txt file to contain that line is most convenient, so no quotes are needed.
+
+
+Obviously put the correct data for your mongo machine. 
 CS will store user topic files in the Mongo machine and well as  `^export` and `^import` data. 
 For user and server logs it will continue to store those on the local machine.
 You may have the same or different collection active, 

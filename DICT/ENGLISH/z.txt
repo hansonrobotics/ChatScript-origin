@@ -668,7 +668,7 @@
  zigzag ( meanings=4 glosses=2 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB ADJECTIVE ADVERB ADJECTIVE_NORMAL NOUN_SINGULAR ADJECTIVE_NOT_PREDICATE COMMON2 COMMON1 posdefault:NOUN VERB_NOOBJECT ) 
     zag~1nz (^angular_shape~1) an angular shape characterized by sharp turns in alternating directions
     zig-zag~1a 
-    zigzag~3bz in a zigzag course or on a zigzag path
+    zigzag~3z in a zigzag course or on a zigzag path
     crank~10v 
  zinnia ( meanings=1 NOUN NOUN_SINGULAR COMMON2 posdefault:NOUN ) 
     old_maid_flower~1n 
@@ -1032,17 +1032,17 @@
  zippier ( MORE_FORM ADJECTIVE ADJECTIVE_NORMAL COMMON1 posdefault:ADJECTIVE ) comparative=zippy 
  zippiest ( MOST_FORM ADJECTIVE ADJECTIVE_NORMAL COMMON1 ) comparative=zippier 
  zealously ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    zealously~1bz in a zealous manner
+    zealously~1z in a zealous manner
  zestfully ( meanings=1 glosses=1 ADVERB COMMON1 ) 
-    zestily~1bz with zest
+    zestily~1z with zest
  zestily ( meanings=1 ADVERB COMMON1 ) 
-    zestfully~1b 
+    zestfully~1z 
  zymographically ( meanings=2 ADVERB ) 
-    zymographically~1bz 
-    zymographically~2bz 
+    zymographically~1z 
+    zymographically~2z 
  zygotically ( meanings=2 ADVERB COMMON1 ) 
-    zygotically~1bz 
-    zygotically~2bz 
+    zygotically~1z 
+    zygotically~2z 
  zonk_out ( meanings=2 glosses=1 VERB_PRESENT VERB_INFINITIVE VERB VERB_DIRECTOBJECT VERB_NOOBJECT PHRASAL_VERB INSEPARABLE_PHRASAL_VERB VERB_CONJUGATE1 ) 
     zonk_out~1vz fall asleep fast, as when one is extremely tired
     pass_out~2v 

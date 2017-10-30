@@ -49,8 +49,8 @@ typedef unsigned int DICTINDEX;	//   indexed ref to a dictionary entry
 // kinds of determiners 
 #define PREDETERMINER 			0x0000000001000000ULL  // Pennbank: PDT
 #define DETERMINER  			0x0000000000800000ULL   // Pennbank: DT
-#define POSSESSIVE				0x0000000000400000ULL	// is a possessive like 's or Taiwanese (but not possessive pronoun)
-#define PRONOUN_POSSESSIVE		0x0000000000200000ULL	// my your his her its our their				
+#define POSSESSIVE				0x0000000000400000ULL	// is a possessive like 's or Taiwanese (but not possessive pronoun) Pennbank: POS
+#define PRONOUN_POSSESSIVE		0x0000000000200000ULL	// my your his her its our their	Pennbank: PRP$			
 #define POSSESSIVE_BITS			( PRONOUN_POSSESSIVE | POSSESSIVE )
 #define DETERMINER_BITS		   ( DETERMINER | PREDETERMINER | POSSESSIVE_BITS ) // come before adjectives/nouns/ adverbs leading to those
 
@@ -73,16 +73,16 @@ typedef unsigned int DICTINDEX;	//   indexed ref to a dictionary entry
 
 // unusual words
 #define INTERJECTION			0x0000000000000400ULL	 
-#define THERE_EXISTENTIAL		0x0000000000000200ULL	// "There" is no future in it. There is actually a unique kind of pronoun.
-#define FOREIGN_WORD			0x0000000000000100ULL 	
+#define THERE_EXISTENTIAL		0x0000000000000200ULL	// "There" is no future in it. There is actually a unique kind of pronoun.  Pennbank: EX
+#define FOREIGN_WORD			0x0000000000000100ULL 	// pennbank: FW
 #define TO_INFINITIVE	 		0x0000000000000080ULL 	// attaches to NOUN_INFINITIVE
 
 // kinds of nouns
 #define NOUN_ADJECTIVE			0x0000000000000040ULL 	// adjective used as a noun - "the rich"   implied people as noun  -- also past verb: (char*)"the *dispossessed are fun"
 #define NOUN_SINGULAR			0x0000000000000020ULL	// Pennbank: NN
 #define NOUN_PLURAL				0x0000000000000010ULL	// Pennbank: NNS
-#define NOUN_PROPER_SINGULAR	0x0000000000000008ULL	//   A proper noun that is NOT a noun is a TITLE like Mr.
-#define NOUN_PROPER_PLURAL		0x0000000000000004ULL	// ( or )
+#define NOUN_PROPER_SINGULAR	0x0000000000000008ULL	//   A proper noun that is NOT a noun is a TITLE like Mr.	Pennbank: NP
+#define NOUN_PROPER_PLURAL		0x0000000000000004ULL	// Pennbank: NPS
 #define NOUN_GERUND				0x0000000000000002ULL	// "Walking" is fun
 #define NOUN_NUMBER				0x0000000000000001ULL	// I followed the "20".
 #define NOUN_INFINITIVE 		0x0000800000000000ULL	// To *go is fun
@@ -91,13 +91,13 @@ typedef unsigned int DICTINDEX;	//   indexed ref to a dictionary entry
 #define NOUN_BITS ( NORMAL_NOUN_BITS | NOUN_GERUND | NOUN_INFINITIVE )
 
 // kinds of verbs (tenses)
-#define VERB_PRESENT			0x0000400000000000ULL	// present plural (usually infinitive)
-#define VERB_PRESENT_3PS		0x0000200000000000ULL	// 3rd person singular singular
+#define VERB_PRESENT			0x0000400000000000ULL	// present plural (usually infinitive)  Pennbank: VBP
+#define VERB_PRESENT_3PS		0x0000200000000000ULL	// 3rd person singular singular  Pennbank: VBZ
 #define VERB_PRESENT_PARTICIPLE 0x0000100000000000ULL	// GERUND,  Pennbank: VBG
 #define VERB_PAST				0x0000080000000000ULL	// Pennbank: VBD
 #define VERB_PAST_PARTICIPLE    0x0000040000000000ULL	// Pennbank VBN
-#define VERB_INFINITIVE			0x0000020000000000ULL	//   all tense forms are linked into a circular ring
-#define PARTICLE				0x0000010000000000ULL	//   multiword separable verb (the preposition component) (full verb marked w systemflag SEPARABLE_PHRASAL_VERB or such) 
+#define VERB_INFINITIVE			0x0000020000000000ULL	//   all tense forms are linked into a circular ring   Pennbank: VB
+#define PARTICLE				0x0000010000000000ULL	//   multiword separable verb (the preposition component) (full verb marked w systemflag SEPARABLE_PHRASAL_VERB or such)  Pennbank: RP
 #define VERB_BITS (  VERB_INFINITIVE | VERB_PRESENT | VERB_PRESENT_3PS | VERB_PAST | VERB_PAST_PARTICIPLE | VERB_PRESENT_PARTICIPLE  )
 
 // kinds of pronouns
@@ -672,12 +672,13 @@ typedef unsigned int DICTINDEX;	//   indexed ref to a dictionary entry
 #define    OUTPUT_FULLFLOAT		0x00100000		// dont truncate
 
 // flags to control response processing continue from output flags $cs_response
-#define RESPONSE_UPPERSTART					0x00100000  // start each output sentence with upper case
-#define RESPONSE_REMOVESPACEBEFORECOMMA		0x00200000  // remove spaces before commas
-#define RESPONSE_ALTERUNDERSCORES			0x00400000
-#define RESPONSE_REMOVETILDE				0x00800000
-#define RESPONSE_NOCONVERTSPECIAL				0x01000000
-#define ALL_RESPONSES ( RESPONSE_UPPERSTART | RESPONSE_REMOVESPACEBEFORECOMMA | RESPONSE_ALTERUNDERSCORES | RESPONSE_REMOVETILDE ) 
+#define RESPONSE_UPPERSTART		0x00200000  // start each output sentence with upper case
+#define RESPONSE_REMOVESPACEBEFORECOMMA		0x00400000  // remove spaces before commas
+#define RESPONSE_ALTERUNDERSCORES			0x00800000
+#define RESPONSE_REMOVETILDE				0x01000000
+#define RESPONSE_NOCONVERTSPECIAL			0x02000000
+#define RESPONSE_CURLYQUOTES				0x04000000
+#define ALL_RESPONSES ( RESPONSE_UPPERSTART | RESPONSE_REMOVESPACEBEFORECOMMA | RESPONSE_ALTERUNDERSCORES | RESPONSE_REMOVETILDE | RESPONSE_NOCONVERTSPECIAL ) 
 
 #define ASSIGNMENT				0x01000000 //used by performassignment
 

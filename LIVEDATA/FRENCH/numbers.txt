@@ -107,6 +107,7 @@
 	 cents  100  REAL_NUMBER   
 	 centième  100 WORD_NUMBER   
 	 centaine  100   WORD_NUMBER   
+	 centaines  100   WORD_NUMBER   
 	 mille  1000  REAL_NUMBER   
 	 millième  1000    WORD_NUMBER
 	 millier  1000   WORD_NUMBER   

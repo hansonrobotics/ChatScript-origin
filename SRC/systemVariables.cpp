@@ -42,7 +42,9 @@ char* SystemVariable(char* word,char* value)
 		ReportBug((char*)"No system variable %s  ",word)
 		return "";
 	}
-	return (*sysvars[index].address)(value);
+	char* var = (*sysvars[index].address)(value);
+	if (!var) return "";
+	return var;
 }
 
 void DumpSystemVariables()
@@ -720,7 +722,7 @@ static char* SoriginalInput(char* value)
 	if (value) return AssignValue(hold,value);
 	if (*hold != '.') return hold;
 	char* at = SkipWhitespace(mainInputBuffer); 
-	if (*at == '[') // skip oob data
+	if (at && *at == '[') // skip oob data
 	{
 		int depth = 1;
 		bool quote = false;
@@ -737,7 +739,7 @@ static char* SoriginalInput(char* value)
 			}
 		}
 	}
-    return at;
+    return SkipWhitespace(at);
 }   
 
 static char* SoriginalSentence(char* value)
@@ -829,6 +831,18 @@ static char* Stense(char* value)
 	else if (tokenFlags & PAST) return "past";
 	else if (tokenFlags & FUTURE) return "future";
 	else return "present";
+}
+
+static char* SexternalTagging(char* value)
+{
+	static char hold[50] = ".";
+	if (value) return AssignValue(hold, value);
+	if (*hold != '.') return hold;
+#ifdef TREETAGGER
+	return externalPostagger ? (char*)"1" : (char*)"";
+#else
+	return "";
+#endif
 }
 
 static char* StokenFlags(char* value) 
@@ -933,7 +947,7 @@ static char* SlastQuestion(char* value)
 	char* sentence = responseData[responseOrder[responseIndex-1]].response;
 	size_t len = strlen(sentence);
 	return (sentence[len-1] == '?') ? (char*)"1" : (char*)"";
-}
+}  
 
 static char* SoutputRejoinder(char* value)
 {
@@ -1039,7 +1053,8 @@ SYSTEMVARIABLE sysvars[] =
 	{ (char*)"%quotation",Squotation,(char*)"Boolean - is the current input a quotation"},
 	{ (char*)"%sentence",Ssentence,(char*)"Boolean - does it seem like a sentence - has subject and verb or is command"}, 
 	{ (char*)"%tense",Stense,(char*)"Tense of current input (present, past, future)"}, 
-	{ (char*)"%tokenflags",StokenFlags,(char*)"Numeric value of all tokenflags"}, 
+	{ (char*)"%externalTagging",SexternalTagging,(char*)"Boolean - is external pos-tagging enabled" },
+	{ (char*)"%tokenflags",StokenFlags,(char*)"Numeric value of all tokenflags"},
 	{ (char*)"%user",Suser,(char*)"String - user login name suppled"}, 
 	{ (char*)"%userfirstline",SuserFirstLine,(char*)"Numeric volley count at start of session"}, 
 	{ (char*)"%userinput",SuserInput,(char*)"Boolean - is input coming from user"}, 

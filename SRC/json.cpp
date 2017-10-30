@@ -39,6 +39,15 @@ static int objectcnt = 0;
 static FunctionResult JSONpath(char* buffer, char* path, char* jsonstructure,bool raw,bool nofail);
 static MEANING jcopy(WORDP D);
 static char* jwrite(char* buffer, WORDP D, int subject);
+
+typedef enum {
+	URL_SCHEME = 0,
+	URL_AUTHORITY,
+	URL_PATH,
+	URL_QUERY,
+	URL_FRAGMENT
+} urlSegment;
+
 static int JSONArgs() 
 {
 	int index = 1;
@@ -47,7 +56,7 @@ static int JSONArgs()
 	jsonCreateFlags = 0;
 	jsonPermanent = FACTTRANSIENT; // default
 	jsonNoduplicate = false;
-	jsonDuplicate = true;
+	jsonDuplicate = false;
 	char* arg1 = ARGUMENT(1);
 	if (*arg1 == '"') // remove quotes
 	{
@@ -455,11 +464,10 @@ static int EncodingValue(char* name, char* field, int value)
 }
 
 #ifndef DISCARDJSONOPEN
-
 #ifdef WIN32
 #include "curl.h"
 #ifdef DEBUG
-#pragma comment(lib, "../SRC/curl/libcurld.lib")#else
+#pragma comment(lib, "../SRC/curl/libcurld.lib")
 #else
 #pragma comment(lib, "../SRC/curl/libcurl.lib")
 #endif
@@ -560,6 +568,26 @@ char* UrlEncodePiece(char* input)
 	return buffer;
 }
 
+char* encodeSegment(char** fixed, char* at, char* start, CURL * curl)
+{
+	char* segment = *fixed;
+	if (at[-1] == '\\') return start; // escaped, allow as is
+	if (at != start) // url encode segment
+	{
+		strncpy(segment, start, at - start);
+		segment[at - start] = 0;
+		char* coded = curl_easy_escape(curl, segment, 0);
+		strcpy(segment, coded);
+		curl_free(coded);
+		segment += strlen(segment);
+	}
+	*segment++ = *at;
+	*segment = 0;
+	*fixed = segment;
+	return(at + 1);
+}
+
+// RFC 3986
 static char* JSONUrlEncode(char* urlx, char* fixedUrl, CURL * curl)
 {
 	char* fixed = fixedUrl;
@@ -567,32 +595,69 @@ static char* JSONUrlEncode(char* urlx, char* fixedUrl, CURL * curl)
 	char* at = urlx - 1;
 	char* start = urlx;
 	char c;
+	urlSegment currentSegment = URL_SCHEME;
 	while ((c = *++at)) // url encode segments
 	{
-		if (c == ';' || c == '/' || c == '?' || c == ':' ||
-			c == '@' || c == '&' || c == '=' || c == '+' ||
-			c == '+' || c == '$' || c == ',') // reserved meaning
-		{
-			if (at[-1] == '\\') continue; // escaped, allow as is
-			if (at != start) // url encode segment
-			{
-				strncpy(fixed, start, at - start);
-				fixed[at - start] = 0;
-				char* coded = curl_easy_escape(curl, fixed, 0);
-				strcpy(fixed, coded);
-				curl_free(coded);
-				fixed += strlen(fixed);
+		if (currentSegment == URL_SCHEME) {
+			if (c == ':' || c == '+' || c == '-' || c == '.') {
+				start = encodeSegment(&fixed, at, start, curl);
+				if (start == at) continue;
+				if (c == ':') {
+					*fixed++ = *++at; // double /
+					*fixed++ = *++at;
+					start += 2;
+					currentSegment = URL_AUTHORITY;
+				}
 			}
-			*fixed++ = c;
-			*fixed = 0;
-			start = at + 1;
+		}
+		else if (currentSegment == URL_AUTHORITY) {
+			if (c == '/' || c == '?' || c == '#' || c == '@' || c == ':' || c == '[' || c == ']' ||
+				c == '!' || c == '$' || c == '&' || c == '(' || c == ')' ||
+				c == '*' || c == '+' || c == ',' || c == ';' || c == '=' || c == '\'') {
+				start = encodeSegment(&fixed, at, start, curl);
+				if (start == at) continue;
+				if (c == '/') {
+					currentSegment = URL_PATH;
+				}
+				else if (c == '?') {
+					currentSegment = URL_QUERY;
+				}
+				else if (c == '#') {
+					currentSegment = URL_FRAGMENT;
+				}
+			}
+		}
+		else if (currentSegment == URL_PATH) {
+			if (c == '/' || c == '?' || c == '#' || c == ':' || c == '@' ||
+				c == '!' || c == '$' || c == '&' || c == '(' || c == ')' ||
+				c == '*' || c == '+' || c == ',' || c == ';' || c == '=' || c == '\'') {
+				start = encodeSegment(&fixed, at, start, curl);
+				if (start == at) continue;
+				if (c == '?') {
+					currentSegment = URL_QUERY;
+				}
+				else if (c == '#') {
+					currentSegment = URL_FRAGMENT;
+				}
+			}
+		}
+		else if (currentSegment == URL_QUERY) {
+			if (c == '#' || c == '&' || c == '=' || c == '/' || c == '?') {
+				start = encodeSegment(&fixed, at, start, curl);
+				if (start == at) continue;
+				if (c == '#') {
+					currentSegment = URL_FRAGMENT;
+				}
+			}
+		}
+		else if (currentSegment == URL_FRAGMENT) {
+			if (c == '/' || c == '?') {
+				start = encodeSegment(&fixed, at, start, curl);
+			}
 		}
 	}
-	strncpy(fixed, start, at - start);
-	fixed[at - start] = 0;
-	char* coded = curl_easy_escape(curl, fixed, 0);
-	strcpy(fixed, coded);
-	curl_free(coded);
+	// remaining piece
+	start = encodeSegment(&fixed, at, start, curl);
 	return fixedUrl;
 }
 

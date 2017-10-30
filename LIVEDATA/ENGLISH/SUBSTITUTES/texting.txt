@@ -6,7 +6,9 @@
  :{ ~emosad
  :}   ~emohappy
  nvm nevermind
+ tmi too+much+information
  <ack ~yes
+ tbh to+be+honest
  <cos? why?
  <cu ~emogoodbye
  <cya ~emogoodbye

@@ -602,10 +602,10 @@
     inside~5az relating to or being on the side closer to the center or within a defined space
     privileged~1az confined to an exclusive group
     inside~7az 
-    in_spite_of_appearance~1bz in reality
-    indoors~1bz within a building
-    within~1bz on the inside
-    inwardly~1bz with respect to private feelings
+    in_spite_of_appearance~1z in reality
+    indoors~1z within a building
+    within~1z on the inside
+    inwardly~1z with respect to private feelings
     inside~12z 
  instrument ( meanings=9 glosses=9 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON1 KINDERGARTEN posdefault:NOUN VERB_DIRECTOBJECT ) 
     tool~1nz (^agency~1) the means whereby some act is accomplished
@@ -1709,9 +1709,9 @@
     ill~4az resulting in suffering or adversity
     ill~5az indicating hostility or enmity
     sick~7a 
-    poorly~3b 
-    ill~8bz with difficulty or inconvenience
-    badly~3b 
+    poorly~3z 
+    ill~8z with difficulty or inconvenience
+    badly~3z 
  ill_turn ( meanings=1 NOUN NOUN_SINGULAR ) 
     disservice~1n 
  insistence ( meanings=3 glosses=2 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON2 COMMON1 posdefault:NOUN ) 
@@ -1740,7 +1740,7 @@
     interagency_support~1nz (^logistic_assistance~1) provision of logistic support by one or more of the military services to one or more departments or agencies of the United States government
  interdepartmental ( meanings=2 glosses=2 ADJECTIVE ADVERB ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
     interdepartmental~1az between or among departments
-    interdepartmental~2bz between departments
+    interdepartmental~2z between departments
  interagency_support ( meanings=1 NOUN NOUN_SINGULAR ) 
     interdepartmental_support~1n 
  inter-service_support ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
@@ -2754,7 +2754,7 @@
     point~11n 
     token~4n 
     detail~5n 
-    item~6bz also
+    item~6z also
  itraconazole ( meanings=1 glosses=1 NOUN NOUN_SINGULAR COMMON2 posdefault:NOUN ) 
     Sporanox~1nz (^antimycotic_agent~1) an oral antifungal drug taken for cases of fungal nail disease
  imitation_leather ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
@@ -4784,7 +4784,7 @@
     impromptu~1nz (^address~7) an extemporaneous speech or remark
     impromptu~2nz (^passage~9) a short musical passage that seems to have been made spontaneously without advance preparation
     extemporaneous~1a 
-    ad_libitum~1b 
+    ad_libitum~1z 
  inaugural_address ( meanings=1 NOUN NOUN_SINGULAR ) 
     inaugural~2n 
  infomercial ( meanings=1 NOUN NOUN_SINGULAR COMMON2 COMMON1 ) 
@@ -6813,7 +6813,7 @@
  inland ( meanings=3 glosses=2 ADJECTIVE ADVERB ADJECTIVE_NORMAL ADJECTIVE_NOT_PREDICATE COMMON4 posdefault:ADJECTIVE ) 
     inland~1az situated away from an area's coast or border
     inland~2az 
-    inland~3bz towards or into the interior of a region
+    inland~3z towards or into the interior of a region
  import_credit ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR NOUN_NODETERMINER ) 
     import_credit~1nz (^credit~8) credit opened by an importer at a bank in his own country upon which an exporter may draw
  immediate_payment ( meanings=1 NOUN NOUN_SINGULAR NOUN_NODETERMINER ) 
@@ -6927,11 +6927,11 @@
     inch~1nz (^linear_measure~1) a unit of length equal to one twelfth of a foot
     column_inch~1nz (^square_measure~1) a unit of measurement for advertising space
     edge~9v 
- in ( meanings=5 glosses=4 PARTICLE ADJECTIVE ADVERB PREPOSITION ADJECTIVE_NORMAL ADJECTIVE_ONLY_PREDICATE ADJECTIVE_NOT_PREDICATE COMMON4 COMMON2 COMMON1 KINDERGARTEN posdefault:PREPOSITION ) comparative=inner 
+ in ( meanings=5 glosses=4 PARTICLE ADJECTIVE PREPOSITION ADJECTIVE_NORMAL ADJECTIVE_ONLY_PREDICATE ADJECTIVE_NOT_PREDICATE COMMON4 COMMON2 COMMON1 KINDERGARTEN posdefault:PREPOSITION ) comparative=inner 
     in~1az currently fashionable
     in~2az directed or bound inward
     in~3az holding office
-    inwards~2bz to or toward the inside of
+    inwards~2z to or toward the inside of
     in~5z 
  international_mile ( meanings=1 NOUN NOUN_SINGULAR ) 
     land_mile~1n 
@@ -7736,8 +7736,8 @@
     technological_revolution~1n 
  in_time ( meanings=3 glosses=1 NOUN_ABSTRACT NOUN ADVERB NOUN_SINGULAR ) 
     in_time~1nz (^musical_time~1) in the correct rhythm
-    yet~6b 
-    soon_enough~1b 
+    yet~6z 
+    soon_enough~1z 
  interregnum ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON2 posdefault:NOUN ) plural=interregna 
     interregnum~1nz (^lag~3) the time between two reigns, governments, etc.
  inflation_rate ( meanings=1 NOUN NOUN_SINGULAR NOUN_NODETERMINER ) 
@@ -7980,7 +7980,7 @@
  in_line ( meanings=3 glosses=3 ADJECTIVE ADVERB ADJECTIVE_NORMAL ADJECTIVE_NOT_PREDICATE ) 
     in_line~1az being next in a line of succession
     in_line~2az awaiting something
-    in_line~3bz one behind another in a line or queue
+    in_line~3z one behind another in a line or queue
  inappropriate ( meanings=3 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:ADJECTIVE ) 
     inappropriate~1az not suitable for a particular occasion etc
     incompatible~5a 
@@ -8029,7 +8029,7 @@
     incognizant~2az 
  in_advance ( meanings=2 ADJECTIVE ADVERB ADJECTIVE_NORMAL ADJECTIVE_ONLY_PREDICATE ADJECTIVE_NOT_PREDICATE ) 
     advanced~1a 
-    beforehand~2b 
+    beforehand~2z 
  impertinent ( meanings=4 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 GRADE5_6 posdefault:ADJECTIVE ) 
     fresh~1a 
     extraneous~3az not pertinent to the matter under consideration
@@ -8203,7 +8203,7 @@
  inshore ( meanings=3 glosses=2 ADJECTIVE ADVERB ADJECTIVE_NORMAL ADJECTIVE_NOT_PREDICATE COMMON2 COMMON1 posdefault:ADJECTIVE posdefault:ADVERB ) 
     inshore~1az close to a shore
     onshore~2a 
-    inshore~3bz toward the shore
+    inshore~3z toward the shore
  illogical ( meanings=3 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
     garbled~1a 
     unlogical~1az lacking in correct logical relation
@@ -8236,7 +8236,7 @@
     incommensurable~2az impossible to measure or compare in value or size or excellence
  inveterate ( meanings=2 glosses=2 ADJECTIVE ADVERB ADJECTIVE_NORMAL ADJECTIVE_NOT_PREDICATE COMMON2 GRADE5_6 posdefault:ADJECTIVE ) 
     chronic~2az habitual
-    chronically~2bz in a habitual and longstanding manner
+    chronically~2z in a habitual and longstanding manner
  idiosyncratic ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
     idiosyncratic~1az peculiar to the individual
     idiosyncratic~2az 
@@ -8568,7 +8568,7 @@
  infra_dig ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL CONDITIONAL_IDIOM ADJECTIVE_ONLY_PREDICATE  poscondition=?=A ) 
     infra_dig~1az 
  infra ( meanings=1 ADVERB COMMON2 COMMON1 ) 
-    below~4b 
+    below~4z 
  industrious ( meanings=3 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ADJECTIVE_GOOD_SUBJECT_COMPLEMENT ) 
     hardworking~1a 
     energetic~2a 
@@ -8627,7 +8627,7 @@
     innumerate~1az lacking knowledge and understanding of mathematical concepts and methods
  in_effect ( meanings=2 ADJECTIVE ADVERB ADJECTIVE_NORMAL ADJECTIVE_ONLY_PREDICATE ADJECTIVE_NOT_PREDICATE ) 
     effective~3a 
-    effectively~1b 
+    effectively~1z 
  in_force ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL CONDITIONAL_IDIOM ADJECTIVE_ONLY_PREDICATE  poscondition=?=A ) 
     in_effect~1a 
  in_operation ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL CONDITIONAL_IDIOM ADJECTIVE_ONLY_PREDICATE  poscondition=?=A ) 
@@ -8776,8 +8776,8 @@
  inward ( meanings=4 glosses=1 ADJECTIVE ADVERB ADJECTIVE_NORMAL ADJECTIVE_NOT_PREDICATE COMMON4 posdefault:ADJECTIVE ) 
     inward~1az relating to or existing in the mind or thoughts
     inbound~1a 
-    inwards~1b 
-    in~4b 
+    inwards~1z 
+    in~4z 
  indwelling ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:VERB ) 
     indwelling~1az existing or residing as an inner activating spirit or force or principle
  in-bounds ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL ) 
@@ -9182,12 +9182,12 @@
     invitatory~1az conveying an invitation
  in_vitro ( meanings=3 glosses=2 ADJECTIVE ADVERB ADJECTIVE_NORMAL ADJECTIVE_NOT_PREDICATE posdefault:ADVERB ) 
     ex_vivo~1az in an artificial environment outside the living organism
-    ex_vivo~2bz in an artificial environment outside the living organism
-    in_vitro~3bz 
+    ex_vivo~2z in an artificial environment outside the living organism
+    in_vitro~3z 
  in_vivo ( meanings=3 glosses=2 ADJECTIVE ADVERB ADJECTIVE_NORMAL ADJECTIVE_NOT_PREDICATE posdefault:ADVERB ) 
     in_vivo~1az within a living organism
-    in_vivo~2bz in the living organism
-    in_vivo~3bz 
+    in_vivo~2z in the living organism
+    in_vivo~3z 
  ironed ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:VERB ) 
     ironed~1az smoothed with a hot iron
  isotropic ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
@@ -9594,7 +9594,7 @@
     unsatiable~1az impossible to satisfy
  incognito ( meanings=2 glosses=2 ADJECTIVE ADVERB ADJECTIVE_NORMAL ADJECTIVE_ONLY_PREDICATE COMMON2 COMMON1 posdefault:ADVERB ) 
     incognito~1az with your identity concealed
-    incognito~2bz without revealing one's identity
+    incognito~2z without revealing one's identity
  indicatory ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON1 ) 
     revelatory~2a 
  interchurch ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON1 ) 
@@ -9687,7 +9687,7 @@
     iatrogenic~1az induced by a physician's words or therapy
  in_writing ( meanings=2 glosses=1 ADJECTIVE ADVERB ADJECTIVE_NORMAL ADJECTIVE_ONLY_PREDICATE ADJECTIVE_NOT_PREDICATE ) 
     graphical~1a 
-    on_paper~1bz as written or printed
+    on_paper~1z as written or printed
  ill-fed ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL posdefault:ADJECTIVE ) 
     underfed~1a 
  irritative ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:ADJECTIVE ) 
@@ -9752,7 +9752,7 @@
     hard_put~1a 
  inside-out ( meanings=2 ADJECTIVE ADVERB ADJECTIVE_NORMAL ADJECTIVE_ONLY_PREDICATE posdefault:ADVERB ) 
     wrong-side-out~1a 
-    inside-out~2bz 
+    inside-out~2z 
  in_agreement ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL CONDITIONAL_IDIOM ADJECTIVE_ONLY_PREDICATE  poscondition=?=A ) 
     agreed~1az 
  incorporate ( meanings=5 glosses=3 VERB_PRESENT VERB_INFINITIVE VERB ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:VERB VERB_DIRECTOBJECT VERB_NOOBJECT ) 
@@ -9767,7 +9767,7 @@
     up~7a 
  in_the_lead ( meanings=2 ADJECTIVE ADVERB ADJECTIVE_NORMAL ADJECTIVE_NOT_PREDICATE ) 
     leading~6a 
-    ahead~5b 
+    ahead~5z 
  ill-used ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL ) 
     exploited~2a 
  inutile ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:ADJECTIVE ) 
@@ -9972,7 +9972,7 @@
     insulted~2az 
  irrespective ( meanings=2 ADJECTIVE ADVERB ADJECTIVE_NORMAL ADJECTIVE_NOT_PREDICATE COMMON4 posdefault:ADJECTIVE ) 
     irrespective~1az 
-    disregardless~1b 
+    disregardless~1z 
  iabsolute ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL ) 
     iabsolute~1az 
  ichthyophagous ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON1 ) 
@@ -10179,1163 +10179,1163 @@
     irritate~2vz excite to some characteristic action or condition, such as motion, contraction, or nervous impulse, by the application of a stimulus
     annoy~1v 
  immensely ( meanings=1 glosses=1 ADVERB COMMON4 posdefault:ADVERB ) 
-    vastly~1bz to an exceedingly great extent or degree
+    vastly~1z to an exceedingly great extent or degree
  insignificantly ( meanings=3 glosses=2 ADVERB COMMON2 posdefault:ADVERB ) 
-    insignificantly~1bz not to a significant degree or amount
-    insignificantly~2bz in an insignificant manner
-    insignificantly~3bz 
+    insignificantly~1z not to a significant degree or amount
+    insignificantly~2z in an insignificant manner
+    insignificantly~3z 
  imperfectly ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    amiss~2bz in an imperfect or faulty way
+    amiss~2z in an imperfect or faulty way
  isotropically ( meanings=2 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    isotropically~1bz in an isotropic manner
-    isotropically~2bz 
+    isotropically~1z in an isotropic manner
+    isotropically~2z 
  intimately ( meanings=2 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    well~21b 
-    nearly~2b 
+    well~21z 
+    nearly~2z 
  incessantly ( meanings=2 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    perpetually~1b 
-    continuously~2b 
+    perpetually~1z 
+    continuously~2z 
  invariably ( meanings=1 ADVERB COMMON4 posdefault:ADVERB ) 
-    constantly~2b 
+    constantly~2z 
  in_some_way ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    someways~1b 
+    someways~1z 
  in_some_manner ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    somehow~1bz 
+    somehow~1z 
  in_any_case ( meanings=2 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    anyhow~1b 
-    besides~1b 
+    anyhow~1z 
+    besides~1z 
  in_any_event ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    at_any_rate~1b 
+    at_any_rate~1z 
  incredibly ( meanings=2 ADVERB COMMON4 posdefault:ADVERB ) 
-    fabulously~1b 
-    unbelievably~2b 
+    fabulously~1z 
+    unbelievably~2z 
  instantaneously ( meanings=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    instantly~1b 
+    instantly~1z 
  instantly ( meanings=2 glosses=1 ADVERB COMMON4 GRADE3_4 posdefault:ADVERB ) 
-    in_a_flash~1bz without any delay
-    straightaway~3b 
+    in_a_flash~1z without any delay
+    straightaway~3z 
  in_a_flash ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    outright~2b 
+    outright~2z 
  immoderately ( meanings=2 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    unreasonably~1b 
-    immoderately~2bz without moderation
+    unreasonably~1z 
+    immoderately~2z without moderation
  intrinsically ( meanings=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    as_such~1b 
+    as_such~1z 
  in_and_of_itself ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    intrinsically~1bz 
+    intrinsically~1z 
  in_spades ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    decidedly~1b 
+    decidedly~1z 
  indeed ( meanings=3 glosses=2 ADVERB PREDETERMINER COMMON4 COMMON1 KINDERGARTEN posdefault:ADVERB ) 
-    indeed~1bz an expression of surprise or skepticism or irony etc.
-    so~2bz in truth 
+    indeed~1z an expression of surprise or skepticism or irony etc.
+    so~2z in truth 
     indeed~3z 
  in_the_lurch ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    in_the_lurch~1bz 
+    in_the_lurch~1z 
  in_truth ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    truly~2b 
+    truly~2z 
  in_utero ( meanings=2 glosses=1 ADVERB PREPOSITION ) 
-    in_utero~1bz in the uterus
+    in_utero~1z in the uterus
     in_utero~2z 
  in_vacuo ( meanings=3 glosses=2 ADVERB PREPOSITION ) 
-    in_vacuo~1bz in a vacuum
-    in_vacuo~2bz in isolation and without reference to anything else
+    in_vacuo~1z in a vacuum
+    in_vacuo~2z in isolation and without reference to anything else
     in_vacuo~3z 
  in_the_way ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    in_someone_'s_way~1b 
+    in_someone_'s_way~1z 
  in_someone_'s_way ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    in_the_way~1bz 
+    in_the_way~1z 
  in_general ( meanings=2 ADVERB PREPOSITION posdefault:ADVERB ) 
-    generally~1b 
+    generally~1z 
     in_general~2z 
  in_the_main ( meanings=2 ADVERB CONDITIONAL_IDIOM posdefault:ADVERB  poscondition=?=R ) 
-    in_general~1b 
-    mainly~1bz 
+    in_general~1z 
+    mainly~1z 
  if_not ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    if_not~1bz 
+    if_not~1z 
  if ( meanings=1 CONJUNCTION_SUBORDINATE COMMON4 COMMON2 COMMON1 KINDERGARTEN posdefault:PREPOSITION ) 
     if~1z 
  insanely ( meanings=2 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    madly~1b 
-    dementedly~1b 
+    madly~1z 
+    dementedly~1z 
  inordinately ( meanings=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    extraordinarily~1b 
+    extraordinarily~1z 
  in_the_end ( meanings=2 ADVERB CONDITIONAL_IDIOM  poscondition=?N!N=R ) 
-    ultimately~1b 
-    in_the_long_run~1b 
+    ultimately~1z 
+    in_the_long_run~1z 
  immediately ( meanings=3 glosses=2 ADVERB COMMON4 COMMON1 posdefault:ADVERB ) 
-    instantly~2b 
-    immediately~2bz near or close by
-    immediately~3bz bearing an immediate relation
+    instantly~2z 
+    immediately~2z near or close by
+    immediately~3z bearing an immediate relation
  indefatigably ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    inexhaustibly~1bz with indefatigable energy
+    inexhaustibly~1z with indefatigable energy
  inexhaustibly ( meanings=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    tirelessly~1b 
+    tirelessly~1z 
  intolerably ( meanings=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    unacceptably~1b 
+    unacceptably~1z 
  in_the_least ( meanings=2 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    the_least_bit~1b 
-    even_a_little~1b 
+    the_least_bit~1z 
+    even_a_little~1z 
  indirectly ( meanings=1 glosses=1 ADVERB COMMON4 posdefault:ADVERB ) 
-    indirectly~1bz not in a forthright manner
+    indirectly~1z not in a forthright manner
  indigenously ( meanings=2 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    indigenously~1bz in an indigenous manner
-    indigenously~2bz 
+    indigenously~1z in an indigenous manner
+    indigenously~2z 
  individualistically ( meanings=1 glosses=1 ADVERB COMMON1 ) 
-    individualistically~1bz in an individualistic manner
+    individualistically~1z in an individualistic manner
  intractably ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    intractably~1bz in an intractable manner
+    intractably~1z in an intractable manner
  increasingly ( meanings=1 ADVERB COMMON4 COMMON1 posdefault:ADVERB ) 
-    progressively~1b 
+    progressively~1z 
  inscriptively ( meanings=1 glosses=1 ADVERB ) 
-    inscriptively~1bz by means of an inscription
+    inscriptively~1z by means of an inscription
  inscrutably ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    inscrutably~1bz in an inscrutable manner
+    inscrutably~1z in an inscrutable manner
  insecticidally ( meanings=2 glosses=1 ADVERB COMMON1 ) 
-    insecticidally~1bz by means of an insecticide
-    insecticidally~2bz 
+    insecticidally~1z by means of an insecticide
+    insecticidally~2z 
  insensately ( meanings=1 glosses=1 ADVERB COMMON1 ) 
-    insensately~1bz in an insensate manner
+    insensately~1z in an insensate manner
  intentionally ( meanings=1 glosses=1 ADVERB COMMON4 posdefault:ADVERB ) 
-    by_design~1bz with intention
+    by_design~1z with intention
  instead ( meanings=3 glosses=2 ADVERB PREPOSITION COMMON4 COMMON1 KINDERGARTEN posdefault:ADVERB ) 
-    or_else~1bz in place of, or as an alternative to
-    rather~3bz on the contrary
+    or_else~1z in place of, or as an alternative to
+    rather~3z on the contrary
     instead~3z 
  in_all ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?[NP]=<pd?=R ) 
-    all_told~1b 
+    all_told~1z 
  in_the_meantime ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    meantime~2b 
+    meantime~2z 
  in_conclusion ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    lastly~1b 
+    lastly~1z 
  inattentively ( meanings=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    abstractedly~1b 
+    abstractedly~1z 
  in_front ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    ahead~2b 
+    ahead~2z 
  indiscriminately ( meanings=2 glosses=2 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    every_which_way~1bz in a random manner
-    promiscuously~2bz in an indiscriminate manner
+    every_which_way~1z in a random manner
+    promiscuously~2z in an indiscriminate manner
  in_a_heartfelt_way ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    dearly~3bz 
+    dearly~3z 
  in_a_higher_place ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    higher_up~1b 
+    higher_up~1z 
  in_the_bargain ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    into_the_bargain~1b 
+    into_the_bargain~1z 
  into_the_bargain ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    in_the_bargain~1bz 
+    in_the_bargain~1z 
  into ( meanings=1 PARTICLE PREPOSITION COMMON4 COMMON2 COMMON1 KINDERGARTEN posdefault:PREPOSITION ) 
     into~1z 
  inquisitively ( meanings=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    interrogatively~1b 
+    interrogatively~1z 
  interrogatively ( meanings=2 glosses=2 ADVERB COMMON1 posdefault:ADVERB ) 
-    curiously~2bz with curiosity
-    interrogatively~2bz in a questioning format
+    curiously~2z with curiosity
+    interrogatively~2z in a questioning format
  in_two_ways ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    doubly~2bz 
+    doubly~2z 
  intricately ( meanings=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    in_an_elaborate_way~1b 
+    in_an_elaborate_way~1z 
  in_an_elaborate_way ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    elaborately~1bz 
+    elaborately~1z 
  impermissibly ( meanings=1 glosses=1 ADVERB COMMON2 ) 
-    impermissibly~1bz not permissibly
+    impermissibly~1z not permissibly
  in_perpetuity ( meanings=2 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    in_perpetuity~1bz 
-    in_perpetuity~2bz 
+    in_perpetuity~1z 
+    in_perpetuity~2z 
  intently ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    intently~1bz with strained or eager attention
+    intently~1z with strained or eager attention
  inconclusively ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    inconclusively~1bz not conclusively
+    inconclusively~1z not conclusively
  intradermally ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    intradermally~1bz into the skin
+    intradermally~1z into the skin
  intramuscularly ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    intramuscularly~1bz in an intramuscular way
+    intramuscularly~1z in an intramuscular way
  into_the_wind ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    upwind~2b 
+    upwind~2z 
  insofar ( meanings=2 ADVERB COMMON2 COMMON1 posdefault:PREPOSITION ) 
-    to_that_extent~1b 
-    insofar~2bz 
+    to_that_extent~1z 
+    insofar~2z 
  in_so_far ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    insofar~1b 
+    insofar~1z 
  initially ( meanings=1 glosses=1 ADVERB COMMON4 posdefault:ADVERB ) 
-    ab_initio~1bz at the beginning
+    ab_initio~1z at the beginning
  in_spite_of_appearance ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    deep_down~1b 
+    deep_down~1z 
  in_a_broad_way ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    at_large~2bz 
+    at_large~2z 
  irresponsibly ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    irresponsibly~1bz in an irresponsible manner
+    irresponsibly~1z in an irresponsible manner
  in_that_location ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    at_that_place~1bz 
+    at_that_place~1z 
  in_that_respect ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    there~3b 
+    there~3z 
  indoors ( meanings=1 ADVERB COMMON4 posdefault:ADVERB ) 
-    inside~9b 
+    inside~9z 
  internationally ( meanings=1 glosses=1 ADVERB COMMON4 posdefault:ADVERB ) 
-    internationally~1bz throughout the world
+    internationally~1z throughout the world
  inevitably ( meanings=2 ADVERB COMMON4 posdefault:ADVERB ) 
-    necessarily~1b 
-    inescapably~1b 
+    necessarily~1z 
+    inescapably~1z 
  inorganically ( meanings=1 glosses=1 ADVERB COMMON1 ) 
-    inorganically~1bz not involving carbon compounds
+    inorganically~1z not involving carbon compounds
  in_concert ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    together~4b 
+    together~4z 
  in_on ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    in_on~1bz 
+    in_on~1z 
  irregardless ( meanings=1 glosses=1 ADVERB COMMON2 ) 
-    irregardless~1bz regardless
+    irregardless~1z regardless
  in_one_case ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    one_time~1b 
+    one_time~1z 
  inconsistently ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    inconsistently~1bz without showing consistency
+    inconsistently~1z without showing consistency
  in_apposition ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    appositively~1bz 
+    appositively~1z 
  ideographically ( meanings=1 glosses=1 ADVERB COMMON1 ) 
-    ideographically~1bz in an idiographic manner
+    ideographically~1z in an idiographic manner
  idyllically ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    idyllically~1bz in an idyllic manner
+    idyllically~1z in an idyllic manner
  industrially ( meanings=2 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    industrially~1bz by industrial means
-    industrially~2bz 
+    industrially~1z by industrial means
+    industrially~2z 
  injuriously ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    injuriously~1bz in an injurious manner
+    injuriously~1z in an injurious manner
  irrevocably ( meanings=2 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    irrevocably~1bz in an irrevocable manner
-    irrevocably~2bz 
+    irrevocably~1z in an irrevocable manner
+    irrevocably~2z 
  in_fiscal_matters ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    fiscally~1bz 
+    fiscally~1z 
  in_person ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    personally~2b 
+    personally~2z 
  infernally ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    hellishly~1bz extremely
+    hellishly~1z extremely
  interracially ( meanings=1 glosses=1 ADVERB COMMON1 ) 
-    interracially~1bz by race
+    interracially~1z by race
  in_the_first_place ( meanings=2 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    primarily~2bz 
-    earlier~3b 
+    primarily~2z 
+    earlier~3z 
  in_all_likelihood ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    likely~6b 
+    likely~6z 
  in_all_probability ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    in_all_likelihood~1b 
+    in_all_likelihood~1z 
  intensively ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    intensively~1bz in an intensive manner
+    intensively~1z in an intensive manner
  inappropriately ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    unsuitably~1bz in an inappropriate manner
+    unsuitably~1z in an inappropriate manner
  inalienably ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    inalienably~1bz in an inalienable manner
+    inalienably~1z in an inalienable manner
  imperially ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    imperially~1bz in an imperial manner
+    imperially~1z in an imperial manner
  incestuously ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    incestuously~1bz by incest
+    incestuously~1z by incest
  inconceivably ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    inconceivably~1bz to an inconceivable degree
+    inconceivably~1z to an inconceivable degree
  insistently ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    insistently~1bz in an insistent manner
+    insistently~1z in an insistent manner
  institutionally ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    institutionally~1bz by an institution
+    institutionally~1z by an institution
  insufficiently ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    insufficiently~1bz to an insufficient degree
+    insufficiently~1z to an insufficient degree
  in_hand ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    in_hand~1bz 
+    in_hand~1z 
  in_a_way ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    in_a_way~1bz 
+    in_a_way~1z 
  in_fact ( meanings=1 ADVERB CONDITIONAL_IDIOM KINDERGARTEN posdefault:ADVERB  poscondition=?=R ) 
-    as_a_matter_of_fact~1bz 
+    as_a_matter_of_fact~1z 
  in_point_of_fact ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    in_fact~1b 
+    in_fact~1z 
  in_reality ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    actually~1b 
+    actually~1z 
  in_toto ( meanings=1 ADVERB CONDITIONAL_IDIOM posdefault:ADVERB  poscondition=?=R ) 
-    in_toto~1bz 
+    in_toto~1z 
  in_absentia ( meanings=1 ADVERB CONDITIONAL_IDIOM posdefault:ADVERB  poscondition=?=R ) 
-    in_absentia~1bz 
+    in_absentia~1z 
  illegally ( meanings=1 glosses=1 ADVERB COMMON4 posdefault:ADVERB ) 
-    lawlessly~1bz in an illegal manner
+    lawlessly~1z in an illegal manner
  illicitly ( meanings=2 ADVERB COMMON2 posdefault:ADVERB ) 
-    illegally~1b 
-    illegitimately~2b 
+    illegally~1z 
+    illegitimately~2z 
  incidentally ( meanings=2 glosses=2 ADVERB COMMON2 COMMON1 KINDERGARTEN posdefault:ADVERB ) 
-    apropos~2bz introducing a different topic
-    accidentally~3bz of a minor or subordinate nature
+    apropos~2z introducing a different topic
+    accidentally~3z of a minor or subordinate nature
  incompletely ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    incompletely~1bz not to a full degree or extent
+    incompletely~1z not to a full degree or extent
  in_public ( meanings=1 ADVERB CONDITIONAL_IDIOM posdefault:ADVERB  poscondition=?=R ) 
-    publicly~1b 
+    publicly~1z 
  in_private ( meanings=1 ADVERB CONDITIONAL_IDIOM posdefault:ADVERB  poscondition=?=R ) 
-    in_camera~1bz 
+    in_camera~1z 
  in_camera ( meanings=1 ADVERB CONDITIONAL_IDIOM posdefault:ADVERB  poscondition=?=R ) 
-    privately~1b 
+    privately~1z 
  in_great_confusion ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    topsy-turvy~2bz 
+    topsy-turvy~2z 
  in_circles ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    in_circles~1bz 
+    in_circles~1z 
  in_a_pig_'s_eye ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    in_a_pig_'s_eye~1bz 
+    in_a_pig_'s_eye~1z 
  in_case ( meanings=3 ADVERB CONJUNCTION_SUBORDINATE KINDERGARTEN posdefault:PREPOSITION ) 
-    just_in_case~1b 
+    just_in_case~1z 
     in_case~2z 
     in_case~3z 
  in_cold_blood ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    coldly~1bz 
+    coldly~1z 
  in_earnest ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    earnestly~1b 
+    earnestly~1z 
  in_due_course ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    in_due_time~1b 
+    in_due_time~1z 
  in_due_season ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    when_the_time_comes~1b 
+    when_the_time_comes~1z 
  in_good_time ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    in_due_season~1b 
+    in_due_season~1z 
  in_due_time ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    in_good_time~1b 
+    in_good_time~1z 
  in_full_swing ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    in_full_action~1b 
+    in_full_action~1z 
  in_full_action ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    in_full_swing~1bz 
+    in_full_swing~1z 
  in_kind ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    in_a_similar_way~1b 
+    in_a_similar_way~1z 
  in_a_similar_way ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    in_kind~1bz 
+    in_kind~1z 
  in_name ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    in_name_only~1b 
+    in_name_only~1z 
  in_name_only ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    in_name~1bz 
+    in_name~1z 
  in_no_time ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    in_no_time~1bz 
+    in_no_time~1z 
  in_passing ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    en_passant~2b 
+    en_passant~2z 
  in_practice ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    in_practice~1bz 
+    in_practice~1z 
  in_secret ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    on_the_Q.T.~1b 
+    on_the_Q.T.~1z 
  in_short_order ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    in_short_order~1bz 
+    in_short_order~1z 
  inside_out ( meanings=2 ADVERB CONDITIONAL_IDIOM posdefault:ADVERB  poscondition=?=R ) 
-    inside_out~1bz 
-    inside_out~2bz 
+    inside_out~1z 
+    inside_out~2z 
  in_the_air ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    in_everyone_'s_thoughts~1b 
+    in_everyone_'s_thoughts~1z 
  in_everyone_'s_thoughts ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    in_the_air~1bz 
+    in_the_air~1z 
  in_the_beginning ( meanings=2 ADVERB CONDITIONAL_IDIOM  poscondition=?N!N=R ) 
-    originally~2b 
-    primitively~2bz 
+    originally~2z 
+    primitively~2z 
  in_the_long_run ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    in_the_end~2bz 
+    in_the_end~2z 
  in_the_nick_of_time ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    just_in_time~1bz 
+    just_in_time~1z 
  in_the_same_breath ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    in_the_same_breath~1bz 
+    in_the_same_breath~1z 
  in_vain ( meanings=1 ADVERB CONDITIONAL_IDIOM posdefault:ADVERB  poscondition=?=R ) 
-    vainly~1bz 
+    vainly~1z 
  impatiently ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    impatiently~1bz with impatience
+    impatiently~1z with impatience
  inversely ( meanings=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    reciprocally~1b 
+    reciprocally~1z 
  intemperately ( meanings=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    hard~23b 
+    hard~23z 
  in_other_words ( meanings=1 ADVERB CONDITIONAL_IDIOM KINDERGARTEN  poscondition=?=R ) 
-    put_differently~1bz 
+    put_differently~1z 
  in_turn ( meanings=2 ADVERB PREPOSITION posdefault:ADVERB ) 
-    successively~1b 
+    successively~1z 
     in_turn~2z 
  independently ( meanings=2 glosses=2 ADVERB COMMON4 posdefault:ADVERB ) 
-    independently~1bz on your own
-    severally~3bz apart from others
+    independently~1z on your own
+    severally~3z apart from others
  inconsiderately ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    inconsiderately~1bz without consideration
+    inconsiderately~1z without consideration
  impeccably ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    impeccably~1bz flawlessly
+    impeccably~1z flawlessly
  irrationally ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    irrationally~1bz in an irrational manner
+    irrationally~1z in an irrational manner
  incompetently ( meanings=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    displaying_incompetence~1b 
+    displaying_incompetence~1z 
  informally ( meanings=2 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    informally~1bz without formality
-    colloquially~1b 
+    informally~1z without formality
+    colloquially~1z 
  irritably ( meanings=2 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    irritably~1bz in an irritable manner
-    testily~1b 
+    irritably~1z in an irritable manner
+    testily~1z 
  intellectually ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    intellectually~1bz in an intellectual manner
+    intellectually~1z in an intellectual manner
  irregularly ( meanings=4 glosses=3 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    irregularly~1bz in an irregular manner
-    on_an_irregular_basis~1b 
-    irregularly~3bz in an irregular manner
-    irregularly~4bz having an irregular form
+    irregularly~1z in an irregular manner
+    on_an_irregular_basis~1z 
+    irregularly~3z in an irregular manner
+    irregularly~4z having an irregular form
  intensely ( meanings=1 glosses=1 ADVERB COMMON4 posdefault:ADVERB ) 
-    intensely~1bz in an intense manner
+    intensely~1z in an intense manner
  i.e. ( meanings=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    ie~1b 
+    ie~1z 
  ie ( meanings=1 ADVERB COMMON4 COMMON1 posdefault:ADVERB ) 
-    id_est~1b 
+    id_est~1z 
  id_est ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    i.e.~1bz 
+    i.e.~1z 
  ideally ( meanings=1 glosses=1 ADVERB COMMON4 posdefault:ADVERB ) 
-    ideally~1bz in an ideal manner
+    ideally~1z in an ideal manner
  invitingly ( meanings=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    tantalizingly~1b 
+    tantalizingly~1z 
  improperly ( meanings=1 glosses=1 ADVERB COMMON4 posdefault:ADVERB ) 
-    improperly~1bz in an improper way
+    improperly~1z in an improper way
  in_good_order ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    decently~1b 
+    decently~1z 
  in_detail ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    in_detail~1bz 
+    in_detail~1z 
  inconveniently ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    inconveniently~1bz in an inconvenient manner
+    inconveniently~1z in an inconvenient manner
  intrepidly ( meanings=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    fearlessly~1b 
+    fearlessly~1z 
  inanely ( meanings=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    fatuously~1b 
+    fatuously~1z 
  intelligently ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    intelligently~1bz in an intelligent manner
+    intelligently~1z in an intelligent manner
  intelligibly ( meanings=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    clearly~3b 
+    clearly~3z 
  indefinitely ( meanings=1 glosses=1 ADVERB COMMON4 posdefault:ADVERB ) 
-    indefinitely~1bz to an indefinite extent
+    indefinitely~1z to an indefinite extent
  incorrectly ( meanings=2 glosses=1 ADVERB COMMON4 posdefault:ADVERB ) 
-    wrong~12b 
-    falsely~1bz in an incorrect manner
+    wrong~12z 
+    falsely~1z in an incorrect manner
  inaccessibly ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    inaccessibly~1bz in an inaccessible manner
+    inaccessibly~1z in an inaccessible manner
  inaccurately ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    inaccurately~1bz in an inaccurate manner
+    inaccurately~1z in an inaccurate manner
  in_darkness ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    darkly~1bz 
+    darkly~1z 
  in_haste ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    hastily~1b 
+    hastily~1z 
  individually ( meanings=1 glosses=1 ADVERB COMMON4 GRADE5_6 posdefault:ADVERB ) 
-    on_an_individual_basis~1bz apart from others
+    on_an_individual_basis~1z apart from others
  in_both_ears ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    binaurally~1b 
+    binaurally~1z 
  in_one_ear ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    to_one_ear~1b 
+    to_one_ear~1z 
  inescapably ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    unavoidably~1bz by necessity
+    unavoidably~1z by necessity
  ineluctably ( meanings=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    inevitably~2b 
+    inevitably~2z 
  impotently ( meanings=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    unable_to_help~1b 
+    unable_to_help~1z 
  imaginatively ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    imaginatively~1bz with imagination
+    imaginatively~1z with imagination
  indistinctly ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    dimly~1bz in a dim indistinct manner
+    dimly~1z in a dim indistinct manner
  impressively ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    imposingly~1bz in an impressive manner
+    imposingly~1z in an impressive manner
  imposingly ( meanings=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    impressively~1b 
+    impressively~1z 
  interestingly ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    interestingly~1bz in an interesting manner
+    interestingly~1z in an interesting manner
  inauspiciously ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    unpropitiously~1bz in an inauspicious manner
+    unpropitiously~1z in an inauspicious manner
  inexorably ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    inexorably~1bz in an inexorable manner
+    inexorably~1z in an inexorable manner
  impolitely ( meanings=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    discourteously~1b 
+    discourteously~1z 
  in_arrears ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    behindhand~2b 
+    behindhand~2z 
  in_one_'s_own_right ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    in_its_own_right~1bz 
+    in_its_own_right~1z 
  in_his_own_right ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    in_one_'s_own_right~1b 
+    in_one_'s_own_right~1z 
  in_her_own_right ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    in_his_own_right~1b 
+    in_his_own_right~1z 
  in_its_own_right ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    in_her_own_right~1b 
+    in_her_own_right~1z 
  infinitely ( meanings=2 glosses=1 ADVERB COMMON4 posdefault:ADVERB ) 
-    endlessly~1bz continuing forever without end
-    boundlessly~1b 
+    endlessly~1z continuing forever without end
+    boundlessly~1z 
  immeasurably ( meanings=2 glosses=2 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    infinitely~2bz without bounds
-    immeasurably~2bz to an immeasurable degree
+    infinitely~2z without bounds
+    immeasurably~2z to an immeasurable degree
  ineptly ( meanings=2 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    fecklessly~2b 
-    ineptly~2bz in an infelicitous manner
+    fecklessly~2z 
+    ineptly~2z in an infelicitous manner
  inwardly ( meanings=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    inside~11b 
+    inside~11z 
  involuntarily ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    involuntarily~1bz against your will
+    involuntarily~1z against your will
  inefficiently ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    inefficiently~1bz in an inefficient manner
+    inefficiently~1z in an inefficient manner
  in_stride ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    in_good_spirits~1b 
+    in_good_spirits~1z 
  in_good_spirits ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    in_stride~1bz 
+    in_stride~1z 
  inadvertently ( meanings=1 glosses=1 ADVERB COMMON4 posdefault:ADVERB ) 
-    unknowingly~1bz without knowledge or intention
+    unknowingly~1z without knowledge or intention
  inexcusably ( meanings=3 ADVERB COMMON2 posdefault:ADVERB ) 
-    unjustifiably~1b 
-    unpardonably~1b 
-    inexcusably~3bz 
+    unjustifiably~1z 
+    unpardonably~1z 
+    inexcusably~3z 
  immodestly ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    immodestly~1bz without modesty
+    immodestly~1z without modesty
  irresistibly ( meanings=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    overpoweringly~1b 
+    overpoweringly~1z 
  in_the_adjacent_house ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    in_the_adjacent_apartment~1b 
+    in_the_adjacent_apartment~1z 
  in_the_adjacent_apartment ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    next_door~1bz 
+    next_door~1z 
  in_unison ( meanings=2 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    in_unison~1bz 
-    in_chorus~1bz 
+    in_unison~1z 
+    in_chorus~1z 
  in_chorus ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    in_unison~2b 
+    in_unison~2z 
  in_that ( meanings=1 CONJUNCTION_SUBORDINATE KINDERGARTEN posdefault:PREPOSITION ) 
     in_that~1z 
  irresolutely ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    irresolutely~1bz lacking determination or decisiveness
+    irresolutely~1z lacking determination or decisiveness
  in_the_south ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    to_the_south~1b 
+    to_the_south~1z 
  indecently ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    indecently~1bz in an indecent manner
+    indecently~1z in an indecent manner
  in_particular ( meanings=2 ADVERB PREPOSITION posdefault:ADVERB ) 
-    particularly~3b 
+    particularly~3z 
     in_particular~2z 
  instinctively ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    instinctively~1bz as a matter of instinct
+    instinctively~1z as a matter of instinct
  internally ( meanings=1 glosses=1 ADVERB COMMON4 posdefault:ADVERB ) 
-    internally~1bz on or from the inside
+    internally~1z on or from the inside
  in_hiding ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    doggo~1b 
+    doggo~1z 
  ibid. ( meanings=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    ib.~1b 
+    ib.~1z 
  ib. ( meanings=1 ADVERB COMMON2 ) 
-    ibidem~1b 
+    ibidem~1z 
  ibidem ( meanings=1 glosses=1 ADVERB COMMON2 ) 
-    ibid.~1bz in the same place
+    ibid.~1z in the same place
  in_loco_parentis ( meanings=1 ADVERB CONDITIONAL_IDIOM posdefault:ADVERB  poscondition=?=R ) 
-    in_loco_parentis~1bz 
+    in_loco_parentis~1z 
  in_situ ( meanings=1 ADVERB CONDITIONAL_IDIOM posdefault:ADVERB  poscondition=?=R ) 
-    in_place~1b 
+    in_place~1z 
  in_place ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    in_situ~1bz 
+    in_situ~1z 
  inter_alia ( meanings=1 ADVERB CONDITIONAL_IDIOM posdefault:ADVERB  poscondition=?=R ) 
-    inter_alia~1bz 
+    inter_alia~1z 
  ipso_facto ( meanings=1 ADVERB CONDITIONAL_IDIOM posdefault:ADVERB  poscondition=?=R ) 
-    ipso_facto~1bz 
+    ipso_facto~1z 
  in_a_low_voice ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    sotto_voce~1bz 
+    sotto_voce~1z 
  in_tandem ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    tandem~3bz 
+    tandem~3z 
  inwards ( meanings=2 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    inward~3bz toward the center or interior
-    inward~4b 
+    inward~3z toward the center or interior
+    inward~4z 
  in_extremis ( meanings=1 ADVERB CONDITIONAL_IDIOM posdefault:ADVERB  poscondition=?=R ) 
-    in_extremis~1bz 
+    in_extremis~1z 
  in_the_midst ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    midmost~2bz 
+    midmost~2z 
  in_large_quantities ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    wholesale~3b 
+    wholesale~3z 
  inarticulately ( meanings=2 glosses=2 ADVERB COMMON1 posdefault:ADVERB ) 
-    inarticulately~1bz in an inarticulate manner
-    ineloquently~1bz without eloquence
+    inarticulately~1z in an inarticulate manner
+    ineloquently~1z without eloquence
  inaudibly ( meanings=2 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    inaudibly~1bz in an inaudible manner
-    inaudibly~2bz 
+    inaudibly~1z in an inaudible manner
+    inaudibly~2z 
  ingenuously ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    artlessly~1bz in an ingenuous manner
+    artlessly~1z in an ingenuous manner
  inexpertly ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    crudely~2bz in a crude and unskilled manner
+    crudely~2z in a crude and unskilled manner
  importunately ( meanings=1 glosses=1 ADVERB COMMON1 ) 
-    entreatingly~1bz in a beseeching manner
+    entreatingly~1z in a beseeching manner
  imploringly ( meanings=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    beseechingly~1b 
+    beseechingly~1z 
  in_a_beastly_manner ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    bestially~1bz 
+    bestially~1z 
  incautiously ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    carelessly~3bz without caution or prudence
+    carelessly~3z without caution or prudence
  interminably ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    endlessly~3bz all the time
+    endlessly~3z all the time
  inexpensively ( meanings=2 glosses=2 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    cheaply~1bz with little expenditure of money
-    tattily~1bz in a cheap manner
+    cheaply~1z with little expenditure of money
+    tattily~1z in a cheap manner
  incoherently ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    incoherently~1bz in an incoherent manner
+    incoherently~1z in an incoherent manner
  incompatibly ( meanings=1 glosses=1 ADVERB COMMON1 ) 
-    incompatibly~1bz without compatibility
+    incompatibly~1z without compatibility
  in_brief ( meanings=1 ADVERB CONDITIONAL_IDIOM posdefault:ADVERB  poscondition=?=R ) 
-    concisely~1b 
+    concisely~1z 
  in_short ( meanings=1 ADVERB CONDITIONAL_IDIOM posdefault:ADVERB  poscondition=?=R ) 
-    in_brief~1b 
+    in_brief~1z 
  in_a_nutshell ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    in_a_nutshell~1bz 
+    in_a_nutshell~1z 
  inconsequentially ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    inconsequently~1bz lacking consequence
+    inconsequently~1z lacking consequence
  inconsequently ( meanings=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    inconsequentially~1b 
+    inconsequentially~1z 
  improbably ( meanings=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    incredibly~2b 
+    incredibly~2z 
  implausibly ( meanings=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    improbably~1b 
+    improbably~1z 
  incredulously ( meanings=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    unbelievingly~1b 
+    unbelievingly~1z 
  indecisively ( meanings=2 glosses=2 ADVERB COMMON1 posdefault:ADVERB ) 
-    indecisively~1bz without finality
-    indecisively~2bz lacking firmness or resoluteness
+    indecisively~1z without finality
+    indecisively~2z lacking firmness or resoluteness
  in_low_spirits ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    dejectedly~1bz 
+    dejectedly~1z 
  impossibly ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    impossibly~1bz to a degree impossible of achievement
+    impossibly~1z to a degree impossible of achievement
  infectiously ( meanings=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    contagiously~1b 
+    contagiously~1z 
  ignobly ( meanings=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    currishly~1b 
+    currishly~1z 
  indecorously ( meanings=2 glosses=1 ADVERB COMMON1 ) 
-    unbecomingly~1bz without decorousness
-    indecorously~2bz 
+    unbecomingly~1z without decorousness
+    indecorously~2z 
  inoffensively ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    inoffensively~1bz in a not unpleasantly offensive manner
+    inoffensively~1z in a not unpleasantly offensive manner
  incontrovertibly ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    demonstrably~1bz in an obvious and provable manner
+    demonstrably~1z in an obvious and provable manner
  ingloriously ( meanings=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    disgracefully~1b 
+    disgracefully~1z 
  ignominiously ( meanings=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    ingloriously~1b 
+    ingloriously~1z 
  ineffectually ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    ineffectually~1bz in an ineffectual manner
+    ineffectually~1z in an ineffectual manner
  inefficaciously ( meanings=1 glosses=1 ADVERB COMMON1 ) 
-    ineffectively~1bz in an ineffective manner
+    ineffectively~1z in an ineffective manner
  ineffectively ( meanings=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    inefficaciously~1b 
+    inefficaciously~1z 
  inelegantly ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    inelegantly~1bz without elegance
+    inelegantly~1z without elegance
  ineloquently ( meanings=1 ADVERB COMMON1 ) 
-    inarticulately~2b 
+    inarticulately~2z 
  inequitably ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    inequitably~1bz in an inequitable manner
+    inequitably~1z in an inequitable manner
  inadvisably ( meanings=1 ADVERB COMMON1 ) 
-    expediently~1b 
+    expediently~1z 
  inexpediently ( meanings=1 glosses=1 ADVERB COMMON1 ) 
-    inexpediently~1bz in an inexpedient manner
+    inexpediently~1z in an inexpedient manner
  inexpressively ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    inexpressively~1bz without expression
+    inexpressively~1z without expression
  infelicitously ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    infelicitously~1bz in an infelicitous manner
+    infelicitously~1z in an infelicitous manner
  inflexibly ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    inflexibly~1bz in an inflexible manner
+    inflexibly~1z in an inflexible manner
  insultingly ( meanings=2 glosses=2 ADVERB COMMON2 posdefault:ADVERB ) 
-    foully~2bz in an unfair and insulting manner
-    insultingly~2bz in a disrespectful and insulting manner
+    foully~2z in an unfair and insulting manner
+    insultingly~2z in a disrespectful and insulting manner
  insolently ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    insolently~1bz in an insolent manner
+    insolently~1z in an insolent manner
  inhospitably ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    inhospitably~1bz in an inhospitable manner
+    inhospitably~1z in an inhospitable manner
  inhumanely ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    inhumanely~1bz in an inhumane manner
+    inhumanely~1z in an inhumane manner
  icily ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    icily~1bz in a cold and icy manner
+    icily~1z in a cold and icy manner
  identically ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    identically~1bz with complete identity
+    identically~1z with complete identity
  identifiably ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    identifiably~1bz in an identifiable manner
+    identifiably~1z in an identifiable manner
  ideologically ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    ideologically~1bz with respect to ideology
+    ideologically~1z with respect to ideology
  idiomatically ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    idiomatically~1bz in an idiomatic manner
+    idiomatically~1z in an idiomatic manner
  idiotically ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    idiotically~1bz in an idiotic manner
+    idiotically~1z in an idiotic manner
  idly ( meanings=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    lazily~1b 
+    lazily~1z 
  idolatrously ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    idolatrously~1bz in an idolatrous manner
+    idolatrously~1z in an idolatrous manner
  ignorantly ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    ignorantly~1bz in ignorance
+    ignorantly~1z in ignorance
  illegibly ( meanings=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    undecipherably~1b 
+    undecipherably~1z 
  illegitimately ( meanings=2 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    out_of_wedlock~2b 
-    illicitly~2bz in a manner disapproved or not allowed by custom
+    out_of_wedlock~2z 
+    illicitly~2z in a manner disapproved or not allowed by custom
  illogically ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    illogically~1bz in an illogical manner
+    illogically~1z in an illogical manner
  illustriously ( meanings=1 glosses=1 ADVERB COMMON1 ) 
-    illustriously~1bz in an illustrious manner
+    illustriously~1z in an illustrious manner
  immaculately ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    immaculately~1bz in an immaculate manner
+    immaculately~1z in an immaculate manner
  immovably ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    immovably~1bz so as to be incapable of moving
+    immovably~1z so as to be incapable of moving
  impartially ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    impartially~1bz in an impartial manner
+    impartially~1z in an impartial manner
  immorally ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    amorally~1bz without regard for morality
+    amorally~1z without regard for morality
  impassively ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    impassively~1bz in an impassive manner
+    impassively~1z in an impassive manner
  impenitently ( meanings=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    unrepentantly~1b 
+    unrepentantly~1z 
  imperatively ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    peremptorily~1bz in an imperative and commanding manner
+    peremptorily~1z in an imperative and commanding manner
  imperceptibly ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    unnoticeably~1bz in an imperceptible manner or to an imperceptible degree
+    unnoticeably~1z in an imperceptible manner or to an imperceptible degree
  imperiously ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    imperiously~1bz in an imperious manner
+    imperiously~1z in an imperious manner
  impersonally ( meanings=2 glosses=2 ADVERB COMMON2 posdefault:ADVERB ) 
-    impersonally~1bz in an impersonal manner
-    impersonally~2bz without warmth
+    impersonally~1z in an impersonal manner
+    impersonally~2z without warmth
  impertinently ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    impudently~1bz in an impudent or impertinent manner
+    impudently~1z in an impudent or impertinent manner
  impudently ( meanings=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    pertly~1b 
+    pertly~1z 
  impetuously ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    impulsively~1bz in an impulsive or impetuous way
+    impulsively~1z in an impulsive or impetuous way
  impulsively ( meanings=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    impetuously~1b 
+    impetuously~1z 
  impiously ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    impiously~1bz in an impious manner
+    impiously~1z in an impious manner
  impishly ( meanings=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    puckishly~1b 
+    puckishly~1z 
  implicitly ( meanings=2 glosses=2 ADVERB COMMON4 posdefault:ADVERB ) 
-    implicitly~1bz without ever expressing so clearly
-    implicitly~2bz without doubting or questioning
+    implicitly~1z without ever expressing so clearly
+    implicitly~2z without doubting or questioning
  importantly ( meanings=2 glosses=1 ADVERB COMMON4 posdefault:ADVERB ) 
-    importantly~1bz in an important way
-    significantly~2b 
+    importantly~1z in an important way
+    significantly~2z 
  impracticably ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    impracticably~1bz to an impracticable degree
+    impracticably~1z to an impracticable degree
  incisively ( meanings=2 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    precisely~2b 
-    incisively~2bz in an incisive manner
+    precisely~2z 
+    incisively~2z in an incisive manner
  imprecisely ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    inexactly~1bz in an imprecise manner
+    inexactly~1z in an imprecise manner
  inexactly ( meanings=1 ADVERB COMMON1 ) 
-    imprecisely~1b 
+    imprecisely~1z 
  impregnably ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    impregnably~1bz in an impregnable manner
+    impregnably~1z in an impregnable manner
  improvidently ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    improvidently~1bz in an improvident manner
+    improvidently~1z in an improvident manner
  imprudently ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    imprudently~1bz in an imprudent manner
+    imprudently~1z in an imprudent manner
  inadequately ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    inadequately~1bz in an inadequate manner or to an inadequate degree
+    inadequately~1z in an inadequate manner or to an inadequate degree
  incomparably ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    uncomparably~1bz in an incomparable manner or to an incomparable degree
+    uncomparably~1z in an incomparable manner or to an incomparable degree
  incongruously ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    incongruously~1bz in an incongruous manner
+    incongruously~1z in an incongruous manner
  inconspicuously ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    inconspicuously~1bz in a manner intended to avoid attracting attention
+    inconspicuously~1z in a manner intended to avoid attracting attention
  incriminatingly ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    incriminatingly~1bz in an incriminating manner
+    incriminatingly~1z in an incriminating manner
  incurably ( meanings=2 glosses=2 ADVERB COMMON2 posdefault:ADVERB ) 
-    incurably~1bz in a manner impossible to cure
-    incurably~2bz to an incurable degree
+    incurably~1z in a manner impossible to cure
+    incurably~2z to an incurable degree
  indelibly ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    indelibly~1bz in an indelible manner
+    indelibly~1z in an indelible manner
  ineffably ( meanings=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    indescribably~1b 
+    indescribably~1z 
  indescribably ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    unspeakably~1bz to an inexpressible degree
+    unspeakably~1z to an inexpressible degree
  indeterminably ( meanings=1 glosses=1 ADVERB COMMON1 ) 
-    indeterminably~1bz in an indeterminable manner
+    indeterminably~1z in an indeterminable manner
  indifferently ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    indifferently~1bz with indifference
+    indifferently~1z with indifference
  indignantly ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    indignantly~1bz in an indignant manner
+    indignantly~1z in an indignant manner
  indiscreetly ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    indiscreetly~1bz without discretion or wisdom or self-restraint
+    indiscreetly~1z without discretion or wisdom or self-restraint
  indolently ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    indolently~1bz in an indolent manner
+    indolently~1z in an indolent manner
  indubitably ( meanings=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    beyond_a_shadow_of_a_doubt~1b 
+    beyond_a_shadow_of_a_doubt~1z 
  indulgently ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    indulgently~1bz in an indulgent manner
+    indulgently~1z in an indulgent manner
  industriously ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    industriously~1bz in an industrious manner
+    industriously~1z in an industrious manner
  inextricably ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    inextricably~1bz in an inextricable manner
+    inextricably~1z in an inextricable manner
  influentially ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    influentially~1bz exerting influence
+    influentially~1z exerting influence
  informatively ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    instructively~1bz in an informative manner
+    instructively~1z in an informative manner
  instructively ( meanings=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    informatively~1b 
+    informatively~1z 
  infrequently ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    infrequently~1bz not many times
+    infrequently~1z not many times
  ingeniously ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    ingeniously~1bz in an ingenious manner
+    ingeniously~1z in an ingenious manner
  ingratiatingly ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    ingratiatingly~1bz in a flattering and ingratiating manner
+    ingratiatingly~1z in a flattering and ingratiating manner
  inherently ( meanings=1 glosses=1 ADVERB COMMON4 posdefault:ADVERB ) 
-    inherently~1bz in an inherent manner
+    inherently~1z in an inherent manner
  inimitably ( meanings=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    unreproducibly~1b 
+    unreproducibly~1z 
  iniquitously ( meanings=1 glosses=1 ADVERB COMMON1 ) 
-    iniquitously~1bz in an iniquitous manner
+    iniquitously~1z in an iniquitous manner
  innately ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    innately~1bz in an innate manner
+    innately~1z in an innate manner
  innocently ( meanings=2 glosses=2 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    innocently~1bz in a naively innocent manner
-    innocently~2bz in a not unlawful manner
+    innocently~1z in a naively innocent manner
+    innocently~2z in a not unlawful manner
  inopportunely ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    malapropos~2bz at an inconvenient time
+    malapropos~2z at an inconvenient time
  inquiringly ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    enquiringly~1bz in an inquiring manner
+    enquiringly~1z in an inquiring manner
  insatiably ( meanings=2 glosses=2 ADVERB COMMON2 posdefault:ADVERB ) 
-    unsatiably~1bz in an insatiable manner
-    unsatiably~2bz to an insatiable degree
+    unsatiably~1z in an insatiable manner
+    unsatiably~2z to an insatiable degree
  insecurely ( meanings=2 glosses=2 ADVERB COMMON2 posdefault:ADVERB ) 
-    insecurely~1bz in a manner involving risk
-    insecurely~2bz in a tentative and self-conscious manner
+    insecurely~1z in a manner involving risk
+    insecurely~2z in a tentative and self-conscious manner
  insensitively ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    insensitively~1bz in an insensitive manner
+    insensitively~1z in an insensitive manner
  insidiously ( meanings=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    perniciously~2b 
+    perniciously~2z 
  insincerely ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    insincerely~1bz without sincerity
+    insincerely~1z without sincerity
  insinuatingly ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    insinuatingly~1bz in an insinuating manner
+    insinuatingly~1z in an insinuating manner
  insipidly ( meanings=1 glosses=1 ADVERB COMMON1 ) 
-    insipidly~1bz in an insipid manner
+    insipidly~1z in an insipid manner
  insomuch ( meanings=1 glosses=1 ADVERB COMMON2 ) 
-    insomuch~1bz to such an extent or degree
+    insomuch~1z to such an extent or degree
  inspirationally ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    inspirationally~1bz with inspiration
+    inspirationally~1z with inspiration
  insubstantially ( meanings=1 glosses=1 ADVERB COMMON1 ) 
-    impalpably~1bz not substantially
+    impalpably~1z not substantially
  impalpably ( meanings=1 ADVERB COMMON1 ) 
-    insubstantially~1b 
+    insubstantially~1z 
  insuperably ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    insuperably~1bz to an insuperable degree
+    insuperably~1z to an insuperable degree
  interchangeably ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    interchangeably~1bz in an interchangeable manner
+    interchangeably~1z in an interchangeable manner
  intermediately ( meanings=2 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    intermediately~1bz to an intermediate degree
-    intermediately~2bz 
+    intermediately~1z to an intermediate degree
+    intermediately~2z 
  intermittently ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    intermittently~1bz in an intermittent manner
+    intermittently~1z in an intermittent manner
  intolerantly ( meanings=2 glosses=2 ADVERB COMMON1 posdefault:ADVERB ) 
-    illiberally~1bz in a narrow-minded manner
-    intolerantly~2bz in an intolerant manner
+    illiberally~1z in a narrow-minded manner
+    intolerantly~2z in an intolerant manner
  illiberally ( meanings=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    intolerantly~1b 
+    intolerantly~1z 
  intransitively ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    intransitively~1bz in an intransitive manner
+    intransitively~1z in an intransitive manner
  intravenously ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    intravenously~1bz in an intravenous manner
+    intravenously~1z in an intravenous manner
  intuitively ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    intuitively~1bz in an intuitive manner
+    intuitively~1z in an intuitive manner
  inventively ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    inventively~1bz in an inventive manner
+    inventively~1z in an inventive manner
  invidiously ( meanings=1 glosses=1 ADVERB COMMON1 ) 
-    invidiously~1bz in a manner arousing resentment
+    invidiously~1z in a manner arousing resentment
  invincibly ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    invincibly~1bz in an invincible manner
+    invincibly~1z in an invincible manner
  invisibly ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    invisibly~1bz without being seen
+    invisibly~1z without being seen
  irately ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    irately~1bz in an irate manner
+    irately~1z in an irate manner
  ironically ( meanings=2 glosses=2 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    ironically~1bz in an ironic manner
-    ironically~2bz contrary to plan or expectation
+    ironically~1z in an ironic manner
+    ironically~2z contrary to plan or expectation
  irrelevantly ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    irrelevantly~1bz in an irrelevant manner
+    irrelevantly~1z in an irrelevant manner
  irretrievably ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    irretrievably~1bz in an irretrievable manner
+    irretrievably~1z in an irretrievable manner
  irreverently ( meanings=2 glosses=2 ADVERB COMMON2 posdefault:ADVERB ) 
-    irreverently~1bz in an irreverent manner
-    irreverently~2bz without respect
+    irreverently~1z in an irreverent manner
+    irreverently~2z without respect
  irreversibly ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    irreversibly~1bz in an irreversible manner
+    irreversibly~1z in an irreversible manner
  immaturely ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    jejunely~1bz in an immature manner
+    jejunely~1z in an immature manner
  injudiciously ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    injudiciously~1bz in an injudicious manner
+    injudiciously~1z in an injudicious manner
  in_return ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    reciprocally~3b 
+    reciprocally~3z 
  insensibly ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    numbly~1bz in a numb manner
+    numbly~1z in a numb manner
  in_stages ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    piecemeal~3b 
+    piecemeal~3z 
  inseparably ( meanings=2 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    inseparably~1bz without possibility of separation
-    inseparably~2bz 
+    inseparably~1z without possibility of separation
+    inseparably~2z 
  immutably ( meanings=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    unassailably~1b 
+    unassailably~1z 
  irreproachably ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    blamelessly~1bz in an irreproachable and blameless manner
+    blamelessly~1z in an irreproachable and blameless manner
  imminently ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    imminently~1bz in an imminent manner
+    imminently~1z in an imminent manner
  integrally ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    integrally~1bz in an integral manner
+    integrally~1z in an integral manner
  in_principle ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    in_essence~1bz 
+    in_essence~1z 
  in_theory ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    in_principle~1b 
+    in_principle~1z 
  in_essence ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    in_theory~1b 
+    in_theory~1z 
  inaugurally ( meanings=1 glosses=1 ADVERB COMMON1 ) 
-    inaugurally~1bz so as to inaugurate
+    inaugurally~1z so as to inaugurate
  in_common ( meanings=1 ADVERB CONDITIONAL_IDIOM posdefault:ADVERB  poscondition=?=R ) 
-    in_common~1bz 
+    in_common~1z 
  in_full ( meanings=1 ADVERB CONDITIONAL_IDIOM posdefault:ADVERB  poscondition=?=R ) 
-    fully~3b 
+    fully~3z 
  in_flight ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    on_the_wing~1b 
+    on_the_wing~1z 
  immunologically ( meanings=2 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    immunologically~1bz from the point of view of immunology
-    immunologically~2bz 
+    immunologically~1z from the point of view of immunology
+    immunologically~2z 
  irreparably ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    irreparably~1bz in an irreparable manner or to an irreparable degree
+    irreparably~1z in an irreparable manner or to an irreparable degree
  irritatingly ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    irritatingly~1bz in an irritating manner
+    irritatingly~1z in an irritating manner
  in_between ( meanings=2 ADVERB PREPOSITION CONDITIONAL_IDIOM posdefault:PREPOSITION  poscondition=?[NPAd]=p?=R?[NPAd]=p?=R ) 
-    in_between~1bz 
+    in_between~1z 
     in_between~2z 
  intrathecally ( meanings=1 ADVERB COMMON2 ) 
-    intrathecally~1bz 
+    intrathecally~1z 
  intraperitoneally ( meanings=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    intraperitoneally~1bz 
+    intraperitoneally~1z 
  intravascularly ( meanings=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    intravascularly~1bz 
+    intravascularly~1z 
  incisionally ( meanings=1 ADVERB ) 
-    incisionally~1bz 
+    incisionally~1z 
  intra-arterially ( meanings=1 ADVERB posdefault:ADVERB ) 
-    intra-arterially~1bz 
+    intra-arterially~1z 
  infiltratively ( meanings=2 ADVERB ) 
-    infiltratively~1bz 
-    infiltratively~2bz 
+    infiltratively~1z 
+    infiltratively~2z 
  intraarterially ( meanings=2 ADVERB COMMON1 ) 
-    intraarterially~1bz 
-    intraarterially~2bz 
+    intraarterially~1z 
+    intraarterially~2z 
  intraamniotically ( meanings=2 ADVERB ) 
-    intraamniotically~1bz 
-    intraamniotically~2bz 
+    intraamniotically~1z 
+    intraamniotically~2z 
  insertionally ( meanings=2 ADVERB COMMON1 ) 
-    insertionally~1bz 
-    insertionally~2bz 
+    insertionally~1z 
+    insertionally~2z 
  intratypically ( meanings=2 ADVERB ) 
-    intratypically~1bz 
-    intratypically~2bz 
+    intratypically~1z 
+    intratypically~2z 
  intraarticularly ( meanings=2 ADVERB COMMON1 ) 
-    intraarticularly~1bz 
-    intraarticularly~2bz 
+    intraarticularly~1z 
+    intraarticularly~2z 
  in_no_way ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    in_no_way~1bz 
+    in_no_way~1z 
  infrahepatically ( meanings=2 ADVERB ) 
-    infrahepatically~1bz 
-    infrahepatically~2bz 
+    infrahepatically~1z 
+    infrahepatically~2z 
  intralesionally ( meanings=2 ADVERB COMMON1 ) 
-    intralesionally~1bz 
-    intralesionally~2bz 
+    intralesionally~1z 
+    intralesionally~2z 
  immunogenetically ( meanings=2 ADVERB COMMON1 ) 
-    immunogenetically~1bz 
-    immunogenetically~2bz 
+    immunogenetically~1z 
+    immunogenetically~2z 
  inotropically ( meanings=2 ADVERB ) 
-    inotropically~1bz 
-    inotropically~2bz 
+    inotropically~1z 
+    inotropically~2z 
  intrajejunally ( meanings=2 ADVERB posdefault:ADVERB ) 
-    intrajejunally~1bz 
-    intrajejunally~2bz 
+    intrajejunally~1z 
+    intrajejunally~2z 
  infero-posteriorly ( meanings=2 ADVERB ) 
-    infero-posteriorly~1bz 
-    infero-posteriorly~2bz 
+    infero-posteriorly~1z 
+    infero-posteriorly~2z 
  inhibitorily ( meanings=2 ADVERB ) 
-    inhibitorily~1bz 
-    inhibitorily~2bz 
+    inhibitorily~1z 
+    inhibitorily~2z 
  iontophoretically ( meanings=2 ADVERB COMMON1 ) 
-    iontophoretically~1bz 
-    iontophoretically~2bz 
+    iontophoretically~1z 
+    iontophoretically~2z 
  interatomically ( meanings=2 ADVERB ) 
-    interatomically~1bz 
-    interatomically~2bz 
+    interatomically~1z 
+    interatomically~2z 
  intraamnionically ( meanings=2 ADVERB ) 
-    intraamnionically~1bz 
-    intraamnionically~2bz 
+    intraamnionically~1z 
+    intraamnionically~2z 
  intraaortically ( meanings=2 ADVERB ) 
-    intraaortically~1bz 
-    intraaortically~2bz 
+    intraaortically~1z 
+    intraaortically~2z 
  intra-epidermally ( meanings=2 ADVERB ) 
-    intra-epidermally~1bz 
-    intra-epidermally~2bz 
+    intra-epidermally~1z 
+    intra-epidermally~2z 
  intra-cellularly ( meanings=2 ADVERB ) 
-    intra-cellularly~1bz 
-    intra-cellularly~2bz 
+    intra-cellularly~1z 
+    intra-cellularly~2z 
  immunomorphologically ( meanings=2 ADVERB ) 
-    immunomorphologically~1bz 
-    immunomorphologically~2bz 
+    immunomorphologically~1z 
+    immunomorphologically~2z 
  ischemically ( meanings=2 ADVERB COMMON1 ) 
-    ischemically~1bz 
-    ischemically~2bz 
+    ischemically~1z 
+    ischemically~2z 
  intracervically ( meanings=2 ADVERB COMMON1 ) 
-    intracervically~1bz 
-    intracervically~2bz 
+    intracervically~1z 
+    intracervically~2z 
  intraduodenally ( meanings=2 ADVERB COMMON1 ) 
-    intraduodenally~1bz 
-    intraduodenally~2bz 
+    intraduodenally~1z 
+    intraduodenally~2z 
  infero-laterally ( meanings=2 ADVERB ) 
-    infero-laterally~1bz 
-    infero-laterally~2bz 
+    infero-laterally~1z 
+    infero-laterally~2z 
  iconically ( meanings=2 ADVERB COMMON1 posdefault:ADVERB ) 
-    iconically~1bz 
-    iconically~2bz 
+    iconically~1z 
+    iconically~2z 
  intratracheally ( meanings=2 ADVERB COMMON1 ) 
-    intratracheally~1bz 
-    intratracheally~2bz 
+    intratracheally~1z 
+    intratracheally~2z 
  intraepidermally ( meanings=2 ADVERB ) 
-    intraepidermally~1bz 
-    intraepidermally~2bz 
+    intraepidermally~1z 
+    intraepidermally~2z 
  intraportally ( meanings=2 ADVERB COMMON1 ) 
-    intraportally~1bz 
-    intraportally~2bz 
+    intraportally~1z 
+    intraportally~2z 
  immunocyto-chemically ( meanings=2 ADVERB ) 
-    immunocyto-chemically~1bz 
-    immunocyto-chemically~2bz 
+    immunocyto-chemically~1z 
+    immunocyto-chemically~2z 
  isotopically ( meanings=2 ADVERB COMMON2 posdefault:ADVERB ) 
-    isotopically~1bz 
-    isotopically~2bz 
+    isotopically~1z 
+    isotopically~2z 
  intraluminally ( meanings=2 ADVERB COMMON1 posdefault:ADVERB ) 
-    intraluminally~1bz 
-    intraluminally~2bz 
+    intraluminally~1z 
+    intraluminally~2z 
  intraorally ( meanings=2 ADVERB COMMON1 ) 
-    intraorally~1bz 
-    intraorally~2bz 
+    intraorally~1z 
+    intraorally~2z 
  intrasplenically ( meanings=2 ADVERB COMMON1 ) 
-    intrasplenically~1bz 
-    intrasplenically~2bz 
+    intrasplenically~1z 
+    intrasplenically~2z 
  intra-muscularly ( meanings=2 ADVERB posdefault:ADVERB ) 
-    intra-muscularly~1bz 
-    intra-muscularly~2bz 
+    intra-muscularly~1z 
+    intra-muscularly~2z 
  inducibly ( meanings=2 ADVERB COMMON1 ) 
-    inducibly~1bz 
-    inducibly~2bz 
+    inducibly~1z 
+    inducibly~2z 
  intracolonically ( meanings=2 ADVERB ) 
-    intracolonically~1bz 
-    intracolonically~2bz 
+    intracolonically~1z 
+    intracolonically~2z 
  infero-medially ( meanings=2 ADVERB ) 
-    infero-medially~1bz 
-    infero-medially~2bz 
+    infero-medially~1z 
+    infero-medially~2z 
  intrarenally ( meanings=2 ADVERB COMMON1 ) 
-    intrarenally~1bz 
-    intrarenally~2bz 
+    intrarenally~1z 
+    intrarenally~2z 
  intra-venously ( meanings=2 ADVERB ) 
-    intra-venously~1bz 
-    intra-venously~2bz 
+    intra-venously~1z 
+    intra-venously~2z 
  intra-epithelially ( meanings=2 ADVERB ) 
-    intra-epithelially~1bz 
-    intra-epithelially~2bz 
+    intra-epithelially~1z 
+    intra-epithelially~2z 
  immunobiologically ( meanings=2 ADVERB ) 
-    immunobiologically~1bz 
-    immunobiologically~2bz 
+    immunobiologically~1z 
+    immunobiologically~2z 
  iconographically ( meanings=2 ADVERB COMMON1 posdefault:ADVERB ) 
-    iconographically~1bz 
-    iconographically~2bz 
+    iconographically~1z 
+    iconographically~2z 
  isotachophoretically ( meanings=2 ADVERB ) 
-    isotachophoretically~1bz 
-    isotachophoretically~2bz 
+    isotachophoretically~1z 
+    isotachophoretically~2z 
  intra-individually ( meanings=2 ADVERB ) 
-    intra-individually~1bz 
-    intra-individually~2bz 
+    intra-individually~1z 
+    intra-individually~2z 
  intraabdominally ( meanings=2 ADVERB COMMON1 ) 
-    intraabdominally~1bz 
-    intraabdominally~2bz 
+    intraabdominally~1z 
+    intraabdominally~2z 
  intraepithelially ( meanings=2 ADVERB ) 
-    intraepithelially~1bz 
-    intraepithelially~2bz 
+    intraepithelially~1z 
+    intraepithelially~2z 
  intra-operatively ( meanings=2 ADVERB ) 
-    intra-operatively~1bz 
-    intra-operatively~2bz 
+    intra-operatively~1z 
+    intra-operatively~2z 
  immunohistochemically ( meanings=2 ADVERB COMMON2 posdefault:ADVERB ) 
-    immunohistochemically~1bz 
-    immunohistochemically~2bz 
+    immunohistochemically~1z 
+    immunohistochemically~2z 
  idiotypically ( meanings=2 ADVERB COMMON1 ) 
-    idiotypically~1bz 
-    idiotypically~2bz 
+    idiotypically~1z 
+    idiotypically~2z 
  iatrogenically ( meanings=2 ADVERB COMMON1 ) 
-    iatrogenically~1bz 
-    iatrogenically~2bz 
+    iatrogenically~1z 
+    iatrogenically~2z 
  immunospecifically ( meanings=2 ADVERB COMMON1 ) 
-    immunospecifically~1bz 
-    immunospecifically~2bz 
+    immunospecifically~1z 
+    immunospecifically~2z 
  infero-temporally ( meanings=2 ADVERB ) 
-    infero-temporally~1bz 
-    infero-temporally~2bz 
+    infero-temporally~1z 
+    infero-temporally~2z 
  immunohistologically ( meanings=2 ADVERB COMMON1 ) 
-    immunohistologically~1bz 
-    immunohistologically~2bz 
+    immunohistologically~1z 
+    immunohistologically~2z 
  intraindividually ( meanings=2 ADVERB COMMON1 ) 
-    intraindividually~1bz 
-    intraindividually~2bz 
+    intraindividually~1z 
+    intraindividually~2z 
  intergenerically ( meanings=2 ADVERB ) 
-    intergenerically~1bz 
-    intergenerically~2bz 
+    intergenerically~1z 
+    intergenerically~2z 
  intracortically ( meanings=2 ADVERB COMMON1 ) 
-    intracortically~1bz 
-    intracortically~2bz 
+    intracortically~1z 
+    intracortically~2z 
  intraoperatively ( meanings=2 ADVERB COMMON2 posdefault:ADVERB ) 
-    intraoperatively~1bz 
-    intraoperatively~2bz 
+    intraoperatively~1z 
+    intraoperatively~2z 
  immunofluorometrically ( meanings=2 ADVERB ) 
-    immunofluorometrically~1bz 
-    immunofluorometrically~2bz 
+    immunofluorometrically~1z 
+    immunofluorometrically~2z 
  intrahypothalamically ( meanings=2 ADVERB ) 
-    intrahypothalamically~1bz 
-    intrahypothalamically~2bz 
+    intrahypothalamically~1z 
+    intrahypothalamically~2z 
  interferometrically ( meanings=2 ADVERB COMMON1 ) 
-    interferometrically~1bz 
-    interferometrically~2bz 
+    interferometrically~1z 
+    interferometrically~2z 
  intravitally ( meanings=2 ADVERB COMMON1 ) 
-    intravitally~1bz 
-    intravitally~2bz 
+    intravitally~1z 
+    intravitally~2z 
  intra-amnionically ( meanings=2 ADVERB ) 
-    intra-amnionically~1bz 
-    intra-amnionically~2bz 
+    intra-amnionically~1z 
+    intra-amnionically~2z 
  incontestably ( meanings=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    incontestably~1bz 
+    incontestably~1z 
  indeniably ( meanings=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    indeniably~1bz 
+    indeniably~1z 
  immunophenotypically ( meanings=1 ADVERB COMMON1 ) 
-    immunophenotypically~1bz 
+    immunophenotypically~1z 
  interictally ( meanings=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    interictally~1bz 
+    interictally~1z 
  insufferably ( meanings=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    insufferably~1bz 
+    insufferably~1z 
  inadvertantly ( meanings=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    inadvertantly~1bz 
+    inadvertantly~1z 
  ictally ( meanings=1 ADVERB ) 
-    ictally~1bz 
+    ictally~1z 
  immunochemically ( meanings=1 ADVERB ) 
-    immunochemically~1bz 
+    immunochemically~1z 
  inaptly ( meanings=1 ADVERB posdefault:ADVERB ) 
-    inaptly~1bz 
+    inaptly~1z 
  incrementally ( meanings=1 ADVERB posdefault:ADVERB ) 
-    incrementally~1bz 
+    incrementally~1z 
  in_dies ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    in_dies~1bz 
+    in_dies~1z 
  inductively ( meanings=1 ADVERB posdefault:ADVERB ) 
-    inductively~1bz 
+    inductively~1z 
  inertially ( meanings=1 ADVERB posdefault:ADVERB ) 
-    inertially~1bz 
+    inertially~1z 
  in_extenso ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    in_extenso~1bz 
+    in_extenso~1z 
  in_fundo ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    in_fundo~1bz 
+    in_fundo~1z 
  inhomogeneously ( meanings=1 ADVERB posdefault:ADVERB ) 
-    inhomogeneously~1bz 
+    inhomogeneously~1z 
  in_lieu ( meanings=2 ADVERB PREPOSITION ) 
-    in_lieu~1bz 
+    in_lieu~1z 
     in_lieu~2z 
  interactively ( meanings=1 ADVERB posdefault:ADVERB ) 
-    interactively~1bz 
+    interactively~1z 
  interpretatively ( meanings=1 ADVERB posdefault:ADVERB ) 
-    interpretatively~1bz 
+    interpretatively~1z 
  interpretively ( meanings=1 ADVERB posdefault:ADVERB ) 
-    interpretively~1bz 
+    interpretively~1z 
  interstitially ( meanings=1 ADVERB posdefault:ADVERB ) 
-    interstitially~1bz 
+    interstitially~1z 
  intracerebrally ( meanings=1 ADVERB ) 
-    intracerebrally~1bz 
+    intracerebrally~1z 
  intracranially ( meanings=1 ADVERB ) 
-    intracranially~1bz 
+    intracranially~1z 
  intramurally ( meanings=1 ADVERB ) 
-    intramurally~1bz 
+    intramurally~1z 
  intriguingly ( meanings=1 ADVERB posdefault:ADVERB ) 
-    intriguingly~1bz 
+    intriguingly~1z 
  intrusively ( meanings=1 ADVERB posdefault:ADVERB ) 
-    intrusively~1bz 
+    intrusively~1z 
  invasively ( meanings=1 ADVERB posdefault:ADVERB ) 
-    invasively~1bz 
+    invasively~1z 
  invertedly ( meanings=1 ADVERB ) 
-    invertedly~1bz 
+    invertedly~1z 
  ipsilaterally ( meanings=1 ADVERB ) 
-    ipsilaterally~1bz 
+    ipsilaterally~1z 
  isometrically ( meanings=1 ADVERB posdefault:ADVERB ) 
-    isometrically~1bz 
+    isometrically~1z 
  isothermally ( meanings=1 ADVERB posdefault:ADVERB ) 
-    isothermally~1bz 
+    isothermally~1z 
  if_and_only_if ( meanings=1 CONJUNCTION_SUBORDINATE KINDERGARTEN ) 
     if_and_only_if~1z 
  iff ( meanings=1 CONJUNCTION_SUBORDINATE KINDERGARTEN ) 

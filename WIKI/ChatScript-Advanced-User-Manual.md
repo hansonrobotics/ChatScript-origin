@@ -1,6 +1,6 @@
 # ChatScript Advanced User's Manual
 © Bruce Wilcox, gowilcox@gmail.com www.brilligunderstanding.com<br>
-<br>Revision 5/7/2017 cs7.42
+<br>Revision 10/22/2017 cs7.6
 
 * [Review](ChatScript-Advanced-User-Manual.md#review-overview-of-how-cs-works)
 * [Advanced Concepts](ChatScript-Advanced-User-Manual.md#advanced-concepts)
@@ -215,22 +215,46 @@ These are classic functions in that they have arguments and a collection of code
 Their code can generate output and/or make calls to other functions, 
 including invoking topics and rules. Functions are a convenient way to abstract and share code. 
 
-### Function variables
+#### Call by value
 
-ChatScript also has function argument variables, whose names
-always start with `^` and have local (lexical) visibility. 
+    outputmacro: ^myfunction($_argument1 $_argument2)
+        $_argument1 += 1
+
+Use of `$_` variables in the function definition is a call by value. 
+
+All `$_` variables are purely local and cannot be seen outside of the function (or topic) they are used in. 
+This is the preferred way to call, unless you need to write back to your caller.
 
 #### Call by reference
-Here is a sample user function header:
 
-    patternmacro: ^myfunction(^argument1 ^argument2)
+ChatScript also has function argument variables, whose names
+always start with `^` and have local (lexical) visibility but implement
+call by reference. You can assign back to the caller and write onto the variable
+he passed you. 
 
 For outputmacros:
-
-    outputmacro: ^myfunction(^argument1 ^argument2)
+```
+   outputmacro: ^myfunction(^argument1 ^argument2)
         ^argument1 += 1
+```
+However, unless you need call by reference (being able to assign to the variable and
+have it affect the caller) you should use call by value
+so that nothing outside your routine can impact it.
 
-An alternate format allows you to put the output code within {}, which is more nicely visualized by some editors.
+Patternmacros, however, do not normally ever write onto their arguments,
+so it is not only safe to use function arguments `^argument1`, but 
+necessary since patternmacros are not really functions at all. They 
+merely temporarily paste their code into the pattern stream and so 
+do not save and restore variable values or have locals per se.
+
+```
+patternmacro: ^myfunction(^argument1 ^argument2)
+```
+
+
+You can  mix call by reference and call by value arguments.
+
+An alternate function format allows you to put the output code within {}, which is more nicely visualized by some editors.
 
     outputmacro: ^myfunction(^argument1 ^argument2)
     {
@@ -247,16 +271,6 @@ then the effect of `^argument1 += 1` is as though `$myvar += 1` were done and `$
 
 Of course, had you tried to do `^argument2 += 1` then that would be the illegal `1 += 1` and the assignment would fail.
 
-
-#### Call by value
-
-    outputmacro: ^myfunction($_argument1 $_argument2)
-        $_argument1 += 1
-
-Use of `$_` variables in the function definition is a call by value. 
-
-All `$_` variables are purely local and cannot be seen outside of the function (or topic) they are used in. 
-You can also mix call by reference and call by value arguments.
 
 # ADVANCED CONCEPTS
 
@@ -555,6 +569,14 @@ if all its words are canonical, you can match canonical and noncanonincal forms.
 _"TV show"_ matchs _TV shows_ as well as _TV show_.
 
 
+## Implied concept Sets
+
+When you make a pattern using [] or {} and it only contains words, phrases, And
+concept sets, the system will make an anonymous concept set out of them.
+This allows the system to find the soonest match of any of them. otherwise
+[] and {} take each element in turn and try to find a match, which may be later in 
+the sentence than a later element in the set would match.
+
 ## Dictionary Keyword sets
 
 In ChatScript, WordNet ontologies are invoked by naming the word, a `~`, and the index of
@@ -757,7 +779,7 @@ You can use the logical and bit-relation to test numbers. Any non-zero value pas
 `?` can be used in two ways. As a comparison operator, it allows you to see if the item on
 the left side is a member of a set (or JSON array) on the right. E.g.
 
-    u: ( _~propername?~bands )
+    u: ( _~propername '_0?~bands )
 
 As a standalone, it allows you to ask if a wildcard or variable is in the sentence. E.g.
 
@@ -1058,6 +1080,18 @@ unlike the ones bound to matches from input. So you can use
 
 in a script before any uses of `_bettername`, which now mean `_12`.
 
+Also, although whenever you start to execute a rule's pattern the match variables
+start memorizing at _0, you can change that. All you have to do is 
+something like this:
+```
+u: (^eval(_9 = null)  I love _~meat)
+```
+The act of setting _9 to a value automatically makes the system set
+the next variable, so future memorizations start at _10.  Equivalently,
+there is `^setwildcardindex`
+```
+u: (^setwildcardindex(_10 )  I love _~meat)
+```
 
 ## Precautionary note about `[` `]` and pattern matching retries
 

@@ -2,10 +2,10 @@
  X&P ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  X- ( ) 
  X-Bein ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
- X-Beinen ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=X-Bein 
+ X-Beinen ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=`X-Bein` NN  
  X-Chromosom ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
- X-Chromosomen ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=X-Chromosom 
- X-Chromosoms ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=X-Chromosom 
+ X-Chromosomen ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=`X-Chromosom` NN  
+ X-Chromosoms ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=`X-Chromosom` NN  
  X-Clan ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  X-Dorf ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  X-Form ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
@@ -15,8 +15,8 @@
  X-Pose ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  X-Stadt ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  X-Tal ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
- X-beliebige ( ADJECTIVE ) lemma=X-beliebig 
- X-beliebigen ( ADJECTIVE ) lemma=X-beliebig 
+ X-beliebige ( ADJECTIVE ) lemma=`X-beliebig` ADJA  
+ X-beliebigen ( ADJECTIVE ) lemma=`X-beliebig` ADJA  
  X. ( NOUN NOUN_PROPER_SINGULAR ) 
  XAVER ( NOUN NOUN_PROPER_SINGULAR ) 
  XL- ( ) 
@@ -25,7 +25,7 @@
  XPO-Galerie ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  XR ( NOUN NOUN_PROPER_SINGULAR ) 
  XS- ( ) 
- XXS-Sensoren ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=XXS-Sensor 
+ XXS-Sensoren ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=`XXS-Sensor` NN  
  XY ( NOUN NOUN_PROPER_SINGULAR ) 
  XY- ( ) 
  XY-Chromosomen-Ausstattung ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
@@ -38,7 +38,7 @@
  Xandro ( NOUN NOUN_PROPER_SINGULAR ) 
  Xanthi ( NOUN NOUN_PROPER_SINGULAR ) 
  Xanthippe ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
- Xanthippen ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=Xanthippe 
+ Xanthippen ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=`Xanthippe` NN  
  Xaver ( NOUN NOUN_PROPER_SINGULAR ) 
  Xaver-Ernst-Sportanlage ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  Xaver-F. ( NOUN NOUN_PROPER_SINGULAR ) 
@@ -47,10 +47,10 @@
  Xavier ( NOUN NOUN_PROPER_SINGULAR ) 
  Xaxer ( NOUN NOUN_PROPER_SINGULAR ) 
  Xenia ( NOUN NOUN_PROPER_SINGULAR ) 
- Xenien ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=Xenie|Xenion 
+ Xenien ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=`Xenie|Xenion` NN  
  Xenion ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  Xenios ( NOUN NOUN_PROPER_SINGULAR ) 
- Xeno-Transplantationen ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=Xeno-Transplantation 
+ Xeno-Transplantationen ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=`Xeno-Transplantation` NN  
  Xenofon ( NOUN NOUN_PROPER_SINGULAR ) 
  Xenon ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  Xenon-Kino ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
@@ -62,7 +62,7 @@
  Xhevdet ( NOUN NOUN_PROPER_SINGULAR ) 
  Xhosa- ( ) 
  Xhosa-Reservat ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
- Xhosa-Stammes ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=Xhosa-Stamm 
+ Xhosa-Stammes ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=`Xhosa-Stamm` NN  
  Xiang ( NOUN NOUN_PROPER_SINGULAR ) 
  Xiao ( NOUN NOUN_PROPER_SINGULAR ) 
  Xiao-Hui ( NOUN NOUN_PROPER_SINGULAR ) 
@@ -70,11 +70,11 @@
  Xiaoli ( NOUN NOUN_PROPER_SINGULAR ) 
  Xiaolin ( NOUN NOUN_PROPER_SINGULAR ) 
  Ximena ( NOUN NOUN_PROPER_SINGULAR ) 
- Xin-Strasse ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=Xin-Straße 
+ Xin-Strasse ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=`Xin-Straße` NN  
  Xin-Straße ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  Xin-Yu ( NOUN NOUN_PROPER_SINGULAR ) 
  Xingu-Fluss ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
- Xingu-Fluß ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=Xingu-Fluss 
+ Xingu-Fluß ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=`Xingu-Fluss` NN  
  Xingyue ( NOUN NOUN_PROPER_SINGULAR ) 
  Xinhua-Bericht ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  Xinjiang-Wüste ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
@@ -82,26 +82,21 @@
  Xlaoying ( NOUN NOUN_PROPER_SINGULAR ) 
  Xml ( NOUN NOUN_PROPER_SINGULAR ) 
  Xrisoula ( NOUN NOUN_PROPER_SINGULAR ) 
- Xs ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=X 
+ Xs ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=`X` NN  
  Xt ( NOUN NOUN_PROPER_SINGULAR ) 
  Xuan ( NOUN NOUN_PROPER_SINGULAR ) 
  Xuanlam ( NOUN NOUN_PROPER_SINGULAR ) 
  Xue ( NOUN NOUN_PROPER_SINGULAR ) 
  Xylophon ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
- Xylophone ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=Xylophon 
- Xylophonen ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=Xylophon 
+ Xylophone ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=`Xylophon` NN  
+ Xylophonen ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=`Xylophon` NN  
  Xylophonspieler ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  Xylophonspielerin ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  x- ( ) 
  x-Mal ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  x-beliebig ( ADJECTIVE ) 
- x-beliebige ( ADJECTIVE ) lemma=x-beliebig 
- x-beliebigen ( ADJECTIVE ) lemma=x-beliebig 
- x-beliebiger ( ADJECTIVE ) lemma=x-beliebig 
- x-beliebiges ( ADJECTIVE ) lemma=x-beliebig 
+ x-beliebige ( ADJECTIVE ) lemma=`x-beliebig` ADJA  
+ x-beliebigen ( ADJECTIVE ) lemma=`x-beliebig` ADJA  
+ x-beliebiger ( ADJECTIVE ) lemma=`x-beliebig`x-beliebig` ADJA  ADJD  
+ x-beliebiges ( ADJECTIVE ) lemma=`x-beliebig` ADJA  
  xx- ( ) 
- X-beliebig ( ) 
- XXS-Sensor ( ) 
- Xenie|Xenion ( ) 
- Xeno-Transplantation ( ) 
- Xhosa-Stamm ( ) 

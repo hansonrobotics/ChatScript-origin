@@ -70,8 +70,8 @@
 ~health_adjectives ( little sleeping sickly healthy extinct dying dead alive )
 ~tall_adjectives ( high gangly lanky tall )
 ~short_adjectives ( little low midget short )
-~insult_psychology_adjectives ( wretched worthless wicked vulgar venomous vengeful uptight unsuitable undesirable truculent tiresome thoughtless terrible tacky sulky strange stingy spendthrift snobbish silly selfish ruthless repulsive quarrelsome pathetic obnoxious noisy nasty naive mellow mean malicious lazy lacking ignorant horrible harsh grumpy gruesome greedy foolish filthy evil domineering disturbed disagreeable deranged demonic defective deceitful cruel creepy crazy cowardly combative clumsy careless callous boring boorish 
-    belligerent bad awful arrogant aloof abusive abrupt abrasive )
+~insult_psychology_adjectives ( wretched worthless wicked vulgar venomous vengeful uptight unsuitable undesirable truculent tiresome thoughtless terrible tacky sulky strange stingy spendthrift snobbish selfish ruthless repulsive quarrelsome pathetic obnoxious noisy nasty naive malicious lazy lacking ignorant horrible harsh grumpy gruesome greedy foolish filthy evil domineering disturbed disagreeable deranged demonic defective deceitful cruel creepy crazy cowardly combative clumsy careless callous boring boorish belligerent awful 
+    arrogant aloof abusive abrasive )
 ~intelligence_adjectives ( ~good_intelligence_adjectives ~bad_intelligence_adjectives )
 ~liquids_adjectives ( liquid )
 ~perception_adjectives ( visible invisible fuzzy )
@@ -1423,7 +1423,7 @@
 ~amplifiers ( wings vibrator thesaurus telescope table_lamp surfboard sunlamp stethoscope step_ladder snorkeler snorkel slide_projector projector pole_lamp photograph periscope penlight parachute overhead_projector night_vision_goggle mirror microscope medicine magnifying_glass light_bulb light lens lantern lamp ladder jetpack hearing_aid headphone gyroscope glasses fluorescent_light flipper flashlight encyclopedia dildo dictionary desk_lamp crutch contacts candle blinder binoculars ballast amplifier )
 ~angryevent ( wasteful violent violence uncalled_for stupid stolen stealing spiteful scandalous revolting outrageous outrage injustice hurtful embezzlement disgusting deception cheated_on cheated_me betrayed_me )
 ~animal_kingdoms ANIMATE_BEING ( ~plants ~microlife ~animals )
-~animals PROBABLE_NOUN ANIMATE_BEING ( woman man human hack girl boy bitch ~reptiles ~pet_animals ~mammals ~insects ~fishes ~bird )
+~animals PROBABLE_NOUN ANIMATE_BEING ( ~reptiles ~pet_animals ~mammals ~insects ~fishes ~bird )
 ~microlife ANIMATE_BEING ( ~protista ~monera )
 ~plants ANIMATE_BEING ( wild_flower~1 vascular_plant~1 succulent sporophyte~1 rock_plant~1 plant_family~1 plant phytoplankton~1 perennial~1 houseplant~1 gametophyte~1 flowering_maple~1 flora fern_family~1 epiphytic_plant~1 cryptogam~1 cactus ~fungi ~flowers )
 ~animal_product ( rawhide cowhide animal_product~1 )
@@ -1496,7 +1496,7 @@
     bark_louse bark_beetle bark-louse banded_purple balsam_woolly_aphid bald-faced_hornet backswimmer Automeris_io Australian_cockroach Atticus_atlas atlas_moth assassin_bug Aspidiotus_perniciosus Asiatic_cockroach Asiatic_beetle Asian_tiger_mosquito Asian_longhorned_beetle ascidian_tadpole armyworm army_worm army_cutworm army_ant armored_scale Arilus_cristatus Argyrotaenia_citrana Argiope_aurantia argasid arctiid_moth arctiid Araneus_cavaticus Aranea_diademata arachnoid~1 arachnoid arachnid apple_maggot 
     apple_aphid Apis_mellifera_scutellata Apis_mellifera_adansonii Apis_mellifera Aphrophora_saratogensis Aphis_pomi aphis_lion Aphis_fabae aphid_lion aphid Apatura_iris antlion_fly antlion antler_moth Anthrenus_scrophulariae Anthonomus_grandis Antheraea_polyphemus Antheraea_pernyi Antheraea_mylitta ant_lion ant_cow ant Anoplophora_glabripennis anopheline Anomala_orientalis angoumois_moth angoumois_grain_moth anglewing andrenid andrena Anasa_tristis Anagasta_kuehniella Anabrus_simplex American_dog_tick 
     American_copper American_cockroach American_blight Amazon_ant Alsophila_pometaria almond_moth alkali_bee alderfly alder_fly ailanthus_silkworm Africanized_honey_bee Africanized_bee Aedes_albopictus Aedes_aegypti admiral adelgid Adelges_piceae Adelges_abietis Adalia_bipunctata Actias_luna acridid Acheta_domestica Acheta_assimilis Acherontia_atropos acarus acarine acarid Acanthoscelides_obtectus )
-~mammals PROBABLE_NOUN ANIMATE_BEING ( zoril Ziphiidae Zinjanthropus zebu zebra Zapus_hudsonius Zapodidae Zalophus_lobatus Zalophus_californicus Zalophus_californianus young_mammal~1 young_mammal young_carnivore Yorkshire_Terrier yellowbelly_marmot yellow-throated_marten yearling yak world working_dog workhorse woolly_rhinoceros woolly_monkey woolly_mammoth woolly_indris woodland_caribou woodchuck wood_rat wood_rabbit wood_pussy wood_mouse wood-rat wombat wolverine wolfhound wolf_pup wolf_cub wolf wisent wirehaired_terrier wirehair wire-haired_terrier 
+~mammals PROBABLE_NOUN ANIMATE_BEING ( zoril Ziphiidae Zinjanthropus zebu zebra Zapus_hudsonius Zapodidae Zalophus_lobatus Zalophus_californicus Zalophus_californianus young_mammal~1 young_mammal young_carnivore Yorkshire_Terrier yellowbelly_marmot yellow-throated_marten yearling yak working_dog workhorse woolly_rhinoceros woolly_monkey woolly_mammoth woolly_indris woodland_caribou woodchuck wood_rat wood_rabbit wood_pussy wood_mouse wood-rat wombat wolverine wolfhound wolf_pup wolf_cub wolf wisent wirehaired_terrier wirehair wire-haired_terrier 
     wire-haired_pointing_griffon wire-haired_fox_terrier wildebeest wildcat wild_sheep wild_ox wild_horse wild_goat wild_dog wild_cavy wild_boar wild_ass whitetail_prairie_dog whitetail_jackrabbit whitetail_deer whitetail_antelope_squirrel whitetail whiteface white_wolf white_whale white_tail white_sheep white_rhinoceros white_fox white_elephant white-tailed_jackrabbit white-tailed_deer white-lipped_peccary white-footed_mouse whistling_marmot whistler Whirlaway whippet whelp wheeler wheel_horse wharf_rat 
     whalebone_whale whale wether western_pipistrel western_lowland_gorilla western_grey_squirrel western_gray_squirrel western_chimpanzee western_big-eared_bat West_Highland_white_terrier Welsh_terrier Welsh_springer_spaniel Welsh_pony Welsh_corgi Welsh_Black Welsh Weimaraner weasel waterbuck water_vole water_spaniel water_shrew water_rat water_ox water_dog water_deer water_chevrotain water_buffalo watchdog warthog warrigal warragal warhorse war_horse War_Admiral wapiti walrus wallaby Walking_horse Walker_hound 
     Walker_foxhound Vulpes_vulpes Vulpes_velox Vulpes_macrotis Vulpes_fulva Vombatidae vole vizsla vixen viverrine_mammal viverrine Viverrinae Viverridae Viverricula_malaccensis Viverricula_indica Viverra_zibetha viscacha Virginia_deer vicuna Vicugna_vicugna Vespertilionidae vespertilionid Vespertilio_murinus vespertilian_bat vesper_mouse vervet_monkey vervet varying_hare vaquita vampire_bat valley_pocket_gopher urus Ursus_ursinus Ursus_thibetanus Ursus_middendorffi Ursus_Maritimus Ursus_horribilis Ursus_arctos_syriacus 
@@ -1645,7 +1645,7 @@
 ~xmeasurers ( watch timer thermometer tape_measure straight_edge square spectroscope scientific_instrument~1 ruler rule plumb_bob level gauge egg_timer clock caliper )
 ~artist ( ~sculptor ~painter ~glassblower )
 ~arts ( sing sculpt play~40 paint )
-~assassin PROBABLE_NOUN ( murderer mercenary killer kill hitman hit_man gunman assassin )
+~assassin PROBABLE_NOUN ( murderer mercenary killer hitman hit_man gunman assassin )
 ~astrology_signs ( Virgo Taurus Scorpio Sagittarius Pisces Libra Leo Gemini Capricorn Cancer Aries Aquarius )
 ~astronautics ( spacesuit space_station space_shuttle space_probe NASA launchpad astronautics )
 ~attaches ( ~fasteners )
@@ -1660,7 +1660,7 @@
 ~moisture_words ( wetness wet soaking soaked muggy moist humid flooded dry dried desicated dehydrated dampness damp )
 ~quantity ( ~measurement ~counting_quantity )
 ~shapes ( trigon triangular triangle tetragon straight square spiral spherical sphere septahedron septagon round rotund right_angle rectangular rectangle quadrilateral pyramidal pyramid pentahedron pentagram pentagon parallelogram ovoid ovaloid oval octahedron octagon irregular hexahedron hexagram hexagonal hexagon hendecagon flat enneagon elliptical dodecahedron dodecagon decahedron decagon cylindrical cylinder cuboid cube circular amorphous )
-~sicknesses ( toothache symptom sick plague parasite mute malfunction infection illness ill Fibromyalgia epidemic disease death deafness deaf blind amnesia allergy ailment ~symptom ~mental_illnesses ~diseaselist ~birth_defect )
+~sicknesses ( toothache symptom sick plague parasite mute malfunction infection illness ill Fibromyalgia epidemic disease death deafness ulcer deaf blind amnesia allergy ailment ~symptom ~mental_illnesses ~diseaselist ~birth_defect )
 ~styles ( ~worklist ~social_issues ~role ~religion_kind ~political_system ~philosophy_kind ~musical_genres ~haircut )
 ~authenticity_words ( synthetic real pretend imitation genuine faux fake counterfeit authentic )
 ~auto_dealer ( truck SUV car_dealer car automobile ~vehicle )
@@ -1751,7 +1751,7 @@
 ~carryable ( ~nutrient )
 ~nutrient ( ~vitamin ~herbspice ~food ~beverage )
 ~cashable_item ( treasure money coin cash )
-~cat_breeds PROBABLE_NOUN ANIMATE_BEING ( Toybob tabby siamese Persian Mau maine kitty kitten coon British_Shorthair British_Semi-longhair British_Longhair Brazilian_Shorthair Bombay Birman Bengal Bambino Balinese Australian_Mist Asian_Semi-longhair Asian Arabian_Mau American_Wirehair American_Shorthair American_Bobtail Americal_Curl Aegean Abysinnian )
+~cat_breeds PROBABLE_NOUN ANIMATE_BEING ( Toybob tabby siamese Persian Mau maine kitty kitten coon British_Shorthair British_Semi-longhair British_Longhair Brazilian_Shorthair Bombay Birman Bengal Bambino Balinese Australian_Mist Asian_Semi-longhair Arabian_Mau American_Wirehair American_Shorthair American_Bobtail Americal_Curl Aegean Abysinnian )
 ~category ( type_of type subdivision style_of species sort_of model make_of kinds_of kind_of_stuff kind_of kind grouping genre flavor_of division class_of class category breed_of breed brand )
 ~celestial_body ( world white_dwarf supernova supergiant sun star solar_system shooting_star quasar quark pulsar planet neutron_star moon meteorite meteor galaxy comet celestial_body~1 black_hole black_dwarf asteroid )
 ~celestial_observation ( telescope stargazing planetarium Perseid observatory eclipse constellation )
@@ -1809,7 +1809,7 @@
     Bloomingdale_'s Costco Nordstrom Target Wal-Mart KMart Sears_Roebuck Avatar_Reality Nintendo Sony Priceline Orbitz Expedia at&t AT&T TMobile Quest Verizon SBC_Communications Sprint United_States_Automobile_Association Metropolitan_Life AllState New_York_Life_Insurance Safeway Kroger Whole_Foods Albertsons Albertson_'s Foodland Federal_Express United_Parcel_Service United_States_Postal_Service Yahoo Google AOL_Time_Warner Cisco_Systems Lucent_Technologies Motorola Boeing Lockheed_Martin SAP SAP_Labs 
     Apple International_Business_Machines Hewlett-Packard Dell_Computer Phillip_Morris Victoria_'s_Secret General_Nutrition_Center Borders Barnes_and_Noble The_Body_Shop Origins Sephora Mac_Cosmetics Lush Bayer Pfizer Merck Honda_Motors Hyundai Kia Mazda Nissan_Motors Toyota General_Motors Ford_Motor_Company Oceanit Caterpillar Electronic_Data_Systems Lowes Lowe_'s CVS Walmart Viacom Outfit7 Disney Walt_Disney International_Paper Johnson_and_Johnson Associated_Press Berkshire_Hathaway General_Electric 
     CNN Apple_Computer AOL Oracle Amazon.com Microsoft Intel company )
-~company_groups PROBABLE_NOUN ( partnership guild corporation company association )
+~company_groups PROBABLE_NOUN ( business partnership guild corporation company association )
 ~comparisons ( worst worse various unlike than similarity similar same opposite most more lower like less least higher further different difference compare better best )
 ~compass_directions ( west southwest southeast south northwest northeast north east )
 ~compassdirection ( W SW SE S NW NE N E CNTR )
@@ -2353,7 +2353,7 @@
 ~occupation_insurance PROBABLE_NOUN ( statistician insurance_broker actuary )
 ~occupation_inventor PROBABLE_NOUN ( tinkerer inventor )
 ~occupation_jobless PROBABLE_NOUN ( vagrant unemployed jobless hobo bum )
-~occupation_law PROBABLE_NOUN ( traffic_officer sheriff security_officer policewoman policeman police_officer police patrolman magistrate law judge investigator guard detective correctional_services cop civil_investigator beat_cop bail_agent ~occupation_lawyer )
+~occupation_law PROBABLE_NOUN ( traffic_officer sheriff security_officer policewoman policeman police_officer police patrolman magistrate judge investigator guard detective correctional_services cop civil_investigator beat_cop bail_agent ~occupation_lawyer )
 ~occupation_magic PROBABLE_NOUN ( wizard witch warlock thaumaturgist soothsayer psychic astrologer )
 ~occupation_manager PROBABLE_NOUN ( VP vice_president supervisor project_manager president managing_director manager executive_director director CTO chief_technology_officer chief_financial_officer chief_finance_officer chief_executive_officer Chief_Executive chief CFO CEO boss )
 ~occupation_medical PROBABLE_NOUN ( social_worker social_psychologist shaman medical_doctor funeral_director veterinary_nurse veterinarian surgeon stretcher-bearer speech_therapist radiographer psychometrist psychologist psychiatrist podiatrist plastic_surgeon physiotherapist physiologist physician physical_therapist pharmacist_assistant pharmacist oral_hygienist optometrist optical_technician occupational_therapist nutritionist nurse neuroscientist medical_orthotist_prosthetist masseur language_therapist hospital_porter homoeopath 
@@ -2406,7 +2406,7 @@
 ~police_station ( police_station police jail criminal crime )
 ~political_parties ( Republican_Party Republican political_party Libertarian_Party liberal Liberal Independent Green_Party Democratic_Party Democratic Democrat conservative Conservative )
 ~political_system ( Zionist socialism shah political_system Nazi monarchy monarchism isolationistic isolationist form_of_government~1 feudalism fascistic fascist fascism Fabian dictatorship communistic communist communism capitalistic capitalist anarchy anarchism )
-~state ( Indiana Wyoming Wisconsin West_Virginia Washington Virginia Vermont Utah Texas Tennessee South_Dakota South_Carolina Rhode_Island Pennsylvania Oregon Oklahoma Ohio North_Dakota North_Carolina New_York New_Mexico New_Jersey New_Hampshire Nevada Nebraska Montana Missouri Mississippi Minnesota Michigan Massachusetts Maryland Maine Louisiana Kentucky Kansas Iowa Illinois Idaho Hawaii Georgia Florida Delaware Connecticut Colorado California Arkansas Arizona Alaska Alabama )
+~state ( Wyoming Wisconsin West_Virginia Washington Virginia Vermont Utah Texas Tennessee South_Dakota South_Carolina Rhode_Island Pennsylvania Oregon Oklahoma Ohio North_Dakota North_Carolina New_York New_Mexico New_Jersey New_Hampshire Nevada Nebraska Montana Missouri Mississippi Minnesota Michigan Massachusetts Maryland Maine Louisiana Kentucky Kansas Indiana Iowa Illinois Idaho Hawaii Georgia Florida Delaware Connecticut Colorado California Arkansas Arizona Alaska Alabama )
 ~politicalstuff ( ruler~2 ruler revolutionist revolutionary~1 protest~2 protest nationalist~1 discrimination~1 )
 ~politician ( Napoleon_Bonaparte Julius_Caesar Barack_Obama Saladin Adolph_Hitler Winston_Churchhill Gordon_Brown Margaret_Thatcher Queen_Victoria Golda_Meir Elizabeth_I Catherine_the_Great Marie_Antoinette Hillary_Rodham_Clinton Condoleezza_Rice Vladimir_Putin Tony_Blair Stalin Sarah_Palin Ron_Paul Richard_Nixon Reagan Ralph_Nader Putin Princess_Diana Prince_William President_Bush politician Paula_Jones Palin Osama_bin_Laden Obama Nero Nelson_Mandela Napoleon Nader Mussolini Millard_Fillmore McCain Martin_Luther_King 
     Mao_Tsetung Mao Mandela Maggie_Thatcher Lincoln John_McCain John_Major John_Kennedy John_F_Kennedy Joe_Biden Jimmy_Carter Jiang_Zemin JFK Jesse_Ventura Jefferson_Davis Janet_Reno Jack_Ruby J.F.K Hitler Hillary_Clinton Hillary Hilary_Clinton Helmut_Kohl Gorbochev Gerhard_Schroeder George_Washington George_Bush Gandhi Franklin_Roosevelt Franklin_Delano_Roosevelt Francisco_Franco Fidel_Castro FDR Elizabeth_II de_Gaulle Dan_Quayle Clinton Cleopatra Churchill Chirac Cheney Chelsea_Clinton Che_Guevara 
@@ -2461,13 +2461,13 @@
 ~role_family PROBABLE_NOUN ( relative grown-up child baby adolescent ~family_members )
 ~role_heroic PROBABLE_NOUN ( underdog heroine hero coward champion ~defender )
 ~role_knowledge PROBABLE_NOUN ( virtuoso teacher student specialist sophomore sensei senior savant pupil professor professional principal master lecturer layman junior journeyman instructor idiot graduate genius freshman faculty expert counsellor beginner amateur advisor adept )
-~role_medical PROBABLE_NOUN ( patient )
+~role_medical PROBABLE_NOUN ( deceased corpse guinea_pig patient )
 ~role_member PROBABLE_NOUN ( traveler tourist stranger settler resident refugee pilgrim passenger native member local immigrant foreigner civilian citizen ~role_religious_member ~role_political_member ~role_nationality_member )
-~role_misc PROBABLE_NOUN ( weirdo tomboy toastmaster thrower throwback thrill-seeker third-rater temptress tempter telepathist teetotaller teetotalist technophobe technophile techie taxpayer tattletale sympathizer swinger survivor survivalist surfboarder supplicant straggler stoolpigeon stoolie stooge stakeholder sponsor spokeswoman spokespersonstick-in-the-mud servant scout scavenger predecessor player peer mutant individual human hobo hippie fool fellow disciplinarian character bum audience altar_boy adult )
+~role_misc PROBABLE_NOUN ( weirdo tomboy toastmaster thrower throwback thrill-seeker third-rater temptress tempter telepathist teetotaller teetotalist technophobe technophile techie taxpayer tattletale sympathizer swinger survivor survivalist surfboarder supplicant straggler stoolpigeon stoolie stooge stakeholder sponsor spokeswoman spokespersonstick-in-the-mud servant scout zombie scavenger predecessor player peer mutant individual human hobo hippie fool fellow disciplinarian character bum audience altar_boy adult )
 ~role_politics PROBABLE_NOUN ( vice-president senator revolutionary reactionary protester minister mayor liberator leader emancipator demonstrator councilor councilman congresswoman congressman candidate aristocrat ~ruler )
 ~role_romantic PROBABLE_NOUN ( Mrs. Mr. confidant bridegroom bride bachelor ~spouse ~sexual_preference_nouns ~dating_friend )
 ~role_worship PROBABLE_NOUN ( spectator idol groupie follower fan deity )
-~role_legalgoodguy PROBABLE_NOUN ( witness victim plaintiff juror hostage defendant barrister )
+~role_legalgoodguy PROBABLE_NOUN ( conservator magistrate beneficiary executor witness victim plaintiff juror hostage defendant barrister )
 ~role_nationality_member PROBABLE_NOUN ( Welshman Vietnamese Venusian Ukranian Turk Tongan Tibetan Thai Syrian Swede Spartan Spaniard South_American Somalian Slovenian Slovakian Serbian Scotsman Scot Salvadorian Russian Romanian Portuguese Pole Peruvian Parisienne Palestinian Norwegian North_American New_Zealander New_Yorker Mongolian Moldovian Middle_Easterner Mexican Martian Malasian Macedonian Lithuanian Liberian Lebanese Latvian Laotian Korean Jordanian Japanese Italian Israeli Irishman Iranian Indonesian Indian Icelander Hungarian 
     Honduran Guatemalan Greek German Georgian Frenchman Finn extraterrestrial European Estonian Earthling Dutchman Dane Czech Cuban Costa_Rican Columbian Chinese Chilean Canadian Cambodian Bulgarian Brit Brazilian Bosnian Bolivian Austrian Australian Athenian Asian Armenian Argentinian Arab Andorrian American alien Algerian African )
 ~role_political_member PROBABLE_NOUN ( Whig Tory Republican Libertarian Democrat )

@@ -1550,9 +1550,9 @@
     national~2a 
     home~11az used of your own ground
     home~12az relating to or being where one lives or where one's roots are
-    home~13bz at or to or in the direction of one's home or family
-    home~14bz to the fullest extent
-    home~15bz on or to the point aimed at
+    home~13z at or to or in the direction of one's home or family
+    home~14z to the fullest extent
+    home~15z on or to the point aimed at
     home~16vz return home accurately from a long distance
     home~17vz provide with, or send to, a home
  howler ( meanings=3 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON2 posdefault:NOUN ) 
@@ -1761,10 +1761,10 @@
     high-pitched~1az used of sounds and voices
     eminent~2az standing above others in quality or position
     high~15az 
-    high_up~1bz at a great altitude
-    high~17bz far up toward the source
-    high~18bz in or to a high position, amount, or degree
-    luxuriously~1bz in a rich manner
+    high_up~1z at a great altitude
+    high~17z far up toward the source
+    high~18z in or to a high position, amount, or degree
+    luxuriously~1z in a rich manner
  hair_care ( meanings=1 NOUN NOUN_SINGULAR ) 
     haircare~1n 
  hair ( meanings=6 glosses=6 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON4 COMMON1 NOUN_NODETERMINER KINDERGARTEN posdefault:NOUN ) 
@@ -1827,7 +1827,7 @@
  horseback ( meanings=3 glosses=3 NOUN ADVERB NOUN_SINGULAR COMMON4 NOUN_NODETERMINER GRADE3_4 posdefault:NOUN ) 
     horseback~1nz (^body_part~1) the back of a horse
     hogback~1nz (^ridgeline~1) a narrow ridge of hills
-    ahorseback~2bz on the back of a horse
+    ahorseback~2z on the back of a horse
  hang_gliding ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     hang_gliding~1nz (^sailplaning~1) gliding in a hang glider
  hang ( meanings=18 glosses=17 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB NOUN_SINGULAR COMMON4 COMMON1 KINDERGARTEN posdefault:VERB VERB_DIRECTOBJECT VERB_NOOBJECT ) conjugate=hung 
@@ -1965,7 +1965,7 @@
     half~4az related through one parent only
     half~5az partial
     half~6az 
-    half~7bz partially or to the extent of a half
+    half~7z partially or to the extent of a half
     half~8z 
     half~9z 
  hydroplane_racing ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR NOUN_NODETERMINER ) 
@@ -2051,7 +2051,7 @@
     horseplay~1nz (^play~5) rowdy or boisterous play
  hotfoot ( meanings=3 glosses=2 NOUN_ABSTRACT VERB_PRESENT VERB_INFINITIVE NOUN VERB ADVERB NOUN_SINGULAR COMMON1 posdefault:NOUN VERB_NOOBJECT ) 
     hotfoot~1nz (^practical_joke~1) a practical joke that involves inserting a match surreptitiously between the sole and upper of the victim's shoe and then lighting it
-    hotfoot~2bz without delay
+    hotfoot~2z without delay
     speed~10v 
  horseshow ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON1 ) 
     horseshow~1nz (^show~1) a competitive exhibition of horses
@@ -2143,7 +2143,7 @@
     impenetrable~3az permitting little if any light to pass through because of denseness of matter
     heavy~29az being or playing the villain
     heavy~30az 
-    heavily~4b 
+    heavily~4z 
  housecleaning ( meanings=2 glosses=2 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON2 ) 
     housecleaning~1nz (^cleanup~1) the act of cleaning the rooms and furnishings of a house
     housecleaning~2nz (^reform~1) the act of reforming by the removal of unwanted personnel or practices or conditions
@@ -2753,16 +2753,16 @@
     unvoiced~2az produced without vibration of the vocal cords
     severe~6az very strong or vigorous
     hard~13az 
-    hard~14bz with effort or force or vigor
-    hard~15bz to the full extent possible
-    hard~16bz slowly and with difficulty
-    severely~2bz causing great damage or hardship
-    firmly~2bz with firmness
-    hard~19bz earnestly or intently
-    hard~20bz with pain or distress or bitterness
-    hard~21bz very near or close in space or time
-    hard~22bz into a solid condition
-    heavily~2b 
+    hard~14z with effort or force or vigor
+    hard~15z to the full extent possible
+    hard~16z slowly and with difficulty
+    severely~2z causing great damage or hardship
+    firmly~2z with firmness
+    hard~19z earnestly or intently
+    hard~20z with pain or distress or bitterness
+    hard~21z very near or close in space or time
+    hard~22z into a solid condition
+    heavily~2z 
  hauling ( meanings=1 NOUN NOUN_SINGULAR COMMON2 COMMON1 posdefault:VERB ) 
     trucking~1n 
  horse_trade ( meanings=1 NOUN NOUN_SINGULAR ) 
@@ -4301,9 +4301,9 @@
  highly_active_antiretroviral_therapy ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
     HAART~1nz (^medicine~3) a combination of protease inhibitors taken with reverse transcriptase inhibitors
  highly ( meanings=3 glosses=2 ADVERB COMMON4 COMMON1 posdefault:ADVERB ) 
-    highly~1bz in a high position or level or rank
-    extremely~2b 
-    highly~3bz at a high rate or wage
+    highly~1z in a high position or level or rank
+    extremely~2z 
+    highly~3z at a high rate or wage
  HAART ( meanings=1 NOUN NOUN_PROPER_SINGULAR ) 
     drug_cocktail~1n 
  half_door ( meanings=1 NOUN NOUN_SINGULAR ) 
@@ -6387,7 +6387,7 @@
     haj~1n 
  heart_and_soul ( meanings=2 glosses=1 NOUN ADVERB NOUN_SINGULAR ) 
     gist~1n 
-    body_and_soul~1bz with complete faith
+    body_and_soul~1z with complete faith
  hypostasis ( meanings=4 glosses=3 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON2 ) plural=hypostases 
     hypostasis~1nz (^essence~2) essential nature or underlying reality
     hypostasis_of_Christ~1n 
@@ -7531,7 +7531,7 @@
  half-and-half ( meanings=3 glosses=3 NOUN ADJECTIVE ADVERB ADJECTIVE_NORMAL NOUN_SINGULAR ADJECTIVE_NOT_PREDICATE NOUN_NODETERMINER posdefault:ADJECTIVE ) 
     half-and-half~1nz (^dairy_product~1) half milk and half light cream
     half-and-half~2az in equal parts
-    half-and-half~3bz in equal parts
+    half-and-half~3z in equal parts
  hollandaise ( meanings=1 glosses=1 NOUN NOUN_SINGULAR COMMON2 NOUN_NODETERMINER posdefault:NOUN ) 
     hollandaise~1nz (^sauce~1) eggs and butter with lemon juice
  hot-fudge_sauce ( meanings=1 glosses=1 NOUN NOUN_SINGULAR NOUN_NODETERMINER ) 
@@ -7877,10 +7877,10 @@
  here ( meanings=6 glosses=6 NOUN ADJECTIVE ADVERB ADJECTIVE_NORMAL NOUN_SINGULAR ADJECTIVE_ONLY_PREDICATE ADJECTIVE_NOT_PREDICATE COMMON4 COMMON2 KINDERGARTEN posdefault:ADVERB ) 
     here~1nz (^location~1) the present location
     here~2az being here now
-    here~3bz in or at this place
-    hither~1bz to this place 
-    here~5bz in this circumstance or respect or on this point or detail
-    here~6bz at this time
+    here~3z in or at this place
+    hither~1z to this place 
+    here~5z in this circumstance or respect or on this point or detail
+    here~6z at this time
  high_country ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
     high_country~1nz (^country~3) an area lying above the piedmont but below the timberline
  heliopause ( meanings=1 glosses=1 NOUN NOUN_SINGULAR COMMON1 ) 
@@ -8525,7 +8525,7 @@
  harum-scarum ( meanings=3 glosses=1 NOUN ADJECTIVE ADVERB ADJECTIVE_NORMAL NOUN_SINGULAR ADJECTIVE_NOT_PREDICATE posdefault:ADJECTIVE ) 
     lunatic~1n 
     slaphappy~2a 
-    pell-mell~2bz in a wild or reckless manner
+    pell-mell~2z in a wild or reckless manner
  hotel_desk_clerk ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
     hotel_clerk~1nz (^clerk~1) a hotel receptionist
  hotel_clerk ( meanings=1 NOUN NOUN_SINGULAR ) 
@@ -9691,7 +9691,7 @@
  Helen_Maria_Fiske_Hunt_Jackson ( meanings=1 glosses=1 NOUN NOUN_PROPER_SINGULAR ) 
     Jackson~7nz (^writer~1) United States writer of romantic novels about the unjust treatment of Native Americans
  Henry_James ( meanings=1 NOUN NOUN_PROPER_SINGULAR ) 
-    James~5n 
+    James~4n 
  Hugo_Junkers ( meanings=1 glosses=1 NOUN NOUN_PROPER_SINGULAR ) 
     Junkers~1nz (^engineer~1) German aircraft engineer who designed the first all-metal airplane
  Helen_Keller ( meanings=1 NOUN NOUN_PROPER_SINGULAR ) 
@@ -11500,7 +11500,7 @@
     houseful~1nz (^containerful~1) as many as a house will accommodate
  heaps ( meanings=2 glosses=1 ADVERB COMMON2 COMMON1 posdefault:NOUN ) 
     dozens~1n 
-    heaps~2bz very much
+    heaps~2z very much
  houseroom ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON1 NOUN_NODETERMINER posdefault:NOUN ) 
     houseroom~1nz (^room~3) space for accommodation in a house
  human_relationship ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR NOUN_NODETERMINER ) 
@@ -11579,7 +11579,7 @@
     hugger-mugger~1nz (^confusion~5) a state of confusion
     underground~3a 
     higgledy-piggledy~1a 
-    hugger-mugger~4bz in secrecy
+    hugger-mugger~4z in secrecy
  hurly_burly ( meanings=1 NOUN NOUN_SINGULAR ) 
     commotion~3n 
  hoo-ha ( meanings=1 NOUN NOUN_SINGULAR ) 
@@ -12621,9 +12621,9 @@
  hereafter ( meanings=5 glosses=3 NOUN_ABSTRACT NOUN ADVERB NOUN_SINGULAR COMMON4 posdefault:ADVERB ) 
     futurity~2n 
     afterlife~1nz (^life~11) life after death
-    hereafter~3bz following this in time or order or place
-    hereafter~4bz in a future life or state
-    hereunder~2b 
+    hereafter~3z following this in time or order or place
+    hereafter~4z in a future life or state
+    hereunder~2z 
  Holocene ( meanings=1 NOUN NOUN_PROPER_SINGULAR ) 
     Holocene_epoch~1n 
  Holocene_epoch ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_PROPER_SINGULAR ) 
@@ -12871,7 +12871,7 @@
  half-time ( meanings=3 glosses=2 NOUN ADJECTIVE ADVERB ADJECTIVE_NORMAL NOUN_SINGULAR ADJECTIVE_NOT_PREDICATE NOUN_NODETERMINER posdefault:NOUN ) 
     half-time~1nz 
     half-time~2az involving half the standard or customary time for an activity
-    part-time~3bz for less than the standard number of hours
+    part-time~3z for less than the standard number of hours
  halfwit ( meanings=1 NOUN NOUN_SINGULAR COMMON1 NOUN_NODETERMINER posdefault:NOUN ) 
     halfwit~1nz 
  handbrake ( meanings=1 NOUN NOUN_SINGULAR COMMON2 NOUN_NODETERMINER posdefault:NOUN ) 
@@ -13031,12 +13031,12 @@
  holey ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:ADJECTIVE ) 
     porous~2a 
  hence ( meanings=3 glosses=2 ADVERB COMMON4 KINDERGARTEN posdefault:ADVERB TIMEWORD TIME_ADVERB ) 
-    thus~1b 
-    hence~2bz from this time
-    hence~3bz from this place
+    therefore~1z 
+    hence~2z from this time
+    hence~3z from this place
  hourly ( meanings=2 glosses=2 ADJECTIVE ADVERB ADJECTIVE_NORMAL ADJECTIVE_NOT_PREDICATE COMMON4 KINDERGARTEN posdefault:ADJECTIVE TIMEWORD ) 
     hourly~1az occurring every hour or payable by the hour
-    hourly~2bz every hour
+    hourly~2z every hour
  hygroscopic ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:ADJECTIVE ) 
     hygroscopic~1az absorbing moisture
  hoggish ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON1 ) 
@@ -13182,8 +13182,8 @@
  head-on ( meanings=4 glosses=3 ADJECTIVE ADVERB ADJECTIVE_NORMAL ADJECTIVE_NOT_PREDICATE posdefault:ADJECTIVE posdefault:ADVERB ) 
     frontal~6a 
     head-on~2az characterized by direct opposition
-    head-on~3bz with the front foremost
-    head-on~4bz in direct opposition
+    head-on~3z with the front foremost
+    head-on~4z in direct opposition
  hardbacked ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON1 posdefault:ADJECTIVE ) 
     hardbound~1az having a hard back or cover
  hardbound ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 ) 
@@ -13192,14 +13192,14 @@
     high-backed~1az having a high back
  headfirst ( meanings=3 glosses=2 ADJECTIVE ADVERB ADJECTIVE_NORMAL posdefault:ADVERB ) 
     headlong~1az with the head foremost
-    headlong~3bz with the head foremost
-    headfirst~3bz 
+    headlong~3z with the head foremost
+    headfirst~3z 
  headlong ( meanings=5 glosses=1 ADJECTIVE ADVERB ADJECTIVE_NORMAL ADJECTIVE_NOT_PREDICATE COMMON2 COMMON1 posdefault:ADJECTIVE posdefault:ADVERB ) 
     headfirst~1a 
     hasty~1a 
-    headfirst~2b 
-    rashly~1bz in a hasty and foolhardy manner
-    precipitately~1b 
+    headfirst~2z 
+    rashly~1z in a hasty and foolhardy manner
+    precipitately~1z 
  hairless ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
     hairless~1az having no hair or fur
  haired ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:ADJECTIVE ) 
@@ -13244,7 +13244,7 @@
  haphazard ( meanings=3 glosses=2 ADJECTIVE ADVERB ADJECTIVE_NORMAL ADJECTIVE_NOT_PREDICATE COMMON2 COMMON1 GRADE5_6 posdefault:ADJECTIVE ) 
     slipshod~1a 
     hit-or-miss~1az dependent upon or characterized by chance
-    haphazardly~2bz without care
+    haphazardly~2z without care
  heedless ( meanings=3 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:ADJECTIVE ) 
     reckless~2a 
     unheeding~1a 
@@ -13266,8 +13266,8 @@
     center~19az equally distant from the extremes
     halfway~2az including only half or a portion
     halfway~3az at a point midway between two extremes
-    midway~3bz at half the distance
-    halfway~5bz 
+    midway~3z at half the distance
+    halfway~5z 
  homochromatic ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON1 ) 
     monochromatic~1a 
  hazel-brown ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL ) 
@@ -13344,7 +13344,7 @@
  head-to-head ( meanings=3 glosses=1 ADJECTIVE ADVERB ADJECTIVE_NORMAL ADJECTIVE_NOT_PREDICATE posdefault:ADJECTIVE ) 
     nip_and_tuck~2a 
     tete-a-tete~3az involving two persons
-    nip_and_tuck~3b 
+    nip_and_tuck~3z 
  hypertrophied ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 ) 
     enlarged~1az excessively enlarged as a result of increased size in the constituent cells
  housebound ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:ADJECTIVE ) 
@@ -13780,7 +13780,7 @@
  helter-skelter ( meanings=3 glosses=2 ADJECTIVE ADVERB ADJECTIVE_NORMAL ADJECTIVE_NOT_PREDICATE posdefault:ADVERB ) 
     pell-mell~1az with undue hurry and confusion
     chaotic~1az lacking a visible order or organization
-    every_which_way~2b 
+    every_which_way~2z 
  hedonic ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
     hedonistic~1a 
  hedonistic ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
@@ -13880,8 +13880,8 @@
  hardly_a ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL CONDITIONAL_IDIOM ADJECTIVE_NOT_PREDICATE  poscondition=?=A ) 
     hardly_a~1az 
  hardly ( meanings=2 ADVERB EXTENT_ADVERB COMMON4 KINDERGARTEN posdefault:ADVERB NEGATIVE_ADVERB_STARTER ) 
-    scarce~2b 
-    scarcely~2b 
+    scarce~2z 
+    scarcely~2z 
  heartwarming ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
     heartwarming~1az causing gladness and pleasure
  hypochondriacal ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON1 posdefault:ADJECTIVE ) 
@@ -13907,7 +13907,7 @@
     hypaethral~1a 
  homeward ( meanings=2 ADJECTIVE ADVERB ADJECTIVE_NORMAL ADJECTIVE_NOT_PREDICATE COMMON2 COMMON1 posdefault:ADJECTIVE posdefault:ADVERB ) 
     homeward-bound~1a 
-    homewards~1b 
+    homewards~1z 
  homeward-bound ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL posdefault:ADJECTIVE ) 
     homeward~1az oriented toward home
  hackneyed ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:ADJECTIVE ) 
@@ -13989,10 +13989,10 @@
     hebdomadal~1a 
  half-hourly ( meanings=2 glosses=2 ADJECTIVE ADVERB ADJECTIVE_NORMAL ADJECTIVE_NOT_PREDICATE posdefault:ADJECTIVE ) 
     half-hourly~1az occurring ever half hour
-    half-hourly~2bz every thirty minutes, every half hour
+    half-hourly~2z every thirty minutes, every half hour
  half-yearly ( meanings=2 glosses=1 ADJECTIVE ADVERB ADJECTIVE_NORMAL ADJECTIVE_NOT_PREDICATE posdefault:ADJECTIVE ) 
     biyearly~1a 
-    half-yearly~2bz every half year, every six months
+    half-yearly~2z every half year, every six months
  honored ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL COMMON4 posdefault:VERB ) 
     esteemed~1a 
  harmonizable ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON1 ) 
@@ -14036,7 +14036,7 @@
     crazed~1az driven insane
     half-crazed~2az 
  hunky-dory ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL posdefault:ADJECTIVE ) 
-    ok~1a 
+    o.k.~1a 
     hunky-dory~2az 
  higher-ranking ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL posdefault:ADJECTIVE ) 
     ranking~2a 
@@ -14088,7 +14088,7 @@
  half-dozen ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL ) 
     half_dozen~1a 
  hundred_and_one ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL CONDITIONAL_IDIOM  poscondition=?=A ) 
-    ci~1az 
+    hundred_and_one~1az 
  hundred-and-first ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL ) 
     hundred-and-first~1az the ordinal number of one hundred one in counting order
  hundred-and-fifth ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL ) 
@@ -14182,7 +14182,7 @@
     hyperfine~1az extremely fine or thin, as in a spectral line split into two or more components
  higgledy-piggledy ( meanings=2 glosses=2 ADJECTIVE ADVERB ADJECTIVE_NORMAL ADJECTIVE_NOT_PREDICATE posdefault:ADJECTIVE ) 
     topsy-turvy~1az in utter disorder
-    topsy-turvy~3bz in a disordered manner
+    topsy-turvy~3z in a disordered manner
  half-timber ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL posdefault:ADJECTIVE ) 
     half-timbered~1a 
  half-timbered ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL posdefault:ADJECTIVE ) 
@@ -14198,13 +14198,13 @@
  heavily_traveled ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL CONDITIONAL_IDIOM  poscondition=?=A ) 
     heavily_traveled~1az 
  heavily ( meanings=7 glosses=7 ADVERB EXTENT_ADVERB COMMON4 KINDERGARTEN posdefault:ADVERB ) 
-    to_a_great_extent~1bz to a considerable degree
-    intemperately~1bz indulging excessively
-    heavily~3bz in a labored manner
-    heavy~31bz slowly as if burdened by much weight
-    heavily~5bz in a manner designed for heavy duty
-    heavily~6bz in a heavy-footed manner
-    heavily~7bz with great force
+    to_a_great_extent~1z to a considerable degree
+    intemperately~1z indulging excessively
+    heavily~3z in a labored manner
+    heavy~31z slowly as if burdened by much weight
+    heavily~5z in a manner designed for heavy duty
+    heavily~6z in a heavy-footed manner
+    heavily~7z with great force
  harassed ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:VERB ) 
     pestered~1az troubled persistently especially with petty annoyances
     harassed~2az 
@@ -14222,7 +14222,7 @@
     ungulate~2a 
  heavenward ( meanings=2 glosses=1 ADJECTIVE ADVERB ADJECTIVE_NORMAL ADJECTIVE_NOT_PREDICATE COMMON2 posdefault:ADVERB ) 
     skyward~1az directed toward heaven or the sky
-    heavenwards~1b 
+    heavenwards~1z 
  hard-and-fast ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL posdefault:ADJECTIVE ) 
     strict~5az stringently enforced
  heinous ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
@@ -14885,483 +14885,483 @@
  humiliate ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB COMMON2 COMMON1 posdefault:VERB VERB_DIRECTOBJECT COMMON_PARTICIPLE_VERB ) 
     chagrin~2v 
  high_and_low ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    high_and_low~1bz 
+    high_and_low~1z 
  however ( meanings=6 glosses=3 QWORD ADVERB CONJUNCTION_SUBORDINATE COMMON4 COMMON1 KINDERGARTEN posdefault:ADVERB CONJUNCT_SUBORD_NOUN ) 
-    yet~2b 
-    however~2bz in whatever way or manner
-    however~3bz to whatever degree or extent
-    however~4bz by contrast
+    yet~2z 
+    however~2z in whatever way or manner
+    however~3z to whatever degree or extent
+    however~4z by contrast
     however~5z 
     however~6z 
  hitherto ( meanings=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    up_to_now~1b 
+    up_to_now~1z 
  heretofore ( meanings=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    hitherto~1b 
+    hitherto~1z 
  henceforth ( meanings=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    henceforward~1b 
+    henceforward~1z 
  henceforward ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    henceforth~1bz from this time forth
+    henceforth~1z from this time forth
  hereunder ( meanings=2 glosses=1 ADVERB COMMON4 ) 
-    hereunder~1bz under the terms of this agreement
-    hereinafter~1b 
+    hereunder~1z under the terms of this agreement
+    hereinafter~1z 
  happily ( meanings=2 glosses=1 ADVERB COMMON4 posdefault:ADVERB ) 
-    happily~1bz in an unexpectedly lucky way
-    merrily~1b 
+    happily~1z in an unexpectedly lucky way
+    merrily~1z 
  head_and_shoulders_above ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    head_and_shoulders_above~1bz 
+    head_and_shoulders_above~1z 
  hand_to_hand ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    hand_to_hand~1bz 
+    hand_to_hand~1z 
  hand_to_mouth ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    hand_to_mouth~1bz 
+    hand_to_mouth~1z 
  horribly ( meanings=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    awfully~3b 
+    awfully~3z 
  haphazardly ( meanings=2 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    randomly~1b 
-    haphazard~3b 
+    randomly~1z 
+    haphazard~3z 
  here_and_there ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    here_and_there~1bz 
+    here_and_there~1z 
  higher_up ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    above~4b 
+    above~4z 
  hebdomadally ( meanings=1 ADVERB COMMON1 ) 
-    weekly~3b 
+    weekly~3z 
  histologically ( meanings=2 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    histologically~1bz involving the use of histology or histological techniques
-    histologically~2bz 
+    histologically~1z involving the use of histology or histological techniques
+    histologically~2z 
  hazardously ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    dangerously~1bz in a dangerous manner
+    dangerously~1z in a dangerous manner
  hypothalamically ( meanings=1 glosses=1 ADVERB COMMON1 ) 
-    hypothalamically~1bz with respect to the hypothalamus
+    hypothalamically~1z with respect to the hypothalamus
  homewards ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    homeward~2bz toward home
+    homeward~2z toward home
  hell-for-leather ( meanings=1 glosses=1 ADVERB ) 
-    hell-for-leather~1bz at breakneck speed
+    hell-for-leather~1z at breakneck speed
  hereabout ( meanings=1 ADVERB COMMON1 ) 
-    hereabouts~1b 
+    hereabouts~1z 
  hereabouts ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    hereabout~1bz in this general vicinity
+    hereabout~1z in this general vicinity
  hither ( meanings=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    here~4b 
+    here~4z 
  herein ( meanings=1 glosses=1 ADVERB COMMON4 COMMON1 posdefault:ADVERB ) 
-    herein~1bz in this place or thing or document
+    herein~1z in this place or thing or document
  historically ( meanings=2 glosses=2 ADVERB COMMON4 posdefault:ADVERB ) 
-    historically~1bz with respect to history
-    historically~2bz throughout history
+    historically~1z with respect to history
+    historically~2z throughout history
  humbly ( meanings=2 glosses=2 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    meekly~1bz in a humble manner
-    meanly~1bz in a miserly manner
+    meekly~1z in a humble manner
+    meanly~1z in a miserly manner
  hellishly ( meanings=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    infernally~1b 
+    infernally~1z 
  harmonically ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    harmonically~1bz with respect to harmony
+    harmonically~1z with respect to harmony
  hieroglyphically ( meanings=1 glosses=1 ADVERB COMMON1 ) 
-    hieroglyphically~1bz by means of hieroglyphs
+    hieroglyphically~1z by means of hieroglyphs
  homeostatically ( meanings=2 glosses=1 ADVERB COMMON1 ) 
-    homeostatically~1bz in a homeostatic manner
-    homeostatically~2bz 
+    homeostatically~1z in a homeostatic manner
+    homeostatically~2z 
  horticulturally ( meanings=1 glosses=1 ADVERB COMMON1 ) 
-    horticulturally~1bz by means of horticulture
+    horticulturally~1z by means of horticulture
  humanly ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    humanly~1bz in the manner of human beings
+    humanly~1z in the manner of human beings
  hesitantly ( meanings=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    hesitatingly~1b 
+    hesitatingly~1z 
  hesitatingly ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    hesitantly~1bz with hesitation
+    hesitantly~1z with hesitation
  hand_and_foot ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    hand_and_foot~1bz 
+    hand_and_foot~1z 
  hand_in_hand ( meanings=2 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    hand_in_hand~1bz 
-    hand_in_hand~2bz 
+    hand_in_hand~1z 
+    hand_in_hand~2z 
  hand_over_fist ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    hand_over_fist~1bz 
+    hand_over_fist~1z 
  handily ( meanings=2 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    hands_down~1b 
-    conveniently~1b 
+    hands_down~1z 
+    conveniently~1z 
  hands_down ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    handily~1bz 
+    handily~1z 
  heedfully ( meanings=2 ADVERB COMMON1 posdefault:ADVERB ) 
-    advertently~1b 
-    heedfully~2bz 
+    advertently~1z 
+    heedfully~2z 
  hand_in_glove ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    hand_and_glove~1b 
+    hand_and_glove~1z 
  hand_and_glove ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    cooperatively~1bz 
+    cooperatively~1z 
  head_over_heels ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    in_great_confusion~1b 
+    in_great_confusion~1z 
  heels_over_head ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    head_over_heels~1b 
+    head_over_heels~1z 
  heedlessly ( meanings=2 ADVERB COMMON2 posdefault:ADVERB ) 
-    carelessly~1b 
-    heedlessly~2bz 
+    carelessly~1z 
+    heedlessly~2z 
  hook_line_and_sinker ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    hook_line_and_sinker~1bz 
+    hook_line_and_sinker~1z 
  hypothetically ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    hypothetically~1bz by hypothesis
+    hypothetically~1z by hypothesis
  haughtily ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    haughtily~1bz in a haughty manner
+    haughtily~1z in a haughty manner
  healthily ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    healthily~1bz in a levelheaded manner
+    healthily~1z in a levelheaded manner
  hilariously ( meanings=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    uproariously~1b 
+    uproariously~1z 
  helpfully ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    helpfully~1bz in a helpful manner
+    helpfully~1z in a helpful manner
  hyperbolically ( meanings=2 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    exaggeratedly~1bz in an exaggerated manner
-    hyperbolically~2bz 
+    exaggeratedly~1z in an exaggerated manner
+    hyperbolically~2z 
  hugely ( meanings=1 ADVERB COMMON4 posdefault:ADVERB ) 
-    enormously~1b 
+    enormously~1z 
  haptically ( meanings=2 glosses=1 ADVERB COMMON1 ) 
-    tactually~1bz by touch
-    haptically~2bz 
+    tactually~1z by touch
+    haptically~2z 
  hopefully ( meanings=2 glosses=2 ADVERB COMMON4 posdefault:ADVERB ) 
-    hopefully~1bz it is hoped
-    hopefully~2bz with hope
+    hopefully~1z it is hoped
+    hopefully~2z with hope
  hopelessly ( meanings=3 glosses=2 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    hopelessly~1bz without hope
-    hopelessly~2bz in a hopeless manner
-    dispiritedly~1b 
+    hopelessly~1z without hope
+    hopelessly~2z in a hopeless manner
+    dispiritedly~1z 
  hurriedly ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    in_haste~1bz in a hurried or hasty manner
+    in_haste~1z in a hurried or hasty manner
  hastily ( meanings=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    hurriedly~1b 
+    hurriedly~1z 
  helplessly ( meanings=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    impotently~1b 
+    impotently~1z 
  heartily ( meanings=2 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    heartily~1bz with gusto and without reservation
-    cordially~1b 
+    heartily~1z with gusto and without reservation
+    cordially~1z 
  habitually ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    habitually~1bz according to habit or custom
+    habitually~1z according to habit or custom
  humiliatingly ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    demeaningly~1bz in a humiliating manner
+    demeaningly~1z in a humiliating manner
  haltingly ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    haltingly~1bz in a halting manner
+    haltingly~1z in a halting manner
  hostilely ( meanings=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    belligerently~1b 
+    belligerently~1z 
  horrifyingly ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    horrifyingly~1bz in a horrifying manner
+    horrifyingly~1z in a horrifying manner
  hereby ( meanings=1 ADVERB COMMON4 posdefault:ADVERB ) 
-    herewith~1b 
+    herewith~1z 
  herewith ( meanings=2 glosses=1 ADVERB PREPOSITION COMMON2 COMMON1 posdefault:ADVERB ) 
-    hereby~1bz by means of this
+    hereby~1z by means of this
     herewith~2z 
  hierarchically ( meanings=2 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    hierarchically~1bz in a hierarchical manner
-    hierarchically~2bz 
+    hierarchically~1z in a hierarchical manner
+    hierarchically~2z 
  harmfully ( meanings=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    detrimentally~1b 
+    detrimentally~1z 
  harmlessly ( meanings=2 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    harmlessly~1bz in a harmless manner
-    harmlessly~2bz 
+    harmlessly~1z in a harmless manner
+    harmlessly~2z 
  honestly ( meanings=2 glosses=2 ADVERB COMMON4 KINDERGARTEN posdefault:ADVERB ) 
-    aboveboard~2bz in an honest manner
-    frankly~1bz it is sincerely the case that
+    aboveboard~2z in an honest manner
+    frankly~1z it is sincerely the case that
  hypocritically ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    hypocritically~1bz in a hypocritical manner
+    hypocritically~1z in a hypocritical manner
  honorably ( meanings=2 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    honourably~1b 
-    uprightly~2bz in an honorable manner
+    honourably~1z 
+    uprightly~2z in an honorable manner
  honourably ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    honorably~1bz with honor
+    honorably~1z with honor
  hectically ( meanings=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    frenziedly~1b 
+    frenziedly~1z 
  harshly ( meanings=2 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    raspingly~1b 
-    harshly~2bz in a harsh or unkind manner
+    raspingly~1z 
+    harshly~2z in a harsh or unkind manner
  half-heartedly ( meanings=1 glosses=1 ADVERB posdefault:ADVERB ) 
-    half-heartedly~1bz without enthusiasm
+    half-heartedly~1z without enthusiasm
  handsomely ( meanings=2 glosses=2 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    handsomely~1bz in a generously handsome manner
-    handsomely~2bz in an attractively handsome manner
+    handsomely~1z in a generously handsome manner
+    handsomely~2z in an attractively handsome manner
  haply ( meanings=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    by_chance~2b 
+    by_chance~2z 
  harmoniously ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    harmoniously~1bz in a harmonious manner
+    harmoniously~1z in a harmonious manner
  hatefully ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    hatefully~1bz in a hateful manner
+    hatefully~1z in a hateful manner
  hazily ( meanings=2 glosses=2 ADVERB COMMON2 posdefault:ADVERB ) 
-    hazily~1bz in an indistinct way
-    hazily~2bz through a haze
+    hazily~1z in an indistinct way
+    hazily~2z through a haze
  heartlessly ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    heartlessly~1bz in a heartless manner
+    heartlessly~1z in a heartless manner
  heatedly ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    hotly~1bz in a heated manner
+    hotly~1z in a heated manner
  hotly ( meanings=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    heatedly~1b 
+    heatedly~1z 
  heavenwards ( meanings=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    heavenwardly~1b 
+    heavenwardly~1z 
  heavenwardly ( meanings=1 glosses=1 ADVERB ) 
-    heavenward~2bz toward heaven
+    heavenward~2z toward heaven
  heinously ( meanings=1 ADVERB COMMON2 ) 
-    monstrously~2b 
+    monstrously~2z 
  hereinafter ( meanings=2 glosses=1 ADVERB PREPOSITION COMMON4 posdefault:ADVERB ) 
-    hereafter~5bz in a subsequent part of this document or statement or matter etc.
+    hereafter~5z in a subsequent part of this document or statement or matter etc.
     hereinafter~2z 
  hereinbefore ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    hereinbefore~1bz in the preceding part of the current text
+    hereinbefore~1z in the preceding part of the current text
  hereof ( meanings=2 glosses=1 ADVERB COMMON4 posdefault:ADVERB ) 
-    hereof~1bz of or concerning this
-    hereof~2bz 
+    hereof~1z of or concerning this
+    hereof~2z 
  hereto ( meanings=2 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    hereto~1bz to this writing or document
-    hereto~2bz 
+    hereto~1z to this writing or document
+    hereto~2z 
  hereupon ( meanings=1 glosses=1 ADVERB COMMON2 ) 
-    hereupon~1bz immediately after this
+    hereupon~1z immediately after this
  hermetically ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    hermetically~1bz in an airtight manner
+    hermetically~1z in an airtight manner
  heroically ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    heroically~1bz in a heroic manner
+    heroically~1z in a heroic manner
  hideously ( meanings=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    monstrously~3b 
+    monstrously~3z 
  horridly ( meanings=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    hideously~1b 
+    hideously~1z 
  high_up ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    high~16b 
+    high~16z 
  high-handedly ( meanings=1 glosses=1 ADVERB ) 
-    high-handedly~1bz in a domineering high-handed manner
+    high-handedly~1z in a domineering high-handed manner
  high-mindedly ( meanings=1 glosses=1 ADVERB ) 
-    high-mindedly~1bz in a high-minded manner
+    high-mindedly~1z in a high-minded manner
  hoarsely ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    huskily~1bz in a hoarse or husky voice
+    huskily~1z in a hoarse or husky voice
  huskily ( meanings=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    hoarsely~1b 
+    hoarsely~1z 
  horizontally ( meanings=1 glosses=1 ADVERB COMMON4 posdefault:ADVERB ) 
-    horizontally~1bz in a horizontal direction
+    horizontally~1z in a horizontal direction
  hospitably ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    hospitably~1bz in a hospitable manner
+    hospitably~1z in a hospitable manner
  huffily ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    huffily~1bz in a huffy manner
+    huffily~1z in a huffy manner
  humanely ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    humanely~1bz in a humane manner
+    humanely~1z in a humane manner
  humorously ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    humorously~1bz in a humorous manner
+    humorously~1z in a humorous manner
  humorlessly ( meanings=1 ADVERB COMMON1 ) 
-    humourlessly~1b 
+    humourlessly~1z 
  humourlessly ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    humorlessly~1bz in a humorless manner
+    humorlessly~1z in a humorless manner
  hundredfold ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    hundredfold~1bz by a factor of one hundred
+    hundredfold~1z by a factor of one hundred
  hungrily ( meanings=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    ravenously~1b 
+    ravenously~1z 
  hydraulically ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    hydraulicly~1bz in a hydraulic manner
+    hydraulicly~1z in a hydraulic manner
  hydraulicly ( meanings=1 ADVERB COMMON1 ) 
-    hydraulically~1b 
+    hydraulically~1z 
  hygienically ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    hygienically~1bz in a hygienic manner
+    hygienically~1z in a hygienic manner
  hysterically ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    hysterically~1bz in a hysterical manner
+    hysterically~1z in a hysterical manner
  hinderingly ( meanings=1 ADVERB ) 
-    obstructively~1b 
+    obstructively~1z 
  half-price ( meanings=1 glosses=1 ADVERB ) 
-    half-price~1bz for half the price
+    half-price~1z for half the price
  haggardly ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    haggardly~1bz in a haggard manner
+    haggardly~1z in a haggard manner
  homogeneously ( meanings=2 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    homogeneously~1bz all similarly
-    homogeneously~2bz 
+    homogeneously~1z all similarly
+    homogeneously~2z 
  hither_and_thither ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    from_pillar_to_post~1b 
+    from_pillar_to_post~1z 
  hypnotically ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    hypnotically~1bz by means of hypnotism
+    hypnotically~1z by means of hypnotism
  haematopoietically ( meanings=2 ADVERB ) 
-    haematopoietically~1bz 
-    haematopoietically~2bz 
+    haematopoietically~1z 
+    haematopoietically~2z 
  haematofluorometrically ( meanings=2 ADVERB ) 
-    haematofluorometrically~1bz 
-    haematofluorometrically~2bz 
+    haematofluorometrically~1z 
+    haematofluorometrically~2z 
  histotypically ( meanings=2 ADVERB ) 
-    histotypically~1bz 
-    histotypically~2bz 
+    histotypically~1z 
+    histotypically~2z 
  heterotypically ( meanings=2 ADVERB COMMON1 ) 
-    heterotypically~1bz 
-    heterotypically~2bz 
+    heterotypically~1z 
+    heterotypically~2z 
  hepatically ( meanings=2 ADVERB COMMON1 ) 
-    hepatically~1bz 
-    hepatically~2bz 
+    hepatically~1z 
+    hepatically~2z 
  hemoglobinometrically ( meanings=2 ADVERB ) 
-    hemoglobinometrically~1bz 
-    hemoglobinometrically~2bz 
+    hemoglobinometrically~1z 
+    hemoglobinometrically~2z 
  humanistically ( meanings=2 ADVERB COMMON1 posdefault:ADVERB ) 
-    humanistically~1bz 
-    humanistically~2bz 
+    humanistically~1z 
+    humanistically~2z 
  hydrodensitometrically ( meanings=2 ADVERB ) 
-    hydrodensitometrically~1bz 
-    hydrodensitometrically~2bz 
+    hydrodensitometrically~1z 
+    hydrodensitometrically~2z 
  haemoglobinometrically ( meanings=2 ADVERB ) 
-    haemoglobinometrically~1bz 
-    haemoglobinometrically~2bz 
+    haemoglobinometrically~1z 
+    haemoglobinometrically~2z 
  hemorheologically ( meanings=2 ADVERB ) 
-    hemorheologically~1bz 
-    hemorheologically~2bz 
+    hemorheologically~1z 
+    hemorheologically~2z 
  hydrophobically ( meanings=2 ADVERB COMMON1 ) 
-    hydrophobically~1bz 
-    hydrophobically~2bz 
+    hydrophobically~1z 
+    hydrophobically~2z 
  hematopoietically ( meanings=2 ADVERB COMMON1 ) 
-    hematopoietically~1bz 
-    hematopoietically~2bz 
+    hematopoietically~1z 
+    hematopoietically~2z 
  heterotrophically ( meanings=2 ADVERB COMMON1 ) 
-    heterotrophically~1bz 
-    heterotrophically~2bz 
+    heterotrophically~1z 
+    heterotrophically~2z 
  half-maximally ( meanings=2 ADVERB ) 
-    half-maximally~1bz 
-    half-maximally~2bz 
+    half-maximally~1z 
+    half-maximally~2z 
  histo-structurally ( meanings=2 ADVERB ) 
-    histo-structurally~1bz 
-    histo-structurally~2bz 
+    histo-structurally~1z 
+    histo-structurally~2z 
  histomorphometrically ( meanings=2 ADVERB COMMON1 ) 
-    histomorphometrically~1bz 
-    histomorphometrically~2bz 
+    histomorphometrically~1z 
+    histomorphometrically~2z 
  histopathologically ( meanings=2 ADVERB COMMON2 posdefault:ADVERB ) 
-    histopathologically~1bz 
-    histopathologically~2bz 
+    histopathologically~1z 
+    histopathologically~2z 
  hyperacutely ( meanings=2 ADVERB COMMON1 ) 
-    hyperacutely~1bz 
-    hyperacutely~2bz 
+    hyperacutely~1z 
+    hyperacutely~2z 
  hemostatically ( meanings=2 ADVERB COMMON1 ) 
-    hemostatically~1bz 
-    hemostatically~2bz 
+    hemostatically~1z 
+    hemostatically~2z 
  haemacytometrically ( meanings=2 ADVERB ) 
-    haemacytometrically~1bz 
-    haemacytometrically~2bz 
+    haemacytometrically~1z 
+    haemacytometrically~2z 
  halfmaximally ( meanings=2 ADVERB ) 
-    halfmaximally~1bz 
-    halfmaximally~2bz 
+    halfmaximally~1z 
+    halfmaximally~2z 
  hemodynamically ( meanings=2 ADVERB COMMON2 ) 
-    hemodynamically~1bz 
-    hemodynamically~2bz 
+    hemodynamically~1z 
+    hemodynamically~2z 
  hysteroscopically ( meanings=2 ADVERB COMMON1 ) 
-    hysteroscopically~1bz 
-    hysteroscopically~2bz 
+    hysteroscopically~1z 
+    hysteroscopically~2z 
  histomorphologically ( meanings=2 ADVERB COMMON1 ) 
-    histomorphologically~1bz 
-    histomorphologically~2bz 
+    histomorphologically~1z 
+    histomorphologically~2z 
  histoautoradiographically ( meanings=2 ADVERB ) 
-    histoautoradiographically~1bz 
-    histoautoradiographically~2bz 
+    histoautoradiographically~1z 
+    histoautoradiographically~2z 
  hemolytically ( meanings=2 ADVERB COMMON1 ) 
-    hemolytically~1bz 
-    hemolytically~2bz 
+    hemolytically~1z 
+    hemolytically~2z 
  histogenetically ( meanings=2 ADVERB COMMON1 ) 
-    histogenetically~1bz 
-    histogenetically~2bz 
+    histogenetically~1z 
+    histogenetically~2z 
  haemostatically ( meanings=2 ADVERB ) 
-    haemostatically~1bz 
-    haemostatically~2bz 
+    haemostatically~1z 
+    haemostatically~2z 
  hyperreflexically ( meanings=2 ADVERB ) 
-    hyperreflexically~1bz 
-    hyperreflexically~2bz 
+    hyperreflexically~1z 
+    hyperreflexically~2z 
  histocytologically ( meanings=2 ADVERB ) 
-    histocytologically~1bz 
-    histocytologically~2bz 
+    histocytologically~1z 
+    histocytologically~2z 
  hydropically ( meanings=2 ADVERB ) 
-    hydropically~1bz 
-    hydropically~2bz 
+    hydropically~1z 
+    hydropically~2z 
  haemorrheologically ( meanings=2 ADVERB ) 
-    haemorrheologically~1bz 
-    haemorrheologically~2bz 
+    haemorrheologically~1z 
+    haemorrheologically~2z 
  hemacytometrically ( meanings=2 ADVERB ) 
-    hemacytometrically~1bz 
-    hemacytometrically~2bz 
+    hemacytometrically~1z 
+    hemacytometrically~2z 
  heterotopically ( meanings=2 ADVERB COMMON1 ) 
-    heterotopically~1bz 
-    heterotopically~2bz 
+    heterotopically~1z 
+    heterotopically~2z 
  hyperosmotically ( meanings=2 ADVERB COMMON1 ) 
-    hyperosmotically~1bz 
-    hyperosmotically~2bz 
+    hyperosmotically~1z 
+    hyperosmotically~2z 
  histometrically ( meanings=2 ADVERB COMMON1 ) 
-    histometrically~1bz 
-    histometrically~2bz 
+    histometrically~1z 
+    histometrically~2z 
  homotypically ( meanings=2 ADVERB COMMON1 ) 
-    homotypically~1bz 
-    homotypically~2bz 
+    homotypically~1z 
+    homotypically~2z 
  haemodynamically ( meanings=2 ADVERB COMMON1 posdefault:ADVERB ) 
-    haemodynamically~1bz 
-    haemodynamically~2bz 
+    haemodynamically~1z 
+    haemodynamically~2z 
  histo-cytologically ( meanings=2 ADVERB ) 
-    histo-cytologically~1bz 
-    histo-cytologically~2bz 
+    histo-cytologically~1z 
+    histo-cytologically~2z 
  hemorrheologically ( meanings=2 ADVERB ) 
-    hemorrheologically~1bz 
-    hemorrheologically~2bz 
+    hemorrheologically~1z 
+    hemorrheologically~2z 
  hydrolytically ( meanings=2 ADVERB COMMON1 posdefault:ADVERB ) 
-    hydrolytically~1bz 
-    hydrolytically~2bz 
+    hydrolytically~1z 
+    hydrolytically~2z 
  hydroponically ( meanings=2 ADVERB COMMON2 posdefault:ADVERB ) 
-    hydroponically~1bz 
-    hydroponically~2bz 
+    hydroponically~1z 
+    hydroponically~2z 
  hyperoxically ( meanings=2 ADVERB ) 
-    hyperoxically~1bz 
-    hyperoxically~2bz 
+    hyperoxically~1z 
+    hyperoxically~2z 
  haematopoetically ( meanings=2 ADVERB ) 
-    haematopoetically~1bz 
-    haematopoetically~2bz 
+    haematopoetically~1z 
+    haematopoetically~2z 
  haemorheologically ( meanings=2 ADVERB ) 
-    haemorheologically~1bz 
-    haemorheologically~2bz 
+    haemorheologically~1z 
+    haemorheologically~2z 
  hematopoetically ( meanings=2 ADVERB ) 
-    hematopoetically~1bz 
-    hematopoetically~2bz 
+    hematopoetically~1z 
+    hematopoetically~2z 
  haemolytically ( meanings=2 ADVERB ) 
-    haemolytically~1bz 
-    haemolytically~2bz 
+    haemolytically~1z 
+    haemolytically~2z 
  heterosynaptically ( meanings=2 ADVERB ) 
-    heterosynaptically~1bz 
-    heterosynaptically~2bz 
+    heterosynaptically~1z 
+    heterosynaptically~2z 
  histostructurally ( meanings=2 ADVERB ) 
-    histostructurally~1bz 
-    histostructurally~2bz 
+    histostructurally~1z 
+    histostructurally~2z 
  hypoxically ( meanings=2 ADVERB COMMON1 ) 
-    hypoxically~1bz 
-    hypoxically~2bz 
+    hypoxically~1z 
+    hypoxically~2z 
  herniographically ( meanings=2 ADVERB ) 
-    herniographically~1bz 
-    herniographically~2bz 
+    herniographically~1z 
+    herniographically~2z 
  hematofluorometrically ( meanings=2 ADVERB ) 
-    hematofluorometrically~1bz 
-    hematofluorometrically~2bz 
+    hematofluorometrically~1z 
+    hematofluorometrically~2z 
  histochemically ( meanings=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    histochemically~1bz 
+    histochemically~1z 
  half-way ( meanings=1 ADVERB posdefault:ADVERB ) 
-    half-way~1bz 
+    half-way~1z 
  haematologically ( meanings=1 ADVERB ) 
-    haematologically~1bz 
+    haematologically~1z 
  hand_to_knee ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    hand_to_knee~1bz 
+    hand_to_knee~1z 
  head_first ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    head_first~1bz 
+    head_first~1z 
  head-first ( meanings=1 ADVERB ) 
-    head-first~1bz 
+    head-first~1z 
  heel_to_knee ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    heel_to_knee~1bz 
+    heel_to_knee~1z 
  helically ( meanings=1 ADVERB posdefault:ADVERB ) 
-    helically~1bz 
+    helically~1z 
  hematologically ( meanings=1 ADVERB ) 
-    hematologically~1bz 
+    hematologically~1z 
  heterogeneously ( meanings=1 ADVERB posdefault:ADVERB ) 
-    heterogeneously~1bz 
+    heterogeneously~1z 
  heterogenously ( meanings=1 ADVERB ) 
-    heterogenously~1bz 
+    heterogenously~1z 
  heterologously ( meanings=1 ADVERB ) 
-    heterologously~1bz 
+    heterologously~1z 
  heterosexually ( meanings=1 ADVERB posdefault:ADVERB ) 
-    heterosexually~1bz 
+    heterosexually~1z 
  heterozygously ( meanings=1 ADVERB ) 
-    heterozygously~1bz 
+    heterozygously~1z 
  hn ( meanings=1 ADVERB ) 
-    hn~1bz 
+    hn~1z 
  holographically ( meanings=1 ADVERB posdefault:ADVERB ) 
-    holographically~1bz 
+    holographically~1z 
  homologously ( meanings=1 ADVERB ) 
-    homologously~1bz 
+    homologously~1z 
  homosexually ( meanings=1 ADVERB posdefault:ADVERB ) 
-    homosexually~1bz 
+    homosexually~1z 
  homozygously ( meanings=1 ADVERB ) 
-    homozygously~1bz 
+    homozygously~1z 
  hormonally ( meanings=1 ADVERB posdefault:ADVERB ) 
-    hormonally~1bz 
+    hormonally~1z 
  humorally ( meanings=1 ADVERB ) 
-    humorally~1bz 
+    humorally~1z 
  hypersensitively ( meanings=1 ADVERB ) 
-    hypersensitively~1bz 
+    hypersensitively~1z 
  harder ( MORE_FORM ADVERB COMMON4 KINDERGARTEN posdefault:ADJECTIVE posdefault:ADVERB ) comparative=hard 
  hardest ( MOST_FORM ADVERB COMMON4 KINDERGARTEN posdefault:ADJECTIVE ) comparative=harder 
  how ( meanings=1 QWORD ADVERB CONJUNCTION_SUBORDINATE EXTENT_ADVERB COMMON4 COMMON2 COMMON1 KINDERGARTEN posdefault:ADVERB CONJUNCT_SUBORD_NOUN ) 

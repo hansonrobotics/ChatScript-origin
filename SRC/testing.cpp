@@ -79,6 +79,7 @@ static char* textUsedG;
 static int trials;
 static int nextRule = 0;
 static bool stepMatch = false;
+static bool keepname = false;
 
 static short int stepOver[MAX_GLOBAL];
 static char stepOut[MAX_GLOBAL];
@@ -280,8 +281,8 @@ static void MarkUp(WORDP D) // mark all that can be seen from here going up as m
 	{
 		if (F->verb == Mmember)
 		{
-			WORDP D = Meaning2Word(F->object);
-			MarkUp(D);
+			WORDP E = Meaning2Word(F->object);
+			MarkUp(E);
 		}
   
 		F = GetSubjectNondeadNext(F);
@@ -901,7 +902,13 @@ static void C_Regress(char* input)
 static void C_Source(char* input)
 {
 	char word[MAX_WORD_SIZE];
+	multiuser = false;
 	char* ptr = ReadCompiledWord(input,word);
+	if (!stricmp(word, "multiuser")) // not functional yet
+	{
+		multiuser = true;
+		ptr = ReadCompiledWord(ptr, word);
+	}
 	FILE* in = FopenReadNormal(word); // source
 	if (in) sourceFile = in;
 	else Log(STDTRACELOG,(char*)"No such source file: %s\r\n",word);
@@ -926,20 +933,29 @@ static void ReadNextDocument(char* name,uint64 value) // ReadDocument(inBuffer,s
 		return;
 	}
 	docSentenceCount = 0;
+	sourceStart = ElapsedMilliseconds();
+	sourceTokens = 0;
+	sourceLines = 0;
 	readingDocument = true;
 	SetBaseMemory();
 	inputSentenceCount = 0;
 	docVolleyStartTime = ElapsedMilliseconds(); // time limit control
 	tokenCount = 0;
+	InitJSONNames(); // reset indices for this volley
+	ClearVolleyWordMaps();
+	ResetEncryptTags();
+	ResetToPreUser(); // back to empty state before any user
+	ReadUserData();	// read user info back in so we can continue (a form of garbage collection)
 	ShowStats(true);
+
 	SetUserVariable((char*)"$$document",name);
 	if (!trace) echo = false;
 	*mainOutputBuffer = 0;
 	documentMode = true;
 	randIndex =  oldRandIndex;
-	OnceCode((char*)"$cs_control_pre",(char*)"~document_pre"); // just once per document
+	OnceCode((char*)" ",(char*)"~document_pre"); // just once per document
 	randIndex =  oldRandIndex;
-	
+
 	// read the file
 	ProcessInputFile();
 	
@@ -977,7 +993,6 @@ static void ReadNextDocument(char* name,uint64 value) // ReadDocument(inBuffer,s
 	// do post process on document
 	postProcessing = 1;
 	FinishVolley((char*)" ",mainOutputBuffer,(char*)"~document_post"); // per document post process and will write out stuff  and reset user memory and ...
-	ReadUserData();	// read user info back in so we can continue (a form of garbage collection)
 	postProcessing = 0;
 	if (*mainOutputBuffer) printf((char*)"%s\r\n",UTF2ExtendedAscii(mainOutputBuffer));
 	documentMode = false;
@@ -1018,7 +1033,9 @@ static void C_Document(char* input)
 	}
 	
 	MemoryMarkCode(NULL);
-	
+
+	OnceCode((char*)"$cs_control_pre");
+
 	size_t len = strlen(name);
 	if (name[len-1] == '/') WalkDirectory(name,ReadNextDocument, 0);
 	else ReadNextDocument(name,0);
@@ -1128,12 +1145,12 @@ static void DoAssigns(char* ptr)  // find variable assignments
 	{
 		if (mem[1] == '~')
 		{
-			char* at = mem;
-			while (*--at != ' ');
+			char* at1 = mem;
+			while (*--at1 != ' ');
 			char var[MAX_WORD_SIZE];
 			*mem = 0;
-			ReadCompiledWord(at+1,var);
-			if (!first) first = at; // end with this test
+			ReadCompiledWord(at1+1,var);
+			if (!first) first = at1; // end with this test
 			char set[MAX_WORD_SIZE];
 			ReadCompiledWord(mem+1,set);
 			MEANING memx = MakeMeaning(StoreWord((char*)"member"));
@@ -1149,18 +1166,18 @@ static void DoAssigns(char* ptr)  // find variable assignments
 	{
 		if (IsDigit(*(mem-1)))
 		{
-			char* at = mem;
-			while (*--at != ' ')
+			char* at1 = mem;
+			while (*--at1 != ' ')
 			{
 				if (!IsDigit(*(mem-1))) break; // not a number
 			}
 			/// NOT COMPLETE CODE
-			if (*at == ' ')
+			if (*at1 == ' ')
 			{
 				char var[MAX_WORD_SIZE];
 				*mem = 0;
-				ReadCompiledWord(at,var);
-				if (!first) first = at; // end with this test
+				ReadCompiledWord(at1,var);
+				if (!first) first = at1; // end with this test
 				char set[MAX_WORD_SIZE];
 				ReadCompiledWord(mem+1,set); // the mark to make
 				*mem = '+';
@@ -1215,10 +1232,10 @@ static void C_TestPattern(char* input)
 			--jumpIndex;
 			return;
 		}
-		StartScriptCompiler();
+		bool inited = StartScriptCompiler();
 		ReadNextSystemToken(NULL,NULL,data,false,false); // flush cache
 		ptr = ReadPattern(readBuffer, NULL, pack,false,false); // swallows the pattern
-		EndScriptCompiler();
+		if (inited) EndScriptCompiler();
 	}
 
 	//   var assign?
@@ -1596,11 +1613,11 @@ static void VerifyAccess(char* topic,char kind,char* prepassTopic) // prove patt
 			char* data;
 			char* output = NULL;
 			int id = 0;
+			char pattern[MAX_WORD_SIZE];
 			if (TopLevelRule(rule)) // test all top level rules in topic BEFORE this one
 			{
 				data = GetTopicData(topicID);
 				char label[MAX_WORD_SIZE];
-				char pattern[MAX_WORD_SIZE];
 				while (data && data < rule)
 				{
 					if (*data == GAMBIT || *data == RANDOM_GAMBIT); // no data gambits
@@ -1643,7 +1660,7 @@ static void VerifyAccess(char* topic,char kind,char* prepassTopic) // prove patt
 				}
 			}
 
-			if (data && data < rule && !strstr(data,(char*)"^incontext")) // earlier rule matches same pattern and is not context sensitive
+			if (data && data < rule && !strstr(pattern,(char*)"^incontext")) // earlier rule matches same pattern and is not context sensitive
 			{
 				// prove not a simple () (*) (!?)  (?) etc
 				char* t = pattern+2; // start AFTER the ( 
@@ -2032,6 +2049,84 @@ static void ShowFailCount(WORDP D,uint64 junk)
 	D->w.planArgCount = 0;
 }
 
+static void C_TrimField(char* file)
+{
+	FILE* out = FopenUTF8Write("tmp/tmp.txt");
+	FILE* in = FopenReadOnly(file);
+	if (!in)
+	{
+		Log(STDTRACELOG, (char*)"No such file %s\r\n", file);
+		return;
+	}
+	while (fgets(readBuffer, 10000000, in) >= (void *)0)
+	{
+		if (!*readBuffer) break;
+		//VA-51382515	legal	family		I have a friend who has a half brother. His father won't let him see his brother. Does my friend have any rights in this matter?
+		char* at = strchr(readBuffer, '\t'); // to cat
+		if (!at)
+		{
+			printf("not found delimiter %s\r\n", readBuffer);
+			return;
+		}
+		at = strchr(at+1, '\t'); // to spec
+		at = strchr(at + 1, '\t'); // to loc
+		at = strchr(at + 1, '\t'); // to input
+		if (strlen(at+1) < 50) continue;  // nominal 5 words
+		fprintf(out, "%s", readBuffer);
+		*readBuffer = 0;
+	}
+	fclose(out);
+	fclose(in);
+}
+
+static void C_PennDecode(char* file)
+{
+	FILE* in = FopenReadOnly(file); 
+	if (!in)
+	{
+		Log(STDTRACELOG, (char*)"No such file %s\r\n", file);
+		return;
+	}
+	char token[MAX_WORD_SIZE];
+	bool start = false;
+	while (ReadALine(readBuffer, in) >= 0)
+	{
+		if (!*readBuffer) continue;
+		char* ptr = SkipWhitespace(readBuffer);
+		while (*ptr)
+		{
+			ptr = SkipWhitespace(ptr);
+			if (!*ptr) continue;
+			char word[MAX_WORD_SIZE];
+			if (*ptr == '(')
+			{
+				start = true;
+				++ptr;
+			}
+			else if (*ptr == ')')
+			{
+				++ptr;
+			}
+			else
+			{
+				ptr = ReadCompiledWord(ptr, word);
+				char* end = word + strlen(word);
+				while (*--end == ')');
+				*++end = 0;
+				if (start) strcpy(token, word); // pos tag
+				else
+				{
+					Log(STDUSERLOG, "%s/%s ", word,token);
+					if (*token == '.') 
+						Log(STDUSERLOG, "\r\n");
+				}
+				start = false;
+			}
+		}
+	}
+	fclose(in);
+}
+
 static void C_PennMatch(char* file)
 {
 	char word[MAX_WORD_SIZE];
@@ -2040,7 +2135,7 @@ static void C_PennMatch(char* file)
 	bool showUsed = false;
 	unsigned int ambigLocation = 0;
 	char filename[SMALL_WORD_SIZE];
-	strcpy(filename,(char*)"REGRESS/PENNTAGS/penn.txt");
+	strcpy(filename,(char*)"REGRESS/PENNTAGS/penn.txt"); // tedtalks
 	clock_t startTime = ElapsedMilliseconds(); 
 	int sentenceLengthLimit = 0;
 	usedTrace = AllocateBuffer();
@@ -2110,8 +2205,7 @@ reloop:
 	unsigned int parseOK = 0;
 	unsigned int parseBad = 0;
 	unsigned int ambigSentences = 0;
-
-	ReturnToAfterLayer(LAYER_1,true);
+	UnlockLayer(LAYER_BOOT); // unlock it to add stuff
 	StoreWord((char*)"NN");
 	StoreWord((char*)"NNS");
 	StoreWord((char*)"NNP");
@@ -2144,7 +2238,8 @@ reloop:
 	StoreWord((char*)"CD");
 	StoreWord((char*)"EX");
 	StoreWord((char*)"FW");
-	LockLayer(false);
+	StoreWord((char*)"SYM"); // includes $
+	LockLayer(true);
 	ambiguousWords = 0;
 
 	FILE* oldin = NULL;
@@ -2167,7 +2262,7 @@ reloop:
 		char word[MAX_WORD_SIZE];
 		char* ptr = SkipWhitespace(readBuffer);
 		if (!*ptr || *ptr == '#') continue;
-		if (!strnicmp(ptr,(char*)":exit ",6)) break;
+		if (!strnicmp(ptr,(char*)":exit",5)) break;
 		if (!strnicmp(ptr,(char*)":include ",9))
 		{
 			if (oldin) 
@@ -2257,8 +2352,8 @@ reloop:
 		char* answer1;
 		tokenControl = STRICT_CASING | DO_ESSENTIALS | DO_POSTAG | DO_CONTRACTIONS | NO_HYPHEN_END | NO_COLON_END | NO_SEMICOLON_END | TOKEN_AS_IS;
 		if (!raw && !ambig && !showUsed) tokenControl |= DO_PARSE;
-		ReturnToAfterLayer(LAYER_1,false);
-		PrepareSentence(buffer,true,true);	
+		ReturnToAfterLayer(LAYER_BOOT, false);
+		PrepareSentence(buffer,true,true);
 		if (sentenceLengthLimit && (int)wordCount != sentenceLengthLimit) continue; // looking for easy sentences to fix
 		int actualLen = len;
 		if (*tags[len] == '.' || *tags[len] == '?' || *tags[len] == '!') 
@@ -2275,13 +2370,17 @@ reloop:
 			int loc = i;
 			if (i == 1 && *wordStarts[i] == '"') ++loc; // ignore quote
 			bad = false;
-			if (bitCounts[i] != 1) 
+#ifdef TREETAGGER
+			// match treetagger tag?
+			if (MatchTag(tags[i], i)) continue;
+#endif
+			if (bitCounts[i] != 1)
 			{
 				bad = true;
 				totalAmbigs += bitCounts[i]; // total ambiguity choices
 				++ambigItems;
 			}
-			if (ambig && bad && (!ambigLocation || loc == (int)ambigLocation) ) 
+			if (ambig && bad && (!ambigLocation || loc == (int)ambigLocation) )
 				Log(STDTRACELOG,(char*)"** AMBIG %d: line: %d %s\r\n",++ambigSentences,currentFileLine,answer1);
 		}
 
@@ -2319,11 +2418,14 @@ retry:
 			char* xxoriginalWord = wordStarts[i];
 			if (sep) *sep = 0;
 			
+		
 			if (bitCounts[i] != 1 && (tokenControl & DO_PARSE) == DO_PARSE  ) // did not solve even when parsed
 			{
 				Log(STDTRACELOG,(char*)"Parse result- Ambiguous %s word %d(%s) line %d:  %s\r\n",mytags[i],i,wordStarts[i],currentFileLine,buffer);
 			} 
-			
+#ifdef TREETAGGER
+			else if (MatchTag(tags[i], i)) ++right; // match treetagger tag?
+#endif
 			else if (ignoreRule != -1 && !stricmp(wordStarts[i],(char*)"than")) ++right; // special against rule mode
 			else if (posValues[i-1] & IDIOM) ++right; // we will PRESUME we are right - he did a lot of harm -- they say of is prep. we say the phrase is adjective
 			else if (!stricmp(tags[i],(char*)"-LRB-"))
@@ -2521,7 +2623,8 @@ retry:
 			{
 				if (posValues[i] & (NOUN_INFINITIVE|VERB_INFINITIVE)) ++right;  
 				else if (posValues[i] & AUX_VERB && allOriginalWordBits[i] &  VERB_INFINITIVE) ++right;  // includes our modals 
-				else if (!showUsed ||  (usedWordIndex == i && usedType & (NOUN_INFINITIVE|VERB_INFINITIVE)))  Log(STDTRACELOG,(char*)"** Bad VB (infinitive) %s word %d(%s) line %d:  %s\r\n",mytags[i],i,wordStarts[i],currentFileLine,buffer);
+				else if (!showUsed ||  (usedWordIndex == i && usedType & (NOUN_INFINITIVE|VERB_INFINITIVE)))  
+					Log(STDTRACELOG,(char*)"** Bad VB (infinitive) %s word %d(%s) line %d:  %s\r\n",mytags[i],i,wordStarts[i],currentFileLine,buffer);
 			}
 			else if (!stricmp(tags[i],(char*)"VBD")) // past
 			{
@@ -2715,10 +2818,8 @@ retry:
 		++ignoreRule;
 		goto reloop;
 	}
-
-	double percent = ((double)right * 100) /total;
-	int val = (int)percent;
-	percent = ((double)parseBad * 100) /sentences;
+	double percentRight = ((double)right * 100) /total;
+	double percent = ((double)parseBad * 100) /sentences;
 	int val1 = (int)percent;
 	percent = ((double)ambigItems * 100) /ambiguousWords;
 	int val2 = (int) percent;
@@ -2729,7 +2830,10 @@ retry:
 	unsigned int tokensec = (timediff) ? ((total * 1000) / timediff) : 0; 
 	FreeBuffer();
 
-	Log(STDTRACELOG,(char*)"\r\nambigWords:%d  wrong:%d  notWrong:%d total:%d percent:%d sentences:%d parsed:%d parseBad:%d badSentencePercent:%d initialAmbiguousWords:%d percentambigLeft:%d initialAmbigpercent:%d\r\n\r\n",ambigItems,total-right,right,total,val,sentences,parseOK,parseBad,val1,ambiguousWords,val2,val3);
+	Log(STDTRACELOG, (char*)"\r\nambigWords:%d  wrong:%d  notWrong:%d total:%d",
+		ambigItems, total - right, right, total);
+	Log(STDTRACELOG, (char*)" percent:%f sentences:%d parsed:%d parseBad:%d badSentencePercent:%d initialAmbiguousWords:%d percentambigLeft:%d initialAmbigpercent:%d\r\n\r\n",
+		(float)percentRight, sentences, parseOK, parseBad, val1, ambiguousWords, val2, val3);
 	if (!raw && !ambig) Log(STDTRACELOG,(char*)"parsed:%d parseBad:%d badSentenceRate:%d initialAmbiguousWords:%d percentambigLeft:%d initialAmbigpercent:%d\r\n\r\n",parseOK,parseBad,val1,ambiguousWords,val2,val3);
 	WalkDictionary(ShowFailCount,0);
 	Log(STDTRACELOG,(char*)"\r\n");
@@ -2739,6 +2843,7 @@ retry:
 		trace = 0; 
 		echo = false;
 	}
+	ReturnToAfterLayer(LAYER_BOOT, false);
 }
 
 static void C_PennNoun(char* file)
@@ -2818,7 +2923,6 @@ static void C_PennNoun(char* file)
 						break;
 					Log(STDTRACELOG,(char*)"%s: %s %s  %s\r\n",tokens[i],tags[x],tokens[x], buffer); // unxpected
 					break;
-	
 				}
 			}
 		}
@@ -3159,7 +3263,7 @@ static void C_WikiText(char* ptr)
 		size *=  1000;
 		if (!stricmp(ptr,(char*)"split")) split = true;
 	}
-	char bulletchar[5];
+	unsigned char bulletchar[5];
 	bulletchar[0] = 0xe2; bulletchar[1] = 0x80; bulletchar[2] = 0xa2; bulletchar[3] = 0;  // � 
 
 	unsigned int id = 0;
@@ -3372,7 +3476,7 @@ static void C_WikiText(char* ptr)
 		// any line with more than 2 bullets is some kind of index line, ignore it
 		char* linker = readBuffer-1;
 		unsigned int n = 0;
-		while ((linker = strstr(linker+1,bulletchar))) ++n;
+		while ((linker = strstr(linker+1,(char*)bulletchar))) ++n;
 		if (n > 2) continue;
 
 
@@ -3541,14 +3645,14 @@ static void C_WikiText(char* ptr)
 			{
 				title = false;
 				*end = 0;
-				char* at = SkipWhitespace(word);
-				if (*at)
+				char* at1 = SkipWhitespace(word);
+				if (*at1)
 				{
-					size_t lenx = strlen(at) + 2;
+					size_t lenx = strlen(at1) + 2;
 					if ((strlen(titlename) + lenx) < (MAX_WORD_SIZE-3))
 					{
 						strcat(titlename,(char*)" "); // any leading piece adds to title
-						strcat(titlename,at);
+						strcat(titlename,at1);
 					}
 				}
 				if (strchr(titlename,':') || strchr(titlename,'/')) // discard unusual articles, like: Wikipedia:AutoWikiBrowser/Typos
@@ -3567,14 +3671,14 @@ static void C_WikiText(char* ptr)
 			// title substance
 			if (title)
 			{
-				char* at = SkipWhitespace(word);
-				if (*at)
+				char* at1 = SkipWhitespace(word);
+				if (*at1)
 				{
-					size_t lenx = strlen(at) + 1;
+					size_t lenx = strlen(at1) + 1;
 					if ((strlen(titlename) + lenx) < (MAX_WORD_SIZE-3))
 					{
 						strcat(titlename,(char*)" "); // any leading piece adds to title
-						strcat(titlename,at);
+						strcat(titlename,at1);
 					}
 				}
 				if (strlen(titlename) > 500) title = false;
@@ -6313,6 +6417,43 @@ static void C_TopicStats(char* input)
 	Log(STDTRACELOG,(char*)"Concepts %d Topics %d rules %d empties %d\r\n  gambits %d  responders %d (?: %d s: %d  u: %d) rejoinders %d  \r\n",conceptCount,topicCount,totalrules,totalempties,totalgambits,totalresponders,totalquestions,totalstatements,totaldual,totalrejoinders);
 }
 
+static void C_Dedupe(char* input)
+{
+	FILE* in = FopenReadOnly(input);
+	char fname[200];
+	char* charx = strrchr(input, '/');
+	if (charx) *charx = 0; 
+	sprintf(fname, "%s/%s", tmp,input);
+	if (!in)
+	{
+		printf("no such file");
+		return;
+	}
+	FILE* out = FopenUTF8Write(fname);
+	while (ReadALine(readBuffer, in) >= 0)
+	{
+		if (!*readBuffer) continue;
+		char* comment = readBuffer;
+		while ((comment = strchr(comment, '#')))
+		{
+			if (comment[1] == ' ' && *(comment - 1) == ' ')
+			{
+				*(comment - 1) = 0;
+				break;
+			}
+			comment += 1;
+		}
+		WORDP D = StoreWord(readBuffer,AS_IS);
+		if (D->internalBits & FAKE_NOCONCEPTLIST) continue;
+		D->internalBits |= FAKE_NOCONCEPTLIST;
+		fprintf(out, "%s\r\n", readBuffer);
+	}
+	printf("done\r\n");
+	fclose(out);
+	fclose(in);
+}
+
+
 static void C_TopicDump(char* input)
 {
 	char fname[200];
@@ -6447,11 +6588,11 @@ static void TrackFactsDown(MEANING M,FACT* F,unsigned int depth,size_t& length,b
 		}
 		else TrackFactsUp(M,F,D); // what is it a member of
 	    // concept keywords
-		FACT* F = GetObjectNondeadHead(D);
-		while (F)
+		FACT* G = GetObjectNondeadHead(D);
+		while (G)
 		{
-			if (F->verb == Mmember)	TrackFactsDown(F->subject,F,depth+2,length,display); // what is a member of this concept
-			F = GetObjectNondeadNext(F);
+			if (G->verb == Mmember)	TrackFactsDown(G->subject,G,depth+2,length,display); // what is a member of this concept
+			G = GetObjectNondeadNext(G);
 		}
 		if (display)
 		{
@@ -6495,11 +6636,11 @@ static void TrackFactsDown(MEANING M,FACT* F,unsigned int depth,size_t& length,b
 		}
 		else
 		{
-			FACT* F = GetSubjectNondeadHead(D); // who comes from this word
-			while (F)
+			FACT* G = GetSubjectNondeadHead(D); // who comes from this word
+			while (G)
 			{
-				if (F->verb == Mmember)	TrackFactsUp(F->object,F,D); 
-				F = GetSubjectNondeadNext(F);
+				if (G->verb == Mmember)	TrackFactsUp(G->object,G,D); 
+				G = GetSubjectNondeadNext(G);
 			}
 			unsigned int size = GetMeaningCount(D); // all meanings up
 			for  (unsigned int k = 1; k <= size; ++k)
@@ -7117,9 +7258,9 @@ static void C_DoInternal(char* input,bool internal)
 	FunctionResult result = NOPROBLEM_BIT;
 #ifndef DISCARDSCRIPTCOMPILER
 	hasErrors = 0;
-	StartScriptCompiler();
-	ReadOutput(false,input, NULL,out,NULL,NULL,NULL);
-	EndScriptCompiler();
+	bool inited = StartScriptCompiler();
+	ReadOutput(false,false,input, NULL,out,NULL,NULL,NULL);
+	if (inited) EndScriptCompiler();
 	if (hasErrors) Log(STDTRACELOG,(char*)"\r\nScript errors prevent execution.");
 	else 
 	{
@@ -7155,24 +7296,29 @@ static void C_Retry(char* input)
 
 	char file[MAX_WORD_SIZE];
 	char name[MAX_WORD_SIZE];
-
+	bool traceit = false;
+	if (!strnicmp(input, "trace", 5))
+	{
+		traceit = true;
+		input += 6;
+	}
 	char word[MAX_WORD_SIZE];
 	ResetToPreUser();
 	ResetSentence();
 	char which[20];
 	*which = 0;
 	*name = 0;
-	if (!strnicmp(SkipWhitespace(mainInputBuffer),(char*)":redo",5) && redo)
+	if (!strnicmp(SkipWhitespace(mainInputBuffer), (char*)":redo", 5) && redo)
 	{
-		char* at = ReadCompiledWord(input,word); // input is after turn
+		char* at = ReadCompiledWord(input, word); // input is after turn
 		if (IsDigit(*word)) // retry depth
 		{
 			input = at;
 			unsigned int n = atoi(word);
-			sprintf(which,(char*)"%d",n);
-			if (!*at) 
+			sprintf(which, (char*)"%d", n);
+			if (!*at)
 			{
-				Log(STDTRACELOG,(char*)"You must supply input to go back. changing to :retry \r\n");
+				Log(STDTRACELOG, (char*)"You must supply input to go back. changing to :retry \r\n");
 				*which = 0; // ordinary retry
 			}
 		}
@@ -7183,18 +7329,18 @@ static void C_Retry(char* input)
 		}
 	}
 	input = SkipWhitespace(input);
-	if (!*input) strcpy(mainInputBuffer,revertBuffer);
-	else strcpy(mainInputBuffer,input);
-	if (!server) printf((char*)"Retrying with: %s\r\n",mainInputBuffer);
+	if (!*input) strcpy(mainInputBuffer, revertBuffer);
+	else strcpy(mainInputBuffer, input);
+	if (!server) printf((char*)"Retrying with: %s\r\n", mainInputBuffer);
 
 	// get main user file name
 	sprintf(file, (char*)"%s/topic_%s_%s.txt", users, loginID, computerID);
 	if (stricmp(language, "english")) sprintf(file, (char*)"%s/topic_%s_%s_%s.txt", users, loginID, computerID, language);
-	
+
 	if (!*name) // if not overridden, use default backup data
 	{
-		sprintf(name, (char*)"%s/backup%s-%s_%s.bin", tmp,which, loginID, computerID);
-		if (stricmp(language, "english")) sprintf(name, (char*)"%s/backup%s-%s_%s_%s.bin", tmp,which, loginID, computerID, language);
+		sprintf(name, (char*)"%s/backup%s-%s_%s.txt", tmp, which, loginID, computerID);
+		if (stricmp(language, "english")) sprintf(name, (char*)"%s/backup%s-%s_%s_%s.txt", tmp, which, loginID, computerID, language);
 	}
 	CopyFile2File(file, name, false);
 	char* buffer = FindUserCache(file); //  (does not trigger a read, assumes it has it in core)
@@ -7203,23 +7349,28 @@ static void C_Retry(char* input)
 	// get shared file
 	if (shared)
 	{
-		sprintf(file,(char*)"%s/topic_%s_%s.txt",users,loginID,(char*)"share");
-		if (stricmp(language,"english")) sprintf(file, (char*)"%s/topic_%s_%s_%s.txt", users, loginID, language,(char*)"share");
-		
-		sprintf(name,(char*)"%s/backup%s-share-%s_%s.bin",tmp,which,loginID,computerID);
-		if (stricmp(language, "english")) sprintf(name, (char*)"%s/backup%s-share-%s_%s_%s.bin", tmp,which, loginID, computerID,language);
-		CopyFile2File(file,name,false);
+		sprintf(file, (char*)"%s/topic_%s_%s.txt", users, loginID, (char*)"share");
+		if (stricmp(language, "english")) sprintf(file, (char*)"%s/topic_%s_%s_%s.txt", users, loginID, language, (char*)"share");
+
+		sprintf(name, (char*)"%s/backup%s-share-%s_%s.txt", tmp, which, loginID, computerID);
+		if (stricmp(language, "english")) sprintf(name, (char*)"%s/backup%s-share-%s_%s_%s.txt", tmp, which, loginID, computerID, language);
+		CopyFile2File(file, name, false);
 		buffer = FindUserCache(file); //  (does not trigger a read, assumes it has it in core)
 		if (buffer) FreeUserCache(); // erase cache of user so it reads revised disk file
 	}
-	
+
 	// load user from refreshed files
 	char oldc;
-	int oldCurrentLine;	
+	int oldCurrentLine;
 	int BOMvalue = -1; // get prior value
-	BOMAccess(BOMvalue, oldc,oldCurrentLine); // copy out prior file access and reinit user file access
+	BOMAccess(BOMvalue, oldc, oldCurrentLine); // copy out prior file access and reinit user file access
 	ReadUserData();
-	BOMAccess(BOMvalue, oldc,oldCurrentLine); 
+	BOMAccess(BOMvalue, oldc, oldCurrentLine);
+	if (traceit) 
+	{
+		trace = -1; 
+		echo = true;
+	}
 }
 
 static void C_Redo(char* input)
@@ -7254,7 +7405,7 @@ static void C_Skip(char* buffer)
 		ruleID = *++map;
 	}
 	if (ruleID != NOMORERULES) Log(STDTRACELOG,(char*)"Next gambit of %s is: %s...\r\n",GetTopicName(topic),ShowRule(GetRule(topic,ruleID)));
-	WriteUserData(0);
+	WriteUserData(0,false);
 }
 
 static void C_Show(char* input)
@@ -7697,7 +7848,7 @@ static void C_Trace(char* input)
 			else if (!stricmp(word,(char*)"deep")) flags &= -1 ^ (TRACE_JSON|TRACE_TOPIC|TRACE_FLOW|TRACE_INPUT|TRACE_USERFN|TRACE_SAMPLE|TRACE_INFER|TRACE_SUBSTITUTE|TRACE_HIERARCHY| TRACE_FACT| TRACE_VARIABLESET| TRACE_QUERY| TRACE_USER|TRACE_USERFACT|TRACE_POS|TRACE_TCP|TRACE_USERCACHE|TRACE_SQL|TRACE_LABEL); 
 			else if (!stricmp(word,(char*)"always")) flags &= -1 ^  TRACE_ALWAYS;
 		}
-		else if (IsNumberStarter(*word) && !IsAlphaUTF8(word[1])) 
+		else if (IsNumberStarter(*word)  && !IsAlphaUTF8(word[1]))
 		{
 			ReadInt(word,*(int*)&flags);
 			break; // there wont be morez flags -- want :trace -1 in a table to be safe from reading the rest
@@ -7886,7 +8037,7 @@ static void C_Time(char* input)
 			else if (!stricmp(word, (char*)"deep")) flags &= -1 ^ (TIME_JSON | TIME_TOPIC | TIME_USERFN | TIME_QUERY | TIME_USER | TIME_TCP | TIME_USERCACHE | TIME_SQL);
 			else if (!stricmp(word, (char*)"always")) flags &= -1 ^ TIME_ALWAYS;
 		}
-		else if (IsNumberStarter(*word) && !IsAlphaUTF8(word[1]))
+		else if (IsNumberStarter(*word)  && !IsAlphaUTF8(word[1]))
 		{
 			ReadInt(word, *(int*)&flags);
 			break; // there wont be morez flags -- want :time -1 in a table to be safe from reading the rest
@@ -8354,12 +8505,12 @@ static void C_TranslateConcept(char* input) // give the language & filename to w
 			size_t len = strlen(start);
 			if (len > 3500)
 			{
-				char* at = start-1;
+				char* at1 = start-1;
 				char* lasthole = NULL;
-				while (++at)
+				while (++at1)
 				{
-					if ((at-start) > 3500) break; // accept last hole
-					else if (!strncmp(at,"<br/>",5)) lasthole = at + 1;
+					if ((at1-start) > 3500) break; // accept last hole
+					else if (!strncmp(at1,"<br/>",5)) lasthole = at + 1;
 				}
 				strncpy(translation,start,lasthole-start);
 				translation[lasthole-start] = 0;
@@ -8368,7 +8519,7 @@ static void C_TranslateConcept(char* input) // give the language & filename to w
 				strcat(output,translation);
 				strcat(output," ");
 				size_t l = strlen(output);
-				at = NULL; // debug hook
+				at1 = NULL; // debug hook
 			}
 			else // direct use or final chunk
 			{
@@ -8645,13 +8796,13 @@ static void DisplayTopic(char* name,int spelling)
 
 		if (spelling & ABSTRACT_VP)
 		{
-			char* end = strchr(output,ENDUNIT);
-			*end = 0;
+			char* end1 = strchr(output,ENDUNIT);
+			*end1 = 0;
 			if (*rule == QUESTION || *rule == STATEMENT_QUESTION)
 			{
 				if (!*label && strstr(output,(char*)"factanswer")) Log(STDTRACELOG,(char*)"No label for: %s %s\r\n",pattern,output);
 			}
-			*end = ENDUNIT;
+			*end1 = ENDUNIT;
 			rule = FindNextRule(NEXTRULE,rule,id);
 			continue;
 		}
@@ -8844,7 +8995,17 @@ static void DisplayTopic(char* name,int spelling)
 				}
 				break;
 			case USERVAR_PREFIX:
+			{
 				if (IsDigit(word[1])) break; // money $
+				char next[MAX_WORD_SIZE];
+				ReadCompiledWord(output, next);
+				if (!IsComparator(next))
+				{
+					sprintf(outputPtr, (char*)"%s ", word);
+					outputPtr += strlen(outputPtr);
+					continue;
+				}
+			}
 				// flow into these other variables
 			case SYSVAR_PREFIX: case '_': case '@': // match variable or set variable
 				if (*output == '=' || output[1] == '=') // assignment
@@ -8886,6 +9047,11 @@ static void DisplayTopic(char* name,int spelling)
 					bodyKind[hasBody] = word[2]; // i or l
 					output = strchr(output,'{') + 2;
 					continue;
+				}
+				else if (word[1] == '\'' || word[1] == '"')
+				{
+					sprintf(outputPtr, (char*)"%s ", word);
+					outputPtr += strlen(outputPtr);
 				}
 				else if (*output == '(') output = BalanceParen(output+1,true,false); //  end call
 				break;
@@ -9277,7 +9443,7 @@ static void C_Diff(char* input)
 	char* buf1 = AllocateBuffer();
 	char* buf2 = AllocateBuffer();
 	unsigned int n = 0;
-	unsigned int err = 0;
+	unsigned int err1 = 0;
 	while (ALWAYS)
 	{
 		++n;
@@ -9287,13 +9453,13 @@ static void C_Diff(char* input)
 			{
 				Log(STDTRACELOG,(char*)"2nd file has more at line %d: %s\r\n",n,buf2);
 				fprintf(out,(char*)"2nd file has more at line %d: %s\r\n",n,buf2);
-				++err;
+				++err1;
 			}
 			break;
 		}
 		if (!fgets(buf2,maxBufferSize,in2)) 
 		{
-			++err;
+			++err1;
 			Log(STDTRACELOG,(char*)"1st file has more at line %d: %s\r\n",n,buf1);
 			fprintf(out,(char*)"1st file has more at line %d: %s\r\n",n,buf1);
 			break;
@@ -9323,15 +9489,15 @@ static void C_Diff(char* input)
 			Log(STDTRACELOG,(char*)"     >>    %s\r\n",start2);
 			fprintf(out,(char*)"%5d<<    %s\r\n",n,start1);
 			fprintf(out,(char*)"     >>    %s\r\n",start2);
-		++err;
+		++err1;
 		}
 	}
 	FreeBuffer();
 	FreeBuffer();
 	FClose(in2);
 	FClose(in1);
-	fprintf(out,(char*)"For %s vs %s -  %d lines differ.\r\n",file1,file2,err);
-	Log(STDTRACELOG,(char*)"For %s vs %s - %d lines differ.\r\n",file1,file2,err);
+	fprintf(out,(char*)"For %s vs %s -  %d lines differ.\r\n",file1,file2,err1);
+	Log(STDTRACELOG,(char*)"For %s vs %s - %d lines differ.\r\n",file1,file2,err1);
 	FClose(out);
 }
 
@@ -9385,6 +9551,49 @@ static void IndentDisplay(char* one, char* two,char* display)
 		two += i;
 	}
 	strcat(display,(char*)"\r\n\r\n");
+}
+
+static void C_StripLog(char* file)
+{
+	char name[MAX_WORD_SIZE];
+	bool all = true;
+	if (!strnicmp(file, "oneuser",7))
+	{
+		all = false;
+		file = ReadCompiledWord(file, name);
+	}
+	sprintf(name, "%s/tmp.txt", tmp);
+	FILE* in = fopen(file, "rb");
+	if (!in)
+	{
+		printf("file not found");
+		return;
+	}
+	FILE* out = FopenUTF8Write(name);
+
+	char word[MAX_WORD_SIZE];
+	char user[MAX_WORD_SIZE];
+	while (ReadALine(readBuffer, in) >= 0)
+	{
+		char* ptr = SkipWhitespace(readBuffer);
+		if (!*ptr) continue;
+		char* at = strstr(ptr, "ServerPre:") ;  // ServerPre: pid: 2820 20300655 (pearl) msg Jul 26 19 : 13 : 14 2017
+		if (!at) continue;
+		at = ReadCompiledWord(at + 11, word); // pid label
+		at = ReadCompiledWord(at, word); // pid 
+		at = ReadCompiledWord(at, user); 
+		at = strchr(at, '(');
+		char* end = strchr(at, ')'); // bot
+		size_t len = strlen(end + 2) - 21; // skip ) and space and account for space and date
+		*end = 0; // terminate botname
+		end[len+2] = 0; // trim off space and date
+		if (!all) fprintf(out, "%s\r\n", end + 2);
+		else if (len) fprintf(out, "%s %s %s\r\n", user, at+1, end+2);
+		else fprintf(out, "%s %s\r\n", user, at + 1);
+	}
+	fclose(in);
+	fclose(out);
+	printf("done\r\n");
 }
 
 static void C_QuoteLines(char* file)
@@ -9442,7 +9651,6 @@ static void BuildForeign(char* input)
 	MakeDirectory(name);
 	ClearDictionaryFiles();
 	ClearWordMaps();
-	char lemma[MAX_WORD_SIZE];
 	ReadForeign();
 
 	sprintf(name,"treetagger/%s_rawwords.txt",language);
@@ -9453,30 +9661,29 @@ static void BuildForeign(char* input)
 		return;
 	}
 
-	// format is  word  `lemma` POSes
+	// format is  word  `lemma` POSes  -- can be multiple lemmas like `lemma`lemma`` one data for each part of speech, and lemmas can be |  joined also.
 	while (ReadALine(readBuffer,in) >= 0)
 	{
 		char* ptr = ReadTokenMass(readBuffer, word);
 		if (!*word) continue;
 		if ((unsigned char) word[0] ==  0xEF && (unsigned char) word[1] == 0xBB && (unsigned char) word[2] == 0xBF) continue; // UTF8 BOM
 		// word might be a phrase
-		char* startlemma = strchr(ptr, '`');
+		char* startlemma = strchr(ptr, '`'); // find start of lemma data
 		if (!startlemma) continue;
 
 		char* base = SkipWhitespace(readBuffer);
 		*(startlemma - 1) = 0;
 		strcpy(word, base);
-		*(startlemma - 1) = '`';
+		*(startlemma - 1) = ' ';
 
 		char* close = strrchr(startlemma+1, '`');
 		if (!close) continue; // no lemma?
-		*close = 0;
-		strcpy(lemma, startlemma + 1);
+		*(close) = 0; // ends in ``
+		if (!strcmp(startlemma+1, word)) *startlemma = 0; // cancel  as it is the same as its sole lemma
 		*close = '`';
-		if (!strcmp(lemma, word)) *lemma = 0; // cancel same lemma
 
 		char pos[MAX_WORD_SIZE];
-		unsigned int flags = 0;
+		uint64 flags = AS_IS;
 		pos[0] = '_';
 		char* p = close + 1;
 		while (1)
@@ -9488,7 +9695,8 @@ static void BuildForeign(char* input)
 				flags |= D->properties;
 		}
 		WORDP D = StoreWord(word, flags);
-		if (*lemma) SetCanonical(D, MakeMeaning(StoreWord(lemma)));
+		if (GetCanonical(D)) printf("Already have canonical for %s\r\n", D->word);
+		else if (*startlemma) SetCanonical(D, MakeMeaning(StoreWord(startlemma,AS_IS)));
 	}
 	fclose(in);
 	WalkDictionary(WriteDictionary);
@@ -9519,7 +9727,13 @@ static void TrimIt(char* name,uint64 flag)
 
 	bool header = false;
 	char fname[200];
-	sprintf(fname, "%s/tmp.txt", tmp);
+	if (keepname)
+	{
+		char* end = strrchr(name, '/');
+		if (end) name = end + 1;
+		sprintf(fname, "%s/%s.txt", tmp,name);
+	}
+	else sprintf(fname, "%s/tmp.txt", tmp);
 	FILE* out = FopenUTF8WriteAppend(fname);
 	if (!out) return;
 	char file[SMALL_WORD_SIZE];
@@ -9694,9 +9908,9 @@ static void TrimIt(char* name,uint64 flag)
 		else if ( flag == 8) sprintf(display,(char*)"%s\r\n\t(%s) %s\r\n",input,topic,output); // 2liner, indented computer   + topic
 		else if ( flag == 9) // build user logs
 		{
-			char file[SMALL_WORD_SIZE];
-			sprintf(file,(char*)"%s/log-%s.txt",users,user);
-			FILE* out1 = FopenUTF8WriteAppend(file);
+			char file1[SMALL_WORD_SIZE];
+			sprintf(file1,(char*)"%s/log-%s.txt",users,user);
+			FILE* out1 = FopenUTF8WriteAppend(file1);
 			fprintf(out1,(char*)"%s\r\n",copy);
 			FClose(out1);
 			continue;
@@ -9728,14 +9942,14 @@ static void TrimIt(char* name,uint64 flag)
 				char* rest = strchr(dot,'~'); // 2ndary rule?
 				if (rest) // look at indirection rule
 				{
-					char* dot = strchr(rest,'.');
-					dot = strchr(dot+1,'.'); // 2nd dot
-					while (IsDigit(*++dot)) {;}
-					char c = *dot;
-					*dot = 0;
+					char* dot1 = strchr(rest,'.');
+					dot1 = strchr(dot1+1,'.'); // 2nd dot
+					while (IsDigit(*++dot1)) {;}
+					char c1 = *dot1;
+					*dot1 = 0;
 					sprintf(label,(char*)"R-%s",rest);
 					D = StoreWord(label,AS_IS); 
-					*dot = c;
+					*dot1 = c1;
 				}
 			}
 		}
@@ -9748,6 +9962,7 @@ static void TrimIt(char* name,uint64 flag)
 			char* atOutput = output;
 			if (*whyTag != '~') { ; }
 			whyTag = ReadCompiledWord(whyTag, tag); // get tag  which is topic.x.y=name or topic.x.y<topic.a.b (reuse) and optional label which is whytag
+			
 			if (flag == 13) whyTag = tag;
 			char* separation = strchr(whyTag+1, '~');
 			if (separation) *separation = 0; // block out rest of output for a moment
@@ -9812,9 +10027,15 @@ static void C_Trim(char* input) // create simple file of user chat from director
 {   
  	char word[MAX_WORD_SIZE];
 	char file[SMALL_WORD_SIZE];
+	keepname = false;
 	char* original = input;
 	*file = 0;
 	input = ReadCompiledWord(input,word);
+	if (*word == '"') // multiparam
+	{
+		if (strstr(word, "keepname")) keepname = true;
+		input = ReadCompiledWord(input, word);
+	}
 	filesSeen = 0;
 	if (!strnicmp((char*)"log-",word,4)) // is just a user file name
 	{
@@ -9841,7 +10062,6 @@ static void C_Trim(char* input) // create simple file of user chat from director
 			*file = 0;
 		}
 		input = ReadCompiledWord(input,word);
-
 	}
 	else strcpy(directory,logs);
 
@@ -9967,19 +10187,23 @@ CommandInfo commandSet[] = // NEW
 	{ (char*)":showcoverage",C_ShowCoverage,(char*)"Display execution coverage of ChatScript rules"}, 
 	{ (char*)":diff",C_Diff,(char*)"match 2 files and report lines that differ"}, 
 	{ (char*)":trim",C_Trim,(char*)"Strip excess off chatlog file to make simple file TMP/tmp.txt"}, 
+	{ (char*)":trimfield",C_TrimField,(char*)"echo file to TMP/tmp.txt minus short line in column" },
 	
 	{ (char*)"\r\n---- internal support",0,(char*)""}, 
+	{ (char*)":dedupe",C_Dedupe,(char*)"echo input file to TMP/tmp.txt without duplicate lines)" },
 	{ (char*)":topicdump",C_TopicDump,(char*)"Dump topic data suitable for inclusion as extra topics into TMP/tmp.txt (:extratopic or PerformChatGivenTopic)"},
 	{ (char*)":builddict",BuildDictionary,(char*)" basic, layer0, layer1, foreign, or wordnet are options instead of default full"}, 
 	{ (char*)":buildforeign",BuildForeign,(char*)"regenerate foreign language dictionary"}, 
 	{ (char*)":clean",C_Clean,(char*)"Convert source files to NL instead of CR/LF for unix"},
 	{ (char*)":quotelines",C_QuoteLines,(char*)"Read lines from file, add quotes around them, write to tmp/tmp.txt" },
+	{ (char*)":striplog",C_StripLog,(char*)"Read lines from a server log file, reducing them to normal inputs for :source, write to tmp/tmp.txt" },
 #ifndef DISCARDPOSTGRES
 	{ (char*)":endpguser",C_EndPGUser,(char*)"Switch from postgres user topic to file system"},
 #endif
 	{ (char*)":extratopic",C_ExtraTopic,(char*)"given topic name and file as output from :topicdump, build in core topic and use it thereafter"},
 	{ (char*)":pennformat",C_PennFormat,(char*)"rewrite penn tagfile (eg as output from stanford) as one liners"}, 
-	{ (char*)":pennmatch",C_PennMatch,(char*)"FILE {raw ambig} compare penn file against internal result"}, 
+	{ (char*)":penndecode",C_PennDecode,(char*)"FILE convert penn parse to simple tag format" },
+	{ (char*)":pennmatch",C_PennMatch,(char*)"FILE {raw ambig} compare penn file against internal result"},
 	{ (char*)":pennnoun",C_PennNoun,(char*)"locate mass nouns in pennbank"}, 
 	{ (char*)":pos",C_POS,(char*)"Show results of tokenization and tagging"},  
 	{ (char*)":sortconcept",C_SortConcept,(char*)"Prepare concept file alphabetically"}, 
@@ -10145,11 +10369,11 @@ TestMode DoCommand(char* input,char* output,bool authorize)
 	char* ptr = NULL;
 #ifndef DISCARDSCRIPTCOMPILER
 	char* hold = newBuffer;
-	StartScriptCompiler();
+	bool inited = StartScriptCompiler();
 #endif
 	ReadNextSystemToken(NULL,ptr,NULL,false,false);		// flush any pending data in input cache
 #ifndef DISCARDSCRIPTCOMPILER
-	EndScriptCompiler();
+	if (inited) EndScriptCompiler();
 	newBuffer = hold;
 #endif
 	if (strnicmp(input,(char*)":why",4)) responseIndex = 0;

@@ -1,6 +1,6 @@
 # ChatScript Fact Manual
 © Bruce Wilcox, gowilcox@gmail.com www.brilligunderstanding.com
-<br>Revision 12/7/2016 cs6.91
+<br>Revision 10/22/2017 cs7.6
 
 * [Simple Facts](ChatScript-Fact-Manual.md#simple-facts)
 * [Advanced Facts](ChatScript-Fact-Manual.md#advanced-facts)
@@ -590,7 +590,7 @@ You can also retrieve a field via `$$f.subject` or `$$f.verb` or `$$f.object`.
 ### `^find`( setname itemname )
 
 given a concept set, find the ordered position of the 2nd
-argument within it. ^Output that index. Used, for example, to compare two poker hands.
+argument within it. ^Output that index (0-based). Used, for example, to compare two poker hands.
 
 
 ### `^first`( fact-set-annotated )

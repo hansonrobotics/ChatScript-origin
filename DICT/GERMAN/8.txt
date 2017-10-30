@@ -1,30 +1,30 @@
 ﻿ 8 ( ADJECTIVE_NUMBER NOUN_NUMBER ) 
- 8,0-Prozent-Bundesobligationen ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=8,0-Prozent-Bundesobligation 
+ 8,0-Prozent-Bundesobligationen ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=`8,0-Prozent-Bundesobligation` NN  
  8,01 ( ADJECTIVE_NUMBER NOUN_NUMBER ) 
  8,2 ( ADJECTIVE_NUMBER NOUN_NUMBER ) 
  8,21 ( ADJECTIVE_NUMBER NOUN_NUMBER ) 
- 8,25-Prozent-Obligationen ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=8,25-Prozent-Obligation 
+ 8,25-Prozent-Obligationen ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=`8,25-Prozent-Obligation` NN  
  8,49 ( ADJECTIVE_NUMBER NOUN_NUMBER ) 
  8,5 ( ADJECTIVE_NUMBER NOUN_NUMBER ) 
  8,5-Milliarden-Mark-Projekt ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
- 8,5-Prozent-Bundesobligationen ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=8,5-Prozent-Bundesobligation 
+ 8,5-Prozent-Bundesobligationen ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=`8,5-Prozent-Bundesobligation` NN  
  8,5-Prozent-Einheitsanleihe ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  8,5:17,5-Niederlage ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  8- ( ) 
  8-Ball ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  8-Film ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
- 8-Filmen ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=8-Film 
+ 8-Filmen ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=`8-Film` NN  
  8-Kamera ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  8-Millimeter- ( ) 
  8-Millionen- ( ) 
  8-Millionen-Dollar-Falle ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  8-Punkte-Plan ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  8-Stunden- ( ) 
- 8-Trasse ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=8-trasse 
+ 8-Trasse ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=`8-trasse` NN  
  8-Uhr ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  8-Umgehung ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  8-Westumgehung ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
- 8-Zellen ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=8-Zelle 
+ 8-Zellen ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=`8-Zelle` NN  
  8-m-Spiegel ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  8-mm- ( ) 
  8.00 ( ADJECTIVE_NUMBER NOUN_NUMBER ) 
@@ -60,10 +60,10 @@
  80-Anlage ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  80-Jahr-Feier ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  80-Kilometer-Radius ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
- 80-Liter-Gefässe ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=80-Liter-Gefäß 
- 80-Liter-Gefäße ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=80-Liter-Gefäß 
+ 80-Liter-Gefässe ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=`80-Liter-Gefäß` NN  
+ 80-Liter-Gefäße ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=`80-Liter-Gefäß` NN  
  80-Liter-Tonne ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
- 80-Liter-Tonnen ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=80-Liter-Tonne 
+ 80-Liter-Tonnen ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=`80-Liter-Tonne` NN  
  80-Millionen- ( ) 
  80-Millionen-Mark-Projekt ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  80-Millionen-Projekt ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
@@ -84,8 +84,8 @@
  80-Teiler ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  80-Trainer ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  80-Zentimeter-Becken ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
- 80-jährige ( ADJECTIVE ) lemma=80-jährig 
- 80-jährigen ( ADJECTIVE ) lemma=80-jährig 
+ 80-jährige ( ADJECTIVE ) lemma=`80-jährig` ADJA  
+ 80-jährigen ( ADJECTIVE ) lemma=`80-jährig` ADJA  
  80-kg-Mann ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  80.000-Einwohner-Stadt ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  80/100 ( ADJECTIVE_NUMBER NOUN_NUMBER ) 
@@ -95,11 +95,11 @@
  800-Betten-Klinik ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  800-Jahr-Feier ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  800-Jahr-Jubiläum ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
- 800-Jahre ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=800-Jahr 
+ 800-Jahre ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=`800-Jahr` NN  
  800-Jahrfeier ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  800-Mark-Programm ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  800-Mark-Spende ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
- 800-Megawatt-Blöcke ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=800-Megawatt-Block 
+ 800-Megawatt-Blöcke ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=`800-Megawatt-Block` NN  
  800-Meter ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  800-Meter- ( ) 
  800-Meter-Lauf ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
@@ -126,34 +126,34 @@
  8000-Seelen-Gemeinde ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  80000 ( ADJECTIVE_NUMBER NOUN_NUMBER ) 
  800000-Mark-Zuschuss ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
- 800000-Mark-Zuschuß ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=800000-Mark-Zuschuss 
+ 800000-Mark-Zuschuß ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=`800000-Mark-Zuschuss` NN  
  8000er ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  8000er-Grenze ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  800er ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
- 800jährige ( ADJECTIVE ) lemma=800jährig 
- 800jährigen ( ADJECTIVE ) lemma=800jährig 
- 800jähriges ( ADJECTIVE ) lemma=800jährig 
+ 800jährige ( ADJECTIVE ) lemma=`800jährig` ADJA  
+ 800jährigen ( ADJECTIVE ) lemma=`800jährig` ADJA  
+ 800jähriges ( ADJECTIVE ) lemma=`800jährig` ADJA  
  805/91 ( ADJECTIVE_NUMBER NOUN_NUMBER ) 
  809/92 ( ADJECTIVE_NUMBER NOUN_NUMBER ) 
- 80er ( ADJECTIVE ) 
- 80er-Jahre ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=80er-Jahr 
+ 80er ( ADJECTIVE ) lemma=`80er`80er` ADJA  ADJD  
+ 80er-Jahre ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=`80er-Jahr` NN  
  80er-Jahre- ( ) 
- 80er-Jahren ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=80er-Jahr 
- 80ern ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=80er 
- 80fachen ( ADJECTIVE ) lemma=80fach 
+ 80er-Jahren ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=`80er-Jahr` NN  
+ 80ern ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=`80er` NN  
+ 80fachen ( ADJECTIVE ) lemma=`80fach` ADJA  
  80jährig ( ADJECTIVE ) 
- 80jährige ( ADJECTIVE ) lemma=80jährig 
- 80jährigen ( ADJECTIVE ) lemma=80jährig 
- 80jähriger ( ADJECTIVE ) lemma=80jährig 
- 80jähriges ( ADJECTIVE ) lemma=80jährig 
- 80köpfige ( ADJECTIVE ) lemma=80köpfig 
- 80köpfigen ( ADJECTIVE ) lemma=80köpfig 
- 80prozentige ( ADJECTIVE ) lemma=80prozentig 
- 80prozentigen ( ADJECTIVE ) lemma=80prozentig 
- 80prozentiger ( ADJECTIVE ) lemma=80prozentig 
- 80stündigen ( ADJECTIVE ) lemma=80stündig 
- 80stündiges ( ADJECTIVE ) lemma=80stündig 
- 80tägiger ( ADJECTIVE ) lemma=80tägig 
+ 80jährige ( ADJECTIVE ) lemma=`80jährig` ADJA  
+ 80jährigen ( ADJECTIVE ) lemma=`80jährig` ADJA  
+ 80jähriger ( ADJECTIVE ) lemma=`80jährig` ADJA  
+ 80jähriges ( ADJECTIVE ) lemma=`80jährig` ADJA  
+ 80köpfige ( ADJECTIVE ) lemma=`80köpfig` ADJA  
+ 80köpfigen ( ADJECTIVE ) lemma=`80köpfig` ADJA  
+ 80prozentige ( ADJECTIVE ) lemma=`80prozentig` ADJA  
+ 80prozentigen ( ADJECTIVE ) lemma=`80prozentig` ADJA  
+ 80prozentiger ( ADJECTIVE ) lemma=`80prozentig` ADJA  
+ 80stündigen ( ADJECTIVE ) lemma=`80stündig` ADJA  
+ 80stündiges ( ADJECTIVE ) lemma=`80stündig` ADJA  
+ 80tägiger ( ADJECTIVE ) lemma=`80tägig` ADJA  
  81,6- ( ) 
  81/1 ( ADJECTIVE_NUMBER NOUN_NUMBER ) 
  81/2 ( ADJECTIVE_NUMBER NOUN_NUMBER ) 
@@ -164,11 +164,11 @@
  8192 ( ADJECTIVE_NUMBER NOUN_NUMBER ) 
  81er ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  81jährig ( ADJECTIVE ) 
- 81jährige ( ADJECTIVE ) lemma=81jährig 
- 81jährigen ( ADJECTIVE ) lemma=81jährig 
- 81jähriger ( ADJECTIVE ) lemma=81jährig 
- 81köpfige ( ADJECTIVE ) lemma=81köpfig 
- 81malige ( ADJECTIVE ) lemma=81malig 
+ 81jährige ( ADJECTIVE ) lemma=`81jährig` ADJA  
+ 81jährigen ( ADJECTIVE ) lemma=`81jährig` ADJA  
+ 81jähriger ( ADJECTIVE ) lemma=`81jährig` ADJA  
+ 81köpfige ( ADJECTIVE ) lemma=`81köpfig` ADJA  
+ 81malige ( ADJECTIVE ) lemma=`81malig` ADJA  
  82-kg-Klasse ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  82/83 ( ADJECTIVE_NUMBER NOUN_NUMBER ) 
  82/84 ( ADJECTIVE_NUMBER NOUN_NUMBER ) 
@@ -178,11 +178,11 @@
  826er ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  82er ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  82jährig ( ADJECTIVE ) 
- 82jährige ( ADJECTIVE ) lemma=82jährig 
- 82jährigen ( ADJECTIVE ) lemma=82jährig 
- 82jähriger ( ADJECTIVE ) lemma=82jährig 
+ 82jährige ( ADJECTIVE ) lemma=`82jährig` ADJA  
+ 82jährigen ( ADJECTIVE ) lemma=`82jährig` ADJA  
+ 82jähriger ( ADJECTIVE ) lemma=`82jährig` ADJA  
  83 ( ADJECTIVE_NUMBER NOUN_NUMBER ) 
- 83-jährigen ( ADJECTIVE ) lemma=83-jährig 
+ 83-jährigen ( ADJECTIVE ) lemma=`83-jährig` ADJA  
  83/66 ( ADJECTIVE_NUMBER NOUN_NUMBER ) 
  83/82 ( ADJECTIVE_NUMBER NOUN_NUMBER ) 
  83/84 ( ADJECTIVE_NUMBER NOUN_NUMBER ) 
@@ -191,16 +191,16 @@
  83/89 ( ADJECTIVE_NUMBER NOUN_NUMBER ) 
  83er ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  83jährig ( ADJECTIVE ) 
- 83jährige ( ADJECTIVE ) lemma=83jährig 
- 83jährigen ( ADJECTIVE ) lemma=83jährig 
- 83jähriger ( ADJECTIVE ) lemma=83jährig 
+ 83jährige ( ADJECTIVE ) lemma=`83jährig` ADJA  
+ 83jährigen ( ADJECTIVE ) lemma=`83jährig` ADJA  
+ 83jähriger ( ADJECTIVE ) lemma=`83jährig` ADJA  
  84 ( ADJECTIVE_NUMBER NOUN_NUMBER ) 
  84/1 ( ADJECTIVE_NUMBER NOUN_NUMBER ) 
  84/75 ( ADJECTIVE_NUMBER NOUN_NUMBER ) 
  84/85 ( ADJECTIVE_NUMBER NOUN_NUMBER ) 
  84/91 ( ADJECTIVE_NUMBER NOUN_NUMBER ) 
  84000-Einwohner-Stadt ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
- 840maligen ( ADJECTIVE ) lemma=840malig 
+ 840maligen ( ADJECTIVE ) lemma=`840malig` ADJA  
  8412 ( ADJECTIVE_NUMBER NOUN_NUMBER ) 
  844/91 ( ADJECTIVE_NUMBER NOUN_NUMBER ) 
  849-Millionen-Mark-Etat ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
@@ -208,10 +208,10 @@
  84:91-Heimniederlage ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  84er ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  84jährig ( ADJECTIVE ) 
- 84jährige ( ADJECTIVE ) lemma=84jährig 
- 84jährigen ( ADJECTIVE ) lemma=84jährig 
- 84jähriger ( ADJECTIVE ) lemma=84jährig 
- 84jähriges ( ADJECTIVE ) lemma=84jährig 
+ 84jährige ( ADJECTIVE ) lemma=`84jährig` ADJA  
+ 84jährigen ( ADJECTIVE ) lemma=`84jährig` ADJA  
+ 84jähriger ( ADJECTIVE ) lemma=`84jährig` ADJA  
+ 84jähriges ( ADJECTIVE ) lemma=`84jährig` ADJA  
  85 ( ADJECTIVE_NUMBER NOUN_NUMBER ) 
  85- ( ) 
  85/86 ( ADJECTIVE_NUMBER NOUN_NUMBER ) 
@@ -221,21 +221,21 @@
  850 ( ADJECTIVE_NUMBER NOUN_NUMBER ) 
  850-Jahr-Feier ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  850-Jahr-Jubiläum ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
- 850-Jahr-Jubiläums ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=850-Jahr-Jubiläum 
+ 850-Jahr-Jubiläums ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=`850-Jahr-Jubiläum` NN  
  850-Millionen- ( ) 
  850/88 ( ADJECTIVE_NUMBER NOUN_NUMBER ) 
  850er ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
- 850jährige ( ADJECTIVE ) lemma=850jährig 
- 850jährigen ( ADJECTIVE ) lemma=850jährig 
+ 850jährige ( ADJECTIVE ) lemma=`850jährig` ADJA  
+ 850jährigen ( ADJECTIVE ) lemma=`850jährig` ADJA  
  85er ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  85jährig ( ADJECTIVE ) 
- 85jährige ( ADJECTIVE ) lemma=85jährig 
- 85jährigen ( ADJECTIVE ) lemma=85jährig 
- 85jähriger ( ADJECTIVE ) lemma=85jährig 
- 85jähriges ( ADJECTIVE ) lemma=85jährig 
+ 85jährige ( ADJECTIVE ) lemma=`85jährig` ADJA  
+ 85jährigen ( ADJECTIVE ) lemma=`85jährig` ADJA  
+ 85jähriger ( ADJECTIVE ) lemma=`85jährig` ADJA  
+ 85jähriges ( ADJECTIVE ) lemma=`85jährig` ADJA  
  86 ( ADJECTIVE_NUMBER NOUN_NUMBER ) 
  86,8 ( ADJECTIVE_NUMBER NOUN_NUMBER ) 
- 86-Bands ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=86-Band 
+ 86-Bands ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=`86-Band` NN  
  86-Kilo-Mann ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  86-Teiler ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  86/1 ( ADJECTIVE_NUMBER NOUN_NUMBER ) 
@@ -244,9 +244,9 @@
  86:83-Sieg ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  86er ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  86jährig ( ADJECTIVE ) 
- 86jährige ( ADJECTIVE ) lemma=86jährig 
- 86jährigen ( ADJECTIVE ) lemma=86jährig 
- 86jähriger ( ADJECTIVE ) lemma=86jährig 
+ 86jährige ( ADJECTIVE ) lemma=`86jährig` ADJA  
+ 86jährigen ( ADJECTIVE ) lemma=`86jährig` ADJA  
+ 86jähriger ( ADJECTIVE ) lemma=`86jährig` ADJA  
  87. ( ADJECTIVE ) 
  87/2 ( ADJECTIVE_NUMBER NOUN_NUMBER ) 
  87/87 ( ADJECTIVE_NUMBER NOUN_NUMBER ) 
@@ -259,9 +259,9 @@
  87:90-Niederlage ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  87er ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  87jährig ( ADJECTIVE ) 
- 87jährige ( ADJECTIVE ) lemma=87jährig 
- 87jährigen ( ADJECTIVE ) lemma=87jährig 
- 87jähriger ( ADJECTIVE ) lemma=87jährig 
+ 87jährige ( ADJECTIVE ) lemma=`87jährig` ADJA  
+ 87jährigen ( ADJECTIVE ) lemma=`87jährig` ADJA  
+ 87jähriger ( ADJECTIVE ) lemma=`87jährig` ADJA  
  88 ( ADJECTIVE_NUMBER NOUN_NUMBER ) 
  88-Fieber ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  88-Geschehnisraum ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
@@ -272,14 +272,14 @@
  881 ( ADJECTIVE_NUMBER NOUN_NUMBER ) 
  885/92 ( ADJECTIVE_NUMBER NOUN_NUMBER ) 
  88er ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
- 88er-Bescheids ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=88er-Bescheid 
- 88fache ( ADJECTIVE ) lemma=88fach 
- 88fachen ( ADJECTIVE ) lemma=88fach 
+ 88er-Bescheids ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=`88er-Bescheid` NN  
+ 88fache ( ADJECTIVE ) lemma=`88fach` ADJA  
+ 88fachen ( ADJECTIVE ) lemma=`88fach` ADJA  
  88jährig ( ADJECTIVE ) 
- 88jährige ( ADJECTIVE ) lemma=88jährig 
- 88jährigen ( ADJECTIVE ) lemma=88jährig 
- 88jähriger ( ADJECTIVE ) lemma=88jährig 
- 88köpfigen ( ADJECTIVE ) lemma=88köpfig 
+ 88jährige ( ADJECTIVE ) lemma=`88jährig` ADJA  
+ 88jährigen ( ADJECTIVE ) lemma=`88jährig` ADJA  
+ 88jähriger ( ADJECTIVE ) lemma=`88jährig` ADJA  
+ 88köpfigen ( ADJECTIVE ) lemma=`88köpfig` ADJA  
  89 ( ADJECTIVE_NUMBER NOUN_NUMBER ) 
  89/90 ( ADJECTIVE_NUMBER NOUN_NUMBER ) 
  89/91 ( ADJECTIVE_NUMBER NOUN_NUMBER ) 
@@ -287,75 +287,40 @@
  89er ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  89er-Wende ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  89jährig ( ADJECTIVE ) 
- 89jährige ( ADJECTIVE ) lemma=89jährig 
- 89jährigen ( ADJECTIVE ) lemma=89jährig 
- 89jähriger ( ADJECTIVE ) lemma=89jährig 
+ 89jährige ( ADJECTIVE ) lemma=`89jährig` ADJA  
+ 89jährigen ( ADJECTIVE ) lemma=`89jährig` ADJA  
+ 89jähriger ( ADJECTIVE ) lemma=`89jährig` ADJA  
  8:0-Erfolg ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
- 8:0-Punkte ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=8:0-Punkt 
- 8:0-Punkten ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=8:0-Punkt 
+ 8:0-Punkte ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=`8:0-Punkt` NN  
+ 8:0-Punkten ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=`8:0-Punkt` NN  
  8:0-Sieg ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  8:0-Zähler ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  8:1-Erfolg ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  8:1-Sieg ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
- 8:1-Tore ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=8:1-Tor 
- 8:10-Punkten ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=8:10-Punkt 
+ 8:1-Tore ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=`8:1-Tor` NN  
+ 8:10-Punkten ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=`8:10-Punkt` NN  
  8:2-Erfolg ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
- 8:2-Punkte ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=8:2-Punkt 
- 8:2-Punkten ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=8:2-Punkt 
+ 8:2-Punkte ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=`8:2-Punkt` NN  
+ 8:2-Punkten ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=`8:2-Punkt` NN  
  8:2-Sieg ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
- 8:2-Tore ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=8:2-Tor 
+ 8:2-Tore ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=`8:2-Tor` NN  
  8:3-Erfolg ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  8:3-Führung ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  8:3-Sieg ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  8:4-Erfolg ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
- 8:4-Punkte ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=8:4-Punkt 
+ 8:4-Punkte ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=`8:4-Punkt` NN  
  8:4-Zähler ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
- 8:4-Zählern ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=8:4-Zähler 
+ 8:4-Zählern ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=`8:4-Zähler` NN  
  8:5-Führung ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  8:6-Sieg ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
- 8:7-Stimmen ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=8:7-Stimme 
- 8:8-Punkte ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=8:8-Punkt 
+ 8:7-Stimmen ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=`8:7-Stimme` NN  
+ 8:8-Punkte ( NOUN NOUN_SINGULAR NOUN_PLURAL ) lemma=`8:8-Punkt` NN  
  8:8-Unentschieden ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  8er ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  8er-Ball ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
  8er-Reihe ( NOUN NOUN_SINGULAR NOUN_PLURAL ) 
- 8jährige ( ADJECTIVE ) lemma=8jährig 
- 8jährigen ( ADJECTIVE ) lemma=8jährig 
- 8jähriger ( ADJECTIVE ) lemma=8jährig 
- 8jähriges ( ADJECTIVE ) lemma=8jährig 
- 8prozentige ( ADJECTIVE ) lemma=8prozentig 
- 8,0-Prozent-Bundesobligation ( ) 
- 8,25-Prozent-Obligation ( ) 
- 8,5-Prozent-Bundesobligation ( ) 
- 8-trasse ( ) 
- 8-Zelle ( ) 
- 80-Liter-Gefäß ( ) 
- 80-jährig ( ) 
- 800-Jahr ( ) 
- 800-Megawatt-Block ( ) 
- 800jährig ( ) 
- 80er-Jahr ( ) 
- 80fach ( ) 
- 80köpfig ( ) 
- 80prozentig ( ) 
- 80stündig ( ) 
- 80tägig ( ) 
- 81köpfig ( ) 
- 81malig ( ) 
- 83-jährig ( ) 
- 840malig ( ) 
- 850jährig ( ) 
- 86-Band ( ) 
- 88er-Bescheid ( ) 
- 88fach ( ) 
- 88köpfig ( ) 
- 8:0-Punkt ( ) 
- 8:1-Tor ( ) 
- 8:10-Punkt ( ) 
- 8:2-Punkt ( ) 
- 8:2-Tor ( ) 
- 8:4-Punkt ( ) 
- 8:7-Stimme ( ) 
- 8:8-Punkt ( ) 
- 8jährig ( ) 
- 8prozentig ( ) 
+ 8jährige ( ADJECTIVE ) lemma=`8jährig` ADJA  
+ 8jährigen ( ADJECTIVE ) lemma=`8jährig` ADJA  
+ 8jähriger ( ADJECTIVE ) lemma=`8jährig` ADJA  
+ 8jähriges ( ADJECTIVE ) lemma=`8jährig` ADJA  
+ 8prozentige ( ADJECTIVE ) lemma=`8prozentig` ADJA  

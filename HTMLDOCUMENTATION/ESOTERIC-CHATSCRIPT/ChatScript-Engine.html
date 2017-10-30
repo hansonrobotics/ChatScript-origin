@@ -11,15 +11,16 @@
 <h1 id="chatscript-engine">ChatScript Engine</h1>
 <p>© Bruce Wilcox, gowilcox@gmail.com brilligunderstanding.com<br> Revision 1/28/2017 cs7.12</p>
 <ul>
-<li><a href="ChatScript-Engine.md#data">Data</a></li>
-<li><a href="ChatScript-Engine.md#memory-management">Memory Management</a></li>
-<li><a href="ChatScript-Engine.md#function-run-time-model">Function Run-time Model</a></li>
-<li><a href="ChatScript-Engine.md#script-execution">Script Execution</a></li>
-<li><a href="ChatScript-Engine.md#evaluation-contexts">Evaluation Contexts</a></li>
-<li><a href="ChatScript-Engine.md#natural-language-pipeline">Natural Language Pipeline</a></li>
-<li><a href="ChatScript-Engine.md#private-code">Private Code</a></li>
-<li><a href="ChatScript-Engine.md#code-zones">Code Zones</a></li>
-<li><a href="ChatScript-Engine.md#documentation">Documentation</a></li>
+<li><a href="ChatScript-Engine-md#data">Data</a></li>
+<li><a href="ChatScript-Engine-md#memory-management">Memory Management</a></li>
+<li><a href="ChatScript-Engine-md#function-run-time-model">Function Run-time Model</a></li>
+<li><a href="ChatScript-Engine-md#script-execution">Script Execution</a></li>
+<li><a href="ChatScript-Engine-md#evaluation-contexts">Evaluation Contexts</a></li>
+<li><a href="ChatScript-Engine-md#rule-tags">Rule Tags</a></li>
+<li><a href="ChatScript-Engine-md#natural-language-pipeline">Natural Language Pipeline</a></li>
+<li><a href="ChatScript-Engine-md#private-code">Private Code</a></li>
+<li><a href="ChatScript-Engine-md#code-zones">Code Zones</a></li>
+<li><a href="ChatScript-Engine-md#documentation">Documentation</a></li>
 </ul>
 <p>This does not cover ChatScript the scripting language. It covers how the internals of the engine work and how to extend it with private code.</p>
 <h1 id="data">Data</h1>
@@ -31,7 +32,7 @@
 <p>The first fundamental datatype is the text string. This is a standard null-terminated C string represented in UTF8. Text strings represent words, phrases, things to say.</p>
 <p>They represent numbers (converted on the fly when needed to float and int64 values for computation). They represent the names of functions and concepts and topics and user variables. Strings are allocated out of either the stack or the heap.</p>
 <h2 id="dictionary-entries">Dictionary Entries</h2>
-<p>The second fundamental datatype is the dictionary entry. A dictionary entry refers to a string and may have other data attached. Function names in the dictionary tell you how many arguments they require, where to go to execute their code. User variable names in the dictionary store a pointer to their value (in the stack or heap). Ordinary English words have bits describing their part-of-speech information and how to use them in parsing.</p>
+<p>The second fundamental datatype is the dictionary entry. A dictionary entry refers to a string and has have other data attached. Function names in the dictionary tell you how many arguments they require, where to go to execute their code. User variable names in the dictionary store a pointer to their value (in the stack or heap). Ordinary English words have bits describing their part-of-speech information and how to use them in parsing.</p>
 <p>In fact, ordinary words have multiple meanings which can vary in their part of speech and their ontology, so the list of possible meanings and descriptions is part of the dictionary entry. When working directly with a dictionary entry, the code uses <code>WORDP</code> as its datatype (pointer to a word). Code working indirectly with a dictionary entry uses <code>MEANING</code> as its datatype.</p>
 <p>A <code>MEANING</code> is an index into the dictionary along with description bits that can say which meaning of the word is referred to or which part of speech form (like noun vs verb) is being referred to. In a concept definition, for example, one can refer to break, which means any meaning or POS-type of the word break. One refers to the 33rd meaning of break as <code>break~33</code>, which implies a specific part of speech and place in the ontology of the dictionary. One refers to noun meanings of break as <code>break~n</code>.</p>
 <h2 id="facts">Facts</h2>
@@ -66,7 +67,7 @@
 <p>function by having a byte code scripting language stored on the query name <code>direct_v</code>. This byte code is defined in <code>LIVEDATA</code> (so you can define new queries) and is executed to perform the query. Effectively facts create graphs and queries are a language for walking the edges of the graph.</p>
 <p>ChatScript support user variables, for considerations of efficiency and ease of reference by scripters. Variables could have been represented as facts, but it would have increased processing speed, local memory, and user file sizes, not to mention made scripts harder to read.</p>
 <h1 id="memory-management">Memory Management</h1>
-<p>Many programs use malloc and free extensively upon demand. These functions are not particularly fast. And they lead to memory fragmentation, whereupon one might fail a malloc even though overall the space exists. ChatScript follows video game design principles and manages its own memory. It allocates everything in advance and then (with rare exception) it never dynamically allocates memory again, so it should not fail by calling the OS for memory. And you have control over the allocations upon startup via command line parameters.</p>
+<p>Many programs use malloc and free extensively upon demand. These functions are not particularly fast. And they lead to memory fragmentation, whereupon one might fail a malloc even though overall the space exists. ChatScript follows video game design principles and manages its own memory (except for 3rd party extensions like duktape and curl). It allocates everything in advance and then (with rare exception) it never dynamically allocates memory again, so it should not fail by calling the OS for memory. And you have control over the allocations upon startup via command line parameters.</p>
 <p>This does not mean CS has a perfect memory management system. Merely that it is extremely fast. It is based on mark/release, so it allocates space rapidly, and at the end of the volley, it releases all the space it used back into its own pool. In the diagram below under Memory Allocation you have a list of all the areas of memory that are preallocated.</p>
 <p>You might run out of memory allocated to dictionary items while still having memory available for facts. This means you need to rebalance your allocations. But most people never run into these problems unless they are on mobile versions of CS.</p>
 <p>Stack and Heap memory are allocated out of a single chunk. Stack is at the low end of memory and grows upwards while Heap is at the high end and grows downward. If they meet, you are out of space.</p>
@@ -91,6 +92,9 @@
 <h1 id="script-execution">Script Execution</h1>
 <p>The engine is heavily dependent upon the prefix character to tell the system how to process script. The script compiler normally forces separate of things into separate tokens to allow fast uniform handling. E.g., <code>^call(bob hello)</code> becomes <code>^call ( bob hello )</code>.</p>
 <p>This predictability allows the system to avoid all the logic involved in knowing where some tokens end and others begin. The other trick the script compiler uses is to put in characters indicating how far something extends. This jump value is used for things like if statements to skip over failing segments of the if. Actual script execution, be it output processing or pattern processing jumps via switch statements on the initial character of a token.</p>
+<h1 id="rule-tags">Rule Tags</h1>
+<p>CS executes rules. While scripters can add their own label to a rule, all rules are automatically labelled internally by their position in a topic. The topic has a list of rules, numbered from 0 ... for top level rules. Top level rules can have rejoinders, which are numbered from 1 ... The system creates a text rule tag like: ~books.12.0 which means in the topic books, the 13th top level rule, and at the top level (not a rejoinder). ~books.12.3 is the third rejoinder under top-level rule 12. Internally a rule id has the bottom 16 bits for top level id and the next 16 for the rejoinder id.</p>
+<p>Engine function arguments involving rules can accept either user labels or rule tags. While rule tags are completely unique, nothing prevents a user from labelling multiple rules in a topic with the same label, which is sometimes useful (eg in ^reuse for finding a rule not yet disabled or in ^incontext).</p>
 <h1 id="evaluation-contexts">Evaluation Contexts</h1>
 <p>The evaluation contexts are</p>
 <pre><code>outputSystem.cpp output function
@@ -140,7 +144,7 @@ DoFunction function call argument evaluation</code></pre>
 <p>The system also attempts to parse the sentence to determine things like what is the main subject, main verb, main object, object of a clause or phrase, etc.</p>
 <p>For English, which is native to CS, the system runs pos-parsing in two passes. The first pass is execution of rule from <code>LIVEDATA/ENGLISH/POS</code> which help it prune out possible meanings of words. The goal of these rules is to reduce ambiguity without ever throwing out actual possible pos values while reducing incorrect meanings as much as possible.</p>
 <p>The second pass tries to determine the parse of the sentence, forcing various pos choices as it goes and altering them if it finds it has made a mistake. It uses a <code>garden path</code> algorithm. It presumes the words form a sentence, and tries to directly find pos values that make it so in a simple way, changing things if it discovers anomalies.</p>
-<p>For foreign languages, the system has code that allows you to plug in as a script call things that could connect to web-api pos-taggers. It also can directly integrate with the TreeTagger pos-tagger if you obtain a commerical license for one or more languages from them. Parsing is not done by TreeTagger so while you know part-of-speech data, you don't know roles like mainsubject, mainverb, etc.</p>
+<p>For foreign languages, the system has code that allows you to plug in as a script call things that could connect to web-api pos-taggers. It also can directly integrate with the TreeTagger pos-tagger if you obtain a commerical license for one or more languages from them. Parsing is not done by TreeTagger so while you know part-of-speech data, you don't know roles like mainsubject, mainverb, etc. But some languages come with chunking, which you can also use to mark chunks as concepts.</p>
 <h2 id="ontology-marking">Ontology Marking</h2>
 <p>Ontology Marking performs a step unique to ChatScript. It marks each word with what alternative views one might have of it. Pattern matching can match not just specific words but any of the alternate views of a word.</p>
 <p>A pattern like <code>(I * ~like * ~animals)</code> can match any sentence which has that rough meaning, covering thousands of animals and dozens of words that mean to like. These <code>~</code> words are concept names, and ChatScript can match them just as easily as it can match words.</p>
@@ -194,6 +198,12 @@ privatetestingtable.cpp  listing of :debug functions made visible to CS</code></
 <li><code>memory allocation</code> is <code>os</code></li>
 <li><code>output eval</code> is <code>outputSystem</code></li>
 <li><p><code>os access</code> is <code>os</code></p></li>
+<li>folders inside SRC are external systems included in CS, including: ```</li>
+<li>curl (web api handling)</li>
+<li>duktape (javascript evalutation)</li>
+<li>mongo (mongodb access)</li>
+<li>postgres (postgres access)</li>
+<li><p>evserver (LINUX fast server) ```</p></li>
 <li>Code to handle if and loop are in <code>constructCode</code></li>
 <li><p>Miscellaneous text processing abilities are in <code>textUtilities</code>.</p></li>
 </ul>

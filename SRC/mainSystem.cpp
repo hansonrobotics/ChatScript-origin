@@ -1,9 +1,10 @@
 #include "common.h" 
 #include "evserver.h"
-char* version = "7.51";
+char* version = "7.6";
 char sourceInput[200];
 FILE* userInitFile;
 int externalTagger = 0;
+char defaultbot[100];
 static bool argumentsSeen = false;
 char* configFile = "cs_init.txt";	// can set config params
 char language[40];							// indicate current language used
@@ -13,12 +14,14 @@ char systemFolder[500];		// where is the livedata system folder
 bool noboot = false;
 static char* erasename = "csuser_erase";
 bool build0Requested = false;
+char websocketParam[1000];
 bool build1Requested = false;
 bool servertrace = false;
 bool pendingRestart = false;
 bool pendingUserReset = false;
 bool rebooting = false;
 bool assignedLogin = false;
+int forkcount = 1;
 char apikey[100];
 DEBUGAPI debugInput = NULL;
 DEBUGAPI debugOutput = NULL;
@@ -33,9 +36,10 @@ bool callback = false;						// when input is callback,alarm,loopback, dont want 
 int timerLimit = 0;						// limit time per volley
 int timerCheckRate = 0;					// how often to check calls for time
 clock_t volleyStartTime = 0;
+char forkCount[10];
 int timerCheckInstance = 0;
 static char* privateParams = NULL;
-static char treetaggerParams[200];
+char treetaggerParams[200];
 static char encryptParams[300];
 static char decryptParams[300];
 char hostname[100];
@@ -103,6 +107,7 @@ bool noReact = false;
 // :source:document data
 bool documentMode = false;						// read input as a document not as chat
 FILE* sourceFile = NULL;						// file to use for :source
+bool multiuser = false;
 EchoSource echoSource = NO_SOURCE_ECHO;			// for :source, echo that input to nowhere, user, or log
 unsigned long sourceStart = 0;					// beginning time of source file
 unsigned int sourceTokens = 0;
@@ -241,9 +246,9 @@ int CountWordsInBuckets(int& unused, unsigned int* depthcount,int limit)
 	memset(depthcount, 0, sizeof(int)*1000);
 	unused = 0;
 	int words = 0;
-	for (int i = 0; i <= maxHashBuckets; ++i)
+	for (unsigned long i = 0; i <= maxHashBuckets; ++i)
 	{
-		unsigned int n = 0;
+		int n = 0;
 		if (!hashbuckets[i]) ++unused;
 		else
 		{
@@ -334,14 +339,6 @@ void CreateSystem()
 	computerID[0] = 0;
 	if (!assignedLogin) loginName[0] = loginID[0] = 0;
 	*botPrefix = *userPrefix = 0;
-
-#ifdef TREETAGGER
-	// We will be reserving some working space for treetagger on the heap
-	// so make sure it is tucked away on layer 1 where it cannot be touched
-	UnlockLayer(LAYER_1);
-	InitTreeTagger(treetaggerParams);
-	LockLayer(LAYER_1);
-#endif
 
 	char word[MAX_WORD_SIZE];
     char buffer[MAX_WORD_SIZE];
@@ -512,10 +509,14 @@ void ReloadSystem()
 	sprintf(name,(char*)"%s/%s/systemfacts.txt",livedata,language);
 	ReadFacts(name,NULL,0); // part of wordnet, not level 0 build 
 	ReadLiveData();  // considered part of basic system before a build
-#ifdef TREETAGGER
-	ReadForeignTagConcepts(); // language is set, so include Treetagger tags as base concepts
-#endif
 	InitTextUtilities1(); // also part of basic system before a build
+
+#ifdef TREETAGGER
+	 // We will be reserving some working space for treetagger on the heap
+	 // so make sure it is tucked away where it cannot be touched
+		InitTreeTagger(treetaggerParams);
+#endif
+
 	WordnetLockDictionary();
 }
 
@@ -539,6 +540,7 @@ static void ProcessArgument(char* arg)
 	else if (!strnicmp(arg, "erasename=", 10)) erasename = arg + 10;
 	else if (!stricmp(arg,"userencrypt")) userEncrypt = true;
 	else if (!stricmp(arg,"ltmencrypt")) ltmEncrypt = true;
+	else if (!strnicmp(arg, "defaultbot=", 11)) strcpy(defaultbot, arg + 11);
 	else if (!stricmp(arg,"noboot")) noboot = true;
 	else if (!stricmp(arg, "servertrace")) servertrace = true;
 	else if (!strnicmp(arg,(char*)"apikey=",7)) strcpy(apikey,arg+7);
@@ -602,7 +604,11 @@ static void ProcessArgument(char* arg)
 	else if (!strnicmp(arg,(char*)"tmp=",4 )) strcpy(tmp,arg+4);
     else if (!strnicmp(arg, (char*)"buildfiles=", 11)) strcpy(buildfiles, arg + 11);
     else if (!strnicmp(arg,(char*)"private=",8)) privateParams = arg+8;
-	else if (!stricmp(arg,(char*)"treetagger")) strcpy(treetaggerParams,"1");
+	else if (!strnicmp(arg, (char*)"treetagger", 10))
+	{
+		if (arg[10] == '=') strcpy(treetaggerParams, arg + 11);
+		else strcpy(treetaggerParams, "1");
+	}
 	else if (!strnicmp(arg,(char*)"encrypt=",8)) strcpy(encryptParams,arg+8);
 	else if (!strnicmp(arg,(char*)"decrypt=",8)) strcpy(decryptParams,arg+8);
 	else if (!strnicmp(arg,(char*)"livedata=",9) ) 
@@ -620,6 +626,66 @@ static void ProcessArgument(char* arg)
 	else if (!strnicmp(arg,(char*)"english=",8) )  strcpy(languageFolder,arg+8);
 #ifndef DISCARDPOSTGRES
 	else if (!strnicmp(arg,(char*)"pguser=",7) )  strcpy(postgresparams, arg+7);
+	// Postgres Override SQL
+	else if (!strnicmp(arg,(char*)"pguserread=",11) )
+	{
+		strcpy(postgresuserread, arg+11);
+		pguserread = postgresuserread;
+	}
+	else if (!strnicmp(arg,(char*)"pguserinsert=",13) )
+	{
+		strcpy(postgresuserinsert, arg+13);
+		pguserinsert = postgresuserinsert;
+	}
+	else if (!strnicmp(arg,(char*)"pguserupdate=",13) )
+	{
+		strcpy(postgresuserupdate, arg+13);
+		pguserupdate = postgresuserupdate;
+	}
+#endif
+#ifndef DISCARDMYSQL
+	else if (!strnicmp(arg,(char*)"mysqlhost=",10) )
+	{
+		mysqlconf = true;
+		strcpy(mysqlhost, arg+10);
+	}
+	else if (!strnicmp(arg,(char*)"mysqlport=",10) )
+	{
+		mysqlconf = true;
+		unsigned int port = atoi(arg+10);
+		mysqlport = port;
+	}
+	else if (!strnicmp(arg,(char*)"mysqldb=",8) )
+	{
+		mysqlconf = true;
+		strcpy(mysqldb, arg+8);
+	}
+	else if (!strnicmp(arg,(char*)"mysqluser=",10) )
+	{
+		mysqlconf = true;
+		strcpy(mysqluser, arg+10);
+	}
+	else if (!strnicmp(arg,(char*)"mysqlpasswd=",12) )
+	{
+		mysqlconf = true;
+		strcpy(mysqlpasswd, arg+12);
+	}
+	// MySQL Query Override SQL
+	else if (!strnicmp(arg,(char*)"mysqluserread=",14) )
+	{
+		strcpy(my_userread_sql, arg+14);
+		mysql_userread = my_userread_sql;
+	}
+	else if (!strnicmp(arg,(char*)"mysqluserinsert=",16) )
+	{
+		strcpy(my_userinsert_sql, arg+16);
+		mysql_userinsert = my_userinsert_sql;
+	}
+	else if (!strnicmp(arg,(char*)"mysqluserupdate=",16) )
+	{
+		strcpy(my_userupdate_sql, arg+16);
+		mysql_userupdate = my_userupdate_sql;
+	}
 #endif
 #ifndef DISCARDMONGO
 	else if (!strnicmp(arg,(char*)"mongo=",6) )  strcpy(mongodbparams,arg+6);
@@ -666,18 +732,30 @@ static void ProcessArgument(char* arg)
 	else if (!stricmp(arg,(char*)"serverlog")) serverLog = true;
 	else if (!stricmp(arg,(char*)"noserverprelog")) serverPreLog = false;
 	else if (!stricmp(arg,(char*)"serverctrlz")) serverctrlz = 1;
+	else if (!strnicmp(arg, (char*)"websocket=",10)) strcpy(websocketParam,arg + 10);
 	else if (!strnicmp(arg,(char*)"port=",5))  // be a server
 	{
-           port = atoi(arg+5); // accept a port=
-		sprintf(serverLogfileName,(char*)"%s/serverlog%d.txt",logs,port);
+        port = atoi(arg+5); // accept a port=
 		server = true;
+#ifdef LINUX
+		if (forkcount > 1) sprintf(serverLogfileName, (char*)"%s/serverlog%d-%d.txt", logs, port,getpid());
+		else sprintf(serverLogfileName, (char*)"%s/serverlog%d.txt", logs, port); 
+#else
+		sprintf(serverLogfileName,(char*)"%s/serverlog%d.txt",logs,port); // DEFAULT LOG
+#endif
 	}
 #ifdef EVSERVER
 	else if (!strnicmp(arg, "fork=", 5)) 
 	{
-		static char forkCount[10];
-		sprintf(forkCount,(char*)"evsrv:fork=%d",atoi(arg+5));
+		forkcount = atoi(arg + 5);
+		sprintf(forkCount,(char*)"evsrv:fork=%d", forkcount);
 		evsrv_arg = forkCount;
+#ifdef LINUX
+		if (forkcount > 1) sprintf(serverLogfileName, (char*)"%s/serverlog%d-%d.txt", logs, port, getpid());
+		else sprintf(serverLogfileName, (char*)"%s/serverlog%d.txt", logs, port);
+#else
+		sprintf(serverLogfileName, (char*)"%s/serverlog%d.txt", logs, port); // DEFAULT LOG
+#endif
 	}
 #endif
 	else if (!strnicmp(arg,(char*)"interface=",10)) interfaceKind = string(arg+10); // specify interface
@@ -700,10 +778,24 @@ static void ReadConfig()
 
 unsigned int InitSystem(int argcx, char * argvx[],char* unchangedPath, char* readablePath, char* writeablePath, USERFILESYSTEM* userfiles, DEBUGAPI infn, DEBUGAPI outfn)
 { // this work mostly only happens on first startup, not on a restart
+	*hide = 0;
+	FILE* in = FopenStaticReadOnly((char*)"SRC/dictionarySystem.h"); // SRC/dictionarySystem.h
+	if (!in) // if we are not at top level, try going up a level
+	{
+#ifdef WIN32
+		if (!SetCurrentDirectory((char*)"..")) // move from BINARIES to top level
+			myexit((char*)"unable to change up\r\n");
+#else
+		chdir((char*)"..");
+#endif
+	}
+	else FClose(in);
+	*defaultbot = 0;
 	strcpy(hostname,(char*)"local");
 	*sourceInput = 0;
     *buildfiles = 0;
 	*apikey = 0;
+	*websocketParam = 0;
 	*bootcmd = 0;
 #ifndef DISCARDMONGO
 	*mongodbparams = 0;
@@ -779,7 +871,12 @@ unsigned int InitSystem(int argcx, char * argvx[],char* unchangedPath, char* rea
 
 	InitTextUtilities();
     sprintf(logFilename,(char*)"%s/log%d.txt",logs,port); // DEFAULT LOG
+#ifdef LINUX
+	if (forkcount > 1) sprintf(serverLogfileName, (char*)"%s/serverlog%d-%d.txt", logs, port,getpid());
+	else sprintf(serverLogfileName, (char*)"%s/serverlog%d.txt", logs, port); 
+#else
     sprintf(serverLogfileName,(char*)"%s/serverlog%d.txt",logs,port); // DEFAULT LOG
+#endif
 	
 	strcpy(livedata,(char*)"LIVEDATA"); // default directory for dynamic stuff
 	strcpy(systemFolder,(char*)"LIVEDATA/SYSTEM"); // default directory for dynamic stuff
@@ -1083,9 +1180,8 @@ bool ProcessInputDelays(char* buffer,bool hitkey)
 	return false;
 }
 
-char* ReviseOutput(char* out)
+char* ReviseOutput(char* out,char* prefix)
 {
-	char prefix[MAX_WORD_SIZE];
 	strcpy(prefix, out);
 	char* at = prefix;
 	while ((at = strchr(at, '\\')))
@@ -1131,7 +1227,8 @@ void ProcessInputFile()
 			if ((!documentMode || *ourMainOutputBuffer)  && !silent) // if not in doc mode OR we had some output to say - silent when no response
 			{
 				// output bot response
-				if (*botPrefix) printf((char*)"%s ",ReviseOutput(botPrefix));
+				char prefix[MAX_WORD_SIZE];
+				if (*botPrefix) printf((char*)"%s ",ReviseOutput(botPrefix,prefix));
 			}
 			if (showTopic)
 			{
@@ -1150,8 +1247,13 @@ void ProcessInputFile()
 
 			//output user prompt
 			if (documentMode || silent) {;} // no prompt in document mode
-			else if (*userPrefix) printf((char*)"%s ", ReviseOutput(userPrefix));
-			else printf((char*)"%s",(char*)"   >");
+			else if (*userPrefix)
+			{
+				char prefix[MAX_WORD_SIZE];
+				printf((char*)"%s ", ReviseOutput(userPrefix,prefix));
+			}
+
+			else printf((char*)"%s", (char*)"   >");
 			
 			*ourMainInputBuffer = ' '; // leave space at start to confirm NOT a null init message, even if user does only a cr
 			ourMainInputBuffer[1] = 0;
@@ -1170,6 +1272,17 @@ inputRetry:
 			if (sourceFile != stdin)
 			{
 				char word[MAX_WORD_SIZE];
+				if (multiuser)
+				{
+					char user[MAX_WORD_SIZE];
+					char bot[MAX_WORD_SIZE];
+					char* ptr = ReadCompiledWord(ourMainInputBuffer, user);
+					ptr = ReadCompiledWord(ptr, bot);
+					memmove(ourMainInputBuffer, ptr, strlen(ptr) + 1);
+
+				}
+
+
 				ReadCompiledWord(ourMainInputBuffer,word);
 				if (!stricmp(word,(char*)":quit") || !stricmp(word,(char*)":exit")) break;
 				if (!stricmp(word,(char*)":debug")) 
@@ -1440,7 +1553,7 @@ void FinishVolley(char* incoming,char* output,char* postvalue,int limit)
 		if (regression) curr = 44444444; 
 		char* when = GetMyTime(curr); // now
 		if (*incoming) strcpy(timePrior,GetMyTime(curr)); // when we did the last volley
-		if (!stopUserWrite) WriteUserData(curr); 
+		if (!stopUserWrite) WriteUserData(curr,false); 
 		else stopUserWrite = false;
 		// Log the results
 		GetActiveTopicName(activeTopic); // will show currently the most interesting topic
@@ -1483,14 +1596,21 @@ void FinishVolley(char* incoming,char* output,char* postvalue,int limit)
 				else *sep = ' ';
 			}
 		}
-	}
-	else *output = 0;
-	size_t x = strlen(output);
-	ClearVolleyWordMaps(); 
-	if (!documentMode) 
-	{
+
+		ClearVolleyWordMaps();
 		ShowStats(false);
 		ResetToPreUser(); // back to empty state before any user
+	}
+	else
+	{
+		// Don't do anything after a single line of a document
+		if (postProcessing)
+		{
+			++outputNest;
+			OnceCode((char*)" ", postvalue);
+			--outputNest;
+		}
+		*output = 0;
 	}
 }
 
@@ -1515,12 +1635,14 @@ int PerformChat(char* user, char* usee, char* incoming,char* ip,char* output) //
 	modifiedTrace = false;
 	if (server && servertrace) trace = -1;
 	myBot = 0;
-	if (!documentMode) tokenCount = 0;
-	InitJSONNames(); // reset indices for this volley
-	ClearVolleyWordMaps();
-	ResetEncryptTags();
+	if (!documentMode) {
+		tokenCount = 0;
+		InitJSONNames(); // reset indices for this volley
+		ClearVolleyWordMaps();
+		ResetEncryptTags();
 
-	HandleBoot(FindWord("^cs_reboot"),true);
+		HandleBoot(FindWord("^cs_reboot"), true);
+	}
 
 	bool eraseUser = false;
 
@@ -1846,6 +1968,7 @@ int ProcessInput(char* input)
  		outputRejoinderTopic = inputRejoinderTopic;
 		if (!strnicmp(at,(char*)":retry",6) || !strnicmp(at,(char*)":redo",5))
 		{
+			outputRejoinderTopic = outputRejoinderRuleID = NO_REJOINDER; // but a redo must ignore pending
 			strcpy(input,mainInputBuffer);
 			strcpy(inputCopy,mainInputBuffer);
 			buffer = inputCopy;
@@ -1885,7 +2008,7 @@ int ProcessInput(char* input)
 		else if (commanded == OUTPUTASGIVEN) return true; 
 		else if (commanded == TRACECMD) 
 		{
-			WriteUserData(time(0)); // writes out data in case of tracing variables
+			WriteUserData(time(0),true); // writes out data in case of tracing variables
 			ResetToPreUser(); // back to empty state before any user
 			return false; 
 		}
@@ -1936,7 +2059,7 @@ loopback:
 			{
 				ResetToPreUser(); // back to empty state before any user
 				ReadNewUser();
-				WriteUserData(time(0)); 
+				WriteUserData(time(0),false); 
 				ResetToPreUser(); // back to empty state before any user
 			}
 			return PENDING_RESTART;	// nothing more can be done here.
@@ -2011,6 +2134,20 @@ bool PrepassSentence(char* prepassTopic)
 	return false;
 }
 
+void MoreToCome()
+{
+	// set %more and %morequestion
+	moreToCome = moreToComeQuestion = false;
+	char* at = nextInput - 1;
+	while (*++at)
+	{
+		if (IsWhiteSpace(*at) || *at == INPUTMARKER) continue;	// ignore this junk
+		moreToCome = true;	// there is more input coming
+		break;
+	}
+	moreToComeQuestion = (strchr(nextInput, '?') != 0);
+}
+
 FunctionResult DoSentence(char* prepassTopic, bool atlimit)
 {
 	char input[INPUT_BUFFER_SIZE];  // complete input we received
@@ -2038,19 +2175,7 @@ retry:
 	PrepareSentence(nextInput,true,true,false,true); // user input.. sets nextinput up to continue
 	nextInput = SkipWhitespace(nextInput);
 
-	// set %more and %morequestion
-	moreToCome = moreToComeQuestion = false;	
-	if (!atlimit)
-	{
-		char* at = nextInput-1;
-		while (*++at)
-		{
-			if (*at == ' ' || *at == INPUTMARKER || *at == '\n' || *at == '\r') continue;	// ignore this junk
-			moreToCome = true;	// there is more input coming
-			break;
-		}
-		moreToComeQuestion = (strchr(nextInput,'?') != 0);
-	}
+	if (!atlimit) MoreToCome();
 
 	char nextWord[MAX_WORD_SIZE];
 	ReadCompiledWord(nextInput,nextWord);
@@ -2316,6 +2441,7 @@ bool AddResponse(char* msg, unsigned int responseControl)
 		Convert2Underscores(at); 
 		Convert2Blanks(at);
 	}
+	if (responseControl & RESPONSE_CURLYQUOTES) ConvertQuotes(at);
 	if (responseControl & RESPONSE_UPPERSTART) 	*at = GetUppercaseData(*at); 
 
 	//   remove spaces before commas (geofacts often have them in city_,_state)
@@ -2516,7 +2642,7 @@ void PrepareSentence(char* input,bool mark,bool user, bool analyze,bool oobstart
 	derivationLength = wordCount;
 	derivationSentence[wordCount+1] = NULL;
 
-	if (oobPossible && *wordStarts[1] == '[' && !wordStarts[1][1] && *wordStarts[wordCount] == ']'  && !wordStarts[wordCount][1]) 
+	if (oobPossible && wordCount && *wordStarts[1] == '[' && !wordStarts[1][1] && *wordStarts[wordCount] == ']'  && !wordStarts[wordCount][1]) 
 	{
 		oobPossible = false; // no more for now
 		oobExists = true;
@@ -2705,19 +2831,7 @@ int main(int argc, char * argv[])
 #endif
 		}
 	}
-	*hide = 0;
 
-	FILE* in = FopenStaticReadOnly((char*)"SRC/dictionarySystem.h"); // SRC/dictionarySystem.h
-	if (!in) // if we are not at top level, try going up a level
-	{
-#ifdef WIN32
-		if (!SetCurrentDirectory((char*)"..")) // move from BINARIES to top level
-			myexit((char*)"unable to change up\r\n");
-#else
-		chdir((char*)"..");
-#endif
-	}
-	else FClose(in); 
 	if (InitSystem(argc,argv)) myexit((char*)"failed to load memory\r\n");
     if (!server) 
 	{

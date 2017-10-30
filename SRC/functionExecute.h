@@ -79,7 +79,7 @@ extern long http_response;
 extern char* currentFunctionName;
 extern unsigned int savedSentences;
 
-#define MAX_ARG_LIMIT 15 // max args to a call -- limit using 2 bit (COMPILE/KEEP_QUOTES) per arg for table mapping behavior
+#define MAX_ARG_LIMIT 31 // max args to a call -- limit using 2 bit (COMPILE/KEEP_QUOTES) per arg for table mapping behavior
 extern unsigned int currentIterator;
 extern char* fnOutput;
 
@@ -88,7 +88,6 @@ extern int globalDepth;
 #ifdef WIN32
 FunctionResult InitWinsock();
 #endif
-
 
 FunctionResult RunJavaScript(char* definition, char* buffer,unsigned int args);
 void DeletePermanentJavaScript();
@@ -104,6 +103,7 @@ extern char* currentFunctionDisplay;
 extern bool planning;
 extern bool nobacktrack;
 FunctionResult MemoryMarkCode(char* buffer);
+char* GetArgOfMacro(int i, char* buffer, int limit);
 FunctionResult MemoryFreeCode(char* buffer);
 unsigned char* FindAppropriateDefinition(WORDP D, FunctionResult& result);
 void ResetReuseSafety();

@@ -133,7 +133,7 @@ when the file or topic ends.
 
 ## Shared Facts
 
-`Share` – Normally, if you have multiple bots, they all talk independently to the
+`Share` - Normally, if you have multiple bots, they all talk independently to the
 user. What one learns or says is not available to the other bots. It is possible to create a
 collection of bots that all can hear what has been said and share information. Share on a
 topic means that all bots will have common access/modification of a topic's state. So if

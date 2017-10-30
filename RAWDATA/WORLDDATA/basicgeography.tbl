@@ -165,31 +165,278 @@ Terran Earth \n Ferengi Ferenginar \n
 
 concept:  ~countryadjective() # otherwise definition is hidden and unknown
 
-table: ~countryof (^countryadjective ^country ) # also concept: ~countryadjective  - dont define country facts because these are not all countries (like Asian)
+table: ~countryof ( ^country ^countryadjective ) # also concept: ~countryadjective  - dont define country facts because these are not all countries (like Asian)
 ^createfact(^countryadjective member ~countryadjective)
 ^addproperty(^countryadjective ADJECTIVE ADJECTIVE_NORMAL)
 ^addproperty(^country NOUN   NOUN_PROPER_SINGULAR)
 ^createfact(^countryadjective adjective ^country)
 ^addProperty(^country ALWAYS_PROPER_NAME_MERGE)
-
 DATA:
-American   United_States_of_America \n   Asian  Asia \n European Europe \n North_American North_America \n South_American South_America \n
-African Africa \n Australian Australia \n Middle_Eastern Middle_East \n  Central_American Central_America \n
-Canadian Canada \n Swiss Switzerland \n Norwegian Norway \n Icelandic Iceland \n Andorrian Andorra \n Ukranian Ukraine \n
-Moldovian Moldova \n Serbian Serbia \n Macedonian Macedonia \n Georgian Georgia \n Russian Russia \n Irish  Ireland \n 
-Estonian Estonia \n Lithuanian Lithuania \n Latvian Latvia \n Bosnian Bosnia \n Slovakian Slovakia \n 
-Maltese Malta \n Czech Czechoslovakia \n Slovenian Slovenia \n British Great_Britain \n German Germany \n
-French France \n Italian Italy \n Spanish Spain \n Portuguese Portugal \n Dutch Holland \n Polish Poland \n
-Danish Denmark \n Swedish Sweden \n Greek Greece \n Finnish Finland \n Austrian Austria \n Hungarian Hungaria \n
-Russian Russia \n Chinese China \n
-russian Russia \n Romanian Romania \n Bulgarian Bulgaria \n Laotian Laos \n Chinese China \n Cambodian Cambodia \n Indonesian Indonesia \n
-Japanese Japan \n Korean Korea \n Thai Thailand \n Vietnamese  Vietnam \n Malasian Malasia \n Mongolian Mongolia \n
-Tibetan Tibet \n Turkish Turkey \n Lebanese  Lebanan \n Jordanian Jordan \n Israeli Israel \n Syrian  Syria \n
-Armenian Armenia \n Iranian Iran \n Arabian Arabia \n Palestinian Palestine \n Brazilian Brazil \n Mexican Mexico \n
-Peruvian Peru \n Columbian Columbia \n  Bolivian Bolivia \n  Tongan Tonga \n Chilean Chile \n Argentinian Argentina \n
-Bolivian Bolivia \n Liberian Liberia \n Somalian Somalia \n Algerian Algeria \n Honduran Hondurus \n Cuban Cuba \n
-Welsh Wales \n Scottish Scotland \n Guatemalan Guatemala \n Salvadorian  El_Salvador \n Costa_Rican Costa_Rica \n
-Taiwanese Taiwan \n
+
+Abkhazia 	[Abkhaz  Abkhazian]
+Afghanistan	Afghan	
+Africa African
+"Åland Islands"	"Åland Island"
+Albania	Albanian	
+Algeria	Algerian	
+"American Samoa"	"American Samoan"	
+Andorra	Andorran	
+Angola	Angolan	
+Anguilla	Anguillan	
+Antarctica	Antarctic	
+"Antigua and Barbuda"	"Antiguan or Barbudan"	
+Argentina	Argentine		
+Armenia	Armenian	
+Aruba	Aruban	
+Australia	Australian		
+Austria	Austrian	
+Azerbaijan	[Azerbaijani  Azeri]
+ Bahamas 	Bahamian	
+Bahrain	Bahraini	
+Bangladesh	Bangladeshi	
+Barbados	Barbadian	
+Belarus	Belarusian	
+Belgium	Belgian	
+Belize	Belizean	
+Benin	[Beninese  Beninois]
+Bermuda	[Bermudian  Bermudan]
+Bhutan	Bhutanese	
+Bolivia	Bolivian	
+Bonaire	Bonaire	 
+"Bosnia and Herzegovina"	["Bosnian or Herzegovinian" Bosnia Herzegovina]
+Botswana	[Motswana  Botswanan]
+"Bouvet Island"	"Bouvet Island"
+Brazil	Brazilian	
+"British Indian Ocean Territory"	BIOT	
+Brunei	Bruneian	
+Bulgaria	Bulgarian	
+"Burkina Faso"	Burkinabé	
+Burma	Burmese	
+Burundi	Burundian
+"Cabo Verde"	"Cabo Verdean"	
+Cambodia	Cambodian	
+Cameroon	Cameroonian	
+Canada	Canadian	
+"Cayman Islands"	Caymanian	
+"Central African Republic"	"Central African"
+Chad	Chadian	
+Chile	Chilean	
+"People's Republic of China" 	Chinese	
+"Republic of China"	Taiwanese
+China Chinese
+"Christmas Island"	"Christmas Island"	
+"Cocos Islands"	"Cocos Island"	
+"Keeling Islands" "Cocos Island"	
+Colombia	Colombian		
+"Comoros	Comoran" Comorian	
+"Democratic Republic of the	Congo" Congolese	
+"Republic of the Congo"  Congolese
+Congo Congolese
+"Cook Islands"	"Cook Island"
+"Costa Rica"	"Costa Rican"
+"Côte d'Ivoire"	Ivorian	
+Croatia	Croatian	
+Cuba	Cuban	
+Curaçao	Curaçaoan	
+Cyprus	Cypriot	
+"Czech Republic"	Czech	
+Denmark	Danish	
+Djibouti	Djiboutian	
+Dominica	Dominican
+"Dominican Republic"	Dominican
+"East Timor"	Timorese	
+Ecuador	Ecuadorian	
+Egypt	Egyptian	
+"El Salvador"	Salvadoran	
+"Equatorial Guinea"	"Equatorial Guinean"
+Eritrea	Eritrean	
+Estonia	Estonian	
+Ethiopia	Ethiopian	
+"European Union"	European
+"Falkland Islands"	"Falkland Island"
+"Faroe Islands"	Faroese	
+Fiji	Fijian	
+Finland	Finnish	
+France	French	
+"French Guiana"	"French Guianese"
+"French Polynesia"	"French Polynesian"	
+"French Southern Territories"	"French Southern Territories"
+Gabon	Gabonese	
+Gambia Gambian	
+Georgia	Georgian	
+Germany	German	
+Ghana	Ghanaian	
+Gibraltar	Gibraltar	
+Greece	Greek
+Greenland	Greenlandic	
+Grenada	Grenadian	
+Guadeloupe	Guadeloupe	
+Guam	[Guamanian  Guambat]
+Guatemala	Guatemalan	
+Guernsey	"Channel Island"
+Guinea	Guinean	
+Guinea-Bissau	Bissau-Guinean	
+Guyana	Guyanese	
+Haiti	Haitian	
+"Heard Island and McDonald Islands"	"Heard Island or McDonald Islands"
+Honduras	Honduran	
+"Hong Kong"	["Hong Kong"  "Hong Kongese"]
+Hungary	[Hungarian  Magyar]
+Iceland	Icelandic	
+India	Indian	
+Indonesia	Indonesian	
+Iran	[Iranian  Persian]	
+Iraq	Iraqi	
+Ireland	Irish	
+"Isle of Man"	Manx	
+Israel	Israeli	
+Italy	Italian	
+"Ivory Coast"	Ivorian	
+Jamaica	Jamaican	
+"Jan Mayen"	"Jan Mayen"	
+Japan	Japanese	
+Jersey	"Channel Island"
+Jordan	Jordanian	
+Kazakhstan	[Kazakhstani  Kazakh]
+Kenya	Kenyan	
+Kiribati	I-Kiribati	
+"North Korea"	"North Korean"	
+"South Korea"	"South Korean"
+Kosovo	[Kosovar Kosovan]
+Kuwait	Kuwaiti	
+Kyrgyzstan	[Kyrgyzstani  Kyrgyz  Kirgiz  Kirghiz]
+Laos	[Lao Laotian]
+Latvia	[Latvian  Lettish]
+Lebanon	Lebanese	
+Lesotho	Basotho	
+Liberia	Liberian	
+Libya	Libyan	
+Liechtenstein	Liechtensteiner	
+Lithuania	Lithuanian	
+Luxembourg	[Luxembourg  Luxembourgish]
+Macau	Macanese
+ 	Macedonian	
+Madagascar	Malagasy	
+Malawi	Malawian	
+Malaysia	Malaysian	
+Maldives	Maldivian	
+Mali	[Malian Malinese]	
+Malta	Maltese	
+"Marshall Islands"	Marshallese	
+Martinique	[Martiniquais  Martinican]
+Mauritania	Mauritanian	
+Mauritius	Mauritian	
+Mayotte	Mahoran	
+Mexico	Mexican	
+Micronesia Micronesian	
+Moldova	Moldovan	
+Monaco	[Monégasque  Monacan]
+Mongolia	Mongolian	
+Montenegro	Montenegrin	
+Montserrat	Montserratian	
+Morocco	Moroccan	
+Mozambique	Mozambican	
+Myanmar	Burmese	
+Namibia	Namibian	
+Nauru	Nauruan	
+Nepal	[Nepali  Nepalese]
+Netherlands	[Dutch  Netherlandic]
+"New Caledonia"	"New Caledonian"
+"New Zealand"	"New Zealand" 
+Nicaragua	Nicaraguan	
+Niger	Nigerien	
+Nigeria	Nigerian	
+Niue	Niuean	
+"Norfolk Island"	"Norfolk Island"
+"Northern Ireland"	"Northern Irish" 
+"Northern Mariana Islands"	"Northern Marianan"
+Norway	Norwegian	
+Oman	Omani	
+Pakistan	Pakistani	
+Palau	Palauan	
+Palestine	Palestinian	
+Panama	Panamanian	
+"Papua New Guinea"	["Papua New Guinean" Papuan]
+Paraguay	Paraguayan	
+Peru	Peruvian	
+Philippines	[Filipino  Philippine]
+"Pitcairn Islands"	"Pitcairn Island"
+Poland	Polish	
+Portugal	Portuguese	
+"Puerto Rico"	"Puerto Rican"	
+Qatar	Qatari	
+Réunion	[Réunionese  Réunionnais]
+Romania	Romanian	
+Russia	Russian	
+Rwanda	Rwandan	
+Saba	Saba	
+"Saint Barthélemy"	Barthélemois	
+"Saint Helena, Ascension and Tristan da Cunha"	"Saint Helenian"
+"Saint Kitts and Nevis"	"Kittitian or Nevisian"	
+"Saint Lucia"	"Saint Lucian"
+"Saint Martin"	Saint-Martinoise	
+"Saint Pierre and Miquelon"	"Saint-Pierrais or Miquelonnais"
+"Saint Vincent and the Grenadines"	["Saint Vincentian" Vincentian]
+Samoa	Samoan	
+"San Marino"	Sammarinese	
+"São Tomé and Príncipe"	"São Toméan"
+"Saudi Arabia"	[Saudi  "Saudi Arabian"]
+Scotland	Scottish
+Senegal	Senegalese	
+Serbia	Serbian	
+Seychelles	Seychellois	
+"Sierra Leone"	"Sierra Leonean"
+Singapore	[Singapore  Singaporean]
+"Sint Eustatius"	"Sint Eustatius"
+"Sint Maarten"	"Sint Maarten"
+Slovakia	Slovak	
+Slovenia	[Slovenian  Slovene]
+"Solomon Islands"	"Solomon Island"
+Somalia	Somali	
+Somaliland	Somalilander	
+"South Africa"	"South African"
+"South Georgia and the South Sandwich Islands"	"South Georgia or South Sandwich Islands"
+"South Ossetia" 	"South Ossetian"
+"South Sudan"	"South Sudanese"	
+Spain	Spanish	
+"Sri Lanka"	"Sri Lankan"
+Sudan	Sudanese	
+Surinam	Surinamese	
+Svalbard	Svalbard	
+Swaziland	Swazi	
+Sweden	Swedish	
+Switzerland	Swiss	
+Syria	Syrian	
+Tajikistan	Tajikistani	
+Tanzania	Tanzanian	
+Thailand	Thai	
+Timor-Leste	Timorese	
+Togo	Togolese	
+Tokelau	Tokelauan	
+Tonga	Tongan	
+"Trinidad and Tobago"	"Trinidadian or Tobagonian"
+Tunisia	Tunisian	
+Turkey	Turkish	
+Turkmenistan	Turkmen	
+"Turks and Caicos Islands"	"Turks and Caicos Island"
+Tuvalu	Tuvaluan	
+Uganda	Ugandan	
+Ukraine	Ukrainian	
+"United Arab Emirates"	[Emirati  Emirian  Emiri]
+"United Kingdom of Great Britain and Northern Ireland"	British
+"United States of America"	American	
+Uruguay	Uruguayan	
+Uzbekistan	[Uzbekistani  Uzbek]
+Vanuatu	[Ni-Vanuatu  Vanuatuan]
+"Vatican City State"	Vatican	
+Venezuela	Venezuelan	
+Vietnam	Vietnamese	
+"Wallis and Futuna"	"Wallis and Futuna"
+ Wales Welsh
+"Western Sahara"	[Sahrawi  Sahrawian]
+Yemen	Yemeni	
+Zambia	Zambian	
+Zimbabwe	Zimbabwean
 
 
 concept: ~capital()
@@ -273,6 +520,7 @@ Belgium Brussels
 Belize Belmopan
 "Republic of Benin" Porto-Novo
 "Kingdom of Bhutan" Thimphu
+"Nova Scotia" "Nova Scotian"
 Botswana Gaborone
 Brazil Brasilia
 Bulgaria Sofia

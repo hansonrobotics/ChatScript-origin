@@ -7,10 +7,12 @@ eins 1 REAL_NUMBER
 erste 1 WORD_NUMBER
 einst 1  WORD_NUMBER 
 zwei 2  REAL_NUMBER 
+zwo 2  REAL_NUMBER 
 zweite 2   WORD_NUMBER 
 zweimal 2 WORD_NUMBER 
 Paar 2  WORD_NUMBER  
 Hälfte 2 FRACTION_NUMBER  
+halb 2 FRACTION_NUMBER  
 drei 3  REAL_NUMBER 
 dritte 3 REAL_NUMBER 
 verdreifachen 3  WORD_NUMBER 

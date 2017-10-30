@@ -3,7 +3,7 @@
 > © Bruce Wilcox, gowilcox@gmail.com brilligunderstanding.com
 
 
-> Revision 1/07/2016 cs7.1
+> Revision 8/27/2016 cs7.54
 
 * [Running the server](ChatScript-ClientServer-Manual.md#running-the-server)
 * [Unique User Names](ChatScript-ClientServer-Manual.md#unique-user-names)
@@ -101,11 +101,14 @@ doesn't care how long it takes the user to come back again.
 # ChatScript Protocol
 
 The message a client sends is a concatenation of three null-terminated text strings.
-The first string is the user login name.
-The second is the name of the chatbot to talk to. If this is a null string, the system will
+Or in place of the first two null-termination markers, you may use Ascii 1 (since JavaScript doesn't play 
+well with trying to join null-terminated strings) so that you send a single null-terminated string with ascii 1 as
+separators between components.
+The first component is the user login name.
+The second component is the name of the chatbot to talk to. If this is a null string (or just Ascii 1), the system will
 connect to the default bot.
 
-The third string is the message. If the message is null, this is a start of new conversation.
+The third component is the message. If the message is null, this is a start of new conversation.
 This MUST be the first thing you do with a new user. Ideally you do it whenever a new
 conversation is starting with that user which is how the system knows the old
 conversation ended. 

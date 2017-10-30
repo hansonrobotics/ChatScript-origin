@@ -107,187 +107,187 @@
  Xvi ( NOUN ADJECTIVE ADJECTIVE_NUMBER NOUN_NUMBER ) 
  Xviii ( NOUN ADJECTIVE ADJECTIVE_NUMBER NOUN_NUMBER ) 
  x-ographie ( NOUN NOUN_SINGULAR ) 
- x-ographies ( NOUN NOUN_SINGULAR ) lemma=x-ographie 
+ x-ographies ( NOUN NOUN_SINGULAR ) lemma=`x-ographie` NOM  
  xancus ( NOUN NOUN_SINGULAR ) 
  xanthate ( NOUN NOUN_SINGULAR ) 
- xanthates ( NOUN NOUN_SINGULAR ) lemma=xanthate 
+ xanthates ( NOUN NOUN_SINGULAR ) lemma=`xanthate` NOM  
  xanthie ( NOUN NOUN_SINGULAR ) 
- xanthies ( NOUN NOUN_SINGULAR ) lemma=xanthie 
+ xanthies ( NOUN NOUN_SINGULAR ) lemma=`xanthie` NOM  
  xanthine ( NOUN NOUN_SINGULAR ) 
- xanthines ( NOUN NOUN_SINGULAR ) lemma=xanthine 
+ xanthines ( NOUN NOUN_SINGULAR ) lemma=`xanthine` NOM  
  xanthinique ( ADJECTIVE ) 
- xanthiniques ( ADJECTIVE ) lemma=xanthinique 
+ xanthiniques ( ADJECTIVE ) lemma=`xanthinique` ADJ  
  xanthique ( ADJECTIVE ) 
- xanthiques ( ADJECTIVE ) lemma=xanthique 
+ xanthiques ( ADJECTIVE ) lemma=`xanthique` ADJ  
  xanthochromie ( NOUN NOUN_SINGULAR ) 
- xanthochromies ( NOUN NOUN_SINGULAR ) lemma=xanthochromie 
+ xanthochromies ( NOUN NOUN_SINGULAR ) lemma=`xanthochromie` NOM  
  xanthogénate ( NOUN NOUN_SINGULAR ) 
- xanthogénates ( NOUN NOUN_SINGULAR ) lemma=xanthogénate 
+ xanthogénates ( NOUN NOUN_SINGULAR ) lemma=`xanthogénate` NOM  
  xanthogénique ( ADJECTIVE ) 
- xanthogéniques ( ADJECTIVE ) lemma=xanthogénique 
+ xanthogéniques ( ADJECTIVE ) lemma=`xanthogénique` ADJ  
  xanthomatose ( NOUN NOUN_SINGULAR ) 
- xanthomatoses ( NOUN NOUN_SINGULAR ) lemma=xanthomatose 
+ xanthomatoses ( NOUN NOUN_SINGULAR ) lemma=`xanthomatose` NOM  
  xanthome ( NOUN NOUN_SINGULAR ) 
- xanthomes ( NOUN NOUN_SINGULAR ) lemma=xanthome 
+ xanthomes ( NOUN NOUN_SINGULAR ) lemma=`xanthome` NOM  
  xanthophylle ( NOUN NOUN_SINGULAR ) 
- xanthophylles ( NOUN NOUN_SINGULAR ) lemma=xanthophylle 
+ xanthophylles ( NOUN NOUN_SINGULAR ) lemma=`xanthophylle` NOM  
  xanthopsie ( NOUN NOUN_SINGULAR ) 
- xanthopsies ( NOUN NOUN_SINGULAR ) lemma=xanthopsie 
+ xanthopsies ( NOUN NOUN_SINGULAR ) lemma=`xanthopsie` NOM  
  xanthène ( NOUN NOUN_SINGULAR ) 
- xanthènes ( NOUN NOUN_SINGULAR ) lemma=xanthène 
+ xanthènes ( NOUN NOUN_SINGULAR ) lemma=`xanthène` NOM  
  xanthélasma ( NOUN NOUN_SINGULAR ) 
- xanthélasmas ( NOUN NOUN_SINGULAR ) lemma=xanthélasma 
+ xanthélasmas ( NOUN NOUN_SINGULAR ) lemma=`xanthélasma` NOM  
  xantiques ( NOUN NOUN_SINGULAR ) 
  xatardie ( NOUN NOUN_SINGULAR ) 
- xatardies ( NOUN NOUN_SINGULAR ) lemma=xatardie 
+ xatardies ( NOUN NOUN_SINGULAR ) lemma=`xatardie` NOM  
  xi ( NOUN NOUN_SINGULAR ) 
  ximénie ( NOUN NOUN_SINGULAR ) 
- ximénies ( NOUN NOUN_SINGULAR ) lemma=ximénie 
+ ximénies ( NOUN NOUN_SINGULAR ) lemma=`ximénie` NOM  
  xipho ( NOUN NOUN_SINGULAR ) 
  xiphodynie ( NOUN NOUN_SINGULAR ) 
- xiphodynies ( NOUN NOUN_SINGULAR ) lemma=xiphodynie 
+ xiphodynies ( NOUN NOUN_SINGULAR ) lemma=`xiphodynie` NOM  
  xiphophore ( NOUN NOUN_SINGULAR ) 
- xiphophores ( NOUN NOUN_SINGULAR ) lemma=xiphophore 
- xiphos ( NOUN NOUN_SINGULAR ) lemma=xipho 
+ xiphophores ( NOUN NOUN_SINGULAR ) lemma=`xiphophore` NOM  
+ xiphos ( NOUN NOUN_SINGULAR ) lemma=`xipho` NOM  
  xiphoïde ( ADJECTIVE ) 
- xiphoïdes ( ADJECTIVE ) lemma=xiphoïde 
+ xiphoïdes ( ADJECTIVE ) lemma=`xiphoïde` ADJ  
  xiphoïdien ( ADJECTIVE ) 
- xiphoïdienne ( ADJECTIVE ) lemma=xiphoïdien 
- xiphoïdiennes ( ADJECTIVE ) lemma=xiphoïdien 
- xiphoïdiens ( ADJECTIVE ) lemma=xiphoïdien 
+ xiphoïdienne ( ADJECTIVE ) lemma=`xiphoïdien` ADJ  
+ xiphoïdiennes ( ADJECTIVE ) lemma=`xiphoïdien` ADJ  
+ xiphoïdiens ( ADJECTIVE ) lemma=`xiphoïdien` ADJ  
  xiphoïdite ( NOUN NOUN_SINGULAR ) 
- xiphoïdites ( NOUN NOUN_SINGULAR ) lemma=xiphoïdite 
+ xiphoïdites ( NOUN NOUN_SINGULAR ) lemma=`xiphoïdite` NOM  
  xir ( NOUN NOUN_SINGULAR ) 
- xirs ( NOUN NOUN_SINGULAR ) lemma=xir 
- xis ( NOUN NOUN_SINGULAR ) lemma=xi 
+ xirs ( NOUN NOUN_SINGULAR ) lemma=`xir` NOM  
+ xis ( NOUN NOUN_SINGULAR ) lemma=`xi` NOM  
  xième ( NOUN ADJECTIVE ADJECTIVE_NUMBER NOUN_NUMBER ) 
- xièmes ( NOUN ADJECTIVE ADJECTIVE_NUMBER NOUN_NUMBER ) lemma=xième 
+ xièmes ( NOUN ADJECTIVE ADJECTIVE_NUMBER NOUN_NUMBER ) lemma=`xième` NUM  
  xoaniforme ( ADJECTIVE ) 
- xoaniformes ( ADJECTIVE ) lemma=xoaniforme 
+ xoaniformes ( ADJECTIVE ) lemma=`xoaniforme` ADJ  
  xoanisant ( ADJECTIVE ) 
- xoanisante ( ADJECTIVE ) lemma=xoanisant 
- xoanisantes ( ADJECTIVE ) lemma=xoanisant 
- xoanisants ( ADJECTIVE ) lemma=xoanisant 
+ xoanisante ( ADJECTIVE ) lemma=`xoanisant` ADJ  
+ xoanisantes ( ADJECTIVE ) lemma=`xoanisant` ADJ  
+ xoanisants ( ADJECTIVE ) lemma=`xoanisant` ADJ  
  xoanon ( NOUN NOUN_SINGULAR ) 
- xoanons ( NOUN NOUN_SINGULAR ) lemma=xoanon 
+ xoanons ( NOUN NOUN_SINGULAR ) lemma=`xoanon` NOM  
  xylane ( NOUN NOUN_SINGULAR ) 
- xylanes ( NOUN NOUN_SINGULAR ) lemma=xylane 
+ xylanes ( NOUN NOUN_SINGULAR ) lemma=`xylane` NOM  
  xylidine ( NOUN NOUN_SINGULAR ) 
- xylidines ( NOUN NOUN_SINGULAR ) lemma=xylidine 
+ xylidines ( NOUN NOUN_SINGULAR ) lemma=`xylidine` NOM  
  xylin ( ADJECTIVE ) 
- xyline ( ADJECTIVE ) lemma=xylin 
- xylines ( ADJECTIVE ) lemma=xylin 
- xylins ( ADJECTIVE ) lemma=xylin 
+ xyline ( ADJECTIVE ) lemma=`xylin` ADJ  
+ xylines ( ADJECTIVE ) lemma=`xylin` ADJ  
+ xylins ( ADJECTIVE ) lemma=`xylin` ADJ  
  xylite ( NOUN NOUN_SINGULAR ) 
- xylites ( NOUN NOUN_SINGULAR ) lemma=xylite 
- xylobie ( NOUN ADJECTIVE NOUN_SINGULAR ) 
- xylobies ( NOUN ADJECTIVE NOUN_SINGULAR ) lemma=xylobie 
+ xylites ( NOUN NOUN_SINGULAR ) lemma=`xylite` NOM  
+ xylobie ( NOUN ADJECTIVE NOUN_SINGULAR ) lemma=`xylobie`xylobie` ADJ  NOM  
+ xylobies ( NOUN ADJECTIVE NOUN_SINGULAR ) lemma=`xylobie`xylobie` ADJ  NOM  
  xylochimie ( NOUN NOUN_SINGULAR ) 
- xylochimies ( NOUN NOUN_SINGULAR ) lemma=xylochimie 
- xylocope ( NOUN ADJECTIVE NOUN_SINGULAR ) 
- xylocopes ( NOUN ADJECTIVE NOUN_SINGULAR ) lemma=xylocope 
+ xylochimies ( NOUN NOUN_SINGULAR ) lemma=`xylochimie` NOM  
+ xylocope ( NOUN ADJECTIVE NOUN_SINGULAR ) lemma=`xylocope`xylocope` ADJ  NOM  
+ xylocopes ( NOUN ADJECTIVE NOUN_SINGULAR ) lemma=`xylocope`xylocope` ADJ  NOM  
  xylofer ( NOUN NOUN_SINGULAR ) 
- xylofers ( NOUN NOUN_SINGULAR ) lemma=xylofer 
+ xylofers ( NOUN NOUN_SINGULAR ) lemma=`xylofer` NOM  
  xylographe ( NOUN NOUN_SINGULAR ) 
- xylographes ( NOUN NOUN_SINGULAR ) lemma=xylographe 
+ xylographes ( NOUN NOUN_SINGULAR ) lemma=`xylographe` NOM  
  xylographie ( NOUN NOUN_SINGULAR ) 
- xylographies ( NOUN NOUN_SINGULAR ) lemma=xylographie 
+ xylographies ( NOUN NOUN_SINGULAR ) lemma=`xylographie` NOM  
  xylographique ( ADJECTIVE ) 
- xylographiques ( ADJECTIVE ) lemma=xylographique 
+ xylographiques ( ADJECTIVE ) lemma=`xylographique` ADJ  
  xylol ( NOUN NOUN_SINGULAR ) 
- xylols ( NOUN NOUN_SINGULAR ) lemma=xylol 
+ xylols ( NOUN NOUN_SINGULAR ) lemma=`xylol` NOM  
  xylolâtrie ( NOUN NOUN_SINGULAR ) 
- xylolâtries ( NOUN NOUN_SINGULAR ) lemma=xylolâtrie 
+ xylolâtries ( NOUN NOUN_SINGULAR ) lemma=`xylolâtrie` NOM  
  xylophage ( ADJECTIVE ) 
- xylophages ( ADJECTIVE ) lemma=xylophage 
+ xylophages ( ADJECTIVE ) lemma=`xylophage` ADJ  
  xylophagie ( NOUN NOUN_SINGULAR ) 
- xylophagies ( NOUN NOUN_SINGULAR ) lemma=xylophagie 
+ xylophagies ( NOUN NOUN_SINGULAR ) lemma=`xylophagie` NOM  
  xylophone ( NOUN NOUN_SINGULAR ) 
- xylophones ( NOUN NOUN_SINGULAR ) lemma=xylophone 
+ xylophones ( NOUN NOUN_SINGULAR ) lemma=`xylophone` NOM  
  xylophoniste ( NOUN NOUN_SINGULAR ) 
- xylophonistes ( NOUN NOUN_SINGULAR ) lemma=xylophoniste 
+ xylophonistes ( NOUN NOUN_SINGULAR ) lemma=`xylophoniste` NOM  
  xylophène ( NOUN NOUN_SINGULAR ) 
- xylophènes ( NOUN NOUN_SINGULAR ) lemma=xylophène 
+ xylophènes ( NOUN NOUN_SINGULAR ) lemma=`xylophène` NOM  
  xylose ( NOUN NOUN_SINGULAR ) 
- xyloses ( NOUN NOUN_SINGULAR ) lemma=xylose 
+ xyloses ( NOUN NOUN_SINGULAR ) lemma=`xylose` NOM  
  xylème ( NOUN NOUN_SINGULAR ) 
- xylèmes ( NOUN NOUN_SINGULAR ) lemma=xylème 
+ xylèmes ( NOUN NOUN_SINGULAR ) lemma=`xylème` NOM  
  xylène ( NOUN NOUN_SINGULAR ) 
- xylènes ( NOUN NOUN_SINGULAR ) lemma=xylène 
+ xylènes ( NOUN NOUN_SINGULAR ) lemma=`xylène` NOM  
  xylénol ( NOUN NOUN_SINGULAR ) 
- xylénols ( NOUN NOUN_SINGULAR ) lemma=xylénol 
+ xylénols ( NOUN NOUN_SINGULAR ) lemma=`xylénol` NOM  
  xyste ( NOUN NOUN_SINGULAR ) 
- xystes ( NOUN NOUN_SINGULAR ) lemma=xyste 
+ xystes ( NOUN NOUN_SINGULAR ) lemma=`xyste` NOM  
  xénarthres ( NOUN NOUN_SINGULAR ) 
  xénie ( NOUN NOUN_SINGULAR ) 
- xénies ( NOUN NOUN_SINGULAR ) lemma=xénie 
+ xénies ( NOUN NOUN_SINGULAR ) lemma=`xénie` NOM  
  xénisme ( NOUN NOUN_SINGULAR ) 
- xénismes ( NOUN NOUN_SINGULAR ) lemma=xénisme 
+ xénismes ( NOUN NOUN_SINGULAR ) lemma=`xénisme` NOM  
  xéno-test ( NOUN NOUN_SINGULAR ) 
- xéno-tests ( NOUN NOUN_SINGULAR ) lemma=xéno-test 
+ xéno-tests ( NOUN NOUN_SINGULAR ) lemma=`xéno-test` NOM  
  xénobiose ( NOUN NOUN_SINGULAR ) 
- xénobioses ( NOUN NOUN_SINGULAR ) lemma=xénobiose 
- xénobiotique ( NOUN ADJECTIVE NOUN_SINGULAR ) 
- xénobiotiques ( NOUN ADJECTIVE NOUN_SINGULAR ) lemma=xénobiotique 
+ xénobioses ( NOUN NOUN_SINGULAR ) lemma=`xénobiose` NOM  
+ xénobiotique ( NOUN ADJECTIVE NOUN_SINGULAR ) lemma=`xénobiotique`xénobiotique` ADJ  NOM  
+ xénobiotiques ( NOUN ADJECTIVE NOUN_SINGULAR ) lemma=`xénobiotique`xénobiotique` ADJ  NOM  
  xénoglossie ( NOUN NOUN_SINGULAR ) 
- xénoglossies ( NOUN NOUN_SINGULAR ) lemma=xénoglossie 
+ xénoglossies ( NOUN NOUN_SINGULAR ) lemma=`xénoglossie` NOM  
  xénogreffe ( NOUN NOUN_SINGULAR ) 
- xénogreffes ( NOUN NOUN_SINGULAR ) lemma=xénogreffe 
+ xénogreffes ( NOUN NOUN_SINGULAR ) lemma=`xénogreffe` NOM  
  xénogénique ( ADJECTIVE ) 
- xénogéniques ( ADJECTIVE ) lemma=xénogénique 
+ xénogéniques ( ADJECTIVE ) lemma=`xénogénique` ADJ  
  xénon ( NOUN NOUN_SINGULAR ) 
- xénons ( NOUN NOUN_SINGULAR ) lemma=xénon 
+ xénons ( NOUN NOUN_SINGULAR ) lemma=`xénon` NOM  
  xénoparasitisme ( NOUN NOUN_SINGULAR ) 
- xénoparasitismes ( NOUN NOUN_SINGULAR ) lemma=xénoparasitisme 
- xénophile ( NOUN ADJECTIVE NOUN_SINGULAR ) 
- xénophiles ( NOUN ADJECTIVE NOUN_SINGULAR ) lemma=xénophile 
+ xénoparasitismes ( NOUN NOUN_SINGULAR ) lemma=`xénoparasitisme` NOM  
+ xénophile ( NOUN ADJECTIVE NOUN_SINGULAR ) lemma=`xénophile`xénophile` ADJ  NOM  
+ xénophiles ( NOUN ADJECTIVE NOUN_SINGULAR ) lemma=`xénophile`xénophile` ADJ  NOM  
  xénophilie ( NOUN NOUN_SINGULAR ) 
- xénophilies ( NOUN NOUN_SINGULAR ) lemma=xénophilie 
- xénophobe ( NOUN ADJECTIVE NOUN_SINGULAR ) 
- xénophobes ( NOUN ADJECTIVE NOUN_SINGULAR ) lemma=xénophobe 
+ xénophilies ( NOUN NOUN_SINGULAR ) lemma=`xénophilie` NOM  
+ xénophobe ( NOUN ADJECTIVE NOUN_SINGULAR ) lemma=`xénophobe`xénophobe` ADJ  NOM  
+ xénophobes ( NOUN ADJECTIVE NOUN_SINGULAR ) lemma=`xénophobe`xénophobe` ADJ  NOM  
  xénophobie ( NOUN NOUN_SINGULAR ) 
- xénophobies ( NOUN NOUN_SINGULAR ) lemma=xénophobie 
+ xénophobies ( NOUN NOUN_SINGULAR ) lemma=`xénophobie` NOM  
  xénophonie ( NOUN NOUN_SINGULAR ) 
- xénophonies ( NOUN NOUN_SINGULAR ) lemma=xénophonie 
+ xénophonies ( NOUN NOUN_SINGULAR ) lemma=`xénophonie` NOM  
  xénoplastique ( ADJECTIVE ) 
- xénoplastiques ( ADJECTIVE ) lemma=xénoplastique 
+ xénoplastiques ( ADJECTIVE ) lemma=`xénoplastique` ADJ  
  xénopus ( NOUN NOUN_SINGULAR ) 
  xénotrope ( ADJECTIVE ) 
- xénotropes ( ADJECTIVE ) lemma=xénotrope 
+ xénotropes ( ADJECTIVE ) lemma=`xénotrope` ADJ  
  xénotropisme ( NOUN NOUN_SINGULAR ) 
- xénotropismes ( NOUN NOUN_SINGULAR ) lemma=xénotropisme 
+ xénotropismes ( NOUN NOUN_SINGULAR ) lemma=`xénotropisme` NOM  
  xénélasie ( NOUN NOUN_SINGULAR ) 
- xénélasies ( NOUN NOUN_SINGULAR ) lemma=xénélasie 
+ xénélasies ( NOUN NOUN_SINGULAR ) lemma=`xénélasie` NOM  
  xéranthème ( NOUN NOUN_SINGULAR ) 
- xéranthèmes ( NOUN NOUN_SINGULAR ) lemma=xéranthème 
+ xéranthèmes ( NOUN NOUN_SINGULAR ) lemma=`xéranthème` NOM  
  xérique ( ADJECTIVE ) 
- xériques ( ADJECTIVE ) lemma=xérique 
+ xériques ( ADJECTIVE ) lemma=`xérique` ADJ  
  xéro-radiographie ( NOUN NOUN_SINGULAR ) 
- xéro-radiographies ( NOUN NOUN_SINGULAR ) lemma=xéro-radiographie 
+ xéro-radiographies ( NOUN NOUN_SINGULAR ) lemma=`xéro-radiographie` NOM  
  xérocopie ( NOUN NOUN_SINGULAR ) 
- xérocopies ( NOUN NOUN_SINGULAR ) lemma=xérocopie 
+ xérocopies ( NOUN NOUN_SINGULAR ) lemma=`xérocopie` NOM  
  xérodermie ( NOUN NOUN_SINGULAR ) 
- xérodermies ( NOUN NOUN_SINGULAR ) lemma=xérodermie 
+ xérodermies ( NOUN NOUN_SINGULAR ) lemma=`xérodermie` NOM  
  xérographie ( NOUN NOUN_SINGULAR ) 
- xérographies ( NOUN NOUN_SINGULAR ) lemma=xérographie 
+ xérographies ( NOUN NOUN_SINGULAR ) lemma=`xérographie` NOM  
  xérographique ( ADJECTIVE ) 
- xérographiques ( ADJECTIVE ) lemma=xérographique 
+ xérographiques ( ADJECTIVE ) lemma=`xérographique` ADJ  
  xérophagie ( NOUN NOUN_SINGULAR ) 
- xérophagies ( NOUN NOUN_SINGULAR ) lemma=xérophagie 
+ xérophagies ( NOUN NOUN_SINGULAR ) lemma=`xérophagie` NOM  
  xérophile ( ADJECTIVE ) 
- xérophiles ( ADJECTIVE ) lemma=xérophile 
+ xérophiles ( ADJECTIVE ) lemma=`xérophile` ADJ  
  xérophtalmie ( NOUN NOUN_SINGULAR ) 
- xérophtalmies ( NOUN NOUN_SINGULAR ) lemma=xérophtalmie 
+ xérophtalmies ( NOUN NOUN_SINGULAR ) lemma=`xérophtalmie` NOM  
  xérophtalmique ( ADJECTIVE ) 
- xérophtalmiques ( ADJECTIVE ) lemma=xérophtalmique 
+ xérophtalmiques ( ADJECTIVE ) lemma=`xérophtalmique` ADJ  
  xérophyte ( NOUN NOUN_SINGULAR ) 
- xérophytes ( NOUN NOUN_SINGULAR ) lemma=xérophyte 
+ xérophytes ( NOUN NOUN_SINGULAR ) lemma=`xérophyte` NOM  
  xérophytique ( ADJECTIVE ) 
- xérophytiques ( ADJECTIVE ) lemma=xérophytique 
+ xérophytiques ( ADJECTIVE ) lemma=`xérophytique` ADJ  
  xérose ( NOUN NOUN_SINGULAR ) 
- xéroses ( NOUN NOUN_SINGULAR ) lemma=xérose 
+ xéroses ( NOUN NOUN_SINGULAR ) lemma=`xérose` NOM  
  xérosis ( NOUN NOUN_SINGULAR ) 
  xérostomie ( NOUN NOUN_SINGULAR ) 
- xérostomies ( NOUN NOUN_SINGULAR ) lemma=xérostomie 
+ xérostomies ( NOUN NOUN_SINGULAR ) lemma=`xérostomie` NOM  
  xérus ( NOUN NOUN_SINGULAR ) 
  xérès ( NOUN NOUN_SINGULAR ) 

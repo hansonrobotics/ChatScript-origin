@@ -566,7 +566,7 @@ typedef char		my_bool; /* Small bool */
 
 #define MY_HOW_OFTEN_TO_WRITE	1000	/* How often we want info on screen */
 
-#include <my_byteorder.h>
+#include "my_byteorder.h"
 
 #ifdef HAVE_CHARSET_utf8
 #define MYSQL_UNIVERSAL_CLIENT_CHARSET "utf8"
@@ -628,7 +628,7 @@ typedef char		my_bool; /* Small bool */
 #define MYSQL_PLUGIN_IMPORT
 #endif
 
-#include <my_dbug.h>
+#include "my_dbug.h"
 
 #ifdef EMBEDDED_LIBRARY
 #define NO_EMBEDDED_ACCESS_CHECKS

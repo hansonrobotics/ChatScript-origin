@@ -39,8 +39,7 @@
  Jaimes ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Jalbert ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
  Jamerson ( NOUN_HUMAN NOUN NOUN_PROPER_SINGULAR ) 
- James ( meanings=10 glosses=10 NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN_ABSTRACT NOUN NOUN_PROPER_SINGULAR COMMON4 COMMON1 KINDERGARTEN ) 
-    Epistle_of_James~1nz (^Epistle~1) a New Testament book attributed to Saint James the Apostle
+ James ( meanings=9 glosses=9 NOUN_HUMAN NOUN_FIRSTNAME NOUN_HE NOUN_ABSTRACT NOUN NOUN_PROPER_SINGULAR COMMON4 COMMON1 KINDERGARTEN ) 
     James_River~1nz (^river~1) a river that rises in North Dakota and flows southward across South Dakota to the Missouri
     James_River~2nz (^river~1) a river in Virginia that flows east into Chesapeake Bay at Hampton Roads
     St_._James_the_Apostle~1nz (^Apostle~1) disciple of Jesus
@@ -1986,7 +1985,7 @@
     jolly~2nz (^party~1) a happy party
     merry~3a 
     jolly~4az 
-    moderately~1b 
+    moderately~1z 
     chaff~3v 
  jorum ( meanings=1 glosses=1 NOUN NOUN_SINGULAR COMMON1 ) 
     jorum~1nz (^bowl~3) a large drinking bowl
@@ -2123,12 +2122,12 @@
     just~3az used especially of what is legally or ethically right or proper or fitting
     upright~5a 
     just~5az 
-    barely~1b 
-    just~7bz exactly at this moment or the moment described
-    only~4b 
-    just_now~1bz only a moment ago
-    precisely~1b 
-    simply~4b 
+    barely~1z 
+    just~7z exactly at this moment or the moment described
+    only~4z 
+    just_now~1z only a moment ago
+    precisely~1z 
+    simply~4z 
  jerkiness ( meanings=1 NOUN NOUN_SINGULAR COMMON2 ) 
     fitfulness~1n 
  jaggedness ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON1 ) 
@@ -2696,8 +2695,8 @@
  Jamestown ( meanings=1 glosses=1 NOUN NOUN_PROPER_SINGULAR ) 
     Jamestown~1nz (^village~2) a former village on the James River in Virginia to the north of Norfolk
  James_River ( meanings=2 NOUN NOUN_PROPER_SINGULAR ) 
+    James~1n 
     James~2n 
-    James~3n 
  James_Bay ( meanings=1 glosses=1 NOUN NOUN_PROPER_SINGULAR ) 
     James_Bay~1nz (^bay~6) the southern extension of Hudson Bay in Canada between western Quebec and northeastern Ontario
  Japan_Trench ( meanings=1 glosses=1 NOUN NOUN_PROPER_SINGULAR ) 
@@ -3465,13 +3464,13 @@
  Jakobson ( meanings=1 NOUN NOUN_PROPER_SINGULAR ) 
     Roman_Jakobson~1n 
  Jesse_James ( meanings=1 NOUN NOUN_PROPER_SINGULAR ) 
-    James~7n 
+    James~6n 
  James_I ( meanings=1 NOUN NOUN_PROPER_SINGULAR ) 
-    James~8n 
+    James~7n 
  James_II ( meanings=1 NOUN NOUN_PROPER_SINGULAR ) 
-    James~9n 
+    James~8n 
  James_IV ( meanings=1 NOUN NOUN_PROPER_SINGULAR ) 
-    James~10n 
+    James~9n 
  Judith_Jamison ( meanings=1 glosses=1 NOUN NOUN_PROPER_SINGULAR ) 
     Jamison~1nz (^dancer~1) United States dancer and choreographer
  Jaspers ( meanings=1 NOUN NOUN_PROPER_SINGULAR COMMON1 ) 
@@ -4831,7 +4830,7 @@
     jesting~1a 
  jocular ( meanings=2 ADJECTIVE ADVERB ADJECTIVE_NORMAL COMMON2 posdefault:ADJECTIVE ) 
     jocose~1a 
-    jocosely~1b 
+    jocosely~1z 
  joking ( meanings=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:VERB ) 
     jocular~1a 
     joking~2az 
@@ -5010,76 +5009,76 @@
  jumpier ( MORE_FORM ADJECTIVE ADJECTIVE_NORMAL COMMON1 ) comparative=jumpy 
  jumpiest ( MOST_FORM ADJECTIVE ADJECTIVE_NORMAL COMMON1 ) comparative=jumpier 
  just_about ( meanings=1 ADVERB CONDITIONAL_IDIOM posdefault:ADVERB  poscondition=?=R ) 
-    approximately~1b 
+    approximately~1z 
  just_as ( meanings=3 glosses=1 ADVERB CONJUNCTION_SUBORDINATE KINDERGARTEN posdefault:ADVERB ) 
-    even_as~1bz at the same time as
+    even_as~1z at the same time as
     just_as~2z 
     just_as~3z 
  just_now ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    just~9b 
+    just~9z 
  jubilantly ( meanings=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    blithely~1b 
+    blithely~1z 
  jokingly ( meanings=2 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    facetiously~1b 
-    jestingly~1b 
+    facetiously~1z 
+    jestingly~1z 
  just_then ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    just_then~1bz 
+    just_then~1z 
  jointly ( meanings=2 glosses=1 ADVERB COMMON4 posdefault:ADVERB ) 
-    collectively~1b 
-    jointly~2bz in collaboration or cooperation
+    collectively~1z 
+    jointly~2z in collaboration or cooperation
  judicially ( meanings=2 glosses=2 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    judicially~1bz in a judicial manner
-    judicially~2bz as ordered by a court
+    judicially~1z in a judicial manner
+    judicially~2z as ordered by a court
  just_in_case ( meanings=2 glosses=1 ADVERB CONJUNCTION_SUBORDINATE KINDERGARTEN posdefault:PREPOSITION ) 
-    in_case~1bz if there happens to be need
+    in_case~1z if there happens to be need
     just_in_case~2z 
  just_in_time ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    in_the_nick_of_time~1b 
+    in_the_nick_of_time~1z 
  just_so ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    just_so~1bz 
+    just_so~1z 
  just_right ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    to_a_T~1b 
+    to_a_T~1z 
  justly ( meanings=2 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    right~32b 
-    rightly~1b 
+    right~32z 
+    rightly~1z 
  justifiedly ( meanings=1 glosses=1 ADVERB COMMON1 ) 
-    justly~2bz with honesty
+    justly~2z with honesty
  justifiably ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    justifiably~1bz with good reason
+    justifiably~1z with good reason
  jurisprudentially ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    jurisprudentially~1bz in respect to jurisprudence or the science or philosophy of law
+    jurisprudentially~1z in respect to jurisprudence or the science or philosophy of law
  jealously ( meanings=2 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    enviously~1b 
-    jealously~2bz with jealousy
+    enviously~1z 
+    jealously~2z with jealousy
  jeeringly ( meanings=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    mockingly~2b 
+    mockingly~2z 
  joyously ( meanings=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    gleefully~1b 
+    gleefully~1z 
  joyfully ( meanings=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    joyously~1b 
+    joyously~1z 
  joylessly ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    joylessly~1bz in a joyless manner
+    joylessly~1z in a joyless manner
  jarringly ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    jarringly~1bz in a manner that jars and irritates
+    jarringly~1z in a manner that jars and irritates
  jejunely ( meanings=1 ADVERB COMMON1 ) 
-    immaturely~1b 
+    immaturely~1z 
  jerkily ( meanings=2 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    jerkily~1bz with jerking motions
-    spasmodically~2b 
+    jerkily~1z with jerking motions
+    spasmodically~2z 
  jestingly ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    jokingly~2bz in jest
+    jokingly~2z in jest
  jocosely ( meanings=1 glosses=1 ADVERB COMMON1 ) 
-    jocular~2bz with humor
+    jocular~2z with humor
  journalistically ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    journalistically~1bz by journalists
+    journalistically~1z by journalists
  jovially ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    jovially~1bz in a jovial manner
+    jovially~1z in a jovial manner
  judiciously ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    judiciously~1bz in a judicious manner
+    judiciously~1z in a judicious manner
  jauntily ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    jauntily~1bz in a jaunty fashionable manner
+    jauntily~1z in a jaunty fashionable manner
  jaggedly ( meanings=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    raggedly~1b 
+    raggedly~1z 
  jazz_up ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB VERB_DIRECTOBJECT PHRASAL_VERB SEPARABLE_PHRASAL_VERB VERB_CONJUGATE1 ) 
     pep_up~1v 
  juice_up ( meanings=1 VERB_PRESENT VERB_INFINITIVE VERB VERB_DIRECTOBJECT PHRASAL_VERB VERB_CONJUGATE1 ) 

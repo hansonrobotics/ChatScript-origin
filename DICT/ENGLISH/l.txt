@@ -1925,8 +1925,8 @@
     final~5az conclusive in a process or progression
     last~17az immediately past
     last~18az 
-    last~19bz most_recently
-    finally~3b 
+    last~19z most_recently
+    finally~3z 
     live_on~1vz continue to live through hardship or adversity
     endure~5vz persist for a specified period of time
  light_adaptation ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
@@ -1972,7 +1972,7 @@
     light~38az very thin and insubstantial
     swooning~1az weak and likely to lose consciousness
     light~40az 
-    lightly~5b 
+    lightly~5z 
     illuminate~1vz make lighter or brighter
     fire_up~1vz begin to smoke
     unhorse~1vz alight from
@@ -2079,7 +2079,7 @@
     depleted~1az no longer sufficient
     small~12a 
     low~14az 
-    low~15bz in a low position
+    low~15z in a low position
     moo~2vz make a low noise, characteristic of bovines
  leg ( meanings=8 glosses=6 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON4 COMMON1 KINDERGARTEN posdefault:NOUN ) 
     stage~1n 
@@ -2093,7 +2093,7 @@
  long_haul ( meanings=2 glosses=2 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     long_haul~1nz (^journey~1) a journey over a long distance
     long_run~1nz (^period~3) a period of time sufficient for factors to work themselves out
- long ( meanings=12 glosses=11 VERB_PRESENT VERB_INFINITIVE VERB ADJECTIVE ADVERB ADJECTIVE_NORMAL EXTENT_ADVERB ADJECTIVE_NOT_PREDICATE COMMON4 COMMON2 KINDERGARTEN posdefault:ADJECTIVE posdefault:ADVERB DISTANCE_ADJECTIVE ) comparative=longest 
+ long ( meanings=12 glosses=11 VERB_PRESENT VERB_INFINITIVE VERB ADJECTIVE ADJECTIVE_NORMAL EXTENT_ADVERB ADJECTIVE_NOT_PREDICATE COMMON4 COMMON2 KINDERGARTEN posdefault:ADJECTIVE posdefault:ADVERB DISTANCE_ADJECTIVE ) comparative=longest 
     long~1az having or being more than normal or necessary:
     long~2az primarily spatial sense
     long~3az primarily temporal sense
@@ -2104,7 +2104,7 @@
     long~8az involving substantial risk
     long~9az of relatively great height
     long~10az 
-    long~11bz for an extended time or at a distant time
+    long~11z for an extended time or at a distant time
     hanker~1vz desire strongly or persistently
  lockage ( meanings=3 glosses=3 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON1 posdefault:NOUN ) 
     lockage~1nz (^passage~2) passage through a lock in a canal or waterway
@@ -2141,7 +2141,7 @@
     left~8az of or belonging to the political or intellectual left
     left~9az being or located on or directed toward the side of the body to the west when facing north
     left~10az 
-    left~11bz toward or on the left
+    left~11z toward or on the left
  liberalization ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON4 NOUN_NODETERMINER posdefault:NOUN ) 
     relaxation~1nz (^relief~1) the act of making less strict
  liberalisation ( meanings=1 NOUN NOUN_SINGULAR COMMON2 COMMON1 posdefault:NOUN ) 
@@ -2221,7 +2221,7 @@
     lindy~1nz (^social_dancing~1) an energetic American dance that was popular in the 1930s
  longways ( meanings=2 NOUN ADVERB NOUN_SINGULAR COMMON1 ) 
     longways_dance~1n 
-    lengthways~2b 
+    lengthways~2z 
  longways_dance ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     longways~1nz (^country_dancing~1) country dancing performed with couples in two long lines facing each other
  landler ( meanings=2 glosses=2 NOUN_ABSTRACT NOUN NOUN_SINGULAR COMMON1 posdefault:NOUN ) 
@@ -2267,7 +2267,7 @@
     idle~6az lacking a sense of restraint or responsibility
     open~22az full of small openings or gaps
     slack~9az not tense or taut
-    free~12bz without restraint
+    free~12z without restraint
     loosen~1vz become loose or looser or less tight
     loosen~2vz make loose or looser
     unleash~2vz turn loose or free from restraint
@@ -2343,7 +2343,7 @@
  least ( meanings=4 glosses=3 NOUN_ABSTRACT MOST_FORM NOUN ADJECTIVE ADVERB DETERMINER ADJECTIVE_NORMAL NOUN_SINGULAR ADJECTIVE_NOT_PREDICATE COMMON4 COMMON2 COMMON1 KINDERGARTEN DETERMINER_PLURAL posdefault:ADVERB ) comparative=less 
     least~1nz (^matter~3) something that is of no importance
     least~2az the superlative of `little' that can be used with mass nouns and is usually preceded by `the'
-    to_the_lowest_degree~1bz used to form the superlative
+    to_the_lowest_degree~1z used to form the superlative
     least~4z 
  least_resistance ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     least_effort~1nz (^effort~2) the least effortful way to do something
@@ -2522,9 +2522,9 @@
     declamatory~1az ostentatiously lofty in style
     large~8az fairly large or important in effect
     large~9az 
-    vauntingly~1bz in a boastful manner
-    large~11bz with the wind abaft the beam
-    large~12bz at a distance, wide of something
+    vauntingly~1z in a boastful manner
+    large~11z with the wind abaft the beam
+    large~12z at a distance, wide of something
  lost_cause ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
     lost_cause~1nz (^effort~4) a defeated cause or a cause for which defeat is inevitable
  lost ( meanings=10 glosses=9 VERB_PAST VERB_PAST_PARTICIPLE VERB ADJECTIVE ADJECTIVE_NORMAL ADJECTIVE_PARTICIPLE ADJECTIVE_ONLY_PREDICATE COMMON4 COMMON1 KINDERGARTEN posdefault:VERB ) conjugate=lose 
@@ -3150,7 +3150,7 @@
     small~10az young, immature
     short~14az low in stature
     little~10az 
-    little~11bz not much
+    little~11z not much
     little~12z 
     little~13z 
  linnet ( meanings=2 NOUN NOUN_SINGULAR COMMON2 posdefault:NOUN ) 
@@ -4286,7 +4286,7 @@
     loud~1az characterized by or producing sound of great volume or intensity
     forte~4az used chiefly as a direction or description in music
     flash~11a 
-    aloud~2b 
+    aloud~2z 
  loud-hailer ( meanings=1 NOUN NOUN_SINGULAR posdefault:NOUN ) 
     bullhorn~1n 
  locker ( meanings=3 glosses=1 NOUN NOUN_SINGULAR COMMON4 posdefault:NOUN ) 
@@ -5285,7 +5285,7 @@
     live~10az charged with an explosive
     live~11az highly reverberant
     live~12az 
-    live~13bz not recorded
+    live~13z not recorded
     experience~5v 
     be~5vz have life, be alive
     live~16vz lead a certain kind of life
@@ -6514,7 +6514,7 @@
     lcm~1nz (^multiple~1) the smallest multiple that is exactly divisible by every member of a set of numbers
  lowest ( meanings=2 glosses=1 MOST_FORM ADJECTIVE ADVERB ADJECTIVE_NORMAL COMMON4 COMMON1 posdefault:ADJECTIVE ) comparative=lower 
     last~10a 
-    lowest~2bz in the lowest position
+    lowest~2z in the lowest position
  least_common_multiple ( meanings=1 NOUN NOUN_SINGULAR ) 
     lowest_common_multiple~1n 
  lcm ( meanings=1 NOUN NOUN_SINGULAR COMMON2 posdefault:NOUN ) 
@@ -7220,7 +7220,7 @@
  largo ( meanings=3 glosses=3 NOUN_ABSTRACT NOUN ADJECTIVE ADVERB ADJECTIVE_NORMAL NOUN_SINGULAR ADJECTIVE_NOT_PREDICATE COMMON2 COMMON1 posdefault:NOUN ) 
     largo~1nz (^piece~8) a composition or passage that is to be performed in a slow and dignified manner
     largo~2az very slow in tempo and broad in manner
-    largo~3bz slowly and broadly
+    largo~3z slowly and broadly
  larghetto ( meanings=2 glosses=2 NOUN_ABSTRACT NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR COMMON1 posdefault:NOUN ) 
     larghetto~1nz (^piece~8) a composition or passage played in a slow tempo slightly faster than largo but slower than adagio
     larghetto~2az less slow and broad than largo
@@ -7318,7 +7318,7 @@
     lee~1n 
     leeward~2nz (^direction~9) the direction in which the wind is blowing
     leeward~3az on the side away from the wind
-    upwind~3bz toward the wind
+    upwind~3z toward the wind
  lee_tide ( meanings=1 NOUN NOUN_SINGULAR ) 
     leeward_tide~1n 
  lee ( meanings=2 NOUN ADJECTIVE ADJECTIVE_NORMAL NOUN_SINGULAR ADJECTIVE_NOT_PREDICATE COMMON4 NOUN_NODETERMINER posdefault:NOUN ) 
@@ -9178,7 +9178,7 @@
     longbowman~1nz (^archer~1) a medieval English archer who used a longbow
  longer ( meanings=2 glosses=2 MORE_FORM NOUN ADJECTIVE ADVERB ADJECTIVE_NORMAL NOUN_SINGULAR COMMON4 COMMON1 KINDERGARTEN posdefault:ADJECTIVE ) comparative=long 
     yearner~1nz (^individual~1) a person with a strong desire for something
-    longer~2bz for more time
+    longer~2z for more time
  lookout_man ( meanings=1 NOUN NOUN_SINGULAR ) 
     spotter~2n 
  loose_cannon ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
@@ -10298,10 +10298,10 @@
     recent~2az of the immediate past or just previous to the present time
     tardy~1az after the expected or usual time
     late~8az 
-    tardily~1bz later than usual or than expected
-    lately~1b 
-    deep~22b 
-    late~12bz at an advanced age or stage
+    tardily~1z later than usual or than expected
+    lately~1z 
+    deep~22z 
+    late~12z at an advanced age or stage
  lesser_knapweed ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
     Centaurea_nigra~1nz (^knapweed~1) a weedy perennial with tough wiry stems and purple flowers
  leopard's-bane ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
@@ -11723,7 +11723,7 @@
     plurality~2n 
  lots ( meanings=2 glosses=1 ADVERB COMMON4 COMMON1 KINDERGARTEN posdefault:NOUN ) 
     oodles~1nz (^large_indefinite_quantity~1) a large number or amount
-    a_lot~1b 
+    a_lot~1z 
  living_space ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR NOUN_NODETERMINER ) 
     lebensraum~1nz (^room~3) space sought for occupation by a nation whose population is expanding
  lebensraum ( meanings=1 NOUN NOUN_SINGULAR COMMON1 NOUN_NODETERMINER posdefault:NOUN ) 
@@ -12561,7 +12561,7 @@
     eleventh_hour~1n 
  langsyne ( meanings=2 glosses=1 NOUN ADVERB NOUN_SINGULAR COMMON1 ) 
     auld_langsyne~1n 
-    langsyne~2bz at a distant time in the past
+    langsyne~2z at a distant time in the past
  last_half ( meanings=1 NOUN NOUN_SINGULAR ) 
     second_half~1n 
  last_gasp ( meanings=1 glosses=1 NOUN_ABSTRACT NOUN NOUN_SINGULAR ) 
@@ -12753,13 +12753,13 @@
     depict~3v 
     outline~5v 
  lately ( meanings=1 ADVERB COMMON4 KINDERGARTEN posdefault:ADVERB TIMEWORD ) 
-    recently~1b 
+    recently~1z 
  later ( meanings=5 glosses=4 MORE_FORM ADJECTIVE ADVERB ADJECTIVE_NORMAL ADJECTIVE_NOT_PREDICATE COMMON4 COMMON1 KINDERGARTEN posdefault:ADVERB TIMEWORD ) comparative=late 
     ulterior~1az coming at a subsequent time or stage
     late~3az at or toward an end or late period or stage of development
-    after~1b 
-    by_and_by~1bz at some eventual time in the future
-    later~5bz comparative of the adverb `late'
+    after~1z 
+    by_and_by~1z at some eventual time in the future
+    later~5z comparative of the adverb `late'
  luxuriant ( meanings=4 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
     lush~2a 
     epicurean~2a 
@@ -12805,13 +12805,13 @@
  lightly_armored ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL CONDITIONAL_IDIOM  poscondition=?=A ) 
     lightly_armoured~1a 
  lightly ( meanings=7 glosses=7 ADVERB EXTENT_ADVERB COMMON4 KINDERGARTEN posdefault:ADVERB ) 
-    lightly~1bz with indifference or without dejection
-    lightly~2bz indulging with temperance
-    lightly~3bz to a slight degree
-    gently~1bz with little weight or force
-    light~41bz with few burdens
-    thinly~2bz in a small quantity or extent
-    lightly~7bz without good reason
+    lightly~1z with indifference or without dejection
+    lightly~2z indulging with temperance
+    lightly~3z to a slight degree
+    gently~1z with little weight or force
+    light~41z with few burdens
+    thinly~2z in a small quantity or extent
+    lightly~7z without good reason
  lightly_armoured ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL CONDITIONAL_IDIOM  poscondition=?=A ) 
     lightly_armored~1az 
  long-armed ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL posdefault:ADJECTIVE ) 
@@ -13033,10 +13033,10 @@
  loosely_knit ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL CONDITIONAL_IDIOM  poscondition=?=A ) 
     loosely_knit~1az 
  loosely ( meanings=4 glosses=3 ADVERB COMMON4 posdefault:ADVERB ) 
-    loosely~1bz knitted in a loose manner
-    slackly~1bz in a relaxed manner
-    generally~3b 
-    loosely~4bz in a loose manner
+    loosely~1z knitted in a loose manner
+    slackly~1z in a relaxed manner
+    generally~3z 
+    loosely~4z in a loose manner
  lobster-backed ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL ) 
     red-coated~1az used of British soldiers during the American Revolutionary War because of their red coats
  leaden ( meanings=5 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:ADJECTIVE ) 
@@ -13095,7 +13095,7 @@
     probable~3az likely but not certain to be or become true or real
     potential~4az expected to become or be
     likely~5az 
-    probably~1b 
+    probably~1z 
  life-threatening ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL posdefault:ADJECTIVE ) 
     severe~1a 
  life-and-death ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL posdefault:ADJECTIVE ) 
@@ -13216,7 +13216,7 @@
     long-play~1az playing at a slower speed and for a longer time than earlier records
  lento ( meanings=2 glosses=1 ADJECTIVE ADVERB ADJECTIVE_NORMAL ADJECTIVE_NOT_PREDICATE COMMON2 ) 
     lento~1az slow
-    slowly~2b 
+    slowly~2z 
  lentissimo ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON1 ) 
     lentissimo~1az very slow
  larghissimo ( meanings=1 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON1 ) 
@@ -13362,7 +13362,7 @@
     ludicrous~3az 
  leisurely ( meanings=2 glosses=1 ADJECTIVE ADVERB ADJECTIVE_NORMAL ADJECTIVE_NOT_PREDICATE COMMON2 COMMON1 GRADE5_6 posdefault:ADJECTIVE ) 
     easygoing~3a 
-    at_leisure~1bz in an unhurried way or at one's convenience
+    at_leisure~1z in an unhurried way or at one's convenience
  lessened ( meanings=2 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:VERB ) 
     weakened~4a 
     lessened~2az decreased in severity
@@ -13557,10 +13557,10 @@
     longstanding~1az having existed for a long time
  lengthwise ( meanings=2 glosses=1 ADJECTIVE ADVERB ADJECTIVE_NORMAL ADJECTIVE_NOT_PREDICATE COMMON2 COMMON1 posdefault:ADVERB ) 
     lengthways~1az running or extending in the direction of the length of a thing
-    longitudinally~2b 
+    longitudinally~2z 
  lengthways ( meanings=2 ADJECTIVE ADVERB ADJECTIVE_NORMAL ADJECTIVE_NOT_PREDICATE COMMON2 posdefault:ADVERB ) 
     lengthwise~1a 
-    lengthwise~2b 
+    lengthwise~2z 
  lidded ( meanings=2 glosses=2 ADJECTIVE ADJECTIVE_NORMAL COMMON2 posdefault:ADJECTIVE ) 
     lidded~1az having or covered with a lid or lids
     lidded~2az having a lid
@@ -13616,8 +13616,8 @@
     less~1az a quantifier meaning not as great in amount or degree
     less~2az fewer
     less~3az lower in quality
-    to_a_lesser_extent~1bz used to form the comparative of some adjectives and adverbs
-    less~5bz comparative of little
+    to_a_lesser_extent~1z used to form the comparative of some adjectives and adverbs
+    less~5z comparative of little
     less~6z 
     less~7z 
     less~8z 
@@ -13897,7 +13897,7 @@
     backhand~3az having the letters slanting backward
  legato ( meanings=2 glosses=1 ADJECTIVE ADVERB ADJECTIVE_NORMAL ADJECTIVE_NOT_PREDICATE COMMON2 posdefault:ADJECTIVE posdefault:ADVERB ) 
     smooth~9a 
-    legato~2bz connecting the notes
+    legato~2z connecting the notes
  lopsided ( meanings=3 glosses=1 ADJECTIVE ADJECTIVE_NORMAL COMMON2 COMMON1 posdefault:ADJECTIVE ) 
     cockeyed~2a 
     lopsided~2az having one side lower or smaller or lighter than the other
@@ -14227,7 +14227,7 @@
  lygophobic ( meanings=1 ADJECTIVE ADJECTIVE_NORMAL ) 
     lygophobic~1az 
  longest ( meanings=1 glosses=1 MOST_FORM ADJECTIVE ADVERB ADJECTIVE_NORMAL COMMON4 KINDERGARTEN posdefault:ADJECTIVE ) comparative=longer 
-    longest~1bz for the most time
+    longest~1z for the most time
  lacier ( MORE_FORM ADJECTIVE ADJECTIVE_NORMAL COMMON1 ) comparative=lacy 
  laciest ( MOST_FORM ADJECTIVE ADJECTIVE_NORMAL COMMON1 ) comparative=lacier 
  lankier ( MORE_FORM ADJECTIVE ADJECTIVE_NORMAL COMMON1 ) comparative=lanky 
@@ -14275,296 +14275,296 @@
  lustier ( MORE_FORM ADJECTIVE ADJECTIVE_NORMAL COMMON1 posdefault:ADJECTIVE ) comparative=lusty 
  lustiest ( MOST_FORM ADJECTIVE ADJECTIVE_NORMAL COMMON1 ) comparative=lustier 
  largely ( meanings=2 glosses=1 ADVERB COMMON4 COMMON1 posdefault:ADVERB ) 
-    mostly~1b 
-    largely~2bz on a large scale
+    mostly~1z 
+    largely~2z on a large scale
  long_ago ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    long_since~1b 
+    long_since~1z 
  long_since ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    lang_syne~1bz 
+    lang_syne~1z 
  lang_syne ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    long_ago~1b 
+    long_ago~1z 
  luckily ( meanings=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    fortuitously~1b 
+    fortuitously~1z 
  likewise ( meanings=4 glosses=3 ADVERB COMMON4 KINDERGARTEN posdefault:ADVERB ) 
-    as_well~1bz in addition
-    alike~3bz equally
-    similarly~1bz in like or similar manner
-    likewise~4bz 
+    as_well~1z in addition
+    alike~3z equally
+    similarly~1z in like or similar manner
+    likewise~4z 
  like_a_shot ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    forthwith~1b 
+    forthwith~1z 
  later_on ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    afterward~1b 
+    afterward~1z 
  let_alone ( meanings=1 ADVERB CONDITIONAL_IDIOM posdefault:PREPOSITION  poscondition=?=R ) 
-    not_to_mention~1b 
+    not_to_mention~1z 
  lengthily ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    at_length~1bz in a lengthy or prolix manner
+    at_length~1z in a lengthy or prolix manner
  lastly ( meanings=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    last~20b 
+    last~20z 
  last_but_not_least ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    last_not_least~1bz 
+    last_not_least~1z 
  last_not_least ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    last_but_not_least~1b 
+    last_but_not_least~1z 
  lastingly ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    lastingly~1bz in an enduring or permanent manner
+    lastingly~1z in an enduring or permanent manner
  loudly ( meanings=3 glosses=3 ADVERB COMMON4 KINDERGARTEN posdefault:ADVERB ) 
-    loud~4bz with relatively high volume
-    forte~5bz used as a direction in music
-    clamorously~1bz in manner that attracts attention
+    loud~4z with relatively high volume
+    forte~5z used as a direction in music
+    clamorously~1z in manner that attracts attention
  light-headedly ( meanings=1 glosses=1 ADVERB posdefault:ADVERB ) 
-    dizzily~1bz in a giddy light-headed manner
+    dizzily~1z in a giddy light-headed manner
  like_blue_murder ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    flat_out~1bz 
+    flat_out~1z 
  lamentably ( meanings=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    sadly~2b 
+    sadly~2z 
  leastways ( meanings=1 ADVERB COMMON1 ) 
-    at_least~2b 
+    at_least~2z 
  leastwise ( meanings=1 ADVERB COMMON1 ) 
-    leastways~1b 
+    leastways~1z 
  latterly ( meanings=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    of_late~1b 
+    of_late~1z 
  literally ( meanings=2 glosses=2 ADVERB COMMON4 posdefault:ADVERB ) 
-    literally~1bz without exaggeration
-    literally~2bz in a literal sense
+    literally~1z without exaggeration
+    literally~2z in a literal sense
  least_of_all ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    least_of_all~1bz 
+    least_of_all~1z 
  legally ( meanings=2 glosses=1 ADVERB COMMON4 posdefault:ADVERB ) 
-    legally~1bz in a legal manner
-    lawfully~1b 
+    legally~1z in a legal manner
+    lawfully~1z 
  like_kings ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    like_royalty~1b 
+    like_royalty~1z 
  like_royalty ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    royally~1bz 
+    royally~1z 
  legislatively ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    legislatively~1bz by legislation
+    legislatively~1z by legislation
  linearly ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    linearly~1bz in a linear manner
+    linearly~1z in a linear manner
  longitudinally ( meanings=3 glosses=3 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    longitudinally~1bz with respect to longitude
-    longwise~1bz in the direction of the length
-    longitudinally~3bz across time
+    longitudinally~1z with respect to longitude
+    longwise~1z in the direction of the length
+    longitudinally~3z across time
  limitedly ( meanings=2 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    limitedly~1bz in a limited manner
-    limitedly~2bz 
+    limitedly~1z in a limited manner
+    limitedly~2z 
  linguistically ( meanings=2 glosses=2 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    lingually~1bz with respect to language
-    linguistically~2bz with respect to the science of linguistics
+    lingually~1z with respect to language
+    linguistically~2z with respect to the science of linguistics
  lingually ( meanings=1 ADVERB COMMON1 ) 
-    linguistically~1b 
+    linguistically~1z 
  locally ( meanings=2 glosses=1 ADVERB COMMON4 posdefault:ADVERB ) 
-    locally~1bz by a particular locality
-    topically~1b 
+    locally~1z by a particular locality
+    topically~1z 
  lexically ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    lexically~1bz by means of words
+    lexically~1z by means of words
  lawlessly ( meanings=1 ADVERB COMMON1 ) 
-    illicitly~1b 
+    illicitly~1z 
  little_by_little ( meanings=2 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    by_small_degrees~1bz 
-    in_stages~1bz 
+    by_small_degrees~1z 
+    in_stages~1z 
  lickety_split ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    lickety_cut~1bz 
+    lickety_cut~1z 
  lickety_cut ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    lickety_split~1b 
+    lickety_split~1z 
  like_clockwork ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    like_clockwork~1bz 
+    like_clockwork~1z 
  like_hell ( meanings=2 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    like_thunder~1b 
-    like_hell~2bz 
+    like_thunder~1z 
+    like_hell~2z 
  like_mad ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    like_the_devil~1b 
+    like_the_devil~1z 
  like_crazy ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    like_mad~1b 
+    like_mad~1z 
  like_sin ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    like_crazy~1b 
+    like_crazy~1z 
  like_thunder ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    like_sin~1b 
+    like_sin~1z 
  like_the_devil ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    like_hell~1bz 
+    like_hell~1z 
  lavishly ( meanings=2 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    richly~1b 
-    extravagantly~3b 
+    richly~1z 
+    extravagantly~3z 
  liberally ( meanings=2 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    munificently~1b 
-    liberally~2bz freely in a nonliteral manner
+    munificently~1z 
+    liberally~2z freely in a nonliteral manner
  like_an_expert ( meanings=1 ADVERB CONDITIONAL_IDIOM  poscondition=?=R ) 
-    expertly~1bz 
+    expertly~1z 
  laudably ( meanings=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    admirably~1b 
+    admirably~1z 
  laughingly ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    laughingly~1bz with laughter
+    laughingly~1z with laughter
  lovingly ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    fondly~1bz with fondness
+    fondly~1z with fondness
  laconically ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    drily~1bz in a dry laconic manner
+    drily~1z in a dry laconic manner
  lopsidedly ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    crookedly~1bz in a crooked lopsided manner
+    crookedly~1z in a crooked lopsided manner
  lustily ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    lustily~1bz in a healthy manner
+    lustily~1z in a healthy manner
  lawfully ( meanings=2 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    de_jure~2bz by law
-    legitimately~2b 
+    de_jure~2z by law
+    legitimately~2z 
  lifelessly ( meanings=3 glosses=2 ADVERB COMMON1 posdefault:ADVERB ) 
-    deadly~9b 
-    lifelessly~2bz in a lifeless manner
-    lifelessly~3bz without animation or vitality
+    deadly~9z 
+    lifelessly~2z in a lifeless manner
+    lifelessly~3z without animation or vitality
  loyally ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    loyally~1bz with loyalty
+    loyally~1z with loyalty
  learnedly ( meanings=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    eruditely~1b 
+    eruditely~1z 
  lief ( meanings=1 ADVERB COMMON2 ) 
-    fain~2b 
+    fain~2z 
  luxuriously ( meanings=2 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    richly~2b 
-    luxuriously~2bz in an indulgently luxurious manner
+    richly~2z 
+    luxuriously~2z in an indulgently luxurious manner
  lazily ( meanings=2 glosses=2 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    idly~1bz in an idle manner
-    lazily~2bz in a slow and lazy manner
+    idly~1z in an idle manner
+    lazily~2z in a slow and lazy manner
  legibly ( meanings=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    decipherably~1b 
+    decipherably~1z 
  legitimately ( meanings=2 glosses=2 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    legitimately~1bz in a lawfully recognized manner
-    licitly~1bz in a manner acceptable to common custom
+    legitimately~1z in a lawfully recognized manner
+    licitly~1z in a manner acceptable to common custom
  licitly ( meanings=1 ADVERB COMMON1 ) 
-    lawfully~2b 
+    lawfully~2z 
  logically ( meanings=2 glosses=2 ADVERB COMMON4 posdefault:ADVERB ) 
-    logically~1bz in a logical manner
-    logically~2bz according to logical reasoning
+    logically~1z in a logical manner
+    logically~2z according to logical reasoning
  laboriously ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    laboriously~1bz in a laborious manner
+    laboriously~1z in a laborious manner
  lackadaisically ( meanings=1 glosses=1 ADVERB COMMON1 ) 
-    lackadaisically~1bz in an idle and lackadaisical manner
+    lackadaisically~1z in an idle and lackadaisical manner
  lamely ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    lamely~1bz in a weak and unconvincing manner
+    lamely~1z in a weak and unconvincing manner
  landward ( meanings=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    landwards~1b 
+    landwards~1z 
  landwards ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    landward~1bz toward land
+    landward~1z toward land
  languidly ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    languidly~1bz in a languid and lethargic manner
+    languidly~1z in a languid and lethargic manner
  languorously ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    languorously~1bz in a languorous manner
+    languorously~1z in a languorous manner
  lasciviously ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    salaciously~1bz in a lascivious manner
+    salaciously~1z in a lascivious manner
  laterally ( meanings=2 glosses=2 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    laterally~1bz in a lateral direction or location
-    laterally~2bz to or by or from the side
+    laterally~1z in a lateral direction or location
+    laterally~2z to or by or from the side
  laughably ( meanings=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    ludicrously~1b 
+    ludicrously~1z 
  ludicrously ( meanings=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    ridiculously~1b 
+    ridiculously~1z 
  laxly ( meanings=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    leniently~1b 
+    leniently~1z 
  leniently ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    laxly~1bz in a permissively lenient manner
+    laxly~1z in a permissively lenient manner
  longwise ( meanings=1 ADVERB COMMON1 ) 
-    longways~2b 
+    longways~2z 
  lethargically ( meanings=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    unenergetically~1b 
+    unenergetically~1z 
  lewdly ( meanings=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    obscenely~1b 
+    obscenely~1z 
  licentiously ( meanings=1 ADVERB COMMON1 ) 
-    wantonly~1b 
+    wantonly~1z 
  longingly ( meanings=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    yearningly~1b 
+    yearningly~1z 
  lucidly ( meanings=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    limpidly~1b 
+    limpidly~1z 
  limpidly ( meanings=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    pellucidly~1b 
+    pellucidly~1z 
  lukewarmly ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    tepidly~1bz in an unenthusiastically lukewarm manner
+    tepidly~1z in an unenthusiastically lukewarm manner
  luxuriantly ( meanings=2 glosses=2 ADVERB COMMON2 posdefault:ADVERB ) 
-    luxuriantly~1bz in an elegantly luxuriant way
-    luxuriantly~2bz in an abundant and luxuriant manner
+    luxuriantly~1z in an elegantly luxuriant way
+    luxuriantly~2z in an abundant and luxuriant manner
  light-handedly ( meanings=1 glosses=1 ADVERB ) 
-    light-handedly~1bz in a light-handed manner
+    light-handedly~1z in a light-handed manner
  light-heartedly ( meanings=1 glosses=1 ADVERB posdefault:ADVERB ) 
-    lightsomely~1bz in a light-hearted manner
+    lightsomely~1z in a light-hearted manner
  lightsomely ( meanings=2 glosses=1 ADVERB COMMON1 ) 
-    light-heartedly~1b 
-    trippingly~1bz moving with quick light steps
+    light-heartedly~1z 
+    trippingly~1z moving with quick light steps
  limnologically ( meanings=1 glosses=1 ADVERB COMMON1 ) 
-    limnologically~1bz with regard to or concerning limnology
+    limnologically~1z with regard to or concerning limnology
  limply ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    limply~1bz without rigidity
+    limply~1z without rigidity
  lineally ( meanings=1 glosses=1 ADVERB COMMON1 ) 
-    lineally~1bz by an unbroken line of descent
+    lineally~1z by an unbroken line of descent
  lingeringly ( meanings=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    protractedly~1b 
+    protractedly~1z 
  lispingly ( meanings=1 glosses=1 ADVERB COMMON1 ) 
-    lispingly~1bz with a lisp
+    lispingly~1z with a lisp
  listlessly ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    listlessly~1bz in a listless manner
+    listlessly~1z in a listless manner
  lividly ( meanings=1 glosses=1 ADVERB COMMON1 ) 
-    lividly~1bz in a livid manner
+    lividly~1z in a livid manner
  loftily ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    loftily~1bz in a lofty manner
+    loftily~1z in a lofty manner
  logarithmically ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    logarithmically~1bz in a logarithmic manner
+    logarithmically~1z in a logarithmic manner
  loquaciously ( meanings=1 glosses=1 ADVERB COMMON1 ) 
-    talkily~1bz in a chatty loquacious manner
+    talkily~1z in a chatty loquacious manner
  lugubriously ( meanings=1 glosses=1 ADVERB COMMON1 posdefault:ADVERB ) 
-    lugubriously~1bz in a sorrowful lugubrious manner
+    lugubriously~1z in a sorrowful lugubrious manner
  luridly ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    luridly~1bz in a lurid manner
+    luridly~1z in a lurid manner
  lusciously ( meanings=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    scrumptiously~1b 
+    scrumptiously~1z 
  lustfully ( meanings=1 glosses=1 ADVERB COMMON2 posdefault:ADVERB ) 
-    lustfully~1bz in a lustful manner
+    lustfully~1z in a lustful manner
  lyrically ( meanings=1 glosses=1 ADVERB COMMON2 COMMON1 posdefault:ADVERB ) 
-    lyrically~1bz in a lyrical manner
+    lyrically~1z in a lyrical manner
  long-windedly ( meanings=1 glosses=1 ADVERB ) 
-    wordily~1bz in a verbose manner
+    wordily~1z in a verbose manner
  loweringly ( meanings=1 glosses=1 ADVERB COMMON1 ) 
-    loweringly~1bz in a menacing or scowling way
+    loweringly~1z in a menacing or scowling way
  literatim ( meanings=1 glosses=1 ADVERB COMMON1 ) 
-    literatim~1bz letter for letter
+    literatim~1z letter for letter
  logogrammatically ( meanings=1 glosses=1 ADVERB ) 
-    logogrammatically~1bz by means of logograms
+    logogrammatically~1z by means of logograms
  linguo-apically ( meanings=2 ADVERB ) 
-    linguo-apically~1bz 
-    linguo-apically~2bz 
+    linguo-apically~1z 
+    linguo-apically~2z 
  lytically ( meanings=2 ADVERB COMMON1 ) 
-    lytically~1bz 
-    lytically~2bz 
+    lytically~1z 
+    lytically~2z 
  legalistically ( meanings=2 ADVERB COMMON1 posdefault:ADVERB ) 
-    legalistically~1bz 
-    legalistically~2bz 
+    legalistically~1z 
+    legalistically~2z 
  laminagraphically ( meanings=2 ADVERB ) 
-    laminagraphically~1bz 
-    laminagraphically~2bz 
+    laminagraphically~1z 
+    laminagraphically~2z 
  laryngostroboscopically ( meanings=2 ADVERB ) 
-    laryngostroboscopically~1bz 
-    laryngostroboscopically~2bz 
+    laryngostroboscopically~1z 
+    laryngostroboscopically~2z 
  lensometrically ( meanings=2 ADVERB ) 
-    lensometrically~1bz 
-    lensometrically~2bz 
+    lensometrically~1z 
+    lensometrically~2z 
  lithoscopically ( meanings=2 ADVERB ) 
-    lithoscopically~1bz 
-    lithoscopically~2bz 
+    lithoscopically~1z 
+    lithoscopically~2z 
  luminometrically ( meanings=2 ADVERB ) 
-    luminometrically~1bz 
-    luminometrically~2bz 
+    luminometrically~1z 
+    luminometrically~2z 
  laparoscopically ( meanings=2 ADVERB COMMON2 posdefault:ADVERB ) 
-    laparoscopically~1bz 
-    laparoscopically~2bz 
+    laparoscopically~1z 
+    laparoscopically~2z 
  lumboscopically ( meanings=2 ADVERB ) 
-    lumboscopically~1bz 
-    lumboscopically~2bz 
+    lumboscopically~1z 
+    lumboscopically~2z 
  lithometrically ( meanings=2 ADVERB ) 
-    lithometrically~1bz 
-    lithometrically~2bz 
+    lithometrically~1z 
+    lithometrically~2z 
  lymphoscintigraphically ( meanings=2 ADVERB ) 
-    lymphoscintigraphically~1bz 
-    lymphoscintigraphically~2bz 
+    lymphoscintigraphically~1z 
+    lymphoscintigraphically~2z 
  lymphographically ( meanings=2 ADVERB ) 
-    lymphographically~1bz 
-    lymphographically~2bz 
+    lymphographically~1z 
+    lymphographically~2z 
  lymphangiographically ( meanings=2 ADVERB ) 
-    lymphangiographically~1bz 
-    lymphangiographically~2bz 
+    lymphangiographically~1z 
+    lymphangiographically~2z 
  latently ( meanings=1 ADVERB posdefault:ADVERB ) 
-    latently~1bz 
+    latently~1z 
  lethally ( meanings=1 ADVERB posdefault:ADVERB ) 
-    lethally~1bz 
+    lethally~1z 
  lest ( meanings=1 CONJUNCTION_SUBORDINATE COMMON4 COMMON1 KINDERGARTEN posdefault:PREPOSITION ) 
     lest~1z 
  little_short_of ( meanings=1 PREPOSITION ) 
