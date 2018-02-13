@@ -5812,8 +5812,6 @@
     armadillo~1nz (^edentate~1) burrowing chiefly nocturnal mammal with body covered with strong horny plates
  apar ( meanings=1 NOUN NOUN_SINGULAR COMMON2 posdefault:NOUN ) 
     three-banded_armadillo~1n 
- ai ( meanings=1 NOUN NOUN_SINGULAR COMMON4 posdefault:NOUN ) 
-    Bradypus_tridactylus~1n 
  animal_leg ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
     animal_leg~1nz (^leg~7) the leg of an animal
  air_bladder ( meanings=1 NOUN NOUN_SINGULAR ) 

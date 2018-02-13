@@ -12,7 +12,11 @@
  <no> ~no 
  <no_- ~no 
  <none ~no 
-  <continue ~yes
+ <not_sure ~emomaybe
+ <no_idea ~emoignorance
+ <rarely ~no
+ <barely ~no
+ <continue ~yes
  <make_it_so> ~yes
  <do_it> ~yes
  <I_guess_so ~yes
@@ -47,6 +51,7 @@
  <another_time> ~emogoodbye
  <apologies> ~emoapology
  <apparently> ~yes
+ <appreciate_it ~emothanks
  <approved ~yes
  <are_you_for_real ~emoskeptic
  <are_you_having_me_on ~emoskeptic
@@ -68,8 +73,6 @@
  <be_seeing_you ~emogoodbye
  <beats_me ~emoignorance
  <beyond_a_doubt> ~yes
- <blah ~emobored
- <blah_blah_blah ~emobored
  <bleah ~emodisgust
  <bollocks ~no
  <boo-yah ~emohappy
@@ -122,6 +125,7 @@
  <damn ~emosad
  <damn_good ~yes
  <damn_straight ~yes
+ <damn_skippy ~yes
  <definitely ~yes
  <delighted ~yes
  <did_not_you_say ~emoprotest
@@ -137,9 +141,12 @@
  <do_not_follow_you ~emomisunderstand
  <do_not_get_it ~emomisunderstand
  <do_not_understand ~emomisunderstand
+ <do_not_know ~emoignorance
  <does_not_seem_likely> ~no
  <does_not_seem_possible> ~no
  <doubtful ~no
+ <doubt_it ~emoignorance
+ <doubt_so ~emoignorance
  <eek ~emosurprise
  <eeugh ~emodisgust
  <eeuh ~emodisgust
@@ -166,6 +173,7 @@
  <fine> ~yes
  <for_all_I_know> ~emomaybe
  <for_sure ~yes
+ <forgive_me ~emoapology
  <fortune_does_not_smile_on_that ~no
  <fortune_smiles_on_that ~yes
  <fully ~yes
@@ -182,7 +190,7 @@
  <good-by ~emogoodbye
  <good-bye ~emogoodbye
  <good_afternoon ~emohello
- <good_day ~emohello
+ <good_day ~emogoodbye
  <good_evening ~emohello
  <good_for_you ~emohappy
  <good_grief ~emosad
@@ -223,7 +231,10 @@
  <have_a_nice_day ~emogoodbye
  <have_a_nice_night ~emogoodbye
  <have_to_boogie ~emogoodbye
+ <have_to_bounce ~emogoodbye
+ <have_to_jet ~emogoodbye
  <have_to_get_going ~emogoodbye
+ <have_to_go ~emogoodbye
  <he-he-he ~emolaugh
  <he-he ~emolaugh
  <hee ~emolaugh
@@ -272,14 +283,15 @@
  <hold_on_there ~emoprotest
  <hooray ~emohappy
  <horse_hockey ~no
- <how_are_things> ~emohowzit
- <how_are_you> ~emohowzit
+ how_are_things> ~emohowzit
+ how_are_you> ~emohowzit
  <how_awful ~emosad
  <how_bizarre ~emosad
  <how_can_you_say ~emoprotest
  <how_do_you_do> ~emohowzit
  <how_is_your_day ~emohowzit
  <how_goes_it ~emohowzit
+ <how_is_it_hanging ~emohowzit
  <how_goes_things ~emohowzit
  <how_goes> ~emohowzit
  <how_have_you_been> ~emohowzit
@@ -324,6 +336,7 @@
  <I_am_uncertain> ~emomaybe
  <I_am_very_grateful ~emothanks
  <I_am> ~yes
+ <I_apologize ~emoapology
  <I_can_believe_it> ~yes
  <I_can_believe_that> ~yes
  <I_can_imagine_it> ~emomaybe
@@ -372,6 +385,15 @@
  <I_thank_you ~emothanks
  <I_think_not ~no
  <I_think_so ~yes
+ <think_so> ~yes
+ <kind_of> ~yes
+ <sort_of> ~yes
+ <sorry_?> ~emomisunderstand
+ <pretty_sure> ~yes
+ seems_right> ~yes
+ sounds_correct> ~yes
+ sounds_right> ~yes
+ sounds_accurate> ~yes
  <I_thought_you_said ~emoprotest
  <I_too> ~emomutual
  <I_totally_agree ~yes
@@ -399,7 +421,7 @@
  <it_was_good_meeting_you ~emogoodbye
  <it_was_good_to_meet_you ~emogoodbye
  <it_was_nice_meeting_you ~emogoodbye
- <it_was_nice_to_meet_you ~emogoodbye
+ <it_was_nice_to_meet_you ~emogoodbye 
  <it_will_be_a_pleasure_to ~yes
  <it_will_be_my_pleasure_to ~yes
  <it_would_be_a_pleasure ~yes
@@ -444,9 +466,7 @@
  <never_mind> ~no
  <never> ~no
  <nice_one ~emohappy
- <nice_to_meet_you ~emohello
  <nice_to_see_you ~emohello
- <nice> ~emohappy
  <nighty-night ~emogoodbye
  <nite-nite ~emogoodbye
  <no_! ~no
@@ -464,6 +484,8 @@
  <nods ~yes
  <non_comprende ~emomisunderstand
  <noo ~no
+ <nooo ~no
+ <noooo ~no
  <nope ~no
  <not_a_chance ~no
  <not_a_clue ~emoignorance
@@ -496,6 +518,7 @@
  <oh_dear_oh_dear ~emosad
  <oh_dear_what_a_pity ~emosad
  <oh_my_god ~emosurprise
+ <oh_my_God ~emosurprise
  <oh_my_gosh_I_am_sorry ~emoapology
  <oh_no ~emosad
  <oh_okay ~yes
@@ -506,8 +529,6 @@
  <oh_yeah_? ~emoskeptic
  <ohayou ~emohello
  <OK ~yes
- <o.k. ~yes
- <O.K. ~yes
  <ok ~yes
  <okey_dokey ~yes
  <on_the_contrary> ~no
@@ -538,14 +559,17 @@
  <righto ~yes
  <righty-ho ~yes
  <rubbish ~no
+ <same> ~emomutual
  <salutations ~emohello
  <say_that_again ~emomisunderstand
  <sayonara ~emogoodbye
  <see_you_later ~emogoodbye
- <see_you_later_,_aligator ~emogoodbye
+ <see_you_later_,_alligator ~emogoodbye
  <see_you_soon ~emogoodbye
  <see_you_tomorrow ~emogoodbye
  <see_you> ~emogoodbye
+ <see_you_next_time ~emogoodbye
+ <see_you_another_time ~emogoodbye
  <seldom ~no
  <shure ~yes
  <si ~yes
@@ -556,12 +580,14 @@
  <so_do_I> ~emomutual
  <so_long ~emogoodbye
  <so_will_you ~yes
- <sorry ~emoapology
+ <sorry> ~emoapology
  <sorry_? ~emomisunderstand
  <sorry_about_that ~emoapology
  <sorry_it_did_not_work_out ~emosad
  <sounds_wonderful ~yes
  <strange ~no
+ <sup ~emohowzit
+ <sup_dog ~emohowzit
  <supposedly ~yes
  <sure ~yes
  <sure_thing ~yes
@@ -592,6 +618,7 @@
  <thanks_to_you_all ~emothanks
  <thanks_very_much ~emothanks
  <that_bums_me_out ~emosad
+ <that_is_a_bummer ~emosad
  <that_is_alright ~yes
  <that_is_correct ~yes
  <that_is_disgusting ~emodisgust
@@ -607,9 +634,9 @@
  <there_is_no_reason_to_think_so ~no
  <thinks_not ~no
  <thumbs_up ~yes
- <till_another_time ~emogoodbye
- <till_next_time ~emogoodbye
- <till_we_meet_again ~emogoodbye
+ <til_another_time ~emogoodbye
+ <til_next_time ~emogoodbye
+ <til_we_meed_again ~emogoodbye
  <till_next_time ~emogoodbye
  <time_to_be ~emogoodbye
  <time_to_go ~emogoodbye
@@ -619,7 +646,7 @@
  <totally ~yes
  <true> ~yes
  <truly_? ~emosurprise
- <truly> ~emoskeptic
+ <truly> ~yes
  <two_thumbs_up ~yes
  <ugh ~emodisgust
  <uh-hu ~no
@@ -643,6 +670,7 @@
  <well_I_never ~emosurprise
  <well_maybe_you_are_right ~yes
  <well_perhaps_you_are_right ~yes
+ <well_thanks ~emothanks
  <whaa ~emomisunderstand
  <whaa> ~emomisunderstand
  <what'up ~emohowzit
@@ -651,15 +679,15 @@
  <what_a_pity ~emosad
  <what_a_surprise ~emosurprise
  <what_a_terrible_shame ~emosad
- <what_did_you_say ~emomisunderstand
- <what_do_you_mean ~emomisunderstand
+ <what_did_you_say> ~emomisunderstand
+ <what_do_you_mean> ~emomisunderstand
+ <what_is_cooking> ~emohowzit
  <what_is_going_on> ~emohowzit
+ <what_is_going_down> ~emohowzit
  <what_is_happening> ~emohowzit
  <what_is_new> ~emohowzit
  <what_is_the_latest_word> ~emohowzit
  <what_is_the_word> ~emohowzit
- <what_is_up ~emohowzit
- <what_is_up_today ~emohowzit
  <what_the_fuck ~emosurprise
  <what_up ~emohowzit
  <what_was_that_you_said ~emomisunderstand
@@ -727,7 +755,7 @@
  <bring_it_on> ~yes
  byebye ~emogoodbye
  ca_va ~emohowzit
- call_it_a_night ~emogoodbye
+ call_it_a_night ~goodnight
  comment_ca_va ~emohowzit
  comment_est_vous ~emohowzit
  d'accord ~yes
@@ -801,3 +829,4 @@
  within_the_realm_of_possiblity ~emomaybe
  you_just_said ~emoprotest
  you_said ~emoprotest
+

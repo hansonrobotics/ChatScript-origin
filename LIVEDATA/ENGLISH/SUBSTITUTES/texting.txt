@@ -31,6 +31,7 @@
  doodz dudes
  d0xxes document
  d0x document
+ <n ~no
  <omg ~emosurprise
  <rofl ~emolaugh
  <roflmao ~emolaugh
@@ -75,8 +76,10 @@
  luv love
  me_2 me+too
  plz please
+ r are
  tmr tomorrow
  tnx thanks
+ u you
  ur your
  urs yours
  urself yourself

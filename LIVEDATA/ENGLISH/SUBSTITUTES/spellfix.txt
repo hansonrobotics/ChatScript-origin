@@ -22,6 +22,7 @@
  aslo also
  your_nae your+name
  calender calendar
+ Calender Calendar
  definatly definitely
   basicaly basically
  basiclly basically
@@ -1899,6 +1900,7 @@ harrassing harass
 harrassment harassment
 harrassments harassments
 harth hearth 
+has_no lacks 
 hauty haughty 
 Havaii Hawaii
 hawt sexy 
@@ -4145,7 +4147,6 @@ Teusday Tuesday
 tey they 
 tghis this
 th_' the
-thanx thanks
 thansk thanks
 thatt he
 thatthe that

@@ -100,7 +100,7 @@ I_believe_that
 I_do_not_suppose
 I_do_not_suppose_that
 I_figure_that
-I_figure_youyou
+I_figure_you
 I_have_no_doubt_that
 i_have_the_impression_that
 I_imagine_that
@@ -172,9 +172,6 @@ that_exists
 that_is_how_I_see_it
 the_fact_is
 the_fact_of_the_matter_is
-the_fuck
-the_heck
-the_hell
 the_point_I_am_trying_to_make_is_that
 therefore
 to_be_fair
@@ -182,7 +179,6 @@ to_be_honest
 to_be_honest_with_you
 to_my_way_of_thinking
 to_the_best_of_my_knowledge
-too>
 totally
 trust_me_when_I_tell_you
 ugh

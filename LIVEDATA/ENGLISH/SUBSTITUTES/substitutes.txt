@@ -17,6 +17,7 @@
  # xxx> means sentence then end stop
  # if you want to have the result NOT tokenized, put it in quotes
  a.i. artificial+intelligence
+ wifi wi-fi
  touring_test Turing+test
  meds medications
  im I+am
@@ -104,11 +105,10 @@
  nev. Nevada
  Nov November
  Nov. November
- Shangri_La Shangri-la
  Oct October
  Oct. October
  okla. Oklahoma
- # oz ounce  NOT global because of the place called Oz
+ oz ounce
  oz. ounce
  PLC. PLC
  by_what_means how
@@ -128,10 +128,9 @@
 
  Loebners Loebner
  Loebner_'s Loebner
- <got_it> OK
+<got_it> OK
 <explain> why
 prof. professor
-
  <I_see> OK
 
  gon_na going+to
@@ -158,6 +157,7 @@ prof. professor
  <himself_he he
  <how_are_you_doing how+are+you
  <how_are_you_feeling how+are+you
+ <how_are_ya how+are+you
  <how_come why
  <how_interesting> interesting
  <I_am_afraid_I I
@@ -425,6 +425,7 @@ prof. professor
  anonymous_stranger stranger
  appeared_to_be was
  apple_iphone iPhone
+ Apple_iPhone iPhone
  are_lead_by are+led+by
  archeological archaeological
  archeologically archaeologically
@@ -570,6 +571,9 @@ prof. professor
  couldve could+have
  couture_fashion couture
  crewcut crew+cut
+ cup_of_jo coffee
+ cup_of_joe coffee
+ cuppa_joe coffee
  current_flowing current
  current_incumbent incumbent
  current_passing current
@@ -1017,6 +1021,7 @@ prof. professor
  my_question_is_why why
  my_question_is_would would
  nada nothing
+ namuch not+much
  NATO_organization NATO
  near_proximity proximity
  nearly_everything everything
@@ -1032,6 +1037,7 @@ prof. professor
  new_recruit recruit
  Newyorker New+Yorker
  nite night
+ ninight night
  no_where_to nowhere+to
  nomenclature_terms nomenclature
  none_at_all none
@@ -1051,6 +1057,7 @@ prof. professor
  np no+problem
  nuff enough
  null_and_void void
+ nvm nevermind
  ny New+York
  nyc New+York+City
   of_the_clock o'clock
@@ -1206,6 +1213,8 @@ prof. professor
  son_in_law son-in-law
  sons_in_law sons-in-law
  sorta sort+of
+ sorry_but sorry
+ sorry_but_I sorry
  sos same+old+shit
  sox socks
  specific_examples examples
@@ -1363,7 +1372,6 @@ prof. professor
  were_are where+are
  werent were+not
  whaddya what+do+you
- what_'s_up what+is+new
  what_brings_you_here why+are+you+here
  what_brings_you_in why+are+you+in
  what_brings_you_into why+are+you+into
@@ -1375,7 +1383,6 @@ prof. professor
  what_in_the_world what
  what_is_going_on_in what+is+happening+in
  what_is_u what+is+your
- what_the_heck what
  whateva whatever
  whatevah whatever
  whats what+is
@@ -1458,7 +1465,10 @@ prof. professor
  wouldnt would+not
  wreck_havoc wreak+havoc
  xmas Christmas
-  yessum yes+Madam
+ Xmas Christmas
+ yessum yes+Madam
+ yes_yes yes
+ yes_yes_yes yes
  yo you
  yo_mamm your+mother
  yo_momma your+mother
@@ -1490,3 +1500,7 @@ prof. professor
  yuor your
  government_comprised_of government+composed+of
  it_is_probable_that probably
+ no_yes yes
+ yes_no no
+ no_yes_no no
+ yes_no_yes yes
