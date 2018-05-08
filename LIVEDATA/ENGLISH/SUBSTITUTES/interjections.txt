@@ -680,7 +680,7 @@
  <what_a_surprise ~emosurprise
  <what_a_terrible_shame ~emosad
  <what_did_you_say> ~emomisunderstand
- <what_do_you_mean> ~emomisunderstand
+ <what_do_you_mean> ~example
  <what_is_cooking> ~emohowzit
  <what_is_going_on> ~emohowzit
  <what_is_going_down> ~emohowzit
@@ -692,7 +692,7 @@
  <what_up ~emohowzit
  <what_was_that_you_said ~emomisunderstand
  <what_was_that> ~emomisunderstand
- <whatever_do_you_mean ~emomisunderstand
+ <whatever_do_you_mean ~example
  <whatever> ~yes # special for now...
  <whoopie ~emohappy
  <why_thank_you ~emothanks
