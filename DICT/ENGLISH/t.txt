@@ -4720,7 +4720,7 @@
  tree_sloth ( meanings=1 NOUN NOUN_SINGULAR ) 
     sloth~2n 
  three-toed_sloth ( meanings=1 NOUN NOUN_SINGULAR ) 
-    ai~1n 
+    maned_sloth~1n 
  two-toed_sloth ( meanings=2 NOUN NOUN_SINGULAR ) 
     unai~1n 
     unai~2n 

@@ -3544,10 +3544,8 @@
     aerophagia~1nz (^swallow~1) swallowing air
  artificial_insemination ( meanings=1 glosses=1 NOUN NOUN_SINGULAR ) 
     AI~1nz (^insemination~1) the introduction of semen into the oviduct or uterus by some means other than sexual intercourse
- AI ( meanings=3 NOUN NOUN_PROPER_SINGULAR COMMON2 COMMON1 ) 
-    artificial_insemination~1n 
+ AI ( meanings=1 NOUN NOUN_PROPER_SINGULAR COMMON2 COMMON1 ) 
     artificial_intelligence~1n 
-    Army_Intelligence~1n 
  ass ( meanings=4 glosses=2 NOUN NOUN_SINGULAR COMMON4 COMMON1 ) 
     screwing~1n 
     ass~2nz (^equine~1) hardy and sure-footed animal smaller and with longer ears than the horse
