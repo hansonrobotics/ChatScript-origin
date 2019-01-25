@@ -1151,7 +1151,7 @@ void ProcessInputFile()
 			//output user prompt
 			if (documentMode || silent) {;} // no prompt in document mode
 			else if (*userPrefix) printf((char*)"%s ", ReviseOutput(userPrefix));
-			else printf((char*)"%s",(char*)"   >");
+			else printf((char*)"[%d]> ", volleyCount);
 			
 			*ourMainInputBuffer = ' '; // leave space at start to confirm NOT a null init message, even if user does only a cr
 			ourMainInputBuffer[1] = 0;
