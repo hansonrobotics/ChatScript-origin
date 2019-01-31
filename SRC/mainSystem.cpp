@@ -94,6 +94,7 @@ bool server = true; // default is server on LINUX
 #endif
 #endif
 unsigned int port = 1024;						// server port
+int random_seed = -1;		            // random seed -1 means random seed is not set
 bool commandLineCompile = false;
 
 PrepareMode tmpPrepareMode = NO_MODE;						// controls what processing is done in preparation NO_MODE, POS_MODE, PREPARE_MODE
@@ -659,6 +660,7 @@ static void ProcessArgument(char* arg)
 		size_t len = strlen(hide);
 		if (hide[len - 1] == '"') hide[len - 1] = 0;
 	}
+	else if (!strnicmp(arg, (char*)"seed=", 5)) random_seed = atoi(arg+5);
 #ifndef DISCARDSERVER
 	else if (!stricmp(arg,(char*)"serverretry")) serverRetryOK = true;
 	else if (!stricmp(arg,(char*)"local")) server = false; // local standalone
@@ -793,6 +795,10 @@ unsigned int InitSystem(int argcx, char * argvx[],char* unchangedPath, char* rea
 	
 	int oldserverlog = serverLog;
 	serverLog = true;
+  if (random_seed != -1) {
+    printf((char*)"Set random number %d\r\n", random_seed);
+    srand(random_seed);
+  }
 
 #ifndef DISCARDSERVER
 	if (server)
