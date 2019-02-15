@@ -1481,11 +1481,16 @@ uint64 Hashit(unsigned char * data, int len,bool & hasUpperCharacters, bool & ha
 	return crc;
 } 
 
-unsigned int random(unsigned int range)
-{
-	if (regression || range <= 1) return 0;
-	unsigned int x = (unsigned int)X64_Table[randIndex++ % MAXRAND];
-	return x % range;
+//unsigned int random(unsigned int range)
+//{
+//	if (regression || range <= 1) return 0;
+//	unsigned int x = (unsigned int)X64_Table[randIndex++ % MAXRAND];
+//  printf((char*)"\r\nRandom number %d\r\n",x);
+//	return x % range;
+//}
+
+unsigned int random(unsigned int range) {
+   return rand() % range;
 }
 
 /////////////////////////////////////////////////////////
