@@ -23,19 +23,18 @@ package_chatscript() {
         --deb-no-default-config-files \
         -d "libcurl3" \
         -p $BASEDIR/${name}_VERSION_ARCH.deb \
-        --prefix ${HR_TOOLS_PREFIX}/ChatScript \
-        src/$reponame/BINARIES/LinuxChatScript64=BINARIES/ \
-        src/$reponame/DICT/BASIC=DICT/ \
-        src/$reponame/DICT/ENGLISH=DICT/ \
-        src/$reponame/LIVEDATA/SYSTEM=LIVEDATA/ \
-        src/$reponame/LIVEDATA/ENGLISH=LIVEDATA/ \
-        src/$reponame/RAWDATA \
-        src/$reponame/SRC \
-        src/$reponame/version.txt \
-        src/$reponame/authorizedIP.txt \
-        src/$reponame/changes.txt \
-        src/$reponame/license.txt \
-        src/$reponame/run.sh
+        src/$reponame/BINARIES/LinuxChatScript64=${HR_TOOLS_PREFIX}/ChatScript/BINARIES/ \
+        src/$reponame/DICT/BASIC=${HR_TOOLS_PREFIX}/ChatScript/DICT/ \
+        src/$reponame/DICT/ENGLISH=${HR_TOOLS_PREFIX}/ChatScript/DICT/ \
+        src/$reponame/LIVEDATA/SYSTEM=${HR_TOOLS_PREFIX}/ChatScript/LIVEDATA/ \
+        src/$reponame/LIVEDATA/ENGLISH=${HR_TOOLS_PREFIX}/ChatScript/LIVEDATA/ \
+        src/$reponame/RAWDATA=${HR_TOOLS_PREFIX}/ChatScript/ \
+        src/$reponame/SRC=${HR_TOOLS_PREFIX}/ChatScript/ \
+        src/$reponame/version.txt=${HR_TOOLS_PREFIX}/ChatScript/ \
+        src/$reponame/authorizedIP.txt=${HR_TOOLS_PREFIX}/ChatScript/ \
+        src/$reponame/changes.txt=${HR_TOOLS_PREFIX}/ChatScript/ \
+        src/$reponame/license.txt=${HR_TOOLS_PREFIX}/ChatScript/ \
+        src/$reponame/run.sh=${HR_TOOLS_PREFIX}/ChatScript/
 
     rm -r $BASEDIR/src
 }
