@@ -82,7 +82,6 @@ done
 cd $BASEDIR
 while true;
 do
-    export LD_LIBRARY_PATH=$BASEDIR/BINARIES
     echo "Start at $(date)"
     BINARIES/LinuxChatScript64 $param
     echo "ChatScript is crashed. Restarting"
