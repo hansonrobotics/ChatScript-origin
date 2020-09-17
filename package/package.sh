@@ -45,5 +45,5 @@ if [[ $(readlink -f ${BASH_SOURCE[0]}) == $(readlink -f $0) ]]; then
     source $BASEDIR/config.sh
     set -e
 
-    package_chatscript $@
+    package_chatscript $1
 fi

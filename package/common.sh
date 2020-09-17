@@ -126,9 +126,11 @@ cleanup_ros_package_build() {
 get_version() {
     local date=$(date +%Y%m%d%H%M%S)
     local version_file=$BASEDIR/src/$reponame/version
+    local tag=$(git describe --tags --candidates=0)
     if [[ -f $version_file ]]; then
         version=$(head -n 1 $version_file)
-        if [[ $1 != 1 ]]; then
+        # if 1 is present or the latest tag equals to version
+        if [[ $1 != 1 && ${tag#v} != $version ]]; then
             version=${version}-${date}
         fi
     else
