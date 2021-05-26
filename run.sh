@@ -79,11 +79,19 @@ while [[ $# > 0 ]]; do
     esac
 done
 
+
+OS_VERSION=$(lsb_release --codename --short)
+if [[ $OS_VERSION == 'focal' ]]; then
+    ENGINE=BINARIES/LinuxChatScript64-curl4
+else
+    ENGINE=BINARIES/LinuxChatScript64
+fi
+
 cd $BASEDIR
 while true;
 do
     echo "Start at $(date)"
-    BINARIES/LinuxChatScript64 $param
+    $ENGINE $param
     echo "ChatScript is crashed. Restarting"
     sleep 1
 done
